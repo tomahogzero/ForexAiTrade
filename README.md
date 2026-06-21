@@ -8,9 +8,10 @@ Current baseline:
 
 - `EURUSD H1`
 - Status: `RESEARCH_MORE`
-- Current checkpoint recommendation: `NEEDS_LOSING_STREAK_COOLDOWN_RESEARCH`
+- Current checkpoint recommendation: `KEEP_NORMAL_GATE_AS_BASELINE`
+- Current annual target classification: `BELOW_FOREX_RISK_PREMIUM`
 
-Checkpoint I2 showed that the EURUSD H1 train phase is heavily affected by losing-streak risk-gate lockout. Future research must separate raw strategy behavior from risk-gated behavior before any demo/live consideration.
+Checkpoint J showed that removing or relaxing the losing-streak gate increased trade count but worsened validation and out-of-sample performance. Checkpoint K adds an annual target and risk-adjusted viability framework so future work can compare results against Forex risk, not just positive net profit.
 
 ## Safety Disclaimer
 
@@ -32,6 +33,7 @@ Do not use this EA on a live account. Live trading is not enabled by default and
 Each checkpoint should:
 
 - keep execution status separate from strategy performance
+- evaluate annualized return, drawdown, Calmar ratio, profit factor, and trade count when performance improvement is claimed
 - document results under `docs/`
 - generate focused research outputs under `research/results/`
 - avoid optimization unless explicitly allowed

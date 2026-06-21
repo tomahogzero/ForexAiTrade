@@ -1,0 +1,5 @@
+annualized_return_informational_only,annualized_return_percent,base_case_id,cagr_approx_percent,calmar_ratio,case_id,deposit,execution_status,monthly_return_estimate,net_profit,phase,profit_factor,relative_drawdown,risk_adjusted_classification,run_id,symbol,test_period_days,timeframe,total_trades,warning
+True,-0.2045,EURUSD_H1_RISKGATE_NORMAL_10000,-0.2047,-0.3466,EURUSD_H1_RISKGATE_NORMAL_10000_train,10000.0,PASS,-0.017,-40.96,train,0.57,0.59,,run_20260621_214917,EURUSD,731,H1,22,low_trade_count
+False,0.6138,EURUSD_H1_RISKGATE_NORMAL_10000,0.6138,0.9743,EURUSD_H1_RISKGATE_NORMAL_10000_validation,10000.0,PASS,0.0512,61.38,validation,1.16,0.63,,run_20260621_214917,EURUSD,365,H1,105,
+True,0.8862,EURUSD_H1_RISKGATE_NORMAL_10000,0.8883,1.502,EURUSD_H1_RISKGATE_NORMAL_10000_out_of_sample,10000.0,PASS,0.0738,41.03,out_of_sample,1.18,0.59,,run_20260621_214917,EURUSD,169,H1,62,short_period
+False,0.7,,0.6989,1.1111,EURUSD_H1_RISKGATE_NORMAL_10000,10000.0,,0.0583,102.41,validation_plus_out_of_sample,1.16,0.63,BELOW_FOREX_RISK_PREMIUM,run_20260621_214917,EURUSD,534,H1,167,

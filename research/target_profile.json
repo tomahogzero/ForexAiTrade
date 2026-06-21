@@ -1,0 +1,46 @@
+{
+  "default_target_profile": "Balanced Worth-The-Risk",
+  "notes": [
+    "Targets are research evaluation thresholds only.",
+    "They are not profitability guarantees and do not authorize demo or live trading.",
+    "Annualized metrics from short or low-trade tests are informational and can mislead."
+  ],
+  "target_tiers": [
+    {
+      "name": "Survival Research",
+      "min_cagr": 0,
+      "max_drawdown": 10,
+      "min_calmar": 0,
+      "purpose": "research only"
+    },
+    {
+      "name": "Conservative Forex",
+      "min_cagr": 12,
+      "max_drawdown": 15,
+      "min_calmar": 0.8,
+      "min_profit_factor": 1.15
+    },
+    {
+      "name": "Balanced Worth-The-Risk",
+      "min_cagr": 20,
+      "max_drawdown": 15,
+      "min_calmar": 1.0,
+      "min_profit_factor": 1.2
+    },
+    {
+      "name": "Aggressive Research",
+      "min_cagr": 35,
+      "max_drawdown": 25,
+      "min_calmar": 1.2,
+      "min_profit_factor": 1.25,
+      "demo_or_research_only": true
+    },
+    {
+      "name": "Challenge Mode",
+      "min_cagr": 100,
+      "max_drawdown": 30,
+      "research_only": true,
+      "not_allowed_as_baseline": true
+    }
+  ]
+}

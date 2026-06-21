@@ -24,21 +24,48 @@ Repository:
 
 งาน checkpoint ควรทำบน branch แยก เช่น:
 
-`research/checkpoint-k-annual-target-framework`
+`research/checkpoint-l-price-action-fibo-spec`
 
-หลังทำงานเสร็จควรเปิด Pull Request ก่อน merge เข้า `main` ยกเว้นผู้ใช้สั่งให้ commit/push เข้า `main` โดยตรงอย่างชัดเจน
+หลังทำงานเสร็จควรเปิด Pull Request ก่อน merge เข้า `main`
 
-## สิ่งที่ควรใส่ใน Pull Request
+ห้าม commit เข้า `main` โดยตรง เว้นแต่ผู้ใช้สั่งชัดเจน
 
-PR ควรมี:
+## Strategy Idea Workflow
 
-- summary ของ checkpoint
-- changed files list
-- RunId ที่เกี่ยวข้อง
-- compile status ถ้ามี MQL5 change
-- artifact audit ว่าไม่มี `.ex5`, `.pyc`, `__pycache__`, nested zip
-- research result/recommendation
-- คำยืนยันว่าไม่มี optimization, ไม่มี new strategy, ไม่มี profitability claim ถ้า checkpoint ไม่อนุญาต
+New strategy ideas ต้องเริ่มจาก specification branch ก่อน implementation
+
+Specification branch ต้องมี:
+
+- strategy concept
+- measurable rule translation
+- safety checklist
+- research comparison plan
+- explicit guardrails
+- statement ว่ายังไม่มี implementation และยังไม่ใช่ profitability claim
+
+Strategy implementation PR ต้องแนบ:
+
+- research plan
+- safety checklist
+- symbol-profile separation ถ้ากลยุทธ์อาจใช้หลาย instrument
+- train/validation/out-of-sample result
+- annualized return
+- max drawdown
+- Calmar ratio
+- profit factor
+- trade count
+- artifact audit
+
+Price Action/Fibo/Grid-like strategy ต้องพิสูจน์อย่างชัดเจนว่า:
+
+- ไม่ใช่ martingale
+- ไม่ใช่ uncontrolled grid
+- ไม่มี recovery lot multiplication
+- ไม่มี unlimited scale-in
+- ทุก order มี hard stop loss
+- ไม่ bypass RiskManager หรือ safety gates
+
+ถ้ากลยุทธ์ตั้งใจใช้กับ Gold เช่น GOLD# หรือ GOLDm# ต้องมี risk-budget review แยกก่อนเสมอ และห้าม reuse EURUSD parameters โดยอัตโนมัติ
 
 ## Annual Target Framework
 
@@ -58,29 +85,33 @@ PR ใดที่อ้างว่า performance ดีขึ้น ต้อ
 
 ห้ามใช้ train-only result เพื่อ approve candidate และห้ามเพิ่ม lot/risk เพื่อทำให้ annual return ดูดีขึ้น
 
-## Commit Message
+## สิ่งที่ควรใส่ใน Pull Request
 
-รูปแบบ commit message ที่แนะนำ:
+PR ควรมี:
 
-`checkpoint-k: add annual target viability framework`
+- summary ของ checkpoint
+- changed files list
+- RunId ที่เกี่ยวข้อง ถ้ามี
+- compile status ถ้ามี MQL5 change
+- artifact audit ว่าไม่มี `.ex5`, `.pyc`, `__pycache__`, nested zip
+- research result/recommendation
+- คำยืนยันว่าไม่มี optimization, ไม่มี new strategy implementation, ไม่มี profitability claim ถ้า checkpoint ไม่อนุญาต
 
 ## Suggested Commands
 
-Codex ไม่ควร push อัตโนมัติถ้าผู้ใช้ไม่ได้สั่งชัดเจน
-
-คำสั่งที่ผู้ใช้อาจใช้เอง:
-
 ```powershell
 git status
+git checkout main
+git pull origin main
+git checkout -b research/checkpoint-l-price-action-fibo-spec
 git add AGENTS.md .gitignore README.md docs scripts tools presets research MQL5
-git commit -m "checkpoint-k: add annual target viability framework"
-git branch
-git push origin research/checkpoint-k-annual-target-framework
+git commit -m "checkpoint-l: add price action fibo research specification"
+git push -u origin research/checkpoint-l-price-action-fibo-spec
 ```
 
 ## Clean Review Zip
 
-หลัง checkpoint เสร็จ ให้สร้าง zip review ที่รวม:
+หลัง checkpoint เสร็จ ถ้าต้องสร้าง zip review ให้รวม:
 
 - `MQL5/`
 - `scripts/`

@@ -1,0 +1,5 @@
+﻿2026-06-19 22:10:44 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-19 22:10:44 Case start: EURUSD_H1_10000_out_of_sample
+2026-06-19 22:10:45 Spawned MT5 PID 32420
+2026-06-19 22:11:02 Tester completion detected in updated log.
+2026-06-19 22:11:02 Closing only spawned PID 32420.

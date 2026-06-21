@@ -1,0 +1,5 @@
+classification,exit_variant,failed_gates,notes,out_of_sample_net_profit,out_of_sample_trades,train_net_profit,validation_net_profit,validation_oos_initial_sl_losses,validation_oos_total_realized_r,validation_oos_tp_hits,validation_oos_trailing_profit_exits,validation_trades
+BASELINE_REFERENCE,baseline,,No final candidate approval in Checkpoint H.,41.03,62,-40.96,61.38,72.0,11.37042,28.0,66.0,105
+INSUFFICIENT_TRADES,no_trailing,validation_or_oos_trade_count,No final candidate approval in Checkpoint H.,72.84,17,-22.85,-1.57,15.0,8.439228,13.0,0.0,11
+INSUFFICIENT_TRADES,trailing_looser,validation_or_oos_trade_count,No final candidate approval in Checkpoint H.,97.33,33,-47.75,12.51,24.0,10.780706,16.0,15.0,22
+REJECT_FOR_NOW,trailing_tighter,validation_or_oos_not_positive,No final candidate approval in Checkpoint H.,9.06,78,-45.63,-49.31,80.0,-5.231807,16.0,126.0,146

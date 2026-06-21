@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "description": "Checkpoint J controlled EURUSD H1 risk-gate diagnostic matrix. Tester-only diagnostics; no optimization.",
+  "periods": {
+    "train": {
+      "from": "2023-01-01",
+      "to": "2024-12-31"
+    },
+    "validation": {
+      "from": "2025-01-01",
+      "to": "2025-12-31"
+    },
+    "out_of_sample": {
+      "from": "2026-01-01",
+      "to": "2026-06-18"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.10,
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "EURUSD_H1_RISKGATE_NORMAL_10000",
+      "risk_gate_variant": "normal",
+      "risk_gate_mode": "NORMAL",
+      "losing_streak_cooldown_bars": 24,
+      "magic_number": 26062151,
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/risk_gate/EURUSD_H1_riskgate_normal.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": true,
+      "trailing_atr_multiplier": 1.5
+    },
+    {
+      "case_id": "EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000",
+      "risk_gate_variant": "no_losing_streak_gate",
+      "risk_gate_mode": "DIAGNOSTIC_NO_LOSING_STREAK_GATE",
+      "losing_streak_cooldown_bars": 24,
+      "magic_number": 26062152,
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/risk_gate/EURUSD_H1_riskgate_no_losing_streak_gate.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": true,
+      "trailing_atr_multiplier": 1.5
+    },
+    {
+      "case_id": "EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000",
+      "risk_gate_variant": "fixed_cooldown_24bars",
+      "risk_gate_mode": "DIAGNOSTIC_FIXED_COOLDOWN",
+      "losing_streak_cooldown_bars": 24,
+      "magic_number": 26062153,
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/risk_gate/EURUSD_H1_riskgate_fixed_cooldown_24bars.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": true,
+      "trailing_atr_multiplier": 1.5
+    },
+    {
+      "case_id": "EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000",
+      "risk_gate_variant": "next_day_reset",
+      "risk_gate_mode": "DIAGNOSTIC_NEXT_DAY_RESET",
+      "losing_streak_cooldown_bars": 24,
+      "magic_number": 26062154,
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/risk_gate/EURUSD_H1_riskgate_next_day_reset.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": true,
+      "trailing_atr_multiplier": 1.5
+    }
+  ],
+  "integration_cases": [
+    "EURUSD_H1_RISKGATE_NORMAL_10000"
+  ]
+}

@@ -1,0 +1,11 @@
+average_r,breakeven_exits,exit_type,initial_sl_losses,largest_loss,largest_win,max_consecutive_losses,net_profit,phase,profit_factor,tp_hits,trades,trailing_profit_exits,win_rate
+-0.010582,1,BREAKEVEN_SL,0,-0.1,-0.1,1,-0.1,out_of_sample,0.0,0,1,0,0.0
+-1.004437,0,INITIAL_SL_LOSS,27,-10.25,-5.36,27,-225.71,out_of_sample,0.0,0,27,0,0.0
+1.896818,0,TP_HIT,0,14.97,19.32,0,185.13,out_of_sample,999.0,11,11,0,100.0
+0.426703,0,TRAILING_SL_PROFIT,0,0.24,8.96,0,81.71,out_of_sample,999.0,0,23,23,100.0
+-1.004277,0,INITIAL_SL_LOSS,11,-9.42,-7.32,11,-94.43,train,0.0,0,11,0,0.0
+1.841085,0,TP_HIT,0,14.25,14.25,0,14.25,train,999.0,1,1,0,100.0
+0.522121,0,TRAILING_SL_PROFIT,0,0.84,7.56,0,39.22,train,999.0,0,10,10,100.0
+-1.008708,0,INITIAL_SL_LOSS,45,-10.45,-6.68,45,-390.64,validation,0.0,0,45,0,0.0
+1.802734,0,TP_HIT,0,11.05,20.4,0,263.41,validation,999.0,17,17,0,100.0
+0.524815,0,TRAILING_SL_PROFIT,0,0.12,11.13,0,188.61,validation,999.0,0,43,43,100.0

@@ -1,0 +1,7 @@
+average_r,breakeven_exits,initial_sl_losses,largest_loss,largest_win,max_consecutive_losses,net_profit,phase,profit_factor,regime,tp_hits,trades,trailing_profit_exits,win_rate
+0.00866,1,7,-9.84,17.08,2,9.26,out_of_sample,1.1583,breakout,4,14,2,42.86
+0.071407,0,20,-10.25,19.32,3,31.77,out_of_sample,1.1899,trend,7,48,21,58.33
+0.033683,0,1,-7.5,5.5,1,-2.0,train,0.7333,breakout,0,2,1,50.0
+-0.202606,0,10,-9.42,14.25,4,-38.96,train,0.5518,trend,1,20,9,50.0
+0.150827,0,10,-9.02,16.14,4,32.22,validation,1.374,breakout,6,22,6,54.55
+0.054259,0,35,-10.45,20.4,4,29.16,validation,1.0958,trend,11,83,37,57.83

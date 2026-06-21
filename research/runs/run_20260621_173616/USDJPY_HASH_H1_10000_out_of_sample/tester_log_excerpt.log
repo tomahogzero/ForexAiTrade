@@ -1,0 +1,921 @@
+﻿===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\logs\20260621.log =====
+GP	0	17:36:17.529	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_train\generated_tester.ini"
+RS	0	17:36:20.136	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+JL	0	17:36:20.136	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+FO	0	17:36:20.136	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+MM	0	17:36:20.136	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_train\generated_tester.ini
+CL	0	17:36:26.847	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+LI	0	17:36:27.825	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+QK	0	17:36:27.825	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 20:47:09
+OH	0	17:36:28.788	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FK	0	17:36:28.788	Network	'168886591': trading has been enabled - hedging mode
+EE	0	17:36:29.540	Tester	automatical testing started
+QI	0	17:36:29.594	Network	'168886591': scanning network for access points
+NI	0	17:36:30.217	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.05 ms via 'VPS London LD6 21' instead of 210.90 ms
+PK	0	17:37:04.546	Network	'168886591': scanning network finished
+DR	0	17:37:04.546	Network	'168886591': auto connecting to better point was skipped due tester is working
+DG	0	17:37:10.321	Tester	last test passed with result "successfully finished" in 0:00:38.206
+PG	0	17:37:10.499	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+KN	0	17:37:12.913	Terminal	exit with code 0
+MG	0	17:37:12.916	Network	'168886591': disconnected from XMGlobal-MT5 2
+DM	0	17:37:12.992	Terminal	stopped with 0
+DI	0	17:37:12.999	Terminal	shutdown with 0
+RH	0	17:37:19.139	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_validation\generated_tester.ini"
+MP	0	17:37:19.192	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+EM	0	17:37:19.192	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+IN	0	17:37:19.192	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+GR	0	17:37:19.192	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_validation\generated_tester.ini
+JS	0	17:37:23.020	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+GI	0	17:37:23.943	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+DH	0	17:37:23.943	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:36:27
+NK	0	17:37:24.777	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CK	0	17:37:24.777	Network	'168886591': trading has been enabled - hedging mode
+JE	0	17:37:25.304	Tester	automatical testing started
+FF	0	17:37:25.799	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+FP	0	17:37:50.369	Tester	last test passed with result "successfully finished" in 0:00:23.044
+LH	0	17:37:50.549	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+NO	0	17:37:52.989	Terminal	exit with code 0
+QF	0	17:37:52.992	Network	'168886591': disconnected from XMGlobal-MT5 2
+ER	0	17:37:53.091	Terminal	stopped with 0
+JI	0	17:37:53.152	Terminal	shutdown with 0
+IG	0	17:38:01.174	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_out_of_sample\generated_tester.ini"
+HS	0	17:38:01.225	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+ML	0	17:38:01.226	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+QO	0	17:38:01.226	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+IM	0	17:38:01.226	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_out_of_sample\generated_tester.ini
+IM	0	17:38:05.033	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+CH	0	17:38:06.028	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+CJ	0	17:38:06.028	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:37:23
+NI	0	17:38:06.990	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CJ	0	17:38:06.990	Network	'168886591': trading has been enabled - hedging mode
+ND	0	17:38:07.480	Tester	automatical testing started
+OQ	0	17:38:07.825	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+ER	0	17:38:19.110	Tester	last test passed with result "successfully finished" in 0:00:09.609
+EI	0	17:38:19.328	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+EM	0	17:38:22.188	Terminal	exit with code 0
+HI	0	17:38:22.191	Network	'168886591': disconnected from XMGlobal-MT5 2
+MS	0	17:38:22.274	Terminal	stopped with 0
+OK	0	17:38:22.279	Terminal	shutdown with 0
+PL	0	17:38:29.556	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_train\generated_tester.ini"
+QR	0	17:38:29.611	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+IO	0	17:38:29.611	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+MP	0	17:38:29.611	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+RR	0	17:38:29.611	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_train\generated_tester.ini
+EM	0	17:38:34.280	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+MO	0	17:38:35.370	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+DM	0	17:38:35.370	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:38:05
+CI	0	17:38:36.411	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FM	0	17:38:36.411	Network	'168886591': trading has been enabled - hedging mode
+IG	0	17:38:37.060	Tester	automatical testing started
+PP	0	17:38:37.060	AutoTesting	USDJPY#: preliminary downloading of M1 history started
+DE	0	17:38:37.393	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+RE	0	17:38:37.863	AutoTesting	USDJPY#: 50% history downloaded
+LM	0	17:38:38.466	AutoTesting	USDJPY#: 61% history downloaded
+HE	0	17:38:39.170	AutoTesting	USDJPY#: 71% history downloaded
+RM	0	17:38:39.771	AutoTesting	USDJPY#: 81% history downloaded
+CE	0	17:38:40.575	AutoTesting	USDJPY#: 91% history downloaded
+IN	0	17:38:41.442	AutoTesting	USDJPY#: preliminary downloading of M1 history completed in 0:00:04.391
+LQ	0	17:39:49.906	Tester	last test passed with result "successfully finished" in 0:01:05.718
+FI	0	17:39:50.088	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+DL	0	17:39:52.329	Terminal	exit with code 0
+OI	0	17:39:52.332	Network	'168886591': disconnected from XMGlobal-MT5 2
+OS	0	17:39:52.423	Terminal	stopped with 0
+FK	0	17:39:52.427	Terminal	shutdown with 0
+HR	0	17:40:01.136	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_validation\generated_tester.ini"
+PE	0	17:40:01.183	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+IN	0	17:40:01.184	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+EP	0	17:40:01.184	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+OL	0	17:40:01.184	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_validation\generated_tester.ini
+NN	0	17:40:04.438	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+FN	0	17:40:05.441	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+ML	0	17:40:05.441	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:38:34
+DN	0	17:40:06.292	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+EL	0	17:40:06.292	Network	'168886591': trading has been enabled - hedging mode
+PF	0	17:40:06.819	Tester	automatical testing started
+RS	0	17:40:07.179	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+RS	0	17:40:50.363	Tester	last test passed with result "successfully finished" in 0:00:41.512
+GK	0	17:40:50.559	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+PJ	0	17:40:53.092	Terminal	exit with code 0
+OK	0	17:40:53.094	Network	'168886591': disconnected from XMGlobal-MT5 2
+HQ	0	17:40:53.175	Terminal	stopped with 0
+GE	0	17:40:53.180	Terminal	shutdown with 0
+ON	0	17:41:05.130	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_out_of_sample\generated_tester.ini"
+FG	0	17:41:05.179	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+PP	0	17:41:05.180	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+LS	0	17:41:05.180	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+PM	0	17:41:05.180	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_out_of_sample\generated_tester.ini
+KI	0	17:41:08.665	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+DS	0	17:41:09.310	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+GN	0	17:41:09.310	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:40:04
+NM	0	17:41:10.144	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CQ	0	17:41:10.144	Network	'168886591': trading has been enabled - hedging mode
+IK	0	17:41:10.661	Tester	automatical testing started
+IL	0	17:41:11.022	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+LN	0	17:41:26.242	Tester	last test passed with result "successfully finished" in 0:00:13.706
+ON	0	17:41:26.409	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+OI	0	17:41:28.650	Terminal	exit with code 0
+DL	0	17:41:28.652	Network	'168886591': disconnected from XMGlobal-MT5 2
+DD	0	17:41:28.745	Terminal	stopped with 0
+IG	0	17:41:28.749	Terminal	shutdown with 0
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	17:41:23.880	ForexAiTrade (USDJPY#,H1)	2026.05.26 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.882	ForexAiTrade (USDJPY#,H1)	2026.05.26 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:23.884	ForexAiTrade (USDJPY#,H1)	2026.05.26 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.886	ForexAiTrade (USDJPY#,H1)	2026.05.26 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.888	ForexAiTrade (USDJPY#,H1)	2026.05.26 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.890	ForexAiTrade (USDJPY#,H1)	2026.05.27 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=38.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.891	ForexAiTrade (USDJPY#,H1)	2026.05.27 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.892	ForexAiTrade (USDJPY#,H1)	2026.05.27 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:23.893	ForexAiTrade (USDJPY#,H1)	2026.05.27 03:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.101 tp=159.533 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.897	ForexAiTrade (USDJPY#,H1)	2026.05.27 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.123 tp=159.581 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.899	ForexAiTrade (USDJPY#,H1)	2026.05.27 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.140 tp=159.603 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.901	ForexAiTrade (USDJPY#,H1)	2026.05.27 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.062 tp=159.540 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.903	ForexAiTrade (USDJPY#,H1)	2026.05.27 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.044 tp=159.508 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.904	ForexAiTrade (USDJPY#,H1)	2026.05.27 08:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.092 tp=159.533 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.905	ForexAiTrade (USDJPY#,H1)	2026.05.27 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.191 tp=159.649 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.908	ForexAiTrade (USDJPY#,H1)	2026.05.27 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.909	ForexAiTrade (USDJPY#,H1)	2026.05.27 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.911	ForexAiTrade (USDJPY#,H1)	2026.05.27 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.914	ForexAiTrade (USDJPY#,H1)	2026.05.27 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.916	ForexAiTrade (USDJPY#,H1)	2026.05.27 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:23.918	ForexAiTrade (USDJPY#,H1)	2026.05.27 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.925	ForexAiTrade (USDJPY#,H1)	2026.05.27 16:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.231 tp=159.772 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.928	ForexAiTrade (USDJPY#,H1)	2026.05.27 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.933	ForexAiTrade (USDJPY#,H1)	2026.05.27 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.937	ForexAiTrade (USDJPY#,H1)	2026.05.27 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.939	ForexAiTrade (USDJPY#,H1)	2026.05.27 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:23.941	ForexAiTrade (USDJPY#,H1)	2026.05.27 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.943	ForexAiTrade (USDJPY#,H1)	2026.05.27 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.944	ForexAiTrade (USDJPY#,H1)	2026.05.27 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.947	ForexAiTrade (USDJPY#,H1)	2026.05.28 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=45.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.947	ForexAiTrade (USDJPY#,H1)	2026.05.28 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=26.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.948	ForexAiTrade (USDJPY#,H1)	2026.05.28 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=15.0 reason=no strategy signal
+CS	0	17:41:23.949	ForexAiTrade (USDJPY#,H1)	2026.05.28 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.951	ForexAiTrade (USDJPY#,H1)	2026.05.28 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.953	ForexAiTrade (USDJPY#,H1)	2026.05.28 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.954	ForexAiTrade (USDJPY#,H1)	2026.05.28 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.958	ForexAiTrade (USDJPY#,H1)	2026.05.28 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.960	ForexAiTrade (USDJPY#,H1)	2026.05.28 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.961	ForexAiTrade (USDJPY#,H1)	2026.05.28 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.963	ForexAiTrade (USDJPY#,H1)	2026.05.28 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.331 tp=159.794 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.967	ForexAiTrade (USDJPY#,H1)	2026.05.28 11:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.319 tp=159.781 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.971	ForexAiTrade (USDJPY#,H1)	2026.05.28 12:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.294 tp=159.762 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.974	ForexAiTrade (USDJPY#,H1)	2026.05.28 13:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.249 tp=159.733 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.977	ForexAiTrade (USDJPY#,H1)	2026.05.28 14:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.300 tp=159.782 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.979	ForexAiTrade (USDJPY#,H1)	2026.05.28 15:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.303 tp=159.761 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.983	ForexAiTrade (USDJPY#,H1)	2026.05.28 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.987	ForexAiTrade (USDJPY#,H1)	2026.05.28 17:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.275 tp=159.795 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.996	ForexAiTrade (USDJPY#,H1)	2026.05.28 18:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout direction=sell entry=0.000 sl=159.410 tp=158.881 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.999	ForexAiTrade (USDJPY#,H1)	2026.05.28 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.004	ForexAiTrade (USDJPY#,H1)	2026.05.28 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.007	ForexAiTrade (USDJPY#,H1)	2026.05.28 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.010	ForexAiTrade (USDJPY#,H1)	2026.05.28 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.012	ForexAiTrade (USDJPY#,H1)	2026.05.28 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.014	ForexAiTrade (USDJPY#,H1)	2026.05.29 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=32.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.015	ForexAiTrade (USDJPY#,H1)	2026.05.29 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=35.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.016	ForexAiTrade (USDJPY#,H1)	2026.05.29 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=14.0 reason=no strategy signal
+CS	0	17:41:24.017	ForexAiTrade (USDJPY#,H1)	2026.05.29 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.021	ForexAiTrade (USDJPY#,H1)	2026.05.29 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.023	ForexAiTrade (USDJPY#,H1)	2026.05.29 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.024	ForexAiTrade (USDJPY#,H1)	2026.05.29 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.025	ForexAiTrade (USDJPY#,H1)	2026.05.29 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.027	ForexAiTrade (USDJPY#,H1)	2026.05.29 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.028	ForexAiTrade (USDJPY#,H1)	2026.05.29 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=8.0 reason=no strategy signal
+CS	0	17:41:24.030	ForexAiTrade (USDJPY#,H1)	2026.05.29 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.033	ForexAiTrade (USDJPY#,H1)	2026.05.29 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.035	ForexAiTrade (USDJPY#,H1)	2026.05.29 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.037	ForexAiTrade (USDJPY#,H1)	2026.05.29 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.040	ForexAiTrade (USDJPY#,H1)	2026.05.29 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.041	ForexAiTrade (USDJPY#,H1)	2026.05.29 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.044	ForexAiTrade (USDJPY#,H1)	2026.05.29 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.046	ForexAiTrade (USDJPY#,H1)	2026.05.29 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.052	ForexAiTrade (USDJPY#,H1)	2026.05.29 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.058	ForexAiTrade (USDJPY#,H1)	2026.05.29 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.060	ForexAiTrade (USDJPY#,H1)	2026.05.29 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.062	ForexAiTrade (USDJPY#,H1)	2026.05.29 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.065	ForexAiTrade (USDJPY#,H1)	2026.05.29 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.067	ForexAiTrade (USDJPY#,H1)	2026.05.29 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.071	ForexAiTrade (USDJPY#,H1)	2026.06.01 00:00:30   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=67.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.072	ForexAiTrade (USDJPY#,H1)	2026.06.01 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.075	ForexAiTrade (USDJPY#,H1)	2026.06.01 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=13.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.078	ForexAiTrade (USDJPY#,H1)	2026.06.01 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.082	ForexAiTrade (USDJPY#,H1)	2026.06.01 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.085	ForexAiTrade (USDJPY#,H1)	2026.06.01 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.086	ForexAiTrade (USDJPY#,H1)	2026.06.01 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.088	ForexAiTrade (USDJPY#,H1)	2026.06.01 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.089	ForexAiTrade (USDJPY#,H1)	2026.06.01 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.090	ForexAiTrade (USDJPY#,H1)	2026.06.01 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.092	ForexAiTrade (USDJPY#,H1)	2026.06.01 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.096	ForexAiTrade (USDJPY#,H1)	2026.06.01 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.098	ForexAiTrade (USDJPY#,H1)	2026.06.01 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.099	ForexAiTrade (USDJPY#,H1)	2026.06.01 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.100	ForexAiTrade (USDJPY#,H1)	2026.06.01 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.102	ForexAiTrade (USDJPY#,H1)	2026.06.01 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.105	ForexAiTrade (USDJPY#,H1)	2026.06.01 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.112	ForexAiTrade (USDJPY#,H1)	2026.06.01 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.117	ForexAiTrade (USDJPY#,H1)	2026.06.01 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.123	ForexAiTrade (USDJPY#,H1)	2026.06.01 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.127	ForexAiTrade (USDJPY#,H1)	2026.06.01 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.131	ForexAiTrade (USDJPY#,H1)	2026.06.01 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.133	ForexAiTrade (USDJPY#,H1)	2026.06.01 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.137	ForexAiTrade (USDJPY#,H1)	2026.06.01 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.140	ForexAiTrade (USDJPY#,H1)	2026.06.02 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=46.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.141	ForexAiTrade (USDJPY#,H1)	2026.06.02 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=28.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.141	ForexAiTrade (USDJPY#,H1)	2026.06.02 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.142	ForexAiTrade (USDJPY#,H1)	2026.06.02 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.144	ForexAiTrade (USDJPY#,H1)	2026.06.02 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.146	ForexAiTrade (USDJPY#,H1)	2026.06.02 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.147	ForexAiTrade (USDJPY#,H1)	2026.06.02 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.148	ForexAiTrade (USDJPY#,H1)	2026.06.02 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.149	ForexAiTrade (USDJPY#,H1)	2026.06.02 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.150	ForexAiTrade (USDJPY#,H1)	2026.06.02 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.154	ForexAiTrade (USDJPY#,H1)	2026.06.02 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.155	ForexAiTrade (USDJPY#,H1)	2026.06.02 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.159	ForexAiTrade (USDJPY#,H1)	2026.06.02 12:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.613 tp=159.983 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.160	ForexAiTrade (USDJPY#,H1)	2026.06.02 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.161	ForexAiTrade (USDJPY#,H1)	2026.06.02 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.163	ForexAiTrade (USDJPY#,H1)	2026.06.02 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.165	ForexAiTrade (USDJPY#,H1)	2026.06.02 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.167	ForexAiTrade (USDJPY#,H1)	2026.06.02 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.169	ForexAiTrade (USDJPY#,H1)	2026.06.02 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.172	ForexAiTrade (USDJPY#,H1)	2026.06.02 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:41:24.174	ForexAiTrade (USDJPY#,H1)	2026.06.02 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.176	ForexAiTrade (USDJPY#,H1)	2026.06.02 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.178	ForexAiTrade (USDJPY#,H1)	2026.06.02 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.179	ForexAiTrade (USDJPY#,H1)	2026.06.02 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.181	ForexAiTrade (USDJPY#,H1)	2026.06.03 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=79.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.182	ForexAiTrade (USDJPY#,H1)	2026.06.03 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=40.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.183	ForexAiTrade (USDJPY#,H1)	2026.06.03 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.184	ForexAiTrade (USDJPY#,H1)	2026.06.03 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.186	ForexAiTrade (USDJPY#,H1)	2026.06.03 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.188	ForexAiTrade (USDJPY#,H1)	2026.06.03 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.698 tp=160.166 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.189	ForexAiTrade (USDJPY#,H1)	2026.06.03 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.710 tp=160.178 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.191	ForexAiTrade (USDJPY#,H1)	2026.06.03 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.191	ForexAiTrade (USDJPY#,H1)	2026.06.03 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.193	ForexAiTrade (USDJPY#,H1)	2026.06.03 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.195	ForexAiTrade (USDJPY#,H1)	2026.06.03 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.200	ForexAiTrade (USDJPY#,H1)	2026.06.03 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.206	ForexAiTrade (USDJPY#,H1)	2026.06.03 12:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.500 tp=160.251 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.210	ForexAiTrade (USDJPY#,H1)	2026.06.03 13:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.523 tp=160.301 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.213	ForexAiTrade (USDJPY#,H1)	2026.06.03 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.215	ForexAiTrade (USDJPY#,H1)	2026.06.03 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.219	ForexAiTrade (USDJPY#,H1)	2026.06.03 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.223	ForexAiTrade (USDJPY#,H1)	2026.06.03 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.228	ForexAiTrade (USDJPY#,H1)	2026.06.03 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.231	ForexAiTrade (USDJPY#,H1)	2026.06.03 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.235	ForexAiTrade (USDJPY#,H1)	2026.06.03 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.237	ForexAiTrade (USDJPY#,H1)	2026.06.03 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.239	ForexAiTrade (USDJPY#,H1)	2026.06.03 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.241	ForexAiTrade (USDJPY#,H1)	2026.06.03 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.243	ForexAiTrade (USDJPY#,H1)	2026.06.04 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=66.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.244	ForexAiTrade (USDJPY#,H1)	2026.06.04 01:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.719 tp=160.485 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.245	ForexAiTrade (USDJPY#,H1)	2026.06.04 02:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.686 tp=160.365 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.248	ForexAiTrade (USDJPY#,H1)	2026.06.04 03:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.720 tp=160.382 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.252	ForexAiTrade (USDJPY#,H1)	2026.06.04 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.698 tp=160.313 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.254	ForexAiTrade (USDJPY#,H1)	2026.06.04 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.674 tp=160.290 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.256	ForexAiTrade (USDJPY#,H1)	2026.06.04 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.257	ForexAiTrade (USDJPY#,H1)	2026.06.04 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.772 tp=160.351 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.259	ForexAiTrade (USDJPY#,H1)	2026.06.04 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.260	ForexAiTrade (USDJPY#,H1)	2026.06.04 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.263	ForexAiTrade (USDJPY#,H1)	2026.06.04 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.267	ForexAiTrade (USDJPY#,H1)	2026.06.04 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.272	ForexAiTrade (USDJPY#,H1)	2026.06.04 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.276	ForexAiTrade (USDJPY#,H1)	2026.06.04 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.278	ForexAiTrade (USDJPY#,H1)	2026.06.04 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.281	ForexAiTrade (USDJPY#,H1)	2026.06.04 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.286	ForexAiTrade (USDJPY#,H1)	2026.06.04 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.289	ForexAiTrade (USDJPY#,H1)	2026.06.04 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.292	ForexAiTrade (USDJPY#,H1)	2026.06.04 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.294	ForexAiTrade (USDJPY#,H1)	2026.06.04 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.297	ForexAiTrade (USDJPY#,H1)	2026.06.04 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.299	ForexAiTrade (USDJPY#,H1)	2026.06.04 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.301	ForexAiTrade (USDJPY#,H1)	2026.06.04 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.302	ForexAiTrade (USDJPY#,H1)	2026.06.04 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.306	ForexAiTrade (USDJPY#,H1)	2026.06.05 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=25.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.306	ForexAiTrade (USDJPY#,H1)	2026.06.05 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=24.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.306	ForexAiTrade (USDJPY#,H1)	2026.06.05 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=12.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.308	ForexAiTrade (USDJPY#,H1)	2026.06.05 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.310	ForexAiTrade (USDJPY#,H1)	2026.06.05 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.786 tp=160.290 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.313	ForexAiTrade (USDJPY#,H1)	2026.06.05 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.795 tp=160.276 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.314	ForexAiTrade (USDJPY#,H1)	2026.06.05 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.820 tp=160.266 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.315	ForexAiTrade (USDJPY#,H1)	2026.06.05 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.807 tp=160.241 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.317	ForexAiTrade (USDJPY#,H1)	2026.06.05 08:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.824 tp=160.214 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.318	ForexAiTrade (USDJPY#,H1)	2026.06.05 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.828 tp=160.211 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.320	ForexAiTrade (USDJPY#,H1)	2026.06.05 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.808 tp=160.185 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.322	ForexAiTrade (USDJPY#,H1)	2026.06.05 11:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.817 tp=160.200 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.325	ForexAiTrade (USDJPY#,H1)	2026.06.05 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.326	ForexAiTrade (USDJPY#,H1)	2026.06.05 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.328	ForexAiTrade (USDJPY#,H1)	2026.06.05 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.330	ForexAiTrade (USDJPY#,H1)	2026.06.05 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.339	ForexAiTrade (USDJPY#,H1)	2026.06.05 16:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.058 tp=160.512 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.348	ForexAiTrade (USDJPY#,H1)	2026.06.05 17:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.918 tp=160.583 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.356	ForexAiTrade (USDJPY#,H1)	2026.06.05 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.360	ForexAiTrade (USDJPY#,H1)	2026.06.05 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.364	ForexAiTrade (USDJPY#,H1)	2026.06.05 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.367	ForexAiTrade (USDJPY#,H1)	2026.06.05 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.371	ForexAiTrade (USDJPY#,H1)	2026.06.05 22:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.870 tp=160.740 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.374	ForexAiTrade (USDJPY#,H1)	2026.06.05 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.380	ForexAiTrade (USDJPY#,H1)	2026.06.08 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=210.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.380	ForexAiTrade (USDJPY#,H1)	2026.06.08 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:41:24.382	ForexAiTrade (USDJPY#,H1)	2026.06.08 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.384	ForexAiTrade (USDJPY#,H1)	2026.06.08 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.388	ForexAiTrade (USDJPY#,H1)	2026.06.08 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.392	ForexAiTrade (USDJPY#,H1)	2026.06.08 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.393	ForexAiTrade (USDJPY#,H1)	2026.06.08 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.396	ForexAiTrade (USDJPY#,H1)	2026.06.08 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.397	ForexAiTrade (USDJPY#,H1)	2026.06.08 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.399	ForexAiTrade (USDJPY#,H1)	2026.06.08 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.025 tp=160.722 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.405	ForexAiTrade (USDJPY#,H1)	2026.06.08 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.023 tp=160.724 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.410	ForexAiTrade (USDJPY#,H1)	2026.06.08 11:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.982 tp=160.702 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.415	ForexAiTrade (USDJPY#,H1)	2026.06.08 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.420	ForexAiTrade (USDJPY#,H1)	2026.06.08 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.424	ForexAiTrade (USDJPY#,H1)	2026.06.08 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=8.0 reason=no strategy signal
+CS	0	17:41:24.429	ForexAiTrade (USDJPY#,H1)	2026.06.08 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.433	ForexAiTrade (USDJPY#,H1)	2026.06.08 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.437	ForexAiTrade (USDJPY#,H1)	2026.06.08 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.441	ForexAiTrade (USDJPY#,H1)	2026.06.08 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.445	ForexAiTrade (USDJPY#,H1)	2026.06.08 19:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.864 tp=160.615 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.447	ForexAiTrade (USDJPY#,H1)	2026.06.08 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=8.0 reason=no strategy signal
+CS	0	17:41:24.451	ForexAiTrade (USDJPY#,H1)	2026.06.08 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.453	ForexAiTrade (USDJPY#,H1)	2026.06.08 22:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.984 tp=160.785 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.455	ForexAiTrade (USDJPY#,H1)	2026.06.08 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.459	ForexAiTrade (USDJPY#,H1)	2026.06.09 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=86.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.459	ForexAiTrade (USDJPY#,H1)	2026.06.09 01:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.858 tp=160.620 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.460	ForexAiTrade (USDJPY#,H1)	2026.06.09 02:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.962 tp=160.581 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.461	ForexAiTrade (USDJPY#,H1)	2026.06.09 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.464	ForexAiTrade (USDJPY#,H1)	2026.06.09 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.030 tp=160.635 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.467	ForexAiTrade (USDJPY#,H1)	2026.06.09 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.468	ForexAiTrade (USDJPY#,H1)	2026.06.09 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.471	ForexAiTrade (USDJPY#,H1)	2026.06.09 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.472	ForexAiTrade (USDJPY#,H1)	2026.06.09 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.474	ForexAiTrade (USDJPY#,H1)	2026.06.09 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.978 tp=160.483 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.478	ForexAiTrade (USDJPY#,H1)	2026.06.09 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.985 tp=160.507 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.481	ForexAiTrade (USDJPY#,H1)	2026.06.09 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.484	ForexAiTrade (USDJPY#,H1)	2026.06.09 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.486	ForexAiTrade (USDJPY#,H1)	2026.06.09 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.488	ForexAiTrade (USDJPY#,H1)	2026.06.09 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.490	ForexAiTrade (USDJPY#,H1)	2026.06.09 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.492	ForexAiTrade (USDJPY#,H1)	2026.06.09 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.496	ForexAiTrade (USDJPY#,H1)	2026.06.09 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.500	ForexAiTrade (USDJPY#,H1)	2026.06.09 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.505	ForexAiTrade (USDJPY#,H1)	2026.06.09 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.511	ForexAiTrade (USDJPY#,H1)	2026.06.09 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.515	ForexAiTrade (USDJPY#,H1)	2026.06.09 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.518	ForexAiTrade (USDJPY#,H1)	2026.06.09 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.520	ForexAiTrade (USDJPY#,H1)	2026.06.09 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.523	ForexAiTrade (USDJPY#,H1)	2026.06.10 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=28.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.523	ForexAiTrade (USDJPY#,H1)	2026.06.10 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:41:24.524	ForexAiTrade (USDJPY#,H1)	2026.06.10 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:24.524	ForexAiTrade (USDJPY#,H1)	2026.06.10 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.528	ForexAiTrade (USDJPY#,H1)	2026.06.10 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.530	ForexAiTrade (USDJPY#,H1)	2026.06.10 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.187 tp=160.752 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.532	ForexAiTrade (USDJPY#,H1)	2026.06.10 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.533	ForexAiTrade (USDJPY#,H1)	2026.06.10 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.534	ForexAiTrade (USDJPY#,H1)	2026.06.10 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.535	ForexAiTrade (USDJPY#,H1)	2026.06.10 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.538	ForexAiTrade (USDJPY#,H1)	2026.06.10 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.540	ForexAiTrade (USDJPY#,H1)	2026.06.10 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.542	ForexAiTrade (USDJPY#,H1)	2026.06.10 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.545	ForexAiTrade (USDJPY#,H1)	2026.06.10 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.546	ForexAiTrade (USDJPY#,H1)	2026.06.10 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.550	ForexAiTrade (USDJPY#,H1)	2026.06.10 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.556	ForexAiTrade (USDJPY#,H1)	2026.06.10 16:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.294 tp=160.708 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.560	ForexAiTrade (USDJPY#,H1)	2026.06.10 17:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.235 tp=160.680 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.564	ForexAiTrade (USDJPY#,H1)	2026.06.10 18:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.325 tp=160.788 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.568	ForexAiTrade (USDJPY#,H1)	2026.06.10 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.571	ForexAiTrade (USDJPY#,H1)	2026.06.10 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.574	ForexAiTrade (USDJPY#,H1)	2026.06.10 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.577	ForexAiTrade (USDJPY#,H1)	2026.06.10 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.579	ForexAiTrade (USDJPY#,H1)	2026.06.10 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.582	ForexAiTrade (USDJPY#,H1)	2026.06.11 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=73.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.582	ForexAiTrade (USDJPY#,H1)	2026.06.11 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:41:24.584	ForexAiTrade (USDJPY#,H1)	2026.06.11 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:24.586	ForexAiTrade (USDJPY#,H1)	2026.06.11 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.590	ForexAiTrade (USDJPY#,H1)	2026.06.11 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.592	ForexAiTrade (USDJPY#,H1)	2026.06.11 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.317 tp=160.814 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.594	ForexAiTrade (USDJPY#,H1)	2026.06.11 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.362 tp=160.804 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.596	ForexAiTrade (USDJPY#,H1)	2026.06.11 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.597	ForexAiTrade (USDJPY#,H1)	2026.06.11 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.598	ForexAiTrade (USDJPY#,H1)	2026.06.11 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.600	ForexAiTrade (USDJPY#,H1)	2026.06.11 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.601	ForexAiTrade (USDJPY#,H1)	2026.06.11 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.603	ForexAiTrade (USDJPY#,H1)	2026.06.11 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=11.0 reason=no strategy signal
+CS	0	17:41:24.604	ForexAiTrade (USDJPY#,H1)	2026.06.11 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.606	ForexAiTrade (USDJPY#,H1)	2026.06.11 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.607	ForexAiTrade (USDJPY#,H1)	2026.06.11 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.613	ForexAiTrade (USDJPY#,H1)	2026.06.11 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.617	ForexAiTrade (USDJPY#,H1)	2026.06.11 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.620	ForexAiTrade (USDJPY#,H1)	2026.06.11 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.623	ForexAiTrade (USDJPY#,H1)	2026.06.11 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=11.0 reason=no strategy signal
+CS	0	17:41:24.625	ForexAiTrade (USDJPY#,H1)	2026.06.11 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.631	ForexAiTrade (USDJPY#,H1)	2026.06.11 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.639	ForexAiTrade (USDJPY#,H1)	2026.06.11 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.646	ForexAiTrade (USDJPY#,H1)	2026.06.11 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.650	ForexAiTrade (USDJPY#,H1)	2026.06.12 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=103.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.650	ForexAiTrade (USDJPY#,H1)	2026.06.12 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:41:24.652	ForexAiTrade (USDJPY#,H1)	2026.06.12 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=15.0 reason=no strategy signal
+CS	0	17:41:24.653	ForexAiTrade (USDJPY#,H1)	2026.06.12 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.656	ForexAiTrade (USDJPY#,H1)	2026.06.12 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.658	ForexAiTrade (USDJPY#,H1)	2026.06.12 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.659	ForexAiTrade (USDJPY#,H1)	2026.06.12 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.661	ForexAiTrade (USDJPY#,H1)	2026.06.12 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.663	ForexAiTrade (USDJPY#,H1)	2026.06.12 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.665	ForexAiTrade (USDJPY#,H1)	2026.06.12 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.950 tp=161.119 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.669	ForexAiTrade (USDJPY#,H1)	2026.06.12 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.674	ForexAiTrade (USDJPY#,H1)	2026.06.12 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.681	ForexAiTrade (USDJPY#,H1)	2026.06.12 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.687	ForexAiTrade (USDJPY#,H1)	2026.06.12 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.689	ForexAiTrade (USDJPY#,H1)	2026.06.12 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.692	ForexAiTrade (USDJPY#,H1)	2026.06.12 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.696	ForexAiTrade (USDJPY#,H1)	2026.06.12 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.701	ForexAiTrade (USDJPY#,H1)	2026.06.12 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.708	ForexAiTrade (USDJPY#,H1)	2026.06.12 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.713	ForexAiTrade (USDJPY#,H1)	2026.06.12 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.716	ForexAiTrade (USDJPY#,H1)	2026.06.12 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.718	ForexAiTrade (USDJPY#,H1)	2026.06.12 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.721	ForexAiTrade (USDJPY#,H1)	2026.06.12 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.723	ForexAiTrade (USDJPY#,H1)	2026.06.12 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.725	ForexAiTrade (USDJPY#,H1)	2026.06.15 00:00:30   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=79.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.725	ForexAiTrade (USDJPY#,H1)	2026.06.15 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:41:24.728	ForexAiTrade (USDJPY#,H1)	2026.06.15 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:24.730	ForexAiTrade (USDJPY#,H1)	2026.06.15 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.734	ForexAiTrade (USDJPY#,H1)	2026.06.15 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.736	ForexAiTrade (USDJPY#,H1)	2026.06.15 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.738	ForexAiTrade (USDJPY#,H1)	2026.06.15 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.740	ForexAiTrade (USDJPY#,H1)	2026.06.15 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.741	ForexAiTrade (USDJPY#,H1)	2026.06.15 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.743	ForexAiTrade (USDJPY#,H1)	2026.06.15 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.746	ForexAiTrade (USDJPY#,H1)	2026.06.15 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.750	ForexAiTrade (USDJPY#,H1)	2026.06.15 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.752	ForexAiTrade (USDJPY#,H1)	2026.06.15 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.755	ForexAiTrade (USDJPY#,H1)	2026.06.15 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.756	ForexAiTrade (USDJPY#,H1)	2026.06.15 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.758	ForexAiTrade (USDJPY#,H1)	2026.06.15 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.762	ForexAiTrade (USDJPY#,H1)	2026.06.15 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.764	ForexAiTrade (USDJPY#,H1)	2026.06.15 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.768	ForexAiTrade (USDJPY#,H1)	2026.06.15 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.770	ForexAiTrade (USDJPY#,H1)	2026.06.15 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.772	ForexAiTrade (USDJPY#,H1)	2026.06.15 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.773	ForexAiTrade (USDJPY#,H1)	2026.06.15 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.774	ForexAiTrade (USDJPY#,H1)	2026.06.15 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.777	ForexAiTrade (USDJPY#,H1)	2026.06.15 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.780	ForexAiTrade (USDJPY#,H1)	2026.06.16 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=51.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.781	ForexAiTrade (USDJPY#,H1)	2026.06.16 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=26.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.781	ForexAiTrade (USDJPY#,H1)	2026.06.16 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=15.0 reason=no strategy signal
+CS	0	17:41:24.782	ForexAiTrade (USDJPY#,H1)	2026.06.16 03:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.071 tp=160.578 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.784	ForexAiTrade (USDJPY#,H1)	2026.06.16 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.787	ForexAiTrade (USDJPY#,H1)	2026.06.16 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.788	ForexAiTrade (USDJPY#,H1)	2026.06.16 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.790	ForexAiTrade (USDJPY#,H1)	2026.06.16 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.792	ForexAiTrade (USDJPY#,H1)	2026.06.16 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.794	ForexAiTrade (USDJPY#,H1)	2026.06.16 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.797	ForexAiTrade (USDJPY#,H1)	2026.06.16 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.801	ForexAiTrade (USDJPY#,H1)	2026.06.16 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.804	ForexAiTrade (USDJPY#,H1)	2026.06.16 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.806	ForexAiTrade (USDJPY#,H1)	2026.06.16 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.809	ForexAiTrade (USDJPY#,H1)	2026.06.16 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.810	ForexAiTrade (USDJPY#,H1)	2026.06.16 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.813	ForexAiTrade (USDJPY#,H1)	2026.06.16 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.816	ForexAiTrade (USDJPY#,H1)	2026.06.16 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.819	ForexAiTrade (USDJPY#,H1)	2026.06.16 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.823	ForexAiTrade (USDJPY#,H1)	2026.06.16 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.827	ForexAiTrade (USDJPY#,H1)	2026.06.16 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.829	ForexAiTrade (USDJPY#,H1)	2026.06.16 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.830	ForexAiTrade (USDJPY#,H1)	2026.06.16 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.832	ForexAiTrade (USDJPY#,H1)	2026.06.16 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.834	ForexAiTrade (USDJPY#,H1)	2026.06.17 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=88.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.835	ForexAiTrade (USDJPY#,H1)	2026.06.17 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=38.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.838	ForexAiTrade (USDJPY#,H1)	2026.06.17 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.839	ForexAiTrade (USDJPY#,H1)	2026.06.17 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.841	ForexAiTrade (USDJPY#,H1)	2026.06.17 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.187 tp=160.664 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.842	ForexAiTrade (USDJPY#,H1)	2026.06.17 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.186 tp=160.659 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.843	ForexAiTrade (USDJPY#,H1)	2026.06.17 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.171 tp=160.635 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.844	ForexAiTrade (USDJPY#,H1)	2026.06.17 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.169 tp=160.611 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.845	ForexAiTrade (USDJPY#,H1)	2026.06.17 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.846	ForexAiTrade (USDJPY#,H1)	2026.06.17 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.848	ForexAiTrade (USDJPY#,H1)	2026.06.17 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.849	ForexAiTrade (USDJPY#,H1)	2026.06.17 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.853	ForexAiTrade (USDJPY#,H1)	2026.06.17 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.855	ForexAiTrade (USDJPY#,H1)	2026.06.17 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.856	ForexAiTrade (USDJPY#,H1)	2026.06.17 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.858	ForexAiTrade (USDJPY#,H1)	2026.06.17 15:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.160 tp=160.597 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.860	ForexAiTrade (USDJPY#,H1)	2026.06.17 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.864	ForexAiTrade (USDJPY#,H1)	2026.06.17 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.867	ForexAiTrade (USDJPY#,H1)	2026.06.17 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.870	ForexAiTrade (USDJPY#,H1)	2026.06.17 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.872	ForexAiTrade (USDJPY#,H1)	2026.06.17 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.874	ForexAiTrade (USDJPY#,H1)	2026.06.17 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.884	ForexAiTrade (USDJPY#,H1)	2026.06.17 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.893	ForexAiTrade (USDJPY#,H1)	2026.06.17 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.896	Tester	final balance 9969.21 USD
+CS	0	17:41:24.896	ForexAiTrade (USDJPY#,H1)	2026.06.17 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	17:41:24.905	Tester	USDJPY#,H1: 12779140 ticks, 2848 bars generated. Test passed in 0:00:13.706 (including ticks preprocessing 0:00:00.531).
+CS	0	17:41:24.905	Tester	307 Mb memory used including 0.94 Mb of history data, 256 Mb of tick data
+CS	0	17:41:24.905	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	17:41:24.906	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on USDJPY#,H1 thread finished
+CS	0	17:41:25.027	127.0.0.1	tester forced to close
+CS	0	17:41:25.027	127.0.0.1	prepare for shutdown
+CS	0	17:41:25.027	127.0.0.1	stop immediately
+CS	0	17:41:25.027	127.0.0.1	shutdown finished
+CS	0	17:41:25.238	Server	MetaTester 5 stopped
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	17:41:23.880	ForexAiTrade (USDJPY#,H1)	2026.05.26 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.882	ForexAiTrade (USDJPY#,H1)	2026.05.26 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:23.884	ForexAiTrade (USDJPY#,H1)	2026.05.26 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.886	ForexAiTrade (USDJPY#,H1)	2026.05.26 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.888	ForexAiTrade (USDJPY#,H1)	2026.05.26 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.890	ForexAiTrade (USDJPY#,H1)	2026.05.27 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=38.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.891	ForexAiTrade (USDJPY#,H1)	2026.05.27 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.892	ForexAiTrade (USDJPY#,H1)	2026.05.27 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:23.893	ForexAiTrade (USDJPY#,H1)	2026.05.27 03:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.101 tp=159.533 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.897	ForexAiTrade (USDJPY#,H1)	2026.05.27 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.123 tp=159.581 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.899	ForexAiTrade (USDJPY#,H1)	2026.05.27 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.140 tp=159.603 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.901	ForexAiTrade (USDJPY#,H1)	2026.05.27 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.062 tp=159.540 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.903	ForexAiTrade (USDJPY#,H1)	2026.05.27 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.044 tp=159.508 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.904	ForexAiTrade (USDJPY#,H1)	2026.05.27 08:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.092 tp=159.533 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.905	ForexAiTrade (USDJPY#,H1)	2026.05.27 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.191 tp=159.649 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.908	ForexAiTrade (USDJPY#,H1)	2026.05.27 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.909	ForexAiTrade (USDJPY#,H1)	2026.05.27 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.911	ForexAiTrade (USDJPY#,H1)	2026.05.27 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.914	ForexAiTrade (USDJPY#,H1)	2026.05.27 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.916	ForexAiTrade (USDJPY#,H1)	2026.05.27 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:23.918	ForexAiTrade (USDJPY#,H1)	2026.05.27 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.925	ForexAiTrade (USDJPY#,H1)	2026.05.27 16:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.231 tp=159.772 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.928	ForexAiTrade (USDJPY#,H1)	2026.05.27 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.933	ForexAiTrade (USDJPY#,H1)	2026.05.27 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.937	ForexAiTrade (USDJPY#,H1)	2026.05.27 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.939	ForexAiTrade (USDJPY#,H1)	2026.05.27 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:23.941	ForexAiTrade (USDJPY#,H1)	2026.05.27 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.943	ForexAiTrade (USDJPY#,H1)	2026.05.27 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.944	ForexAiTrade (USDJPY#,H1)	2026.05.27 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.947	ForexAiTrade (USDJPY#,H1)	2026.05.28 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=45.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.947	ForexAiTrade (USDJPY#,H1)	2026.05.28 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=26.0 reason=unsafe regime: spread too wide
+CS	0	17:41:23.948	ForexAiTrade (USDJPY#,H1)	2026.05.28 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=15.0 reason=no strategy signal
+CS	0	17:41:23.949	ForexAiTrade (USDJPY#,H1)	2026.05.28 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.951	ForexAiTrade (USDJPY#,H1)	2026.05.28 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.953	ForexAiTrade (USDJPY#,H1)	2026.05.28 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.954	ForexAiTrade (USDJPY#,H1)	2026.05.28 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.958	ForexAiTrade (USDJPY#,H1)	2026.05.28 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.960	ForexAiTrade (USDJPY#,H1)	2026.05.28 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.961	ForexAiTrade (USDJPY#,H1)	2026.05.28 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:23.963	ForexAiTrade (USDJPY#,H1)	2026.05.28 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.331 tp=159.794 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.967	ForexAiTrade (USDJPY#,H1)	2026.05.28 11:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.319 tp=159.781 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.971	ForexAiTrade (USDJPY#,H1)	2026.05.28 12:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.294 tp=159.762 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.974	ForexAiTrade (USDJPY#,H1)	2026.05.28 13:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.249 tp=159.733 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.977	ForexAiTrade (USDJPY#,H1)	2026.05.28 14:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.300 tp=159.782 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.979	ForexAiTrade (USDJPY#,H1)	2026.05.28 15:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.303 tp=159.761 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.983	ForexAiTrade (USDJPY#,H1)	2026.05.28 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:23.987	ForexAiTrade (USDJPY#,H1)	2026.05.28 17:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.275 tp=159.795 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.996	ForexAiTrade (USDJPY#,H1)	2026.05.28 18:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout direction=sell entry=0.000 sl=159.410 tp=158.881 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:23.999	ForexAiTrade (USDJPY#,H1)	2026.05.28 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.004	ForexAiTrade (USDJPY#,H1)	2026.05.28 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.007	ForexAiTrade (USDJPY#,H1)	2026.05.28 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.010	ForexAiTrade (USDJPY#,H1)	2026.05.28 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.012	ForexAiTrade (USDJPY#,H1)	2026.05.28 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.014	ForexAiTrade (USDJPY#,H1)	2026.05.29 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=32.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.015	ForexAiTrade (USDJPY#,H1)	2026.05.29 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=35.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.016	ForexAiTrade (USDJPY#,H1)	2026.05.29 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=14.0 reason=no strategy signal
+CS	0	17:41:24.017	ForexAiTrade (USDJPY#,H1)	2026.05.29 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.021	ForexAiTrade (USDJPY#,H1)	2026.05.29 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.023	ForexAiTrade (USDJPY#,H1)	2026.05.29 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.024	ForexAiTrade (USDJPY#,H1)	2026.05.29 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.025	ForexAiTrade (USDJPY#,H1)	2026.05.29 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.027	ForexAiTrade (USDJPY#,H1)	2026.05.29 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.028	ForexAiTrade (USDJPY#,H1)	2026.05.29 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=8.0 reason=no strategy signal
+CS	0	17:41:24.030	ForexAiTrade (USDJPY#,H1)	2026.05.29 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.033	ForexAiTrade (USDJPY#,H1)	2026.05.29 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.035	ForexAiTrade (USDJPY#,H1)	2026.05.29 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.037	ForexAiTrade (USDJPY#,H1)	2026.05.29 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.040	ForexAiTrade (USDJPY#,H1)	2026.05.29 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.041	ForexAiTrade (USDJPY#,H1)	2026.05.29 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.044	ForexAiTrade (USDJPY#,H1)	2026.05.29 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.046	ForexAiTrade (USDJPY#,H1)	2026.05.29 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.052	ForexAiTrade (USDJPY#,H1)	2026.05.29 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.058	ForexAiTrade (USDJPY#,H1)	2026.05.29 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.060	ForexAiTrade (USDJPY#,H1)	2026.05.29 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.062	ForexAiTrade (USDJPY#,H1)	2026.05.29 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.065	ForexAiTrade (USDJPY#,H1)	2026.05.29 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.067	ForexAiTrade (USDJPY#,H1)	2026.05.29 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.071	ForexAiTrade (USDJPY#,H1)	2026.06.01 00:00:30   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=67.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.072	ForexAiTrade (USDJPY#,H1)	2026.06.01 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.075	ForexAiTrade (USDJPY#,H1)	2026.06.01 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=13.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.078	ForexAiTrade (USDJPY#,H1)	2026.06.01 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.082	ForexAiTrade (USDJPY#,H1)	2026.06.01 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.085	ForexAiTrade (USDJPY#,H1)	2026.06.01 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.086	ForexAiTrade (USDJPY#,H1)	2026.06.01 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.088	ForexAiTrade (USDJPY#,H1)	2026.06.01 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.089	ForexAiTrade (USDJPY#,H1)	2026.06.01 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.090	ForexAiTrade (USDJPY#,H1)	2026.06.01 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.092	ForexAiTrade (USDJPY#,H1)	2026.06.01 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.096	ForexAiTrade (USDJPY#,H1)	2026.06.01 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.098	ForexAiTrade (USDJPY#,H1)	2026.06.01 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.099	ForexAiTrade (USDJPY#,H1)	2026.06.01 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.100	ForexAiTrade (USDJPY#,H1)	2026.06.01 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.102	ForexAiTrade (USDJPY#,H1)	2026.06.01 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.105	ForexAiTrade (USDJPY#,H1)	2026.06.01 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.112	ForexAiTrade (USDJPY#,H1)	2026.06.01 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.117	ForexAiTrade (USDJPY#,H1)	2026.06.01 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.123	ForexAiTrade (USDJPY#,H1)	2026.06.01 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.127	ForexAiTrade (USDJPY#,H1)	2026.06.01 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.131	ForexAiTrade (USDJPY#,H1)	2026.06.01 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.133	ForexAiTrade (USDJPY#,H1)	2026.06.01 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.137	ForexAiTrade (USDJPY#,H1)	2026.06.01 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.140	ForexAiTrade (USDJPY#,H1)	2026.06.02 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=46.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.141	ForexAiTrade (USDJPY#,H1)	2026.06.02 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=28.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.141	ForexAiTrade (USDJPY#,H1)	2026.06.02 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.142	ForexAiTrade (USDJPY#,H1)	2026.06.02 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.144	ForexAiTrade (USDJPY#,H1)	2026.06.02 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.146	ForexAiTrade (USDJPY#,H1)	2026.06.02 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.147	ForexAiTrade (USDJPY#,H1)	2026.06.02 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.148	ForexAiTrade (USDJPY#,H1)	2026.06.02 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.149	ForexAiTrade (USDJPY#,H1)	2026.06.02 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.150	ForexAiTrade (USDJPY#,H1)	2026.06.02 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.154	ForexAiTrade (USDJPY#,H1)	2026.06.02 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.155	ForexAiTrade (USDJPY#,H1)	2026.06.02 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.159	ForexAiTrade (USDJPY#,H1)	2026.06.02 12:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.613 tp=159.983 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.160	ForexAiTrade (USDJPY#,H1)	2026.06.02 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.161	ForexAiTrade (USDJPY#,H1)	2026.06.02 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.163	ForexAiTrade (USDJPY#,H1)	2026.06.02 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.165	ForexAiTrade (USDJPY#,H1)	2026.06.02 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.167	ForexAiTrade (USDJPY#,H1)	2026.06.02 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.169	ForexAiTrade (USDJPY#,H1)	2026.06.02 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.172	ForexAiTrade (USDJPY#,H1)	2026.06.02 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:41:24.174	ForexAiTrade (USDJPY#,H1)	2026.06.02 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.176	ForexAiTrade (USDJPY#,H1)	2026.06.02 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.178	ForexAiTrade (USDJPY#,H1)	2026.06.02 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.179	ForexAiTrade (USDJPY#,H1)	2026.06.02 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.181	ForexAiTrade (USDJPY#,H1)	2026.06.03 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=79.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.182	ForexAiTrade (USDJPY#,H1)	2026.06.03 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=40.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.183	ForexAiTrade (USDJPY#,H1)	2026.06.03 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.184	ForexAiTrade (USDJPY#,H1)	2026.06.03 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.186	ForexAiTrade (USDJPY#,H1)	2026.06.03 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.188	ForexAiTrade (USDJPY#,H1)	2026.06.03 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.698 tp=160.166 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.189	ForexAiTrade (USDJPY#,H1)	2026.06.03 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.710 tp=160.178 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.191	ForexAiTrade (USDJPY#,H1)	2026.06.03 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.191	ForexAiTrade (USDJPY#,H1)	2026.06.03 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.193	ForexAiTrade (USDJPY#,H1)	2026.06.03 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.195	ForexAiTrade (USDJPY#,H1)	2026.06.03 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.200	ForexAiTrade (USDJPY#,H1)	2026.06.03 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.206	ForexAiTrade (USDJPY#,H1)	2026.06.03 12:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.500 tp=160.251 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.210	ForexAiTrade (USDJPY#,H1)	2026.06.03 13:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.523 tp=160.301 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.213	ForexAiTrade (USDJPY#,H1)	2026.06.03 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.215	ForexAiTrade (USDJPY#,H1)	2026.06.03 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.219	ForexAiTrade (USDJPY#,H1)	2026.06.03 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.223	ForexAiTrade (USDJPY#,H1)	2026.06.03 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.228	ForexAiTrade (USDJPY#,H1)	2026.06.03 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.231	ForexAiTrade (USDJPY#,H1)	2026.06.03 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.235	ForexAiTrade (USDJPY#,H1)	2026.06.03 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.237	ForexAiTrade (USDJPY#,H1)	2026.06.03 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.239	ForexAiTrade (USDJPY#,H1)	2026.06.03 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.241	ForexAiTrade (USDJPY#,H1)	2026.06.03 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.243	ForexAiTrade (USDJPY#,H1)	2026.06.04 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=66.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.244	ForexAiTrade (USDJPY#,H1)	2026.06.04 01:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.719 tp=160.485 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.245	ForexAiTrade (USDJPY#,H1)	2026.06.04 02:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.686 tp=160.365 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.248	ForexAiTrade (USDJPY#,H1)	2026.06.04 03:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.720 tp=160.382 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.252	ForexAiTrade (USDJPY#,H1)	2026.06.04 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.698 tp=160.313 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.254	ForexAiTrade (USDJPY#,H1)	2026.06.04 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.674 tp=160.290 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.256	ForexAiTrade (USDJPY#,H1)	2026.06.04 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.257	ForexAiTrade (USDJPY#,H1)	2026.06.04 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.772 tp=160.351 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.259	ForexAiTrade (USDJPY#,H1)	2026.06.04 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.260	ForexAiTrade (USDJPY#,H1)	2026.06.04 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.263	ForexAiTrade (USDJPY#,H1)	2026.06.04 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.267	ForexAiTrade (USDJPY#,H1)	2026.06.04 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.272	ForexAiTrade (USDJPY#,H1)	2026.06.04 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.276	ForexAiTrade (USDJPY#,H1)	2026.06.04 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.278	ForexAiTrade (USDJPY#,H1)	2026.06.04 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.281	ForexAiTrade (USDJPY#,H1)	2026.06.04 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.286	ForexAiTrade (USDJPY#,H1)	2026.06.04 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.289	ForexAiTrade (USDJPY#,H1)	2026.06.04 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.292	ForexAiTrade (USDJPY#,H1)	2026.06.04 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.294	ForexAiTrade (USDJPY#,H1)	2026.06.04 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.297	ForexAiTrade (USDJPY#,H1)	2026.06.04 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.299	ForexAiTrade (USDJPY#,H1)	2026.06.04 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.301	ForexAiTrade (USDJPY#,H1)	2026.06.04 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.302	ForexAiTrade (USDJPY#,H1)	2026.06.04 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.306	ForexAiTrade (USDJPY#,H1)	2026.06.05 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=25.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.306	ForexAiTrade (USDJPY#,H1)	2026.06.05 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=24.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.306	ForexAiTrade (USDJPY#,H1)	2026.06.05 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=12.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.308	ForexAiTrade (USDJPY#,H1)	2026.06.05 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.310	ForexAiTrade (USDJPY#,H1)	2026.06.05 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.786 tp=160.290 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.313	ForexAiTrade (USDJPY#,H1)	2026.06.05 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.795 tp=160.276 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.314	ForexAiTrade (USDJPY#,H1)	2026.06.05 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.820 tp=160.266 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.315	ForexAiTrade (USDJPY#,H1)	2026.06.05 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.807 tp=160.241 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.317	ForexAiTrade (USDJPY#,H1)	2026.06.05 08:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.824 tp=160.214 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.318	ForexAiTrade (USDJPY#,H1)	2026.06.05 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.828 tp=160.211 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.320	ForexAiTrade (USDJPY#,H1)	2026.06.05 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.808 tp=160.185 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.322	ForexAiTrade (USDJPY#,H1)	2026.06.05 11:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.817 tp=160.200 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.325	ForexAiTrade (USDJPY#,H1)	2026.06.05 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.326	ForexAiTrade (USDJPY#,H1)	2026.06.05 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.328	ForexAiTrade (USDJPY#,H1)	2026.06.05 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.330	ForexAiTrade (USDJPY#,H1)	2026.06.05 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.339	ForexAiTrade (USDJPY#,H1)	2026.06.05 16:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.058 tp=160.512 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.348	ForexAiTrade (USDJPY#,H1)	2026.06.05 17:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.918 tp=160.583 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.356	ForexAiTrade (USDJPY#,H1)	2026.06.05 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.360	ForexAiTrade (USDJPY#,H1)	2026.06.05 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.364	ForexAiTrade (USDJPY#,H1)	2026.06.05 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.367	ForexAiTrade (USDJPY#,H1)	2026.06.05 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.371	ForexAiTrade (USDJPY#,H1)	2026.06.05 22:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.870 tp=160.740 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.374	ForexAiTrade (USDJPY#,H1)	2026.06.05 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.380	ForexAiTrade (USDJPY#,H1)	2026.06.08 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=210.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.380	ForexAiTrade (USDJPY#,H1)	2026.06.08 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:41:24.382	ForexAiTrade (USDJPY#,H1)	2026.06.08 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.384	ForexAiTrade (USDJPY#,H1)	2026.06.08 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.388	ForexAiTrade (USDJPY#,H1)	2026.06.08 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.392	ForexAiTrade (USDJPY#,H1)	2026.06.08 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.393	ForexAiTrade (USDJPY#,H1)	2026.06.08 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.396	ForexAiTrade (USDJPY#,H1)	2026.06.08 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.397	ForexAiTrade (USDJPY#,H1)	2026.06.08 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.399	ForexAiTrade (USDJPY#,H1)	2026.06.08 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.025 tp=160.722 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.405	ForexAiTrade (USDJPY#,H1)	2026.06.08 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.023 tp=160.724 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.410	ForexAiTrade (USDJPY#,H1)	2026.06.08 11:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.982 tp=160.702 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.415	ForexAiTrade (USDJPY#,H1)	2026.06.08 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.420	ForexAiTrade (USDJPY#,H1)	2026.06.08 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.424	ForexAiTrade (USDJPY#,H1)	2026.06.08 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=8.0 reason=no strategy signal
+CS	0	17:41:24.429	ForexAiTrade (USDJPY#,H1)	2026.06.08 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.433	ForexAiTrade (USDJPY#,H1)	2026.06.08 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.437	ForexAiTrade (USDJPY#,H1)	2026.06.08 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.441	ForexAiTrade (USDJPY#,H1)	2026.06.08 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.445	ForexAiTrade (USDJPY#,H1)	2026.06.08 19:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.864 tp=160.615 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.447	ForexAiTrade (USDJPY#,H1)	2026.06.08 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=8.0 reason=no strategy signal
+CS	0	17:41:24.451	ForexAiTrade (USDJPY#,H1)	2026.06.08 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.453	ForexAiTrade (USDJPY#,H1)	2026.06.08 22:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.984 tp=160.785 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.455	ForexAiTrade (USDJPY#,H1)	2026.06.08 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.459	ForexAiTrade (USDJPY#,H1)	2026.06.09 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=86.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.459	ForexAiTrade (USDJPY#,H1)	2026.06.09 01:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.858 tp=160.620 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.460	ForexAiTrade (USDJPY#,H1)	2026.06.09 02:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.962 tp=160.581 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.461	ForexAiTrade (USDJPY#,H1)	2026.06.09 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.464	ForexAiTrade (USDJPY#,H1)	2026.06.09 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.030 tp=160.635 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.467	ForexAiTrade (USDJPY#,H1)	2026.06.09 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.468	ForexAiTrade (USDJPY#,H1)	2026.06.09 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.471	ForexAiTrade (USDJPY#,H1)	2026.06.09 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.472	ForexAiTrade (USDJPY#,H1)	2026.06.09 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.474	ForexAiTrade (USDJPY#,H1)	2026.06.09 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.978 tp=160.483 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.478	ForexAiTrade (USDJPY#,H1)	2026.06.09 10:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.985 tp=160.507 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.481	ForexAiTrade (USDJPY#,H1)	2026.06.09 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.484	ForexAiTrade (USDJPY#,H1)	2026.06.09 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.486	ForexAiTrade (USDJPY#,H1)	2026.06.09 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.488	ForexAiTrade (USDJPY#,H1)	2026.06.09 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.490	ForexAiTrade (USDJPY#,H1)	2026.06.09 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.492	ForexAiTrade (USDJPY#,H1)	2026.06.09 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.496	ForexAiTrade (USDJPY#,H1)	2026.06.09 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.500	ForexAiTrade (USDJPY#,H1)	2026.06.09 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=8.0 reason=no strategy signal
+CS	0	17:41:24.505	ForexAiTrade (USDJPY#,H1)	2026.06.09 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.511	ForexAiTrade (USDJPY#,H1)	2026.06.09 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.515	ForexAiTrade (USDJPY#,H1)	2026.06.09 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.518	ForexAiTrade (USDJPY#,H1)	2026.06.09 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.520	ForexAiTrade (USDJPY#,H1)	2026.06.09 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.523	ForexAiTrade (USDJPY#,H1)	2026.06.10 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=28.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.523	ForexAiTrade (USDJPY#,H1)	2026.06.10 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:41:24.524	ForexAiTrade (USDJPY#,H1)	2026.06.10 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:24.524	ForexAiTrade (USDJPY#,H1)	2026.06.10 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.528	ForexAiTrade (USDJPY#,H1)	2026.06.10 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.530	ForexAiTrade (USDJPY#,H1)	2026.06.10 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.187 tp=160.752 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.532	ForexAiTrade (USDJPY#,H1)	2026.06.10 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.533	ForexAiTrade (USDJPY#,H1)	2026.06.10 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.534	ForexAiTrade (USDJPY#,H1)	2026.06.10 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.535	ForexAiTrade (USDJPY#,H1)	2026.06.10 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=8.0 reason=no strategy signal
+CS	0	17:41:24.538	ForexAiTrade (USDJPY#,H1)	2026.06.10 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.540	ForexAiTrade (USDJPY#,H1)	2026.06.10 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.542	ForexAiTrade (USDJPY#,H1)	2026.06.10 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=8.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.545	ForexAiTrade (USDJPY#,H1)	2026.06.10 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.546	ForexAiTrade (USDJPY#,H1)	2026.06.10 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.550	ForexAiTrade (USDJPY#,H1)	2026.06.10 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.556	ForexAiTrade (USDJPY#,H1)	2026.06.10 16:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.294 tp=160.708 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.560	ForexAiTrade (USDJPY#,H1)	2026.06.10 17:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.235 tp=160.680 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.564	ForexAiTrade (USDJPY#,H1)	2026.06.10 18:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.325 tp=160.788 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.568	ForexAiTrade (USDJPY#,H1)	2026.06.10 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.571	ForexAiTrade (USDJPY#,H1)	2026.06.10 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.574	ForexAiTrade (USDJPY#,H1)	2026.06.10 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.577	ForexAiTrade (USDJPY#,H1)	2026.06.10 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.579	ForexAiTrade (USDJPY#,H1)	2026.06.10 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.582	ForexAiTrade (USDJPY#,H1)	2026.06.11 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=73.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.582	ForexAiTrade (USDJPY#,H1)	2026.06.11 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:41:24.584	ForexAiTrade (USDJPY#,H1)	2026.06.11 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:24.586	ForexAiTrade (USDJPY#,H1)	2026.06.11 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.590	ForexAiTrade (USDJPY#,H1)	2026.06.11 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.592	ForexAiTrade (USDJPY#,H1)	2026.06.11 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.317 tp=160.814 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.594	ForexAiTrade (USDJPY#,H1)	2026.06.11 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.362 tp=160.804 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.596	ForexAiTrade (USDJPY#,H1)	2026.06.11 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.597	ForexAiTrade (USDJPY#,H1)	2026.06.11 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.598	ForexAiTrade (USDJPY#,H1)	2026.06.11 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.600	ForexAiTrade (USDJPY#,H1)	2026.06.11 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.601	ForexAiTrade (USDJPY#,H1)	2026.06.11 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.603	ForexAiTrade (USDJPY#,H1)	2026.06.11 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=11.0 reason=no strategy signal
+CS	0	17:41:24.604	ForexAiTrade (USDJPY#,H1)	2026.06.11 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.606	ForexAiTrade (USDJPY#,H1)	2026.06.11 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.607	ForexAiTrade (USDJPY#,H1)	2026.06.11 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.613	ForexAiTrade (USDJPY#,H1)	2026.06.11 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.617	ForexAiTrade (USDJPY#,H1)	2026.06.11 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.620	ForexAiTrade (USDJPY#,H1)	2026.06.11 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.623	ForexAiTrade (USDJPY#,H1)	2026.06.11 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=11.0 reason=no strategy signal
+CS	0	17:41:24.625	ForexAiTrade (USDJPY#,H1)	2026.06.11 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.631	ForexAiTrade (USDJPY#,H1)	2026.06.11 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.639	ForexAiTrade (USDJPY#,H1)	2026.06.11 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.646	ForexAiTrade (USDJPY#,H1)	2026.06.11 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.650	ForexAiTrade (USDJPY#,H1)	2026.06.12 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=103.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.650	ForexAiTrade (USDJPY#,H1)	2026.06.12 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:41:24.652	ForexAiTrade (USDJPY#,H1)	2026.06.12 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=15.0 reason=no strategy signal
+CS	0	17:41:24.653	ForexAiTrade (USDJPY#,H1)	2026.06.12 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.656	ForexAiTrade (USDJPY#,H1)	2026.06.12 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.658	ForexAiTrade (USDJPY#,H1)	2026.06.12 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.659	ForexAiTrade (USDJPY#,H1)	2026.06.12 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.661	ForexAiTrade (USDJPY#,H1)	2026.06.12 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.663	ForexAiTrade (USDJPY#,H1)	2026.06.12 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.665	ForexAiTrade (USDJPY#,H1)	2026.06.12 09:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=159.950 tp=161.119 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.669	ForexAiTrade (USDJPY#,H1)	2026.06.12 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.674	ForexAiTrade (USDJPY#,H1)	2026.06.12 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.681	ForexAiTrade (USDJPY#,H1)	2026.06.12 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.687	ForexAiTrade (USDJPY#,H1)	2026.06.12 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.689	ForexAiTrade (USDJPY#,H1)	2026.06.12 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.692	ForexAiTrade (USDJPY#,H1)	2026.06.12 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.696	ForexAiTrade (USDJPY#,H1)	2026.06.12 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.701	ForexAiTrade (USDJPY#,H1)	2026.06.12 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.708	ForexAiTrade (USDJPY#,H1)	2026.06.12 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.713	ForexAiTrade (USDJPY#,H1)	2026.06.12 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.716	ForexAiTrade (USDJPY#,H1)	2026.06.12 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.718	ForexAiTrade (USDJPY#,H1)	2026.06.12 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.721	ForexAiTrade (USDJPY#,H1)	2026.06.12 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.723	ForexAiTrade (USDJPY#,H1)	2026.06.12 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.725	ForexAiTrade (USDJPY#,H1)	2026.06.15 00:00:30   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=79.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.725	ForexAiTrade (USDJPY#,H1)	2026.06.15 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:41:24.728	ForexAiTrade (USDJPY#,H1)	2026.06.15 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=13.0 reason=no strategy signal
+CS	0	17:41:24.730	ForexAiTrade (USDJPY#,H1)	2026.06.15 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.734	ForexAiTrade (USDJPY#,H1)	2026.06.15 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.736	ForexAiTrade (USDJPY#,H1)	2026.06.15 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.738	ForexAiTrade (USDJPY#,H1)	2026.06.15 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.740	ForexAiTrade (USDJPY#,H1)	2026.06.15 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.741	ForexAiTrade (USDJPY#,H1)	2026.06.15 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.743	ForexAiTrade (USDJPY#,H1)	2026.06.15 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.746	ForexAiTrade (USDJPY#,H1)	2026.06.15 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.750	ForexAiTrade (USDJPY#,H1)	2026.06.15 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.752	ForexAiTrade (USDJPY#,H1)	2026.06.15 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.755	ForexAiTrade (USDJPY#,H1)	2026.06.15 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.756	ForexAiTrade (USDJPY#,H1)	2026.06.15 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.758	ForexAiTrade (USDJPY#,H1)	2026.06.15 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.762	ForexAiTrade (USDJPY#,H1)	2026.06.15 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.764	ForexAiTrade (USDJPY#,H1)	2026.06.15 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.768	ForexAiTrade (USDJPY#,H1)	2026.06.15 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.770	ForexAiTrade (USDJPY#,H1)	2026.06.15 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.772	ForexAiTrade (USDJPY#,H1)	2026.06.15 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.773	ForexAiTrade (USDJPY#,H1)	2026.06.15 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.774	ForexAiTrade (USDJPY#,H1)	2026.06.15 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.777	ForexAiTrade (USDJPY#,H1)	2026.06.15 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.780	ForexAiTrade (USDJPY#,H1)	2026.06.16 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=51.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.781	ForexAiTrade (USDJPY#,H1)	2026.06.16 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=26.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.781	ForexAiTrade (USDJPY#,H1)	2026.06.16 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=15.0 reason=no strategy signal
+CS	0	17:41:24.782	ForexAiTrade (USDJPY#,H1)	2026.06.16 03:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.071 tp=160.578 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.784	ForexAiTrade (USDJPY#,H1)	2026.06.16 04:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.787	ForexAiTrade (USDJPY#,H1)	2026.06.16 05:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.788	ForexAiTrade (USDJPY#,H1)	2026.06.16 06:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.790	ForexAiTrade (USDJPY#,H1)	2026.06.16 07:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.792	ForexAiTrade (USDJPY#,H1)	2026.06.16 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.794	ForexAiTrade (USDJPY#,H1)	2026.06.16 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=10.0 reason=no strategy signal
+CS	0	17:41:24.797	ForexAiTrade (USDJPY#,H1)	2026.06.16 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.801	ForexAiTrade (USDJPY#,H1)	2026.06.16 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.804	ForexAiTrade (USDJPY#,H1)	2026.06.16 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.806	ForexAiTrade (USDJPY#,H1)	2026.06.16 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.809	ForexAiTrade (USDJPY#,H1)	2026.06.16 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.810	ForexAiTrade (USDJPY#,H1)	2026.06.16 15:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.813	ForexAiTrade (USDJPY#,H1)	2026.06.16 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=sideway spread=10.0 reason=no strategy signal
+CS	0	17:41:24.816	ForexAiTrade (USDJPY#,H1)	2026.06.16 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.819	ForexAiTrade (USDJPY#,H1)	2026.06.16 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.823	ForexAiTrade (USDJPY#,H1)	2026.06.16 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.827	ForexAiTrade (USDJPY#,H1)	2026.06.16 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.829	ForexAiTrade (USDJPY#,H1)	2026.06.16 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.830	ForexAiTrade (USDJPY#,H1)	2026.06.16 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=10.0 reason=no strategy signal
+CS	0	17:41:24.832	ForexAiTrade (USDJPY#,H1)	2026.06.16 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.834	ForexAiTrade (USDJPY#,H1)	2026.06.17 00:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=88.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.835	ForexAiTrade (USDJPY#,H1)	2026.06.17 01:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=38.0 reason=unsafe regime: spread too wide
+CS	0	17:41:24.838	ForexAiTrade (USDJPY#,H1)	2026.06.17 02:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.839	ForexAiTrade (USDJPY#,H1)	2026.06.17 03:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.841	ForexAiTrade (USDJPY#,H1)	2026.06.17 04:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.187 tp=160.664 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.842	ForexAiTrade (USDJPY#,H1)	2026.06.17 05:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.186 tp=160.659 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.843	ForexAiTrade (USDJPY#,H1)	2026.06.17 06:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.171 tp=160.635 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.844	ForexAiTrade (USDJPY#,H1)	2026.06.17 07:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.169 tp=160.611 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.845	ForexAiTrade (USDJPY#,H1)	2026.06.17 08:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.846	ForexAiTrade (USDJPY#,H1)	2026.06.17 09:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.848	ForexAiTrade (USDJPY#,H1)	2026.06.17 10:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.849	ForexAiTrade (USDJPY#,H1)	2026.06.17 11:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=10.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.853	ForexAiTrade (USDJPY#,H1)	2026.06.17 12:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.855	ForexAiTrade (USDJPY#,H1)	2026.06.17 13:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.856	ForexAiTrade (USDJPY#,H1)	2026.06.17 14:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=12.0 reason=no strategy signal
+CS	0	17:41:24.858	ForexAiTrade (USDJPY#,H1)	2026.06.17 15:00:00   Signal blocked: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend direction=buy entry=0.000 sl=160.160 tp=160.597 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:41:24.860	ForexAiTrade (USDJPY#,H1)	2026.06.17 16:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.864	ForexAiTrade (USDJPY#,H1)	2026.06.17 17:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.867	ForexAiTrade (USDJPY#,H1)	2026.06.17 18:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.870	ForexAiTrade (USDJPY#,H1)	2026.06.17 19:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=unsafe spread=11.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:41:24.872	ForexAiTrade (USDJPY#,H1)	2026.06.17 20:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.874	ForexAiTrade (USDJPY#,H1)	2026.06.17 21:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.884	ForexAiTrade (USDJPY#,H1)	2026.06.17 22:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=breakout spread=11.0 reason=no strategy signal
+CS	0	17:41:24.893	ForexAiTrade (USDJPY#,H1)	2026.06.17 23:00:00   No trade: actual=USDJPY# canonical=USDJPY timeframe=PERIOD_H1 regime=trend spread=11.0 reason=no strategy signal
+CS	0	17:41:24.896	Tester	final balance 9969.21 USD
+CS	0	17:41:24.896	ForexAiTrade (USDJPY#,H1)	2026.06.17 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	17:41:24.905	Tester	USDJPY#,H1: 12779140 ticks, 2848 bars generated. Test passed in 0:00:13.706 (including ticks preprocessing 0:00:00.531).
+CS	0	17:41:24.905	Tester	307 Mb memory used including 0.94 Mb of history data, 256 Mb of tick data
+CS	0	17:41:24.905	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	17:41:24.906	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on USDJPY#,H1 thread finished
+CS	0	17:41:25.027	127.0.0.1	tester forced to close
+CS	0	17:41:25.027	127.0.0.1	prepare for shutdown
+CS	0	17:41:25.027	127.0.0.1	stop immediately
+CS	0	17:41:25.027	127.0.0.1	shutdown finished
+CS	0	17:41:25.238	Server	MetaTester 5 stopped

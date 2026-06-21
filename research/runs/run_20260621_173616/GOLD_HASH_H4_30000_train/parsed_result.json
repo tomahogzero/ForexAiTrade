@@ -1,0 +1,40 @@
+{
+  "symbol": "GOLD#",
+  "timeframe": "H4",
+  "deposit": 30000,
+  "net_profit": 135.85,
+  "profit_factor": 2.12,
+  "expected_payoff": 4.53,
+  "absolute_drawdown": null,
+  "max_drawdown": 50.21,
+  "relative_drawdown": 0.17,
+  "total_trades": 30,
+  "long_trades": 13.0,
+  "short_trades": 17.0,
+  "win_rate": 21.0,
+  "largest_win": 29.57,
+  "largest_loss": -14.92,
+  "consecutive_losses": 2,
+  "drawdown_relative": 0.17,
+  "report_period_from": "2023-01-01",
+  "report_period_to": "2024-12-31",
+  "source_report": "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_173616\\GOLD_HASH_H4_30000_train\\mt5_report.htm",
+  "raw_pair_count": 241,
+  "metadata_match": true,
+  "metadata_mismatches": [],
+  "case": {
+    "run_id": "run_20260621_173616",
+    "case_id": "GOLD_HASH_H4_30000_train",
+    "base_case_id": "GOLD_HASH_H4_30000",
+    "phase": "train",
+    "actual_symbol": "GOLD#",
+    "canonical_symbol": "GOLD",
+    "timeframe": "H4",
+    "period": {
+      "from": "2023-01-01",
+      "to": "2024-12-31"
+    },
+    "deposit": 30000,
+    "risk_percent": 0.05
+  }
+}

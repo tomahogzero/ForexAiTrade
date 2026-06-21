@@ -1,0 +1,23 @@
+﻿[
+    {
+        "message":  "MT5 report file was not created.",
+        "execution_status":  "NO_REPORT",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260619_221044\\EURUSD_H1_10000_out_of_sample\\mt5_report",
+        "case_id":  "EURUSD_H1_10000_out_of_sample",
+        "run_id":  "run_20260619_221044"
+    },
+    {
+        "message":  "MT5 report file was not created.",
+        "execution_status":  "NO_REPORT",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260619_221044\\USDJPY_HASH_H1_10000_out_of_sample\\mt5_report",
+        "case_id":  "USDJPY_HASH_H1_10000_out_of_sample",
+        "run_id":  "run_20260619_221044"
+    },
+    {
+        "message":  "MT5 report file was not created.",
+        "execution_status":  "NO_REPORT",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260619_221044\\GOLD_HASH_H4_10000_out_of_sample\\mt5_report",
+        "case_id":  "GOLD_HASH_H4_10000_out_of_sample",
+        "run_id":  "run_20260619_221044"
+    }
+]

@@ -1,0 +1,21 @@
+﻿{
+    "run_id":  "run_20260621_214917",
+    "case_id":  "EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_out_of_sample",
+    "base_case_id":  "EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000",
+    "phase":  "out_of_sample",
+    "actual_symbol":  "EURUSD",
+    "canonical_symbol":  "EURUSD",
+    "timeframe":  "H1",
+    "period":  {
+                   "from":  "2026-01-01",
+                   "to":  "2026-06-18"
+               },
+    "deposit":  10000,
+    "risk_percent":  0.10,
+    "exit_variant":  "",
+    "risk_gate_variant":  "no_losing_streak_gate",
+    "risk_gate_mode":  "DIAGNOSTIC_NO_LOSING_STREAK_GATE",
+    "losing_streak_cooldown_bars":  24,
+    "use_trailing_stop":  true,
+    "trailing_atr_multiplier":  1.5
+}

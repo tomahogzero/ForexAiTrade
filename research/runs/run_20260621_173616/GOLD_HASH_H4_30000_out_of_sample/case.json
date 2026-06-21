@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "run_20260621_173616",
+    "case_id":  "GOLD_HASH_H4_30000_out_of_sample",
+    "base_case_id":  "GOLD_HASH_H4_30000",
+    "phase":  "out_of_sample",
+    "actual_symbol":  "GOLD#",
+    "canonical_symbol":  "GOLD",
+    "timeframe":  "H4",
+    "period":  {
+                   "from":  "2026-01-01",
+                   "to":  "2026-06-18"
+               },
+    "deposit":  30000,
+    "risk_percent":  0.05
+}

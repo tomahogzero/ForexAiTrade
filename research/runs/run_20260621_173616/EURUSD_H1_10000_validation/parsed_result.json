@@ -1,0 +1,40 @@
+{
+  "symbol": "EURUSD",
+  "timeframe": "H1",
+  "deposit": 10000,
+  "net_profit": 61.38,
+  "profit_factor": 1.16,
+  "expected_payoff": 0.58,
+  "absolute_drawdown": null,
+  "max_drawdown": 63.21,
+  "relative_drawdown": 0.63,
+  "total_trades": 105,
+  "long_trades": 59.0,
+  "short_trades": 46.0,
+  "win_rate": 60.0,
+  "largest_win": 20.4,
+  "largest_loss": -10.45,
+  "consecutive_losses": 4,
+  "drawdown_relative": 0.63,
+  "report_period_from": "2025-01-01",
+  "report_period_to": "2025-12-31",
+  "source_report": "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_173616\\EURUSD_H1_10000_validation\\mt5_report.htm",
+  "raw_pair_count": 664,
+  "metadata_match": true,
+  "metadata_mismatches": [],
+  "case": {
+    "run_id": "run_20260621_173616",
+    "case_id": "EURUSD_H1_10000_validation",
+    "base_case_id": "EURUSD_H1_10000",
+    "phase": "validation",
+    "actual_symbol": "EURUSD",
+    "canonical_symbol": "EURUSD",
+    "timeframe": "H1",
+    "period": {
+      "from": "2025-01-01",
+      "to": "2025-12-31"
+    },
+    "deposit": 10000,
+    "risk_percent": 0.1
+  }
+}

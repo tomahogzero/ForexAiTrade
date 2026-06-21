@@ -1,0 +1,387 @@
+﻿===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\logs\20260619.log =====
+NS	0	11:16:37.990	LiveUpdate	start "C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\liveupdate\terminal64.exe" /update /path:"C:\Program Files\XM Global MT5" 
+EJ	0	11:16:43.466	Terminal	exit with code 0
+PH	0	11:16:43.472	Terminal	stopped with 0
+HS	0	11:16:43.475	Terminal	shutdown with 0
+NF	0	11:17:56.063	Terminal	updating C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5 folder
+HJ	0	11:18:05.447	Terminal	23 files updated
+QJ	0	11:18:07.783	Terminal	XM Global MT5 x64 build 5200 started for XM Global Limited
+FG	0	11:18:07.783	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 6 / 382 Gb disk, UAC, GMT+7
+CH	0	11:18:07.783	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+GK	0	11:18:08.313	HistoryCenter	delete old files from C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\bases\XMGlobal-MT5 8\history\GOLD, last access time 2025.07.05 08:34
+IR	0	11:18:16.085	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+GH	0	11:18:16.408	LiveUpdate	new version build 5660 (IDE: 5660, Tester: 5660) is available
+NK	2	11:18:16.412	Network	'321031266': authorization on XMGlobal-MT5 8 failed (Invalid account)
+EQ	0	11:18:36.453	LiveUpdate	'mt5clw64' downloaded (54954 kb)
+QG	0	11:18:54.593	LiveUpdate	'mt5clwide64' downloaded (43212 kb)
+JM	0	11:18:56.750	LiveUpdate	'mt5clwtst64' downloaded (10633 kb)
+RD	0	11:18:56.904	LiveUpdate	downloaded successfully
+KS	0	11:18:57.911	LiveUpdate	new version build 5833 (IDE: 5833, Tester: 5833) is available
+QL	0	11:19:03.789	LiveUpdate	'mt5clw64' downloaded (54247 kb)
+EJ	0	11:19:07.545	LiveUpdate	'mt5clwide64' downloaded (43748 kb)
+OS	0	11:19:08.498	LiveUpdate	'mt5clwtst64' downloaded (10659 kb)
+JJ	0	11:19:08.500	LiveUpdate	downloaded successfully
+KE	0	12:12:07.936	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+IF	0	12:12:07.938	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+GP	2	12:12:08.459	Network	'321031266': authorization on XMGlobal-MT5 8 failed (Invalid account)
+PD	0	12:12:36.872	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+GQ	0	12:12:36.873	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+GS	2	12:12:37.046	Network	'321031266': authorization on XMGlobal-MT5 8 failed (Invalid account)
+CI	0	13:51:30.161	Broker	XMGlobal-MT5 11: no demo/preliminary groups on server side
+QD	0	13:51:30.195	Broker	XMGlobal-MT5 12: no demo/preliminary groups on server side
+EL	0	13:51:30.198	Broker	XMGlobal-MT5 8: no demo/preliminary groups on server side
+IJ	0	13:51:30.201	Broker	XMGlobal-MT5 7: no demo/preliminary groups on server side
+NG	0	13:51:30.207	Broker	XMGlobal-MT5 4: no demo/preliminary groups on server side
+IN	0	13:51:30.215	Broker	XMGlobal-MT5 13: no demo/preliminary groups on server side
+MI	0	13:51:30.223	Broker	XMGlobal-MT5 14: no demo/preliminary groups on server side
+NS	0	13:51:30.229	Broker	XMGlobal-MT5 15: no demo/preliminary groups on server side
+EN	0	13:51:30.237	Broker	XMGlobal-MT5 15: no demo/preliminary groups on server side
+LI	0	13:51:30.244	Broker	XMGlobal-MT5 10: no demo/preliminary groups on server side
+CS	0	13:51:30.252	Broker	XMGlobal-MT5 10: no demo/preliminary groups on server side
+KM	0	13:51:30.260	Broker	XMGlobal-MT5 2: no demo/preliminary groups on server side
+DK	0	13:51:30.266	Broker	XMGlobal-MT5 5: no demo/preliminary groups on server side
+QP	0	13:51:30.273	Broker	XMGlobal-MT5 6: no demo/preliminary groups on server side
+GN	0	13:51:30.281	Broker	XMGlobal-MT5 9: no demo/preliminary groups on server side
+GK	0	13:51:30.289	Broker	XMGlobal-MT5 9: no demo/preliminary groups on server side
+KP	0	13:51:30.295	Broker	XMGlobal-MT5: no demo/preliminary groups on server side
+NO	0	13:51:30.302	Broker	XMGlobal-MT5: no demo/preliminary groups on server side
+MI	0	13:51:45.389	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+IR	0	13:51:45.402	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+PH	0	13:51:45.538	LiveUpdate	new version build 5660 (IDE: 5660, Tester: 5660) is available
+MH	2	13:51:45.918	Network	'168886591': authorization on XMGlobal-MT5 10 failed (Invalid account)
+KM	0	13:51:49.092	LiveUpdate	start "C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\liveupdate\terminal64.exe" /update /path:"C:\Program Files\XM Global MT5" 
+JF	2	13:51:53.053	Experts	initializing of EA_ScalperM5M15 (GOLDm#,H4) failed with code 0 (execution canceled)
+OF	0	13:51:53.058	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+EO	0	13:51:56.492	Terminal	exit with code 0
+KD	0	13:51:56.649	Terminal	stopped with 0
+OP	0	13:51:56.657	Terminal	shutdown with 0
+OR	0	13:53:13.816	Terminal	updating C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5 folder
+ON	0	13:53:13.816	Terminal	404 files updated
+EI	0	13:53:16.164	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+ER	0	13:53:16.164	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 3 / 31 Gb memory, 6 / 382 Gb disk, UAC, GMT+7
+QD	0	13:53:16.164	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+DL	2	13:53:27.651	Network	'321031266': authorization on XMGlobal-MT5 8 failed (Invalid account)
+IL	0	13:53:27.682	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+QG	0	13:56:16.773	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+LS	0	13:56:16.774	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+PQ	2	13:56:16.831	Network	'168886591': authorization on XMGlobal-MT5 10 failed (Invalid account)
+OD	2	13:57:46.614	Experts	initializing of EA_ScalperM5M15 (GOLDm#,H4) failed with code 0 (execution canceled)
+NH	0	13:57:46.620	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+EM	0	13:57:46.621	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+ID	2	13:57:46.704	Network	'168886591': authorization on XMGlobal-MT5 10 failed (Invalid account)
+FK	2	13:57:57.766	Network	'321031266': authorization on XMGlobal-MT5 8 failed (Invalid account)
+IO	0	13:57:57.799	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+KH	0	13:57:57.801	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+OI	2	13:58:20.293	Network	'168886591': authorization on XMGlobal-MT5 10 failed (Invalid account)
+NN	0	13:58:20.331	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+CK	0	13:58:20.332	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+LP	0	13:58:32.518	Accounts	account 'XMGlobal-MT5 8' - '321031266' has been deleted
+IR	2	13:58:32.522	Experts	initializing of EA_ScalperM5M15 (GOLDm#,H4) failed with code 0 (execution canceled)
+OR	0	13:58:32.528	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+RG	0	13:58:32.532	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+GS	2	13:59:07.424	Experts	initializing of EA_ScalperM5M15 (GOLDm#,H4) failed with code 0 (execution canceled)
+HS	0	13:59:07.430	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+IG	0	13:59:07.433	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) loaded successfully
+CM	2	13:59:07.833	Network	'168886591': authorization on XMGlobal-MT5 10 failed (Invalid account)
+MP	2	13:59:16.871	Experts	initializing of EA_ScalperM5M15 (GOLDm#,H4) failed with code 0 (execution canceled)
+OD	0	13:59:16.877	Experts	expert EA_ScalperM5M15 (GOLDm#,H4) removed
+KM	2	14:01:09.001	Network	'168886591': authorization on XMGlobal-MT5 6 failed (Invalid account)
+OQ	2	14:01:15.082	Network	'168886591': authorization on XMGlobal-MT5 6 failed (Invalid account)
+EK	0	14:02:19.230	Accounts	account 'XMGlobal-MT5 10' - '168886591' has been deleted
+HF	0	14:02:23.310	Accounts	account 'XMGlobal-MT5 6' - '168886591' has been deleted
+HP	0	14:04:34.048	Broker	XMGlobal-MT5 15: no demo/preliminary groups on server side
+KK	0	14:04:34.053	Broker	XMGlobal-MT5 14: no demo/preliminary groups on server side
+FE	0	14:04:34.057	Broker	XMGlobal-MT5 11: no demo/preliminary groups on server side
+RS	0	14:04:34.064	Broker	XMGlobal-MT5 2: no demo/preliminary groups on server side
+EJ	0	14:04:34.073	Broker	XMGlobal-MT5 10: no demo/preliminary groups on server side
+EE	0	14:04:34.084	Broker	XMGlobal-MT5 12: no demo/preliminary groups on server side
+CP	0	14:04:34.093	Broker	XMGlobal-MT5 10: no demo/preliminary groups on server side
+FJ	0	14:04:34.101	Broker	XMGlobal-MT5 13: no demo/preliminary groups on server side
+EF	0	14:04:34.114	Broker	XMGlobal-MT5 9: no demo/preliminary groups on server side
+DL	0	14:04:34.131	Broker	XMGlobal-MT5 5: no demo/preliminary groups on server side
+PI	0	14:04:34.140	Broker	XMGlobal-MT5 7: no demo/preliminary groups on server side
+JG	0	14:04:34.152	Broker	XMGlobal-MT5 6: no demo/preliminary groups on server side
+KL	0	14:04:34.157	Broker	XMGlobal-MT5 4: no demo/preliminary groups on server side
+FJ	0	14:04:34.185	Broker	XMGlobal-MT5 8: no demo/preliminary groups on server side
+GF	0	14:04:34.193	Broker	XMGlobal-MT5: no demo/preliminary groups on server side
+FL	0	14:04:34.202	Broker	XMGlobal-MT5: no demo/preliminary groups on server side
+QF	2	14:05:46.903	Network	'168886591': authorization on XMGlobal-MT5 8 failed (Invalid account)
+PJ	2	14:06:23.029	Network	'168886591': authorization on XMGlobal-MT5 8 failed (Invalid account)
+QR	0	14:06:48.671	Accounts	account 'XMGlobal-MT5 8' - '168886591' has been deleted
+IK	0	14:06:59.109	Broker	XMGlobal-MT5 15: no demo/preliminary groups on server side
+ME	0	14:06:59.118	Broker	XMGlobal-MT5 2: no demo/preliminary groups on server side
+MP	0	14:06:59.120	Broker	XMGlobal-MT5 10: no demo/preliminary groups on server side
+CK	0	14:06:59.324	Broker	XMGlobal-MT5 12: no demo/preliminary groups on server side
+RE	0	14:06:59.327	Broker	XMGlobal-MT5 14: no demo/preliminary groups on server side
+QP	0	14:06:59.334	Broker	XMGlobal-MT5 11: no demo/preliminary groups on server side
+LK	0	14:06:59.380	Broker	XMGlobal-MT5 13: no demo/preliminary groups on server side
+QF	0	14:06:59.382	Broker	XMGlobal-MT5 9: no demo/preliminary groups on server side
+HS	0	14:06:59.402	Broker	XMGlobal-MT5 5: no demo/preliminary groups on server side
+MI	0	14:06:59.408	Broker	XMGlobal-MT5 8: no demo/preliminary groups on server side
+PF	0	14:06:59.409	Broker	XMGlobal-MT5 6: no demo/preliminary groups on server side
+QM	0	14:06:59.415	Broker	XMGlobal-MT5: no demo/preliminary groups on server side
+EI	0	14:06:59.422	Broker	XMGlobal-MT5 4: no demo/preliminary groups on server side
+GF	0	14:06:59.428	Broker	XMGlobal-MT5: no demo/preliminary groups on server side
+NM	0	14:06:59.435	Broker	XMGlobal-MT5 7: no demo/preliminary groups on server side
+II	0	14:07:31.817	Network	'168886591': authorized on XMGlobal-MT5 2
+CS	0	14:07:32.807	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FS	0	14:07:32.807	Network	'168886591': trading has been enabled - hedging mode
+JN	0	14:07:33.674	Network	'168886591': scanning network for access points
+IH	0	14:08:10.781	Network	'168886591': scanning network finished
+OP	0	17:40:04.325	MQL5 debugger	connected
+NL	0	17:40:04.650	Experts	expert ForexAiTrade (EURUSD,H1) loaded successfully
+CQ	0	17:40:15.880	Experts	automated trading is enabled
+FE	0	17:41:20.798	MQL5 debugger	disconnected
+QI	0	17:41:21.042	Experts	expert ForexAiTrade (EURUSD,H1) removed
+LL	0	17:49:47.849	Terminal	exit with code 0
+QI	0	17:49:47.854	Network	'168886591': disconnected from XMGlobal-MT5 2
+OS	0	17:49:52.396	Terminal	stopped with 0
+LJ	0	17:49:52.402	Terminal	shutdown with 0
+HM	0	17:49:52.812	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+DF	0	17:49:52.812	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 5 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+LH	0	17:49:52.812	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+ME	0	17:49:58.357	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 213.07 ms, build 5660)
+OG	0	17:49:58.357	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 10:07:31
+RD	0	17:49:59.082	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CG	0	17:49:59.082	Network	'168886591': trading has been enabled - hedging mode
+QR	0	20:07:34.860	Network	'168886591': scanning network for access points
+HG	0	20:08:09.149	Network	'168886591': scanning network finished
+PM	0	21:11:36.730	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+FP	0	21:12:08.238	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+ID	0	21:21:12.091	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+JP	0	21:21:12.091	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+OJ	0	21:22:11.326	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-212209\mt5_smoke_test.ini"
+OL	0	21:22:16.204	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+KI	0	21:22:16.204	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 3 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+KJ	0	21:22:16.204	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+GD	0	21:22:16.204	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-212209\mt5_smoke_test.ini
+PG	0	21:22:27.596	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+CO	0	21:22:27.806	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+MM	0	21:22:28.096	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+KL	0	21:22:28.096	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 13:49:57
+KO	0	21:22:28.979	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+JL	0	21:22:28.979	Network	'168886591': trading has been enabled - hedging mode
+OF	0	21:22:29.913	Tester	automatical testing started
+NS	0	21:22:30.735	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 2.67 ms via 'VPS London LD6 05' instead of 210.90 ms
+KS	0	21:29:06.335	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+PI	0	21:29:06.335	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+CL	0	21:29:09.052	Terminal	exit with code 0
+NI	0	21:29:09.056	Network	'168886591': disconnected from XMGlobal-MT5 2
+HS	0	21:29:09.183	Terminal	stopped with 0
+GJ	0	21:29:09.189	Terminal	shutdown with 0
+HL	0	21:29:14.599	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-212912\mt5_smoke_test.ini"
+KQ	0	21:29:14.700	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+PJ	0	21:29:14.701	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 3 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+HL	0	21:29:14.701	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+KF	0	21:29:14.701	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-212912\mt5_smoke_test.ini
+KE	0	21:29:26.188	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+QI	0	21:29:26.327	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+CS	0	21:29:26.895	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+ON	0	21:29:26.895	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:22:27
+HM	0	21:29:27.727	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+MQ	0	21:29:27.727	Network	'168886591': trading has been enabled - hedging mode
+EK	0	21:29:28.571	Tester	automatical testing started
+QM	0	21:29:29.573	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+IQ	0	21:30:44.584	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+FK	0	21:30:44.584	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+MJ	0	21:30:47.759	Terminal	exit with code 0
+CK	0	21:30:47.767	Network	'168886591': disconnected from XMGlobal-MT5 2
+QQ	0	21:30:47.917	Terminal	stopped with 0
+GE	0	21:30:47.925	Terminal	shutdown with 0
+EN	0	21:30:58.520	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213057\mt5_smoke_test.ini"
+PS	0	21:30:58.600	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+RL	0	21:30:58.601	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+KO	0	21:30:58.601	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+OQ	0	21:30:58.601	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213057\mt5_smoke_test.ini
+OR	0	21:31:08.950	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+QK	0	21:31:09.125	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+JQ	0	21:31:09.759	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+DS	0	21:31:09.759	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:29:26
+RS	0	21:31:10.643	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CS	0	21:31:10.643	Network	'168886591': trading has been enabled - hedging mode
+GM	0	21:31:13.231	Tester	automatical testing started
+FN	0	21:31:13.334	AutoTesting	USDJPY#: preliminary downloading of M1 history started
+MQ	0	21:31:13.939	AutoTesting	USDJPY#: 22% history downloaded
+NI	0	21:31:14.040	AutoTesting	USDJPY#: 30% history downloaded
+QQ	0	21:31:14.240	AutoTesting	USDJPY#: 46% history downloaded
+GH	0	21:31:14.309	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+DK	0	21:31:14.442	AutoTesting	USDJPY#: 54% history downloaded
+DS	0	21:31:14.544	AutoTesting	USDJPY#: 62% history downloaded
+GJ	0	21:31:14.947	AutoTesting	USDJPY#: 77% history downloaded
+PR	0	21:31:15.049	AutoTesting	USDJPY#: 85% history downloaded
+QJ	0	21:31:15.248	AutoTesting	USDJPY#: 92% history downloaded
+CQ	0	21:31:15.382	AutoTesting	USDJPY#: preliminary downloading of M1 history completed in 0:00:02.140
+DK	0	21:31:22.363	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+MG	0	21:31:22.363	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+FM	0	21:31:36.781	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213135\mt5_smoke_test.ini"
+JP	0	21:31:36.854	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+HM	0	21:31:36.855	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+MN	0	21:31:36.855	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+NP	0	21:31:36.855	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213135\mt5_smoke_test.ini
+HS	0	21:31:46.597	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+IK	0	21:31:46.696	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+IR	0	21:31:47.646	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+GP	0	21:31:47.646	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:31:09
+HS	0	21:31:48.648	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+MP	0	21:31:48.648	Network	'168886591': trading has been enabled - hedging mode
+PJ	0	21:31:49.684	Tester	automatical testing started
+KO	0	21:31:50.668	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+DG	0	21:33:06.751	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+GM	0	21:33:06.751	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+PH	0	21:33:09.940	Terminal	exit with code 0
+RM	0	21:33:09.945	Network	'168886591': disconnected from XMGlobal-MT5 2
+LG	0	21:33:10.054	Terminal	stopped with 0
+CF	0	21:33:10.065	Terminal	shutdown with 0
+CP	0	21:33:21.393	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213319\mt5_smoke_test.ini"
+KR	0	21:33:21.503	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+OO	0	21:33:21.504	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+NP	0	21:33:21.504	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+IR	0	21:33:21.504	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213319\mt5_smoke_test.ini
+NQ	0	21:33:33.779	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+NE	0	21:33:33.918	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+RG	0	21:33:34.799	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+IR	0	21:33:34.799	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:31:46
+NQ	0	21:33:35.822	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+GR	0	21:33:35.822	Network	'168886591': trading has been enabled - hedging mode
+IL	0	21:33:36.953	Tester	automatical testing started
+JI	0	21:33:37.967	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+CF	0	21:34:50.522	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+NL	0	21:34:50.522	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+IF	0	21:34:53.626	Terminal	exit with code 0
+PO	0	21:34:53.633	Network	'168886591': disconnected from XMGlobal-MT5 2
+QE	0	21:34:53.929	Terminal	stopped with 0
+NP	0	21:34:53.936	Terminal	shutdown with 0
+RR	0	21:36:13.910	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213612\mt5_smoke_test.ini"
+HG	0	21:36:13.982	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+JP	0	21:36:13.982	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 5 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+LR	0	21:36:13.982	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+ML	0	21:36:13.982	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213612\mt5_smoke_test.ini
+RO	0	21:36:22.590	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+JG	0	21:36:22.702	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+OE	0	21:36:23.065	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+ED	0	21:36:23.065	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:33:34
+FG	0	21:36:23.943	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+OG	0	21:36:23.943	Network	'168886591': trading has been enabled - hedging mode
+GQ	0	21:36:26.603	Tester	automatical testing started
+EK	0	21:36:27.508	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+LH	0	21:36:45.233	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213644\mt5_smoke_test.ini"
+JM	0	21:36:45.305	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+HF	0	21:36:45.305	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 5 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+FI	0	21:36:45.305	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+FK	0	21:36:45.305	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213644\mt5_smoke_test.ini
+EH	0	21:36:52.875	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+DM	0	21:36:52.981	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+GO	0	21:36:53.365	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+KM	0	21:36:53.365	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:36:22
+NI	0	21:36:54.121	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+GM	0	21:36:54.121	Network	'168886591': trading has been enabled - hedging mode
+KG	0	21:36:55.687	Tester	automatical testing started
+PP	0	21:36:56.855	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+DM	0	21:38:15.402	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+HG	0	21:38:15.403	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+IO	0	21:38:17.600	Terminal	exit with code 0
+NG	0	21:38:17.602	Network	'168886591': disconnected from XMGlobal-MT5 2
+LM	0	21:38:17.706	Terminal	stopped with 0
+PI	0	21:38:17.709	Terminal	shutdown with 0
+PJ	0	21:38:28.905	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213827\mt5_smoke_test.ini"
+FO	0	21:38:28.964	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+CH	0	21:38:28.965	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 5 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+QK	0	21:38:28.965	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+HE	0	21:38:28.965	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-213827\mt5_smoke_test.ini
+OF	0	21:38:36.158	Experts	expert TrailingSL_Manager (GOLD#,M30) loaded successfully
+OH	0	21:38:36.269	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+MM	0	21:38:36.997	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+DO	0	21:38:36.997	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:36:52
+PL	0	21:38:37.726	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+EO	0	21:38:37.726	Network	'168886591': trading has been enabled - hedging mode
+II	0	21:38:38.853	Tester	automatical testing started
+IR	0	21:38:39.981	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+PR	0	21:40:01.408	Experts	expert TrailingSL_Manager (GOLD#,M30) removed
+CJ	0	21:40:14.420	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-214012\mt5_smoke_test.ini"
+OO	0	21:40:14.592	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+EI	0	21:40:14.593	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+HJ	0	21:40:14.593	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+JD	0	21:40:14.593	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-214012\mt5_smoke_test.ini
+FD	0	21:40:25.333	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+JP	0	21:40:26.231	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+CR	0	21:40:26.231	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:38:36
+KP	0	21:40:27.150	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+IR	0	21:40:27.151	Network	'168886591': trading has been enabled - hedging mode
+DL	0	21:40:30.398	Tester	automatical testing started
+NI	0	21:40:31.970	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+CE	0	21:41:42.962	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-214141\mt5_smoke_test.ini"
+PH	0	21:41:43.024	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+RE	0	21:41:43.025	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+CF	0	21:41:43.025	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+HH	0	21:41:43.025	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\smoke_test_artifacts\20260619-214141\mt5_smoke_test.ini
+MH	0	22:06:40.427	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_220639\EURUSD_H1_10000_out_of_sample\generated_tester.ini"
+RJ	0	22:06:42.760	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+OG	0	22:06:42.761	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 5 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+MH	0	22:06:42.761	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+DF	0	22:06:42.761	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_220639\EURUSD_H1_10000_out_of_sample\generated_tester.ini
+PF	0	22:06:49.860	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+FF	0	22:06:50.581	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+LE	0	22:06:50.581	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 17:40:25
+IF	0	22:06:51.288	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+LE	0	22:06:51.288	Network	'168886591': trading has been enabled - hedging mode
+LO	0	22:06:52.337	Tester	automatical testing started
+HH	0	22:06:53.159	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+LG	0	22:10:22.084	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+DN	0	22:10:24.673	Terminal	exit with code 0
+RG	0	22:10:24.676	Network	'168886591': disconnected from XMGlobal-MT5 2
+RM	0	22:10:24.884	Terminal	stopped with 0
+DH	0	22:10:24.894	Terminal	shutdown with 0
+JF	0	22:10:45.777	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_221044\EURUSD_H1_10000_out_of_sample\generated_tester.ini"
+FP	0	22:10:45.823	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+DM	0	22:10:45.823	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 5 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+KN	0	22:10:45.824	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+QL	0	22:10:45.824	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_221044\EURUSD_H1_10000_out_of_sample\generated_tester.ini
+FL	0	22:10:51.129	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+PI	0	22:10:51.855	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+KK	0	22:10:51.855	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 18:06:50
+DH	0	22:10:52.544	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+QK	0	22:10:52.544	Network	'168886591': trading has been enabled - hedging mode
+DE	0	22:10:53.278	Tester	automatical testing started
+CF	0	22:10:54.105	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+FQ	0	22:11:03.297	Tester	last test passed with result "successfully finished" in 0:00:07.998
+PH	0	22:11:03.471	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+HL	0	22:11:05.936	Terminal	exit with code 0
+CF	0	22:11:05.938	Network	'168886591': disconnected from XMGlobal-MT5 2
+ER	0	22:11:06.044	Terminal	stopped with 0
+CJ	0	22:11:06.049	Terminal	shutdown with 0
+FK	0	22:11:06.173	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_221044\GOLD_HASH_H4_10000_out_of_sample\generated_tester.ini"
+LR	0	22:11:06.227	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+IO	0	22:11:06.227	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+DP	0	22:11:06.227	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+RR	0	22:11:06.227	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_221044\GOLD_HASH_H4_10000_out_of_sample\generated_tester.ini
+CN	0	22:11:14.915	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+RN	0	22:11:15.304	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+OM	0	22:11:15.304	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 18:10:51
+GN	0	22:11:16.050	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+NM	0	22:11:16.050	Network	'168886591': trading has been enabled - hedging mode
+CG	0	22:11:17.584	Tester	automatical testing started
+FP	0	22:11:18.741	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+QS	0	22:11:59.934	Tester	last test passed with result "successfully finished" in 0:00:39.753
+FK	0	22:12:00.099	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+MJ	0	22:12:02.399	Terminal	exit with code 0
+GH	0	22:12:02.402	Network	'168886591': disconnected from XMGlobal-MT5 2
+NQ	0	22:12:02.516	Terminal	stopped with 0
+LD	0	22:12:02.520	Terminal	shutdown with 0
+EQ	0	22:13:49.123	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_221346\EURUSD_H1_10000_out_of_sample\generated_tester.ini"
+DD	0	22:13:49.181	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+EQ	0	22:13:49.181	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 4 / 31 Gb memory, 2 / 382 Gb disk, UAC, GMT+7
+HR	0	22:13:49.181	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+EP	0	22:13:49.181	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260619_221346\EURUSD_H1_10000_out_of_sample\generated_tester.ini
+IO	0	22:13:55.756	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+OM	0	22:13:56.696	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+RO	0	22:13:56.696	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 18:11:14
+GO	0	22:13:57.479	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+NO	0	22:13:57.479	Network	'168886591': trading has been enabled - hedging mode
+HI	0	22:13:58.085	Tester	automatical testing started
+CR	0	22:13:58.935	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.32 ms via 'VPS London LD6 24' instead of 210.90 ms
+EL	0	22:14:08.752	Tester	last test passed with result "successfully finished" in 0:00:08.484
+QL	0	22:14:08.920	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+HK	0	22:14:11.154	Terminal	exit with code 0
+PJ	0	22:14:11.157	Network	'168886591': disconnected from XMGlobal-MT5 2
+EF	0	22:14:11.263	Terminal	stopped with 0
+QE	0	22:14:11.268	Terminal	shutdown with 0

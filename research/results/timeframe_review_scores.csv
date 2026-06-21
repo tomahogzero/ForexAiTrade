@@ -1,0 +1,4 @@
+base_case_id,out_of_sample_net_profit,out_of_sample_profit_factor,out_of_sample_trades,review_status,timeframe,train_net_profit,train_trades,validation_net_profit,validation_oos_trades,validation_profit_factor,validation_trades
+EURUSD_H1_10000,41.03,1.18,62,RESEARCH_MORE,H1,-40.96,22,61.38,167,1.16,105
+EURUSD_H4_10000,-5.74,0.94,27,REJECT_FOR_NOW,H4,-37.3,17,-23.15,33,0.4,6
+EURUSD_M30_10000,56.51,1.22,71,REJECT_FOR_NOW,M30,-7.14,21,-20.45,76,0.47,5

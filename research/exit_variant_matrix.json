@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "description": "Checkpoint H controlled EURUSD H1 exit-variant matrix. Pre-registered diagnostic variants only; no optimization.",
+  "periods": {
+    "train": {
+      "from": "2023-01-01",
+      "to": "2024-12-31"
+    },
+    "validation": {
+      "from": "2025-01-01",
+      "to": "2025-12-31"
+    },
+    "out_of_sample": {
+      "from": "2026-01-01",
+      "to": "2026-06-18"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.10,
+    "max_open_orders": 1,
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "EURUSD_H1_EXIT_BASELINE_10000",
+      "exit_variant": "baseline",
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/exit_variants/EURUSD_H1_exit_baseline.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": true,
+      "trailing_atr_multiplier": 1.5
+    },
+    {
+      "case_id": "EURUSD_H1_EXIT_NO_TRAILING_10000",
+      "exit_variant": "no_trailing",
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/exit_variants/EURUSD_H1_exit_no_trailing.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": false,
+      "trailing_atr_multiplier": 1.5
+    },
+    {
+      "case_id": "EURUSD_H1_EXIT_TRAILING_TIGHTER_10000",
+      "exit_variant": "trailing_tighter",
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/exit_variants/EURUSD_H1_exit_trailing_tighter.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": true,
+      "trailing_atr_multiplier": 1.0
+    },
+    {
+      "case_id": "EURUSD_H1_EXIT_TRAILING_LOOSER_10000",
+      "exit_variant": "trailing_looser",
+      "enabled": true,
+      "actual_symbol": "EURUSD",
+      "canonical_symbol": "EURUSD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.10,
+      "base_preset": "presets/research/exit_variants/EURUSD_H1_exit_trailing_looser.set",
+      "enable_exit_telemetry": true,
+      "log_position_modify_events": true,
+      "exit_telemetry_min_modify_step_points": 10,
+      "use_trailing_stop": true,
+      "trailing_atr_multiplier": 2.0
+    }
+  ],
+  "integration_cases": [
+    "EURUSD_H1_EXIT_BASELINE_10000"
+  ]
+}

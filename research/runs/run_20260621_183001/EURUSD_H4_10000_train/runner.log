@@ -1,0 +1,4 @@
+﻿2026-06-21 18:37:00 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 18:37:00 Case start: EURUSD_H4_10000_train
+2026-06-21 18:37:00 Spawned MT5 PID 35284
+2026-06-21 18:38:07 Tester completion detected in updated log.

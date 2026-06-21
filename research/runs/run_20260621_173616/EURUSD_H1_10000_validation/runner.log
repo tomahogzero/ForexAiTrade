@@ -1,0 +1,6 @@
+﻿2026-06-21 17:37:18 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 17:37:18 Case start: EURUSD_H1_10000_validation
+2026-06-21 17:37:18 Spawned MT5 PID 32468
+2026-06-21 17:37:51 Tester completion detected in updated log.
+2026-06-21 17:37:51 Report detected before closing spawned PID 32468.
+2026-06-21 17:37:51 Closing only spawned PID 32468.

@@ -1,0 +1,21 @@
+﻿{
+    "run_id":  "run_20260621_214917",
+    "case_id":  "EURUSD_H1_RISKGATE_NORMAL_10000_train",
+    "base_case_id":  "EURUSD_H1_RISKGATE_NORMAL_10000",
+    "phase":  "train",
+    "actual_symbol":  "EURUSD",
+    "canonical_symbol":  "EURUSD",
+    "timeframe":  "H1",
+    "period":  {
+                   "from":  "2023-01-01",
+                   "to":  "2024-12-31"
+               },
+    "deposit":  10000,
+    "risk_percent":  0.10,
+    "exit_variant":  "",
+    "risk_gate_variant":  "normal",
+    "risk_gate_mode":  "NORMAL",
+    "losing_streak_cooldown_bars":  24,
+    "use_trailing_stop":  true,
+    "trailing_atr_multiplier":  1.5
+}

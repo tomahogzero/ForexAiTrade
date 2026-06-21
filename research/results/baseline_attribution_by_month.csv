@@ -1,0 +1,10 @@
+month,monthly_net_profit,phase,phase_max_trade_sequence_drawdown,phase_worst_drawdown_month
+2023-01,-40.96,train,53.18,2023-01
+2025-01,31.17,validation,54.8,2025-02
+2025-02,-31.03,validation,54.8,2025-02
+2025-03,49.01,validation,54.8,2025-02
+2025-04,27.45,validation,54.8,2025-02
+2025-05,-15.22,validation,54.8,2025-02
+2026-01,70.02,out_of_sample,49.56,2026-03
+2026-02,-33.09,out_of_sample,49.56,2026-03
+2026-03,4.1,out_of_sample,49.56,2026-03

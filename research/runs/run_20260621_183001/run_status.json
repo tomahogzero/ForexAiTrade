@@ -1,0 +1,65 @@
+﻿[
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_M30_10000_train\\mt5_report.htm",
+        "case_id":  "EURUSD_M30_10000_train",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_M30_10000_validation\\mt5_report.htm",
+        "case_id":  "EURUSD_M30_10000_validation",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_M30_10000_out_of_sample\\mt5_report.htm",
+        "case_id":  "EURUSD_M30_10000_out_of_sample",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_H1_10000_train\\mt5_report.htm",
+        "case_id":  "EURUSD_H1_10000_train",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_H1_10000_validation\\mt5_report.htm",
+        "case_id":  "EURUSD_H1_10000_validation",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_H1_10000_out_of_sample\\mt5_report.htm",
+        "case_id":  "EURUSD_H1_10000_out_of_sample",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_H4_10000_train\\mt5_report.htm",
+        "case_id":  "EURUSD_H4_10000_train",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_H4_10000_validation\\mt5_report.htm",
+        "case_id":  "EURUSD_H4_10000_validation",
+        "run_id":  "run_20260621_183001"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_H4_10000_out_of_sample\\mt5_report.htm",
+        "case_id":  "EURUSD_H4_10000_out_of_sample",
+        "run_id":  "run_20260621_183001"
+    }
+]

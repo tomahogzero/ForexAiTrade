@@ -1,0 +1,964 @@
+﻿===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\logs\20260621.log =====
+GP	0	17:36:17.529	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_train\generated_tester.ini"
+RS	0	17:36:20.136	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+JL	0	17:36:20.136	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+FO	0	17:36:20.136	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+MM	0	17:36:20.136	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_train\generated_tester.ini
+CL	0	17:36:26.847	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+LI	0	17:36:27.825	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 210.90 ms, build 5660)
+QK	0	17:36:27.825	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.19 20:47:09
+OH	0	17:36:28.788	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FK	0	17:36:28.788	Network	'168886591': trading has been enabled - hedging mode
+EE	0	17:36:29.540	Tester	automatical testing started
+QI	0	17:36:29.594	Network	'168886591': scanning network for access points
+NI	0	17:36:30.217	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.05 ms via 'VPS London LD6 21' instead of 210.90 ms
+PK	0	17:37:04.546	Network	'168886591': scanning network finished
+DR	0	17:37:04.546	Network	'168886591': auto connecting to better point was skipped due tester is working
+DG	0	17:37:10.321	Tester	last test passed with result "successfully finished" in 0:00:38.206
+PG	0	17:37:10.499	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+KN	0	17:37:12.913	Terminal	exit with code 0
+MG	0	17:37:12.916	Network	'168886591': disconnected from XMGlobal-MT5 2
+DM	0	17:37:12.992	Terminal	stopped with 0
+DI	0	17:37:12.999	Terminal	shutdown with 0
+RH	0	17:37:19.139	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_validation\generated_tester.ini"
+MP	0	17:37:19.192	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+EM	0	17:37:19.192	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+IN	0	17:37:19.192	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+GR	0	17:37:19.192	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_validation\generated_tester.ini
+JS	0	17:37:23.020	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+GI	0	17:37:23.943	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+DH	0	17:37:23.943	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:36:27
+NK	0	17:37:24.777	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CK	0	17:37:24.777	Network	'168886591': trading has been enabled - hedging mode
+JE	0	17:37:25.304	Tester	automatical testing started
+FF	0	17:37:25.799	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+FP	0	17:37:50.369	Tester	last test passed with result "successfully finished" in 0:00:23.044
+LH	0	17:37:50.549	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+NO	0	17:37:52.989	Terminal	exit with code 0
+QF	0	17:37:52.992	Network	'168886591': disconnected from XMGlobal-MT5 2
+ER	0	17:37:53.091	Terminal	stopped with 0
+JI	0	17:37:53.152	Terminal	shutdown with 0
+IG	0	17:38:01.174	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_out_of_sample\generated_tester.ini"
+HS	0	17:38:01.225	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+ML	0	17:38:01.226	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+QO	0	17:38:01.226	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+IM	0	17:38:01.226	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\EURUSD_H1_10000_out_of_sample\generated_tester.ini
+IM	0	17:38:05.033	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+CH	0	17:38:06.028	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+CJ	0	17:38:06.028	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:37:23
+NI	0	17:38:06.990	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CJ	0	17:38:06.990	Network	'168886591': trading has been enabled - hedging mode
+ND	0	17:38:07.480	Tester	automatical testing started
+OQ	0	17:38:07.825	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+ER	0	17:38:19.110	Tester	last test passed with result "successfully finished" in 0:00:09.609
+EI	0	17:38:19.328	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+EM	0	17:38:22.188	Terminal	exit with code 0
+HI	0	17:38:22.191	Network	'168886591': disconnected from XMGlobal-MT5 2
+MS	0	17:38:22.274	Terminal	stopped with 0
+OK	0	17:38:22.279	Terminal	shutdown with 0
+PL	0	17:38:29.556	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_train\generated_tester.ini"
+QR	0	17:38:29.611	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+IO	0	17:38:29.611	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+MP	0	17:38:29.611	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+RR	0	17:38:29.611	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_train\generated_tester.ini
+EM	0	17:38:34.280	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+MO	0	17:38:35.370	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+DM	0	17:38:35.370	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:38:05
+CI	0	17:38:36.411	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FM	0	17:38:36.411	Network	'168886591': trading has been enabled - hedging mode
+IG	0	17:38:37.060	Tester	automatical testing started
+PP	0	17:38:37.060	AutoTesting	USDJPY#: preliminary downloading of M1 history started
+DE	0	17:38:37.393	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+RE	0	17:38:37.863	AutoTesting	USDJPY#: 50% history downloaded
+LM	0	17:38:38.466	AutoTesting	USDJPY#: 61% history downloaded
+HE	0	17:38:39.170	AutoTesting	USDJPY#: 71% history downloaded
+RM	0	17:38:39.771	AutoTesting	USDJPY#: 81% history downloaded
+CE	0	17:38:40.575	AutoTesting	USDJPY#: 91% history downloaded
+IN	0	17:38:41.442	AutoTesting	USDJPY#: preliminary downloading of M1 history completed in 0:00:04.391
+LQ	0	17:39:49.906	Tester	last test passed with result "successfully finished" in 0:01:05.718
+FI	0	17:39:50.088	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+DL	0	17:39:52.329	Terminal	exit with code 0
+OI	0	17:39:52.332	Network	'168886591': disconnected from XMGlobal-MT5 2
+OS	0	17:39:52.423	Terminal	stopped with 0
+FK	0	17:39:52.427	Terminal	shutdown with 0
+HR	0	17:40:01.136	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_validation\generated_tester.ini"
+PE	0	17:40:01.183	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+IN	0	17:40:01.184	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+EP	0	17:40:01.184	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+OL	0	17:40:01.184	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_validation\generated_tester.ini
+NN	0	17:40:04.438	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+FN	0	17:40:05.441	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+ML	0	17:40:05.441	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:38:34
+DN	0	17:40:06.292	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+EL	0	17:40:06.292	Network	'168886591': trading has been enabled - hedging mode
+PF	0	17:40:06.819	Tester	automatical testing started
+RS	0	17:40:07.179	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.31 ms via 'VPS London LD6 05' instead of 193.31 ms
+RS	0	17:40:50.363	Tester	last test passed with result "successfully finished" in 0:00:41.512
+GK	0	17:40:50.559	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+PJ	0	17:40:53.092	Terminal	exit with code 0
+OK	0	17:40:53.094	Network	'168886591': disconnected from XMGlobal-MT5 2
+HQ	0	17:40:53.175	Terminal	stopped with 0
+GE	0	17:40:53.180	Terminal	shutdown with 0
+ON	0	17:41:05.130	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_out_of_sample\generated_tester.ini"
+FG	0	17:41:05.179	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+PP	0	17:41:05.180	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+LS	0	17:41:05.180	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+PM	0	17:41:05.180	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\USDJPY_HASH_H1_10000_out_of_sample\generated_tester.ini
+KI	0	17:41:08.665	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+DS	0	17:41:09.310	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+GN	0	17:41:09.310	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:40:04
+NM	0	17:41:10.144	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CQ	0	17:41:10.144	Network	'168886591': trading has been enabled - hedging mode
+IK	0	17:41:10.661	Tester	automatical testing started
+IL	0	17:41:11.022	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+LN	0	17:41:26.242	Tester	last test passed with result "successfully finished" in 0:00:13.706
+ON	0	17:41:26.409	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+OI	0	17:41:28.650	Terminal	exit with code 0
+DL	0	17:41:28.652	Network	'168886591': disconnected from XMGlobal-MT5 2
+DD	0	17:41:28.745	Terminal	stopped with 0
+IG	0	17:41:28.749	Terminal	shutdown with 0
+CQ	0	17:41:40.040	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\GOLD_HASH_H4_30000_train\generated_tester.ini"
+PI	0	17:41:40.091	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+OQ	0	17:41:40.091	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 11 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+FD	0	17:41:40.091	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+CN	0	17:41:40.091	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\GOLD_HASH_H4_30000_train\generated_tester.ini
+RJ	0	17:41:43.777	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+RS	0	17:41:44.780	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+JQ	0	17:41:44.780	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:41:08
+HR	0	17:41:45.544	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+MQ	0	17:41:45.544	Network	'168886591': trading has been enabled - hedging mode
+KK	0	17:41:46.064	Tester	automatical testing started
+EL	0	17:41:46.200	AutoTesting	GOLD#: preliminary downloading of M1 history started
+MF	0	17:41:46.415	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+DQ	0	17:41:46.802	AutoTesting	GOLD#: 52% history downloaded
+GI	0	17:41:47.304	AutoTesting	GOLD#: 62% history downloaded
+RP	0	17:41:47.706	AutoTesting	GOLD#: 70% history downloaded
+OH	0	17:41:48.109	AutoTesting	GOLD#: 80% history downloaded
+GP	0	17:41:48.611	AutoTesting	GOLD#: 91% history downloaded
+ML	0	17:41:49.176	AutoTesting	GOLD#: preliminary downloading of M1 history completed in 0:00:03.078
+IL	0	17:42:58.417	Tester	last test passed with result "successfully finished" in 0:01:05.864
+KL	0	17:42:58.577	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+KK	0	17:43:00.652	Terminal	exit with code 0
+HK	0	17:43:00.654	Network	'168886591': disconnected from XMGlobal-MT5 2
+PF	0	17:43:00.730	Terminal	stopped with 0
+QE	0	17:43:00.734	Terminal	shutdown with 0
+QP	0	17:43:12.952	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\GOLD_HASH_H4_30000_validation\generated_tester.ini"
+FG	0	17:43:12.997	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+OS	0	17:43:12.998	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+MS	0	17:43:12.998	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+ES	0	17:43:12.998	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_173616\GOLD_HASH_H4_30000_validation\generated_tester.ini
+RH	0	17:43:17.794	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+KL	0	17:43:18.702	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+KN	0	17:43:18.702	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 13:41:44
+JL	0	17:43:19.453	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+GN	0	17:43:19.453	Network	'168886591': trading has been enabled - hedging mode
+HH	0	17:43:19.984	Tester	automatical testing started
+LM	0	17:43:20.478	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+EM	0	17:44:14.950	Tester	last test passed with result "successfully finished" in 0:00:53.060
+QM	0	17:44:15.107	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+HH	0	17:44:17.304	Terminal	exit with code 0
+CM	0	17:44:17.306	Network	'168886591': disconnected from XMGlobal-MT5 2
+NG	0	17:44:17.382	Terminal	stopped with 0
+GG	0	17:44:17.386	Terminal	shutdown with 0
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	17:43:56.462	ForexAiTrade (GOLD#,H4)	2025.09.29 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.530	ForexAiTrade (GOLD#,H4)	2025.09.29 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:56.570	ForexAiTrade (GOLD#,H4)	2025.09.30 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:56.583	ForexAiTrade (GOLD#,H4)	2025.09.30 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:56.620	ForexAiTrade (GOLD#,H4)	2025.09.30 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:56.681	ForexAiTrade (GOLD#,H4)	2025.09.30 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.731	ForexAiTrade (GOLD#,H4)	2025.09.30 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3819.45 sl=3765.73 tp=3926.30 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:56.793	ForexAiTrade (GOLD#,H4)	2025.09.30 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.827	ForexAiTrade (GOLD#,H4)	2025.10.01 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:56.839	ForexAiTrade (GOLD#,H4)	2025.10.01 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.869	ForexAiTrade (GOLD#,H4)	2025.10.01 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.905	ForexAiTrade (GOLD#,H4)	2025.10.01 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.944	ForexAiTrade (GOLD#,H4)	2025.10.01 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.009	ForexAiTrade (GOLD#,H4)	2025.10.01 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.051	ForexAiTrade (GOLD#,H4)	2025.10.02 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:43:57.063	ForexAiTrade (GOLD#,H4)	2025.10.02 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.085	ForexAiTrade (GOLD#,H4)	2025.10.02 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.119	ForexAiTrade (GOLD#,H4)	2025.10.02 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.156	ForexAiTrade (GOLD#,H4)	2025.10.02 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.231	ForexAiTrade (GOLD#,H4)	2025.10.02 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3845.02 sl=3790.63 tp=3953.26 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.266	ForexAiTrade (GOLD#,H4)	2025.10.03 01:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3856.57 sl=3803.67 tp=3962.13 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.279	ForexAiTrade (GOLD#,H4)	2025.10.03 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.305	ForexAiTrade (GOLD#,H4)	2025.10.03 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3844.40 sl=3795.11 tp=3941.74 raw_lot=0.0030 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.329	ForexAiTrade (GOLD#,H4)	2025.10.03 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3864.86 sl=3814.36 tp=3965.76 raw_lot=0.0030 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.360	ForexAiTrade (GOLD#,H4)	2025.10.03 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.415	ForexAiTrade (GOLD#,H4)	2025.10.03 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.455	ForexAiTrade (GOLD#,H4)	2025.10.06 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:43:57.485	ForexAiTrade (GOLD#,H4)	2025.10.06 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:57.518	ForexAiTrade (GOLD#,H4)	2025.10.06 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.567	ForexAiTrade (GOLD#,H4)	2025.10.06 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.610	ForexAiTrade (GOLD#,H4)	2025.10.06 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:57.667	ForexAiTrade (GOLD#,H4)	2025.10.06 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.702	ForexAiTrade (GOLD#,H4)	2025.10.07 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:57.731	ForexAiTrade (GOLD#,H4)	2025.10.07 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.760	ForexAiTrade (GOLD#,H4)	2025.10.07 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:57.807	ForexAiTrade (GOLD#,H4)	2025.10.07 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.843	ForexAiTrade (GOLD#,H4)	2025.10.07 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.909	ForexAiTrade (GOLD#,H4)	2025.10.07 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.949	ForexAiTrade (GOLD#,H4)	2025.10.08 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:57.965	ForexAiTrade (GOLD#,H4)	2025.10.08 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.000	ForexAiTrade (GOLD#,H4)	2025.10.08 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.037	ForexAiTrade (GOLD#,H4)	2025.10.08 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.077	ForexAiTrade (GOLD#,H4)	2025.10.08 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.138	ForexAiTrade (GOLD#,H4)	2025.10.08 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.189	ForexAiTrade (GOLD#,H4)	2025.10.09 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:43:58.218	ForexAiTrade (GOLD#,H4)	2025.10.09 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.264	ForexAiTrade (GOLD#,H4)	2025.10.09 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:58.302	ForexAiTrade (GOLD#,H4)	2025.10.09 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.335	ForexAiTrade (GOLD#,H4)	2025.10.09 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.418	ForexAiTrade (GOLD#,H4)	2025.10.09 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.490	ForexAiTrade (GOLD#,H4)	2025.10.10 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.508	ForexAiTrade (GOLD#,H4)	2025.10.10 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.553	ForexAiTrade (GOLD#,H4)	2025.10.10 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.607	ForexAiTrade (GOLD#,H4)	2025.10.10 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.658	ForexAiTrade (GOLD#,H4)	2025.10.10 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.747	ForexAiTrade (GOLD#,H4)	2025.10.10 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.818	ForexAiTrade (GOLD#,H4)	2025.10.13 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.857	ForexAiTrade (GOLD#,H4)	2025.10.13 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.897	ForexAiTrade (GOLD#,H4)	2025.10.13 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.938	ForexAiTrade (GOLD#,H4)	2025.10.13 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.980	ForexAiTrade (GOLD#,H4)	2025.10.13 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.043	ForexAiTrade (GOLD#,H4)	2025.10.13 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.085	ForexAiTrade (GOLD#,H4)	2025.10.14 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.109	ForexAiTrade (GOLD#,H4)	2025.10.14 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.160	ForexAiTrade (GOLD#,H4)	2025.10.14 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.230	ForexAiTrade (GOLD#,H4)	2025.10.14 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.278	ForexAiTrade (GOLD#,H4)	2025.10.14 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.350	ForexAiTrade (GOLD#,H4)	2025.10.14 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.397	ForexAiTrade (GOLD#,H4)	2025.10.15 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.418	ForexAiTrade (GOLD#,H4)	2025.10.15 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.456	ForexAiTrade (GOLD#,H4)	2025.10.15 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.513	ForexAiTrade (GOLD#,H4)	2025.10.15 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.562	ForexAiTrade (GOLD#,H4)	2025.10.15 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.623	ForexAiTrade (GOLD#,H4)	2025.10.15 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.674	ForexAiTrade (GOLD#,H4)	2025.10.16 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.695	ForexAiTrade (GOLD#,H4)	2025.10.16 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.731	ForexAiTrade (GOLD#,H4)	2025.10.16 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.775	ForexAiTrade (GOLD#,H4)	2025.10.16 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.812	ForexAiTrade (GOLD#,H4)	2025.10.16 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.875	ForexAiTrade (GOLD#,H4)	2025.10.16 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.950	ForexAiTrade (GOLD#,H4)	2025.10.17 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.985	ForexAiTrade (GOLD#,H4)	2025.10.17 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.051	ForexAiTrade (GOLD#,H4)	2025.10.17 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.115	ForexAiTrade (GOLD#,H4)	2025.10.17 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.176	ForexAiTrade (GOLD#,H4)	2025.10.17 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.261	ForexAiTrade (GOLD#,H4)	2025.10.17 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.322	ForexAiTrade (GOLD#,H4)	2025.10.20 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.356	ForexAiTrade (GOLD#,H4)	2025.10.20 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.402	ForexAiTrade (GOLD#,H4)	2025.10.20 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.448	ForexAiTrade (GOLD#,H4)	2025.10.20 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.492	ForexAiTrade (GOLD#,H4)	2025.10.20 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.554	ForexAiTrade (GOLD#,H4)	2025.10.20 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.610	ForexAiTrade (GOLD#,H4)	2025.10.21 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.633	ForexAiTrade (GOLD#,H4)	2025.10.21 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.680	ForexAiTrade (GOLD#,H4)	2025.10.21 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.747	ForexAiTrade (GOLD#,H4)	2025.10.21 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.808	ForexAiTrade (GOLD#,H4)	2025.10.21 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.893	ForexAiTrade (GOLD#,H4)	2025.10.21 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.954	ForexAiTrade (GOLD#,H4)	2025.10.22 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.989	ForexAiTrade (GOLD#,H4)	2025.10.22 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.037	ForexAiTrade (GOLD#,H4)	2025.10.22 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.091	ForexAiTrade (GOLD#,H4)	2025.10.22 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.149	ForexAiTrade (GOLD#,H4)	2025.10.22 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.226	ForexAiTrade (GOLD#,H4)	2025.10.22 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.279	ForexAiTrade (GOLD#,H4)	2025.10.23 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.308	ForexAiTrade (GOLD#,H4)	2025.10.23 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.347	ForexAiTrade (GOLD#,H4)	2025.10.23 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.397	ForexAiTrade (GOLD#,H4)	2025.10.23 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.437	ForexAiTrade (GOLD#,H4)	2025.10.23 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.493	ForexAiTrade (GOLD#,H4)	2025.10.23 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.530	ForexAiTrade (GOLD#,H4)	2025.10.24 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.545	ForexAiTrade (GOLD#,H4)	2025.10.24 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.581	ForexAiTrade (GOLD#,H4)	2025.10.24 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.624	ForexAiTrade (GOLD#,H4)	2025.10.24 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.666	ForexAiTrade (GOLD#,H4)	2025.10.24 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.731	ForexAiTrade (GOLD#,H4)	2025.10.24 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.781	ForexAiTrade (GOLD#,H4)	2025.10.27 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.832	ForexAiTrade (GOLD#,H4)	2025.10.27 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.870	ForexAiTrade (GOLD#,H4)	2025.10.27 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.918	ForexAiTrade (GOLD#,H4)	2025.10.27 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.976	ForexAiTrade (GOLD#,H4)	2025.10.27 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.041	ForexAiTrade (GOLD#,H4)	2025.10.27 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.080	ForexAiTrade (GOLD#,H4)	2025.10.28 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.111	ForexAiTrade (GOLD#,H4)	2025.10.28 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.155	ForexAiTrade (GOLD#,H4)	2025.10.28 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.219	ForexAiTrade (GOLD#,H4)	2025.10.28 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.275	ForexAiTrade (GOLD#,H4)	2025.10.28 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.331	ForexAiTrade (GOLD#,H4)	2025.10.28 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.364	ForexAiTrade (GOLD#,H4)	2025.10.29 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.404	ForexAiTrade (GOLD#,H4)	2025.10.29 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.441	ForexAiTrade (GOLD#,H4)	2025.10.29 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.488	ForexAiTrade (GOLD#,H4)	2025.10.29 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.539	ForexAiTrade (GOLD#,H4)	2025.10.29 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.585	ForexAiTrade (GOLD#,H4)	2025.10.29 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.645	ForexAiTrade (GOLD#,H4)	2025.10.30 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.686	ForexAiTrade (GOLD#,H4)	2025.10.30 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.741	ForexAiTrade (GOLD#,H4)	2025.10.30 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.813	ForexAiTrade (GOLD#,H4)	2025.10.30 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.878	ForexAiTrade (GOLD#,H4)	2025.10.30 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.941	ForexAiTrade (GOLD#,H4)	2025.10.30 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.975	ForexAiTrade (GOLD#,H4)	2025.10.31 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=40.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.020	ForexAiTrade (GOLD#,H4)	2025.10.31 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.070	ForexAiTrade (GOLD#,H4)	2025.10.31 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.129	ForexAiTrade (GOLD#,H4)	2025.10.31 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.178	ForexAiTrade (GOLD#,H4)	2025.10.31 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.248	ForexAiTrade (GOLD#,H4)	2025.10.31 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.283	ForexAiTrade (GOLD#,H4)	2025.11.03 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.313	ForexAiTrade (GOLD#,H4)	2025.11.03 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.350	ForexAiTrade (GOLD#,H4)	2025.11.03 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.395	ForexAiTrade (GOLD#,H4)	2025.11.03 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.443	ForexAiTrade (GOLD#,H4)	2025.11.03 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.501	ForexAiTrade (GOLD#,H4)	2025.11.03 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.541	ForexAiTrade (GOLD#,H4)	2025.11.04 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.569	ForexAiTrade (GOLD#,H4)	2025.11.04 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.604	ForexAiTrade (GOLD#,H4)	2025.11.04 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.642	ForexAiTrade (GOLD#,H4)	2025.11.04 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.684	ForexAiTrade (GOLD#,H4)	2025.11.04 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.752	ForexAiTrade (GOLD#,H4)	2025.11.04 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.803	ForexAiTrade (GOLD#,H4)	2025.11.05 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.828	ForexAiTrade (GOLD#,H4)	2025.11.05 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:03.862	ForexAiTrade (GOLD#,H4)	2025.11.05 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:03.894	ForexAiTrade (GOLD#,H4)	2025.11.05 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:03.926	ForexAiTrade (GOLD#,H4)	2025.11.05 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:03.979	ForexAiTrade (GOLD#,H4)	2025.11.05 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:04.009	ForexAiTrade (GOLD#,H4)	2025.11.06 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:44:04.029	ForexAiTrade (GOLD#,H4)	2025.11.06 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:04.052	ForexAiTrade (GOLD#,H4)	2025.11.06 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.096	ForexAiTrade (GOLD#,H4)	2025.11.06 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:04.134	ForexAiTrade (GOLD#,H4)	2025.11.06 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:04.209	ForexAiTrade (GOLD#,H4)	2025.11.06 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.260	ForexAiTrade (GOLD#,H4)	2025.11.07 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.276	ForexAiTrade (GOLD#,H4)	2025.11.07 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.301	ForexAiTrade (GOLD#,H4)	2025.11.07 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.325	ForexAiTrade (GOLD#,H4)	2025.11.07 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.360	ForexAiTrade (GOLD#,H4)	2025.11.07 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.424	ForexAiTrade (GOLD#,H4)	2025.11.07 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:04.468	ForexAiTrade (GOLD#,H4)	2025.11.10 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:04.493	ForexAiTrade (GOLD#,H4)	2025.11.10 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.521	ForexAiTrade (GOLD#,H4)	2025.11.10 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.556	ForexAiTrade (GOLD#,H4)	2025.11.10 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.592	ForexAiTrade (GOLD#,H4)	2025.11.10 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.645	ForexAiTrade (GOLD#,H4)	2025.11.10 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.684	ForexAiTrade (GOLD#,H4)	2025.11.11 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:04.710	ForexAiTrade (GOLD#,H4)	2025.11.11 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.739	ForexAiTrade (GOLD#,H4)	2025.11.11 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.770	ForexAiTrade (GOLD#,H4)	2025.11.11 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.798	ForexAiTrade (GOLD#,H4)	2025.11.11 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.846	ForexAiTrade (GOLD#,H4)	2025.11.11 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.881	ForexAiTrade (GOLD#,H4)	2025.11.12 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:04.906	ForexAiTrade (GOLD#,H4)	2025.11.12 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.940	ForexAiTrade (GOLD#,H4)	2025.11.12 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.977	ForexAiTrade (GOLD#,H4)	2025.11.12 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.018	ForexAiTrade (GOLD#,H4)	2025.11.12 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.101	ForexAiTrade (GOLD#,H4)	2025.11.12 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.157	ForexAiTrade (GOLD#,H4)	2025.11.13 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.191	ForexAiTrade (GOLD#,H4)	2025.11.13 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:05.245	ForexAiTrade (GOLD#,H4)	2025.11.13 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.301	ForexAiTrade (GOLD#,H4)	2025.11.13 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:05.356	ForexAiTrade (GOLD#,H4)	2025.11.13 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:05.453	ForexAiTrade (GOLD#,H4)	2025.11.13 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.568	ForexAiTrade (GOLD#,H4)	2025.11.14 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.599	ForexAiTrade (GOLD#,H4)	2025.11.14 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.640	ForexAiTrade (GOLD#,H4)	2025.11.14 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.693	ForexAiTrade (GOLD#,H4)	2025.11.14 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.761	ForexAiTrade (GOLD#,H4)	2025.11.14 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.831	ForexAiTrade (GOLD#,H4)	2025.11.14 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.874	ForexAiTrade (GOLD#,H4)	2025.11.17 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.907	ForexAiTrade (GOLD#,H4)	2025.11.17 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.945	ForexAiTrade (GOLD#,H4)	2025.11.17 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.982	ForexAiTrade (GOLD#,H4)	2025.11.17 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.018	ForexAiTrade (GOLD#,H4)	2025.11.17 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.081	ForexAiTrade (GOLD#,H4)	2025.11.17 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.133	ForexAiTrade (GOLD#,H4)	2025.11.18 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.160	ForexAiTrade (GOLD#,H4)	2025.11.18 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.199	ForexAiTrade (GOLD#,H4)	2025.11.18 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.240	ForexAiTrade (GOLD#,H4)	2025.11.18 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.278	ForexAiTrade (GOLD#,H4)	2025.11.18 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.347	ForexAiTrade (GOLD#,H4)	2025.11.18 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.394	ForexAiTrade (GOLD#,H4)	2025.11.19 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.419	ForexAiTrade (GOLD#,H4)	2025.11.19 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.456	ForexAiTrade (GOLD#,H4)	2025.11.19 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.490	ForexAiTrade (GOLD#,H4)	2025.11.19 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.527	ForexAiTrade (GOLD#,H4)	2025.11.19 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.605	ForexAiTrade (GOLD#,H4)	2025.11.19 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.655	ForexAiTrade (GOLD#,H4)	2025.11.20 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.688	ForexAiTrade (GOLD#,H4)	2025.11.20 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.728	ForexAiTrade (GOLD#,H4)	2025.11.20 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.772	ForexAiTrade (GOLD#,H4)	2025.11.20 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.815	ForexAiTrade (GOLD#,H4)	2025.11.20 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.894	ForexAiTrade (GOLD#,H4)	2025.11.20 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.951	ForexAiTrade (GOLD#,H4)	2025.11.21 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.980	ForexAiTrade (GOLD#,H4)	2025.11.21 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.028	ForexAiTrade (GOLD#,H4)	2025.11.21 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.076	ForexAiTrade (GOLD#,H4)	2025.11.21 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.135	ForexAiTrade (GOLD#,H4)	2025.11.21 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.203	ForexAiTrade (GOLD#,H4)	2025.11.21 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.252	ForexAiTrade (GOLD#,H4)	2025.11.24 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.278	ForexAiTrade (GOLD#,H4)	2025.11.24 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.318	ForexAiTrade (GOLD#,H4)	2025.11.24 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.360	ForexAiTrade (GOLD#,H4)	2025.11.24 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.395	ForexAiTrade (GOLD#,H4)	2025.11.24 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.443	ForexAiTrade (GOLD#,H4)	2025.11.24 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.486	ForexAiTrade (GOLD#,H4)	2025.11.25 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=40.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.516	ForexAiTrade (GOLD#,H4)	2025.11.25 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.560	ForexAiTrade (GOLD#,H4)	2025.11.25 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.605	ForexAiTrade (GOLD#,H4)	2025.11.25 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.647	ForexAiTrade (GOLD#,H4)	2025.11.25 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.700	ForexAiTrade (GOLD#,H4)	2025.11.25 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.735	ForexAiTrade (GOLD#,H4)	2025.11.26 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.755	ForexAiTrade (GOLD#,H4)	2025.11.26 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:44:07.796	ForexAiTrade (GOLD#,H4)	2025.11.26 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=23.0 reason=no strategy signal
+CS	0	17:44:07.830	ForexAiTrade (GOLD#,H4)	2025.11.26 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:07.865	ForexAiTrade (GOLD#,H4)	2025.11.26 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:07.912	ForexAiTrade (GOLD#,H4)	2025.11.26 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:07.942	ForexAiTrade (GOLD#,H4)	2025.11.27 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:44:07.965	ForexAiTrade (GOLD#,H4)	2025.11.27 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.001	ForexAiTrade (GOLD#,H4)	2025.11.27 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.036	ForexAiTrade (GOLD#,H4)	2025.11.27 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.061	ForexAiTrade (GOLD#,H4)	2025.11.27 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.082	ForexAiTrade (GOLD#,H4)	2025.11.27 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=23.0 reason=no strategy signal
+CS	0	17:44:08.088	ForexAiTrade (GOLD#,H4)	2025.11.28 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=40.0 reason=no strategy signal
+CS	0	17:44:08.109	ForexAiTrade (GOLD#,H4)	2025.11.28 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.124	ForexAiTrade (GOLD#,H4)	2025.11.28 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:08.143	ForexAiTrade (GOLD#,H4)	2025.11.28 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=40.0 reason=no strategy signal
+CS	0	17:44:08.167	ForexAiTrade (GOLD#,H4)	2025.11.28 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.214	ForexAiTrade (GOLD#,H4)	2025.11.28 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:08.238	ForexAiTrade (GOLD#,H4)	2025.12.01 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.278	ForexAiTrade (GOLD#,H4)	2025.12.01 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.335	ForexAiTrade (GOLD#,H4)	2025.12.01 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.386	ForexAiTrade (GOLD#,H4)	2025.12.01 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:08.437	ForexAiTrade (GOLD#,H4)	2025.12.01 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.511	ForexAiTrade (GOLD#,H4)	2025.12.01 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.558	ForexAiTrade (GOLD#,H4)	2025.12.02 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.586	ForexAiTrade (GOLD#,H4)	2025.12.02 04:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4219.62 sl=4164.04 tp=4330.19 raw_lot=0.0027 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.625	ForexAiTrade (GOLD#,H4)	2025.12.02 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:08.664	ForexAiTrade (GOLD#,H4)	2025.12.02 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4192.16 sl=4134.18 tp=4307.76 raw_lot=0.0026 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.700	ForexAiTrade (GOLD#,H4)	2025.12.02 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4212.54 sl=4152.38 tp=4332.50 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.772	ForexAiTrade (GOLD#,H4)	2025.12.02 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4193.95 sl=4129.49 tp=4322.50 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.810	ForexAiTrade (GOLD#,H4)	2025.12.03 01:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4208.68 sl=4140.31 tp=4336.28 raw_lot=0.0022 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.849	ForexAiTrade (GOLD#,H4)	2025.12.03 04:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4214.62 sl=4151.51 tp=4340.51 raw_lot=0.0024 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.890	ForexAiTrade (GOLD#,H4)	2025.12.03 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4207.89 sl=4143.35 tp=4336.61 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.925	ForexAiTrade (GOLD#,H4)	2025.12.03 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4202.33 sl=4142.86 tp=4320.83 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.968	ForexAiTrade (GOLD#,H4)	2025.12.03 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4237.26 sl=4177.44 tp=4356.52 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.030	ForexAiTrade (GOLD#,H4)	2025.12.03 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.070	ForexAiTrade (GOLD#,H4)	2025.12.04 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	17:44:09.095	ForexAiTrade (GOLD#,H4)	2025.12.04 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.139	ForexAiTrade (GOLD#,H4)	2025.12.04 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.191	ForexAiTrade (GOLD#,H4)	2025.12.04 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.232	ForexAiTrade (GOLD#,H4)	2025.12.04 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.292	ForexAiTrade (GOLD#,H4)	2025.12.04 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.335	ForexAiTrade (GOLD#,H4)	2025.12.05 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.358	ForexAiTrade (GOLD#,H4)	2025.12.05 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.393	ForexAiTrade (GOLD#,H4)	2025.12.05 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.425	ForexAiTrade (GOLD#,H4)	2025.12.05 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.455	ForexAiTrade (GOLD#,H4)	2025.12.05 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:09.518	ForexAiTrade (GOLD#,H4)	2025.12.05 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4217.60 sl=4163.09 tp=4326.26 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.564	ForexAiTrade (GOLD#,H4)	2025.12.08 01:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4199.85 sl=4146.67 tp=4302.77 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.593	ForexAiTrade (GOLD#,H4)	2025.12.08 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=21.0 reason=no strategy signal
+CS	0	17:44:09.629	ForexAiTrade (GOLD#,H4)	2025.12.08 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4217.20 sl=4169.08 tp=4312.96 raw_lot=0.0031 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.664	ForexAiTrade (GOLD#,H4)	2025.12.08 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4208.09 sl=4159.70 tp=4304.38 raw_lot=0.0031 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.698	ForexAiTrade (GOLD#,H4)	2025.12.08 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4201.90 sl=4155.91 tp=4293.35 raw_lot=0.0033 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.751	ForexAiTrade (GOLD#,H4)	2025.12.08 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:44:09.786	ForexAiTrade (GOLD#,H4)	2025.12.09 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=25.0 reason=no strategy signal
+CS	0	17:44:09.809	ForexAiTrade (GOLD#,H4)	2025.12.09 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.849	ForexAiTrade (GOLD#,H4)	2025.12.09 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:44:09.897	ForexAiTrade (GOLD#,H4)	2025.12.09 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:09.938	ForexAiTrade (GOLD#,H4)	2025.12.09 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.000	ForexAiTrade (GOLD#,H4)	2025.12.09 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.051	ForexAiTrade (GOLD#,H4)	2025.12.10 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.074	ForexAiTrade (GOLD#,H4)	2025.12.10 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.106	ForexAiTrade (GOLD#,H4)	2025.12.10 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.147	ForexAiTrade (GOLD#,H4)	2025.12.10 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.187	ForexAiTrade (GOLD#,H4)	2025.12.10 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.241	ForexAiTrade (GOLD#,H4)	2025.12.10 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:10.305	ForexAiTrade (GOLD#,H4)	2025.12.11 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.334	ForexAiTrade (GOLD#,H4)	2025.12.11 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.378	ForexAiTrade (GOLD#,H4)	2025.12.11 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.414	ForexAiTrade (GOLD#,H4)	2025.12.11 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.461	ForexAiTrade (GOLD#,H4)	2025.12.11 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.527	ForexAiTrade (GOLD#,H4)	2025.12.11 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.577	ForexAiTrade (GOLD#,H4)	2025.12.12 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:10.604	ForexAiTrade (GOLD#,H4)	2025.12.12 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:44:10.641	ForexAiTrade (GOLD#,H4)	2025.12.12 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:10.684	ForexAiTrade (GOLD#,H4)	2025.12.12 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.737	ForexAiTrade (GOLD#,H4)	2025.12.12 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.824	ForexAiTrade (GOLD#,H4)	2025.12.12 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.872	ForexAiTrade (GOLD#,H4)	2025.12.15 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:10.898	ForexAiTrade (GOLD#,H4)	2025.12.15 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:10.941	ForexAiTrade (GOLD#,H4)	2025.12.15 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.980	ForexAiTrade (GOLD#,H4)	2025.12.15 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.020	ForexAiTrade (GOLD#,H4)	2025.12.15 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.093	ForexAiTrade (GOLD#,H4)	2025.12.15 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4304.71 sl=4237.43 tp=4438.65 raw_lot=0.0022 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.136	ForexAiTrade (GOLD#,H4)	2025.12.16 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:11.167	ForexAiTrade (GOLD#,H4)	2025.12.16 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.220	ForexAiTrade (GOLD#,H4)	2025.12.16 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4284.24 sl=4221.20 tp=4409.73 raw_lot=0.0024 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.259	ForexAiTrade (GOLD#,H4)	2025.12.16 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4280.66 sl=4217.90 tp=4405.51 raw_lot=0.0024 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.296	ForexAiTrade (GOLD#,H4)	2025.12.16 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4313.28 sl=4246.96 tp=4445.29 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.356	ForexAiTrade (GOLD#,H4)	2025.12.16 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4303.66 sl=4237.45 tp=4435.83 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.398	ForexAiTrade (GOLD#,H4)	2025.12.17 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:11.423	ForexAiTrade (GOLD#,H4)	2025.12.17 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:44:11.462	ForexAiTrade (GOLD#,H4)	2025.12.17 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:11.500	ForexAiTrade (GOLD#,H4)	2025.12.17 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:11.533	ForexAiTrade (GOLD#,H4)	2025.12.17 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.603	ForexAiTrade (GOLD#,H4)	2025.12.17 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.647	ForexAiTrade (GOLD#,H4)	2025.12.18 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.673	ForexAiTrade (GOLD#,H4)	2025.12.18 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:11.713	ForexAiTrade (GOLD#,H4)	2025.12.18 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.748	ForexAiTrade (GOLD#,H4)	2025.12.18 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.783	ForexAiTrade (GOLD#,H4)	2025.12.18 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4336.31 sl=4284.88 tp=4439.80 raw_lot=0.0029 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.859	ForexAiTrade (GOLD#,H4)	2025.12.18 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4333.64 sl=4274.77 tp=4450.73 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.914	ForexAiTrade (GOLD#,H4)	2025.12.19 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:44:11.934	ForexAiTrade (GOLD#,H4)	2025.12.19 04:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4323.53 sl=4269.86 tp=4429.99 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.965	ForexAiTrade (GOLD#,H4)	2025.12.19 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4326.16 sl=4272.97 tp=4431.94 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:12.001	ForexAiTrade (GOLD#,H4)	2025.12.19 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:12.038	ForexAiTrade (GOLD#,H4)	2025.12.19 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:12.095	ForexAiTrade (GOLD#,H4)	2025.12.19 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4353.45 sl=4303.53 tp=4452.96 raw_lot=0.0030 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:12.129	ForexAiTrade (GOLD#,H4)	2025.12.22 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.155	ForexAiTrade (GOLD#,H4)	2025.12.22 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.187	ForexAiTrade (GOLD#,H4)	2025.12.22 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.215	ForexAiTrade (GOLD#,H4)	2025.12.22 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:44:12.247	ForexAiTrade (GOLD#,H4)	2025.12.22 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.294	ForexAiTrade (GOLD#,H4)	2025.12.22 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.322	ForexAiTrade (GOLD#,H4)	2025.12.23 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.349	ForexAiTrade (GOLD#,H4)	2025.12.23 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.389	ForexAiTrade (GOLD#,H4)	2025.12.23 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.427	ForexAiTrade (GOLD#,H4)	2025.12.23 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.464	ForexAiTrade (GOLD#,H4)	2025.12.23 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:12.531	ForexAiTrade (GOLD#,H4)	2025.12.23 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.567	ForexAiTrade (GOLD#,H4)	2025.12.24 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.597	ForexAiTrade (GOLD#,H4)	2025.12.24 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.643	ForexAiTrade (GOLD#,H4)	2025.12.24 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:44:12.684	ForexAiTrade (GOLD#,H4)	2025.12.24 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.725	ForexAiTrade (GOLD#,H4)	2025.12.24 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.801	ForexAiTrade (GOLD#,H4)	2025.12.26 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.839	ForexAiTrade (GOLD#,H4)	2025.12.26 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:12.883	ForexAiTrade (GOLD#,H4)	2025.12.26 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.967	ForexAiTrade (GOLD#,H4)	2025.12.26 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:44:13.022	ForexAiTrade (GOLD#,H4)	2025.12.29 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:44:13.070	ForexAiTrade (GOLD#,H4)	2025.12.29 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.111	ForexAiTrade (GOLD#,H4)	2025.12.29 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.167	ForexAiTrade (GOLD#,H4)	2025.12.29 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.224	ForexAiTrade (GOLD#,H4)	2025.12.29 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.313	ForexAiTrade (GOLD#,H4)	2025.12.29 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.360	ForexAiTrade (GOLD#,H4)	2025.12.30 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.389	ForexAiTrade (GOLD#,H4)	2025.12.30 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.431	ForexAiTrade (GOLD#,H4)	2025.12.30 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.487	ForexAiTrade (GOLD#,H4)	2025.12.30 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.541	ForexAiTrade (GOLD#,H4)	2025.12.30 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.614	ForexAiTrade (GOLD#,H4)	2025.12.30 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.657	Tester	final balance 30000.00 USD
+CS	0	17:44:13.657	ForexAiTrade (GOLD#,H4)	2025.12.30 23:58:59   ForexAiTrade deinitialized. reason=1
+CS	0	17:44:13.685	Tester	GOLD#,H4: 61438489 ticks, 1536 bars generated. Test passed in 0:00:53.060 (including ticks preprocessing 0:00:02.750).
+CS	0	17:44:13.685	Tester	1264 Mb memory used including 0.47 Mb of history data, 1216 Mb of tick data
+CS	0	17:44:13.685	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	17:44:13.686	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on GOLD#,H4 thread finished
+CS	0	17:44:13.779	127.0.0.1	tester forced to close
+CS	0	17:44:13.779	127.0.0.1	prepare for shutdown
+CS	0	17:44:13.779	127.0.0.1	stop immediately
+CS	0	17:44:13.779	127.0.0.1	shutdown finished
+CS	0	17:44:13.983	Server	MetaTester 5 stopped
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	17:43:56.462	ForexAiTrade (GOLD#,H4)	2025.09.29 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.530	ForexAiTrade (GOLD#,H4)	2025.09.29 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:56.570	ForexAiTrade (GOLD#,H4)	2025.09.30 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:56.583	ForexAiTrade (GOLD#,H4)	2025.09.30 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:56.620	ForexAiTrade (GOLD#,H4)	2025.09.30 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:56.681	ForexAiTrade (GOLD#,H4)	2025.09.30 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.731	ForexAiTrade (GOLD#,H4)	2025.09.30 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3819.45 sl=3765.73 tp=3926.30 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:56.793	ForexAiTrade (GOLD#,H4)	2025.09.30 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.827	ForexAiTrade (GOLD#,H4)	2025.10.01 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:56.839	ForexAiTrade (GOLD#,H4)	2025.10.01 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.869	ForexAiTrade (GOLD#,H4)	2025.10.01 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.905	ForexAiTrade (GOLD#,H4)	2025.10.01 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:56.944	ForexAiTrade (GOLD#,H4)	2025.10.01 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.009	ForexAiTrade (GOLD#,H4)	2025.10.01 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.051	ForexAiTrade (GOLD#,H4)	2025.10.02 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:43:57.063	ForexAiTrade (GOLD#,H4)	2025.10.02 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.085	ForexAiTrade (GOLD#,H4)	2025.10.02 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.119	ForexAiTrade (GOLD#,H4)	2025.10.02 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.156	ForexAiTrade (GOLD#,H4)	2025.10.02 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.231	ForexAiTrade (GOLD#,H4)	2025.10.02 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3845.02 sl=3790.63 tp=3953.26 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.266	ForexAiTrade (GOLD#,H4)	2025.10.03 01:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3856.57 sl=3803.67 tp=3962.13 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.279	ForexAiTrade (GOLD#,H4)	2025.10.03 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.305	ForexAiTrade (GOLD#,H4)	2025.10.03 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3844.40 sl=3795.11 tp=3941.74 raw_lot=0.0030 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.329	ForexAiTrade (GOLD#,H4)	2025.10.03 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=3864.86 sl=3814.36 tp=3965.76 raw_lot=0.0030 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:43:57.360	ForexAiTrade (GOLD#,H4)	2025.10.03 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.415	ForexAiTrade (GOLD#,H4)	2025.10.03 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.455	ForexAiTrade (GOLD#,H4)	2025.10.06 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:43:57.485	ForexAiTrade (GOLD#,H4)	2025.10.06 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:57.518	ForexAiTrade (GOLD#,H4)	2025.10.06 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.567	ForexAiTrade (GOLD#,H4)	2025.10.06 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.610	ForexAiTrade (GOLD#,H4)	2025.10.06 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:57.667	ForexAiTrade (GOLD#,H4)	2025.10.06 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.702	ForexAiTrade (GOLD#,H4)	2025.10.07 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:57.731	ForexAiTrade (GOLD#,H4)	2025.10.07 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.760	ForexAiTrade (GOLD#,H4)	2025.10.07 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:57.807	ForexAiTrade (GOLD#,H4)	2025.10.07 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.843	ForexAiTrade (GOLD#,H4)	2025.10.07 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:57.909	ForexAiTrade (GOLD#,H4)	2025.10.07 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:57.949	ForexAiTrade (GOLD#,H4)	2025.10.08 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:43:57.965	ForexAiTrade (GOLD#,H4)	2025.10.08 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.000	ForexAiTrade (GOLD#,H4)	2025.10.08 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.037	ForexAiTrade (GOLD#,H4)	2025.10.08 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.077	ForexAiTrade (GOLD#,H4)	2025.10.08 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.138	ForexAiTrade (GOLD#,H4)	2025.10.08 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.189	ForexAiTrade (GOLD#,H4)	2025.10.09 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:43:58.218	ForexAiTrade (GOLD#,H4)	2025.10.09 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:43:58.264	ForexAiTrade (GOLD#,H4)	2025.10.09 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:43:58.302	ForexAiTrade (GOLD#,H4)	2025.10.09 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.335	ForexAiTrade (GOLD#,H4)	2025.10.09 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:43:58.418	ForexAiTrade (GOLD#,H4)	2025.10.09 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.490	ForexAiTrade (GOLD#,H4)	2025.10.10 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.508	ForexAiTrade (GOLD#,H4)	2025.10.10 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.553	ForexAiTrade (GOLD#,H4)	2025.10.10 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.607	ForexAiTrade (GOLD#,H4)	2025.10.10 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.658	ForexAiTrade (GOLD#,H4)	2025.10.10 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.747	ForexAiTrade (GOLD#,H4)	2025.10.10 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.818	ForexAiTrade (GOLD#,H4)	2025.10.13 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.857	ForexAiTrade (GOLD#,H4)	2025.10.13 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.897	ForexAiTrade (GOLD#,H4)	2025.10.13 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.938	ForexAiTrade (GOLD#,H4)	2025.10.13 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:58.980	ForexAiTrade (GOLD#,H4)	2025.10.13 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.043	ForexAiTrade (GOLD#,H4)	2025.10.13 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.085	ForexAiTrade (GOLD#,H4)	2025.10.14 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.109	ForexAiTrade (GOLD#,H4)	2025.10.14 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.160	ForexAiTrade (GOLD#,H4)	2025.10.14 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.230	ForexAiTrade (GOLD#,H4)	2025.10.14 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.278	ForexAiTrade (GOLD#,H4)	2025.10.14 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.350	ForexAiTrade (GOLD#,H4)	2025.10.14 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.397	ForexAiTrade (GOLD#,H4)	2025.10.15 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.418	ForexAiTrade (GOLD#,H4)	2025.10.15 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.456	ForexAiTrade (GOLD#,H4)	2025.10.15 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.513	ForexAiTrade (GOLD#,H4)	2025.10.15 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.562	ForexAiTrade (GOLD#,H4)	2025.10.15 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.623	ForexAiTrade (GOLD#,H4)	2025.10.15 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.674	ForexAiTrade (GOLD#,H4)	2025.10.16 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.695	ForexAiTrade (GOLD#,H4)	2025.10.16 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.731	ForexAiTrade (GOLD#,H4)	2025.10.16 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.775	ForexAiTrade (GOLD#,H4)	2025.10.16 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.812	ForexAiTrade (GOLD#,H4)	2025.10.16 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.875	ForexAiTrade (GOLD#,H4)	2025.10.16 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.950	ForexAiTrade (GOLD#,H4)	2025.10.17 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:43:59.985	ForexAiTrade (GOLD#,H4)	2025.10.17 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.051	ForexAiTrade (GOLD#,H4)	2025.10.17 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.115	ForexAiTrade (GOLD#,H4)	2025.10.17 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.176	ForexAiTrade (GOLD#,H4)	2025.10.17 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.261	ForexAiTrade (GOLD#,H4)	2025.10.17 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.322	ForexAiTrade (GOLD#,H4)	2025.10.20 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.356	ForexAiTrade (GOLD#,H4)	2025.10.20 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.402	ForexAiTrade (GOLD#,H4)	2025.10.20 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.448	ForexAiTrade (GOLD#,H4)	2025.10.20 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.492	ForexAiTrade (GOLD#,H4)	2025.10.20 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.554	ForexAiTrade (GOLD#,H4)	2025.10.20 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.610	ForexAiTrade (GOLD#,H4)	2025.10.21 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.633	ForexAiTrade (GOLD#,H4)	2025.10.21 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.680	ForexAiTrade (GOLD#,H4)	2025.10.21 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.747	ForexAiTrade (GOLD#,H4)	2025.10.21 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.808	ForexAiTrade (GOLD#,H4)	2025.10.21 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.893	ForexAiTrade (GOLD#,H4)	2025.10.21 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.954	ForexAiTrade (GOLD#,H4)	2025.10.22 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:00.989	ForexAiTrade (GOLD#,H4)	2025.10.22 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.037	ForexAiTrade (GOLD#,H4)	2025.10.22 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.091	ForexAiTrade (GOLD#,H4)	2025.10.22 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.149	ForexAiTrade (GOLD#,H4)	2025.10.22 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.226	ForexAiTrade (GOLD#,H4)	2025.10.22 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.279	ForexAiTrade (GOLD#,H4)	2025.10.23 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.308	ForexAiTrade (GOLD#,H4)	2025.10.23 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.347	ForexAiTrade (GOLD#,H4)	2025.10.23 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.397	ForexAiTrade (GOLD#,H4)	2025.10.23 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.437	ForexAiTrade (GOLD#,H4)	2025.10.23 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.493	ForexAiTrade (GOLD#,H4)	2025.10.23 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.530	ForexAiTrade (GOLD#,H4)	2025.10.24 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.545	ForexAiTrade (GOLD#,H4)	2025.10.24 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.581	ForexAiTrade (GOLD#,H4)	2025.10.24 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.624	ForexAiTrade (GOLD#,H4)	2025.10.24 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.666	ForexAiTrade (GOLD#,H4)	2025.10.24 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.731	ForexAiTrade (GOLD#,H4)	2025.10.24 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.781	ForexAiTrade (GOLD#,H4)	2025.10.27 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.832	ForexAiTrade (GOLD#,H4)	2025.10.27 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.870	ForexAiTrade (GOLD#,H4)	2025.10.27 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.918	ForexAiTrade (GOLD#,H4)	2025.10.27 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:01.976	ForexAiTrade (GOLD#,H4)	2025.10.27 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.041	ForexAiTrade (GOLD#,H4)	2025.10.27 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.080	ForexAiTrade (GOLD#,H4)	2025.10.28 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.111	ForexAiTrade (GOLD#,H4)	2025.10.28 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.155	ForexAiTrade (GOLD#,H4)	2025.10.28 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.219	ForexAiTrade (GOLD#,H4)	2025.10.28 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.275	ForexAiTrade (GOLD#,H4)	2025.10.28 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.331	ForexAiTrade (GOLD#,H4)	2025.10.28 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.364	ForexAiTrade (GOLD#,H4)	2025.10.29 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.404	ForexAiTrade (GOLD#,H4)	2025.10.29 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.441	ForexAiTrade (GOLD#,H4)	2025.10.29 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.488	ForexAiTrade (GOLD#,H4)	2025.10.29 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.539	ForexAiTrade (GOLD#,H4)	2025.10.29 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.585	ForexAiTrade (GOLD#,H4)	2025.10.29 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.645	ForexAiTrade (GOLD#,H4)	2025.10.30 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.686	ForexAiTrade (GOLD#,H4)	2025.10.30 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.741	ForexAiTrade (GOLD#,H4)	2025.10.30 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.813	ForexAiTrade (GOLD#,H4)	2025.10.30 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.878	ForexAiTrade (GOLD#,H4)	2025.10.30 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.941	ForexAiTrade (GOLD#,H4)	2025.10.30 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:02.975	ForexAiTrade (GOLD#,H4)	2025.10.31 00:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=40.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.020	ForexAiTrade (GOLD#,H4)	2025.10.31 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.070	ForexAiTrade (GOLD#,H4)	2025.10.31 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.129	ForexAiTrade (GOLD#,H4)	2025.10.31 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.178	ForexAiTrade (GOLD#,H4)	2025.10.31 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.248	ForexAiTrade (GOLD#,H4)	2025.10.31 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.283	ForexAiTrade (GOLD#,H4)	2025.11.03 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.313	ForexAiTrade (GOLD#,H4)	2025.11.03 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.350	ForexAiTrade (GOLD#,H4)	2025.11.03 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.395	ForexAiTrade (GOLD#,H4)	2025.11.03 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.443	ForexAiTrade (GOLD#,H4)	2025.11.03 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.501	ForexAiTrade (GOLD#,H4)	2025.11.03 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.541	ForexAiTrade (GOLD#,H4)	2025.11.04 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.569	ForexAiTrade (GOLD#,H4)	2025.11.04 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.604	ForexAiTrade (GOLD#,H4)	2025.11.04 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.642	ForexAiTrade (GOLD#,H4)	2025.11.04 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.684	ForexAiTrade (GOLD#,H4)	2025.11.04 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:03.752	ForexAiTrade (GOLD#,H4)	2025.11.04 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.803	ForexAiTrade (GOLD#,H4)	2025.11.05 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:03.828	ForexAiTrade (GOLD#,H4)	2025.11.05 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:03.862	ForexAiTrade (GOLD#,H4)	2025.11.05 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:03.894	ForexAiTrade (GOLD#,H4)	2025.11.05 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:03.926	ForexAiTrade (GOLD#,H4)	2025.11.05 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:03.979	ForexAiTrade (GOLD#,H4)	2025.11.05 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:04.009	ForexAiTrade (GOLD#,H4)	2025.11.06 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:44:04.029	ForexAiTrade (GOLD#,H4)	2025.11.06 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:04.052	ForexAiTrade (GOLD#,H4)	2025.11.06 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.096	ForexAiTrade (GOLD#,H4)	2025.11.06 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:04.134	ForexAiTrade (GOLD#,H4)	2025.11.06 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:04.209	ForexAiTrade (GOLD#,H4)	2025.11.06 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.260	ForexAiTrade (GOLD#,H4)	2025.11.07 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.276	ForexAiTrade (GOLD#,H4)	2025.11.07 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.301	ForexAiTrade (GOLD#,H4)	2025.11.07 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.325	ForexAiTrade (GOLD#,H4)	2025.11.07 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.360	ForexAiTrade (GOLD#,H4)	2025.11.07 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:04.424	ForexAiTrade (GOLD#,H4)	2025.11.07 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:04.468	ForexAiTrade (GOLD#,H4)	2025.11.10 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:04.493	ForexAiTrade (GOLD#,H4)	2025.11.10 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.521	ForexAiTrade (GOLD#,H4)	2025.11.10 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.556	ForexAiTrade (GOLD#,H4)	2025.11.10 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.592	ForexAiTrade (GOLD#,H4)	2025.11.10 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.645	ForexAiTrade (GOLD#,H4)	2025.11.10 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.684	ForexAiTrade (GOLD#,H4)	2025.11.11 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:04.710	ForexAiTrade (GOLD#,H4)	2025.11.11 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.739	ForexAiTrade (GOLD#,H4)	2025.11.11 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.770	ForexAiTrade (GOLD#,H4)	2025.11.11 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.798	ForexAiTrade (GOLD#,H4)	2025.11.11 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.846	ForexAiTrade (GOLD#,H4)	2025.11.11 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.881	ForexAiTrade (GOLD#,H4)	2025.11.12 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:04.906	ForexAiTrade (GOLD#,H4)	2025.11.12 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:04.940	ForexAiTrade (GOLD#,H4)	2025.11.12 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:04.977	ForexAiTrade (GOLD#,H4)	2025.11.12 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.018	ForexAiTrade (GOLD#,H4)	2025.11.12 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.101	ForexAiTrade (GOLD#,H4)	2025.11.12 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.157	ForexAiTrade (GOLD#,H4)	2025.11.13 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.191	ForexAiTrade (GOLD#,H4)	2025.11.13 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:05.245	ForexAiTrade (GOLD#,H4)	2025.11.13 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:05.301	ForexAiTrade (GOLD#,H4)	2025.11.13 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:05.356	ForexAiTrade (GOLD#,H4)	2025.11.13 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:05.453	ForexAiTrade (GOLD#,H4)	2025.11.13 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.568	ForexAiTrade (GOLD#,H4)	2025.11.14 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.599	ForexAiTrade (GOLD#,H4)	2025.11.14 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.640	ForexAiTrade (GOLD#,H4)	2025.11.14 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.693	ForexAiTrade (GOLD#,H4)	2025.11.14 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.761	ForexAiTrade (GOLD#,H4)	2025.11.14 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.831	ForexAiTrade (GOLD#,H4)	2025.11.14 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.874	ForexAiTrade (GOLD#,H4)	2025.11.17 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.907	ForexAiTrade (GOLD#,H4)	2025.11.17 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.945	ForexAiTrade (GOLD#,H4)	2025.11.17 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:05.982	ForexAiTrade (GOLD#,H4)	2025.11.17 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.018	ForexAiTrade (GOLD#,H4)	2025.11.17 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.081	ForexAiTrade (GOLD#,H4)	2025.11.17 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.133	ForexAiTrade (GOLD#,H4)	2025.11.18 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.160	ForexAiTrade (GOLD#,H4)	2025.11.18 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.199	ForexAiTrade (GOLD#,H4)	2025.11.18 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.240	ForexAiTrade (GOLD#,H4)	2025.11.18 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.278	ForexAiTrade (GOLD#,H4)	2025.11.18 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.347	ForexAiTrade (GOLD#,H4)	2025.11.18 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.394	ForexAiTrade (GOLD#,H4)	2025.11.19 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.419	ForexAiTrade (GOLD#,H4)	2025.11.19 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.456	ForexAiTrade (GOLD#,H4)	2025.11.19 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.490	ForexAiTrade (GOLD#,H4)	2025.11.19 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.527	ForexAiTrade (GOLD#,H4)	2025.11.19 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.605	ForexAiTrade (GOLD#,H4)	2025.11.19 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.655	ForexAiTrade (GOLD#,H4)	2025.11.20 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.688	ForexAiTrade (GOLD#,H4)	2025.11.20 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.728	ForexAiTrade (GOLD#,H4)	2025.11.20 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.772	ForexAiTrade (GOLD#,H4)	2025.11.20 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.815	ForexAiTrade (GOLD#,H4)	2025.11.20 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.894	ForexAiTrade (GOLD#,H4)	2025.11.20 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.951	ForexAiTrade (GOLD#,H4)	2025.11.21 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:06.980	ForexAiTrade (GOLD#,H4)	2025.11.21 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.028	ForexAiTrade (GOLD#,H4)	2025.11.21 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.076	ForexAiTrade (GOLD#,H4)	2025.11.21 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.135	ForexAiTrade (GOLD#,H4)	2025.11.21 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.203	ForexAiTrade (GOLD#,H4)	2025.11.21 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.252	ForexAiTrade (GOLD#,H4)	2025.11.24 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.278	ForexAiTrade (GOLD#,H4)	2025.11.24 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.318	ForexAiTrade (GOLD#,H4)	2025.11.24 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.360	ForexAiTrade (GOLD#,H4)	2025.11.24 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.395	ForexAiTrade (GOLD#,H4)	2025.11.24 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.443	ForexAiTrade (GOLD#,H4)	2025.11.24 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.486	ForexAiTrade (GOLD#,H4)	2025.11.25 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=40.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.516	ForexAiTrade (GOLD#,H4)	2025.11.25 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.560	ForexAiTrade (GOLD#,H4)	2025.11.25 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.605	ForexAiTrade (GOLD#,H4)	2025.11.25 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.647	ForexAiTrade (GOLD#,H4)	2025.11.25 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.700	ForexAiTrade (GOLD#,H4)	2025.11.25 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.735	ForexAiTrade (GOLD#,H4)	2025.11.26 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:07.755	ForexAiTrade (GOLD#,H4)	2025.11.26 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:44:07.796	ForexAiTrade (GOLD#,H4)	2025.11.26 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=23.0 reason=no strategy signal
+CS	0	17:44:07.830	ForexAiTrade (GOLD#,H4)	2025.11.26 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:07.865	ForexAiTrade (GOLD#,H4)	2025.11.26 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:07.912	ForexAiTrade (GOLD#,H4)	2025.11.26 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:07.942	ForexAiTrade (GOLD#,H4)	2025.11.27 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:44:07.965	ForexAiTrade (GOLD#,H4)	2025.11.27 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.001	ForexAiTrade (GOLD#,H4)	2025.11.27 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.036	ForexAiTrade (GOLD#,H4)	2025.11.27 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.061	ForexAiTrade (GOLD#,H4)	2025.11.27 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.082	ForexAiTrade (GOLD#,H4)	2025.11.27 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=23.0 reason=no strategy signal
+CS	0	17:44:08.088	ForexAiTrade (GOLD#,H4)	2025.11.28 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=40.0 reason=no strategy signal
+CS	0	17:44:08.109	ForexAiTrade (GOLD#,H4)	2025.11.28 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.124	ForexAiTrade (GOLD#,H4)	2025.11.28 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:08.143	ForexAiTrade (GOLD#,H4)	2025.11.28 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=40.0 reason=no strategy signal
+CS	0	17:44:08.167	ForexAiTrade (GOLD#,H4)	2025.11.28 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.214	ForexAiTrade (GOLD#,H4)	2025.11.28 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:08.238	ForexAiTrade (GOLD#,H4)	2025.12.01 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.278	ForexAiTrade (GOLD#,H4)	2025.12.01 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.335	ForexAiTrade (GOLD#,H4)	2025.12.01 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.386	ForexAiTrade (GOLD#,H4)	2025.12.01 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:08.437	ForexAiTrade (GOLD#,H4)	2025.12.01 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.511	ForexAiTrade (GOLD#,H4)	2025.12.01 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:08.558	ForexAiTrade (GOLD#,H4)	2025.12.02 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:08.586	ForexAiTrade (GOLD#,H4)	2025.12.02 04:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4219.62 sl=4164.04 tp=4330.19 raw_lot=0.0027 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.625	ForexAiTrade (GOLD#,H4)	2025.12.02 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:08.664	ForexAiTrade (GOLD#,H4)	2025.12.02 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4192.16 sl=4134.18 tp=4307.76 raw_lot=0.0026 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.700	ForexAiTrade (GOLD#,H4)	2025.12.02 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4212.54 sl=4152.38 tp=4332.50 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.772	ForexAiTrade (GOLD#,H4)	2025.12.02 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4193.95 sl=4129.49 tp=4322.50 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.810	ForexAiTrade (GOLD#,H4)	2025.12.03 01:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4208.68 sl=4140.31 tp=4336.28 raw_lot=0.0022 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.849	ForexAiTrade (GOLD#,H4)	2025.12.03 04:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4214.62 sl=4151.51 tp=4340.51 raw_lot=0.0024 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.890	ForexAiTrade (GOLD#,H4)	2025.12.03 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4207.89 sl=4143.35 tp=4336.61 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.925	ForexAiTrade (GOLD#,H4)	2025.12.03 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4202.33 sl=4142.86 tp=4320.83 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:08.968	ForexAiTrade (GOLD#,H4)	2025.12.03 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4237.26 sl=4177.44 tp=4356.52 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.030	ForexAiTrade (GOLD#,H4)	2025.12.03 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.070	ForexAiTrade (GOLD#,H4)	2025.12.04 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	17:44:09.095	ForexAiTrade (GOLD#,H4)	2025.12.04 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.139	ForexAiTrade (GOLD#,H4)	2025.12.04 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.191	ForexAiTrade (GOLD#,H4)	2025.12.04 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.232	ForexAiTrade (GOLD#,H4)	2025.12.04 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.292	ForexAiTrade (GOLD#,H4)	2025.12.04 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.335	ForexAiTrade (GOLD#,H4)	2025.12.05 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.358	ForexAiTrade (GOLD#,H4)	2025.12.05 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.393	ForexAiTrade (GOLD#,H4)	2025.12.05 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:09.425	ForexAiTrade (GOLD#,H4)	2025.12.05 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.455	ForexAiTrade (GOLD#,H4)	2025.12.05 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:09.518	ForexAiTrade (GOLD#,H4)	2025.12.05 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4217.60 sl=4163.09 tp=4326.26 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.564	ForexAiTrade (GOLD#,H4)	2025.12.08 01:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4199.85 sl=4146.67 tp=4302.77 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.593	ForexAiTrade (GOLD#,H4)	2025.12.08 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=21.0 reason=no strategy signal
+CS	0	17:44:09.629	ForexAiTrade (GOLD#,H4)	2025.12.08 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4217.20 sl=4169.08 tp=4312.96 raw_lot=0.0031 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.664	ForexAiTrade (GOLD#,H4)	2025.12.08 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4208.09 sl=4159.70 tp=4304.38 raw_lot=0.0031 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.698	ForexAiTrade (GOLD#,H4)	2025.12.08 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4201.90 sl=4155.91 tp=4293.35 raw_lot=0.0033 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:09.751	ForexAiTrade (GOLD#,H4)	2025.12.08 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:44:09.786	ForexAiTrade (GOLD#,H4)	2025.12.09 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=25.0 reason=no strategy signal
+CS	0	17:44:09.809	ForexAiTrade (GOLD#,H4)	2025.12.09 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:09.849	ForexAiTrade (GOLD#,H4)	2025.12.09 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:44:09.897	ForexAiTrade (GOLD#,H4)	2025.12.09 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:09.938	ForexAiTrade (GOLD#,H4)	2025.12.09 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.000	ForexAiTrade (GOLD#,H4)	2025.12.09 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.051	ForexAiTrade (GOLD#,H4)	2025.12.10 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.074	ForexAiTrade (GOLD#,H4)	2025.12.10 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.106	ForexAiTrade (GOLD#,H4)	2025.12.10 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.147	ForexAiTrade (GOLD#,H4)	2025.12.10 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.187	ForexAiTrade (GOLD#,H4)	2025.12.10 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.241	ForexAiTrade (GOLD#,H4)	2025.12.10 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:10.305	ForexAiTrade (GOLD#,H4)	2025.12.11 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.334	ForexAiTrade (GOLD#,H4)	2025.12.11 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.378	ForexAiTrade (GOLD#,H4)	2025.12.11 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.414	ForexAiTrade (GOLD#,H4)	2025.12.11 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.461	ForexAiTrade (GOLD#,H4)	2025.12.11 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.527	ForexAiTrade (GOLD#,H4)	2025.12.11 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:44:10.577	ForexAiTrade (GOLD#,H4)	2025.12.12 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	17:44:10.604	ForexAiTrade (GOLD#,H4)	2025.12.12 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:44:10.641	ForexAiTrade (GOLD#,H4)	2025.12.12 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:10.684	ForexAiTrade (GOLD#,H4)	2025.12.12 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.737	ForexAiTrade (GOLD#,H4)	2025.12.12 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.824	ForexAiTrade (GOLD#,H4)	2025.12.12 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.872	ForexAiTrade (GOLD#,H4)	2025.12.15 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:10.898	ForexAiTrade (GOLD#,H4)	2025.12.15 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:10.941	ForexAiTrade (GOLD#,H4)	2025.12.15 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:10.980	ForexAiTrade (GOLD#,H4)	2025.12.15 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.020	ForexAiTrade (GOLD#,H4)	2025.12.15 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.093	ForexAiTrade (GOLD#,H4)	2025.12.15 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4304.71 sl=4237.43 tp=4438.65 raw_lot=0.0022 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.136	ForexAiTrade (GOLD#,H4)	2025.12.16 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:11.167	ForexAiTrade (GOLD#,H4)	2025.12.16 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.220	ForexAiTrade (GOLD#,H4)	2025.12.16 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4284.24 sl=4221.20 tp=4409.73 raw_lot=0.0024 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.259	ForexAiTrade (GOLD#,H4)	2025.12.16 12:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4280.66 sl=4217.90 tp=4405.51 raw_lot=0.0024 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.296	ForexAiTrade (GOLD#,H4)	2025.12.16 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4313.28 sl=4246.96 tp=4445.29 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.356	ForexAiTrade (GOLD#,H4)	2025.12.16 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4303.66 sl=4237.45 tp=4435.83 raw_lot=0.0023 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.398	ForexAiTrade (GOLD#,H4)	2025.12.17 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:11.423	ForexAiTrade (GOLD#,H4)	2025.12.17 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:44:11.462	ForexAiTrade (GOLD#,H4)	2025.12.17 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:11.500	ForexAiTrade (GOLD#,H4)	2025.12.17 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:44:11.533	ForexAiTrade (GOLD#,H4)	2025.12.17 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.603	ForexAiTrade (GOLD#,H4)	2025.12.17 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.647	ForexAiTrade (GOLD#,H4)	2025.12.18 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.673	ForexAiTrade (GOLD#,H4)	2025.12.18 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:11.713	ForexAiTrade (GOLD#,H4)	2025.12.18 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:11.748	ForexAiTrade (GOLD#,H4)	2025.12.18 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:11.783	ForexAiTrade (GOLD#,H4)	2025.12.18 16:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4336.31 sl=4284.88 tp=4439.80 raw_lot=0.0029 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.859	ForexAiTrade (GOLD#,H4)	2025.12.18 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4333.64 sl=4274.77 tp=4450.73 raw_lot=0.0025 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.914	ForexAiTrade (GOLD#,H4)	2025.12.19 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:44:11.934	ForexAiTrade (GOLD#,H4)	2025.12.19 04:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4323.53 sl=4269.86 tp=4429.99 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:11.965	ForexAiTrade (GOLD#,H4)	2025.12.19 08:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4326.16 sl=4272.97 tp=4431.94 raw_lot=0.0028 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:12.001	ForexAiTrade (GOLD#,H4)	2025.12.19 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:12.038	ForexAiTrade (GOLD#,H4)	2025.12.19 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+CS	0	17:44:12.095	ForexAiTrade (GOLD#,H4)	2025.12.19 20:00:00   Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4353.45 sl=4303.53 tp=4452.96 raw_lot=0.0030 normalized_lot=0.00 risk_money=15.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+CS	0	17:44:12.129	ForexAiTrade (GOLD#,H4)	2025.12.22 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.155	ForexAiTrade (GOLD#,H4)	2025.12.22 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.187	ForexAiTrade (GOLD#,H4)	2025.12.22 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.215	ForexAiTrade (GOLD#,H4)	2025.12.22 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:44:12.247	ForexAiTrade (GOLD#,H4)	2025.12.22 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.294	ForexAiTrade (GOLD#,H4)	2025.12.22 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.322	ForexAiTrade (GOLD#,H4)	2025.12.23 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.349	ForexAiTrade (GOLD#,H4)	2025.12.23 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.389	ForexAiTrade (GOLD#,H4)	2025.12.23 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.427	ForexAiTrade (GOLD#,H4)	2025.12.23 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.464	ForexAiTrade (GOLD#,H4)	2025.12.23 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:12.531	ForexAiTrade (GOLD#,H4)	2025.12.23 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.567	ForexAiTrade (GOLD#,H4)	2025.12.24 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.597	ForexAiTrade (GOLD#,H4)	2025.12.24 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.643	ForexAiTrade (GOLD#,H4)	2025.12.24 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:44:12.684	ForexAiTrade (GOLD#,H4)	2025.12.24 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.725	ForexAiTrade (GOLD#,H4)	2025.12.24 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:44:12.801	ForexAiTrade (GOLD#,H4)	2025.12.26 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+CS	0	17:44:12.839	ForexAiTrade (GOLD#,H4)	2025.12.26 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:44:12.883	ForexAiTrade (GOLD#,H4)	2025.12.26 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+CS	0	17:44:12.967	ForexAiTrade (GOLD#,H4)	2025.12.26 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:44:13.022	ForexAiTrade (GOLD#,H4)	2025.12.29 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=25.0 reason=no strategy signal
+CS	0	17:44:13.070	ForexAiTrade (GOLD#,H4)	2025.12.29 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.111	ForexAiTrade (GOLD#,H4)	2025.12.29 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.167	ForexAiTrade (GOLD#,H4)	2025.12.29 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.224	ForexAiTrade (GOLD#,H4)	2025.12.29 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.313	ForexAiTrade (GOLD#,H4)	2025.12.29 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.360	ForexAiTrade (GOLD#,H4)	2025.12.30 01:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.389	ForexAiTrade (GOLD#,H4)	2025.12.30 04:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.431	ForexAiTrade (GOLD#,H4)	2025.12.30 08:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.487	ForexAiTrade (GOLD#,H4)	2025.12.30 12:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.541	ForexAiTrade (GOLD#,H4)	2025.12.30 16:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.614	ForexAiTrade (GOLD#,H4)	2025.12.30 20:00:00   No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+CS	0	17:44:13.657	Tester	final balance 30000.00 USD
+CS	0	17:44:13.657	ForexAiTrade (GOLD#,H4)	2025.12.30 23:58:59   ForexAiTrade deinitialized. reason=1
+CS	0	17:44:13.685	Tester	GOLD#,H4: 61438489 ticks, 1536 bars generated. Test passed in 0:00:53.060 (including ticks preprocessing 0:00:02.750).
+CS	0	17:44:13.685	Tester	1264 Mb memory used including 0.47 Mb of history data, 1216 Mb of tick data
+CS	0	17:44:13.685	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	17:44:13.686	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on GOLD#,H4 thread finished
+CS	0	17:44:13.779	127.0.0.1	tester forced to close
+CS	0	17:44:13.779	127.0.0.1	prepare for shutdown
+CS	0	17:44:13.779	127.0.0.1	stop immediately
+CS	0	17:44:13.779	127.0.0.1	shutdown finished
+CS	0	17:44:13.983	Server	MetaTester 5 stopped

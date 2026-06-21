@@ -1,0 +1,802 @@
+﻿===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	22:09:12.139	ForexAiTrade (EURUSD,H1)	2025.12.23 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17494 tp=1.18109 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17603 tp=1.18252 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.141	Trade	2025.12.23 21:07:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17704 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:07:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17704, tp: 1.18072) [done]
+CS	0	22:09:12.141	Trade	2025.12.23 21:07:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17707 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:07:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17707, tp: 1.18072) [done]
+CS	0	22:09:12.141	Trade	2025.12.23 21:08:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17708 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:08:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17708, tp: 1.18072) [done]
+CS	0	22:09:12.141	Trade	2025.12.23 21:08:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17709 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:08:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17709, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17713 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17713, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:03   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17714 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:03   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17714, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:06   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17715 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:06   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17715, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:09   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17716 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:09   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17716, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:22   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17717 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:22   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17717, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17718 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17718, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:41   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17721 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:41   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17721, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:53:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17722 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:53:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17722, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:53:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17723 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:53:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17723, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:53:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17725 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:53:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17725, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:54:20   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17726 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:54:20   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17726, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:54:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17728 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:54:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17728, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17729 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17729, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17730 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17730, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17731 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17731, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17734 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17734, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:56:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17735 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:56:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17735, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:56:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17736 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:56:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17736, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:56:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17738 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:56:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17738, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17739 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17739, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:02   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17740 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:02   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17740, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:05   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17741 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:05   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17741, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17742 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17742, tp: 1.18072) [done]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.145	Trade	2025.12.23 22:18:49   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17743 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:18:49   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17743, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:18:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17747 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:18:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17747, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17748 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17748, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17749 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17749, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:40   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17750 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:40   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17750, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:48   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17751 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:48   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17751, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17753 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17753, tp: 1.18072) [done]
+CS	0	22:09:12.146	Trade	2025.12.23 22:35:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17755 tp: 1.18072]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 22:35:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17755, tp: 1.18072) [done]
+CS	0	22:09:12.146	Trade	2025.12.23 22:36:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17758 tp: 1.18072]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 22:36:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17758, tp: 1.18072) [done]
+CS	0	22:09:12.146	Trade	2025.12.23 22:38:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17760 tp: 1.18072]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 22:38:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17760, tp: 1.18072) [done]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17761 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17761, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17762 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17762, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:12   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17763 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:12   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17763, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:14   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17766 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:14   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17766, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:16   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17767 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:16   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17767, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:21   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17768 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:21   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17768, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17771 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17771, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17772 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17772, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:31   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17774 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:31   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17774, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17778 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17778, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:39:21   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17779 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:21   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17779, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:39:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17780 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17780, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:39:31   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17781 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:31   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17781, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:39:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17784 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17784, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17785 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17785, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:15   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17786 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:15   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17786, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:18   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17787 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:18   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17787, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17788 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17788, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17789 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17789, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17790 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17790, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:50:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17791 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:50:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17791, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:50:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17792 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:50:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17792, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:50:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17794 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:50:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17794, tp: 1.18072) [done]
+CS	0	22:09:12.150	ForexAiTrade (EURUSD,H1)	2025.12.24 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=29.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.152	ForexAiTrade (EURUSD,H1)	2025.12.24 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=29.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.153	Trade	2025.12.24 01:46:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17799 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 01:46:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17799, tp: 1.18072) [done]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.153	Trade	2025.12.24 02:00:29   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17800 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:29   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17800, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:00:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17802 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17802, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:00:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17804 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17804, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:01:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17805 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:01:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17805, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:01:30   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17807 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:01:30   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17807, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:01:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17809 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:01:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17809, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17810 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17810, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17811 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17811, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17813 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17813, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17815 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17815, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17816 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17816, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:45   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17817 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:45   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17817, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:51   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17819 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:51   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17819, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17822 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17822, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:07:05   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17823 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:07:05   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17823, tp: 1.18072) [done]
+CS	0	22:09:12.156	Trade	2025.12.24 02:59:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17824 tp: 1.18072]
+CS	0	22:09:12.156	ForexAiTrade (EURUSD,H1)	2025.12.24 02:59:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17824, tp: 1.18072) [done]
+CS	0	22:09:12.156	ForexAiTrade (EURUSD,H1)	2025.12.24 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.157	Trade	2025.12.24 03:01:39   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17825 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:01:39   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17825, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:02:03   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17826 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:02:03   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17826, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:02:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17827 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:02:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17827, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:02:13   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17828 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:02:13   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17828, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:18:31   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17829 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:18:31   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17829, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:18:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17832 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:18:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17832, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:19:22   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17833 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:19:22   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17833, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:19:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17834 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:19:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17834, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:19:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17835 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:19:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17835, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17836 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17836, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17837 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17837, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17839 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17839, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:37   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17841 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:37   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17841, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17842 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17842, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17843 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17843, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17844 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17844, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:39   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17846 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:39   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17846, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17847 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17847, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:12   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17848 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:12   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17848, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:21   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17849 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:21   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17849, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:30   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17850 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:30   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17850, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17851 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17851, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17852 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17852, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:25:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17853 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:25:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17853, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:25:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17854 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:25:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17854, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:16   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17855 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:16   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17855, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:17   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17858 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:17   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17858, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17859 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17859, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17861 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17861, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17864 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17864, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17866 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17866, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17869 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17869, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17872 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17872, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:35:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17873 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:35:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17873, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:35:37   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17874 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:35:37   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17874, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:37:06   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17875 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:37:06   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17875, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:37:16   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17876 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:37:16   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17876, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:17   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17877 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:17   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17877, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:18   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17878 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:18   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17878, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17880 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17880, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17882 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17882, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17884 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17884, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:27   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17885 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:27   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17885, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17888 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17888, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17890 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17890, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17893 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17893, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:47:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17894 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:47:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17894, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:47:10   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17895 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:47:10   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17895, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:48:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17898 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:48:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17898, tp: 1.18072) [done]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:05   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17899 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:05   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17899, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:13   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17901 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:13   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17901, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17902 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17902, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17904 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17904, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17905 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17905, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17907 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17907, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17910 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17910, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:05:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17911 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:05:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17911, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:11:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17912 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:11:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17912, tp: 1.18072) [done]
+CS	0	22:09:12.162	ForexAiTrade (EURUSD,H1)	2025.12.24 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.163	Trade	2025.12.24 05:08:17   stop loss triggered #510 buy 0.04 EURUSD 1.17702 sl: 1.17912 tp: 1.18072 [#511 sell 0.04 EURUSD at 1.17912]
+CS	0	22:09:12.163	Trades	2025.12.24 05:08:17   deal #511 sell 0.04 EURUSD at 1.17912 done (based on order #511)
+CS	0	22:09:12.163	Trade	2025.12.24 05:08:17   deal performed [#511 sell 0.04 EURUSD at 1.17912]
+CS	0	22:09:12.163	Trade	2025.12.24 05:08:17   order performed sell 0.04 at 1.17912 [#511 sell 0.04 EURUSD at 1.17912]
+CS	0	22:09:12.164	ForexAiTrade (EURUSD,H1)	2025.12.24 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.165	ForexAiTrade (EURUSD,H1)	2025.12.24 07:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=1.17921 sl=1.17714 tp=1.18282 raw_lot=0.0478 normalized_lot=0.04 risk_money=9.90 actual_risk_money=8.28 reason=execution safety checks passed
+CS	0	22:09:12.165	Trade	2025.12.24 07:00:00   market buy 0.04 EURUSD sl: 1.17714 tp: 1.18282 (1.17902 / 1.17921 / 1.17902)
+CS	0	22:09:12.165	Trades	2025.12.24 07:00:00   deal #512 buy 0.04 EURUSD at 1.17921 done (based on order #512)
+CS	0	22:09:12.165	Trade	2025.12.24 07:00:00   deal performed [#512 buy 0.04 EURUSD at 1.17921]
+CS	0	22:09:12.165	Trade	2025.12.24 07:00:00   order performed buy 0.04 at 1.17921 [#512 buy 0.04 EURUSD at 1.17921]
+CS	0	22:09:12.165	ForexAiTrade (EURUSD,H1)	2025.12.24 07:00:00   CTrade::OrderSend: market buy 0.04 EURUSD sl: 1.17714 tp: 1.18282 [done at 1.17921]
+CS	0	22:09:12.167	ForexAiTrade (EURUSD,H1)	2025.12.24 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.169	ForexAiTrade (EURUSD,H1)	2025.12.24 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.174	ForexAiTrade (EURUSD,H1)	2025.12.24 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.177	ForexAiTrade (EURUSD,H1)	2025.12.24 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.179	ForexAiTrade (EURUSD,H1)	2025.12.24 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.182	ForexAiTrade (EURUSD,H1)	2025.12.24 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.185	ForexAiTrade (EURUSD,H1)	2025.12.24 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.188	ForexAiTrade (EURUSD,H1)	2025.12.24 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.191	ForexAiTrade (EURUSD,H1)	2025.12.24 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.198	ForexAiTrade (EURUSD,H1)	2025.12.24 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17597 tp=1.18197 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.202	ForexAiTrade (EURUSD,H1)	2025.12.24 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17576 tp=1.18165 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.207	ForexAiTrade (EURUSD,H1)	2025.12.24 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.211	ForexAiTrade (EURUSD,H1)	2025.12.26 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.213	Trade	2025.12.26 08:43:24   stop loss triggered #512 buy 0.04 EURUSD 1.17921 sl: 1.17714 tp: 1.18282 [#513 sell 0.04 EURUSD at 1.17714]
+CS	0	22:09:12.213	Trades	2025.12.26 08:43:24   deal #513 sell 0.04 EURUSD at 1.17714 done (based on order #513)
+CS	0	22:09:12.213	Trade	2025.12.26 08:43:24   deal performed [#513 sell 0.04 EURUSD at 1.17714]
+CS	0	22:09:12.213	Trade	2025.12.26 08:43:24   order performed sell 0.04 at 1.17714 [#513 sell 0.04 EURUSD at 1.17714]
+CS	0	22:09:12.214	ForexAiTrade (EURUSD,H1)	2025.12.26 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.217	ForexAiTrade (EURUSD,H1)	2025.12.26 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	22:09:12.220	ForexAiTrade (EURUSD,H1)	2025.12.26 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.223	ForexAiTrade (EURUSD,H1)	2025.12.26 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.225	ForexAiTrade (EURUSD,H1)	2025.12.26 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.226	ForexAiTrade (EURUSD,H1)	2025.12.26 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.228	ForexAiTrade (EURUSD,H1)	2025.12.26 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.232	ForexAiTrade (EURUSD,H1)	2025.12.26 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.235	ForexAiTrade (EURUSD,H1)	2025.12.26 17:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=1.17847 sl=1.17621 tp=1.18243 raw_lot=0.0438 normalized_lot=0.04 risk_money=9.89 actual_risk_money=9.04 reason=execution safety checks passed
+CS	0	22:09:12.235	Trade	2025.12.26 17:00:00   market buy 0.04 EURUSD sl: 1.17621 tp: 1.18243 (1.17828 / 1.17847 / 1.17828)
+CS	0	22:09:12.235	Trades	2025.12.26 17:00:00   deal #514 buy 0.04 EURUSD at 1.17847 done (based on order #514)
+CS	0	22:09:12.235	Trade	2025.12.26 17:00:00   deal performed [#514 buy 0.04 EURUSD at 1.17847]
+CS	0	22:09:12.235	Trade	2025.12.26 17:00:00   order performed buy 0.04 at 1.17847 [#514 buy 0.04 EURUSD at 1.17847]
+CS	0	22:09:12.235	ForexAiTrade (EURUSD,H1)	2025.12.26 17:00:00   CTrade::OrderSend: market buy 0.04 EURUSD sl: 1.17621 tp: 1.18243 [done at 1.17847]
+CS	0	22:09:12.239	ForexAiTrade (EURUSD,H1)	2025.12.26 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.241	Trade	2025.12.26 18:30:04   stop loss triggered #514 buy 0.04 EURUSD 1.17847 sl: 1.17621 tp: 1.18243 [#515 sell 0.04 EURUSD at 1.17621]
+CS	0	22:09:12.241	Trades	2025.12.26 18:30:04   deal #515 sell 0.04 EURUSD at 1.17621 done (based on order #515)
+CS	0	22:09:12.241	Trade	2025.12.26 18:30:04   deal performed [#515 sell 0.04 EURUSD at 1.17621]
+CS	0	22:09:12.241	Trade	2025.12.26 18:30:04   order performed sell 0.04 at 1.17621 [#515 sell 0.04 EURUSD at 1.17621]
+CS	0	22:09:12.243	ForexAiTrade (EURUSD,H1)	2025.12.26 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.245	ForexAiTrade (EURUSD,H1)	2025.12.26 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.249	ForexAiTrade (EURUSD,H1)	2025.12.26 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.251	ForexAiTrade (EURUSD,H1)	2025.12.26 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.253	ForexAiTrade (EURUSD,H1)	2025.12.26 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.256	ForexAiTrade (EURUSD,H1)	2025.12.29 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=144.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.258	ForexAiTrade (EURUSD,H1)	2025.12.29 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=61.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.259	ForexAiTrade (EURUSD,H1)	2025.12.29 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.261	ForexAiTrade (EURUSD,H1)	2025.12.29 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.263	ForexAiTrade (EURUSD,H1)	2025.12.29 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.265	ForexAiTrade (EURUSD,H1)	2025.12.29 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.266	ForexAiTrade (EURUSD,H1)	2025.12.29 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.267	ForexAiTrade (EURUSD,H1)	2025.12.29 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.268	ForexAiTrade (EURUSD,H1)	2025.12.29 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.270	ForexAiTrade (EURUSD,H1)	2025.12.29 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.273	ForexAiTrade (EURUSD,H1)	2025.12.29 10:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=1.17780 sl=1.17565 tp=1.18154 raw_lot=0.0459 normalized_lot=0.04 risk_money=9.88 actual_risk_money=8.60 reason=execution safety checks passed
+CS	0	22:09:12.273	Trade	2025.12.29 10:00:00   market buy 0.04 EURUSD sl: 1.17565 tp: 1.18154 (1.17761 / 1.17780 / 1.17761)
+CS	0	22:09:12.273	Trades	2025.12.29 10:00:00   deal #516 buy 0.04 EURUSD at 1.17780 done (based on order #516)
+CS	0	22:09:12.273	Trade	2025.12.29 10:00:00   deal performed [#516 buy 0.04 EURUSD at 1.17780]
+CS	0	22:09:12.273	Trade	2025.12.29 10:00:00   order performed buy 0.04 at 1.17780 [#516 buy 0.04 EURUSD at 1.17780]
+CS	0	22:09:12.273	ForexAiTrade (EURUSD,H1)	2025.12.29 10:00:00   CTrade::OrderSend: market buy 0.04 EURUSD sl: 1.17565 tp: 1.18154 [done at 1.17780]
+CS	0	22:09:12.279	ForexAiTrade (EURUSD,H1)	2025.12.29 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.286	ForexAiTrade (EURUSD,H1)	2025.12.29 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.290	ForexAiTrade (EURUSD,H1)	2025.12.29 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.294	ForexAiTrade (EURUSD,H1)	2025.12.29 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.295	Trade	2025.12.29 14:25:36   stop loss triggered #516 buy 0.04 EURUSD 1.17780 sl: 1.17565 tp: 1.18154 [#517 sell 0.04 EURUSD at 1.17565]
+CS	0	22:09:12.295	Trades	2025.12.29 14:25:36   deal #517 sell 0.04 EURUSD at 1.17564 done (based on order #517)
+CS	0	22:09:12.295	Trade	2025.12.29 14:25:36   deal performed [#517 sell 0.04 EURUSD at 1.17564]
+CS	0	22:09:12.295	Trade	2025.12.29 14:25:36   order performed sell 0.04 at 1.17564 [#517 sell 0.04 EURUSD at 1.17565]
+CS	0	22:09:12.298	ForexAiTrade (EURUSD,H1)	2025.12.29 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.301	ForexAiTrade (EURUSD,H1)	2025.12.29 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.307	ForexAiTrade (EURUSD,H1)	2025.12.29 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.314	ForexAiTrade (EURUSD,H1)	2025.12.29 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.320	ForexAiTrade (EURUSD,H1)	2025.12.29 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.323	ForexAiTrade (EURUSD,H1)	2025.12.29 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.325	ForexAiTrade (EURUSD,H1)	2025.12.29 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.326	ForexAiTrade (EURUSD,H1)	2025.12.29 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.327	ForexAiTrade (EURUSD,H1)	2025.12.29 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.329	ForexAiTrade (EURUSD,H1)	2025.12.30 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=40.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.330	ForexAiTrade (EURUSD,H1)	2025.12.30 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.331	ForexAiTrade (EURUSD,H1)	2025.12.30 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.333	ForexAiTrade (EURUSD,H1)	2025.12.30 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.334	ForexAiTrade (EURUSD,H1)	2025.12.30 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.335	ForexAiTrade (EURUSD,H1)	2025.12.30 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.336	ForexAiTrade (EURUSD,H1)	2025.12.30 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.336	ForexAiTrade (EURUSD,H1)	2025.12.30 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.337	ForexAiTrade (EURUSD,H1)	2025.12.30 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.338	ForexAiTrade (EURUSD,H1)	2025.12.30 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.340	ForexAiTrade (EURUSD,H1)	2025.12.30 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.343	ForexAiTrade (EURUSD,H1)	2025.12.30 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.345	ForexAiTrade (EURUSD,H1)	2025.12.30 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.347	ForexAiTrade (EURUSD,H1)	2025.12.30 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.349	ForexAiTrade (EURUSD,H1)	2025.12.30 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.350	ForexAiTrade (EURUSD,H1)	2025.12.30 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.355	ForexAiTrade (EURUSD,H1)	2025.12.30 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.359	ForexAiTrade (EURUSD,H1)	2025.12.30 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.363	ForexAiTrade (EURUSD,H1)	2025.12.30 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.365	ForexAiTrade (EURUSD,H1)	2025.12.30 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.367	ForexAiTrade (EURUSD,H1)	2025.12.30 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.368	ForexAiTrade (EURUSD,H1)	2025.12.30 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.369	ForexAiTrade (EURUSD,H1)	2025.12.30 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.370	ForexAiTrade (EURUSD,H1)	2025.12.30 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.371	Tester	final balance 9870.31 USD
+CS	0	22:09:12.371	ForexAiTrade (EURUSD,H1)	2025.12.30 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	22:09:12.384	Tester	EURUSD,H1: 20190375 ticks, 6172 bars generated. Test passed in 0:00:31.053 (including ticks preprocessing 0:00:01.140).
+CS	0	22:09:12.384	Tester	447 Mb memory used including 0.94 Mb of history data, 384 Mb of tick data
+CS	0	22:09:12.384	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	22:09:12.386	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on EURUSD,H1 thread finished
+CS	0	22:09:12.671	127.0.0.1	tester forced to close
+CS	0	22:09:12.671	127.0.0.1	prepare for shutdown
+CS	0	22:09:12.671	127.0.0.1	stop immediately
+CS	0	22:09:12.671	127.0.0.1	shutdown finished
+CS	0	22:09:12.966	Server	MetaTester 5 stopped
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	22:09:12.139	ForexAiTrade (EURUSD,H1)	2025.12.23 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17494 tp=1.18109 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17603 tp=1.18252 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.141	Trade	2025.12.23 21:07:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17704 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:07:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17704, tp: 1.18072) [done]
+CS	0	22:09:12.141	Trade	2025.12.23 21:07:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17707 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:07:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17707, tp: 1.18072) [done]
+CS	0	22:09:12.141	Trade	2025.12.23 21:08:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17708 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:08:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17708, tp: 1.18072) [done]
+CS	0	22:09:12.141	Trade	2025.12.23 21:08:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17709 tp: 1.18072]
+CS	0	22:09:12.141	ForexAiTrade (EURUSD,H1)	2025.12.23 21:08:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17709, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17713 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17713, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:03   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17714 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:03   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17714, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:06   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17715 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:06   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17715, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:09   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17716 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:09   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17716, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:22   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17717 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:22   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17717, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17718 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17718, tp: 1.18072) [done]
+CS	0	22:09:12.143	Trade	2025.12.23 21:15:41   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17721 tp: 1.18072]
+CS	0	22:09:12.143	ForexAiTrade (EURUSD,H1)	2025.12.23 21:15:41   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17721, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:53:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17722 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:53:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17722, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:53:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17723 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:53:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17723, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:53:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17725 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:53:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17725, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:54:20   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17726 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:54:20   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17726, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:54:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17728 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:54:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17728, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17729 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17729, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17730 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17730, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17731 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17731, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:55:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17734 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:55:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17734, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:56:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17735 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:56:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17735, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:56:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17736 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:56:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17736, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:56:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17738 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:56:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17738, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17739 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17739, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:02   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17740 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:02   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17740, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:05   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17741 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:05   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17741, tp: 1.18072) [done]
+CS	0	22:09:12.144	Trade	2025.12.23 21:57:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17742 tp: 1.18072]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 21:57:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17742, tp: 1.18072) [done]
+CS	0	22:09:12.144	ForexAiTrade (EURUSD,H1)	2025.12.23 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.145	Trade	2025.12.23 22:18:49   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17743 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:18:49   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17743, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:18:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17747 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:18:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17747, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17748 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17748, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17749 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17749, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:40   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17750 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:40   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17750, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:48   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17751 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:48   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17751, tp: 1.18072) [done]
+CS	0	22:09:12.145	Trade	2025.12.23 22:19:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17753 tp: 1.18072]
+CS	0	22:09:12.145	ForexAiTrade (EURUSD,H1)	2025.12.23 22:19:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17753, tp: 1.18072) [done]
+CS	0	22:09:12.146	Trade	2025.12.23 22:35:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17755 tp: 1.18072]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 22:35:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17755, tp: 1.18072) [done]
+CS	0	22:09:12.146	Trade	2025.12.23 22:36:00   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17758 tp: 1.18072]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 22:36:00   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17758, tp: 1.18072) [done]
+CS	0	22:09:12.146	Trade	2025.12.23 22:38:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17760 tp: 1.18072]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 22:38:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17760, tp: 1.18072) [done]
+CS	0	22:09:12.146	ForexAiTrade (EURUSD,H1)	2025.12.23 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17761 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17761, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17762 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17762, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:12   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17763 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:12   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17763, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:14   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17766 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:14   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17766, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:16   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17767 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:16   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17767, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:21   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17768 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:21   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17768, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17771 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17771, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17772 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17772, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:31   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17774 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:31   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17774, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:37:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17778 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:37:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17778, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:39:21   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17779 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:21   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17779, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:39:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17780 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17780, tp: 1.18072) [done]
+CS	0	22:09:12.147	Trade	2025.12.23 23:39:31   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17781 tp: 1.18072]
+CS	0	22:09:12.147	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:31   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17781, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:39:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17784 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:39:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17784, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17785 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17785, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:15   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17786 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:15   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17786, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:18   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17787 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:18   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17787, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17788 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17788, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17789 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17789, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:41:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17790 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:41:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17790, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:50:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17791 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:50:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17791, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:50:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17792 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:50:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17792, tp: 1.18072) [done]
+CS	0	22:09:12.148	Trade	2025.12.23 23:50:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17794 tp: 1.18072]
+CS	0	22:09:12.148	ForexAiTrade (EURUSD,H1)	2025.12.23 23:50:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17794, tp: 1.18072) [done]
+CS	0	22:09:12.150	ForexAiTrade (EURUSD,H1)	2025.12.24 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=29.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.152	ForexAiTrade (EURUSD,H1)	2025.12.24 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=29.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.153	Trade	2025.12.24 01:46:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17799 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 01:46:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17799, tp: 1.18072) [done]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.153	Trade	2025.12.24 02:00:29   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17800 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:29   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17800, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:00:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17802 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17802, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:00:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17804 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:00:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17804, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:01:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17805 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:01:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17805, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:01:30   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17807 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:01:30   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17807, tp: 1.18072) [done]
+CS	0	22:09:12.153	Trade	2025.12.24 02:01:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17809 tp: 1.18072]
+CS	0	22:09:12.153	ForexAiTrade (EURUSD,H1)	2025.12.24 02:01:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17809, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:28   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17810 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:28   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17810, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17811 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17811, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17813 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17813, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:04:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17815 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:04:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17815, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17816 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17816, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:45   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17817 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:45   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17817, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:51   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17819 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:51   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17819, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:06:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17822 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:06:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17822, tp: 1.18072) [done]
+CS	0	22:09:12.154	Trade	2025.12.24 02:07:05   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17823 tp: 1.18072]
+CS	0	22:09:12.154	ForexAiTrade (EURUSD,H1)	2025.12.24 02:07:05   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17823, tp: 1.18072) [done]
+CS	0	22:09:12.156	Trade	2025.12.24 02:59:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17824 tp: 1.18072]
+CS	0	22:09:12.156	ForexAiTrade (EURUSD,H1)	2025.12.24 02:59:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17824, tp: 1.18072) [done]
+CS	0	22:09:12.156	ForexAiTrade (EURUSD,H1)	2025.12.24 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.157	Trade	2025.12.24 03:01:39   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17825 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:01:39   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17825, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:02:03   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17826 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:02:03   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17826, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:02:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17827 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:02:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17827, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:02:13   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17828 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:02:13   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17828, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:18:31   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17829 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:18:31   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17829, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:18:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17832 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:18:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17832, tp: 1.18072) [done]
+CS	0	22:09:12.157	Trade	2025.12.24 03:19:22   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17833 tp: 1.18072]
+CS	0	22:09:12.157	ForexAiTrade (EURUSD,H1)	2025.12.24 03:19:22   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17833, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:19:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17834 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:19:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17834, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:19:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17835 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:19:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17835, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17836 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17836, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17837 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17837, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17839 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17839, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:20:37   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17841 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:20:37   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17841, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17842 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17842, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17843 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17843, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17844 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17844, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:21:39   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17846 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:21:39   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17846, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17847 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17847, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:12   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17848 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:12   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17848, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:21   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17849 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:21   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17849, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:30   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17850 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:30   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17850, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:38   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17851 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:38   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17851, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:23:59   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17852 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:23:59   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17852, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:25:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17853 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:25:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17853, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:25:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17854 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:25:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17854, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:16   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17855 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:16   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17855, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:17   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17858 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:17   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17858, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17859 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17859, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17861 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17861, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17864 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17864, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17866 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17866, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17869 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17869, tp: 1.18072) [done]
+CS	0	22:09:12.158	Trade	2025.12.24 03:27:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17872 tp: 1.18072]
+CS	0	22:09:12.158	ForexAiTrade (EURUSD,H1)	2025.12.24 03:27:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17872, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:35:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17873 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:35:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17873, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:35:37   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17874 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:35:37   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17874, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:37:06   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17875 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:37:06   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17875, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:37:16   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17876 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:37:16   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17876, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:17   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17877 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:17   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17877, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:18   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17878 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:18   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17878, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:24   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17880 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:24   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17880, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17882 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17882, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:26   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17884 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:26   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17884, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:27   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17885 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:27   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17885, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:33   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17888 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:33   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17888, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17890 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17890, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:40:35   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17893 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:40:35   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17893, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:47:07   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17894 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:47:07   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17894, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:47:10   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17895 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:47:10   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17895, tp: 1.18072) [done]
+CS	0	22:09:12.159	Trade	2025.12.24 03:48:42   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17898 tp: 1.18072]
+CS	0	22:09:12.159	ForexAiTrade (EURUSD,H1)	2025.12.24 03:48:42   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17898, tp: 1.18072) [done]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:05   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17899 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:05   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17899, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:13   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17901 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:13   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17901, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:23   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17902 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:23   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17902, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:25   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17904 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:25   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17904, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:32   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17905 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:32   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17905, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:34   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17907 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:34   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17907, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:03:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17910 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:03:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17910, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:05:36   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17911 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:05:36   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17911, tp: 1.18072) [done]
+CS	0	22:09:12.161	Trade	2025.12.24 04:11:04   position modified [#510 buy 0.04 EURUSD 1.17702 sl: 1.17912 tp: 1.18072]
+CS	0	22:09:12.161	ForexAiTrade (EURUSD,H1)	2025.12.24 04:11:04   CTrade::OrderSend: modify position #510 EURUSD (sl: 1.17912, tp: 1.18072) [done]
+CS	0	22:09:12.162	ForexAiTrade (EURUSD,H1)	2025.12.24 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.163	Trade	2025.12.24 05:08:17   stop loss triggered #510 buy 0.04 EURUSD 1.17702 sl: 1.17912 tp: 1.18072 [#511 sell 0.04 EURUSD at 1.17912]
+CS	0	22:09:12.163	Trades	2025.12.24 05:08:17   deal #511 sell 0.04 EURUSD at 1.17912 done (based on order #511)
+CS	0	22:09:12.163	Trade	2025.12.24 05:08:17   deal performed [#511 sell 0.04 EURUSD at 1.17912]
+CS	0	22:09:12.163	Trade	2025.12.24 05:08:17   order performed sell 0.04 at 1.17912 [#511 sell 0.04 EURUSD at 1.17912]
+CS	0	22:09:12.164	ForexAiTrade (EURUSD,H1)	2025.12.24 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.165	ForexAiTrade (EURUSD,H1)	2025.12.24 07:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=1.17921 sl=1.17714 tp=1.18282 raw_lot=0.0478 normalized_lot=0.04 risk_money=9.90 actual_risk_money=8.28 reason=execution safety checks passed
+CS	0	22:09:12.165	Trade	2025.12.24 07:00:00   market buy 0.04 EURUSD sl: 1.17714 tp: 1.18282 (1.17902 / 1.17921 / 1.17902)
+CS	0	22:09:12.165	Trades	2025.12.24 07:00:00   deal #512 buy 0.04 EURUSD at 1.17921 done (based on order #512)
+CS	0	22:09:12.165	Trade	2025.12.24 07:00:00   deal performed [#512 buy 0.04 EURUSD at 1.17921]
+CS	0	22:09:12.165	Trade	2025.12.24 07:00:00   order performed buy 0.04 at 1.17921 [#512 buy 0.04 EURUSD at 1.17921]
+CS	0	22:09:12.165	ForexAiTrade (EURUSD,H1)	2025.12.24 07:00:00   CTrade::OrderSend: market buy 0.04 EURUSD sl: 1.17714 tp: 1.18282 [done at 1.17921]
+CS	0	22:09:12.167	ForexAiTrade (EURUSD,H1)	2025.12.24 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.169	ForexAiTrade (EURUSD,H1)	2025.12.24 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.174	ForexAiTrade (EURUSD,H1)	2025.12.24 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.177	ForexAiTrade (EURUSD,H1)	2025.12.24 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.179	ForexAiTrade (EURUSD,H1)	2025.12.24 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.182	ForexAiTrade (EURUSD,H1)	2025.12.24 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.185	ForexAiTrade (EURUSD,H1)	2025.12.24 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.188	ForexAiTrade (EURUSD,H1)	2025.12.24 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.191	ForexAiTrade (EURUSD,H1)	2025.12.24 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.198	ForexAiTrade (EURUSD,H1)	2025.12.24 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17597 tp=1.18197 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.202	ForexAiTrade (EURUSD,H1)	2025.12.24 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.17576 tp=1.18165 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:09:12.207	ForexAiTrade (EURUSD,H1)	2025.12.24 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.211	ForexAiTrade (EURUSD,H1)	2025.12.26 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.213	Trade	2025.12.26 08:43:24   stop loss triggered #512 buy 0.04 EURUSD 1.17921 sl: 1.17714 tp: 1.18282 [#513 sell 0.04 EURUSD at 1.17714]
+CS	0	22:09:12.213	Trades	2025.12.26 08:43:24   deal #513 sell 0.04 EURUSD at 1.17714 done (based on order #513)
+CS	0	22:09:12.213	Trade	2025.12.26 08:43:24   deal performed [#513 sell 0.04 EURUSD at 1.17714]
+CS	0	22:09:12.213	Trade	2025.12.26 08:43:24   order performed sell 0.04 at 1.17714 [#513 sell 0.04 EURUSD at 1.17714]
+CS	0	22:09:12.214	ForexAiTrade (EURUSD,H1)	2025.12.26 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.217	ForexAiTrade (EURUSD,H1)	2025.12.26 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	22:09:12.220	ForexAiTrade (EURUSD,H1)	2025.12.26 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.223	ForexAiTrade (EURUSD,H1)	2025.12.26 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.225	ForexAiTrade (EURUSD,H1)	2025.12.26 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.226	ForexAiTrade (EURUSD,H1)	2025.12.26 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.228	ForexAiTrade (EURUSD,H1)	2025.12.26 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.232	ForexAiTrade (EURUSD,H1)	2025.12.26 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.235	ForexAiTrade (EURUSD,H1)	2025.12.26 17:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=1.17847 sl=1.17621 tp=1.18243 raw_lot=0.0438 normalized_lot=0.04 risk_money=9.89 actual_risk_money=9.04 reason=execution safety checks passed
+CS	0	22:09:12.235	Trade	2025.12.26 17:00:00   market buy 0.04 EURUSD sl: 1.17621 tp: 1.18243 (1.17828 / 1.17847 / 1.17828)
+CS	0	22:09:12.235	Trades	2025.12.26 17:00:00   deal #514 buy 0.04 EURUSD at 1.17847 done (based on order #514)
+CS	0	22:09:12.235	Trade	2025.12.26 17:00:00   deal performed [#514 buy 0.04 EURUSD at 1.17847]
+CS	0	22:09:12.235	Trade	2025.12.26 17:00:00   order performed buy 0.04 at 1.17847 [#514 buy 0.04 EURUSD at 1.17847]
+CS	0	22:09:12.235	ForexAiTrade (EURUSD,H1)	2025.12.26 17:00:00   CTrade::OrderSend: market buy 0.04 EURUSD sl: 1.17621 tp: 1.18243 [done at 1.17847]
+CS	0	22:09:12.239	ForexAiTrade (EURUSD,H1)	2025.12.26 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.241	Trade	2025.12.26 18:30:04   stop loss triggered #514 buy 0.04 EURUSD 1.17847 sl: 1.17621 tp: 1.18243 [#515 sell 0.04 EURUSD at 1.17621]
+CS	0	22:09:12.241	Trades	2025.12.26 18:30:04   deal #515 sell 0.04 EURUSD at 1.17621 done (based on order #515)
+CS	0	22:09:12.241	Trade	2025.12.26 18:30:04   deal performed [#515 sell 0.04 EURUSD at 1.17621]
+CS	0	22:09:12.241	Trade	2025.12.26 18:30:04   order performed sell 0.04 at 1.17621 [#515 sell 0.04 EURUSD at 1.17621]
+CS	0	22:09:12.243	ForexAiTrade (EURUSD,H1)	2025.12.26 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.245	ForexAiTrade (EURUSD,H1)	2025.12.26 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.249	ForexAiTrade (EURUSD,H1)	2025.12.26 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.251	ForexAiTrade (EURUSD,H1)	2025.12.26 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.253	ForexAiTrade (EURUSD,H1)	2025.12.26 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.256	ForexAiTrade (EURUSD,H1)	2025.12.29 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=144.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.258	ForexAiTrade (EURUSD,H1)	2025.12.29 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=61.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.259	ForexAiTrade (EURUSD,H1)	2025.12.29 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.261	ForexAiTrade (EURUSD,H1)	2025.12.29 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.263	ForexAiTrade (EURUSD,H1)	2025.12.29 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.265	ForexAiTrade (EURUSD,H1)	2025.12.29 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.266	ForexAiTrade (EURUSD,H1)	2025.12.29 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.267	ForexAiTrade (EURUSD,H1)	2025.12.29 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.268	ForexAiTrade (EURUSD,H1)	2025.12.29 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.270	ForexAiTrade (EURUSD,H1)	2025.12.29 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.273	ForexAiTrade (EURUSD,H1)	2025.12.29 10:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=1.17780 sl=1.17565 tp=1.18154 raw_lot=0.0459 normalized_lot=0.04 risk_money=9.88 actual_risk_money=8.60 reason=execution safety checks passed
+CS	0	22:09:12.273	Trade	2025.12.29 10:00:00   market buy 0.04 EURUSD sl: 1.17565 tp: 1.18154 (1.17761 / 1.17780 / 1.17761)
+CS	0	22:09:12.273	Trades	2025.12.29 10:00:00   deal #516 buy 0.04 EURUSD at 1.17780 done (based on order #516)
+CS	0	22:09:12.273	Trade	2025.12.29 10:00:00   deal performed [#516 buy 0.04 EURUSD at 1.17780]
+CS	0	22:09:12.273	Trade	2025.12.29 10:00:00   order performed buy 0.04 at 1.17780 [#516 buy 0.04 EURUSD at 1.17780]
+CS	0	22:09:12.273	ForexAiTrade (EURUSD,H1)	2025.12.29 10:00:00   CTrade::OrderSend: market buy 0.04 EURUSD sl: 1.17565 tp: 1.18154 [done at 1.17780]
+CS	0	22:09:12.279	ForexAiTrade (EURUSD,H1)	2025.12.29 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.286	ForexAiTrade (EURUSD,H1)	2025.12.29 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.290	ForexAiTrade (EURUSD,H1)	2025.12.29 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.294	ForexAiTrade (EURUSD,H1)	2025.12.29 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.295	Trade	2025.12.29 14:25:36   stop loss triggered #516 buy 0.04 EURUSD 1.17780 sl: 1.17565 tp: 1.18154 [#517 sell 0.04 EURUSD at 1.17565]
+CS	0	22:09:12.295	Trades	2025.12.29 14:25:36   deal #517 sell 0.04 EURUSD at 1.17564 done (based on order #517)
+CS	0	22:09:12.295	Trade	2025.12.29 14:25:36   deal performed [#517 sell 0.04 EURUSD at 1.17564]
+CS	0	22:09:12.295	Trade	2025.12.29 14:25:36   order performed sell 0.04 at 1.17564 [#517 sell 0.04 EURUSD at 1.17565]
+CS	0	22:09:12.298	ForexAiTrade (EURUSD,H1)	2025.12.29 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.301	ForexAiTrade (EURUSD,H1)	2025.12.29 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.307	ForexAiTrade (EURUSD,H1)	2025.12.29 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.314	ForexAiTrade (EURUSD,H1)	2025.12.29 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.320	ForexAiTrade (EURUSD,H1)	2025.12.29 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.323	ForexAiTrade (EURUSD,H1)	2025.12.29 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.325	ForexAiTrade (EURUSD,H1)	2025.12.29 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.326	ForexAiTrade (EURUSD,H1)	2025.12.29 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.327	ForexAiTrade (EURUSD,H1)	2025.12.29 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.329	ForexAiTrade (EURUSD,H1)	2025.12.30 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=40.0 reason=unsafe regime: spread too wide
+CS	0	22:09:12.330	ForexAiTrade (EURUSD,H1)	2025.12.30 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.331	ForexAiTrade (EURUSD,H1)	2025.12.30 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.333	ForexAiTrade (EURUSD,H1)	2025.12.30 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.334	ForexAiTrade (EURUSD,H1)	2025.12.30 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.335	ForexAiTrade (EURUSD,H1)	2025.12.30 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.336	ForexAiTrade (EURUSD,H1)	2025.12.30 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.336	ForexAiTrade (EURUSD,H1)	2025.12.30 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.337	ForexAiTrade (EURUSD,H1)	2025.12.30 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.338	ForexAiTrade (EURUSD,H1)	2025.12.30 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:09:12.340	ForexAiTrade (EURUSD,H1)	2025.12.30 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.343	ForexAiTrade (EURUSD,H1)	2025.12.30 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.345	ForexAiTrade (EURUSD,H1)	2025.12.30 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.347	ForexAiTrade (EURUSD,H1)	2025.12.30 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.349	ForexAiTrade (EURUSD,H1)	2025.12.30 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.350	ForexAiTrade (EURUSD,H1)	2025.12.30 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.355	ForexAiTrade (EURUSD,H1)	2025.12.30 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:09:12.359	ForexAiTrade (EURUSD,H1)	2025.12.30 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.363	ForexAiTrade (EURUSD,H1)	2025.12.30 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.365	ForexAiTrade (EURUSD,H1)	2025.12.30 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.367	ForexAiTrade (EURUSD,H1)	2025.12.30 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.368	ForexAiTrade (EURUSD,H1)	2025.12.30 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.369	ForexAiTrade (EURUSD,H1)	2025.12.30 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.370	ForexAiTrade (EURUSD,H1)	2025.12.30 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:09:12.371	Tester	final balance 9870.31 USD
+CS	0	22:09:12.371	ForexAiTrade (EURUSD,H1)	2025.12.30 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	22:09:12.384	Tester	EURUSD,H1: 20190375 ticks, 6172 bars generated. Test passed in 0:00:31.053 (including ticks preprocessing 0:00:01.140).
+CS	0	22:09:12.384	Tester	447 Mb memory used including 0.94 Mb of history data, 384 Mb of tick data
+CS	0	22:09:12.384	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	22:09:12.386	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on EURUSD,H1 thread finished
+CS	0	22:09:12.671	127.0.0.1	tester forced to close
+CS	0	22:09:12.671	127.0.0.1	prepare for shutdown
+CS	0	22:09:12.671	127.0.0.1	stop immediately
+CS	0	22:09:12.671	127.0.0.1	shutdown finished
+CS	0	22:09:12.966	Server	MetaTester 5 stopped

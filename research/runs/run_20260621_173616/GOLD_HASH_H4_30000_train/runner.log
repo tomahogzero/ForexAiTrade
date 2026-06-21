@@ -1,0 +1,4 @@
+﻿2026-06-21 17:41:39 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 17:41:39 Case start: GOLD_HASH_H4_30000_train
+2026-06-21 17:41:39 Spawned MT5 PID 28304
+2026-06-21 17:43:01 Tester completion detected in updated log.

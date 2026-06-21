@@ -1,0 +1,37 @@
+# Build / binary artifacts
+*.ex5
+*.ex4
+*.zip
+
+# Python cache
+*.pyc
+__pycache__/
+**/__pycache__/
+
+# Codex / local agent state
+.agents/
+
+# Local environment and machine-specific config
+.env
+.env.*
+*.local
+*.user
+*.suo
+
+# Smoke/test collection artifacts
+smoke_test_artifacts/
+
+# MT5 terminal/tester logs, temp, and cache artifacts
+*.log.tmp
+*.tmp
+*.cache
+*.bak
+*.dmp
+Tester/cache/
+Tester/logs/
+MQL5/Logs/
+MQL5/Profiles/
+MQL5/Files/*.tmp
+MQL5/Files/*.log
+
+# Keep source, docs, presets, scripts, tools, and selected research summaries tracked.

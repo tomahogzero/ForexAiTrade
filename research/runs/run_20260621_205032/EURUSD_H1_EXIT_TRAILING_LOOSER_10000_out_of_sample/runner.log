@@ -1,0 +1,4 @@
+﻿2026-06-21 21:03:21 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 21:03:21 Case start: EURUSD_H1_EXIT_TRAILING_LOOSER_10000_out_of_sample
+2026-06-21 21:03:21 Spawned MT5 PID 37824
+2026-06-21 21:03:49 Tester completion detected in updated log.

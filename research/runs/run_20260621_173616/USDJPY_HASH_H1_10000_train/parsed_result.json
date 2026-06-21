@@ -1,0 +1,40 @@
+{
+  "symbol": "USDJPY#",
+  "timeframe": "H1",
+  "deposit": 10000,
+  "net_profit": -31.87,
+  "profit_factor": 0.39,
+  "expected_payoff": -2.45,
+  "absolute_drawdown": null,
+  "max_drawdown": 55.22,
+  "relative_drawdown": 0.55,
+  "total_trades": 13,
+  "long_trades": 2.0,
+  "short_trades": 11.0,
+  "win_rate": 6.0,
+  "largest_win": 15.12,
+  "largest_loss": -9.48,
+  "consecutive_losses": 4,
+  "drawdown_relative": 0.55,
+  "report_period_from": "2023-01-01",
+  "report_period_to": "2024-12-31",
+  "source_report": "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_173616\\USDJPY_HASH_H1_10000_train\\mt5_report.htm",
+  "raw_pair_count": 143,
+  "metadata_match": true,
+  "metadata_mismatches": [],
+  "case": {
+    "run_id": "run_20260621_173616",
+    "case_id": "USDJPY_HASH_H1_10000_train",
+    "base_case_id": "USDJPY_HASH_H1_10000",
+    "phase": "train",
+    "actual_symbol": "USDJPY#",
+    "canonical_symbol": "USDJPY",
+    "timeframe": "H1",
+    "period": {
+      "from": "2023-01-01",
+      "to": "2024-12-31"
+    },
+    "deposit": 10000,
+    "risk_percent": 0.1
+  }
+}

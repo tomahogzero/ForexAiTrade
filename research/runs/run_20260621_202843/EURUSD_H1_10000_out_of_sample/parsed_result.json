@@ -1,0 +1,40 @@
+{
+  "symbol": "EURUSD",
+  "timeframe": "H1",
+  "deposit": 10000,
+  "net_profit": 41.03,
+  "profit_factor": 1.18,
+  "expected_payoff": 0.66,
+  "absolute_drawdown": null,
+  "max_drawdown": 59.65,
+  "relative_drawdown": 0.59,
+  "total_trades": 62,
+  "long_trades": 18.0,
+  "short_trades": 44.0,
+  "win_rate": 34.0,
+  "largest_win": 19.32,
+  "largest_loss": -10.25,
+  "consecutive_losses": 4,
+  "drawdown_relative": 0.59,
+  "report_period_from": "2026-01-01",
+  "report_period_to": "2026-06-18",
+  "source_report": "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_202843\\EURUSD_H1_10000_out_of_sample\\mt5_report.htm",
+  "raw_pair_count": 425,
+  "metadata_match": true,
+  "metadata_mismatches": [],
+  "case": {
+    "run_id": "run_20260621_202843",
+    "case_id": "EURUSD_H1_10000_out_of_sample",
+    "base_case_id": "EURUSD_H1_10000",
+    "phase": "out_of_sample",
+    "actual_symbol": "EURUSD",
+    "canonical_symbol": "EURUSD",
+    "timeframe": "H1",
+    "period": {
+      "from": "2026-01-01",
+      "to": "2026-06-18"
+    },
+    "deposit": 10000,
+    "risk_percent": 0.1
+  }
+}

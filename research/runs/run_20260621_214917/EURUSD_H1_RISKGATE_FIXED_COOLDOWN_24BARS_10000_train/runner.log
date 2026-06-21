@@ -1,0 +1,4 @@
+﻿2026-06-21 22:01:49 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 22:01:49 Case start: EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000_train
+2026-06-21 22:01:49 Spawned MT5 PID 24536
+2026-06-21 22:03:30 Tester completion detected in updated log.

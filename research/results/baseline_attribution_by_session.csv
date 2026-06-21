@@ -1,0 +1,16 @@
+average_r,breakeven_exits,initial_sl_losses,largest_loss,largest_win,max_consecutive_losses,net_profit,phase,profit_factor,session,tp_hits,trades,trailing_profit_exits,win_rate
+-0.129103,1,3,-9.0,6.12,2,-10.25,out_of_sample,0.5968,Asia,0,9,5,55.56
+0.140955,0,11,-9.84,19.32,3,42.84,out_of_sample,1.4902,London,6,26,9,57.69
+0.044768,0,7,-10.25,18.83,6,4.78,out_of_sample,1.0757,London/New York overlap,3,13,3,46.15
+-0.014011,0,6,-8.94,18.06,3,0.32,out_of_sample,1.0064,New York,2,13,5,53.85
+0.646035,0,0,3.34,3.34,0,3.34,out_of_sample,999.0,Other/Unknown,0,1,1,100.0
+-1.0,0,1,-9.42,-9.42,1,-9.42,train,0.0,Asia,0,1,0,0.0
+-0.311086,0,5,-9.36,14.25,2,-24.56,train,0.4372,London,1,8,2,37.5
+-0.372436,0,3,-9.12,6.76,3,-15.76,train,0.3746,London/New York overlap,0,5,2,40.0
+0.341909,0,1,-7.5,7.56,1,17.45,train,3.3267,New York,0,7,6,85.71
+-1.027251,0,1,-8.67,-8.67,1,-8.67,train,0.0,Other/Unknown,0,1,0,0.0
+0.305547,0,9,-9.96,17.94,3,58.17,validation,1.7569,Asia,6,23,8,60.87
+-0.067631,0,13,-9.95,17.67,3,-18.34,validation,0.8433,London,3,27,11,51.85
+0.123984,0,10,-9.8,16.06,3,26.35,validation,1.3039,London/New York overlap,4,26,12,61.54
+-0.035736,0,11,-10.45,20.4,3,-3.58,validation,0.9617,New York,3,24,10,54.17
+0.050833,0,2,-8.8,12.33,1,-1.22,validation,0.9264,Other/Unknown,1,5,2,60.0

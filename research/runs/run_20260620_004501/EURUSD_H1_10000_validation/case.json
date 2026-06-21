@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "run_20260620_004501",
+    "case_id":  "EURUSD_H1_10000_validation",
+    "base_case_id":  "EURUSD_H1_10000",
+    "phase":  "validation",
+    "actual_symbol":  "EURUSD",
+    "canonical_symbol":  "EURUSD",
+    "timeframe":  "H1",
+    "period":  {
+                   "from":  "2025-01-01",
+                   "to":  "2025-12-31"
+               },
+    "deposit":  10000,
+    "risk_percent":  0.10
+}

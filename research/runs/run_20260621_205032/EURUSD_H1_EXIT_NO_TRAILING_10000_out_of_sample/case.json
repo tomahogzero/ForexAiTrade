@@ -1,0 +1,18 @@
+﻿{
+    "run_id":  "run_20260621_205032",
+    "case_id":  "EURUSD_H1_EXIT_NO_TRAILING_10000_out_of_sample",
+    "base_case_id":  "EURUSD_H1_EXIT_NO_TRAILING_10000",
+    "phase":  "out_of_sample",
+    "actual_symbol":  "EURUSD",
+    "canonical_symbol":  "EURUSD",
+    "timeframe":  "H1",
+    "period":  {
+                   "from":  "2026-01-01",
+                   "to":  "2026-06-18"
+               },
+    "deposit":  10000,
+    "risk_percent":  0.10,
+    "exit_variant":  "no_trailing",
+    "use_trailing_stop":  false,
+    "trailing_atr_multiplier":  1.5
+}

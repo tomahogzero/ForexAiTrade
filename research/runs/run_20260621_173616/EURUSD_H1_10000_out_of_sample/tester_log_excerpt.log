@@ -1,0 +1,802 @@
+﻿===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	17:38:16.566	ForexAiTrade (EURUSD,H1)	2026.05.26 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.568	ForexAiTrade (EURUSD,H1)	2026.05.26 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.569	ForexAiTrade (EURUSD,H1)	2026.05.26 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.571	ForexAiTrade (EURUSD,H1)	2026.05.26 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.572	ForexAiTrade (EURUSD,H1)	2026.05.26 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.575	ForexAiTrade (EURUSD,H1)	2026.05.27 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=85.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.576	ForexAiTrade (EURUSD,H1)	2026.05.27 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=33.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.577	ForexAiTrade (EURUSD,H1)	2026.05.27 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.577	ForexAiTrade (EURUSD,H1)	2026.05.27 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.578	ForexAiTrade (EURUSD,H1)	2026.05.27 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.580	ForexAiTrade (EURUSD,H1)	2026.05.27 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.581	ForexAiTrade (EURUSD,H1)	2026.05.27 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.583	ForexAiTrade (EURUSD,H1)	2026.05.27 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.583	ForexAiTrade (EURUSD,H1)	2026.05.27 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.586	ForexAiTrade (EURUSD,H1)	2026.05.27 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.589	ForexAiTrade (EURUSD,H1)	2026.05.27 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.592	ForexAiTrade (EURUSD,H1)	2026.05.27 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.595	ForexAiTrade (EURUSD,H1)	2026.05.27 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.597	ForexAiTrade (EURUSD,H1)	2026.05.27 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.600	ForexAiTrade (EURUSD,H1)	2026.05.27 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.603	ForexAiTrade (EURUSD,H1)	2026.05.27 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.615	ForexAiTrade (EURUSD,H1)	2026.05.27 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.624	ForexAiTrade (EURUSD,H1)	2026.05.27 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.632	ForexAiTrade (EURUSD,H1)	2026.05.27 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.639	ForexAiTrade (EURUSD,H1)	2026.05.27 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.642	ForexAiTrade (EURUSD,H1)	2026.05.27 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.645	ForexAiTrade (EURUSD,H1)	2026.05.27 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.647	ForexAiTrade (EURUSD,H1)	2026.05.27 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.649	ForexAiTrade (EURUSD,H1)	2026.05.27 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.652	ForexAiTrade (EURUSD,H1)	2026.05.28 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=84.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.652	ForexAiTrade (EURUSD,H1)	2026.05.28 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=34.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.653	ForexAiTrade (EURUSD,H1)	2026.05.28 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	17:38:16.654	ForexAiTrade (EURUSD,H1)	2026.05.28 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.657	ForexAiTrade (EURUSD,H1)	2026.05.28 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.661	ForexAiTrade (EURUSD,H1)	2026.05.28 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.662	ForexAiTrade (EURUSD,H1)	2026.05.28 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.666	ForexAiTrade (EURUSD,H1)	2026.05.28 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.667	ForexAiTrade (EURUSD,H1)	2026.05.28 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.669	ForexAiTrade (EURUSD,H1)	2026.05.28 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.671	ForexAiTrade (EURUSD,H1)	2026.05.28 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.675	ForexAiTrade (EURUSD,H1)	2026.05.28 11:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16306 tp=1.15712 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.677	ForexAiTrade (EURUSD,H1)	2026.05.28 12:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16348 tp=1.15743 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.679	ForexAiTrade (EURUSD,H1)	2026.05.28 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16325 tp=1.15716 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.682	ForexAiTrade (EURUSD,H1)	2026.05.28 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16236 tp=1.15610 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.686	ForexAiTrade (EURUSD,H1)	2026.05.28 15:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16385 tp=1.15714 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.690	ForexAiTrade (EURUSD,H1)	2026.05.28 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.694	ForexAiTrade (EURUSD,H1)	2026.05.28 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.703	ForexAiTrade (EURUSD,H1)	2026.05.28 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.708	ForexAiTrade (EURUSD,H1)	2026.05.28 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.711	ForexAiTrade (EURUSD,H1)	2026.05.28 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.713	ForexAiTrade (EURUSD,H1)	2026.05.28 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.715	ForexAiTrade (EURUSD,H1)	2026.05.28 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.717	ForexAiTrade (EURUSD,H1)	2026.05.28 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.720	ForexAiTrade (EURUSD,H1)	2026.05.29 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=74.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.720	ForexAiTrade (EURUSD,H1)	2026.05.29 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=31.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.721	ForexAiTrade (EURUSD,H1)	2026.05.29 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.722	ForexAiTrade (EURUSD,H1)	2026.05.29 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.723	ForexAiTrade (EURUSD,H1)	2026.05.29 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.725	ForexAiTrade (EURUSD,H1)	2026.05.29 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.726	ForexAiTrade (EURUSD,H1)	2026.05.29 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.728	ForexAiTrade (EURUSD,H1)	2026.05.29 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.728	ForexAiTrade (EURUSD,H1)	2026.05.29 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.729	ForexAiTrade (EURUSD,H1)	2026.05.29 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.731	ForexAiTrade (EURUSD,H1)	2026.05.29 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.734	ForexAiTrade (EURUSD,H1)	2026.05.29 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.737	ForexAiTrade (EURUSD,H1)	2026.05.29 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.740	ForexAiTrade (EURUSD,H1)	2026.05.29 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.743	ForexAiTrade (EURUSD,H1)	2026.05.29 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.745	ForexAiTrade (EURUSD,H1)	2026.05.29 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.749	ForexAiTrade (EURUSD,H1)	2026.05.29 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.752	ForexAiTrade (EURUSD,H1)	2026.05.29 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.762	ForexAiTrade (EURUSD,H1)	2026.05.29 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.16464 tp=1.17060 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.770	ForexAiTrade (EURUSD,H1)	2026.05.29 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.774	ForexAiTrade (EURUSD,H1)	2026.05.29 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.777	ForexAiTrade (EURUSD,H1)	2026.05.29 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.779	ForexAiTrade (EURUSD,H1)	2026.05.29 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.782	ForexAiTrade (EURUSD,H1)	2026.05.29 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.785	ForexAiTrade (EURUSD,H1)	2026.06.01 00:00:30   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=89.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.785	ForexAiTrade (EURUSD,H1)	2026.06.01 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=30.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.789	ForexAiTrade (EURUSD,H1)	2026.06.01 02:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16303 tp=1.16992 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.792	ForexAiTrade (EURUSD,H1)	2026.06.01 03:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16258 tp=1.16910 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.794	ForexAiTrade (EURUSD,H1)	2026.06.01 04:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16249 tp=1.16907 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.796	ForexAiTrade (EURUSD,H1)	2026.06.01 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.796	ForexAiTrade (EURUSD,H1)	2026.06.01 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.797	ForexAiTrade (EURUSD,H1)	2026.06.01 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.798	ForexAiTrade (EURUSD,H1)	2026.06.01 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.799	ForexAiTrade (EURUSD,H1)	2026.06.01 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.801	ForexAiTrade (EURUSD,H1)	2026.06.01 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16485 tp=1.16941 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.805	ForexAiTrade (EURUSD,H1)	2026.06.01 11:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16402 tp=1.16866 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.806	ForexAiTrade (EURUSD,H1)	2026.06.01 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.808	ForexAiTrade (EURUSD,H1)	2026.06.01 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16337 tp=1.16824 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.810	ForexAiTrade (EURUSD,H1)	2026.06.01 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.811	ForexAiTrade (EURUSD,H1)	2026.06.01 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.813	ForexAiTrade (EURUSD,H1)	2026.06.01 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.821	ForexAiTrade (EURUSD,H1)	2026.06.01 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.828	ForexAiTrade (EURUSD,H1)	2026.06.01 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.834	ForexAiTrade (EURUSD,H1)	2026.06.01 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.837	ForexAiTrade (EURUSD,H1)	2026.06.01 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.841	ForexAiTrade (EURUSD,H1)	2026.06.01 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.843	ForexAiTrade (EURUSD,H1)	2026.06.01 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.846	ForexAiTrade (EURUSD,H1)	2026.06.01 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.849	ForexAiTrade (EURUSD,H1)	2026.06.02 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=88.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.849	ForexAiTrade (EURUSD,H1)	2026.06.02 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=45.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.850	ForexAiTrade (EURUSD,H1)	2026.06.02 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.851	ForexAiTrade (EURUSD,H1)	2026.06.02 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.852	ForexAiTrade (EURUSD,H1)	2026.06.02 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.855	ForexAiTrade (EURUSD,H1)	2026.06.02 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.856	ForexAiTrade (EURUSD,H1)	2026.06.02 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.856	ForexAiTrade (EURUSD,H1)	2026.06.02 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.857	ForexAiTrade (EURUSD,H1)	2026.06.02 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.858	ForexAiTrade (EURUSD,H1)	2026.06.02 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.861	ForexAiTrade (EURUSD,H1)	2026.06.02 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.864	ForexAiTrade (EURUSD,H1)	2026.06.02 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.866	ForexAiTrade (EURUSD,H1)	2026.06.02 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.868	ForexAiTrade (EURUSD,H1)	2026.06.02 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.870	ForexAiTrade (EURUSD,H1)	2026.06.02 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16293 tp=1.16694 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.872	ForexAiTrade (EURUSD,H1)	2026.06.02 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.876	ForexAiTrade (EURUSD,H1)	2026.06.02 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.880	ForexAiTrade (EURUSD,H1)	2026.06.02 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16265 tp=1.16720 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.885	ForexAiTrade (EURUSD,H1)	2026.06.02 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.889	ForexAiTrade (EURUSD,H1)	2026.06.02 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.891	ForexAiTrade (EURUSD,H1)	2026.06.02 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.893	ForexAiTrade (EURUSD,H1)	2026.06.02 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=sell entry=0.00000 sl=1.16372 tp=1.15905 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.895	ForexAiTrade (EURUSD,H1)	2026.06.02 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.896	ForexAiTrade (EURUSD,H1)	2026.06.02 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.899	ForexAiTrade (EURUSD,H1)	2026.06.03 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=74.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.899	ForexAiTrade (EURUSD,H1)	2026.06.03 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.900	ForexAiTrade (EURUSD,H1)	2026.06.03 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:16.901	ForexAiTrade (EURUSD,H1)	2026.06.03 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.903	ForexAiTrade (EURUSD,H1)	2026.06.03 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.907	ForexAiTrade (EURUSD,H1)	2026.06.03 05:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16475 tp=1.15909 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.909	ForexAiTrade (EURUSD,H1)	2026.06.03 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.909	ForexAiTrade (EURUSD,H1)	2026.06.03 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.910	ForexAiTrade (EURUSD,H1)	2026.06.03 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.911	ForexAiTrade (EURUSD,H1)	2026.06.03 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.915	ForexAiTrade (EURUSD,H1)	2026.06.03 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.918	ForexAiTrade (EURUSD,H1)	2026.06.03 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.921	ForexAiTrade (EURUSD,H1)	2026.06.03 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.923	ForexAiTrade (EURUSD,H1)	2026.06.03 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.925	ForexAiTrade (EURUSD,H1)	2026.06.03 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.927	ForexAiTrade (EURUSD,H1)	2026.06.03 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.931	ForexAiTrade (EURUSD,H1)	2026.06.03 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.934	ForexAiTrade (EURUSD,H1)	2026.06.03 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.939	ForexAiTrade (EURUSD,H1)	2026.06.03 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.943	ForexAiTrade (EURUSD,H1)	2026.06.03 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.946	ForexAiTrade (EURUSD,H1)	2026.06.03 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.947	ForexAiTrade (EURUSD,H1)	2026.06.03 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.949	ForexAiTrade (EURUSD,H1)	2026.06.03 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.950	ForexAiTrade (EURUSD,H1)	2026.06.03 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.952	ForexAiTrade (EURUSD,H1)	2026.06.04 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=30.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.953	ForexAiTrade (EURUSD,H1)	2026.06.04 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=23.0 reason=no strategy signal
+CS	0	17:38:16.954	ForexAiTrade (EURUSD,H1)	2026.06.04 02:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16240 tp=1.15661 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.955	ForexAiTrade (EURUSD,H1)	2026.06.04 03:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16277 tp=1.15692 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.958	ForexAiTrade (EURUSD,H1)	2026.06.04 04:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16250 tp=1.15678 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.960	ForexAiTrade (EURUSD,H1)	2026.06.04 05:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16277 tp=1.15708 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.962	ForexAiTrade (EURUSD,H1)	2026.06.04 06:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16257 tp=1.15761 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.963	ForexAiTrade (EURUSD,H1)	2026.06.04 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.964	ForexAiTrade (EURUSD,H1)	2026.06.04 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.965	ForexAiTrade (EURUSD,H1)	2026.06.04 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.967	ForexAiTrade (EURUSD,H1)	2026.06.04 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.969	ForexAiTrade (EURUSD,H1)	2026.06.04 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=18.0 reason=no strategy signal
+CS	0	17:38:16.971	ForexAiTrade (EURUSD,H1)	2026.06.04 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.973	ForexAiTrade (EURUSD,H1)	2026.06.04 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.976	ForexAiTrade (EURUSD,H1)	2026.06.04 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.16128 tp=1.16590 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.980	ForexAiTrade (EURUSD,H1)	2026.06.04 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.985	ForexAiTrade (EURUSD,H1)	2026.06.04 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.988	ForexAiTrade (EURUSD,H1)	2026.06.04 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.992	ForexAiTrade (EURUSD,H1)	2026.06.04 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.994	ForexAiTrade (EURUSD,H1)	2026.06.04 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:16.996	ForexAiTrade (EURUSD,H1)	2026.06.04 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.997	ForexAiTrade (EURUSD,H1)	2026.06.04 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.999	ForexAiTrade (EURUSD,H1)	2026.06.04 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.000	ForexAiTrade (EURUSD,H1)	2026.06.04 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.002	ForexAiTrade (EURUSD,H1)	2026.06.05 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=34.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.003	ForexAiTrade (EURUSD,H1)	2026.06.05 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=32.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.004	ForexAiTrade (EURUSD,H1)	2026.06.05 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:38:17.004	ForexAiTrade (EURUSD,H1)	2026.06.05 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.005	ForexAiTrade (EURUSD,H1)	2026.06.05 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.008	ForexAiTrade (EURUSD,H1)	2026.06.05 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.009	ForexAiTrade (EURUSD,H1)	2026.06.05 06:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16248 tp=1.15894 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.010	ForexAiTrade (EURUSD,H1)	2026.06.05 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.011	ForexAiTrade (EURUSD,H1)	2026.06.05 08:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16253 tp=1.15948 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.011	ForexAiTrade (EURUSD,H1)	2026.06.05 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.014	ForexAiTrade (EURUSD,H1)	2026.06.05 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.016	ForexAiTrade (EURUSD,H1)	2026.06.05 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.019	ForexAiTrade (EURUSD,H1)	2026.06.05 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.021	ForexAiTrade (EURUSD,H1)	2026.06.05 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.023	ForexAiTrade (EURUSD,H1)	2026.06.05 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.026	ForexAiTrade (EURUSD,H1)	2026.06.05 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.033	ForexAiTrade (EURUSD,H1)	2026.06.05 16:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16050 tp=1.15464 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.044	ForexAiTrade (EURUSD,H1)	2026.06.05 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.051	ForexAiTrade (EURUSD,H1)	2026.06.05 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.056	ForexAiTrade (EURUSD,H1)	2026.06.05 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.060	ForexAiTrade (EURUSD,H1)	2026.06.05 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.063	ForexAiTrade (EURUSD,H1)	2026.06.05 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.068	ForexAiTrade (EURUSD,H1)	2026.06.05 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.070	ForexAiTrade (EURUSD,H1)	2026.06.05 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.074	ForexAiTrade (EURUSD,H1)	2026.06.08 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=97.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.074	ForexAiTrade (EURUSD,H1)	2026.06.08 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:17.076	ForexAiTrade (EURUSD,H1)	2026.06.08 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.078	ForexAiTrade (EURUSD,H1)	2026.06.08 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.080	ForexAiTrade (EURUSD,H1)	2026.06.08 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.085	ForexAiTrade (EURUSD,H1)	2026.06.08 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.087	ForexAiTrade (EURUSD,H1)	2026.06.08 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.088	ForexAiTrade (EURUSD,H1)	2026.06.08 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.090	ForexAiTrade (EURUSD,H1)	2026.06.08 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.092	ForexAiTrade (EURUSD,H1)	2026.06.08 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.096	ForexAiTrade (EURUSD,H1)	2026.06.08 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.100	ForexAiTrade (EURUSD,H1)	2026.06.08 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.103	ForexAiTrade (EURUSD,H1)	2026.06.08 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.106	ForexAiTrade (EURUSD,H1)	2026.06.08 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.109	ForexAiTrade (EURUSD,H1)	2026.06.08 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.113	ForexAiTrade (EURUSD,H1)	2026.06.08 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.117	ForexAiTrade (EURUSD,H1)	2026.06.08 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.123	ForexAiTrade (EURUSD,H1)	2026.06.08 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.127	ForexAiTrade (EURUSD,H1)	2026.06.08 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.131	ForexAiTrade (EURUSD,H1)	2026.06.08 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.134	ForexAiTrade (EURUSD,H1)	2026.06.08 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.136	ForexAiTrade (EURUSD,H1)	2026.06.08 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.138	ForexAiTrade (EURUSD,H1)	2026.06.08 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.139	ForexAiTrade (EURUSD,H1)	2026.06.08 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.141	ForexAiTrade (EURUSD,H1)	2026.06.09 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=53.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.141	ForexAiTrade (EURUSD,H1)	2026.06.09 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.142	ForexAiTrade (EURUSD,H1)	2026.06.09 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.143	ForexAiTrade (EURUSD,H1)	2026.06.09 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.145	ForexAiTrade (EURUSD,H1)	2026.06.09 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.147	ForexAiTrade (EURUSD,H1)	2026.06.09 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.148	ForexAiTrade (EURUSD,H1)	2026.06.09 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.150	ForexAiTrade (EURUSD,H1)	2026.06.09 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.151	ForexAiTrade (EURUSD,H1)	2026.06.09 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.155	ForexAiTrade (EURUSD,H1)	2026.06.09 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.157	ForexAiTrade (EURUSD,H1)	2026.06.09 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.159	ForexAiTrade (EURUSD,H1)	2026.06.09 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.161	ForexAiTrade (EURUSD,H1)	2026.06.09 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.162	ForexAiTrade (EURUSD,H1)	2026.06.09 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.15462 tp=1.15860 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.164	ForexAiTrade (EURUSD,H1)	2026.06.09 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.15495 tp=1.15913 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.165	ForexAiTrade (EURUSD,H1)	2026.06.09 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.167	ForexAiTrade (EURUSD,H1)	2026.06.09 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.171	ForexAiTrade (EURUSD,H1)	2026.06.09 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.176	ForexAiTrade (EURUSD,H1)	2026.06.09 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.180	ForexAiTrade (EURUSD,H1)	2026.06.09 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.187	ForexAiTrade (EURUSD,H1)	2026.06.09 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15653 tp=1.14890 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.191	ForexAiTrade (EURUSD,H1)	2026.06.09 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.194	ForexAiTrade (EURUSD,H1)	2026.06.09 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.196	ForexAiTrade (EURUSD,H1)	2026.06.09 23:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15665 tp=1.14879 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.198	ForexAiTrade (EURUSD,H1)	2026.06.10 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=33.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.199	ForexAiTrade (EURUSD,H1)	2026.06.10 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.199	ForexAiTrade (EURUSD,H1)	2026.06.10 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:17.200	ForexAiTrade (EURUSD,H1)	2026.06.10 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.203	ForexAiTrade (EURUSD,H1)	2026.06.10 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.206	ForexAiTrade (EURUSD,H1)	2026.06.10 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.208	ForexAiTrade (EURUSD,H1)	2026.06.10 06:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15643 tp=1.14958 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.210	ForexAiTrade (EURUSD,H1)	2026.06.10 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.211	ForexAiTrade (EURUSD,H1)	2026.06.10 08:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15663 tp=1.15037 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.213	ForexAiTrade (EURUSD,H1)	2026.06.10 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.215	ForexAiTrade (EURUSD,H1)	2026.06.10 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.219	ForexAiTrade (EURUSD,H1)	2026.06.10 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.223	ForexAiTrade (EURUSD,H1)	2026.06.10 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.225	ForexAiTrade (EURUSD,H1)	2026.06.10 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.227	ForexAiTrade (EURUSD,H1)	2026.06.10 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.233	ForexAiTrade (EURUSD,H1)	2026.06.10 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.238	ForexAiTrade (EURUSD,H1)	2026.06.10 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.243	ForexAiTrade (EURUSD,H1)	2026.06.10 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.248	ForexAiTrade (EURUSD,H1)	2026.06.10 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.253	ForexAiTrade (EURUSD,H1)	2026.06.10 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.258	ForexAiTrade (EURUSD,H1)	2026.06.10 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.261	ForexAiTrade (EURUSD,H1)	2026.06.10 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.263	ForexAiTrade (EURUSD,H1)	2026.06.10 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.265	ForexAiTrade (EURUSD,H1)	2026.06.10 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.268	ForexAiTrade (EURUSD,H1)	2026.06.11 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=31.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.268	ForexAiTrade (EURUSD,H1)	2026.06.11 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:38:17.269	ForexAiTrade (EURUSD,H1)	2026.06.11 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.272	ForexAiTrade (EURUSD,H1)	2026.06.11 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.275	ForexAiTrade (EURUSD,H1)	2026.06.11 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.277	ForexAiTrade (EURUSD,H1)	2026.06.11 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.279	ForexAiTrade (EURUSD,H1)	2026.06.11 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.280	ForexAiTrade (EURUSD,H1)	2026.06.11 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.282	ForexAiTrade (EURUSD,H1)	2026.06.11 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.283	ForexAiTrade (EURUSD,H1)	2026.06.11 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.285	ForexAiTrade (EURUSD,H1)	2026.06.11 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.289	ForexAiTrade (EURUSD,H1)	2026.06.11 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.291	ForexAiTrade (EURUSD,H1)	2026.06.11 12:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15494 tp=1.14949 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.293	ForexAiTrade (EURUSD,H1)	2026.06.11 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.294	ForexAiTrade (EURUSD,H1)	2026.06.11 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.297	ForexAiTrade (EURUSD,H1)	2026.06.11 15:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15565 tp=1.14989 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.303	ForexAiTrade (EURUSD,H1)	2026.06.11 16:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15606 tp=1.14950 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.308	ForexAiTrade (EURUSD,H1)	2026.06.11 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15520 tp=1.14818 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.312	ForexAiTrade (EURUSD,H1)	2026.06.11 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.318	ForexAiTrade (EURUSD,H1)	2026.06.11 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.321	ForexAiTrade (EURUSD,H1)	2026.06.11 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.330	ForexAiTrade (EURUSD,H1)	2026.06.11 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.340	ForexAiTrade (EURUSD,H1)	2026.06.11 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.346	ForexAiTrade (EURUSD,H1)	2026.06.11 23:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.15429 tp=1.16404 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.349	ForexAiTrade (EURUSD,H1)	2026.06.12 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=33.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.350	ForexAiTrade (EURUSD,H1)	2026.06.12 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.351	ForexAiTrade (EURUSD,H1)	2026.06.12 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	17:38:17.352	ForexAiTrade (EURUSD,H1)	2026.06.12 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.355	ForexAiTrade (EURUSD,H1)	2026.06.12 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.358	ForexAiTrade (EURUSD,H1)	2026.06.12 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.359	ForexAiTrade (EURUSD,H1)	2026.06.12 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.362	ForexAiTrade (EURUSD,H1)	2026.06.12 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.364	ForexAiTrade (EURUSD,H1)	2026.06.12 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.366	ForexAiTrade (EURUSD,H1)	2026.06.12 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.369	ForexAiTrade (EURUSD,H1)	2026.06.12 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.373	ForexAiTrade (EURUSD,H1)	2026.06.12 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.380	ForexAiTrade (EURUSD,H1)	2026.06.12 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.382	ForexAiTrade (EURUSD,H1)	2026.06.12 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.385	ForexAiTrade (EURUSD,H1)	2026.06.12 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.388	ForexAiTrade (EURUSD,H1)	2026.06.12 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.391	ForexAiTrade (EURUSD,H1)	2026.06.12 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.397	ForexAiTrade (EURUSD,H1)	2026.06.12 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.403	ForexAiTrade (EURUSD,H1)	2026.06.12 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.408	ForexAiTrade (EURUSD,H1)	2026.06.12 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.412	ForexAiTrade (EURUSD,H1)	2026.06.12 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.415	ForexAiTrade (EURUSD,H1)	2026.06.12 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.417	ForexAiTrade (EURUSD,H1)	2026.06.12 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.419	ForexAiTrade (EURUSD,H1)	2026.06.12 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.423	ForexAiTrade (EURUSD,H1)	2026.06.15 00:00:30   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=51.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.424	ForexAiTrade (EURUSD,H1)	2026.06.15 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.428	ForexAiTrade (EURUSD,H1)	2026.06.15 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.429	ForexAiTrade (EURUSD,H1)	2026.06.15 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.432	ForexAiTrade (EURUSD,H1)	2026.06.15 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.433	ForexAiTrade (EURUSD,H1)	2026.06.15 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.434	ForexAiTrade (EURUSD,H1)	2026.06.15 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.435	ForexAiTrade (EURUSD,H1)	2026.06.15 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.436	ForexAiTrade (EURUSD,H1)	2026.06.15 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.440	ForexAiTrade (EURUSD,H1)	2026.06.15 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.444	ForexAiTrade (EURUSD,H1)	2026.06.15 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.446	ForexAiTrade (EURUSD,H1)	2026.06.15 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.449	ForexAiTrade (EURUSD,H1)	2026.06.15 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.450	ForexAiTrade (EURUSD,H1)	2026.06.15 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.452	ForexAiTrade (EURUSD,H1)	2026.06.15 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.454	ForexAiTrade (EURUSD,H1)	2026.06.15 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.457	ForexAiTrade (EURUSD,H1)	2026.06.15 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.461	ForexAiTrade (EURUSD,H1)	2026.06.15 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.465	ForexAiTrade (EURUSD,H1)	2026.06.15 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.467	ForexAiTrade (EURUSD,H1)	2026.06.15 19:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15760 tp=1.16406 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.469	ForexAiTrade (EURUSD,H1)	2026.06.15 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15809 tp=1.16457 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.470	ForexAiTrade (EURUSD,H1)	2026.06.15 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15769 tp=1.16414 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.471	ForexAiTrade (EURUSD,H1)	2026.06.15 22:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15725 tp=1.16365 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.472	ForexAiTrade (EURUSD,H1)	2026.06.15 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.474	ForexAiTrade (EURUSD,H1)	2026.06.16 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=29.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.474	ForexAiTrade (EURUSD,H1)	2026.06.16 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=31.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.475	ForexAiTrade (EURUSD,H1)	2026.06.16 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=22.0 reason=no strategy signal
+CS	0	17:38:17.476	ForexAiTrade (EURUSD,H1)	2026.06.16 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.477	ForexAiTrade (EURUSD,H1)	2026.06.16 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.479	ForexAiTrade (EURUSD,H1)	2026.06.16 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.480	ForexAiTrade (EURUSD,H1)	2026.06.16 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.482	ForexAiTrade (EURUSD,H1)	2026.06.16 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.484	ForexAiTrade (EURUSD,H1)	2026.06.16 08:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=sell entry=0.00000 sl=1.15915 tp=1.15531 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.485	ForexAiTrade (EURUSD,H1)	2026.06.16 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.486	ForexAiTrade (EURUSD,H1)	2026.06.16 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15712 tp=1.16168 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.490	ForexAiTrade (EURUSD,H1)	2026.06.16 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.492	ForexAiTrade (EURUSD,H1)	2026.06.16 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.494	ForexAiTrade (EURUSD,H1)	2026.06.16 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.497	ForexAiTrade (EURUSD,H1)	2026.06.16 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.498	ForexAiTrade (EURUSD,H1)	2026.06.16 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.501	ForexAiTrade (EURUSD,H1)	2026.06.16 16:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15799 tp=1.16361 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.504	ForexAiTrade (EURUSD,H1)	2026.06.16 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15719 tp=1.16310 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.509	ForexAiTrade (EURUSD,H1)	2026.06.16 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15841 tp=1.16495 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.513	ForexAiTrade (EURUSD,H1)	2026.06.16 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.516	ForexAiTrade (EURUSD,H1)	2026.06.16 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.518	ForexAiTrade (EURUSD,H1)	2026.06.16 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.520	ForexAiTrade (EURUSD,H1)	2026.06.16 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.522	ForexAiTrade (EURUSD,H1)	2026.06.16 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.524	ForexAiTrade (EURUSD,H1)	2026.06.17 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=35.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.526	ForexAiTrade (EURUSD,H1)	2026.06.17 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=35.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.526	ForexAiTrade (EURUSD,H1)	2026.06.17 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=28.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.527	ForexAiTrade (EURUSD,H1)	2026.06.17 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.528	ForexAiTrade (EURUSD,H1)	2026.06.17 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.530	ForexAiTrade (EURUSD,H1)	2026.06.17 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.530	ForexAiTrade (EURUSD,H1)	2026.06.17 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.531	ForexAiTrade (EURUSD,H1)	2026.06.17 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.532	ForexAiTrade (EURUSD,H1)	2026.06.17 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.534	ForexAiTrade (EURUSD,H1)	2026.06.17 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.537	ForexAiTrade (EURUSD,H1)	2026.06.17 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.541	ForexAiTrade (EURUSD,H1)	2026.06.17 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=19.0 reason=no strategy signal
+CS	0	17:38:17.544	ForexAiTrade (EURUSD,H1)	2026.06.17 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=19.0 reason=no strategy signal
+CS	0	17:38:17.548	ForexAiTrade (EURUSD,H1)	2026.06.17 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=19.0 reason=no strategy signal
+CS	0	17:38:17.551	ForexAiTrade (EURUSD,H1)	2026.06.17 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.552	ForexAiTrade (EURUSD,H1)	2026.06.17 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.554	ForexAiTrade (EURUSD,H1)	2026.06.17 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.558	ForexAiTrade (EURUSD,H1)	2026.06.17 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.564	ForexAiTrade (EURUSD,H1)	2026.06.17 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.568	ForexAiTrade (EURUSD,H1)	2026.06.17 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.570	ForexAiTrade (EURUSD,H1)	2026.06.17 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.573	ForexAiTrade (EURUSD,H1)	2026.06.17 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.595	ForexAiTrade (EURUSD,H1)	2026.06.17 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.612	ForexAiTrade (EURUSD,H1)	2026.06.17 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.616	Tester	final balance 10041.03 USD
+CS	0	17:38:17.616	ForexAiTrade (EURUSD,H1)	2026.06.17 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	17:38:17.627	Tester	EURUSD,H1: 7788591 ticks, 2848 bars generated. Test passed in 0:00:09.609 (including ticks preprocessing 0:00:00.359).
+CS	0	17:38:17.627	Tester	207 Mb memory used including 0.94 Mb of history data, 192 Mb of tick data
+CS	0	17:38:17.627	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	17:38:17.630	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on EURUSD,H1 thread finished
+CS	0	17:38:17.819	127.0.0.1	tester forced to close
+CS	0	17:38:17.819	127.0.0.1	prepare for shutdown
+CS	0	17:38:17.819	127.0.0.1	stop immediately
+CS	0	17:38:17.819	127.0.0.1	shutdown finished
+CS	0	17:38:18.096	Server	MetaTester 5 stopped
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	17:38:16.566	ForexAiTrade (EURUSD,H1)	2026.05.26 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.568	ForexAiTrade (EURUSD,H1)	2026.05.26 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.569	ForexAiTrade (EURUSD,H1)	2026.05.26 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.571	ForexAiTrade (EURUSD,H1)	2026.05.26 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.572	ForexAiTrade (EURUSD,H1)	2026.05.26 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.575	ForexAiTrade (EURUSD,H1)	2026.05.27 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=85.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.576	ForexAiTrade (EURUSD,H1)	2026.05.27 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=33.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.577	ForexAiTrade (EURUSD,H1)	2026.05.27 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.577	ForexAiTrade (EURUSD,H1)	2026.05.27 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.578	ForexAiTrade (EURUSD,H1)	2026.05.27 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.580	ForexAiTrade (EURUSD,H1)	2026.05.27 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.581	ForexAiTrade (EURUSD,H1)	2026.05.27 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.583	ForexAiTrade (EURUSD,H1)	2026.05.27 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.583	ForexAiTrade (EURUSD,H1)	2026.05.27 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.586	ForexAiTrade (EURUSD,H1)	2026.05.27 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.589	ForexAiTrade (EURUSD,H1)	2026.05.27 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.592	ForexAiTrade (EURUSD,H1)	2026.05.27 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.595	ForexAiTrade (EURUSD,H1)	2026.05.27 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.597	ForexAiTrade (EURUSD,H1)	2026.05.27 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.600	ForexAiTrade (EURUSD,H1)	2026.05.27 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.603	ForexAiTrade (EURUSD,H1)	2026.05.27 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.615	ForexAiTrade (EURUSD,H1)	2026.05.27 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.624	ForexAiTrade (EURUSD,H1)	2026.05.27 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.632	ForexAiTrade (EURUSD,H1)	2026.05.27 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.639	ForexAiTrade (EURUSD,H1)	2026.05.27 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.642	ForexAiTrade (EURUSD,H1)	2026.05.27 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.645	ForexAiTrade (EURUSD,H1)	2026.05.27 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.647	ForexAiTrade (EURUSD,H1)	2026.05.27 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.649	ForexAiTrade (EURUSD,H1)	2026.05.27 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.652	ForexAiTrade (EURUSD,H1)	2026.05.28 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=84.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.652	ForexAiTrade (EURUSD,H1)	2026.05.28 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=34.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.653	ForexAiTrade (EURUSD,H1)	2026.05.28 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	17:38:16.654	ForexAiTrade (EURUSD,H1)	2026.05.28 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.657	ForexAiTrade (EURUSD,H1)	2026.05.28 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.661	ForexAiTrade (EURUSD,H1)	2026.05.28 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.662	ForexAiTrade (EURUSD,H1)	2026.05.28 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.666	ForexAiTrade (EURUSD,H1)	2026.05.28 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.667	ForexAiTrade (EURUSD,H1)	2026.05.28 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.669	ForexAiTrade (EURUSD,H1)	2026.05.28 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.671	ForexAiTrade (EURUSD,H1)	2026.05.28 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.675	ForexAiTrade (EURUSD,H1)	2026.05.28 11:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16306 tp=1.15712 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.677	ForexAiTrade (EURUSD,H1)	2026.05.28 12:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16348 tp=1.15743 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.679	ForexAiTrade (EURUSD,H1)	2026.05.28 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16325 tp=1.15716 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.682	ForexAiTrade (EURUSD,H1)	2026.05.28 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16236 tp=1.15610 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.686	ForexAiTrade (EURUSD,H1)	2026.05.28 15:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16385 tp=1.15714 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.690	ForexAiTrade (EURUSD,H1)	2026.05.28 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.694	ForexAiTrade (EURUSD,H1)	2026.05.28 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.703	ForexAiTrade (EURUSD,H1)	2026.05.28 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.708	ForexAiTrade (EURUSD,H1)	2026.05.28 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.711	ForexAiTrade (EURUSD,H1)	2026.05.28 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.713	ForexAiTrade (EURUSD,H1)	2026.05.28 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.715	ForexAiTrade (EURUSD,H1)	2026.05.28 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.717	ForexAiTrade (EURUSD,H1)	2026.05.28 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.720	ForexAiTrade (EURUSD,H1)	2026.05.29 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=74.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.720	ForexAiTrade (EURUSD,H1)	2026.05.29 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=31.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.721	ForexAiTrade (EURUSD,H1)	2026.05.29 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.722	ForexAiTrade (EURUSD,H1)	2026.05.29 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.723	ForexAiTrade (EURUSD,H1)	2026.05.29 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.725	ForexAiTrade (EURUSD,H1)	2026.05.29 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.726	ForexAiTrade (EURUSD,H1)	2026.05.29 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.728	ForexAiTrade (EURUSD,H1)	2026.05.29 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.728	ForexAiTrade (EURUSD,H1)	2026.05.29 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.729	ForexAiTrade (EURUSD,H1)	2026.05.29 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.731	ForexAiTrade (EURUSD,H1)	2026.05.29 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.734	ForexAiTrade (EURUSD,H1)	2026.05.29 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.737	ForexAiTrade (EURUSD,H1)	2026.05.29 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.740	ForexAiTrade (EURUSD,H1)	2026.05.29 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.743	ForexAiTrade (EURUSD,H1)	2026.05.29 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.745	ForexAiTrade (EURUSD,H1)	2026.05.29 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.749	ForexAiTrade (EURUSD,H1)	2026.05.29 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.752	ForexAiTrade (EURUSD,H1)	2026.05.29 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.762	ForexAiTrade (EURUSD,H1)	2026.05.29 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.16464 tp=1.17060 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.770	ForexAiTrade (EURUSD,H1)	2026.05.29 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.774	ForexAiTrade (EURUSD,H1)	2026.05.29 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.777	ForexAiTrade (EURUSD,H1)	2026.05.29 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.779	ForexAiTrade (EURUSD,H1)	2026.05.29 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.782	ForexAiTrade (EURUSD,H1)	2026.05.29 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.785	ForexAiTrade (EURUSD,H1)	2026.06.01 00:00:30   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=89.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.785	ForexAiTrade (EURUSD,H1)	2026.06.01 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=30.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.789	ForexAiTrade (EURUSD,H1)	2026.06.01 02:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16303 tp=1.16992 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.792	ForexAiTrade (EURUSD,H1)	2026.06.01 03:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16258 tp=1.16910 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.794	ForexAiTrade (EURUSD,H1)	2026.06.01 04:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16249 tp=1.16907 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.796	ForexAiTrade (EURUSD,H1)	2026.06.01 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.796	ForexAiTrade (EURUSD,H1)	2026.06.01 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.797	ForexAiTrade (EURUSD,H1)	2026.06.01 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.798	ForexAiTrade (EURUSD,H1)	2026.06.01 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.799	ForexAiTrade (EURUSD,H1)	2026.06.01 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.801	ForexAiTrade (EURUSD,H1)	2026.06.01 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16485 tp=1.16941 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.805	ForexAiTrade (EURUSD,H1)	2026.06.01 11:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16402 tp=1.16866 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.806	ForexAiTrade (EURUSD,H1)	2026.06.01 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.808	ForexAiTrade (EURUSD,H1)	2026.06.01 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16337 tp=1.16824 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.810	ForexAiTrade (EURUSD,H1)	2026.06.01 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.811	ForexAiTrade (EURUSD,H1)	2026.06.01 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.813	ForexAiTrade (EURUSD,H1)	2026.06.01 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.821	ForexAiTrade (EURUSD,H1)	2026.06.01 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.828	ForexAiTrade (EURUSD,H1)	2026.06.01 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.834	ForexAiTrade (EURUSD,H1)	2026.06.01 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.837	ForexAiTrade (EURUSD,H1)	2026.06.01 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.841	ForexAiTrade (EURUSD,H1)	2026.06.01 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.843	ForexAiTrade (EURUSD,H1)	2026.06.01 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.846	ForexAiTrade (EURUSD,H1)	2026.06.01 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.849	ForexAiTrade (EURUSD,H1)	2026.06.02 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=88.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.849	ForexAiTrade (EURUSD,H1)	2026.06.02 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=45.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.850	ForexAiTrade (EURUSD,H1)	2026.06.02 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:16.851	ForexAiTrade (EURUSD,H1)	2026.06.02 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.852	ForexAiTrade (EURUSD,H1)	2026.06.02 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.855	ForexAiTrade (EURUSD,H1)	2026.06.02 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.856	ForexAiTrade (EURUSD,H1)	2026.06.02 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.856	ForexAiTrade (EURUSD,H1)	2026.06.02 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.857	ForexAiTrade (EURUSD,H1)	2026.06.02 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.858	ForexAiTrade (EURUSD,H1)	2026.06.02 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.861	ForexAiTrade (EURUSD,H1)	2026.06.02 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.864	ForexAiTrade (EURUSD,H1)	2026.06.02 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.866	ForexAiTrade (EURUSD,H1)	2026.06.02 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.868	ForexAiTrade (EURUSD,H1)	2026.06.02 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.870	ForexAiTrade (EURUSD,H1)	2026.06.02 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16293 tp=1.16694 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.872	ForexAiTrade (EURUSD,H1)	2026.06.02 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.876	ForexAiTrade (EURUSD,H1)	2026.06.02 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.880	ForexAiTrade (EURUSD,H1)	2026.06.02 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.16265 tp=1.16720 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.885	ForexAiTrade (EURUSD,H1)	2026.06.02 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.889	ForexAiTrade (EURUSD,H1)	2026.06.02 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.891	ForexAiTrade (EURUSD,H1)	2026.06.02 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.893	ForexAiTrade (EURUSD,H1)	2026.06.02 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=sell entry=0.00000 sl=1.16372 tp=1.15905 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.895	ForexAiTrade (EURUSD,H1)	2026.06.02 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.896	ForexAiTrade (EURUSD,H1)	2026.06.02 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.899	ForexAiTrade (EURUSD,H1)	2026.06.03 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=74.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.899	ForexAiTrade (EURUSD,H1)	2026.06.03 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.900	ForexAiTrade (EURUSD,H1)	2026.06.03 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:16.901	ForexAiTrade (EURUSD,H1)	2026.06.03 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.903	ForexAiTrade (EURUSD,H1)	2026.06.03 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.907	ForexAiTrade (EURUSD,H1)	2026.06.03 05:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16475 tp=1.15909 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.909	ForexAiTrade (EURUSD,H1)	2026.06.03 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.909	ForexAiTrade (EURUSD,H1)	2026.06.03 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.910	ForexAiTrade (EURUSD,H1)	2026.06.03 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.911	ForexAiTrade (EURUSD,H1)	2026.06.03 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.915	ForexAiTrade (EURUSD,H1)	2026.06.03 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.918	ForexAiTrade (EURUSD,H1)	2026.06.03 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.921	ForexAiTrade (EURUSD,H1)	2026.06.03 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.923	ForexAiTrade (EURUSD,H1)	2026.06.03 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.925	ForexAiTrade (EURUSD,H1)	2026.06.03 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.927	ForexAiTrade (EURUSD,H1)	2026.06.03 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.931	ForexAiTrade (EURUSD,H1)	2026.06.03 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.934	ForexAiTrade (EURUSD,H1)	2026.06.03 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.939	ForexAiTrade (EURUSD,H1)	2026.06.03 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.943	ForexAiTrade (EURUSD,H1)	2026.06.03 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.946	ForexAiTrade (EURUSD,H1)	2026.06.03 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.947	ForexAiTrade (EURUSD,H1)	2026.06.03 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.949	ForexAiTrade (EURUSD,H1)	2026.06.03 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.950	ForexAiTrade (EURUSD,H1)	2026.06.03 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	17:38:16.952	ForexAiTrade (EURUSD,H1)	2026.06.04 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=30.0 reason=unsafe regime: spread too wide
+CS	0	17:38:16.953	ForexAiTrade (EURUSD,H1)	2026.06.04 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=23.0 reason=no strategy signal
+CS	0	17:38:16.954	ForexAiTrade (EURUSD,H1)	2026.06.04 02:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16240 tp=1.15661 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.955	ForexAiTrade (EURUSD,H1)	2026.06.04 03:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16277 tp=1.15692 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.958	ForexAiTrade (EURUSD,H1)	2026.06.04 04:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16250 tp=1.15678 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.960	ForexAiTrade (EURUSD,H1)	2026.06.04 05:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16277 tp=1.15708 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.962	ForexAiTrade (EURUSD,H1)	2026.06.04 06:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16257 tp=1.15761 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.963	ForexAiTrade (EURUSD,H1)	2026.06.04 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.964	ForexAiTrade (EURUSD,H1)	2026.06.04 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	17:38:16.965	ForexAiTrade (EURUSD,H1)	2026.06.04 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.967	ForexAiTrade (EURUSD,H1)	2026.06.04 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.969	ForexAiTrade (EURUSD,H1)	2026.06.04 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=18.0 reason=no strategy signal
+CS	0	17:38:16.971	ForexAiTrade (EURUSD,H1)	2026.06.04 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.973	ForexAiTrade (EURUSD,H1)	2026.06.04 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:16.976	ForexAiTrade (EURUSD,H1)	2026.06.04 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.16128 tp=1.16590 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:16.980	ForexAiTrade (EURUSD,H1)	2026.06.04 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.985	ForexAiTrade (EURUSD,H1)	2026.06.04 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.988	ForexAiTrade (EURUSD,H1)	2026.06.04 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.992	ForexAiTrade (EURUSD,H1)	2026.06.04 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.994	ForexAiTrade (EURUSD,H1)	2026.06.04 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:16.996	ForexAiTrade (EURUSD,H1)	2026.06.04 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.997	ForexAiTrade (EURUSD,H1)	2026.06.04 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:16.999	ForexAiTrade (EURUSD,H1)	2026.06.04 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.000	ForexAiTrade (EURUSD,H1)	2026.06.04 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.002	ForexAiTrade (EURUSD,H1)	2026.06.05 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=34.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.003	ForexAiTrade (EURUSD,H1)	2026.06.05 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=32.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.004	ForexAiTrade (EURUSD,H1)	2026.06.05 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=21.0 reason=no strategy signal
+CS	0	17:38:17.004	ForexAiTrade (EURUSD,H1)	2026.06.05 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.005	ForexAiTrade (EURUSD,H1)	2026.06.05 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.008	ForexAiTrade (EURUSD,H1)	2026.06.05 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.009	ForexAiTrade (EURUSD,H1)	2026.06.05 06:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16248 tp=1.15894 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.010	ForexAiTrade (EURUSD,H1)	2026.06.05 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.011	ForexAiTrade (EURUSD,H1)	2026.06.05 08:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16253 tp=1.15948 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.011	ForexAiTrade (EURUSD,H1)	2026.06.05 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.014	ForexAiTrade (EURUSD,H1)	2026.06.05 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.016	ForexAiTrade (EURUSD,H1)	2026.06.05 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.019	ForexAiTrade (EURUSD,H1)	2026.06.05 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.021	ForexAiTrade (EURUSD,H1)	2026.06.05 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.023	ForexAiTrade (EURUSD,H1)	2026.06.05 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.026	ForexAiTrade (EURUSD,H1)	2026.06.05 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.033	ForexAiTrade (EURUSD,H1)	2026.06.05 16:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.16050 tp=1.15464 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.044	ForexAiTrade (EURUSD,H1)	2026.06.05 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.051	ForexAiTrade (EURUSD,H1)	2026.06.05 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.056	ForexAiTrade (EURUSD,H1)	2026.06.05 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.060	ForexAiTrade (EURUSD,H1)	2026.06.05 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.063	ForexAiTrade (EURUSD,H1)	2026.06.05 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.068	ForexAiTrade (EURUSD,H1)	2026.06.05 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.070	ForexAiTrade (EURUSD,H1)	2026.06.05 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.074	ForexAiTrade (EURUSD,H1)	2026.06.08 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=97.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.074	ForexAiTrade (EURUSD,H1)	2026.06.08 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:17.076	ForexAiTrade (EURUSD,H1)	2026.06.08 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.078	ForexAiTrade (EURUSD,H1)	2026.06.08 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.080	ForexAiTrade (EURUSD,H1)	2026.06.08 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.085	ForexAiTrade (EURUSD,H1)	2026.06.08 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.087	ForexAiTrade (EURUSD,H1)	2026.06.08 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.088	ForexAiTrade (EURUSD,H1)	2026.06.08 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.090	ForexAiTrade (EURUSD,H1)	2026.06.08 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.092	ForexAiTrade (EURUSD,H1)	2026.06.08 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.096	ForexAiTrade (EURUSD,H1)	2026.06.08 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.100	ForexAiTrade (EURUSD,H1)	2026.06.08 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.103	ForexAiTrade (EURUSD,H1)	2026.06.08 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.106	ForexAiTrade (EURUSD,H1)	2026.06.08 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.109	ForexAiTrade (EURUSD,H1)	2026.06.08 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.113	ForexAiTrade (EURUSD,H1)	2026.06.08 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.117	ForexAiTrade (EURUSD,H1)	2026.06.08 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.123	ForexAiTrade (EURUSD,H1)	2026.06.08 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.127	ForexAiTrade (EURUSD,H1)	2026.06.08 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.131	ForexAiTrade (EURUSD,H1)	2026.06.08 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.134	ForexAiTrade (EURUSD,H1)	2026.06.08 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.136	ForexAiTrade (EURUSD,H1)	2026.06.08 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.138	ForexAiTrade (EURUSD,H1)	2026.06.08 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.139	ForexAiTrade (EURUSD,H1)	2026.06.08 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.141	ForexAiTrade (EURUSD,H1)	2026.06.09 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=53.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.141	ForexAiTrade (EURUSD,H1)	2026.06.09 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.142	ForexAiTrade (EURUSD,H1)	2026.06.09 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.143	ForexAiTrade (EURUSD,H1)	2026.06.09 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.145	ForexAiTrade (EURUSD,H1)	2026.06.09 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.147	ForexAiTrade (EURUSD,H1)	2026.06.09 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.148	ForexAiTrade (EURUSD,H1)	2026.06.09 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.150	ForexAiTrade (EURUSD,H1)	2026.06.09 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.151	ForexAiTrade (EURUSD,H1)	2026.06.09 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.155	ForexAiTrade (EURUSD,H1)	2026.06.09 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.157	ForexAiTrade (EURUSD,H1)	2026.06.09 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.159	ForexAiTrade (EURUSD,H1)	2026.06.09 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.161	ForexAiTrade (EURUSD,H1)	2026.06.09 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.162	ForexAiTrade (EURUSD,H1)	2026.06.09 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.15462 tp=1.15860 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.164	ForexAiTrade (EURUSD,H1)	2026.06.09 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.15495 tp=1.15913 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.165	ForexAiTrade (EURUSD,H1)	2026.06.09 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.167	ForexAiTrade (EURUSD,H1)	2026.06.09 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.171	ForexAiTrade (EURUSD,H1)	2026.06.09 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.176	ForexAiTrade (EURUSD,H1)	2026.06.09 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.180	ForexAiTrade (EURUSD,H1)	2026.06.09 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.187	ForexAiTrade (EURUSD,H1)	2026.06.09 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15653 tp=1.14890 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.191	ForexAiTrade (EURUSD,H1)	2026.06.09 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.194	ForexAiTrade (EURUSD,H1)	2026.06.09 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.196	ForexAiTrade (EURUSD,H1)	2026.06.09 23:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15665 tp=1.14879 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.198	ForexAiTrade (EURUSD,H1)	2026.06.10 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=33.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.199	ForexAiTrade (EURUSD,H1)	2026.06.10 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.199	ForexAiTrade (EURUSD,H1)	2026.06.10 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	17:38:17.200	ForexAiTrade (EURUSD,H1)	2026.06.10 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.203	ForexAiTrade (EURUSD,H1)	2026.06.10 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.206	ForexAiTrade (EURUSD,H1)	2026.06.10 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.208	ForexAiTrade (EURUSD,H1)	2026.06.10 06:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15643 tp=1.14958 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.210	ForexAiTrade (EURUSD,H1)	2026.06.10 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.211	ForexAiTrade (EURUSD,H1)	2026.06.10 08:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15663 tp=1.15037 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.213	ForexAiTrade (EURUSD,H1)	2026.06.10 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.215	ForexAiTrade (EURUSD,H1)	2026.06.10 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.219	ForexAiTrade (EURUSD,H1)	2026.06.10 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.223	ForexAiTrade (EURUSD,H1)	2026.06.10 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.225	ForexAiTrade (EURUSD,H1)	2026.06.10 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.227	ForexAiTrade (EURUSD,H1)	2026.06.10 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.233	ForexAiTrade (EURUSD,H1)	2026.06.10 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.238	ForexAiTrade (EURUSD,H1)	2026.06.10 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.243	ForexAiTrade (EURUSD,H1)	2026.06.10 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.248	ForexAiTrade (EURUSD,H1)	2026.06.10 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.253	ForexAiTrade (EURUSD,H1)	2026.06.10 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.258	ForexAiTrade (EURUSD,H1)	2026.06.10 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.261	ForexAiTrade (EURUSD,H1)	2026.06.10 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.263	ForexAiTrade (EURUSD,H1)	2026.06.10 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.265	ForexAiTrade (EURUSD,H1)	2026.06.10 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.268	ForexAiTrade (EURUSD,H1)	2026.06.11 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=31.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.268	ForexAiTrade (EURUSD,H1)	2026.06.11 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=22.0 reason=no strategy signal
+CS	0	17:38:17.269	ForexAiTrade (EURUSD,H1)	2026.06.11 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.272	ForexAiTrade (EURUSD,H1)	2026.06.11 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.275	ForexAiTrade (EURUSD,H1)	2026.06.11 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.277	ForexAiTrade (EURUSD,H1)	2026.06.11 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.279	ForexAiTrade (EURUSD,H1)	2026.06.11 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.280	ForexAiTrade (EURUSD,H1)	2026.06.11 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.282	ForexAiTrade (EURUSD,H1)	2026.06.11 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.283	ForexAiTrade (EURUSD,H1)	2026.06.11 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.285	ForexAiTrade (EURUSD,H1)	2026.06.11 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.289	ForexAiTrade (EURUSD,H1)	2026.06.11 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.291	ForexAiTrade (EURUSD,H1)	2026.06.11 12:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15494 tp=1.14949 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.293	ForexAiTrade (EURUSD,H1)	2026.06.11 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.294	ForexAiTrade (EURUSD,H1)	2026.06.11 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.297	ForexAiTrade (EURUSD,H1)	2026.06.11 15:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15565 tp=1.14989 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.303	ForexAiTrade (EURUSD,H1)	2026.06.11 16:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15606 tp=1.14950 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.308	ForexAiTrade (EURUSD,H1)	2026.06.11 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.15520 tp=1.14818 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.312	ForexAiTrade (EURUSD,H1)	2026.06.11 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.318	ForexAiTrade (EURUSD,H1)	2026.06.11 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.321	ForexAiTrade (EURUSD,H1)	2026.06.11 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.330	ForexAiTrade (EURUSD,H1)	2026.06.11 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.340	ForexAiTrade (EURUSD,H1)	2026.06.11 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.346	ForexAiTrade (EURUSD,H1)	2026.06.11 23:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=0.00000 sl=1.15429 tp=1.16404 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.349	ForexAiTrade (EURUSD,H1)	2026.06.12 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=33.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.350	ForexAiTrade (EURUSD,H1)	2026.06.12 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.351	ForexAiTrade (EURUSD,H1)	2026.06.12 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	17:38:17.352	ForexAiTrade (EURUSD,H1)	2026.06.12 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.355	ForexAiTrade (EURUSD,H1)	2026.06.12 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.358	ForexAiTrade (EURUSD,H1)	2026.06.12 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.359	ForexAiTrade (EURUSD,H1)	2026.06.12 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.362	ForexAiTrade (EURUSD,H1)	2026.06.12 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.364	ForexAiTrade (EURUSD,H1)	2026.06.12 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.366	ForexAiTrade (EURUSD,H1)	2026.06.12 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.369	ForexAiTrade (EURUSD,H1)	2026.06.12 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.373	ForexAiTrade (EURUSD,H1)	2026.06.12 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.380	ForexAiTrade (EURUSD,H1)	2026.06.12 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.382	ForexAiTrade (EURUSD,H1)	2026.06.12 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.385	ForexAiTrade (EURUSD,H1)	2026.06.12 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.388	ForexAiTrade (EURUSD,H1)	2026.06.12 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.391	ForexAiTrade (EURUSD,H1)	2026.06.12 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.397	ForexAiTrade (EURUSD,H1)	2026.06.12 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.403	ForexAiTrade (EURUSD,H1)	2026.06.12 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.408	ForexAiTrade (EURUSD,H1)	2026.06.12 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.412	ForexAiTrade (EURUSD,H1)	2026.06.12 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.415	ForexAiTrade (EURUSD,H1)	2026.06.12 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.417	ForexAiTrade (EURUSD,H1)	2026.06.12 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.419	ForexAiTrade (EURUSD,H1)	2026.06.12 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.423	ForexAiTrade (EURUSD,H1)	2026.06.15 00:00:30   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=51.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.424	ForexAiTrade (EURUSD,H1)	2026.06.15 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.428	ForexAiTrade (EURUSD,H1)	2026.06.15 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.429	ForexAiTrade (EURUSD,H1)	2026.06.15 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.432	ForexAiTrade (EURUSD,H1)	2026.06.15 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.433	ForexAiTrade (EURUSD,H1)	2026.06.15 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.434	ForexAiTrade (EURUSD,H1)	2026.06.15 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.435	ForexAiTrade (EURUSD,H1)	2026.06.15 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.436	ForexAiTrade (EURUSD,H1)	2026.06.15 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.440	ForexAiTrade (EURUSD,H1)	2026.06.15 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.444	ForexAiTrade (EURUSD,H1)	2026.06.15 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.446	ForexAiTrade (EURUSD,H1)	2026.06.15 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.449	ForexAiTrade (EURUSD,H1)	2026.06.15 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.450	ForexAiTrade (EURUSD,H1)	2026.06.15 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.452	ForexAiTrade (EURUSD,H1)	2026.06.15 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.454	ForexAiTrade (EURUSD,H1)	2026.06.15 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.457	ForexAiTrade (EURUSD,H1)	2026.06.15 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.461	ForexAiTrade (EURUSD,H1)	2026.06.15 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.465	ForexAiTrade (EURUSD,H1)	2026.06.15 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.467	ForexAiTrade (EURUSD,H1)	2026.06.15 19:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15760 tp=1.16406 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.469	ForexAiTrade (EURUSD,H1)	2026.06.15 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15809 tp=1.16457 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.470	ForexAiTrade (EURUSD,H1)	2026.06.15 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15769 tp=1.16414 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.471	ForexAiTrade (EURUSD,H1)	2026.06.15 22:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15725 tp=1.16365 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.472	ForexAiTrade (EURUSD,H1)	2026.06.15 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.474	ForexAiTrade (EURUSD,H1)	2026.06.16 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=29.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.474	ForexAiTrade (EURUSD,H1)	2026.06.16 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=31.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.475	ForexAiTrade (EURUSD,H1)	2026.06.16 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=22.0 reason=no strategy signal
+CS	0	17:38:17.476	ForexAiTrade (EURUSD,H1)	2026.06.16 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.477	ForexAiTrade (EURUSD,H1)	2026.06.16 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.479	ForexAiTrade (EURUSD,H1)	2026.06.16 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.480	ForexAiTrade (EURUSD,H1)	2026.06.16 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.482	ForexAiTrade (EURUSD,H1)	2026.06.16 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.484	ForexAiTrade (EURUSD,H1)	2026.06.16 08:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=sell entry=0.00000 sl=1.15915 tp=1.15531 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.485	ForexAiTrade (EURUSD,H1)	2026.06.16 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.486	ForexAiTrade (EURUSD,H1)	2026.06.16 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15712 tp=1.16168 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.490	ForexAiTrade (EURUSD,H1)	2026.06.16 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.492	ForexAiTrade (EURUSD,H1)	2026.06.16 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.494	ForexAiTrade (EURUSD,H1)	2026.06.16 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.497	ForexAiTrade (EURUSD,H1)	2026.06.16 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.498	ForexAiTrade (EURUSD,H1)	2026.06.16 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.501	ForexAiTrade (EURUSD,H1)	2026.06.16 16:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15799 tp=1.16361 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.504	ForexAiTrade (EURUSD,H1)	2026.06.16 17:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15719 tp=1.16310 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.509	ForexAiTrade (EURUSD,H1)	2026.06.16 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=buy entry=0.00000 sl=1.15841 tp=1.16495 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak limit reached from deal history: 4
+CS	0	17:38:17.513	ForexAiTrade (EURUSD,H1)	2026.06.16 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.516	ForexAiTrade (EURUSD,H1)	2026.06.16 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.518	ForexAiTrade (EURUSD,H1)	2026.06.16 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.520	ForexAiTrade (EURUSD,H1)	2026.06.16 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.522	ForexAiTrade (EURUSD,H1)	2026.06.16 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.524	ForexAiTrade (EURUSD,H1)	2026.06.17 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=35.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.526	ForexAiTrade (EURUSD,H1)	2026.06.17 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=35.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.526	ForexAiTrade (EURUSD,H1)	2026.06.17 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=28.0 reason=unsafe regime: spread too wide
+CS	0	17:38:17.527	ForexAiTrade (EURUSD,H1)	2026.06.17 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.528	ForexAiTrade (EURUSD,H1)	2026.06.17 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.530	ForexAiTrade (EURUSD,H1)	2026.06.17 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.530	ForexAiTrade (EURUSD,H1)	2026.06.17 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.531	ForexAiTrade (EURUSD,H1)	2026.06.17 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.532	ForexAiTrade (EURUSD,H1)	2026.06.17 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.534	ForexAiTrade (EURUSD,H1)	2026.06.17 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.537	ForexAiTrade (EURUSD,H1)	2026.06.17 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.541	ForexAiTrade (EURUSD,H1)	2026.06.17 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=19.0 reason=no strategy signal
+CS	0	17:38:17.544	ForexAiTrade (EURUSD,H1)	2026.06.17 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=19.0 reason=no strategy signal
+CS	0	17:38:17.548	ForexAiTrade (EURUSD,H1)	2026.06.17 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=19.0 reason=no strategy signal
+CS	0	17:38:17.551	ForexAiTrade (EURUSD,H1)	2026.06.17 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.552	ForexAiTrade (EURUSD,H1)	2026.06.17 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.554	ForexAiTrade (EURUSD,H1)	2026.06.17 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	17:38:17.558	ForexAiTrade (EURUSD,H1)	2026.06.17 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	17:38:17.564	ForexAiTrade (EURUSD,H1)	2026.06.17 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.568	ForexAiTrade (EURUSD,H1)	2026.06.17 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.570	ForexAiTrade (EURUSD,H1)	2026.06.17 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.573	ForexAiTrade (EURUSD,H1)	2026.06.17 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.595	ForexAiTrade (EURUSD,H1)	2026.06.17 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.612	ForexAiTrade (EURUSD,H1)	2026.06.17 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	17:38:17.616	Tester	final balance 10041.03 USD
+CS	0	17:38:17.616	ForexAiTrade (EURUSD,H1)	2026.06.17 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	17:38:17.627	Tester	EURUSD,H1: 7788591 ticks, 2848 bars generated. Test passed in 0:00:09.609 (including ticks preprocessing 0:00:00.359).
+CS	0	17:38:17.627	Tester	207 Mb memory used including 0.94 Mb of history data, 192 Mb of tick data
+CS	0	17:38:17.627	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	17:38:17.630	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on EURUSD,H1 thread finished
+CS	0	17:38:17.819	127.0.0.1	tester forced to close
+CS	0	17:38:17.819	127.0.0.1	prepare for shutdown
+CS	0	17:38:17.819	127.0.0.1	stop immediately
+CS	0	17:38:17.819	127.0.0.1	shutdown finished
+CS	0	17:38:18.096	Server	MetaTester 5 stopped

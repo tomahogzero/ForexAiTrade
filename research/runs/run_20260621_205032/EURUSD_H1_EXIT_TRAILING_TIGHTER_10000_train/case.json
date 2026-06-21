@@ -1,0 +1,18 @@
+﻿{
+    "run_id":  "run_20260621_205032",
+    "case_id":  "EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_train",
+    "base_case_id":  "EURUSD_H1_EXIT_TRAILING_TIGHTER_10000",
+    "phase":  "train",
+    "actual_symbol":  "EURUSD",
+    "canonical_symbol":  "EURUSD",
+    "timeframe":  "H1",
+    "period":  {
+                   "from":  "2023-01-01",
+                   "to":  "2024-12-31"
+               },
+    "deposit":  10000,
+    "risk_percent":  0.10,
+    "exit_variant":  "trailing_tighter",
+    "use_trailing_stop":  true,
+    "trailing_atr_multiplier":  1.0
+}

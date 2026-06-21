@@ -1,0 +1,4 @@
+﻿2026-06-21 20:51:49 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 20:51:49 Case start: EURUSD_H1_EXIT_BASELINE_10000_validation
+2026-06-21 20:51:49 Spawned MT5 PID 33544
+2026-06-21 20:52:33 Tester completion detected in updated log.

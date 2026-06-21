@@ -1,0 +1,1203 @@
+﻿===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\logs\20260621.log =====
+PP	0	18:39:14.511	Terminal	exit with code 0
+JR	0	18:39:14.514	Network	'168886591': disconnected from XMGlobal-MT5 2
+EN	0	18:39:14.626	Terminal	stopped with 0
+PN	0	18:39:14.633	Terminal	shutdown with 0
+RK	0	18:39:42.176	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_183001\EURUSD_H4_10000_out_of_sample\generated_tester.ini"
+CN	0	18:39:42.265	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+RK	0	18:39:42.266	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+NK	0	18:39:42.266	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+LI	0	18:39:42.266	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_183001\EURUSD_H4_10000_out_of_sample\generated_tester.ini
+CQ	0	18:39:49.558	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+KK	0	18:39:50.513	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+NF	0	18:39:50.513	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 14:38:39
+NE	0	18:39:51.631	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CI	0	18:39:51.631	Network	'168886591': trading has been enabled - hedging mode
+DS	0	18:39:52.624	Tester	automatical testing started
+MD	0	18:39:53.846	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+JF	0	18:40:06.734	Tester	last test passed with result "successfully finished" in 0:00:11.764
+DF	0	18:40:06.941	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+HQ	0	18:40:09.979	Terminal	exit with code 0
+RD	0	18:40:09.983	Network	'168886591': disconnected from XMGlobal-MT5 2
+KL	0	18:40:10.129	Terminal	stopped with 0
+EO	0	18:40:10.139	Terminal	shutdown with 0
+GK	0	20:28:44.360	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_202843\EURUSD_H1_10000_validation\generated_tester.ini"
+OQ	0	20:28:44.435	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+QI	0	20:28:44.436	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 11 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+LM	0	20:28:44.436	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+CE	0	20:28:44.436	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_202843\EURUSD_H1_10000_validation\generated_tester.ini
+LR	0	20:28:48.669	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+OJ	0	20:28:49.604	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+KI	0	20:28:49.605	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 14:39:49
+CJ	0	20:28:50.412	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+RH	0	20:28:50.412	Network	'168886591': trading has been enabled - hedging mode
+PR	0	20:28:51.046	Tester	automatical testing started
+JD	0	20:28:51.660	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+EG	0	20:29:18.248	Tester	last test passed with result "successfully finished" in 0:00:24.573
+IG	0	20:29:18.453	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+QN	0	20:29:21.880	Terminal	exit with code 0
+CG	0	20:29:21.885	Network	'168886591': disconnected from XMGlobal-MT5 2
+FM	0	20:29:22.161	Terminal	stopped with 0
+KH	0	20:29:22.174	Terminal	shutdown with 0
+JF	0	20:29:46.449	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_202843\EURUSD_H1_10000_out_of_sample\generated_tester.ini"
+EP	0	20:29:46.506	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+FN	0	20:29:46.506	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 11 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+ON	0	20:29:46.506	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+RL	0	20:29:46.506	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_202843\EURUSD_H1_10000_out_of_sample\generated_tester.ini
+GL	0	20:29:50.574	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+CI	0	20:29:51.804	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+IK	0	20:29:51.804	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:28:48
+OH	0	20:29:52.561	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+GK	0	20:29:52.562	Network	'168886591': trading has been enabled - hedging mode
+KE	0	20:29:53.138	Tester	automatical testing started
+CF	0	20:29:53.615	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+OQ	0	20:30:04.499	Tester	last test passed with result "successfully finished" in 0:00:09.353
+GH	0	20:30:04.681	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+OL	0	20:30:07.598	Terminal	exit with code 0
+FF	0	20:30:07.602	Network	'168886591': disconnected from XMGlobal-MT5 2
+ER	0	20:30:07.705	Terminal	stopped with 0
+QJ	0	20:30:07.720	Terminal	shutdown with 0
+LF	0	20:50:33.420	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_BASELINE_10000_train\generated_tester.ini"
+GE	0	20:50:33.470	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+KL	0	20:50:33.470	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+MP	0	20:50:33.470	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+MO	0	20:50:33.470	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_BASELINE_10000_train\generated_tester.ini
+NO	0	20:50:37.514	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+IM	0	20:50:38.764	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+LL	0	20:50:38.764	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:29:51
+OO	0	20:50:39.654	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FL	0	20:50:39.654	Network	'168886591': trading has been enabled - hedging mode
+PF	0	20:50:40.188	Tester	automatical testing started
+ES	0	20:50:40.709	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.53 ms via 'VPS London LD6 05' instead of 193.31 ms
+ML	0	20:51:21.809	Tester	last test passed with result "successfully finished" in 0:00:39.524
+GL	0	20:51:22.013	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+MK	0	20:51:24.406	Terminal	exit with code 0
+QK	0	20:51:24.409	Network	'168886591': disconnected from XMGlobal-MT5 2
+KF	0	20:51:24.536	Terminal	stopped with 0
+RE	0	20:51:24.541	Terminal	shutdown with 0
+PM	0	20:51:50.384	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_BASELINE_10000_validation\generated_tester.ini"
+QF	0	20:51:50.427	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+MP	0	20:51:50.427	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+KD	0	20:51:50.427	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+FM	0	20:51:50.427	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_BASELINE_10000_validation\generated_tester.ini
+GK	0	20:51:54.234	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+LQ	0	20:51:55.143	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+KP	0	20:51:55.143	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:50:37
+OS	0	20:51:56.001	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+JS	0	20:51:56.001	Network	'168886591': trading has been enabled - hedging mode
+CM	0	20:51:56.734	Tester	automatical testing started
+NP	0	20:51:57.396	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+HH	0	20:52:23.302	Tester	last test passed with result "successfully finished" in 0:00:24.087
+FP	0	20:52:23.463	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+GG	0	20:52:26.102	Terminal	exit with code 0
+DN	0	20:52:26.108	Network	'168886591': disconnected from XMGlobal-MT5 2
+QJ	0	20:52:26.274	Terminal	stopped with 0
+QQ	0	20:52:26.280	Terminal	shutdown with 0
+ON	0	20:52:56.694	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_BASELINE_10000_out_of_sample\generated_tester.ini"
+KM	0	20:52:56.754	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+HE	0	20:52:56.755	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+JI	0	20:52:56.755	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+IF	0	20:52:56.755	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_BASELINE_10000_out_of_sample\generated_tester.ini
+NP	0	20:53:01.295	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+CD	0	20:53:02.032	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+GF	0	20:53:02.033	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:51:54
+RD	0	20:53:03.035	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+CF	0	20:53:03.035	Network	'168886591': trading has been enabled - hedging mode
+JP	0	20:53:03.711	Tester	automatical testing started
+CK	0	20:53:04.221	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+JE	0	20:53:15.513	Tester	last test passed with result "successfully finished" in 0:00:09.789
+RE	0	20:53:15.667	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+IP	0	20:53:18.128	Terminal	exit with code 0
+HE	0	20:53:18.131	Network	'168886591': disconnected from XMGlobal-MT5 2
+PO	0	20:53:18.213	Terminal	stopped with 0
+DN	0	20:53:18.218	Terminal	shutdown with 0
+PI	0	20:53:48.716	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_NO_TRAILING_10000_train\generated_tester.ini"
+RP	0	20:53:48.788	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+EI	0	20:53:48.789	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+CM	0	20:53:48.789	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+JF	0	20:53:48.789	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_NO_TRAILING_10000_train\generated_tester.ini
+IL	0	20:53:53.604	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+CH	0	20:53:54.518	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+JK	0	20:53:54.518	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:53:01
+IH	0	20:53:55.486	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+PJ	0	20:53:55.486	Network	'168886591': trading has been enabled - hedging mode
+OD	0	20:53:56.248	Tester	automatical testing started
+NO	0	20:53:56.935	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+CQ	0	20:54:34.459	Tester	last test passed with result "successfully finished" in 0:00:35.542
+DI	0	20:54:34.636	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+HL	0	20:54:37.444	Terminal	exit with code 0
+II	0	20:54:37.448	Network	'168886591': disconnected from XMGlobal-MT5 2
+LS	0	20:54:37.541	Terminal	stopped with 0
+MJ	0	20:54:37.549	Terminal	shutdown with 0
+FS	0	20:55:08.445	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_NO_TRAILING_10000_validation\generated_tester.ini"
+MD	0	20:55:08.495	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+HR	0	20:55:08.496	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+JR	0	20:55:08.496	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+NS	0	20:55:08.496	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_NO_TRAILING_10000_validation\generated_tester.ini
+RI	0	20:55:12.284	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+PS	0	20:55:13.192	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+PQ	0	20:55:13.192	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:53:53
+GM	0	20:55:14.094	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+NQ	0	20:55:14.094	Network	'168886591': trading has been enabled - hedging mode
+FK	0	20:55:14.704	Tester	automatical testing started
+IR	0	20:55:15.274	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+KN	0	20:55:33.029	Tester	last test passed with result "successfully finished" in 0:00:16.328
+NN	0	20:55:33.221	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+II	0	20:55:35.662	Terminal	exit with code 0
+LL	0	20:55:35.666	Network	'168886591': disconnected from XMGlobal-MT5 2
+ED	0	20:55:35.776	Terminal	stopped with 0
+QG	0	20:55:35.782	Terminal	shutdown with 0
+FP	0	20:56:06.374	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_NO_TRAILING_10000_out_of_sample\generated_tester.ini"
+EJ	0	20:56:06.445	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+QG	0	20:56:06.445	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+OG	0	20:56:06.445	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+MH	0	20:56:06.445	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_NO_TRAILING_10000_out_of_sample\generated_tester.ini
+QG	0	20:56:10.080	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+FE	0	20:56:11.209	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+CD	0	20:56:11.209	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:55:12
+RG	0	20:56:12.115	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+GG	0	20:56:12.115	Network	'168886591': trading has been enabled - hedging mode
+CQ	0	20:56:12.711	Tester	automatical testing started
+GD	0	20:56:13.217	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+FD	0	20:56:21.227	Tester	last test passed with result "successfully finished" in 0:00:06.584
+QD	0	20:56:21.390	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+QS	0	20:56:23.901	Terminal	exit with code 0
+GR	0	20:56:23.904	Network	'168886591': disconnected from XMGlobal-MT5 2
+PN	0	20:56:24.004	Terminal	stopped with 0
+NM	0	20:56:24.009	Terminal	shutdown with 0
+JK	0	20:56:55.076	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_train\generated_tester.ini"
+LQ	0	20:56:55.132	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+HI	0	20:56:55.132	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+JM	0	20:56:55.132	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+CK	0	20:56:55.132	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_train\generated_tester.ini
+OL	0	20:56:59.472	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+IH	0	20:57:00.414	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+GJ	0	20:57:00.414	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:56:10
+KH	0	20:57:01.362	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+JJ	0	20:57:01.362	Network	'168886591': trading has been enabled - hedging mode
+FD	0	20:57:01.995	Tester	automatical testing started
+DO	0	20:57:02.615	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+NQ	0	20:57:43.755	Tester	last test passed with result "successfully finished" in 0:00:39.817
+DI	0	20:57:43.916	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+RL	0	20:57:46.269	Terminal	exit with code 0
+PI	0	20:57:46.271	Network	'168886591': disconnected from XMGlobal-MT5 2
+DS	0	20:57:46.355	Terminal	stopped with 0
+NJ	0	20:57:46.358	Terminal	shutdown with 0
+PN	0	20:58:18.621	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_validation\generated_tester.ini"
+OG	0	20:58:18.680	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+KS	0	20:58:18.680	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+MS	0	20:58:18.680	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+IO	0	20:58:18.680	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_validation\generated_tester.ini
+CK	0	20:58:23.312	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+KR	0	20:58:24.473	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+JP	0	20:58:24.473	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:56:59
+QS	0	20:58:25.556	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+HP	0	20:58:25.556	Network	'168886591': trading has been enabled - hedging mode
+IJ	0	20:58:26.202	Tester	automatical testing started
+KQ	0	20:58:26.910	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+LH	0	20:58:55.703	Tester	last test passed with result "successfully finished" in 0:00:26.564
+OO	0	20:58:55.926	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+CG	0	20:58:58.963	Terminal	exit with code 0
+NO	0	20:58:58.967	Network	'168886591': disconnected from XMGlobal-MT5 2
+JE	0	20:58:59.075	Terminal	stopped with 0
+IQ	0	20:58:59.080	Terminal	shutdown with 0
+GN	0	20:59:40.514	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_out_of_sample\generated_tester.ini"
+JL	0	20:59:40.580	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+ME	0	20:59:40.581	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+KI	0	20:59:40.581	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+QG	0	20:59:40.581	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_out_of_sample\generated_tester.ini
+FR	0	20:59:45.545	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+GJ	0	20:59:46.272	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+KI	0	20:59:46.272	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:58:23
+EJ	0	20:59:47.238	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+PI	0	20:59:47.238	Network	'168886591': trading has been enabled - hedging mode
+NS	0	20:59:48.547	Tester	automatical testing started
+QJ	0	20:59:49.224	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+NG	0	21:00:00.837	Tester	last test passed with result "successfully finished" in 0:00:10.200
+EG	0	21:00:01.022	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+NN	0	21:00:03.773	Terminal	exit with code 0
+HD	0	21:00:03.776	Network	'168886591': disconnected from XMGlobal-MT5 2
+OM	0	21:00:03.859	Terminal	stopped with 0
+EH	0	21:00:03.863	Terminal	shutdown with 0
+EH	0	21:00:39.917	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_LOOSER_10000_train\generated_tester.ini"
+GR	0	21:00:39.973	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+KO	0	21:00:39.973	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 10 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+MO	0	21:00:39.973	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+GP	0	21:00:39.973	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_LOOSER_10000_train\generated_tester.ini
+HO	0	21:00:44.844	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+JN	0	21:00:45.730	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+ML	0	21:00:45.730	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 16:59:45
+JO	0	21:00:46.688	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+OL	0	21:00:46.688	Network	'168886591': trading has been enabled - hedging mode
+IF	0	21:00:47.380	Tester	automatical testing started
+JM	0	21:00:48.120	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+DL	0	21:01:28.425	Tester	last test passed with result "successfully finished" in 0:00:39.010
+JK	0	21:01:28.625	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+MK	0	21:01:31.136	Terminal	exit with code 0
+MK	0	21:01:31.139	Network	'168886591': disconnected from XMGlobal-MT5 2
+GQ	0	21:01:31.211	Terminal	stopped with 0
+LE	0	21:01:31.217	Terminal	shutdown with 0
+PQ	0	21:02:07.701	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_LOOSER_10000_validation\generated_tester.ini"
+II	0	21:02:07.769	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+MR	0	21:02:07.770	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+IE	0	21:02:07.770	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+FP	0	21:02:07.770	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_LOOSER_10000_validation\generated_tester.ini
+ME	0	21:02:14.330	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+HP	0	21:02:14.981	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+GR	0	21:02:14.981	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:00:44
+LQ	0	21:02:15.941	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+ER	0	21:02:15.941	Network	'168886591': trading has been enabled - hedging mode
+LL	0	21:02:16.561	Tester	automatical testing started
+CG	0	21:02:17.095	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+OJ	0	21:02:43.437	Tester	last test passed with result "successfully finished" in 0:00:24.805
+KQ	0	21:02:43.606	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+HE	0	21:02:46.282	Terminal	exit with code 0
+QQ	0	21:02:46.286	Network	'168886591': disconnected from XMGlobal-MT5 2
+DK	0	21:02:46.411	Terminal	stopped with 0
+FS	0	21:02:46.418	Terminal	shutdown with 0
+DE	0	21:03:22.251	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_LOOSER_10000_out_of_sample\generated_tester.ini"
+QO	0	21:03:22.303	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+DH	0	21:03:22.304	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+PK	0	21:03:22.304	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+ED	0	21:03:22.304	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_205032\EURUSD_H1_EXIT_TRAILING_LOOSER_10000_out_of_sample\generated_tester.ini
+QS	0	21:03:25.658	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+HI	0	21:03:26.545	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+FK	0	21:03:26.545	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:02:14
+HK	0	21:03:27.491	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+IK	0	21:03:27.491	Network	'168886591': trading has been enabled - hedging mode
+DE	0	21:03:28.103	Tester	automatical testing started
+RH	0	21:03:28.637	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+QP	0	21:03:39.150	Tester	last test passed with result "successfully finished" in 0:00:09.037
+HH	0	21:03:39.371	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+GO	0	21:03:41.838	Terminal	exit with code 0
+PF	0	21:03:41.841	Network	'168886591': disconnected from XMGlobal-MT5 2
+KR	0	21:03:41.917	Terminal	stopped with 0
+IJ	0	21:03:41.921	Terminal	shutdown with 0
+PG	0	21:49:19.423	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NORMAL_10000_train\generated_tester.ini"
+FE	0	21:49:19.498	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+JO	0	21:49:19.498	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+NP	0	21:49:19.498	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+LN	0	21:49:19.498	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NORMAL_10000_train\generated_tester.ini
+GO	0	21:49:26.949	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+OM	0	21:49:27.965	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+LL	0	21:49:27.965	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:03:25
+DO	0	21:49:29.275	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+EO	0	21:49:29.275	Network	'168886591': trading has been enabled - hedging mode
+NI	0	21:49:30.373	Tester	automatical testing started
+IM	0	21:49:31.603	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+FL	0	21:50:58.099	Tester	last test passed with result "successfully finished" in 0:01:24.479
+ML	0	21:50:58.407	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+EK	0	21:51:05.280	Terminal	exit with code 0
+GJ	0	21:51:05.319	Network	'168886591': disconnected from XMGlobal-MT5 2
+DF	0	21:51:05.494	Terminal	stopped with 0
+CE	0	21:51:05.542	Terminal	shutdown with 0
+LM	0	21:52:36.207	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NORMAL_10000_validation\generated_tester.ini"
+KI	0	21:52:36.290	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+DR	0	21:52:36.291	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+HD	0	21:52:36.291	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+OL	0	21:52:36.291	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NORMAL_10000_validation\generated_tester.ini
+OD	0	21:52:45.117	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+PQ	0	21:52:46.318	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+HS	0	21:52:46.318	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:49:26
+CP	0	21:52:47.700	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+NS	0	21:52:47.700	Network	'168886591': trading has been enabled - hedging mode
+DM	0	21:52:48.675	Tester	automatical testing started
+FP	0	21:52:49.809	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+EI	0	21:53:27.514	Tester	last test passed with result "successfully finished" in 0:00:35.489
+DP	0	21:53:27.807	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+PD	0	21:53:31.141	Terminal	exit with code 0
+IN	0	21:53:31.145	Network	'168886591': disconnected from XMGlobal-MT5 2
+HJ	0	21:53:31.235	Terminal	stopped with 0
+NR	0	21:53:31.247	Terminal	shutdown with 0
+NO	0	21:54:23.131	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NORMAL_10000_out_of_sample\generated_tester.ini"
+JL	0	21:54:23.213	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+NI	0	21:54:23.213	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 9 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+RI	0	21:54:23.213	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+OG	0	21:54:23.213	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NORMAL_10000_out_of_sample\generated_tester.ini
+GQ	0	21:54:31.031	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+NK	0	21:54:32.221	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+OF	0	21:54:32.221	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:52:45
+KE	0	21:54:33.507	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FI	0	21:54:33.507	Network	'168886591': trading has been enabled - hedging mode
+QS	0	21:54:34.482	Tester	automatical testing started
+EJ	0	21:54:35.476	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+RF	0	21:54:53.822	Tester	last test passed with result "successfully finished" in 0:00:16.580
+GF	0	21:54:54.076	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+GQ	0	21:54:57.471	Terminal	exit with code 0
+OD	0	21:54:57.476	Network	'168886591': disconnected from XMGlobal-MT5 2
+EL	0	21:54:57.590	Terminal	stopped with 0
+QO	0	21:54:57.597	Terminal	shutdown with 0
+DH	0	21:55:50.995	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_train\generated_tester.ini"
+DR	0	21:55:51.095	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+NO	0	21:55:51.096	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 8 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+QP	0	21:55:51.096	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+OS	0	21:55:51.096	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_train\generated_tester.ini
+LH	0	21:55:59.721	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+CL	0	21:56:00.656	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+EN	0	21:56:00.656	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:54:31
+RL	0	21:56:02.023	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+ON	0	21:56:02.023	Network	'168886591': trading has been enabled - hedging mode
+NH	0	21:56:03.313	Tester	automatical testing started
+GS	0	21:56:04.777	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+IM	0	21:57:20.092	Tester	last test passed with result "successfully finished" in 0:01:13.707
+KM	0	21:57:20.302	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+IH	0	21:57:23.307	Terminal	exit with code 0
+RM	0	21:57:23.309	Network	'168886591': disconnected from XMGlobal-MT5 2
+JG	0	21:57:23.423	Terminal	stopped with 0
+KG	0	21:57:23.427	Terminal	shutdown with 0
+OO	0	21:58:21.062	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_validation\generated_tester.ini"
+IJ	0	21:58:21.131	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+CG	0	21:58:21.132	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 8 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+PH	0	21:58:21.132	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+GE	0	21:58:21.132	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_validation\generated_tester.ini
+KQ	0	21:58:28.457	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+OK	0	21:58:29.411	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+EF	0	21:58:29.412	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:55:59
+CE	0	21:58:30.687	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+FI	0	21:58:30.687	Network	'168886591': trading has been enabled - hedging mode
+GS	0	21:58:31.696	Tester	automatical testing started
+CK	0	21:58:32.880	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+NF	0	21:59:12.330	Tester	last test passed with result "successfully finished" in 0:00:37.789
+OF	0	21:59:12.516	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+CQ	0	21:59:15.274	Terminal	exit with code 0
+GD	0	21:59:15.277	Network	'168886591': disconnected from XMGlobal-MT5 2
+RL	0	21:59:15.385	Terminal	stopped with 0
+EO	0	21:59:15.392	Terminal	shutdown with 0
+OH	0	22:00:20.898	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_out_of_sample\generated_tester.ini"
+QE	0	22:00:20.974	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+IN	0	22:00:20.975	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 8 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+NQ	0	22:00:20.975	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+KR	0	22:00:20.975	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_out_of_sample\generated_tester.ini
+FJ	0	22:00:28.395	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+ER	0	22:00:29.220	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+GQ	0	22:00:29.220	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 17:58:28
+LR	0	22:00:30.277	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+EP	0	22:00:30.277	Network	'168886591': trading has been enabled - hedging mode
+JJ	0	22:00:31.099	Tester	automatical testing started
+QQ	0	22:00:31.935	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+GO	0	22:00:47.232	Tester	last test passed with result "successfully finished" in 0:00:13.438
+NO	0	22:00:47.439	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+JF	0	22:00:50.501	Terminal	exit with code 0
+OO	0	22:00:50.505	Network	'168886591': disconnected from XMGlobal-MT5 2
+NE	0	22:00:50.635	Terminal	stopped with 0
+DP	0	22:00:50.643	Terminal	shutdown with 0
+GS	0	22:01:50.907	Startup	successfully initialized from start config "G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000_train\generated_tester.ini"
+JM	0	22:01:50.977	Terminal	XM Global MT5 x64 build 5833 started for XM Global Limited
+QF	0	22:01:50.977	Terminal	Windows 11 build 26300, 12 x Intel Core i7-10750H  @ 2.60GHz, AVX2, 8 / 31 Gb memory, 4 / 382 Gb disk, UAC, GMT+7
+NI	0	22:01:50.977	Terminal	C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05
+HJ	0	22:01:50.977	Terminal	launched with G:\AiServer\Codex\ForexAiTrade\research\runs\run_20260621_214917\EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000_train\generated_tester.ini
+HQ	0	22:01:59.082	Experts	expert TrailingSL_Manager (EURUSD#,H1) loaded successfully
+EK	0	22:02:00.335	Network	'168886591': authorized on XMGlobal-MT5 2 through Access Server SG (ping: 193.31 ms, build 5660)
+II	0	22:02:00.335	Network	'168886591': previous successful authorization performed from 171.4.229.144 on 2026.06.21 18:00:28
+ME	0	22:02:01.476	Network	'168886591': terminal synchronized with XM Global Limited: 0 positions, 0 orders, 1572 symbols, 0 spreads
+LI	0	22:02:01.476	Network	'168886591': trading has been enabled - hedging mode
+MS	0	22:02:02.355	Tester	automatical testing started
+EJ	0	22:02:03.370	Trades	use MetaTrader VPS Hosting Service to speed up the execution: 3.99 ms via 'VPS London Red 08' instead of 193.31 ms
+KF	0	22:03:11.767	Tester	last test passed with result "successfully finished" in 0:01:06.403
+LF	0	22:03:12.065	Experts	expert TrailingSL_Manager (EURUSD#,H1) removed
+LQ	0	22:03:15.378	Terminal	exit with code 0
+MD	0	22:03:15.383	Network	'168886591': disconnected from XMGlobal-MT5 2
+HL	0	22:03:15.541	Terminal	stopped with 0
+KH	0	22:03:15.547	Terminal	shutdown with 0
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:12   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03782, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:14   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03781 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:14   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03781, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:15   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03780 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:15   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03780, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:22   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03779 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:22   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03779, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:23   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03778 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:23   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03778, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:24   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03777 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:24   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03777, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03776 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03776, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:32   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03774 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:32   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03774, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:01   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03773 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:01   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03773, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:03   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03772 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:03   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03772, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:05   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03770 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:05   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03770, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:15   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03769 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:15   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03769, tp: 1.03313) [done]
+CS	0	22:03:08.628	Trade	2024.12.20 07:33:36   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03768 tp: 1.03313]
+CS	0	22:03:08.628	ForexAiTrade (EURUSD,H1)	2024.12.20 07:33:36   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03768, tp: 1.03313) [done]
+CS	0	22:03:08.628	Trade	2024.12.20 07:33:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03766 tp: 1.03313]
+CS	0	22:03:08.628	ForexAiTrade (EURUSD,H1)	2024.12.20 07:33:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03766, tp: 1.03313) [done]
+CS	0	22:03:08.629	ForexAiTrade (EURUSD,H1)	2024.12.20 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03765 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03765, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03763 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03763, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03761 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03761, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03759 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03759, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03757 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03757, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03755 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03755, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03753 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03753, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03751 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03751, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03749 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03749, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03747 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03747, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:32   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03746 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:32   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03746, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03745 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03745, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03743 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03743, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03741 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03741, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03739 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03739, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03737 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03737, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03735 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03735, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03733 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03733, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03731 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03731, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03729 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03729, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03727 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03727, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03725 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03725, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03724 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03724, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03722 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03722, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03720 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03720, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03718 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03718, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03716 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03716, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03714 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03714, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03712 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03712, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03710 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03710, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03708 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03708, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03706 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03706, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03704 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03704, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03702 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03702, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03701 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03701, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03699 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03699, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03698 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03698, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03696 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03696, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03695 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03695, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03693 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03693, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03692 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03692, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03691 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03691, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03689 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03689, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03688 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03688, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03686 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03686, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03685 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03685, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03683 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03683, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03682 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03682, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03680 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03680, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03678 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03678, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03677 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03677, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03675 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03675, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03674 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03674, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03672 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03672, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03671 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03671, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03669 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03669, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03668 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03668, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03666 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03666, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03665 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03665, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03663 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03663, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03662 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03662, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03660 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03660, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03659 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03659, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03657 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03657, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03656 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03656, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03654 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03654, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03653 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03653, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03651 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03651, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03650 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03650, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03648 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03648, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03646 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03646, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:11:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03644 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:11:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03644, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03643 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03643, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03642 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03642, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03640 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03640, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03639 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03639, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03638 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03638, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03637 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03637, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03636 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03636, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03635 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03635, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03634 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03634, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03633 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03633, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03631 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03631, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:32   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03630 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:32   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03630, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03629 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03629, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03627 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03627, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03626 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03626, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03625 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03625, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03624 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03624, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03622 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03622, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03621 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03621, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03620 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03620, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03619 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03619, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03617 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03617, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03616 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03616, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03615 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03615, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03614 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03614, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03612 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03612, tp: 1.03313) [done]
+CS	0	22:03:08.638	Trade	2024.12.20 08:27:35   stop loss triggered #1126 sell 0.02 EURUSD 1.03977 sl: 1.03612 tp: 1.03313 [#1127 buy 0.02 EURUSD at 1.03612]
+CS	0	22:03:08.638	Trades	2024.12.20 08:27:35   deal #1127 buy 0.02 EURUSD at 1.03612 done (based on order #1127)
+CS	0	22:03:08.638	Trade	2024.12.20 08:27:35   deal performed [#1127 buy 0.02 EURUSD at 1.03612]
+CS	0	22:03:08.638	Trade	2024.12.20 08:27:35   order performed buy 0.02 at 1.03612 [#1127 buy 0.02 EURUSD at 1.03612]
+CS	0	22:03:08.643	ForexAiTrade (EURUSD,H1)	2024.12.20 09:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=1.03737 sl=1.03981 tp=1.03251 raw_lot=0.0394 normalized_lot=0.03 risk_money=9.61 actual_risk_money=7.32 reason=execution safety checks passed
+CS	0	22:03:08.643	Trade	2024.12.20 09:00:00   market sell 0.03 EURUSD sl: 1.03981 tp: 1.03251 (1.03737 / 1.03755 / 1.03737)
+CS	0	22:03:08.643	Trades	2024.12.20 09:00:00   deal #1128 sell 0.03 EURUSD at 1.03737 done (based on order #1128)
+CS	0	22:03:08.643	Trade	2024.12.20 09:00:00   deal performed [#1128 sell 0.03 EURUSD at 1.03737]
+CS	0	22:03:08.643	Trade	2024.12.20 09:00:00   order performed sell 0.03 at 1.03737 [#1128 sell 0.03 EURUSD at 1.03737]
+CS	0	22:03:08.643	ForexAiTrade (EURUSD,H1)	2024.12.20 09:00:00   CTrade::OrderSend: market sell 0.03 EURUSD sl: 1.03981 tp: 1.03251 [done at 1.03737]
+CS	0	22:03:08.655	ForexAiTrade (EURUSD,H1)	2024.12.20 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04047 tp=1.03356 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.660	Trade	2024.12.20 10:23:37   stop loss triggered #1128 sell 0.03 EURUSD 1.03737 sl: 1.03981 tp: 1.03251 [#1129 buy 0.03 EURUSD at 1.03981]
+CS	0	22:03:08.660	Trades	2024.12.20 10:23:37   deal #1129 buy 0.03 EURUSD at 1.03981 done (based on order #1129)
+CS	0	22:03:08.660	Trade	2024.12.20 10:23:37   deal performed [#1129 buy 0.03 EURUSD at 1.03981]
+CS	0	22:03:08.660	Trade	2024.12.20 10:23:37   order performed buy 0.03 at 1.03981 [#1129 buy 0.03 EURUSD at 1.03981]
+CS	0	22:03:08.665	ForexAiTrade (EURUSD,H1)	2024.12.20 11:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=1.03913 sl=1.04144 tp=1.03452 raw_lot=0.0416 normalized_lot=0.04 risk_money=9.60 actual_risk_money=9.24 reason=execution safety checks passed
+CS	0	22:03:08.665	Trade	2024.12.20 11:00:00   market sell 0.04 EURUSD sl: 1.04144 tp: 1.03452 (1.03913 / 1.03930 / 1.03913)
+CS	0	22:03:08.665	Trades	2024.12.20 11:00:00   deal #1130 sell 0.04 EURUSD at 1.03913 done (based on order #1130)
+CS	0	22:03:08.665	Trade	2024.12.20 11:00:00   deal performed [#1130 sell 0.04 EURUSD at 1.03913]
+CS	0	22:03:08.665	Trade	2024.12.20 11:00:00   order performed sell 0.04 at 1.03913 [#1130 sell 0.04 EURUSD at 1.03913]
+CS	0	22:03:08.665	ForexAiTrade (EURUSD,H1)	2024.12.20 11:00:00   CTrade::OrderSend: market sell 0.04 EURUSD sl: 1.04144 tp: 1.03452 [done at 1.03913]
+CS	0	22:03:08.675	ForexAiTrade (EURUSD,H1)	2024.12.20 12:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04049 tp=1.03354 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.679	ForexAiTrade (EURUSD,H1)	2024.12.20 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04141 tp=1.03441 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.688	ForexAiTrade (EURUSD,H1)	2024.12.20 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04150 tp=1.03417 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.695	ForexAiTrade (EURUSD,H1)	2024.12.20 15:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04133 tp=1.03389 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.698	Trade	2024.12.20 15:31:38   stop loss triggered #1130 sell 0.04 EURUSD 1.03913 sl: 1.04144 tp: 1.03452 [#1131 buy 0.04 EURUSD at 1.04144]
+CS	0	22:03:08.698	Trades	2024.12.20 15:31:38   deal #1131 buy 0.04 EURUSD at 1.04145 done (based on order #1131)
+CS	0	22:03:08.698	Trade	2024.12.20 15:31:38   deal performed [#1131 buy 0.04 EURUSD at 1.04145]
+CS	0	22:03:08.698	Trade	2024.12.20 15:31:38   order performed buy 0.04 at 1.04145 [#1131 buy 0.04 EURUSD at 1.04144]
+CS	0	22:03:08.707	ForexAiTrade (EURUSD,H1)	2024.12.20 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.716	ForexAiTrade (EURUSD,H1)	2024.12.20 17:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=1.03922 sl=1.04222 tp=1.03299 raw_lot=0.0320 normalized_lot=0.03 risk_money=9.59 actual_risk_money=9.00 reason=execution safety checks passed
+CS	0	22:03:08.716	Trade	2024.12.20 17:00:00   market sell 0.03 EURUSD sl: 1.04222 tp: 1.03299 (1.03922 / 1.03939 / 1.03922)
+CS	0	22:03:08.716	Trades	2024.12.20 17:00:00   deal #1132 sell 0.03 EURUSD at 1.03922 done (based on order #1132)
+CS	0	22:03:08.716	Trade	2024.12.20 17:00:00   deal performed [#1132 sell 0.03 EURUSD at 1.03922]
+CS	0	22:03:08.716	Trade	2024.12.20 17:00:00   order performed sell 0.03 at 1.03922 [#1132 sell 0.03 EURUSD at 1.03922]
+CS	0	22:03:08.717	ForexAiTrade (EURUSD,H1)	2024.12.20 17:00:00   CTrade::OrderSend: market sell 0.03 EURUSD sl: 1.04222 tp: 1.03299 [done at 1.03922]
+CS	0	22:03:08.732	ForexAiTrade (EURUSD,H1)	2024.12.20 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04276 tp=1.03321 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.741	Trade	2024.12.20 18:36:40   stop loss triggered #1132 sell 0.03 EURUSD 1.03922 sl: 1.04222 tp: 1.03299 [#1133 buy 0.03 EURUSD at 1.04222]
+CS	0	22:03:08.741	Trades	2024.12.20 18:36:40   deal #1133 buy 0.03 EURUSD at 1.04222 done (based on order #1133)
+CS	0	22:03:08.741	Trade	2024.12.20 18:36:40   deal performed [#1133 buy 0.03 EURUSD at 1.04222]
+CS	0	22:03:08.741	Trade	2024.12.20 18:36:40   order performed buy 0.03 at 1.04222 [#1133 buy 0.03 EURUSD at 1.04222]
+CS	0	22:03:08.745	ForexAiTrade (EURUSD,H1)	2024.12.20 19:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=1.04289 sl=1.03940 tp=1.04867 raw_lot=0.0275 normalized_lot=0.02 risk_money=9.58 actual_risk_money=6.98 reason=execution safety checks passed
+CS	0	22:03:08.745	Trade	2024.12.20 19:00:00   market buy 0.02 EURUSD sl: 1.03940 tp: 1.04867 (1.04272 / 1.04289 / 1.04272)
+CS	0	22:03:08.745	Trades	2024.12.20 19:00:00   deal #1134 buy 0.02 EURUSD at 1.04289 done (based on order #1134)
+CS	0	22:03:08.745	Trade	2024.12.20 19:00:00   deal performed [#1134 buy 0.02 EURUSD at 1.04289]
+CS	0	22:03:08.745	Trade	2024.12.20 19:00:00   order performed buy 0.02 at 1.04289 [#1134 buy 0.02 EURUSD at 1.04289]
+CS	0	22:03:08.745	ForexAiTrade (EURUSD,H1)	2024.12.20 19:00:00   CTrade::OrderSend: market buy 0.02 EURUSD sl: 1.03940 tp: 1.04867 [done at 1.04289]
+CS	0	22:03:08.756	ForexAiTrade (EURUSD,H1)	2024.12.20 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.765	ForexAiTrade (EURUSD,H1)	2024.12.20 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.773	ForexAiTrade (EURUSD,H1)	2024.12.20 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.779	ForexAiTrade (EURUSD,H1)	2024.12.20 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.782	ForexAiTrade (EURUSD,H1)	2024.12.23 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=78.0 reason=unsafe regime: spread too wide
+CS	0	22:03:08.783	ForexAiTrade (EURUSD,H1)	2024.12.23 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	22:03:08.787	ForexAiTrade (EURUSD,H1)	2024.12.23 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.790	ForexAiTrade (EURUSD,H1)	2024.12.23 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.793	ForexAiTrade (EURUSD,H1)	2024.12.23 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.797	ForexAiTrade (EURUSD,H1)	2024.12.23 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.798	ForexAiTrade (EURUSD,H1)	2024.12.23 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.801	ForexAiTrade (EURUSD,H1)	2024.12.23 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.804	ForexAiTrade (EURUSD,H1)	2024.12.23 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.808	ForexAiTrade (EURUSD,H1)	2024.12.23 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.814	ForexAiTrade (EURUSD,H1)	2024.12.23 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04361 tp=1.03627 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.819	ForexAiTrade (EURUSD,H1)	2024.12.23 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.824	ForexAiTrade (EURUSD,H1)	2024.12.23 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.828	Trade	2024.12.23 12:43:48   stop loss triggered #1134 buy 0.02 EURUSD 1.04289 sl: 1.03940 tp: 1.04867 [#1135 sell 0.02 EURUSD at 1.03940]
+CS	0	22:03:08.828	Trades	2024.12.23 12:43:48   deal #1135 sell 0.02 EURUSD at 1.03940 done (based on order #1135)
+CS	0	22:03:08.828	Trade	2024.12.23 12:43:48   deal performed [#1135 sell 0.02 EURUSD at 1.03940]
+CS	0	22:03:08.828	Trade	2024.12.23 12:43:48   order performed sell 0.02 at 1.03940 [#1135 sell 0.02 EURUSD at 1.03940]
+CS	0	22:03:08.830	ForexAiTrade (EURUSD,H1)	2024.12.23 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:08.834	ForexAiTrade (EURUSD,H1)	2024.12.23 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.841	ForexAiTrade (EURUSD,H1)	2024.12.23 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.849	ForexAiTrade (EURUSD,H1)	2024.12.23 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.858	ForexAiTrade (EURUSD,H1)	2024.12.23 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.865	ForexAiTrade (EURUSD,H1)	2024.12.23 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.876	ForexAiTrade (EURUSD,H1)	2024.12.23 19:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04343 tp=1.03520 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak trigger; fixed cooldown starts until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.881	ForexAiTrade (EURUSD,H1)	2024.12.23 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04264 tp=1.03367 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.887	ForexAiTrade (EURUSD,H1)	2024.12.23 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04390 tp=1.03457 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.889	ForexAiTrade (EURUSD,H1)	2024.12.23 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.893	ForexAiTrade (EURUSD,H1)	2024.12.23 23:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04375 tp=1.03397 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.897	ForexAiTrade (EURUSD,H1)	2024.12.24 00:00:30   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=144.0 reason=unsafe regime: spread too wide
+CS	0	22:03:08.898	ForexAiTrade (EURUSD,H1)	2024.12.24 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=23.0 reason=no strategy signal
+CS	0	22:03:08.900	ForexAiTrade (EURUSD,H1)	2024.12.24 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:08.901	ForexAiTrade (EURUSD,H1)	2024.12.24 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:03:08.903	ForexAiTrade (EURUSD,H1)	2024.12.24 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.907	ForexAiTrade (EURUSD,H1)	2024.12.24 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:03:08.909	ForexAiTrade (EURUSD,H1)	2024.12.24 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.912	ForexAiTrade (EURUSD,H1)	2024.12.24 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.914	ForexAiTrade (EURUSD,H1)	2024.12.24 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.915	ForexAiTrade (EURUSD,H1)	2024.12.24 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.918	ForexAiTrade (EURUSD,H1)	2024.12.24 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.922	ForexAiTrade (EURUSD,H1)	2024.12.24 11:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04110 tp=1.03610 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.928	ForexAiTrade (EURUSD,H1)	2024.12.24 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.932	ForexAiTrade (EURUSD,H1)	2024.12.24 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.936	ForexAiTrade (EURUSD,H1)	2024.12.24 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04103 tp=1.03602 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.944	ForexAiTrade (EURUSD,H1)	2024.12.24 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	22:03:08.948	ForexAiTrade (EURUSD,H1)	2024.12.24 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.956	ForexAiTrade (EURUSD,H1)	2024.12.24 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.961	ForexAiTrade (EURUSD,H1)	2024.12.24 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.965	ForexAiTrade (EURUSD,H1)	2024.12.24 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.968	ForexAiTrade (EURUSD,H1)	2024.12.24 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.970	ForexAiTrade (EURUSD,H1)	2024.12.26 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.974	ForexAiTrade (EURUSD,H1)	2024.12.26 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.977	ForexAiTrade (EURUSD,H1)	2024.12.26 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.979	ForexAiTrade (EURUSD,H1)	2024.12.26 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=21.0 reason=no strategy signal
+CS	0	22:03:08.983	ForexAiTrade (EURUSD,H1)	2024.12.26 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=22.0 reason=no strategy signal
+CS	0	22:03:08.985	ForexAiTrade (EURUSD,H1)	2024.12.26 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=21.0 reason=no strategy signal
+CS	0	22:03:08.988	ForexAiTrade (EURUSD,H1)	2024.12.26 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=21.0 reason=no strategy signal
+CS	0	22:03:08.993	ForexAiTrade (EURUSD,H1)	2024.12.26 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.997	ForexAiTrade (EURUSD,H1)	2024.12.26 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.002	ForexAiTrade (EURUSD,H1)	2024.12.26 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.010	ForexAiTrade (EURUSD,H1)	2024.12.26 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.014	ForexAiTrade (EURUSD,H1)	2024.12.26 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.018	ForexAiTrade (EURUSD,H1)	2024.12.26 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:09.024	ForexAiTrade (EURUSD,H1)	2024.12.26 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=21.0 reason=no strategy signal
+CS	0	22:03:09.032	ForexAiTrade (EURUSD,H1)	2024.12.26 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.038	ForexAiTrade (EURUSD,H1)	2024.12.26 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:09.042	ForexAiTrade (EURUSD,H1)	2024.12.27 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=144.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.043	ForexAiTrade (EURUSD,H1)	2024.12.27 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=34.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.044	ForexAiTrade (EURUSD,H1)	2024.12.27 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.048	ForexAiTrade (EURUSD,H1)	2024.12.27 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.051	ForexAiTrade (EURUSD,H1)	2024.12.27 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.055	ForexAiTrade (EURUSD,H1)	2024.12.27 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.057	ForexAiTrade (EURUSD,H1)	2024.12.27 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=21.0 reason=no strategy signal
+CS	0	22:03:09.058	ForexAiTrade (EURUSD,H1)	2024.12.27 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.063	ForexAiTrade (EURUSD,H1)	2024.12.27 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=21.0 reason=no strategy signal
+CS	0	22:03:09.065	ForexAiTrade (EURUSD,H1)	2024.12.27 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	22:03:09.070	ForexAiTrade (EURUSD,H1)	2024.12.27 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.075	ForexAiTrade (EURUSD,H1)	2024.12.27 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.078	ForexAiTrade (EURUSD,H1)	2024.12.27 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:09.080	ForexAiTrade (EURUSD,H1)	2024.12.27 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.085	ForexAiTrade (EURUSD,H1)	2024.12.27 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.093	ForexAiTrade (EURUSD,H1)	2024.12.27 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.099	ForexAiTrade (EURUSD,H1)	2024.12.27 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.110	ForexAiTrade (EURUSD,H1)	2024.12.27 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.123	ForexAiTrade (EURUSD,H1)	2024.12.27 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.133	ForexAiTrade (EURUSD,H1)	2024.12.27 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.139	ForexAiTrade (EURUSD,H1)	2024.12.27 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.144	ForexAiTrade (EURUSD,H1)	2024.12.27 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:09.148	ForexAiTrade (EURUSD,H1)	2024.12.27 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:03:09.152	ForexAiTrade (EURUSD,H1)	2024.12.27 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:09.159	ForexAiTrade (EURUSD,H1)	2024.12.30 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=95.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.160	ForexAiTrade (EURUSD,H1)	2024.12.30 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=27.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.161	ForexAiTrade (EURUSD,H1)	2024.12.30 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.165	ForexAiTrade (EURUSD,H1)	2024.12.30 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.167	ForexAiTrade (EURUSD,H1)	2024.12.30 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.168	ForexAiTrade (EURUSD,H1)	2024.12.30 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.169	ForexAiTrade (EURUSD,H1)	2024.12.30 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.173	ForexAiTrade (EURUSD,H1)	2024.12.30 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.174	ForexAiTrade (EURUSD,H1)	2024.12.30 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.176	ForexAiTrade (EURUSD,H1)	2024.12.30 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.180	ForexAiTrade (EURUSD,H1)	2024.12.30 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=17.0 reason=no strategy signal
+CS	0	22:03:09.188	ForexAiTrade (EURUSD,H1)	2024.12.30 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.202	ForexAiTrade (EURUSD,H1)	2024.12.30 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=18.0 reason=no strategy signal
+CS	0	22:03:09.207	ForexAiTrade (EURUSD,H1)	2024.12.30 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.212	ForexAiTrade (EURUSD,H1)	2024.12.30 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.218	ForexAiTrade (EURUSD,H1)	2024.12.30 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.226	ForexAiTrade (EURUSD,H1)	2024.12.30 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.237	ForexAiTrade (EURUSD,H1)	2024.12.30 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.250	ForexAiTrade (EURUSD,H1)	2024.12.30 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.260	ForexAiTrade (EURUSD,H1)	2024.12.30 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.267	ForexAiTrade (EURUSD,H1)	2024.12.30 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.274	ForexAiTrade (EURUSD,H1)	2024.12.30 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.280	ForexAiTrade (EURUSD,H1)	2024.12.30 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.286	ForexAiTrade (EURUSD,H1)	2024.12.30 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.290	Tester	final balance 9573.67 USD
+CS	0	22:03:09.290	ForexAiTrade (EURUSD,H1)	2024.12.30 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	22:03:09.324	Tester	EURUSD,H1: 35473446 ticks, 12412 bars generated. Environment synchronized in 0:00:00.028. Test passed in 0:01:06.403 (including ticks preprocessing 0:00:02.531).
+CS	0	22:03:09.324	Tester	EURUSD,H1: total time from login to stop testing 0:01:06.431 (including 0:00:00.028 for history data synchronization)
+CS	0	22:03:09.324	Tester	725 Mb memory used including 1.41 Mb of history data, 704 Mb of tick data
+CS	0	22:03:09.324	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	22:03:09.334	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on EURUSD,H1 thread finished
+CS	0	22:03:09.748	127.0.0.1	tester forced to close
+CS	0	22:03:09.749	127.0.0.1	prepare for shutdown
+CS	0	22:03:09.749	127.0.0.1	stop immediately
+CS	0	22:03:09.749	127.0.0.1	shutdown finished
+CS	0	22:03:10.049	Server	MetaTester 5 stopped
+===== C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log =====
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:12   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03782, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:14   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03781 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:14   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03781, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:15   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03780 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:15   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03780, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:22   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03779 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:22   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03779, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:23   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03778 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:23   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03778, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:24   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03777 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:24   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03777, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03776 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03776, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:00:32   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03774 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:00:32   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03774, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:01   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03773 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:01   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03773, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:03   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03772 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:03   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03772, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:05   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03770 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:05   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03770, tp: 1.03313) [done]
+CS	0	22:03:08.625	Trade	2024.12.20 07:01:15   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03769 tp: 1.03313]
+CS	0	22:03:08.625	ForexAiTrade (EURUSD,H1)	2024.12.20 07:01:15   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03769, tp: 1.03313) [done]
+CS	0	22:03:08.628	Trade	2024.12.20 07:33:36   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03768 tp: 1.03313]
+CS	0	22:03:08.628	ForexAiTrade (EURUSD,H1)	2024.12.20 07:33:36   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03768, tp: 1.03313) [done]
+CS	0	22:03:08.628	Trade	2024.12.20 07:33:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03766 tp: 1.03313]
+CS	0	22:03:08.628	ForexAiTrade (EURUSD,H1)	2024.12.20 07:33:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03766, tp: 1.03313) [done]
+CS	0	22:03:08.629	ForexAiTrade (EURUSD,H1)	2024.12.20 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03765 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03765, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03763 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03763, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03761 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03761, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03759 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03759, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03757 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03757, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03755 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03755, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03753 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03753, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03751 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03751, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03749 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03749, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03747 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03747, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:32   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03746 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:32   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03746, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03745 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03745, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03743 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03743, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03741 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03741, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03739 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03739, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03737 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03737, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03735 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03735, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03733 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03733, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03731 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03731, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03729 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03729, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03727 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03727, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03725 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03725, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03724 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03724, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03722 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03722, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03720 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03720, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03718 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03718, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03716 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03716, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03714 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03714, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03712 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03712, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03710 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03710, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03708 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03708, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03706 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03706, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03704 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03704, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:09:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03702 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:09:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03702, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03701 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03701, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03699 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03699, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03698 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03698, tp: 1.03313) [done]
+CS	0	22:03:08.631	Trade	2024.12.20 08:10:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03696 tp: 1.03313]
+CS	0	22:03:08.631	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03696, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03695 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03695, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03693 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03693, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03692 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03692, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03691 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03691, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03689 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03689, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03688 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03688, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03686 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03686, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03685 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03685, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03683 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03683, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03682 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03682, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03680 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03680, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03678 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03678, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03677 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03677, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03675 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03675, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03674 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03674, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:37   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03672 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:37   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03672, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03671 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03671, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03669 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03669, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03668 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03668, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03666 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03666, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03665 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03665, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03663 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03663, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03662 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03662, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03660 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03660, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03659 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03659, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03657 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03657, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03656 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03656, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03654 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03654, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03653 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03653, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03651 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03651, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03650 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03650, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03648 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03648, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:10:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03646 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:10:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03646, tp: 1.03313) [done]
+CS	0	22:03:08.632	Trade	2024.12.20 08:11:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03644 tp: 1.03313]
+CS	0	22:03:08.632	ForexAiTrade (EURUSD,H1)	2024.12.20 08:11:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03644, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03643 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03643, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:28   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03642 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:28   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03642, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03640 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03640, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03639 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03639, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:29   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03638 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:29   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03638, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03637 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03637, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03636 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03636, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:30   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03635 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:30   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03635, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03634 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03634, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03633 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03633, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:31   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03631 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:31   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03631, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:32   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03630 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:32   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03630, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03629 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03629, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03627 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03627, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:38   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03626 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:38   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03626, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03625 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03625, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03624 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03624, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:39   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03622 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:39   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03622, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03621 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03621, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03620 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03620, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:40   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03619 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:40   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03619, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03617 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03617, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03616 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03616, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:41   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03615 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:41   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03615, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03614 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03614, tp: 1.03313) [done]
+CS	0	22:03:08.633	Trade	2024.12.20 08:12:42   position modified [#1126 sell 0.02 EURUSD 1.03977 sl: 1.03612 tp: 1.03313]
+CS	0	22:03:08.633	ForexAiTrade (EURUSD,H1)	2024.12.20 08:12:42   CTrade::OrderSend: modify position #1126 EURUSD (sl: 1.03612, tp: 1.03313) [done]
+CS	0	22:03:08.638	Trade	2024.12.20 08:27:35   stop loss triggered #1126 sell 0.02 EURUSD 1.03977 sl: 1.03612 tp: 1.03313 [#1127 buy 0.02 EURUSD at 1.03612]
+CS	0	22:03:08.638	Trades	2024.12.20 08:27:35   deal #1127 buy 0.02 EURUSD at 1.03612 done (based on order #1127)
+CS	0	22:03:08.638	Trade	2024.12.20 08:27:35   deal performed [#1127 buy 0.02 EURUSD at 1.03612]
+CS	0	22:03:08.638	Trade	2024.12.20 08:27:35   order performed buy 0.02 at 1.03612 [#1127 buy 0.02 EURUSD at 1.03612]
+CS	0	22:03:08.643	ForexAiTrade (EURUSD,H1)	2024.12.20 09:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=1.03737 sl=1.03981 tp=1.03251 raw_lot=0.0394 normalized_lot=0.03 risk_money=9.61 actual_risk_money=7.32 reason=execution safety checks passed
+CS	0	22:03:08.643	Trade	2024.12.20 09:00:00   market sell 0.03 EURUSD sl: 1.03981 tp: 1.03251 (1.03737 / 1.03755 / 1.03737)
+CS	0	22:03:08.643	Trades	2024.12.20 09:00:00   deal #1128 sell 0.03 EURUSD at 1.03737 done (based on order #1128)
+CS	0	22:03:08.643	Trade	2024.12.20 09:00:00   deal performed [#1128 sell 0.03 EURUSD at 1.03737]
+CS	0	22:03:08.643	Trade	2024.12.20 09:00:00   order performed sell 0.03 at 1.03737 [#1128 sell 0.03 EURUSD at 1.03737]
+CS	0	22:03:08.643	ForexAiTrade (EURUSD,H1)	2024.12.20 09:00:00   CTrade::OrderSend: market sell 0.03 EURUSD sl: 1.03981 tp: 1.03251 [done at 1.03737]
+CS	0	22:03:08.655	ForexAiTrade (EURUSD,H1)	2024.12.20 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04047 tp=1.03356 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.660	Trade	2024.12.20 10:23:37   stop loss triggered #1128 sell 0.03 EURUSD 1.03737 sl: 1.03981 tp: 1.03251 [#1129 buy 0.03 EURUSD at 1.03981]
+CS	0	22:03:08.660	Trades	2024.12.20 10:23:37   deal #1129 buy 0.03 EURUSD at 1.03981 done (based on order #1129)
+CS	0	22:03:08.660	Trade	2024.12.20 10:23:37   deal performed [#1129 buy 0.03 EURUSD at 1.03981]
+CS	0	22:03:08.660	Trade	2024.12.20 10:23:37   order performed buy 0.03 at 1.03981 [#1129 buy 0.03 EURUSD at 1.03981]
+CS	0	22:03:08.665	ForexAiTrade (EURUSD,H1)	2024.12.20 11:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=1.03913 sl=1.04144 tp=1.03452 raw_lot=0.0416 normalized_lot=0.04 risk_money=9.60 actual_risk_money=9.24 reason=execution safety checks passed
+CS	0	22:03:08.665	Trade	2024.12.20 11:00:00   market sell 0.04 EURUSD sl: 1.04144 tp: 1.03452 (1.03913 / 1.03930 / 1.03913)
+CS	0	22:03:08.665	Trades	2024.12.20 11:00:00   deal #1130 sell 0.04 EURUSD at 1.03913 done (based on order #1130)
+CS	0	22:03:08.665	Trade	2024.12.20 11:00:00   deal performed [#1130 sell 0.04 EURUSD at 1.03913]
+CS	0	22:03:08.665	Trade	2024.12.20 11:00:00   order performed sell 0.04 at 1.03913 [#1130 sell 0.04 EURUSD at 1.03913]
+CS	0	22:03:08.665	ForexAiTrade (EURUSD,H1)	2024.12.20 11:00:00   CTrade::OrderSend: market sell 0.04 EURUSD sl: 1.04144 tp: 1.03452 [done at 1.03913]
+CS	0	22:03:08.675	ForexAiTrade (EURUSD,H1)	2024.12.20 12:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04049 tp=1.03354 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.679	ForexAiTrade (EURUSD,H1)	2024.12.20 13:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04141 tp=1.03441 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.688	ForexAiTrade (EURUSD,H1)	2024.12.20 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04150 tp=1.03417 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.695	ForexAiTrade (EURUSD,H1)	2024.12.20 15:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04133 tp=1.03389 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.698	Trade	2024.12.20 15:31:38   stop loss triggered #1130 sell 0.04 EURUSD 1.03913 sl: 1.04144 tp: 1.03452 [#1131 buy 0.04 EURUSD at 1.04144]
+CS	0	22:03:08.698	Trades	2024.12.20 15:31:38   deal #1131 buy 0.04 EURUSD at 1.04145 done (based on order #1131)
+CS	0	22:03:08.698	Trade	2024.12.20 15:31:38   deal performed [#1131 buy 0.04 EURUSD at 1.04145]
+CS	0	22:03:08.698	Trade	2024.12.20 15:31:38   order performed buy 0.04 at 1.04145 [#1131 buy 0.04 EURUSD at 1.04144]
+CS	0	22:03:08.707	ForexAiTrade (EURUSD,H1)	2024.12.20 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.716	ForexAiTrade (EURUSD,H1)	2024.12.20 17:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=1.03922 sl=1.04222 tp=1.03299 raw_lot=0.0320 normalized_lot=0.03 risk_money=9.59 actual_risk_money=9.00 reason=execution safety checks passed
+CS	0	22:03:08.716	Trade	2024.12.20 17:00:00   market sell 0.03 EURUSD sl: 1.04222 tp: 1.03299 (1.03922 / 1.03939 / 1.03922)
+CS	0	22:03:08.716	Trades	2024.12.20 17:00:00   deal #1132 sell 0.03 EURUSD at 1.03922 done (based on order #1132)
+CS	0	22:03:08.716	Trade	2024.12.20 17:00:00   deal performed [#1132 sell 0.03 EURUSD at 1.03922]
+CS	0	22:03:08.716	Trade	2024.12.20 17:00:00   order performed sell 0.03 at 1.03922 [#1132 sell 0.03 EURUSD at 1.03922]
+CS	0	22:03:08.717	ForexAiTrade (EURUSD,H1)	2024.12.20 17:00:00   CTrade::OrderSend: market sell 0.03 EURUSD sl: 1.04222 tp: 1.03299 [done at 1.03922]
+CS	0	22:03:08.732	ForexAiTrade (EURUSD,H1)	2024.12.20 18:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04276 tp=1.03321 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.741	Trade	2024.12.20 18:36:40   stop loss triggered #1132 sell 0.03 EURUSD 1.03922 sl: 1.04222 tp: 1.03299 [#1133 buy 0.03 EURUSD at 1.04222]
+CS	0	22:03:08.741	Trades	2024.12.20 18:36:40   deal #1133 buy 0.03 EURUSD at 1.04222 done (based on order #1133)
+CS	0	22:03:08.741	Trade	2024.12.20 18:36:40   deal performed [#1133 buy 0.03 EURUSD at 1.04222]
+CS	0	22:03:08.741	Trade	2024.12.20 18:36:40   order performed buy 0.03 at 1.04222 [#1133 buy 0.03 EURUSD at 1.04222]
+CS	0	22:03:08.745	ForexAiTrade (EURUSD,H1)	2024.12.20 19:00:00   Signal accepted: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout direction=buy entry=1.04289 sl=1.03940 tp=1.04867 raw_lot=0.0275 normalized_lot=0.02 risk_money=9.58 actual_risk_money=6.98 reason=execution safety checks passed
+CS	0	22:03:08.745	Trade	2024.12.20 19:00:00   market buy 0.02 EURUSD sl: 1.03940 tp: 1.04867 (1.04272 / 1.04289 / 1.04272)
+CS	0	22:03:08.745	Trades	2024.12.20 19:00:00   deal #1134 buy 0.02 EURUSD at 1.04289 done (based on order #1134)
+CS	0	22:03:08.745	Trade	2024.12.20 19:00:00   deal performed [#1134 buy 0.02 EURUSD at 1.04289]
+CS	0	22:03:08.745	Trade	2024.12.20 19:00:00   order performed buy 0.02 at 1.04289 [#1134 buy 0.02 EURUSD at 1.04289]
+CS	0	22:03:08.745	ForexAiTrade (EURUSD,H1)	2024.12.20 19:00:00   CTrade::OrderSend: market buy 0.02 EURUSD sl: 1.03940 tp: 1.04867 [done at 1.04289]
+CS	0	22:03:08.756	ForexAiTrade (EURUSD,H1)	2024.12.20 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.765	ForexAiTrade (EURUSD,H1)	2024.12.20 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.773	ForexAiTrade (EURUSD,H1)	2024.12.20 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.779	ForexAiTrade (EURUSD,H1)	2024.12.20 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.782	ForexAiTrade (EURUSD,H1)	2024.12.23 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=78.0 reason=unsafe regime: spread too wide
+CS	0	22:03:08.783	ForexAiTrade (EURUSD,H1)	2024.12.23 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=39.0 reason=unsafe regime: spread too wide
+CS	0	22:03:08.787	ForexAiTrade (EURUSD,H1)	2024.12.23 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.790	ForexAiTrade (EURUSD,H1)	2024.12.23 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.793	ForexAiTrade (EURUSD,H1)	2024.12.23 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.797	ForexAiTrade (EURUSD,H1)	2024.12.23 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.798	ForexAiTrade (EURUSD,H1)	2024.12.23 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.801	ForexAiTrade (EURUSD,H1)	2024.12.23 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.804	ForexAiTrade (EURUSD,H1)	2024.12.23 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.808	ForexAiTrade (EURUSD,H1)	2024.12.23 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.814	ForexAiTrade (EURUSD,H1)	2024.12.23 10:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04361 tp=1.03627 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=max open orders reached
+CS	0	22:03:08.819	ForexAiTrade (EURUSD,H1)	2024.12.23 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.824	ForexAiTrade (EURUSD,H1)	2024.12.23 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.828	Trade	2024.12.23 12:43:48   stop loss triggered #1134 buy 0.02 EURUSD 1.04289 sl: 1.03940 tp: 1.04867 [#1135 sell 0.02 EURUSD at 1.03940]
+CS	0	22:03:08.828	Trades	2024.12.23 12:43:48   deal #1135 sell 0.02 EURUSD at 1.03940 done (based on order #1135)
+CS	0	22:03:08.828	Trade	2024.12.23 12:43:48   deal performed [#1135 sell 0.02 EURUSD at 1.03940]
+CS	0	22:03:08.828	Trade	2024.12.23 12:43:48   order performed sell 0.02 at 1.03940 [#1135 sell 0.02 EURUSD at 1.03940]
+CS	0	22:03:08.830	ForexAiTrade (EURUSD,H1)	2024.12.23 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:08.834	ForexAiTrade (EURUSD,H1)	2024.12.23 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.841	ForexAiTrade (EURUSD,H1)	2024.12.23 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.849	ForexAiTrade (EURUSD,H1)	2024.12.23 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.858	ForexAiTrade (EURUSD,H1)	2024.12.23 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.865	ForexAiTrade (EURUSD,H1)	2024.12.23 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.876	ForexAiTrade (EURUSD,H1)	2024.12.23 19:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04343 tp=1.03520 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak trigger; fixed cooldown starts until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.881	ForexAiTrade (EURUSD,H1)	2024.12.23 20:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04264 tp=1.03367 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.887	ForexAiTrade (EURUSD,H1)	2024.12.23 21:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04390 tp=1.03457 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.889	ForexAiTrade (EURUSD,H1)	2024.12.23 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.893	ForexAiTrade (EURUSD,H1)	2024.12.23 23:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04375 tp=1.03397 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.897	ForexAiTrade (EURUSD,H1)	2024.12.24 00:00:30   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=144.0 reason=unsafe regime: spread too wide
+CS	0	22:03:08.898	ForexAiTrade (EURUSD,H1)	2024.12.24 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=23.0 reason=no strategy signal
+CS	0	22:03:08.900	ForexAiTrade (EURUSD,H1)	2024.12.24 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:08.901	ForexAiTrade (EURUSD,H1)	2024.12.24 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:03:08.903	ForexAiTrade (EURUSD,H1)	2024.12.24 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.907	ForexAiTrade (EURUSD,H1)	2024.12.24 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:03:08.909	ForexAiTrade (EURUSD,H1)	2024.12.24 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.912	ForexAiTrade (EURUSD,H1)	2024.12.24 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.914	ForexAiTrade (EURUSD,H1)	2024.12.24 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.915	ForexAiTrade (EURUSD,H1)	2024.12.24 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.918	ForexAiTrade (EURUSD,H1)	2024.12.24 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:08.922	ForexAiTrade (EURUSD,H1)	2024.12.24 11:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04110 tp=1.03610 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.928	ForexAiTrade (EURUSD,H1)	2024.12.24 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:08.932	ForexAiTrade (EURUSD,H1)	2024.12.24 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:08.936	ForexAiTrade (EURUSD,H1)	2024.12.24 14:00:00   Signal blocked: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend direction=sell entry=0.00000 sl=1.04103 tp=1.03602 raw_lot=0.0000 normalized_lot=0.00 risk_money=0.00 actual_risk_money=0.00 reason=losing streak fixed cooldown active until 2024.12.24 19:00:00; streak=4
+CS	0	22:03:08.944	ForexAiTrade (EURUSD,H1)	2024.12.24 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=17.0 reason=no strategy signal
+CS	0	22:03:08.948	ForexAiTrade (EURUSD,H1)	2024.12.24 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.956	ForexAiTrade (EURUSD,H1)	2024.12.24 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.961	ForexAiTrade (EURUSD,H1)	2024.12.24 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.965	ForexAiTrade (EURUSD,H1)	2024.12.24 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.968	ForexAiTrade (EURUSD,H1)	2024.12.24 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.970	ForexAiTrade (EURUSD,H1)	2024.12.26 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.974	ForexAiTrade (EURUSD,H1)	2024.12.26 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.977	ForexAiTrade (EURUSD,H1)	2024.12.26 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.979	ForexAiTrade (EURUSD,H1)	2024.12.26 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=21.0 reason=no strategy signal
+CS	0	22:03:08.983	ForexAiTrade (EURUSD,H1)	2024.12.26 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=22.0 reason=no strategy signal
+CS	0	22:03:08.985	ForexAiTrade (EURUSD,H1)	2024.12.26 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=21.0 reason=no strategy signal
+CS	0	22:03:08.988	ForexAiTrade (EURUSD,H1)	2024.12.26 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=21.0 reason=no strategy signal
+CS	0	22:03:08.993	ForexAiTrade (EURUSD,H1)	2024.12.26 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=21.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:08.997	ForexAiTrade (EURUSD,H1)	2024.12.26 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=22.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.002	ForexAiTrade (EURUSD,H1)	2024.12.26 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.010	ForexAiTrade (EURUSD,H1)	2024.12.26 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.014	ForexAiTrade (EURUSD,H1)	2024.12.26 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.018	ForexAiTrade (EURUSD,H1)	2024.12.26 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:09.024	ForexAiTrade (EURUSD,H1)	2024.12.26 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=21.0 reason=no strategy signal
+CS	0	22:03:09.032	ForexAiTrade (EURUSD,H1)	2024.12.26 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.038	ForexAiTrade (EURUSD,H1)	2024.12.26 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:09.042	ForexAiTrade (EURUSD,H1)	2024.12.27 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=144.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.043	ForexAiTrade (EURUSD,H1)	2024.12.27 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=34.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.044	ForexAiTrade (EURUSD,H1)	2024.12.27 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.048	ForexAiTrade (EURUSD,H1)	2024.12.27 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.051	ForexAiTrade (EURUSD,H1)	2024.12.27 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.055	ForexAiTrade (EURUSD,H1)	2024.12.27 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.057	ForexAiTrade (EURUSD,H1)	2024.12.27 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=21.0 reason=no strategy signal
+CS	0	22:03:09.058	ForexAiTrade (EURUSD,H1)	2024.12.27 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.063	ForexAiTrade (EURUSD,H1)	2024.12.27 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=21.0 reason=no strategy signal
+CS	0	22:03:09.065	ForexAiTrade (EURUSD,H1)	2024.12.27 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=20.0 reason=no strategy signal
+CS	0	22:03:09.070	ForexAiTrade (EURUSD,H1)	2024.12.27 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.075	ForexAiTrade (EURUSD,H1)	2024.12.27 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=20.0 reason=no strategy signal
+CS	0	22:03:09.078	ForexAiTrade (EURUSD,H1)	2024.12.27 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=19.0 reason=no strategy signal
+CS	0	22:03:09.080	ForexAiTrade (EURUSD,H1)	2024.12.27 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.085	ForexAiTrade (EURUSD,H1)	2024.12.27 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.093	ForexAiTrade (EURUSD,H1)	2024.12.27 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.099	ForexAiTrade (EURUSD,H1)	2024.12.27 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.110	ForexAiTrade (EURUSD,H1)	2024.12.27 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.123	ForexAiTrade (EURUSD,H1)	2024.12.27 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.133	ForexAiTrade (EURUSD,H1)	2024.12.27 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=18.0 reason=no strategy signal
+CS	0	22:03:09.139	ForexAiTrade (EURUSD,H1)	2024.12.27 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=trend spread=17.0 reason=no strategy signal
+CS	0	22:03:09.144	ForexAiTrade (EURUSD,H1)	2024.12.27 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:09.148	ForexAiTrade (EURUSD,H1)	2024.12.27 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=19.0 reason=no strategy signal
+CS	0	22:03:09.152	ForexAiTrade (EURUSD,H1)	2024.12.27 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=breakout spread=18.0 reason=no strategy signal
+CS	0	22:03:09.159	ForexAiTrade (EURUSD,H1)	2024.12.30 00:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=95.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.160	ForexAiTrade (EURUSD,H1)	2024.12.30 01:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=27.0 reason=unsafe regime: spread too wide
+CS	0	22:03:09.161	ForexAiTrade (EURUSD,H1)	2024.12.30 02:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.165	ForexAiTrade (EURUSD,H1)	2024.12.30 03:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.167	ForexAiTrade (EURUSD,H1)	2024.12.30 04:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.168	ForexAiTrade (EURUSD,H1)	2024.12.30 05:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.169	ForexAiTrade (EURUSD,H1)	2024.12.30 06:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=19.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.173	ForexAiTrade (EURUSD,H1)	2024.12.30 07:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.174	ForexAiTrade (EURUSD,H1)	2024.12.30 08:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.176	ForexAiTrade (EURUSD,H1)	2024.12.30 09:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.180	ForexAiTrade (EURUSD,H1)	2024.12.30 10:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=17.0 reason=no strategy signal
+CS	0	22:03:09.188	ForexAiTrade (EURUSD,H1)	2024.12.30 11:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.202	ForexAiTrade (EURUSD,H1)	2024.12.30 12:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=sideway spread=18.0 reason=no strategy signal
+CS	0	22:03:09.207	ForexAiTrade (EURUSD,H1)	2024.12.30 13:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.212	ForexAiTrade (EURUSD,H1)	2024.12.30 14:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.218	ForexAiTrade (EURUSD,H1)	2024.12.30 15:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.226	ForexAiTrade (EURUSD,H1)	2024.12.30 16:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.237	ForexAiTrade (EURUSD,H1)	2024.12.30 17:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.250	ForexAiTrade (EURUSD,H1)	2024.12.30 18:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.260	ForexAiTrade (EURUSD,H1)	2024.12.30 19:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.267	ForexAiTrade (EURUSD,H1)	2024.12.30 20:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=17.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.274	ForexAiTrade (EURUSD,H1)	2024.12.30 21:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.280	ForexAiTrade (EURUSD,H1)	2024.12.30 22:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.286	ForexAiTrade (EURUSD,H1)	2024.12.30 23:00:00   No trade: actual=EURUSD canonical=EURUSD timeframe=PERIOD_H1 regime=unsafe spread=18.0 reason=unsafe regime: mixed or low-quality conditions
+CS	0	22:03:09.290	Tester	final balance 9573.67 USD
+CS	0	22:03:09.290	ForexAiTrade (EURUSD,H1)	2024.12.30 23:59:59   ForexAiTrade deinitialized. reason=1
+CS	0	22:03:09.324	Tester	EURUSD,H1: 35473446 ticks, 12412 bars generated. Environment synchronized in 0:00:00.028. Test passed in 0:01:06.403 (including ticks preprocessing 0:00:02.531).
+CS	0	22:03:09.324	Tester	EURUSD,H1: total time from login to stop testing 0:01:06.431 (including 0:00:00.028 for history data synchronization)
+CS	0	22:03:09.324	Tester	725 Mb memory used including 1.41 Mb of history data, 704 Mb of tick data
+CS	0	22:03:09.324	Tester	log file "C:\Users\tomah\AppData\Roaming\MetaQuotes\Tester\BB16F565FAAA6B23A20C26C49416FF05\Agent-127.0.0.1-3000\logs\20260621.log" written
+CS	0	22:03:09.334	Tester	test Experts\ForexAiTrade\ForexAiTrade.ex5 on EURUSD,H1 thread finished
+CS	0	22:03:09.748	127.0.0.1	tester forced to close
+CS	0	22:03:09.749	127.0.0.1	prepare for shutdown
+CS	0	22:03:09.749	127.0.0.1	stop immediately
+CS	0	22:03:09.749	127.0.0.1	shutdown finished
+CS	0	22:03:10.049	Server	MetaTester 5 stopped

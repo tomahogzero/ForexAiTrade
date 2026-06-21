@@ -1,0 +1,23 @@
+﻿[
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260620_004004\\EURUSD_H1_10000_train\\mt5_report.htm",
+        "case_id":  "EURUSD_H1_10000_train",
+        "run_id":  "run_20260620_004004"
+    },
+    {
+        "message":  "MT5 report file was not created.",
+        "execution_status":  "NO_REPORT",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260620_004004\\EURUSD_H1_10000_validation\\mt5_report",
+        "case_id":  "EURUSD_H1_10000_validation",
+        "run_id":  "run_20260620_004004"
+    },
+    {
+        "message":  "Completed with parseable report.",
+        "execution_status":  "PASS",
+        "report_path":  "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260620_004004\\EURUSD_H1_10000_out_of_sample\\mt5_report.htm",
+        "case_id":  "EURUSD_H1_10000_out_of_sample",
+        "run_id":  "run_20260620_004004"
+    }
+]

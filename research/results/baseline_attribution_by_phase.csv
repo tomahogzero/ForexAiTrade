@@ -1,0 +1,4 @@
+average_r,breakeven_exits,initial_sl_losses,largest_loss,largest_win,max_consecutive_losses,net_profit,phase,profit_factor,tp_hits,trades,trailing_profit_exits,win_rate
+0.057238,1,27,-10.25,19.32,4,41.03,out_of_sample,1.1817,11,62,23,54.84
+-0.181125,0,11,-9.42,14.25,4,-40.96,train,0.5662,1,22,10,50.0
+0.074492,0,45,-10.45,20.4,4,61.38,validation,1.1571,17,105,43,57.14

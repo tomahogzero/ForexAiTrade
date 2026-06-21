@@ -1,0 +1,12 @@
+average_r,breakeven_exits,initial_sl_losses,largest_loss,largest_win,max_consecutive_losses,net_profit,phase,profit_factor,strategy,tp_hits,trades,trailing_profit_exits,win_rate
+0.232571,1,2,-9.84,15.2,1,15.88,out_of_sample,1.8997,FAT Breakout Buy,2,6,1,50.0
+-0.159274,0,5,-8.76,17.08,3,-6.62,out_of_sample,0.8379,FAT Breakout Sell,2,8,1,37.5
+-0.282747,0,6,-10.25,6.12,2,-26.32,out_of_sample,0.458,FAT Trend Buy,0,12,6,50.0
+0.189458,0,14,-9.75,19.32,3,58.09,out_of_sample,1.4891,FAT Trend Sell,7,36,15,61.11
+0.033683,0,1,-7.5,5.5,1,-2.0,train,0.7333,FAT Breakout Buy,0,2,1,50.0
+-0.199871,0,8,-9.42,14.25,4,-32.7,train,0.5357,FAT Trend Buy,1,16,7,50.0
+-0.213547,0,2,-8.25,7.56,2,-6.26,train,0.6206,FAT Trend Sell,0,4,2,50.0
+0.666309,0,3,-8.61,16.14,1,63.16,validation,3.5204,FAT Breakout Buy,5,10,2,70.0
+-0.278741,0,7,-9.02,15.22,3,-30.94,validation,0.4935,FAT Breakout Sell,1,12,4,41.67
+0.15178,0,17,-10.45,17.94,4,54.84,validation,1.3666,FAT Trend Buy,7,49,25,65.31
+-0.086287,0,18,-9.95,20.4,4,-25.68,validation,0.8342,FAT Trend Sell,4,34,12,47.06

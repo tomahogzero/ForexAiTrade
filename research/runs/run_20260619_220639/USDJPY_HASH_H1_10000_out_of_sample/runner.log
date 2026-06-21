@@ -1,0 +1,4 @@
+﻿2026-06-19 22:07:04 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-19 22:07:04 Case start: USDJPY_HASH_H1_10000_out_of_sample
+2026-06-19 22:07:04 Spawned MT5 PID 16496
+2026-06-19 22:07:06 Process exited with code 0

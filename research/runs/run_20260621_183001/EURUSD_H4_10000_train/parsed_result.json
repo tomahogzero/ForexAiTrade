@@ -1,0 +1,40 @@
+{
+  "symbol": "EURUSD",
+  "timeframe": "H4",
+  "deposit": 10000,
+  "net_profit": -37.3,
+  "profit_factor": 0.49,
+  "expected_payoff": -2.19,
+  "absolute_drawdown": null,
+  "max_drawdown": 39.94,
+  "relative_drawdown": 0.4,
+  "total_trades": 17,
+  "long_trades": 10.0,
+  "short_trades": 7.0,
+  "win_rate": 7.0,
+  "largest_win": 12.53,
+  "largest_loss": -9.78,
+  "consecutive_losses": 4,
+  "drawdown_relative": 0.4,
+  "report_period_from": "2023-01-01",
+  "report_period_to": "2024-12-31",
+  "source_report": "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260621_183001\\EURUSD_H4_10000_train\\mt5_report.htm",
+  "raw_pair_count": 161,
+  "metadata_match": true,
+  "metadata_mismatches": [],
+  "case": {
+    "run_id": "run_20260621_183001",
+    "case_id": "EURUSD_H4_10000_train",
+    "base_case_id": "EURUSD_H4_10000",
+    "phase": "train",
+    "actual_symbol": "EURUSD",
+    "canonical_symbol": "EURUSD",
+    "timeframe": "H4",
+    "period": {
+      "from": "2023-01-01",
+      "to": "2024-12-31"
+    },
+    "deposit": 10000,
+    "risk_percent": 0.1
+  }
+}

@@ -1,0 +1,15 @@
+﻿{
+    "run_id":  "run_20260620_004004",
+    "case_id":  "EURUSD_H1_10000_out_of_sample",
+    "base_case_id":  "EURUSD_H1_10000",
+    "phase":  "out_of_sample",
+    "actual_symbol":  "EURUSD",
+    "canonical_symbol":  "EURUSD",
+    "timeframe":  "H1",
+    "period":  {
+                   "from":  "2026-01-01",
+                   "to":  "2026-06-18"
+               },
+    "deposit":  10000,
+    "risk_percent":  0.10
+}

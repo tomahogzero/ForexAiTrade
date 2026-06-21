@@ -1,0 +1,6 @@
+﻿2026-06-21 22:09:23 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 22:09:23 Case start: EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000_out_of_sample
+2026-06-21 22:09:23 Spawned MT5 PID 11032
+2026-06-21 22:09:57 Tester completion detected in updated log.
+2026-06-21 22:09:57 Report detected before closing spawned PID 11032.
+2026-06-21 22:09:57 Closing only spawned PID 11032.

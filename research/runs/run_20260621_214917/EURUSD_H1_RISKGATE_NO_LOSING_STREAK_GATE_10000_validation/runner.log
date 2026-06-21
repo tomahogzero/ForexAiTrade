@@ -1,0 +1,4 @@
+﻿2026-06-21 21:58:20 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 21:58:20 Case start: EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000_validation
+2026-06-21 21:58:20 Spawned MT5 PID 15008
+2026-06-21 21:59:31 Tester completion detected in updated log.

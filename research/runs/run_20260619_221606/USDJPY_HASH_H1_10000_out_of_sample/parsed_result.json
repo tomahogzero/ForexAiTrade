@@ -1,0 +1,40 @@
+{
+  "symbol": "USDJPY#",
+  "timeframe": "H1",
+  "deposit": 10000,
+  "net_profit": -30.79,
+  "profit_factor": 0.48,
+  "expected_payoff": -2.57,
+  "absolute_drawdown": null,
+  "max_drawdown": 39.83,
+  "relative_drawdown": 0.4,
+  "total_trades": 12,
+  "long_trades": 12.0,
+  "short_trades": 0.0,
+  "win_rate": 5.0,
+  "largest_win": 15.22,
+  "largest_loss": -9.87,
+  "consecutive_losses": 4,
+  "drawdown_relative": 0.4,
+  "report_period_from": "2026-01-01",
+  "report_period_to": "2026-06-18",
+  "source_report": "G:\\AiServer\\Codex\\ForexAiTrade\\research\\runs\\run_20260619_221606\\USDJPY_HASH_H1_10000_out_of_sample\\mt5_report.htm",
+  "raw_pair_count": 137,
+  "metadata_match": true,
+  "metadata_mismatches": [],
+  "case": {
+    "run_id": "run_20260619_221606",
+    "case_id": "USDJPY_HASH_H1_10000_out_of_sample",
+    "base_case_id": "USDJPY_HASH_H1_10000",
+    "phase": "out_of_sample",
+    "actual_symbol": "USDJPY#",
+    "canonical_symbol": "USDJPY",
+    "timeframe": "H1",
+    "period": {
+      "from": "2026-01-01",
+      "to": "2026-06-18"
+    },
+    "deposit": 10000,
+    "risk_percent": 0.1
+  }
+}

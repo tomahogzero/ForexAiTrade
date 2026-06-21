@@ -1,0 +1,711 @@
+2026.01.01 00:00:00 file log started file=ForexAiTrade_run_20260619_221606_GOLD_HASH_H4_10000_out_of_sample.log
+2026.01.01 00:00:00 Symbol diagnostics: actual=GOLD# canonical=GOLD digits=2 point=0.0100000000 tick_size=0.0100000000 tick_value=1.00000 contract_size=100.00 min_lot=0.01 max_lot=50.00 lot_step=0.01 stops_level=0 freeze_level=0 trade_mode=4 spread=20.0 valid=true reason=ok
+2026.01.01 00:00:00 ForexAiTrade initialized. DemoSafeMode=true LiveTradingEnabled=true RequireStrategyTester=true FileLog=Common\Files\ForexAiTrade_run_20260619_221606_GOLD_HASH_H4_10000_out_of_sample.log
+2026.01.02 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.02 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.02 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.02 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.05 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.05 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.01.05 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.05 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.05 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.05 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.06 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.01.06 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.06 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.06 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.01.06 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.01.06 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.07 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.07 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.01.07 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.07 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.07 16:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4453.02 sl=4390.29 tp=4578.22 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.07 20:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4451.86 sl=4386.61 tp=4582.38 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.08 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+2026.01.08 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=18.0 reason=no strategy signal
+2026.01.08 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+2026.01.08 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+2026.01.08 16:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4423.92 sl=4362.50 tp=4546.28 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.08 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=16.0 reason=no strategy signal
+2026.01.09 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=18.0 reason=no strategy signal
+2026.01.09 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=19.0 reason=no strategy signal
+2026.01.09 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=17.0 reason=no strategy signal
+2026.01.09 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=19.0 reason=no strategy signal
+2026.01.09 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.09 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.12 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.12 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.12 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.12 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.12 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.12 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.13 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.13 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.13 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.13 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.13 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.13 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.14 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.14 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.14 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.14 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.14 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.01.14 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.15 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.15 04:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4600.15 sl=4535.70 tp=4728.63 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.15 08:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4595.45 sl=4530.32 tp=4724.95 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.15 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.01.15 16:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4588.43 sl=4522.96 tp=4718.85 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.15 20:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4616.64 sl=4548.62 tp=4752.28 raw_lot=0.0007 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.16 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.16 04:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4600.73 sl=4538.89 tp=4724.08 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.16 08:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4611.61 sl=4550.70 tp=4732.86 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.16 12:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4600.87 sl=4542.25 tp=4717.81 raw_lot=0.0009 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.16 16:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4602.08 sl=4542.32 tp=4720.99 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.16 20:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4581.55 sl=4512.90 tp=4718.24 raw_lot=0.0007 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.19 01:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=buy entry=4628.87 sl=4527.96 tp=4733.98 raw_lot=0.0005 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.01.19 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.19 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.01.19 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.19 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.01.19 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.01.20 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.01.20 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.20 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.20 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.20 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.20 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.21 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.01.21 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.21 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.21 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=17.0 reason=no strategy signal
+2026.01.21 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.21 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=16.0 reason=no strategy signal
+2026.01.22 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.01.22 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.22 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.01.22 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.01.22 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.22 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.23 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.01.23 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.23 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.01.23 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.23 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.23 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.26 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.26 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.26 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.26 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.26 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.26 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.27 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.01.27 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.27 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.27 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.27 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.27 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.28 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=40.0 reason=unsafe regime: volatility outside allowed range
+2026.01.28 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.28 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.01.28 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.01.28 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.28 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.01.29 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.29 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.01.29 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.01.29 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.01.29 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.29 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.01.30 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.01.30 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.01.30 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.01.30 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.01.30 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.01.30 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.02 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.02 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.02 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.02 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.02 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.02.02 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.03 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.03 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.02.03 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.02.03 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.03 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.03 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.04 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.02.04 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.04 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.04 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.04 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.04 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.05 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.02.05 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.05 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.02.05 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.05 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.05 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.06 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.06 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.06 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.06 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.06 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.06 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.09 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=48.0 reason=unsafe regime: volatility outside allowed range
+2026.02.09 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.09 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.09 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.09 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.09 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.10 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.10 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.10 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.10 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.10 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.10 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.11 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.02.11 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.02.11 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.11 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.11 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.11 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.12 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.12 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.12 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.12 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.12 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.12 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.13 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.13 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.13 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.13 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.13 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.13 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.16 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=78.0 reason=unsafe regime: volatility outside allowed range
+2026.02.16 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.16 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.16 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.16 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.16 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.17 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.17 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.17 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.17 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.17 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.17 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.18 01:01:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.18 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.18 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.18 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.18 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.18 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.19 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.19 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.19 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.19 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.19 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.19 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.20 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.20 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.02.20 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.02.20 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=18.0 reason=no strategy signal
+2026.02.20 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.02.20 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.23 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.23 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.23 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.23 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.23 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=16.0 reason=unsafe regime: volatility outside allowed range
+2026.02.23 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=17.0 reason=unsafe regime: volatility outside allowed range
+2026.02.24 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.24 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.24 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.24 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=19.0 reason=unsafe regime: volatility outside allowed range
+2026.02.24 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.24 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.25 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.02.25 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.02.25 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.25 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.25 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.25 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.26 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.02.26 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.26 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.02.26 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.26 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.02.26 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.02.27 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.02.27 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.27 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.02.27 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+2026.02.27 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+2026.02.27 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.03.02 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=18.0 reason=unsafe regime: volatility outside allowed range
+2026.03.02 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.03.02 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.03.02 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.02 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.02 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.03.03 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.03 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.03 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.03.03 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.03 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.03 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.03.04 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.04 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.04 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.04 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.04 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.04 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.05 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=44.0 reason=unsafe regime: volatility outside allowed range
+2026.03.05 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.05 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.05 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.05 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.05 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.06 01:00:30 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=44.0 reason=unsafe regime: volatility outside allowed range
+2026.03.06 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.03.06 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.03.06 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.03.06 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.03.06 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.09 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=102.0 reason=unsafe regime: spread too wide
+2026.03.09 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.09 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.09 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.09 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.03.09 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.10 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.10 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.03.10 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.10 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.03.10 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.10 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.03.11 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.11 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.11 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.11 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.03.11 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.11 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.12 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.12 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.12 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.12 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.12 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.03.12 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.13 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.13 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.13 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.13 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.03.13 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.13 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.16 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=80.0 reason=unsafe regime: volatility outside allowed range
+2026.03.16 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.16 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.03.16 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.16 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.16 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.17 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.17 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.17 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.17 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.17 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.17 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.18 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.03.18 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.18 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=29.0 reason=no strategy signal
+2026.03.18 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=29.0 reason=no strategy signal
+2026.03.18 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.18 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.19 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.19 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.19 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.19 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.19 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.19 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.20 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.20 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.20 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.20 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.20 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.20 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.23 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=109.0 reason=unsafe regime: spread too wide
+2026.03.23 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.23 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.23 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.23 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.23 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.24 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.24 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.24 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.24 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.24 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.24 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.25 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.03.25 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.25 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.25 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.25 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.25 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.03.26 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.26 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.26 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.26 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.26 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.03.26 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.27 00:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.27 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.27 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.27 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.03.27 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.27 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.30 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.30 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.30 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.03.30 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.30 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.30 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.31 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.03.31 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.31 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.03.31 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.03.31 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=22.0 reason=unsafe regime: volatility outside allowed range
+2026.03.31 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.01 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.04.01 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.01 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.04.01 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.01 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.01 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.02 01:03:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.04.02 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.02 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.04.02 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.02 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.02 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.06 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=44.0 reason=unsafe regime: volatility outside allowed range
+2026.04.06 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.06 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.04.06 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.06 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.04.06 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.07 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.04.07 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.07 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.07 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.07 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.07 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.08 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.04.08 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.08 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.08 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.08 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.08 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.09 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.04.09 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.09 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.04.09 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.09 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.09 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.10 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.04.10 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.10 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.04.10 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.10 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.10 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.13 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.13 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.13 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.13 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.13 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.13 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.14 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.04.14 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.14 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.04.14 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.04.14 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.14 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.15 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=31.0 reason=unsafe regime: volatility outside allowed range
+2026.04.15 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.15 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.15 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.04.15 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.15 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.16 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=32.0 reason=no strategy signal
+2026.04.16 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.16 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.16 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.04.16 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.16 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.17 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=32.0 reason=no strategy signal
+2026.04.17 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+2026.04.17 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.04.17 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.17 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+2026.04.17 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.20 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=44.0 reason=no strategy signal
+2026.04.20 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.20 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.04.20 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=21.0 reason=unsafe regime: volatility outside allowed range
+2026.04.20 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.20 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.21 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.04.21 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.21 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.04.21 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.04.21 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.21 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.22 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.04.22 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.22 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.04.22 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+2026.04.22 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: mixed or low-quality conditions
+2026.04.22 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: mixed or low-quality conditions
+2026.04.23 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: mixed or low-quality conditions
+2026.04.23 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=26.0 reason=no strategy signal
+2026.04.23 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+2026.04.23 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.23 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.23 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.24 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.04.24 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.04.24 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.24 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.04.24 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.24 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.27 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=75.0 reason=unsafe regime: volatility outside allowed range
+2026.04.27 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.27 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.27 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.27 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+2026.04.27 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.28 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=29.0 reason=no strategy signal
+2026.04.28 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=28.0 reason=no strategy signal
+2026.04.28 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.04.28 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.28 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.28 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.04.29 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.04.29 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.29 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.04.29 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.04.29 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.04.29 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.04.30 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.04.30 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.04.30 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.04.30 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.04.30 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.04.30 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.01 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.05.01 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.01 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.01 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.01 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.01 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.05.04 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=46.0 reason=unsafe regime: volatility outside allowed range
+2026.05.04 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.04 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.04 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.04 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.04 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.05 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.05.05 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.05 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.05.05 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.05 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.05 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.06 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.05.06 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.06 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.06 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.06 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.06 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.07 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.07 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.05.07 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.05.07 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.07 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.07 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.05.08 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.08 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.08 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.05.08 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.08 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.08 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.11 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.05.11 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.05.11 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=32.0 reason=no strategy signal
+2026.05.11 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.05.11 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.11 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.12 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=33.0 reason=no strategy signal
+2026.05.12 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.05.12 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.05.12 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.05.12 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=26.0 reason=no strategy signal
+2026.05.12 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.13 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.05.13 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.13 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.05.13 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=26.0 reason=no strategy signal
+2026.05.13 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=20.0 reason=no strategy signal
+2026.05.13 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.14 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=46.0 reason=no strategy signal
+2026.05.14 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.05.14 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.05.14 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.05.14 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=22.0 reason=no strategy signal
+2026.05.14 20:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4678.48 sl=4745.23 tp=4544.93 raw_lot=0.0007 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.05.15 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=33.0 reason=no strategy signal
+2026.05.15 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=20.0 reason=no strategy signal
+2026.05.15 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.05.15 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.05.15 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.05.15 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.05.18 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=186.0 reason=unsafe regime: spread too wide
+2026.05.18 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.05.18 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.05.18 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.05.18 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=23.0 reason=unsafe regime: volatility outside allowed range
+2026.05.18 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.19 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=46.0 reason=unsafe regime: volatility outside allowed range
+2026.05.19 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.19 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.05.19 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.19 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.05.19 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.20 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.05.20 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.05.20 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.20 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=20.0 reason=unsafe regime: volatility outside allowed range
+2026.05.20 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.05.20 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.05.21 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=34.0 reason=unsafe regime: volatility outside allowed range
+2026.05.21 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.21 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.05.21 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.21 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.05.21 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.05.22 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=34.0 reason=unsafe regime: volatility outside allowed range
+2026.05.22 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.05.22 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=29.0 reason=no strategy signal
+2026.05.22 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=27.0 reason=no strategy signal
+2026.05.22 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=28.0 reason=no strategy signal
+2026.05.22 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=24.0 reason=no strategy signal
+2026.05.25 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=129.0 reason=unsafe regime: spread too wide
+2026.05.25 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=28.0 reason=no strategy signal
+2026.05.25 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: mixed or low-quality conditions
+2026.05.25 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: mixed or low-quality conditions
+2026.05.25 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: mixed or low-quality conditions
+2026.05.25 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: mixed or low-quality conditions
+2026.05.26 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=34.0 reason=unsafe regime: mixed or low-quality conditions
+2026.05.26 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: mixed or low-quality conditions
+2026.05.26 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: mixed or low-quality conditions
+2026.05.26 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=26.0 reason=no strategy signal
+2026.05.26 16:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4520.33 sl=4578.46 tp=4404.12 raw_lot=0.0009 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.05.26 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.05.27 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.05.27 04:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4515.09 sl=4574.13 tp=4397.04 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.05.27 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=31.0 reason=no strategy signal
+2026.05.27 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=29.0 reason=no strategy signal
+2026.05.27 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.05.27 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=28.0 reason=no strategy signal
+2026.05.28 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=34.0 reason=no strategy signal
+2026.05.28 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=30.0 reason=no strategy signal
+2026.05.28 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.05.28 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.28 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.05.28 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.05.29 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.05.29 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.05.29 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.05.29 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=29.0 reason=unsafe regime: volatility outside allowed range
+2026.05.29 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.05.29 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.01 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=56.0 reason=unsafe regime: volatility outside allowed range
+2026.06.01 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.06.01 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.06.01 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.01 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.06.01 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.02 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.06.02 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=29.0 reason=no strategy signal
+2026.06.02 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=30.0 reason=no strategy signal
+2026.06.02 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=26.0 reason=no strategy signal
+2026.06.02 16:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4514.95 sl=4584.09 tp=4375.86 raw_lot=0.0007 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.06.02 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=24.0 reason=no strategy signal
+2026.06.03 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=31.0 reason=no strategy signal
+2026.06.03 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=30.0 reason=no strategy signal
+2026.06.03 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=30.0 reason=no strategy signal
+2026.06.03 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=24.0 reason=no strategy signal
+2026.06.03 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=28.0 reason=no strategy signal
+2026.06.03 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=24.0 reason=no strategy signal
+2026.06.04 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=32.0 reason=no strategy signal
+2026.06.04 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=30.0 reason=no strategy signal
+2026.06.04 08:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4481.05 sl=4544.29 tp=4354.36 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.06.04 12:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4463.31 sl=4527.09 tp=4335.69 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.06.04 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=24.0 reason=no strategy signal
+2026.06.04 20:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4482.70 sl=4550.82 tp=4346.45 raw_lot=0.0007 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.06.05 01:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4475.58 sl=4541.73 tp=4342.38 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.06.05 04:00:00 Signal blocked: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend direction=sell entry=4459.26 sl=4524.58 tp=4328.44 raw_lot=0.0008 normalized_lot=0.00 risk_money=5.00 actual_risk_money=0.00 reason=broker minimum lot exceeds configured risk budget
+2026.06.05 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=28.0 reason=no strategy signal
+2026.06.05 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=24.0 reason=no strategy signal
+2026.06.05 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.05 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.08 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=197.0 reason=unsafe regime: spread too wide
+2026.06.08 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.06.08 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.08 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.08 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.08 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.09 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.09 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=28.0 reason=unsafe regime: volatility outside allowed range
+2026.06.09 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.06.09 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=25.0 reason=unsafe regime: volatility outside allowed range
+2026.06.09 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.09 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.10 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=45.0 reason=unsafe regime: volatility outside allowed range
+2026.06.10 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.10 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.10 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.10 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.10 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.11 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=34.0 reason=unsafe regime: volatility outside allowed range
+2026.06.11 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.11 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.11 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.11 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.11 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.12 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=34.0 reason=unsafe regime: volatility outside allowed range
+2026.06.12 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.12 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=30.0 reason=unsafe regime: volatility outside allowed range
+2026.06.12 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.12 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.12 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.15 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.15 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.15 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.15 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.15 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=26.0 reason=unsafe regime: volatility outside allowed range
+2026.06.15 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.16 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=33.0 reason=unsafe regime: volatility outside allowed range
+2026.06.16 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.06.16 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=27.0 reason=unsafe regime: volatility outside allowed range
+2026.06.16 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.16 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.16 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=24.0 reason=unsafe regime: volatility outside allowed range
+2026.06.17 01:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=unsafe spread=32.0 reason=unsafe regime: volatility outside allowed range
+2026.06.17 04:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=24.0 reason=no strategy signal
+2026.06.17 08:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=trend spread=27.0 reason=no strategy signal
+2026.06.17 12:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=28.0 reason=no strategy signal
+2026.06.17 16:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=24.0 reason=no strategy signal
+2026.06.17 20:00:00 No trade: actual=GOLD# canonical=GOLD timeframe=PERIOD_H4 regime=breakout spread=26.0 reason=no strategy signal
+2026.06.17 23:58:59 ForexAiTrade deinitialized. reason=1
+2026.06.17 23:58:59 file log stopped

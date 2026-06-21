@@ -1,0 +1,58 @@
+{
+  "run_id": "run_20260621_205032",
+  "case_id": "EURUSD_H1_EXIT_TRAILING_TIGHTER_10000_out_of_sample",
+  "base_case_id": "EURUSD_H1_EXIT_TRAILING_TIGHTER_10000",
+  "phase": "out_of_sample",
+  "actual_symbol": "EURUSD",
+  "canonical_symbol": "EURUSD",
+  "timeframe": "H1",
+  "telemetry_rows": 703,
+  "open_events": 78,
+  "modify_events": 547,
+  "close_events": 78,
+  "trade_ledger_rows": 78,
+  "by_exit_classification": {
+    "INITIAL_SL_LOSS": {
+      "count": 28,
+      "net_profit": -233.08,
+      "average_r": -1.005322,
+      "average_duration_seconds": 24849.785714
+    },
+    "BREAKEVEN_SL": {
+      "count": 1,
+      "net_profit": -0.31,
+      "average_r": -0.034444,
+      "average_duration_seconds": 21941.0
+    },
+    "TRAILING_SL_PROFIT": {
+      "count": 43,
+      "net_profit": 140.23,
+      "average_r": 0.378418,
+      "average_duration_seconds": 26579.465116
+    },
+    "TP_HIT": {
+      "count": 6,
+      "net_profit": 102.22,
+      "average_r": 1.943563,
+      "average_duration_seconds": 50258.5
+    },
+    "OTHER_CLOSE": {
+      "count": 0,
+      "net_profit": 0,
+      "average_r": null,
+      "average_duration_seconds": null
+    },
+    "UNKNOWN": {
+      "count": 0,
+      "net_profit": 0,
+      "average_r": null,
+      "average_duration_seconds": null
+    }
+  },
+  "breakeven_exits": 1,
+  "trailing_profit_exits": 43,
+  "initial_sl_loss_exits": 28,
+  "tp_hit_exits": 6,
+  "unknown_exits": 0,
+  "warnings": []
+}

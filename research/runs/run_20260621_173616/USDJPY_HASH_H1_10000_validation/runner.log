@@ -1,0 +1,4 @@
+﻿2026-06-21 17:40:00 WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes.
+2026-06-21 17:40:00 Case start: USDJPY_HASH_H1_10000_validation
+2026-06-21 17:40:00 Spawned MT5 PID 8416
+2026-06-21 17:40:53 Tester completion detected in updated log.

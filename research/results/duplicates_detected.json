@@ -1,0 +1,232 @@
+{
+  "selected_run_id": "run_20260621_214917",
+  "duplicates": [
+    {
+      "signature": {
+        "base_case_id": "EURUSD_H1_10000",
+        "phase": "out_of_sample",
+        "actual_symbol": "EURUSD",
+        "canonical_symbol": "EURUSD",
+        "timeframe": "H1",
+        "period_from": "2026-01-01",
+        "period_to": "2026-06-18"
+      },
+      "sources": [
+        {
+          "run_id": "run_20260619_220639",
+          "case_dir": "research\\runs\\run_20260619_220639\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221044",
+          "case_dir": "research\\runs\\run_20260619_221044\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221346",
+          "case_dir": "research\\runs\\run_20260619_221346\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221606",
+          "case_dir": "research\\runs\\run_20260619_221606\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": "21de5949ed5cae4c65b198611fd045f49570c8b839d922a1035a9a7a1c557e15",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260620_004004",
+          "case_dir": "research\\runs\\run_20260620_004004\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": "bdd24c38ea751bd82338b96d67342694ccf078bbaf83aa18bedf6402290b31dd",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260620_004501",
+          "case_dir": "research\\runs\\run_20260620_004501\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": "e478bae04748f230e680d9bac7820fbe3a8acb1006987b3e4f5a49756387a27b",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_173616",
+          "case_dir": "research\\runs\\run_20260621_173616\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": "6d61bfcf97d941ec4dc8e0c2592d612ac3fe891bce53e14c32845ab6e6abf9ad",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_183001",
+          "case_dir": "research\\runs\\run_20260621_183001\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": "98338c6676e5dd90aeb9b5e7c541ee7ffffe18a0c6dd7ffdd77f867f668e1c7c",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_202843",
+          "case_dir": "research\\runs\\run_20260621_202843\\EURUSD_H1_10000_out_of_sample",
+          "report_hash": "12b2eed8cb0c1f0710f0f4ceaa6f5bb91db580da33faf4edf182293967a8663c",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "signature": {
+        "base_case_id": "EURUSD_H1_10000",
+        "phase": "train",
+        "actual_symbol": "EURUSD",
+        "canonical_symbol": "EURUSD",
+        "timeframe": "H1",
+        "period_from": "2023-01-01",
+        "period_to": "2024-12-31"
+      },
+      "sources": [
+        {
+          "run_id": "run_20260620_004004",
+          "case_dir": "research\\runs\\run_20260620_004004\\EURUSD_H1_10000_train",
+          "report_hash": "805166e0a97fb5fe6e6d94df77647f282d361dbe9a68d4b39866008c54e1d263",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260620_004501",
+          "case_dir": "research\\runs\\run_20260620_004501\\EURUSD_H1_10000_train",
+          "report_hash": "711ab374ccfb46256eaaf67088566516e9526917e8c046f1b8ecaa46532dd3eb",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_173616",
+          "case_dir": "research\\runs\\run_20260621_173616\\EURUSD_H1_10000_train",
+          "report_hash": "6045744c677dbcab4c66cf03092378aaf1405cf58a55ae731a1917a81f2d2a88",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_183001",
+          "case_dir": "research\\runs\\run_20260621_183001\\EURUSD_H1_10000_train",
+          "report_hash": "6d4618dfae0571585cb33553c86b66d4f7f2cba274f60e7b79a99b9f688a0b40",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "signature": {
+        "base_case_id": "EURUSD_H1_10000",
+        "phase": "validation",
+        "actual_symbol": "EURUSD",
+        "canonical_symbol": "EURUSD",
+        "timeframe": "H1",
+        "period_from": "2025-01-01",
+        "period_to": "2025-12-31"
+      },
+      "sources": [
+        {
+          "run_id": "run_20260620_004004",
+          "case_dir": "research\\runs\\run_20260620_004004\\EURUSD_H1_10000_validation",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260620_004501",
+          "case_dir": "research\\runs\\run_20260620_004501\\EURUSD_H1_10000_validation",
+          "report_hash": "56472a2e45915a2c4e4fc9836926c680f824da175856623bec75b976a8f426d4",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_173616",
+          "case_dir": "research\\runs\\run_20260621_173616\\EURUSD_H1_10000_validation",
+          "report_hash": "d369dcad98585d52f3fd92df638ba1d7db3fb8513e866db100021d5e0e927428",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_183001",
+          "case_dir": "research\\runs\\run_20260621_183001\\EURUSD_H1_10000_validation",
+          "report_hash": "276d90be79f73afd716ec39da1e936c024ecbd6e9b7adf35d43ddc01c49bdff6",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_202843",
+          "case_dir": "research\\runs\\run_20260621_202843\\EURUSD_H1_10000_validation",
+          "report_hash": "5a559f7f1255bef030bef46d6e27a53e9a51d2e9973409f61e1877f5922bef9a",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "signature": {
+        "base_case_id": "GOLD_HASH_H4_10000",
+        "phase": "out_of_sample",
+        "actual_symbol": "GOLD#",
+        "canonical_symbol": "GOLD",
+        "timeframe": "H4",
+        "period_from": "2026-01-01",
+        "period_to": "2026-06-18"
+      },
+      "sources": [
+        {
+          "run_id": "run_20260619_220639",
+          "case_dir": "research\\runs\\run_20260619_220639\\GOLD_HASH_H4_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221044",
+          "case_dir": "research\\runs\\run_20260619_221044\\GOLD_HASH_H4_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221346",
+          "case_dir": "research\\runs\\run_20260619_221346\\GOLD_HASH_H4_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221606",
+          "case_dir": "research\\runs\\run_20260619_221606\\GOLD_HASH_H4_10000_out_of_sample",
+          "report_hash": "cebe05d0621a34c4748f6647636403ed657753a70f4cdece100f31ae7d3112f5",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "signature": {
+        "base_case_id": "USDJPY_HASH_H1_10000",
+        "phase": "out_of_sample",
+        "actual_symbol": "USDJPY#",
+        "canonical_symbol": "USDJPY",
+        "timeframe": "H1",
+        "period_from": "2026-01-01",
+        "period_to": "2026-06-18"
+      },
+      "sources": [
+        {
+          "run_id": "run_20260619_220639",
+          "case_dir": "research\\runs\\run_20260619_220639\\USDJPY_HASH_H1_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221044",
+          "case_dir": "research\\runs\\run_20260619_221044\\USDJPY_HASH_H1_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221346",
+          "case_dir": "research\\runs\\run_20260619_221346\\USDJPY_HASH_H1_10000_out_of_sample",
+          "report_hash": null,
+          "selected": false
+        },
+        {
+          "run_id": "run_20260619_221606",
+          "case_dir": "research\\runs\\run_20260619_221606\\USDJPY_HASH_H1_10000_out_of_sample",
+          "report_hash": "f1980e5dc227f8ca2b7ec19c44bf56b42bdb3b82e3a48b1eb988ce3f28f1d5e4",
+          "selected": false
+        },
+        {
+          "run_id": "run_20260621_173616",
+          "case_dir": "research\\runs\\run_20260621_173616\\USDJPY_HASH_H1_10000_out_of_sample",
+          "report_hash": "bc45fb71e13a99803d1cd40b0493b8e2c5e30f3c1ec6e39adbe66199bf60f5a6",
+          "selected": false
+        }
+      ]
+    }
+  ]
+}

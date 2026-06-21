@@ -2,6 +2,14 @@
 
 เอกสารนี้เป็น checklist สำหรับ strategy implementation ในอนาคตเท่านั้น ยังไม่อนุญาตให้ demo/live
 
+## Symbol Profile
+
+- ต้องเลือก symbol profile อย่างชัดเจนก่อน research run
+- EURUSD settings ห้าม reuse อัตโนมัติบน symbol อื่น
+- Other forex pairs ต้องมี validation แยกตาม symbol
+- Gold risk-budget review ต้องเสร็จก่อน Gold research run
+- Broker minimum lot ต้องไม่ override risk budget
+
 ## Order Limits
 
 - กำหนด maximum pending orders ต่อ symbol

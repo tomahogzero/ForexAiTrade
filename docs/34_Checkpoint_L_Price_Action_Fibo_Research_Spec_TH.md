@@ -198,6 +198,32 @@ Future module ควรมี responsibility:
 - ส่ง order request ผ่าน RiskManager และ execution safety gates เดิมเท่านั้น
 - log setup, invalidation, pending fill/cancel reason
 
+## Symbol Profile Separation
+
+### EURUSD Baseline Profile
+
+- EURUSD H1 remains the first research baseline.
+- Future Price Action/Fibo implementation should start with EURUSD only.
+- EURUSD results must be compared against the current EURUSD H1 baseline.
+- EURUSD success does not imply success on other symbols.
+
+### Other Forex Pairs Profile
+
+- Other pairs such as USDJPY#, GBPUSD, or other broker-specific forex symbols must be validated separately.
+- They may reuse the same conceptual Price Action/Fibo rules, but must not automatically reuse EURUSD parameters.
+- Each symbol must have its own train, validation, and out-of-sample results.
+- Each symbol must pass annual target and risk-adjusted viability checks independently.
+
+### Gold Profile
+
+- GOLD# / GOLDm# must be treated as a separate instrument class.
+- Do not reuse EURUSD SL/TP, ATR, zone width, pending order spacing, or lot assumptions directly.
+- Gold must use actual runtime broker metadata from `_Symbol`.
+- Gold research must respect broker minimum lot and risk budget.
+- Do not force broker minimum lot if it violates configured risk.
+- Gold may require a larger research deposit assumption, but this is not a recommendation to trade that capital.
+- Gold is not approved for demo/live forward testing until risk-budget issues are resolved.
+
 ## Required Diagnostics ก่อน Implementation
 
 - zone source, zone age, zone height

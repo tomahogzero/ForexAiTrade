@@ -122,6 +122,17 @@ Strategy skeleton PR เช่น `research/checkpoint-m-price-action-fibo-skele
 - compile log แนบไว้เมื่อมี MQL5 source change
 - implementation ยังไม่ถือว่า approve demo/live forward test
 
+## Checkpoint N Diagnostic PR Rule
+
+Diagnostic-only strategy PR ต้องยืนยันว่า:
+
+- diagnostic classifications ไม่ถูกใช้เป็น trade signal
+- `SIGNAL_BUY` / `SIGNAL_SELL` ไม่ถูก emit จาก module นั้น
+- ไม่มี market order หรือ pending order จาก diagnostic module
+- logging ต้องถูก throttle เช่น log เฉพาะ new bar โดย default
+- ไม่มี Strategy Tester run ถ้า checkpoint ไม่ได้ระบุ
+- no-profitability-claim statement ต้องอยู่ใน PR
+
 ## Clean Review Zip
 
 หลัง checkpoint เสร็จ ถ้าต้องสร้าง zip review ให้รวม:

@@ -77,3 +77,16 @@ Price Action / Fibo มี code skeleton แล้วใน `PriceActionFiboStra
 - no position modification
 - diagnostics-only hook
 - still requires future measurable rule implementation before any research run
+
+## Checkpoint N Status
+
+Price Action / Fibo มี diagnostic-only detection แล้ว แต่ยังไม่ใช่ strategy signal:
+
+- swing high / swing low detection
+- support/resistance zone detection
+- Fibonacci zone calculation
+- breakout/retest detection
+- rejection และ engulfing candle detection
+- diagnostic classification only
+- still returns `SIGNAL_NONE`
+- no market orders, no pending orders, no position modification

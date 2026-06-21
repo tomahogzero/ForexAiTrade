@@ -14,6 +14,7 @@
 #include "../../Include/ForexAiTrade/Strategies/TrendFollowing.mqh"
 #include "../../Include/ForexAiTrade/Strategies/Breakout.mqh"
 #include "../../Include/ForexAiTrade/Strategies/MeanReversion.mqh"
+#include "../../Include/ForexAiTrade/Strategies/PriceActionFiboStrategy.mqh"
 
 CTrade             g_trade;
 CMarketData        g_market;
@@ -22,6 +23,7 @@ CRegimeDetector    g_regime;
 CTrendFollowing    g_trend;
 CBreakoutStrategy  g_breakout;
 CMeanReversion     g_meanReversion;
+CPriceActionFiboStrategy g_priceActionFibo;
 CTradeLogger       g_logger;
 CExitTelemetry     g_exitTelemetry;
 
@@ -396,6 +398,7 @@ int OnInit()
    g_trend.Init(&g_market);
    g_breakout.Init(&g_market);
    g_meanReversion.Init(&g_market);
+   g_priceActionFibo.Init(&g_market);
 
    g_trade.SetExpertMagicNumber(InpMagicNumber);
    g_lastBarTime = iTime(_Symbol, InpSignalTimeframe, 0);
@@ -420,6 +423,17 @@ int OnInit()
            " RiskGateMode=" + NormalizedRiskGateMode() +
            " FileLog=" + g_logger.LocationHint() +
            " ExitTelemetry=" + g_exitTelemetry.LocationHint());
+   if(InpEnablePriceActionFibo)
+   {
+      LogLine("PriceActionFibo module loaded. DiagnosticsOnly=" +
+              (InpPriceActionFiboDiagnosticsOnly ? "true" : "false") +
+              " PendingOrdersEnabled=" + (InpPAFUsePendingOrders ? "true" : "false") +
+              " EntryTimeframe=" + TimeframeName(InpPAFEntryTimeframe) +
+              " HigherTimeframe=" + TimeframeName(InpPAFHigherTimeframe));
+      if(InpPriceActionFiboDiagnosticsOnly)
+         LogLine("PriceActionFibo diagnostics-only mode active.");
+      LogLine("PriceActionFibo safety: skeleton placeholder only; no market orders, pending orders, or position modifications are active.");
+   }
    if(InpRequireStrategyTester && !MQLInfoInteger(MQL_TESTER))
       LogLine("Safety block: strategy tester required by preset");
    if(IsDiagnosticRiskGateMode() && !MQLInfoInteger(MQL_TESTER))
@@ -508,7 +522,14 @@ void OnTick()
    STradeSignal signal;
    ResetSignal(signal);
 
-   if(regime.regime == REGIME_TREND)
+   if(InpEnablePriceActionFibo)
+   {
+      signal = g_priceActionFibo.Evaluate(regime);
+      if(isNewSignalBar)
+         PrintNoTradeLog(g_priceActionFibo.PlaceholderReason(), regime, metadata);
+      return;
+   }
+   else if(regime.regime == REGIME_TREND)
       signal = g_trend.Evaluate(regime);
    else if(regime.regime == REGIME_BREAKOUT)
       signal = g_breakout.Evaluate(regime);

@@ -76,6 +76,15 @@ input double InpMeanRevRsiBuyMax         = 35.0;
 input double InpMeanRevRsiSellMin        = 65.0;
 input int    InpRsiPeriod                = 14;
 
+input group "Price Action / Fibo Skeleton"
+input bool   InpEnablePriceActionFibo    = false;
+input bool   InpPriceActionFiboDiagnosticsOnly = true;
+input ENUM_TIMEFRAMES InpPAFEntryTimeframe = PERIOD_H1;
+input ENUM_TIMEFRAMES InpPAFHigherTimeframe = PERIOD_H1;
+input bool   InpPAFUsePendingOrders      = false;
+input int    InpPAFMaxPendingOrders      = 0;
+input int    InpPAFMaxOpenOrders         = 1;
+
 input group "Position Management"
 input bool   InpUseTrailingStop          = true;
 input bool   InpManagePositionsOnlyOnNewBar = false;

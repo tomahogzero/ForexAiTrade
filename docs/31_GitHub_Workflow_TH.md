@@ -109,6 +109,19 @@ git commit -m "checkpoint-l: add price action fibo research specification"
 git push -u origin research/checkpoint-l-price-action-fibo-spec
 ```
 
+## Checkpoint M Skeleton PR Rule
+
+Strategy skeleton PR เช่น `research/checkpoint-m-price-action-fibo-skeleton` ต้องยืนยันว่า:
+
+- skeleton ถูกปิดไว้เป็น default
+- ไม่มี active trade signal
+- ไม่มี pending order implementation
+- ไม่มี optimization
+- ไม่มี lot/risk increase
+- ไม่มี profitability claim
+- compile log แนบไว้เมื่อมี MQL5 source change
+- implementation ยังไม่ถือว่า approve demo/live forward test
+
 ## Clean Review Zip
 
 หลัง checkpoint เสร็จ ถ้าต้องสร้าง zip review ให้รวม:

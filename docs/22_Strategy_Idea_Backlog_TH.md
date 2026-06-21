@@ -66,3 +66,14 @@
 - annual target assessment
 - artifact audit
 - explicit no-profitability-claim statement
+
+## Checkpoint M Status
+
+Price Action / Fibo มี code skeleton แล้วใน `PriceActionFiboStrategy.mqh` แต่ยังเป็น placeholder เท่านั้น:
+
+- default disabled
+- no active trade signal
+- no pending orders
+- no position modification
+- diagnostics-only hook
+- still requires future measurable rule implementation before any research run

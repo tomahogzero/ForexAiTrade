@@ -1,42 +1,68 @@
 # Strategy Idea Backlog
 
-เอกสารนี้เป็นรายการแนวคิดสำหรับการวิจัยในอนาคตเท่านั้น ยังไม่ควร implement ก่อนที่ baseline stability จะชัดเจนกว่าเดิม
+เอกสารนี้เป็น backlog สำหรับแนวคิดวิจัยในอนาคตเท่านั้น ยังไม่ใช่คำสั่งให้ implement strategy
+
+ทุก idea ต้องผ่าน specification, safety checklist, diagnostics และ research comparison plan ก่อนเริ่ม implementation
 
 ## MicroTrend Intraday M15/M30
 
-- Hypothesis: ใช้ trend ขนาดเล็กใน M15/M30 อาจเพิ่มจำนวน trade และจับ momentum ช่วงสั้นได้มากกว่า H1
-- Risk: จำนวน trade มากขึ้นอาจเพิ่ม spread/slippage sensitivity และเกิด overtrading ได้ง่าย
-- Required diagnostics: win/loss แยกตาม session, spread at signal, MA slope quality, losing streak, trade duration, max open block
-- Reason not now: EURUSD baseline ยังเป็น `RESEARCH_MORE` และ M30 validation ยังอ่อนมาก จึงยังไม่ควรเพิ่ม logic ใหม่
+- Hypothesis: trend ขนาดเล็กใน M15/M30 อาจเพิ่มจำนวน trade และจับ momentum ระยะสั้นได้มากกว่า H1
+- Risk: trade count สูงขึ้นทำให้ spread/slippage sensitivity และ overtrading เพิ่มขึ้น
+- Required diagnostics: session outcome, spread at signal, MA slope quality, losing streak, trade duration
+- Reason not now: baseline EURUSD H1 ยังเป็น `RESEARCH_MORE` และ M30 เคยถูก reject for now
 
-## Fibo Zone Pending Order Strategy
+## Price Action Break & Retest
 
-- Hypothesis: pending order ตาม retracement zone อาจช่วยให้ entry ได้ราคาดีกว่า market entry
-- Risk: pending order เพิ่มความซับซ้อนด้าน expiration, false retracement, slippage, และการจัดการ order ค้าง
+- Hypothesis: รอ break structure แล้ว retest zone อาจช่วยกรอง false breakout และเข้าใกล้จุด invalidation
+- Risk: rule อาจ subjective ถ้าไม่กำหนด swing/zone/retest แบบ numeric
+- Required diagnostics: breakout quality, retest depth, confirmation type, invalidation reason, MAE/MFE
+- Reason not now: ต้องเริ่มจาก specification branch และ safety checklist ก่อน implementation
+
+## Fibo Zone Pending Order
+
+- Hypothesis: pending order ใน fibo pullback zone อาจช่วยให้ entry ดีขึ้นกว่าการ market entry หลังสัญญาณ
+- Risk: pending order อาจกลายเป็น grid ถ้าไม่มี max order, expiry, invalidation และ exposure limit
 - Required diagnostics: fill rate, cancel reason, zone touch count, adverse excursion, risk before/after fill
-- Reason not now: ยังไม่มี baseline ที่มั่นคงพอ และยังไม่ได้ออกแบบ safety สำหรับ pending order โดยเฉพาะ
+- Reason not now: ต้องพิสูจน์ว่าไม่ใช่ martingale/grid และต้องใช้ RiskManager เดิมเท่านั้น
 
-## Supply/Demand Zone Pending Strategy
+## Supply/Demand Pending Order
 
-- Hypothesis: zone-based entry อาจช่วยกรอง trade ที่อยู่ใกล้บริเวณ liquidity หรือ reaction area
-- Risk: zone detection มี subjectivity สูงและอาจ overfit ง่ายมาก
-- Required diagnostics: zone age, number of retests, distance to zone, reaction strength, invalidation reason
-- Reason not now: ต้องมี logging/diagnostics เพิ่มก่อน ไม่ควรใส่ zone logic ก่อนเข้าใจ baseline
+- Hypothesis: zone ที่เกิดจาก base + impulse อาจระบุ reaction area ได้ดีขึ้น
+- Risk: supply/demand zone มี subjectivity สูงและ overfit ง่าย
+- Required diagnostics: zone age, retest count, impulse strength, distance to zone, invalidation reason
+- Reason not now: ต้องกำหนด zone construction แบบ measurable ก่อน
 
 ## Session Filter Research
 
-- Hypothesis: การจำกัดช่วง London/New York อาจลดช่วง spread แย่หรือ liquidity ต่ำ
-- Risk: อาจลด trade count มากเกินไป และทำให้ผลขึ้นกับช่วงเวลามากเกินควร
-- Required diagnostics: trade outcome by hour/session, spread by session, rejected signals by session
-- Reason not now: ควรใช้เป็น diagnostic filter หลังจากเห็น monthly/session behavior ชัดกว่าเดิม
+- Hypothesis: จำกัดช่วง London/New York หรือหลีกเลี่ยง rollover อาจลด spread/liquidity risk
+- Risk: trade count อาจลดลงจน annualized metric misleading
+- Required diagnostics: trades by hour/session, spread by session, rejected signals by session
+- Reason not now: ควรใช้เป็น diagnostic ก่อน ไม่ใช่ filter เพื่อ overfit
 
-## Exit/Trailing Stop Research
+## Exit Variant Follow-Up
 
-- Hypothesis: exit หรือ trailing stop ที่ยืดหยุ่นขึ้นอาจลด drawdown หรือเก็บ trend ได้ดีขึ้น
-- Risk: exit tuning เป็นจุดที่ overfit ได้ง่าย และอาจทำให้ backtest ดูดีโดยไม่ robust
-- Required diagnostics: MFE/MAE, trade duration, exit reason, partial profit behavior, stop movement frequency
-- Reason not now: ยังต้องยืนยันว่า entry/regime baseline มีความเสถียรพอ ก่อนแก้ exit logic
+- Hypothesis: exit/trailing stop ที่เหมาะสมกว่าอาจลด drawdown หรือเพิ่ม realized R
+- Risk: exit tuning overfit ง่ายและอาจทำให้ OOS misleading
+- Required diagnostics: exit classification, realized R, MFE/MAE, trade duration, trailing modify frequency
+- Reason not now: ต้องใช้ pre-registered variants เท่านั้น ไม่เลือกค่าจาก OOS ย้อนหลัง
+
+## Risk Gate Cooldown Follow-Up
+
+- Hypothesis: cooldown หลัง losing streak อาจลด lockout distortion บางช่วง
+- Risk: Checkpoint J พบว่าการผ่อน gate เพิ่ม trade count แต่ทำให้ validation/OOS แย่ลง
+- Required diagnostics: accepted trades after first block, drawdown after cooldown, max consecutive losses
+- Reason not now: normal losing-streak gate ยังเป็น baseline และ cooldown variants ถูก reject/research-only
 
 ## Rule
 
-ทุกแนวคิดด้านบนต้องผ่าน diagnostics ก่อน ไม่ควรเริ่ม optimization หรือ live/demo forward test จาก backlog นี้โดยตรง
+ห้ามเริ่ม optimization หรือ demo/live forward test จาก backlog โดยตรง
+
+ทุก strategy idea ต้องมี:
+
+- specification
+- safety checklist
+- research plan
+- train/validation/out-of-sample comparison
+- annual target assessment
+- artifact audit
+- explicit no-profitability-claim statement

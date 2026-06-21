@@ -163,12 +163,15 @@ def generate_markdown(
     lines.append("## Phase Classifications")
     lines.append("")
     if scores:
-        lines.append("| Case | Phase | Phase Classification | Score | Failed Gates |")
-        lines.append("|---|---|---|---:|---|")
+        lines.append("| Case | Phase | Phase Classification | Risk-Adjusted | Annualized | Calmar | Score | Failed Gates |")
+        lines.append("|---|---|---|---|---:|---:|---:|---|")
         for s in scores:
             lines.append(
                 f"| {fmt(s.get('base_case_id') or s.get('case_id'))} | {fmt(s.get('phase'))} | "
-                f"{fmt(s.get('phase_classification') or s.get('research_classification'))} | {fmt(s.get('score'))} | {fmt(s.get('failed_gates'))} |"
+                f"{fmt(s.get('phase_classification') or s.get('research_classification'))} | "
+                f"{fmt(s.get('risk_adjusted_classification'))} | "
+                f"{fmt(s.get('annualized_return_percent'))} | {fmt(s.get('calmar_ratio'))} | "
+                f"{fmt(s.get('score'))} | {fmt(s.get('failed_gates'))} |"
             )
     else:
         lines.append("No score rows available.")
@@ -207,6 +210,7 @@ def generate_markdown(
     lines.append("|---|---|")
     lines.append("| Not Profit Proof | Backtest results do not prove future profitability. |")
     lines.append("| No Optimization | This run uses controlled existing parameters only. |")
+    lines.append("| Annualization Caution | Annualized return and CAGR are informational when the period is short or trade count is low. |")
     lines.append("| No Live Readiness | Demo forward testing has not started and should not start from this checkpoint alone. |")
     for case_id, row in sorted(case_level.items()):
         if row.get("case_level_classification") == "TRAIN_FAILED_VALIDATION_OOS_PASS":

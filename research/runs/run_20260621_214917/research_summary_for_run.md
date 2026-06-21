@@ -32,20 +32,20 @@ Selected RunId: `run_20260621_214917`
 
 ## Phase Classifications
 
-| Case | Phase | Phase Classification | Score | Failed Gates |
-|---|---|---|---:|---|
-| EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000 | out_of_sample | VALID_RESULT | -61.47 |  |
-| EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000 | train | VALID_RESULT | -441.13 |  |
-| EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000 | validation | VALID_RESULT | -173.92 |  |
-| EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000 | out_of_sample | VALID_RESULT | -61.47 |  |
-| EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000 | train | VALID_RESULT | -463.12 |  |
-| EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000 | validation | VALID_RESULT | -132.59 |  |
-| EURUSD_H1_RISKGATE_NORMAL_10000 | out_of_sample | VALID_RESULT | 49.88 |  |
-| EURUSD_H1_RISKGATE_NORMAL_10000 | train | INSUFFICIENT_TRADES |  | insufficient_trades |
-| EURUSD_H1_RISKGATE_NORMAL_10000 | validation | VALID_RESULT | 69.83 |  |
-| EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000 | out_of_sample | VALID_RESULT | -83.19 |  |
-| EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000 | train | VALID_RESULT | -433.1 |  |
-| EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000 | validation | VALID_RESULT | -96.44 |  |
+| Case | Phase | Phase Classification | Risk-Adjusted | Annualized | Calmar | Score | Failed Gates |
+|---|---|---|---|---:|---:|---:|---|
+| EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000 | out_of_sample | VALID_RESULT | NOT_VIABLE | -1.3384 | -0.8262 | -61.47 |  |
+| EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000 | train | VALID_RESULT | NOT_VIABLE | -2.1287 | -0.4628 | -441.13 |  |
+| EURUSD_H1_RISKGATE_FIXED_COOLDOWN_24BARS_10000 | validation | VALID_RESULT | NOT_VIABLE | -1.6867 | -0.6224 | -173.92 |  |
+| EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000 | out_of_sample | VALID_RESULT | NOT_VIABLE | -1.3384 | -0.8262 | -61.47 |  |
+| EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000 | train | VALID_RESULT | NOT_VIABLE | -2.2348 | -0.4725 | -463.12 |  |
+| EURUSD_H1_RISKGATE_NEXT_DAY_RESET_10000 | validation | VALID_RESULT | NOT_VIABLE | -1.2969 | -0.559 | -132.59 |  |
+| EURUSD_H1_RISKGATE_NORMAL_10000 | out_of_sample | VALID_RESULT | BELOW_FOREX_RISK_PREMIUM | 0.8862 | 1.502 | 49.88 |  |
+| EURUSD_H1_RISKGATE_NORMAL_10000 | train | INSUFFICIENT_TRADES | BELOW_FOREX_RISK_PREMIUM | -0.2045 | -0.3466 |  | insufficient_trades |
+| EURUSD_H1_RISKGATE_NORMAL_10000 | validation | VALID_RESULT | BELOW_FOREX_RISK_PREMIUM | 0.6138 | 0.9743 | 69.83 |  |
+| EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000 | out_of_sample | VALID_RESULT | NOT_VIABLE | -1.7773 | -0.9765 | -83.19 |  |
+| EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000 | train | VALID_RESULT | NOT_VIABLE | -2.0909 | -0.4616 | -433.1 |  |
+| EURUSD_H1_RISKGATE_NO_LOSING_STREAK_GATE_10000 | validation | VALID_RESULT | NOT_VIABLE | -0.9549 | -0.4751 | -96.44 |  |
 
 ## Failed Gates
 
@@ -74,6 +74,7 @@ No provisional research candidates yet. No final candidate label is used in this
 |---|---|
 | Not Profit Proof | Backtest results do not prove future profitability. |
 | No Optimization | This run uses controlled existing parameters only. |
+| Annualization Caution | Annualized return and CAGR are informational when the period is short or trade count is low. |
 | No Live Readiness | Demo forward testing has not started and should not start from this checkpoint alone. |
 | Train Warning | EURUSD_H1_RISKGATE_NORMAL_10000 has validation/OOS pass but train is negative or insufficient. |
 

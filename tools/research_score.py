@@ -6,12 +6,15 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 
 
 PASSING_INFRA = {"PASS"}
 REQUIRED_PHASES = {"train", "validation", "out_of_sample"}
+MIN_ANNUALIZATION_DAYS = 180
+MIN_ANNUALIZATION_TRADES = 50
 
 
 def load_json(path: Path) -> dict[str, Any] | None:
@@ -41,6 +44,78 @@ def to_int(value: Any) -> int | None:
         return None
 
 
+def parse_date(value: Any) -> date | None:
+    if not value:
+        return None
+    text = str(value).strip()
+    for fmt in ("%Y-%m-%d", "%Y.%m.%d"):
+        try:
+            return datetime.strptime(text, fmt).date()
+        except ValueError:
+            continue
+    return None
+
+
+def period_days(parsed: dict[str, Any], case: dict[str, Any]) -> int | None:
+    start = parse_date(parsed.get("report_period_from"))
+    end = parse_date(parsed.get("report_period_to"))
+    period = case.get("period") if isinstance(case.get("period"), dict) else {}
+    if start is None:
+        start = parse_date(period.get("from"))
+    if end is None:
+        end = parse_date(period.get("to"))
+    if start is None or end is None or end < start:
+        return None
+    return (end - start).days + 1
+
+
+def risk_adjusted_metrics(parsed: dict[str, Any], case: dict[str, Any]) -> dict[str, Any]:
+    deposit = to_float(parsed.get("deposit")) or to_float(case.get("deposit"))
+    net_profit = to_float(parsed.get("net_profit"))
+    rel_dd = to_float(parsed.get("relative_drawdown"))
+    if rel_dd is None:
+        rel_dd = to_float(parsed.get("drawdown_relative"))
+    days = period_days(parsed, case)
+    trades = to_int(parsed.get("total_trades")) or 0
+    warnings = []
+
+    result: dict[str, Any] = {
+        "test_period_days": days,
+        "annualized_return_percent": None,
+        "cagr_approx_percent": None,
+        "max_relative_drawdown_percent": rel_dd,
+        "calmar_ratio": None,
+        "return_to_drawdown_ratio": None,
+        "monthly_return_estimate": None,
+        "annualized_return_informational_only": False,
+        "annualized_return_warning": "",
+    }
+
+    if deposit is None or deposit <= 0 or net_profit is None or days is None or days <= 0:
+        result["annualized_return_warning"] = "missing_deposit_profit_or_period"
+        return result
+
+    period_return_pct = (net_profit / deposit) * 100.0
+    annualized = period_return_pct * 365.0 / days
+    cagr = ((1.0 + net_profit / deposit) ** (365.0 / days) - 1.0) * 100.0 if (1.0 + net_profit / deposit) > 0 else None
+    result["annualized_return_percent"] = round(annualized, 4)
+    result["cagr_approx_percent"] = round(cagr, 4) if cagr is not None else None
+    result["monthly_return_estimate"] = round(annualized / 12.0, 4)
+
+    if rel_dd is not None and rel_dd > 0:
+        result["calmar_ratio"] = round(annualized / rel_dd, 4)
+        result["return_to_drawdown_ratio"] = round(period_return_pct / rel_dd, 4)
+
+    if days < MIN_ANNUALIZATION_DAYS:
+        warnings.append("short_test_period")
+    if trades < MIN_ANNUALIZATION_TRADES:
+        warnings.append("low_trade_count")
+    if warnings:
+        result["annualized_return_informational_only"] = True
+        result["annualized_return_warning"] = ",".join(warnings)
+    return result
+
+
 def classify_phase(case_dir: Path, min_trades: int, max_drawdown_pct: float) -> dict[str, Any]:
     status = load_json(case_dir / "status.json") or {}
     parsed = load_json(case_dir / "parsed_result.json") or {}
@@ -57,6 +132,7 @@ def classify_phase(case_dir: Path, min_trades: int, max_drawdown_pct: float) -> 
         "symbol": case.get("actual_symbol"),
         "canonical_symbol": case.get("canonical_symbol"),
         "timeframe": case.get("timeframe"),
+        "deposit": parsed.get("deposit") or case.get("deposit"),
         "execution_status": execution_status,
         "phase_classification": None,
         "research_classification": None,
@@ -72,7 +148,18 @@ def classify_phase(case_dir: Path, min_trades: int, max_drawdown_pct: float) -> 
         "consecutive_losses": parsed.get("consecutive_losses"),
         "largest_win": parsed.get("largest_win"),
         "largest_loss": parsed.get("largest_loss"),
+        "test_period_days": None,
+        "annualized_return_percent": None,
+        "cagr_approx_percent": None,
+        "max_relative_drawdown_percent": None,
+        "calmar_ratio": None,
+        "return_to_drawdown_ratio": None,
+        "monthly_return_estimate": None,
+        "annualized_return_informational_only": False,
+        "annualized_return_warning": "",
+        "risk_adjusted_classification": None,
     }
+    row.update(risk_adjusted_metrics(parsed, case))
 
     if execution_status not in PASSING_INFRA:
         row["phase_classification"] = "EXECUTION_FAILED"
@@ -178,6 +265,79 @@ def classify_case(group: list[dict[str, Any]]) -> tuple[str, str]:
     return "PROVISIONAL_RESEARCH_CANDIDATE", ""
 
 
+def combined_validation_oos_metrics(phases: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    validation = phases.get("validation", {})
+    out_of_sample = phases.get("out_of_sample", {})
+    deposit = to_float(validation.get("deposit")) or to_float(out_of_sample.get("deposit"))
+    net_profit = (to_float(validation.get("net_profit")) or 0.0) + (to_float(out_of_sample.get("net_profit")) or 0.0)
+    days = (to_int(validation.get("test_period_days")) or 0) + (to_int(out_of_sample.get("test_period_days")) or 0)
+    trades = (to_int(validation.get("total_trades")) or 0) + (to_int(out_of_sample.get("total_trades")) or 0)
+    rel_dd = max(to_float(validation.get("max_relative_drawdown_percent")) or 0.0,
+                 to_float(out_of_sample.get("max_relative_drawdown_percent")) or 0.0)
+    pf_values = [to_float(validation.get("profit_factor")), to_float(out_of_sample.get("profit_factor"))]
+    pf_values = [value for value in pf_values if value is not None]
+    min_pf = min(pf_values) if pf_values else None
+
+    annualized = None
+    cagr = None
+    calmar = None
+    if deposit and deposit > 0 and days > 0:
+        period_return_pct = (net_profit / deposit) * 100.0
+        annualized = period_return_pct * 365.0 / days
+        if (1.0 + net_profit / deposit) > 0:
+            cagr = ((1.0 + net_profit / deposit) ** (365.0 / days) - 1.0) * 100.0
+        if rel_dd > 0:
+            calmar = annualized / rel_dd
+
+    return {
+        "validation_oos_net_profit": round(net_profit, 2),
+        "validation_oos_days": days,
+        "validation_oos_trades": trades,
+        "validation_oos_min_profit_factor": round(min_pf, 4) if min_pf is not None else None,
+        "validation_oos_max_relative_drawdown": round(rel_dd, 4),
+        "validation_oos_annualized_return_percent": round(annualized, 4) if annualized is not None else None,
+        "validation_oos_cagr_approx_percent": round(cagr, 4) if cagr is not None else None,
+        "validation_oos_calmar_ratio": round(calmar, 4) if calmar is not None else None,
+    }
+
+
+def classify_risk_adjusted_case(case_classification: str, phases: dict[str, dict[str, Any]]) -> str:
+    validation = phases.get("validation")
+    out_of_sample = phases.get("out_of_sample")
+    if case_classification in {"EXECUTION_FAILED", "INCOMPLETE_PHASES", "NO_RISK_BUDGET"}:
+        return "NOT_VIABLE"
+    if validation is None or out_of_sample is None:
+        return "NOT_VIABLE"
+    if not positive_valid(validation) or not positive_valid(out_of_sample):
+        return "SURVIVAL_ONLY" if case_classification != "REJECTED" else "NOT_VIABLE"
+
+    metrics = combined_validation_oos_metrics(phases)
+    trades = to_int(metrics.get("validation_oos_trades")) or 0
+    annualized = to_float(metrics.get("validation_oos_annualized_return_percent"))
+    cagr = to_float(metrics.get("validation_oos_cagr_approx_percent"))
+    dd = to_float(metrics.get("validation_oos_max_relative_drawdown"))
+    calmar = to_float(metrics.get("validation_oos_calmar_ratio"))
+    min_pf = to_float(metrics.get("validation_oos_min_profit_factor"))
+
+    if trades < 150:
+        return "SURVIVAL_ONLY"
+    if annualized is None or cagr is None or dd is None:
+        return "NOT_VIABLE"
+    if annualized < 12.0:
+        return "BELOW_FOREX_RISK_PREMIUM"
+    if dd > 30.0 or (calmar is not None and calmar < 0.5):
+        return "AGGRESSIVE_RESEARCH_ONLY"
+    if cagr >= 100.0 and dd <= 30.0:
+        return "CHALLENGE_ONLY_NOT_BASELINE"
+    if cagr >= 35.0 and dd <= 25.0 and (calmar or 0.0) >= 1.2 and (min_pf or 0.0) >= 1.25:
+        return "AGGRESSIVE_RESEARCH_ONLY"
+    if cagr >= 20.0 and dd <= 15.0 and (calmar or 0.0) >= 1.0 and (min_pf or 0.0) >= 1.20:
+        return "MEETS_BALANCED_TARGET"
+    if cagr >= 12.0 and dd <= 15.0 and (calmar or 0.0) >= 0.8 and (min_pf or 0.0) >= 1.15:
+        return "MEETS_CONSERVATIVE_FOREX_TARGET"
+    return "BELOW_FOREX_RISK_PREMIUM"
+
+
 def apply_case_level_classifications(rows: list[dict[str, Any]]) -> None:
     by_key: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for row in rows:
@@ -186,9 +346,12 @@ def apply_case_level_classifications(rows: list[dict[str, Any]]) -> None:
 
     for group in by_key.values():
         classification, failed_gates = classify_case(group)
+        phases = {str(row.get("phase")): row for row in group if row.get("phase")}
+        risk_adjusted = classify_risk_adjusted_case(classification, phases)
         for row in group:
             row["case_level_classification"] = classification
             row["case_failed_gates"] = failed_gates
+            row["risk_adjusted_classification"] = risk_adjusted
 
 
 def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:

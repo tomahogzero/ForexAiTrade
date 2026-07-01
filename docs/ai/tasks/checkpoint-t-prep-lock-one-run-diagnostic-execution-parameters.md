@@ -14,6 +14,11 @@ This checkpoint does not run MT5, does not run Strategy Tester, does not change 
 - GPT Review Agent verdict for PR #9: PASS.
 - Checkpoint S prepared a one-run execution approval package.
 - Checkpoint T-Prep only locks the parameters that still need final user approval.
+- PR #10 / Checkpoint T-Prep has been merged.
+- GPT Review Agent verdict for PR #10: CONDITIONAL PASS.
+- This fix resolves the required documentation-only changes from that CONDITIONAL PASS:
+  - add a maximum one-month date range bound
+  - add a source/preset drift guard before any execution
 
 ## Exact Source Proposed For Future Execution
 
@@ -23,7 +28,25 @@ The future Checkpoint T diagnostic execution, if explicitly approved later, must
 - Source commit proposed for execution: `580a1cebf47d7fa86630fc1a51e338a2b07e6066`
 - Commit meaning: merge commit for PR #9 / Checkpoint S
 
-Before any future run starts, Codex must confirm the active source exactly matches this branch/commit or explicitly document why a newer reviewed merge commit is being used.
+The proposed execution target remains `580a1cebf47d7fa86630fc1a51e338a2b07e6066` unless explicitly changed by a new reviewed checkpoint.
+
+Before any future run starts, Codex must confirm the active source exactly matches this branch/commit.
+
+## Source / Preset Drift Guard
+
+If a newer commit is used for execution, execution must be blocked unless Codex proves and documents that EA/source code and presets have not changed from the approved target commit.
+
+Required drift checks if a newer commit is proposed:
+
+- compare `MQL5/` against `580a1cebf47d7fa86630fc1a51e338a2b07e6066`
+- compare `presets/` against `580a1cebf47d7fa86630fc1a51e338a2b07e6066`
+- document the exact diff result before execution
+- confirm there are no EA/source code changes
+- confirm there are no preset changes
+
+If EA/source code or presets changed, execution must remain blocked.
+
+Any EA/source code or preset drift requires a new GPT review and a new approval checkpoint before execution.
 
 ## Locked Execution Parameters
 
@@ -45,6 +68,18 @@ Future run parameters:
 
 The date range is intentionally not selected in this document because the user has not provided it yet.
 
+## Date Range Bound
+
+The approved date range must remain a short diagnostic window only.
+
+Maximum allowed date range: 1 month.
+
+The approval phrase must include concrete dates in `YYYY-MM-DD to YYYY-MM-DD` format.
+
+If the requested date range is longer than 1 month, execution must be blocked and a new approval checkpoint is required.
+
+If either date is missing, ambiguous, malformed, or not in `YYYY-MM-DD` format, execution must be blocked.
+
 ## Required User Approval Before Execution
 
 MT5 / Strategy Tester execution remains blocked until the user explicitly sends this exact style of approval:
@@ -52,6 +87,8 @@ MT5 / Strategy Tester execution remains blocked until the user explicitly sends 
 `Approved to execute Checkpoint T one-run diagnostic with date range YYYY-MM-DD to YYYY-MM-DD`
 
 Without that exact approval intent and concrete date range, do not run MT5.
+
+The concrete date range in the approval must also pass the one-month maximum bound.
 
 ## Required Effective Config Assertions Before Run
 
@@ -96,6 +133,11 @@ If the future run is explicitly approved, stop immediately and classify the run 
 - optimization enabled
 - demo/live/forward environment detected
 - date range differs from the explicit approval
+- date range is longer than 1 month
+- date range is missing, ambiguous, malformed, or not in `YYYY-MM-DD` format
+- source commit differs from `580a1cebf47d7fa86630fc1a51e338a2b07e6066` without documented no-drift proof
+- EA/source code drift is detected
+- preset drift is detected
 - more than one run is attempted
 
 ## Forbidden Markers / Checks
@@ -132,6 +174,7 @@ If the user later explicitly approves and the future run is executed, collect:
 Also record:
 
 - tested branch and commit
+- source/preset drift check result if the execution commit differs from `580a1cebf47d7fa86630fc1a51e338a2b07e6066`
 - symbol/timeframe/date range
 - confirmation optimization was disabled
 - confirmation no demo/live/forward environment was used
@@ -143,6 +186,9 @@ The future Checkpoint T run can pass only if:
 
 - source branch/commit is confirmed
 - approved date range matches the executed date range
+- approved date range is no longer than 1 month
+- approved date range uses concrete `YYYY-MM-DD to YYYY-MM-DD` dates
+- source/preset drift guard passes if a newer commit is used
 - all effective config assertions match
 - Strategy Tester is the only execution environment
 - exactly one run is executed
@@ -161,6 +207,11 @@ The future Checkpoint T run must fail if:
 
 - source branch/commit cannot be confirmed
 - date range is missing or differs from approval
+- date range is longer than 1 month
+- date range is ambiguous, malformed, or not in `YYYY-MM-DD` format
+- source/preset drift guard is missing when a newer commit is used
+- EA/source code drift is detected
+- preset drift is detected
 - effective config differs from this parameter lock
 - optimization is enabled
 - demo/live/forward environment is detected

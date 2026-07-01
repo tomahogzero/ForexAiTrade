@@ -4,13 +4,14 @@ Last updated: 2026-07-01
 
 ## Repository State Observed
 
-This AI memory was created from the latest fetched `origin/main` available during onboarding:
+This AI memory has been refreshed after Checkpoint P planning from the latest fetched `origin/main`:
 
-- `origin/main`: `2c1ce2114a54ae612d8679fba6fdad07a7f934b4`
-- This includes Checkpoint M merged into main.
-- Checkpoint N diagnostics were not present in this `main` snapshot.
+- `origin/main`: `04dabdea719628a8eae0ab61c477507e68db2a4f`
+- PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
+- PR #5 / Javis Codex project memory is merged.
+- This includes Checkpoints M, N, and O merged into main.
 
-The root local checkout had unrelated dirty files before onboarding. The onboarding work was therefore performed in an isolated worktree to avoid mixing old local state into the PR.
+The root local checkout may still contain unrelated dirty files from older research outputs. Do not clean, revert, delete, or stash those files without explicit user approval. Use an isolated worktree from `origin/main` for new checkpoint work.
 
 ## Current Build / Compile Tools Found
 
@@ -76,7 +77,8 @@ Known selected run:
 - Trade count and period concentration can make annualized metrics misleading.
 - Relaxing the losing-streak gate worsened validation and out-of-sample performance in Checkpoint J.
 - Gold symbols require separate broker-specific risk-budget review.
-- Price Action / Fibo is skeleton-only in current main and must not be treated as an active strategy.
+- Price Action / Fibo diagnostics are merged, but they remain diagnostic-only and must not be treated as active trade signals.
+- Price Action / Fibo diagnostic classifications must not be converted into market orders, pending orders, or position modification.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -88,6 +90,6 @@ Do not increase lot/risk.
 
 Recommended next action:
 
-1. Review this AI memory PR.
-2. Confirm whether Checkpoint N diagnostics should be merged after review.
-3. Only after diagnostic code is reviewed and merged, consider a diagnostic-only run with `InpEnablePriceActionFibo=true` and all no-trade guardrails intact.
+1. Review Checkpoint N diagnostics and the Checkpoint P validation plan before any MT5 run.
+2. Create a diagnostic-only Strategy Tester execution checkpoint only after explicit approval.
+3. If later approved, the first run should be no-trade validation only with `InpEnablePriceActionFibo=true`, diagnostics-only behavior, no pending orders, no optimization, and no lot/risk increase.

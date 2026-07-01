@@ -1,15 +1,16 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-01
+Last updated: 2026-07-02
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint P planning from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint U planning from the latest fetched `origin/main`:
 
-- `origin/main`: `04dabdea719628a8eae0ab61c477507e68db2a4f`
+- `origin/main`: `8600af7a934749a6ec3aefcd07a8e8e202d96797`
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
-- This includes Checkpoints M, N, and O merged into main.
+- PR #11 / Checkpoint T-Prep Fix is merged.
+- This includes Checkpoints M through T-Prep Fix merged into main.
 
 The root local checkout may still contain unrelated dirty files from older research outputs. Do not clean, revert, delete, or stash those files without explicit user approval. Use an isolated worktree from `origin/main` for new checkpoint work.
 
@@ -79,6 +80,15 @@ Known selected run:
 - Gold symbols require separate broker-specific risk-budget review.
 - Price Action / Fibo diagnostics are merged, but they remain diagnostic-only and must not be treated as active trade signals.
 - Price Action / Fibo diagnostic classifications must not be converted into market orders, pending orders, or position modification.
+- Checkpoint T attempted exactly one no-trade Strategy Tester diagnostic execution.
+- Checkpoint T result is `FAILED_NO_TESTER_ARTIFACTS` / `INCONCLUSIVE`.
+- Checkpoint T RunId: `run_20260702_014627_checkpoint_t_paf_no_trade`.
+- Checkpoint T did not produce the required Strategy Tester report/log path, tester log excerpt, EA mirror log, or Price Action / Fibo diagnostic classification summary.
+- Checkpoint T no-trade behavior is `NOT_PROVEN`.
+- Checkpoint T baseline fallback absence is `NOT_PROVEN`.
+- Do not treat Checkpoint T as a successful diagnostic run.
+- Do not rerun Checkpoint T automatically.
+- Retry is blocked until a new reviewed checkpoint and explicit approval.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -90,6 +100,7 @@ Do not increase lot/risk.
 
 Recommended next action:
 
-1. Review Checkpoint N diagnostics and the Checkpoint P validation plan before any MT5 run.
-2. Create a diagnostic-only Strategy Tester execution checkpoint only after explicit approval.
-3. If later approved, the first run should be no-trade validation only with `InpEnablePriceActionFibo=true`, diagnostics-only behavior, no pending orders, no optimization, and no lot/risk increase.
+1. Review the Checkpoint T failed/inconclusive artifact production result.
+2. Diagnose why MT5 exited with code 0 without producing Strategy Tester artifacts.
+3. Prepare a new reviewed Checkpoint V retry plan only after artifact-path preflight and terminal/config handoff risks are resolved.
+4. Do not rerun MT5 or Strategy Tester without a new explicit approval.

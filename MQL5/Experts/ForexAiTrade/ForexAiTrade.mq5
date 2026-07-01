@@ -431,7 +431,9 @@ int OnInit()
               " EntryTimeframe=" + TimeframeName(InpPAFEntryTimeframe) +
               " HigherTimeframe=" + TimeframeName(InpPAFHigherTimeframe));
       if(InpPriceActionFiboDiagnosticsOnly)
-         LogLine("PriceActionFibo diagnostics-only mode active.");
+         LogLine("PriceActionFibo diagnostics-only mode active. DiagnosticsEnabled=" +
+                 (InpPAFDiagnosticsEnabled ? "true" : "false") +
+                 " LogOnlyOnNewBar=" + (InpPAFLogOnlyOnNewBar ? "true" : "false"));
       LogLine("PriceActionFibo safety: skeleton placeholder only; no market orders, pending orders, or position modifications are active.");
    }
    if(InpRequireStrategyTester && !MQLInfoInteger(MQL_TESTER))
@@ -525,8 +527,15 @@ void OnTick()
    if(InpEnablePriceActionFibo)
    {
       signal = g_priceActionFibo.Evaluate(regime);
-      if(isNewSignalBar)
+      if(!InpPAFLogOnlyOnNewBar || isNewSignalBar)
+      {
+         LogLine(g_priceActionFibo.DiagnosticSummary(metadata.actualSymbol,
+                                                     metadata.canonicalSymbol,
+                                                     TimeframeName(InpSignalTimeframe),
+                                                     RegimeName(regime.regime),
+                                                     metadata.digits));
          PrintNoTradeLog(g_priceActionFibo.PlaceholderReason(), regime, metadata);
+      }
       return;
    }
    else if(regime.regime == REGIME_TREND)

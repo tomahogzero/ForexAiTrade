@@ -72,6 +72,7 @@ public:
    }
 
    double Close(const int shift) const { return iClose(m_symbol, m_timeframe, shift); }
+   double Open(const int shift) const { return iOpen(m_symbol, m_timeframe, shift); }
    double High(const int shift) const { return iHigh(m_symbol, m_timeframe, shift); }
    double Low(const int shift) const { return iLow(m_symbol, m_timeframe, shift); }
    double PointValue() const { return SymbolInfoDouble(m_symbol, SYMBOL_POINT); }

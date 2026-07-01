@@ -84,6 +84,16 @@ input ENUM_TIMEFRAMES InpPAFHigherTimeframe = PERIOD_H1;
 input bool   InpPAFUsePendingOrders      = false;
 input int    InpPAFMaxPendingOrders      = 0;
 input int    InpPAFMaxOpenOrders         = 1;
+input bool   InpPAFDiagnosticsEnabled    = true;
+input int    InpPAFSwingLookbackBars     = 20;
+input int    InpPAFMinSwingDistancePoints = 100;
+input double InpPAFZoneAtrMultiplier     = 0.50;
+input string InpPAFFiboLevelsCsv         = "38.2,50.0,61.8,78.6";
+input double InpPAFBreakoutCloseBufferAtr = 0.20;
+input double InpPAFRetestMaxDistanceAtr  = 0.50;
+input double InpPAFRejectionWickBodyRatio = 2.0;
+input double InpPAFEngulfingMinBodyRatio = 1.0;
+input bool   InpPAFLogOnlyOnNewBar       = true;
 
 input group "Position Management"
 input bool   InpUseTrailingStop          = true;

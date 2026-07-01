@@ -19,6 +19,9 @@ It does not spawn `terminal64.exe`, does not run Strategy Tester, does not chang
 - Approved date range used in the failed attempt: `2026-01-01 to 2026-02-01`
 - no-trade behavior: `NOT_PROVEN`
 - baseline fallback absence: `NOT_PROVEN`
+- Additional user-provided evidence after initial Checkpoint V drafting: a manual MT5 Strategy Tester run produced a Balance/Equity graph successfully.
+- Manual visible tester context: XMGlobal-MT5 2 demo account, GOLD,M1 chart/tester context.
+- This proves Strategy Tester can run manually on this machine, but it does not prove the automated `/config` handoff works.
 
 ## Existing Checkpoint T Artifacts Inspected
 
@@ -84,6 +87,8 @@ Remaining risk:
 - path correctness does not prove this executable used the intended data folder
 - path correctness does not prove `/config` entered Strategy Tester mode
 - path correctness does not prove an already-running instance did not intercept the request
+
+User-provided manual evidence suggests the manual terminal is also XMGlobal-MT5 2 demo. The automation used the same apparent installed terminal executable path, but the failure mode is still consistent with a command-line handoff problem rather than a broken Strategy Tester installation.
 
 ## Generated Tester INI Diagnosis
 
@@ -169,6 +174,13 @@ Observed:
 - terminal log excerpt showed normal terminal login/sync activity, not a Checkpoint T Strategy Tester run
 - tester agent log content around that day included unrelated `EA_ScalperM5M15` / `GOLD#` tests, not the Checkpoint T ForexAiTrade EURUSD H1 run
 
+Manual Strategy Tester evidence changes the interpretation of these paths:
+
+- Strategy Tester can generate visible results manually.
+- The tester log root is therefore likely usable in general.
+- The missing ForexAiTrade artifacts are more likely caused by automation/config handoff, report path resolution, or active-terminal interception than by a globally broken Strategy Tester.
+- Future preflight must identify the exact log/report files created by a manual run and compare them with the expected automated run paths before any retry.
+
 ## Already-Running Terminal Diagnosis
 
 Read-only process inspection found an existing `terminal64.exe` process:
@@ -192,6 +204,14 @@ This matches the observed behavior:
 - no EA mirror log was produced
 - no ForexAiTrade tester agent log was found
 
+Manual Strategy Tester comparison:
+
+- Manual testing occurs inside the already-open interactive terminal instance.
+- Checkpoint T launched a second `terminal64.exe` process using `/config`.
+- If MT5 allows only one active instance for a data folder, the second process may simply signal or hand off to the already-running instance and exit successfully.
+- In that case, exit code 0 means the process launch/handoff succeeded, not that Strategy Tester executed the requested config.
+- This is currently the strongest hypothesis because manual tester worked while the automation produced no tester artifacts.
+
 ## Portable Mode / Data Folder Diagnosis
 
 Checkpoint T did not use a clearly isolated portable terminal mode.
@@ -204,11 +224,23 @@ Risk:
 
 Future retry should not rely on default terminal instance behavior.
 
+Manual terminal data folder evidence:
+
+- The known MT5 data folder used by previous installation/testing is `C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05`.
+- User reports the manual terminal is XMGlobal-MT5 2 demo, matching the visible account context previously used by this project.
+- Future preflight must explicitly confirm the manual terminal data folder from MT5 `File > Open Data Folder` and compare it to the automation's intended data folder before any retry.
+
 ## Account / Login / Server / History Diagnosis
 
 Existing terminal logs show the XM terminal had account authorization and synchronization around the same date.
 
 This suggests account/login was probably available, but it does not prove the tester job started.
+
+Manual Strategy Tester graph evidence strongly suggests:
+
+- the terminal can authenticate sufficiently for manual tester use
+- at least one symbol/timeframe/date context can run manually
+- MT5 Strategy Tester itself is not globally blocked on this machine
 
 Unknowns:
 
@@ -240,6 +272,59 @@ Potential issue:
 - broker Market Watch includes both suffix and non-suffix symbols in previous screenshots, but availability at tester time was not proven by artifact logs.
 - future preflight should verify symbol availability and history without running a strategy test, if possible.
 
+Manual tester context difference:
+
+- manual run visible context: GOLD,M1
+- failed automation target: EURUSD,H1
+
+The manual GOLD,M1 success proves tester functionality, but it does not prove EURUSD,H1 history availability for `2026-01-01 to 2026-02-01`.
+
+Future retry preflight must confirm EURUSD exists in the target terminal and that EURUSD H1 history for the approved date range is available or can be synchronized before any strategy execution.
+
+## Manual Tester vs Automation Comparison
+
+Manual run:
+
+- user started or controlled Strategy Tester through the interactive MT5 UI
+- visible tester graph was produced
+- context observed by user: GOLD,M1
+- proves local MT5 Strategy Tester can execute at least one manual test
+
+Checkpoint T automation:
+
+- spawned `C:\Program Files\XM Global MT5\terminal64.exe`
+- passed `/config` pointing to generated tester config
+- spawned process exited quickly with code 0
+- no report was written
+- no EA mirror log was written
+- no ForexAiTrade tester log lines were found
+- existing terminal process was already open before the spawn
+
+Most important difference:
+
+- manual tester used the already-running interactive terminal successfully
+- automation attempted a command-line config handoff while another terminal instance was already running
+
+This supports the hypothesis that the automation path failed before Strategy Tester execution.
+
+## Exact Preflight Evidence Needed Before Retry
+
+Before Checkpoint W can approve a retry, collect and document:
+
+- screenshot or copied path from MT5 `File > Open Data Folder` for the manual terminal
+- exact `terminal64.exe` path of the manual terminal
+- currently running `terminal64.exe` process list before retry planning
+- whether any terminal using the target data folder is already running
+- exact terminal log folder for the manual terminal
+- exact tester agent log folder that receives manual run logs
+- exact report path behavior from a manual export or previous manual tester result
+- whether `Report=` must be absolute or relative for this MT5 build
+- whether `/config:<path>` requires portable mode, quoted path syntax changes, or terminal shutdown before launch
+- whether `Expert=ForexAiTrade\ForexAiTrade.ex5` or `Expert=ForexAiTrade.ex5` is expected by this MT5 command-line tester mode
+- whether EURUSD H1 history exists for `2026-01-01 to 2026-02-01`
+- whether a pre-created report folder can receive a harmless write marker before retry
+- how to prove stale logs/reports are not being mistaken for the retry artifacts
+
 ## Likely Root Causes
 
 Most likely:
@@ -254,6 +339,8 @@ Secondary possible causes:
 5. EURUSD/H1/date history may not have been available or synchronized, but no tester log proves this.
 6. Logs may have been written to another data folder, but no matching ForexAiTrade logs were found in the expected common locations.
 
+Manual Strategy Tester success reduces the likelihood that MT5 Strategy Tester is generally broken. It increases the likelihood that the failure is specific to automated process/config handoff, report path resolution, or target symbol/history mismatch.
+
 ## Checkpoint W Recommendation
 
 Recommended next checkpoint:
@@ -266,12 +353,16 @@ It should require:
 
 - dedicated research terminal or isolated portable mode
 - no already-running MT5 instance using the same data folder
+- explicit comparison between manual terminal data folder and automation data folder
+- proof that `/config` will not be intercepted by an existing terminal instance
 - absolute report path or a proven MT5-supported report path
 - pre-created report folder
 - preflight write marker in report folder
 - known tester agent log folder
 - known terminal log folder
 - known EA common files folder
+- proven manual tester log/report location from the same terminal installation
+- EURUSD H1 history availability check for the approved date range
 - verification that stale artifacts cannot be confused with new artifacts
 - explicit one-run-only approval phrase
 

@@ -22,6 +22,13 @@ Checkpoint U documented the postmortem and required artifact-production diagnosi
 
 Checkpoint V inspected existing artifacts and filesystem paths only. It did not rerun MT5 or Strategy Tester.
 
+Additional user-provided evidence after initial Checkpoint V drafting:
+
+- The user manually ran MT5 Strategy Tester and saw a Balance/Equity graph.
+- Manual terminal context: XMGlobal-MT5 2 demo account.
+- Visible manual tester context: GOLD,M1.
+- This proves Strategy Tester can run manually on this machine, but the automated Checkpoint T `/config` execution still produced no artifacts.
+
 ## Files To Review
 
 Please review:
@@ -41,7 +48,9 @@ Please review:
 6. Are config handoff, portable mode, data folder, account/login/history, symbol/timeframe/date risks covered?
 7. Is the recommended Checkpoint W retry package safe enough as a next planning step?
 8. Are retry guardrails strict enough to prevent accidental multi-run, optimization, trading, or profitability claims?
-9. What additional preflight checks should be required before any future retry approval?
+9. Does the manual successful tester graph shift the likely root cause toward command-line `/config` handoff or already-running terminal interception?
+10. What exact manual-vs-automation evidence should be collected before any future retry approval?
+11. What additional preflight checks should be required before any future retry approval?
 
 ## Guardrails For Review
 

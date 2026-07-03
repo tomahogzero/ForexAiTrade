@@ -4,14 +4,16 @@ Last updated: 2026-07-04
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint Y planning from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint Z planning from the latest fetched `origin/main`:
 
-- `origin/main`: `d19bcc0ed7a4b3ac264026de79d2b157eec44165`
+- `origin/main`: `09c8efa7490b678ba7d7ef8370bdd74e1063dd6d`
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
 - PR #14 / Checkpoint W retry approval package with verified artifact paths is merged.
 - PR #15 / Checkpoint X Gold 2-5% Monthly Research Framework is merged.
+- PR #16 / Checkpoint Y Gold Diagnostic Data Requirements is merged.
+- User granted standing approval for Codex to auto-merge docs-only/research-plan-only PRs only when GPT review is `PASS` and there are no source/preset/MT5/optimization/risk changes.
 - This includes Checkpoints M through T-Prep Fix merged into main.
 
 The root local checkout may still contain unrelated dirty files from older research outputs. Do not clean, revert, delete, or stash those files without explicit user approval. Use an isolated worktree from `origin/main` for new checkpoint work.
@@ -107,4 +109,4 @@ Recommended next action:
 1. Keep Checkpoint T as failed/inconclusive until verified artifacts exist.
 2. Do not rerun MT5 or Strategy Tester without a new explicit approval.
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
-4. Recommended next Gold step after Checkpoint Y review: Checkpoint Z, `Gold No-Trade Diagnostic Execution Approval Pack`.
+4. Recommended next Gold step after Checkpoint Z review: Checkpoint AA, `Gold No-Trade Diagnostic One-Run Execution Approval`.

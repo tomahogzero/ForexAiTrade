@@ -229,6 +229,21 @@ Required:
   - `InpRequireStrategyTester=true`
   - `InpPAFLogOnlyOnNewBar=true`
 
+### Exact Source / Preset Drift Guard
+
+Required:
+
+- future retry must record the exact source branch and commit before execution
+- future retry artifacts must include the exact source branch and commit used
+- Checkpoint W does not approve an execution source commit by itself
+- the later retry approval checkpoint must name the reviewed execution target commit
+- if the execution commit differs from the reviewed/approved target commit, Codex must prove and document that `MQL5/` and `presets/` have not changed
+- if `MQL5/` or `presets/` changed from the approved target, retry remains blocked
+- source or preset drift requires a new GPT review and a new explicit approval checkpoint before execution
+- generated tester config and effective config artifacts must be traceable to the recorded source branch and commit
+
+This guard prevents a retry from accidentally using a different EA source or preset set than the one reviewed for no-trade diagnostic execution.
+
 ### Stale Artifact Guard
 
 Required:
@@ -259,12 +274,16 @@ Block retry execution if any of these occur:
 - retry would be more than one run
 - strategy/trading logic changed without a new review
 - presets changed without a new review
+- exact source branch or commit is unknown
+- execution commit differs from the reviewed target and `MQL5/` plus `presets/` drift has not been proven clean
+- `MQL5/` or `presets/` changed from the approved target without a new GPT review and approval checkpoint
 
 ## Future Retry Required Artifacts
 
 If a future retry is later approved and executed, collect:
 
 - RunId
+- exact source branch and commit
 - exact terminal executable path
 - exact terminal data folder
 - process info for the spawned process

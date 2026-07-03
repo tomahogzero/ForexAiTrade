@@ -4,9 +4,9 @@ Last updated: 2026-07-04
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AA planning from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint AB preflight evidence capture from the latest fetched `origin/main`:
 
-- `origin/main`: `e22a271963096428bed7aab35480e4c5c86ebb66`
+- `origin/main`: `f06a6c5d16830162980a25deb4c11d33d2e5fdab`
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -14,6 +14,7 @@ This AI memory has been refreshed after Checkpoint AA planning from the latest f
 - PR #15 / Checkpoint X Gold 2-5% Monthly Research Framework is merged.
 - PR #16 / Checkpoint Y Gold Diagnostic Data Requirements is merged.
 - PR #17 / Checkpoint Z Gold no-trade diagnostic approval pack is merged.
+- PR #18 / Checkpoint AA Gold diagnostic user evidence checklist is merged.
 - User granted standing approval for Codex to auto-merge docs-only/research-plan-only PRs only when GPT review is `PASS` and there are no source/preset/MT5/optimization/risk changes.
 - This includes Checkpoints M through T-Prep Fix merged into main.
 
@@ -96,6 +97,15 @@ Known selected run:
 - Do not treat Checkpoint T as a successful diagnostic run.
 - Do not rerun Checkpoint T automatically.
 - Retry is blocked until a new reviewed checkpoint and explicit approval.
+- Checkpoint AB captured user-provided Gold preflight evidence.
+- Verified Gold symbol: `GOLD#`.
+- Verified MT5 Data Folder exists: `C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05`.
+- Verified terminal executable exists: `C:\Program Files\XM Global MT5\terminal64.exe`.
+- Verified report folder is writable: `G:\AiServer\Codex\ForexAiTrade\mt5_artifacts`.
+- Process preflight initially found `terminal64.exe` still running.
+- User then closed MT5 and Codex rechecked with `Get-Process terminal64`.
+- Latest process preflight: no running `terminal64.exe` found.
+- Current process blocker: `RESOLVED_BY_USER`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -110,5 +120,6 @@ Recommended next action:
 1. Keep Checkpoint T as failed/inconclusive until verified artifacts exist.
 2. Do not rerun MT5 or Strategy Tester without a new explicit approval.
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
-4. Recommended next Gold step: review Checkpoint AA user evidence checklist before any future execution approval.
-5. Actual Gold MT5 execution remains blocked until a later explicit approval checkpoint with verified artifact paths and concrete dates.
+4. Recommended next Gold step: review Checkpoint AB evidence/blocker documentation.
+5. Before any future execution approval, Codex must recheck that no existing `terminal64.exe` process is running.
+6. Actual Gold MT5 execution remains blocked until a later explicit approval checkpoint with verified artifact paths, concrete dates, and a clean terminal process preflight.

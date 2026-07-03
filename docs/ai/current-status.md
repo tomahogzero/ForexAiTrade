@@ -1,15 +1,16 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-02
+Last updated: 2026-07-04
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint U planning from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint X planning from the latest fetched `origin/main`:
 
-- `origin/main`: `8600af7a934749a6ec3aefcd07a8e8e202d96797`
+- `origin/main`: `aa1f667e4362efdca995c46eddf7c5c8f464e71b`
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
+- PR #14 / Checkpoint W retry approval package with verified artifact paths is merged.
 - This includes Checkpoints M through T-Prep Fix merged into main.
 
 The root local checkout may still contain unrelated dirty files from older research outputs. Do not clean, revert, delete, or stash those files without explicit user approval. Use an isolated worktree from `origin/main` for new checkpoint work.
@@ -78,6 +79,8 @@ Known selected run:
 - Trade count and period concentration can make annualized metrics misleading.
 - Relaxing the losing-streak gate worsened validation and out-of-sample performance in Checkpoint J.
 - Gold symbols require separate broker-specific risk-budget review.
+- Gold 2-5% monthly research is an aggressive research target only, not a promise and not approval to increase lot/risk.
+- Gold must remain a separate instrument class from EURUSD and other forex pairs.
 - Price Action / Fibo diagnostics are merged, but they remain diagnostic-only and must not be treated as active trade signals.
 - Price Action / Fibo diagnostic classifications must not be converted into market orders, pending orders, or position modification.
 - Checkpoint T attempted exactly one no-trade Strategy Tester diagnostic execution.
@@ -100,7 +103,7 @@ Do not increase lot/risk.
 
 Recommended next action:
 
-1. Review the Checkpoint T failed/inconclusive artifact production result.
-2. Diagnose why MT5 exited with code 0 without producing Strategy Tester artifacts.
-3. Prepare a new reviewed Checkpoint V retry plan only after artifact-path preflight and terminal/config handoff risks are resolved.
-4. Do not rerun MT5 or Strategy Tester without a new explicit approval.
+1. Keep Checkpoint T as failed/inconclusive until verified artifacts exist.
+2. Do not rerun MT5 or Strategy Tester without a new explicit approval.
+3. For Gold research, start with documentation and diagnostic requirements only.
+4. Recommended next Gold step: Checkpoint Y, `Gold Diagnostic Data Requirements and No-Trade Signal Logging Plan`.

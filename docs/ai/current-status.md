@@ -4,9 +4,9 @@ Last updated: 2026-07-06
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AC diagnostic execution from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint AE report-path planning from the latest fetched `origin/main`:
 
-- `origin/main`: `2b07ad3` (`Merge pull request #20 from tomahogzero/research/checkpoint-ac-gold-no-trade-diagnostic-execution`)
+- `origin/main`: `5c2110d` (`Merge pull request #21 from tomahogzero/research/checkpoint-ad-mt5-report-artifact-diagnosis`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -16,6 +16,7 @@ This AI memory has been refreshed after Checkpoint AC diagnostic execution from 
 - PR #17 / Checkpoint Z Gold no-trade diagnostic approval pack is merged.
 - PR #18 / Checkpoint AA Gold diagnostic user evidence checklist is merged.
 - PR #20 / Checkpoint AC Gold no-trade diagnostic run is merged.
+- PR #21 / Checkpoint AD MT5 report artifact generation diagnosis is merged.
 - User granted standing approval for Codex to auto-merge docs-only/research-plan-only PRs only when GPT review is `PASS` and there are no source/preset/MT5/optimization/risk changes.
 - This includes Checkpoints M through T-Prep Fix merged into main.
 
@@ -121,6 +122,10 @@ Known selected run:
 - Checkpoint AD finding: AC narrowed the issue to report generation because tester/EA logs exist, but `mt5_report.htm` was not created.
 - Likely root-cause areas include absolute `Report=` path compatibility, relative vs absolute report path behavior, report extension handling, search location mismatch, and report flush/wait behavior.
 - Checkpoint AD does not approve a retry.
+- Checkpoint AE defines a report-path compatibility preflight and runner plan without running MT5.
+- Checkpoint AE historical finding: checked-in PASS reports use `Report=ForexAiTradeResearch\...\mt5_report` under the terminal data folder and produce `mt5_report.htm`.
+- Checkpoint AE recommendation: do not use absolute `G:\...\mt5_artifacts\...\mt5_report` as the default report request until proven compatible.
+- Checkpoint AE does not approve a retry.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -137,4 +142,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. Recommended next Gold step: create Checkpoint AE for MT5 report path compatibility preflight / runner plan before any retry.
+6. Recommended next Gold step: send Checkpoint AE to GPT review, then consider Checkpoint AF runner-only report artifact hardening or a reviewed retry approval package.

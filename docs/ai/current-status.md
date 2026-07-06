@@ -4,7 +4,7 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AG runner hardening was merged and Checkpoint AH one-run retry approval planning was prepared from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint AI one-run Gold no-trade diagnostic retry execution:
 
 - `origin/main`: `f0d8a6b` (`Merge pull request #25 from tomahogzero/research/checkpoint-ag-mt5-report-runner-hardening`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
@@ -21,6 +21,7 @@ This AI memory has been refreshed after Checkpoint AG runner hardening was merge
 - PR #23 / Checkpoint AF Codex-only self-review workflow is merged.
 - PR #24 was a duplicate Codex-only workflow PR and was closed as superseded by PR #23.
 - PR #25 / Checkpoint AG MT5 report runner hardening is merged.
+- PR #26 / Checkpoint AH one-run retry approval package is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -139,7 +140,15 @@ Known selected run:
 - Checkpoint AG updates the research batch runner to use terminal-data-folder relative report paths, detect fresh report artifacts only, copy MT5 report companion files, and separate `PARTIAL_TESTER_PASS_REPORT_MISSING` from `FAILED_NO_TESTER_ARTIFACTS`.
 - Checkpoint AG does not approve MT5 execution and does not prove report generation until a later explicitly approved run.
 - Checkpoint AH defines the future retry approval constraints for `GOLD#` H1, date range `2026-06-01` to `2026-07-01`, using runner-hardened relative MT5 report paths.
-- Checkpoint AH still blocks actual execution until the user provides the exact future approval phrase.
+- Checkpoint AI executed the approved one-run Gold no-trade diagnostic retry with runner-hardened relative MT5 report paths.
+- Checkpoint AI RunId: `run_20260707_020500_checkpoint_ai_gold_no_trade_retry`.
+- Checkpoint AI result: `PASS_ARTIFACTS_COLLECTED`.
+- Checkpoint AI created and copied `mt5_report.htm` plus companion graph files.
+- Checkpoint AI no-trade confirmation: `PASS_FROM_TESTER_AND_EA_LOGS`.
+- Checkpoint AI baseline fallback confirmation: `PASS_FROM_EA_LOGS`.
+- Checkpoint AI forbidden action marker count: `0`.
+- Checkpoint AI Price Action/Fibo diagnostic lines: `601`.
+- Checkpoint AI is not profitability evidence and does not approve demo/live trading.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -156,4 +165,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AH review/merge, the next safe step is to wait for explicit user approval before any one-run retry. Do not run MT5 until that approval exists.
+6. After Checkpoint AI, the next safe step is review/analysis-only of the collected artifacts. Do not optimize, do not convert diagnostic classifications into trade signals, and do not start demo/live forward testing.

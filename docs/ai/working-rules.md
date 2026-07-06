@@ -1,6 +1,6 @@
 # ForexAiTrade Codex Working Rules
 
-Last updated: 2026-07-01
+Last updated: 2026-07-07
 
 ## Standard Workflow
 
@@ -86,6 +86,48 @@ Every PR should state:
 - artifact audit result
 - guardrail confirmation
 - no profitability claim
+
+## Codex-Only Self-Review Workflow
+
+After Checkpoint AF is merged, Codex may use a Codex-first / GPT-optional workflow for low-risk checkpoints.
+
+Codex may self-review and auto-merge only:
+
+- docs-only PRs
+- AI memory updates
+- research-plan-only PRs
+- diagnosis-plan-only PRs
+- runner-plan-only documentation PRs
+
+Auto-merge requires all of the following:
+
+- changed files are limited to allowed docs/planning scope
+- no `MQL5/` changes
+- no `presets/` changes
+- no `scripts/` or `tools/` code changes
+- no MT5 run
+- no Strategy Tester run
+- no terminal spawn
+- no optimization
+- no lot/risk increase
+- no profitability claim
+- no demo/live approval
+- artifact audit passes
+
+Do not auto-merge by default:
+
+- MQL5 source changes
+- preset changes
+- runner/script/tool code changes that affect execution safety
+- MT5 execution artifact PRs
+- optimization or performance-result PRs
+- any PR with unclear risk
+
+If risk is unclear, classify the PR as `NEEDS_USER_REVIEW`.
+
+GPT review is optional for low-risk docs/planning PRs. Use GPT review only when requested by the user or when Codex is unsure.
+
+Codex must not send private repository context to an external ChatGPT browser when environment policy blocks that export.
 
 ## New Chat Recovery Procedure
 

@@ -4,7 +4,7 @@ Last updated: 2026-07-04
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AB preflight evidence capture from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint AC diagnostic execution from the latest fetched `origin/main`:
 
 - `origin/main`: `f06a6c5d16830162980a25deb4c11d33d2e5fdab`
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
@@ -106,6 +106,16 @@ Known selected run:
 - User then closed MT5 and Codex rechecked with `Get-Process terminal64`.
 - Latest process preflight: no running `terminal64.exe` found.
 - Current process blocker: `RESOLVED_BY_USER`.
+- Checkpoint AC executed exactly one approved Gold no-trade diagnostic Strategy Tester run.
+- Checkpoint AC RunId: `run_20260704_014343_checkpoint_ac_gold_no_trade`.
+- Checkpoint AC result: `PARTIAL_TESTER_PASS_REPORT_MISSING`.
+- Strategy Tester and EA mirror logs were produced.
+- MT5 report artifact is missing.
+- PriceActionFibo diagnostic lines: 552.
+- No forbidden action markers found in available logs.
+- No baseline fallback markers found in available logs.
+- No-trade confirmation is based on tester/EA logs only, with report missing.
+- Do not interpret Checkpoint AC as profitability evidence or a complete backtest report.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -120,6 +130,6 @@ Recommended next action:
 1. Keep Checkpoint T as failed/inconclusive until verified artifacts exist.
 2. Do not rerun MT5 or Strategy Tester without a new explicit approval.
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
-4. Recommended next Gold step: review Checkpoint AB evidence/blocker documentation.
-5. Before any future execution approval, Codex must recheck that no existing `terminal64.exe` process is running.
-6. Actual Gold MT5 execution remains blocked until a later explicit approval checkpoint with verified artifact paths, concrete dates, and a clean terminal process preflight.
+4. Review Checkpoint AC result and missing report issue.
+5. Do not rerun strategy diagnostics automatically.
+6. Recommended next Gold step: diagnose MT5 command-line report generation, because tester/EA logs were produced but `mt5_report.htm` was missing.

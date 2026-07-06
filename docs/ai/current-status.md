@@ -1,12 +1,12 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-06
+Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AE report-path planning from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint AF Codex-only workflow planning from the latest fetched `origin/main`:
 
-- `origin/main`: `5c2110d` (`Merge pull request #21 from tomahogzero/research/checkpoint-ad-mt5-report-artifact-diagnosis`)
+- `origin/main`: `1b9af36` (`Merge pull request #22 from tomahogzero/research/checkpoint-ae-mt5-report-path-compatibility`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -17,6 +17,7 @@ This AI memory has been refreshed after Checkpoint AE report-path planning from 
 - PR #18 / Checkpoint AA Gold diagnostic user evidence checklist is merged.
 - PR #20 / Checkpoint AC Gold no-trade diagnostic run is merged.
 - PR #21 / Checkpoint AD MT5 report artifact generation diagnosis is merged.
+- PR #22 / Checkpoint AE MT5 report path compatibility preflight is merged.
 - User granted standing approval for Codex to auto-merge docs-only/research-plan-only PRs only when GPT review is `PASS` and there are no source/preset/MT5/optimization/risk changes.
 - This includes Checkpoints M through T-Prep Fix merged into main.
 
@@ -126,6 +127,9 @@ Known selected run:
 - Checkpoint AE historical finding: checked-in PASS reports use `Report=ForexAiTradeResearch\...\mt5_report` under the terminal data folder and produce `mt5_report.htm`.
 - Checkpoint AE recommendation: do not use absolute `G:\...\mt5_artifacts\...\mt5_report` as the default report request until proven compatible.
 - Checkpoint AE does not approve a retry.
+- Checkpoint AF defines Codex-only self-review workflow for low-risk docs-only and research-plan-only PRs.
+- Codex-only auto-merge does not apply to EA/source changes, presets, runner/script/tool implementation changes, MT5 execution, optimization, risk/lot changes, or execution result reporting.
+- When scope is ambiguous, Codex must classify the PR as `NEEDS_USER_REVIEW`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -142,4 +146,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. Recommended next Gold step: send Checkpoint AE to GPT review, then consider Checkpoint AF runner-only report artifact hardening or a reviewed retry approval package.
+6. Recommended next Gold step after workflow review: consider runner-only report artifact hardening in a separate checkpoint, without running MT5.

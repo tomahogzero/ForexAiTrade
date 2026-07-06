@@ -1,6 +1,6 @@
 # ForexAiTrade Codex Working Rules
 
-Last updated: 2026-07-01
+Last updated: 2026-07-07
 
 ## Standard Workflow
 
@@ -52,6 +52,44 @@ For documentation-only checkpoints:
 - Do not run MT5 Strategy Tester.
 - Update docs only.
 - Compile is not required unless MQL5 source changes.
+
+## Codex-Only Self-Review Workflow
+
+Codex may self-review and auto-merge low-risk documentation or research-plan-only PRs when every condition is true:
+
+- changed files are docs-only or research-plan-only
+- no `MQL5/` changes
+- no `presets/` changes
+- no runner/script/tool implementation changes
+- no MT5 run
+- no Strategy Tester run
+- no `terminal64.exe` spawn
+- no optimization
+- no lot/risk increase
+- no profitability claim
+- no forbidden artifacts
+- PR body documents guardrails clearly
+
+Codex must report one of these review labels:
+
+- `CODEX_SELF_REVIEW_PASS`
+- `NEEDS_USER_REVIEW`
+- `NEEDS_FIX`
+- `BLOCKED_BY_GUARDRAIL`
+
+Do not auto-merge if scope is ambiguous.
+
+User review or explicit approval remains required for:
+
+- EA/source changes
+- preset changes
+- runner/script/tool code changes
+- compile-required changes
+- MT5 or Strategy Tester execution
+- execution result reporting
+- optimization
+- risk/lot changes
+- live/demo/forward approval
 
 ## Artifact Audit
 

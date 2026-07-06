@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AF Codex-only workflow planning from the latest fetched `origin/main`:
+This AI memory has been refreshed after Checkpoint AF Codex-only workflow planning and Checkpoint AG runner hardening from the latest fetched `origin/main`:
 
-- `origin/main`: `1b9af36` (`Merge pull request #22 from tomahogzero/research/checkpoint-ae-mt5-report-path-compatibility`)
+- `origin/main`: `6de0582` (`Merge pull request #23 from tomahogzero/research/checkpoint-af-codex-only-self-review-workflow`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -18,10 +18,13 @@ This AI memory has been refreshed after Checkpoint AF Codex-only workflow planni
 - PR #20 / Checkpoint AC Gold no-trade diagnostic run is merged.
 - PR #21 / Checkpoint AD MT5 report artifact generation diagnosis is merged.
 - PR #22 / Checkpoint AE MT5 report path compatibility preflight is merged.
+- PR #23 / Checkpoint AF Codex-only self-review workflow is merged.
+- PR #24 was a duplicate Codex-only workflow PR and was closed as superseded by PR #23.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
 - GPT review remains optional for low-risk docs/planning PRs and should be used only when requested or when Codex is unsure.
+- Checkpoint AG is a runner-only hardening checkpoint for MT5 report artifact collection. It is not docs-only and should receive user review before merge.
 - This includes Checkpoints M through T-Prep Fix merged into main.
 
 The root local checkout may still contain unrelated dirty files from older research outputs. Do not clean, revert, delete, or stash those files without explicit user approval. Use an isolated worktree from `origin/main` for new checkpoint work.
@@ -131,6 +134,8 @@ Known selected run:
 - Checkpoint AE recommendation: do not use absolute `G:\...\mt5_artifacts\...\mt5_report` as the default report request until proven compatible.
 - Checkpoint AE does not approve a retry.
 - Checkpoint AF does not approve MT5 execution or source/preset changes; it only defines Codex self-review and low-risk auto-merge governance.
+- Checkpoint AG updates the research batch runner to use terminal-data-folder relative report paths, detect fresh report artifacts only, copy MT5 report companion files, and separate `PARTIAL_TESTER_PASS_REPORT_MISSING` from `FAILED_NO_TESTER_ARTIFACTS`.
+- Checkpoint AG does not approve MT5 execution and does not prove report generation until a later explicitly approved run.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -147,4 +152,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. Recommended next Gold step after Checkpoint AF merge: consider runner-only report artifact hardening under a new checkpoint, still without MT5 execution unless explicitly approved.
+6. After Checkpoint AG review/merge, the next safe step is a new explicit one-run retry approval package with verified artifact paths. Do not run MT5 until that approval exists.

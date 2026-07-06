@@ -161,34 +161,97 @@ function Test-FileStable {
     return $true
 }
 
-function Resolve-ReportPath {
+function Get-ReportArtifactCandidates {
     param([string]$BasePath)
+    return @(
+        $BasePath,
+        "$BasePath.htm",
+        "$BasePath.html",
+        "$BasePath.xml",
+        "$BasePath.png",
+        "$BasePath-hst.png",
+        "$BasePath-mfemae.png",
+        "$BasePath-holding.png"
+    )
+}
+
+function Resolve-ReportPath {
+    param(
+        [string]$BasePath,
+        [datetime]$NotBefore = [datetime]::MinValue
+    )
     $candidates = @($BasePath, "$BasePath.htm", "$BasePath.html", "$BasePath.xml")
     foreach ($candidate in $candidates) {
         if (Test-Path -LiteralPath $candidate -PathType Leaf) {
+            $item = Get-Item -LiteralPath $candidate
+            if ($item.LastWriteTime -lt $NotBefore) {
+                continue
+            }
             return $candidate
         }
     }
     return $null
 }
 
+function Resolve-ReportArtifacts {
+    param(
+        [string]$BasePath,
+        [datetime]$NotBefore = [datetime]::MinValue
+    )
+
+    $artifacts = @()
+    foreach ($candidate in (Get-ReportArtifactCandidates -BasePath $BasePath)) {
+        if (Test-Path -LiteralPath $candidate -PathType Leaf) {
+            $item = Get-Item -LiteralPath $candidate
+            if ($item.LastWriteTime -ge $NotBefore) {
+                $artifacts += $item
+            }
+        }
+    }
+    return @($artifacts)
+}
+
+function Copy-ReportArtifacts {
+    param(
+        [string]$SourceBasePath,
+        [string]$TargetBasePath,
+        [datetime]$NotBefore = [datetime]::MinValue
+    )
+
+    $copied = @()
+    foreach ($artifact in (Resolve-ReportArtifacts -BasePath $SourceBasePath -NotBefore $NotBefore)) {
+        $suffix = ""
+        if ($artifact.FullName.StartsWith($SourceBasePath, [System.StringComparison]::OrdinalIgnoreCase)) {
+            $suffix = $artifact.FullName.Substring($SourceBasePath.Length)
+        }
+        if ([string]::IsNullOrWhiteSpace($suffix)) {
+            $suffix = [System.IO.Path]::GetExtension($artifact.FullName)
+        }
+        $target = "$TargetBasePath$suffix"
+        Copy-Item -LiteralPath $artifact.FullName -Destination $target -Force
+        $copied += $target
+    }
+    return @($copied)
+}
+
 function Wait-ReportPath {
     param(
         [string]$BasePath,
         [int]$TimeoutSeconds,
-        [int]$PollIntervalSeconds
+        [int]$PollIntervalSeconds,
+        [datetime]$NotBefore = [datetime]::MinValue
     )
 
     $deadline = (Get-Date).AddSeconds([Math]::Max(1, $TimeoutSeconds))
     while ((Get-Date) -lt $deadline) {
-        $resolved = Resolve-ReportPath -BasePath $BasePath
+        $resolved = Resolve-ReportPath -BasePath $BasePath -NotBefore $NotBefore
         if ($resolved) {
             return $resolved
         }
         Start-Sleep -Seconds ([Math]::Max(1, $PollIntervalSeconds))
     }
 
-    return (Resolve-ReportPath -BasePath $BasePath)
+    return (Resolve-ReportPath -BasePath $BasePath -NotBefore $NotBefore)
 }
 
 function Write-Status {
@@ -407,6 +470,31 @@ function Invoke-Case {
         $reportRequestPath = $relativeReportBase
         $reportSearchBasePath = $terminalReportBase
     }
+    $reportSearchLocations = @($reportSearchBasePath)
+    if (-not $reportSearchBasePath.Equals($caseReportBasePath, [System.StringComparison]::OrdinalIgnoreCase)) {
+        $reportSearchLocations += $caseReportBasePath
+    }
+
+    $reportPreflightMarkerPath = ""
+    $reportPreflightMarkerTimestamp = ""
+    $reportPreflightMarkerError = ""
+    if (-not [string]::IsNullOrWhiteSpace($TerminalDataFolder)) {
+        $reportPreflightMarkerTimestamp = (Get-Date).ToString("o")
+        $reportPreflightMarkerPath = Join-Path (Split-Path -Parent $reportSearchBasePath) "report_preflight_marker.txt"
+        try {
+            @(
+                "run_id=$RunId",
+                "case_id=$caseId",
+                "safe_case_id=$safeCaseId",
+                "report_request_path=$reportRequestPath",
+                "terminal_report_base_path=$reportSearchBasePath",
+                "created_at=$reportPreflightMarkerTimestamp"
+            ) | Set-Content -LiteralPath $reportPreflightMarkerPath -Encoding UTF8
+        }
+        catch {
+            $reportPreflightMarkerError = $_.Exception.Message
+        }
+    }
     $generated = New-TesterConfig -Case $Case -Phase $Phase -Period $Period -RunId $RunId -CaseId $caseId -CaseDir $caseDir -ReportBasePath $reportRequestPath -EaLogFile $eaLogFile -ExitTelemetryFile $exitTelemetryFile
 
     $processInfoPath = Join-Path $caseDir "process_info.json"
@@ -416,10 +504,30 @@ function Invoke-Case {
         run_id = $RunId
         case_id = $caseId
         report_path = $caseReportBasePath
+        report_request_path = $reportRequestPath
+        report_search_base_path = $reportSearchBasePath
+        report_search_locations = $reportSearchLocations
+        terminal_report_base_path = $reportSearchBasePath
+        terminal_report_path = $null
+        copied_report_path = $null
+        report_artifact_status = "PENDING"
+        report_companion_files = @()
+        report_preflight_marker_path = $reportPreflightMarkerPath
+        report_preflight_marker_timestamp = $reportPreflightMarkerTimestamp
+        report_preflight_marker_error = $reportPreflightMarkerError
+        report_found_after_run_start = $false
+        stale_report_detected = $false
+        stale_report_paths = @()
     }
 
     Write-RunnerLog -Path $runnerLog -Message "WARNING: This runner starts and controls only its own MT5 process. It will never bulk-kill terminal64 processes."
     Write-RunnerLog -Path $runnerLog -Message "Case start: $caseId"
+    if (-not [string]::IsNullOrWhiteSpace($reportPreflightMarkerError)) {
+        $status.execution_status = "PROCESS_ERROR"
+        $status.message = "Report preflight marker could not be written: $reportPreflightMarkerError"
+        Write-Status -Path $statusPath -Status $status
+        return [pscustomobject]$status
+    }
 
     $args = @("/config:`"$($generated.IniPath)`"")
     if ($UsePortableMode) {
@@ -427,6 +535,10 @@ function Invoke-Case {
     }
 
     $startTime = Get-Date
+    $preExistingReportArtifacts = @(Resolve-ReportArtifacts -BasePath $reportSearchBasePath)
+    $staleReportArtifacts = @($preExistingReportArtifacts | Where-Object { $_.LastWriteTime -lt $startTime })
+    $status.stale_report_detected = [bool]($staleReportArtifacts.Count -gt 0)
+    $status.stale_report_paths = @($staleReportArtifacts | ForEach-Object { $_.FullName })
     $process = $null
     try {
         $process = Start-Process -FilePath $TerminalExe -ArgumentList $args -WindowStyle Hidden -PassThru
@@ -506,7 +618,7 @@ function Invoke-Case {
         try {
             $process.Refresh()
             if (-not $process.HasExited) {
-                $preCloseReport = Wait-ReportPath -BasePath $reportSearchBasePath -TimeoutSeconds ([Math]::Max(30, $PollIntervalSeconds * 15)) -PollIntervalSeconds $PollIntervalSeconds
+                $preCloseReport = Wait-ReportPath -BasePath $reportSearchBasePath -TimeoutSeconds ([Math]::Max(30, $PollIntervalSeconds * 15)) -PollIntervalSeconds $PollIntervalSeconds -NotBefore $startTime
                 if ($preCloseReport) {
                     Write-RunnerLog -Path $runnerLog -Message "Report detected before closing spawned PID $($process.Id)."
                 }
@@ -552,21 +664,46 @@ function Invoke-Case {
         return [pscustomobject]$status
     }
 
-    $reportPath = Wait-ReportPath -BasePath $reportSearchBasePath -TimeoutSeconds ([Math]::Max(10, $PollIntervalSeconds * 10)) -PollIntervalSeconds $PollIntervalSeconds
+    $reportPath = Wait-ReportPath -BasePath $reportSearchBasePath -TimeoutSeconds ([Math]::Max(10, $PollIntervalSeconds * 10)) -PollIntervalSeconds $PollIntervalSeconds -NotBefore $startTime
     if (-not $reportPath) {
-        $status.execution_status = "NO_REPORT"
-        $status.message = "MT5 report file was not created."
+        if ($completedByLog -or (Test-Path -LiteralPath $caseEaLog -PathType Leaf)) {
+            $status.execution_status = "PARTIAL_TESTER_PASS_REPORT_MISSING"
+            $status.message = "Tester or EA log artifact was produced, but MT5 report file was not created after run start."
+            $status.report_artifact_status = "MISSING_AFTER_TESTER_LOG"
+        }
+        else {
+            $status.execution_status = "FAILED_NO_TESTER_ARTIFACTS"
+            $status.message = "MT5 report file was not created and no tester/EA artifact confirmed execution."
+            $status.report_artifact_status = "MISSING_NO_TESTER_ARTIFACTS"
+        }
         Write-Status -Path $statusPath -Status $status
         return [pscustomobject]$status
     }
+    $status.terminal_report_path = $reportPath
+    $status.report_found_after_run_start = $true
+    $status.report_artifact_status = "FOUND"
+    $reportArtifacts = @(Resolve-ReportArtifacts -BasePath $reportSearchBasePath -NotBefore $startTime)
+    $copiedArtifacts = @()
     if ($reportPath -ne $caseReportBasePath -and -not $reportPath.StartsWith($caseDir, [System.StringComparison]::OrdinalIgnoreCase)) {
-        $extension = [System.IO.Path]::GetExtension($reportPath)
-        if ([string]::IsNullOrWhiteSpace($extension)) { $extension = ".htm" }
-        $targetReport = "$caseReportBasePath$extension"
-        Copy-Item -LiteralPath $reportPath -Destination $targetReport -Force
-        $reportPath = $targetReport
+        $copiedArtifacts = @(Copy-ReportArtifacts -SourceBasePath $reportSearchBasePath -TargetBasePath $caseReportBasePath -NotBefore $startTime)
+        $suffix = ""
+        if ($reportPath.StartsWith($reportSearchBasePath, [System.StringComparison]::OrdinalIgnoreCase)) {
+            $suffix = $reportPath.Substring($reportSearchBasePath.Length)
+        }
+        if ([string]::IsNullOrWhiteSpace($suffix)) {
+            $suffix = [System.IO.Path]::GetExtension($reportPath)
+        }
+        $targetReport = "$caseReportBasePath$suffix"
+        if (Test-Path -LiteralPath $targetReport -PathType Leaf) {
+            $reportPath = $targetReport
+        }
+    }
+    else {
+        $copiedArtifacts = @($reportArtifacts | ForEach-Object { $_.FullName })
     }
     $status.report_path = $reportPath
+    $status.copied_report_path = $reportPath
+    $status.report_companion_files = @($copiedArtifacts | Where-Object { $_ -ne $reportPath })
 
     if (-not (Test-FileStable -Path $reportPath -Polls 3 -Seconds $PollIntervalSeconds)) {
         $status.execution_status = "FAILED"
@@ -658,7 +795,7 @@ foreach ($case in $selectedCases) {
         do {
             $status = Invoke-Case -Case $case -Phase $phase -Period $period -RunId $runId -RunRoot $runRoot
             $statuses += $status
-            $infraRetry = @("TIMEOUT", "NO_REPORT", "PARSE_ERROR", "PROCESS_ERROR") -contains $status.execution_status
+            $infraRetry = @("TIMEOUT", "NO_REPORT", "PARTIAL_TESTER_PASS_REPORT_MISSING", "FAILED_NO_TESTER_ARTIFACTS", "PARSE_ERROR", "PROCESS_ERROR") -contains $status.execution_status
             $attempt++
         } while ($infraRetry -and $attempt -le $RetryCount)
     }

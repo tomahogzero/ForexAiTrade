@@ -265,7 +265,13 @@ Known selected run:
 - Checkpoint AY recommendation: prefer offline bar-series artifact export and parser matching rather than adding future-aware logic into EA `Evaluate()`.
 - Checkpoint AY requires lookahead data to remain offline-only and never feed trading decisions.
 - Checkpoint AY decision: `LOOKAHEAD_EXPORT_PLAN_DEFINED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `60%`; PAF diagnostic readiness around `58%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint AZ adds `tools/paf_lookahead_joiner.py`, an offline-only tool for joining PAF shadow rows with a provided OHLC bar CSV.
+- Checkpoint AZ does not change EA/source code or presets.
+- Checkpoint AZ does not run MT5 or Strategy Tester.
+- Checkpoint AZ tool outputs enriched shadow rows and a lookahead summary when a valid `paf_lookahead_bars.csv` is provided.
+- Checkpoint AZ keeps lookahead data outside the EA decision path and does not approve order implementation.
+- Checkpoint AZ decision: `OFFLINE_LOOKAHEAD_JOINER_ADDED`, `ORDER_PATH_STILL_BLOCKED`, `NO_MT5_RUN`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `62%`; PAF diagnostic readiness around `62%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -282,4 +288,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AY, the next safe step is Checkpoint AZ as a narrow implementation or approval package for offline OHLC bar-series artifact export and parser matching. Do not implement entries/pending orders yet.
+6. After Checkpoint AZ, the next safe step is Checkpoint BA as a manual artifact checklist or approval package for producing `paf_lookahead_bars.csv` from a verified source, then running the offline joiner on known diagnostic artifacts. Do not implement entries/pending orders yet.

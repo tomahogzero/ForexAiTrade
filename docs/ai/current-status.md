@@ -239,7 +239,27 @@ Known selected run:
 - Checkpoint AW requires the future run to confirm new fields in `ea_mirror.log`: `direction_context`, `direction_reason`, `entry_reference_price`, bar OHLC, `atr`, `ema_fast`, `ema_slow`, and `bb_width_percent`.
 - Checkpoint AW execution remains blocked until the user provides the exact approval phrase.
 - Checkpoint AW decision: `PAF_FIELD_VERIFICATION_APPROVAL_PACKAGE_CREATED`, `EXECUTION_STILL_BLOCKED_UNTIL_USER_APPROVAL`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `59%`; PAF diagnostic readiness around `53%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- User provided the exact approval phrase for Checkpoint AX.
+- Checkpoint AX executed exactly one approved `GOLD#` H1 PAF no-trade diagnostic field verification run.
+- Checkpoint AX RunId: `run_20260707_172236`.
+- Checkpoint AX date range: `2026-03-01` to `2026-03-08`.
+- Checkpoint AX installed latest merged source into the XM MT5 data folder and compiled the active EA before execution.
+- Checkpoint AX compile result: `0 errors, 0 warnings`.
+- Checkpoint AX runner spawned MT5 PID `15108` and closed only that spawned process after detecting the report artifact.
+- Checkpoint AX result: `PASS`.
+- Checkpoint AX report artifact status: `FOUND`.
+- Checkpoint AX total trades: `0`.
+- Checkpoint AX authoritative PAF diagnostic source: `ea_mirror.log`.
+- Checkpoint AX PAF diagnostic count: `97`.
+- Checkpoint AX required diagnostic fields were present in all 97 PAF diagnostic lines: `direction_context`, `direction_reason`, `entry_reference_price`, bar OHLC, `atr`, `ema_fast`, `ema_slow`, and `bb_width_percent`.
+- Checkpoint AX direction context counts across diagnostic lines: `BUY_CONTEXT=9`, `SELL_CONTEXT=10`, `DIRECTION_UNKNOWN=78`.
+- Checkpoint AX forbidden action marker count: `0`.
+- Checkpoint AX baseline fallback marker count: `0`.
+- Checkpoint AX shadow outcome parser rows: `33` possible setups.
+- Checkpoint AX shadow outcome labels: `DATA_MISSING=19`, `DIRECTION_MISSING=14`.
+- Checkpoint AX readiness: `BLOCKED_BY_MISSING_LOOKAHEAD_DATA`.
+- Checkpoint AX decision: `PAF_FIELD_VERIFICATION_PASS`, `NO_TRADE_DIAGNOSTIC_CONFIRMED`, `SHADOW_OUTCOME_BLOCKED_BY_MISSING_LOOKAHEAD_DATA`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `60%`; PAF diagnostic readiness around `58%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -256,4 +276,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AW, the next safe step is Checkpoint AX only after PR #40 is merged and the user provides the exact approval phrase for one no-trade PAF diagnostic field verification run. Do not implement entries/pending orders yet.
+6. After Checkpoint AX, the next safe step is Checkpoint AY planning or approval for diagnostic-only OHLC/tick lookahead export so shadow outcome labeling can be tested without any order path. Do not implement entries/pending orders yet.

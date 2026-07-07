@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AW PAF diagnostic field verification approval:
+This AI memory has been refreshed during Checkpoint BD PAF lookahead bars export approval:
 
-- `origin/main`: `a5edeec` (`Merge pull request #37 from tomahogzero/research/checkpoint-as-paf-shadow-outcome-spec`)
+- `origin/main`: `d2ba8de` (`Merge pull request #46 from tomahogzero/research/checkpoint-bc-paf-bars-validator`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -33,6 +33,7 @@ This AI memory has been refreshed during Checkpoint AW PAF diagnostic field veri
 - PR #35 / Checkpoint AQ multi-window PAF no-trade diagnostic result is merged.
 - PR #36 / Checkpoint AR AQ PAF diagnostic artifact review is merged.
 - PR #37 / Checkpoint AS PAF shadow-outcome labeling specification is merged.
+- PR #46 / Checkpoint BC PAF lookahead bars validator is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -289,6 +290,13 @@ Known selected run:
 - Checkpoint BC self-test result: `PASS`.
 - Checkpoint BC self-test matched events: `4/4`, missing events: `0`, gap count: `0`.
 - Checkpoint BC decision: `LOOKAHEAD_BARS_VALIDATOR_ADDED`, `VALIDATOR_SELFTEST_PASS`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `MT5_STILL_BLOCKED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Checkpoint BD defines a documentation-only approval/preflight package for future creation or export of real `paf_lookahead_bars.csv`.
+- Checkpoint BD target context remains `run_20260707_172236`, `GOLD#`, `H1`, diagnostic range `2026-03-01` to `2026-03-08`.
+- Checkpoint BD requires bar coverage through at least `2026-03-10 23:59:59` for the 48 H1 lookahead horizon.
+- Checkpoint BD does not run MT5, does not run Strategy Tester, does not change EA/source code, does not change presets, and does not run the offline join.
+- Checkpoint BD future export approval phrase: `Approved to execute Checkpoint BE one-time GOLD# H1 bars export for PAF lookahead with date range 2026-03-01 to 2026-03-10 using verified XM MT5 history only.`
+- Checkpoint BD keeps the Checkpoint BB offline join approval phrase unchanged for after a validated CSV exists.
+- Checkpoint BD decision: `BARS_EXPORT_APPROVAL_PACKAGE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `OFFLINE_JOIN_NOT_RUN`, `MT5_STILL_BLOCKED_UNTIL_EXPLICIT_EXPORT_APPROVAL`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
 - Current progress estimate: research-system readiness around `65%`; PAF diagnostic readiness around `65%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
@@ -306,4 +314,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BA, the next safe step is Checkpoint BB only after a verified `paf_lookahead_bars.csv` is available and the user provides the exact offline-join approval phrase. Do not run MT5 or implement entries/pending orders yet.
+6. After Checkpoint BD, the next safe step is Checkpoint BE only if the user explicitly approves one-time `GOLD#` H1 bar export/preparation, or Checkpoint BB only if a validated `paf_lookahead_bars.csv` already exists. Do not run MT5 or implement entries/pending orders yet.

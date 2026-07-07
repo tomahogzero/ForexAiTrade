@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "checkpoint": "AS",
+  "description": "Specification schema for no-order Price Action/Fibo shadow outcome labeling. This is not an EA preset and not an order configuration.",
+  "guardrails": {
+    "market_orders": false,
+    "pending_orders": false,
+    "position_modification": false,
+    "optimization": false,
+    "lot_or_risk_increase": false,
+    "profitability_claim": false
+  },
+  "input_event_fields": [
+    "run_id",
+    "case_id",
+    "time",
+    "actual_symbol",
+    "canonical_symbol",
+    "timeframe",
+    "classification",
+    "regime",
+    "spread",
+    "direction",
+    "entry_reference_price",
+    "atr",
+    "session"
+  ],
+  "outcome_labels": [
+    "TP_FIRST",
+    "SL_FIRST",
+    "BOTH_SAME_BAR",
+    "NO_RESOLUTION",
+    "DIRECTION_MISSING",
+    "DATA_MISSING",
+    "SPREAD_FILTERED",
+    "REGIME_FILTERED"
+  ],
+  "required_buckets": [
+    "classification",
+    "regime",
+    "spread_bucket",
+    "volatility_bucket",
+    "session_bucket",
+    "window",
+    "direction"
+  ],
+  "pre_registration_required": [
+    "allowed_classifications",
+    "allowed_regimes",
+    "spread_bucket_thresholds",
+    "lookahead_bars",
+    "stop_hypothesis",
+    "target_hypothesis",
+    "ambiguous_bar_rule",
+    "session_bucket_mapping"
+  ],
+  "conservative_rules": [
+    "Do not infer direction from future price movement.",
+    "Do not choose TP/SL/lookahead after seeing outcomes.",
+    "If TP and SL are both touched within one OHLC bar and tick path is unavailable, mark BOTH_SAME_BAR or use stop-first sensitivity.",
+    "Keep missing fields null and report limitations."
+  ]
+}

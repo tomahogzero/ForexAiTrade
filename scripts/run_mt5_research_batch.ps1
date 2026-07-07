@@ -90,6 +90,15 @@ function Convert-BoolText {
     return ([System.Convert]::ToBoolean($Value)).ToString().ToLowerInvariant()
 }
 
+function Get-TimeframeInputFromCase {
+    param([object]$Case, [string]$Name, [string]$DefaultTimeframe)
+    $value = [string](Get-CasePropertyValue -Case $Case -Name $Name -Default $DefaultTimeframe)
+    if ([string]::IsNullOrWhiteSpace($value)) {
+        $value = $DefaultTimeframe
+    }
+    return Convert-TimeframeToInput -Timeframe $value
+}
+
 function Get-CanonicalDefaults {
     param([string]$Symbol, [string]$Canonical, [string]$Timeframe)
     $magic = 26062003
@@ -259,6 +268,44 @@ function Write-Status {
     $Status | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath $Path -Encoding UTF8
 }
 
+function Invoke-PafDiagnosticsParser {
+    param(
+        [string]$CaseDir,
+        [hashtable]$Status,
+        [object]$Case
+    )
+
+    $enabled = [System.Convert]::ToBoolean((Get-CasePropertyValue -Case $Case -Name "enable_price_action_fibo" -Default $false))
+    $diagnosticOnly = [System.Convert]::ToBoolean((Get-CasePropertyValue -Case $Case -Name "price_action_fibo_diagnostics_only" -Default $true))
+    if (-not ($enabled -and $diagnosticOnly)) {
+        return
+    }
+
+    $parser = Join-Path $repoRoot "tools\paf_diagnostic_parser.py"
+    if (-not (Test-Path -LiteralPath $parser -PathType Leaf)) {
+        $Status.paf_diagnostics_status = "PARSER_MISSING"
+        return
+    }
+
+    $parseResult = & python $parser --case-dir $CaseDir --results-root (Join-Path $repoRoot "research\results") 2>&1
+    if ($LASTEXITCODE -ne 0) {
+        $Status.paf_diagnostics_status = "PARSE_ERROR"
+        $Status.paf_diagnostics_message = ($parseResult -join "`n")
+        return
+    }
+
+    $summaryPath = Join-Path $CaseDir "paf_diagnostics.json"
+    if (Test-Path -LiteralPath $summaryPath -PathType Leaf) {
+        $paf = Get-Content -LiteralPath $summaryPath -Raw | ConvertFrom-Json
+        $Status.paf_diagnostics_status = "FOUND"
+        $Status.paf_diagnostic_count = $paf.diagnostic_count
+        $Status.paf_authoritative_source = $paf.authoritative_source
+        $Status.paf_tester_excerpt_diagnostic_count = $paf.tester_excerpt_diagnostic_count
+        $Status.paf_forbidden_action_marker_count = $paf.forbidden_action_marker_count
+        $Status.paf_baseline_fallback_marker_count = $paf.baseline_fallback_marker_count
+    }
+}
+
 function New-TesterConfig {
     param(
         [object]$Case,
@@ -290,6 +337,14 @@ function New-TesterConfig {
     $trailingMultiplier = "{0:0.##}" -f [double](Get-CasePropertyValue -Case $Case -Name "trailing_atr_multiplier" -Default 1.5)
     $riskGateMode = [string](Get-CasePropertyValue -Case $Case -Name "risk_gate_mode" -Default "NORMAL")
     $cooldownBars = [int](Get-CasePropertyValue -Case $Case -Name "losing_streak_cooldown_bars" -Default 24)
+    $manageExistingPositions = Convert-BoolText (Get-CasePropertyValue -Case $Case -Name "manage_existing_positions" -Default $true)
+    $enablePriceActionFibo = Convert-BoolText (Get-CasePropertyValue -Case $Case -Name "enable_price_action_fibo" -Default $false)
+    $pafDiagnosticsOnly = Convert-BoolText (Get-CasePropertyValue -Case $Case -Name "price_action_fibo_diagnostics_only" -Default $true)
+    $pafUsePendingOrders = Convert-BoolText (Get-CasePropertyValue -Case $Case -Name "paf_use_pending_orders" -Default $false)
+    $pafMaxPendingOrders = [int](Get-CasePropertyValue -Case $Case -Name "paf_max_pending_orders" -Default 0)
+    $pafLogOnlyOnNewBar = Convert-BoolText (Get-CasePropertyValue -Case $Case -Name "paf_log_only_on_new_bar" -Default $true)
+    $pafEntryTimeframe = Get-TimeframeInputFromCase -Case $Case -Name "paf_entry_timeframe" -DefaultTimeframe $Case.timeframe
+    $pafHigherTimeframe = Get-TimeframeInputFromCase -Case $Case -Name "paf_higher_timeframe" -DefaultTimeframe $Case.timeframe
 
     $preset = @"
 InpLiveTradingEnabled=true
@@ -297,7 +352,7 @@ InpDemoSafeMode=true
 InpMagicNumber=$magicNumber
 InpSlippagePoints=20
 InpTradeOnlyOnNewBar=true
-InpManageExistingPositions=true
+InpManageExistingPositions=$manageExistingPositions
 InpRequireStrategyTester=true
 InpAllowedSymbolsCsv=$($defaults.AllowedSymbols)
 InpCanonicalSymbolName=$($Case.canonical_symbol)
@@ -327,6 +382,13 @@ InpMaxLot=$($defaults.MaxLot)
 InpUseTrailingStop=$useTrailingStop
 InpManagePositionsOnlyOnNewBar=false
 InpTrailingAtrMultiplier=$trailingMultiplier
+InpEnablePriceActionFibo=$enablePriceActionFibo
+InpPriceActionFiboDiagnosticsOnly=$pafDiagnosticsOnly
+InpPAFEntryTimeframe=$pafEntryTimeframe
+InpPAFHigherTimeframe=$pafHigherTimeframe
+InpPAFUsePendingOrders=$pafUsePendingOrders
+InpPAFMaxPendingOrders=$pafMaxPendingOrders
+InpPAFLogOnlyOnNewBar=$pafLogOnlyOnNewBar
 "@
     $presetPath = Join-Path $CaseDir "effective_preset.set"
     $preset | Set-Content -LiteralPath $presetPath -Encoding ASCII
@@ -361,7 +423,7 @@ InpDemoSafeMode=true||false||0||true||N
 InpMagicNumber=$magicNumber||26061901||1||260619010||N
 InpSlippagePoints=20||20||1||200||N
 InpTradeOnlyOnNewBar=true||false||0||true||N
-InpManageExistingPositions=true||false||0||true||N
+InpManageExistingPositions=$manageExistingPositions||false||0||true||N
 InpRequireStrategyTester=true||false||0||true||N
 InpAllowedSymbolsCsv=$($defaults.AllowedSymbols)
 InpCanonicalSymbolName=$($Case.canonical_symbol)
@@ -416,6 +478,13 @@ InpRsiPeriod=14||14||1||140||N
 InpUseTrailingStop=$useTrailingStop||false||0||true||N
 InpManagePositionsOnlyOnNewBar=false||false||0||true||N
 InpTrailingAtrMultiplier=$trailingMultiplier||1.5||0.150000||15.000000||N
+InpEnablePriceActionFibo=$enablePriceActionFibo||false||0||true||N
+InpPriceActionFiboDiagnosticsOnly=$pafDiagnosticsOnly||false||0||true||N
+InpPAFEntryTimeframe=$pafEntryTimeframe||0||0||49153||N
+InpPAFHigherTimeframe=$pafHigherTimeframe||0||0||49153||N
+InpPAFUsePendingOrders=$pafUsePendingOrders||false||0||true||N
+InpPAFMaxPendingOrders=$pafMaxPendingOrders||0||1||10||N
+InpPAFLogOnlyOnNewBar=$pafLogOnlyOnNewBar||false||0||true||N
 "@
     $iniPath = Join-Path $CaseDir "generated_tester.ini"
     $ini | Set-Content -LiteralPath $iniPath -Encoding ASCII
@@ -454,6 +523,13 @@ function Invoke-Case {
         losing_streak_cooldown_bars = Get-CasePropertyValue -Case $Case -Name "losing_streak_cooldown_bars" -Default 24
         use_trailing_stop = Get-CasePropertyValue -Case $Case -Name "use_trailing_stop" -Default $true
         trailing_atr_multiplier = Get-CasePropertyValue -Case $Case -Name "trailing_atr_multiplier" -Default 1.5
+        diagnostic_only = Get-CasePropertyValue -Case $Case -Name "diagnostic_only" -Default $false
+        enable_price_action_fibo = Get-CasePropertyValue -Case $Case -Name "enable_price_action_fibo" -Default $false
+        price_action_fibo_diagnostics_only = Get-CasePropertyValue -Case $Case -Name "price_action_fibo_diagnostics_only" -Default $true
+        paf_use_pending_orders = Get-CasePropertyValue -Case $Case -Name "paf_use_pending_orders" -Default $false
+        paf_max_pending_orders = Get-CasePropertyValue -Case $Case -Name "paf_max_pending_orders" -Default 0
+        paf_log_only_on_new_bar = Get-CasePropertyValue -Case $Case -Name "paf_log_only_on_new_bar" -Default $true
+        manage_existing_positions = Get-CasePropertyValue -Case $Case -Name "manage_existing_positions" -Default $true
     }
     $caseRecord | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath (Join-Path $caseDir "case.json") -Encoding UTF8
 
@@ -733,6 +809,8 @@ function Invoke-Case {
         $status.message = "Completed with parseable report."
     }
 
+    Invoke-PafDiagnosticsParser -CaseDir $caseDir -Status $status -Case $Case
+
     Write-Status -Path $statusPath -Status $status
     return [pscustomobject]$status
 }
@@ -802,6 +880,20 @@ foreach ($case in $selectedCases) {
 }
 
 $statuses | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath (Join-Path $runRoot "run_status.json") -Encoding UTF8
+
+$pafSummaryTool = Join-Path $repoRoot "tools\paf_diagnostic_parser.py"
+if (Test-Path -LiteralPath $pafSummaryTool -PathType Leaf) {
+    $pafCases = @($selectedCases | Where-Object {
+        [System.Convert]::ToBoolean((Get-CasePropertyValue -Case $_ -Name "enable_price_action_fibo" -Default $false)) -and
+        [System.Convert]::ToBoolean((Get-CasePropertyValue -Case $_ -Name "price_action_fibo_diagnostics_only" -Default $true))
+    })
+    if ($pafCases.Count -gt 0) {
+        $pafSummaryResult = & python $pafSummaryTool --runs-root $outputRootPath --results-root (Join-Path $repoRoot "research\results") --run-id $runId 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-Warning "Failed to generate PAF diagnostic summary: $($pafSummaryResult -join "`n")"
+        }
+    }
+}
 
 $summaryPath = Join-Path $runRoot "research_summary_for_run.md"
 $summaryTool = Join-Path $repoRoot "tools\generate_research_summary.py"

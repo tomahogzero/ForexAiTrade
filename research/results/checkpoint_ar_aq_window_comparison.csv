@@ -1,0 +1,4 @@
+window,period_from,period_to,execution_status,report_status,total_trades,diagnostics,no_trade_lines,no_setup,possible_fibo_pullback,possible_zone_rejection,possible_break_retest,possible_setup_labels,possible_setup_share,trend_count,breakout_count,trend_share,spread_min,spread_median,spread_average,spread_max,forbidden_markers,baseline_fallback_markers,review_flag
+AQ-W1,2026-01-01,2026-02-01,PASS,FOUND,0,386,474,281,36,50,19,105,27.2,353,33,91.5,16.0,17.0,17.82,40.0,0,0,WORKFLOW_PASS
+AQ-W2,2026-02-01,2026-03-01,PASS,FOUND,0,267,458,201,36,21,9,66,24.7,185,82,69.3,16.0,18.0,18.63,78.0,0,0,WORKFLOW_PASS
+AQ-W3,2026-03-01,2026-04-01,PASS,FOUND,0,301,506,205,73,14,9,96,31.9,248,53,82.4,18.0,28.0,27.16,109.0,0,0,SPREAD_REVIEW_NEEDED

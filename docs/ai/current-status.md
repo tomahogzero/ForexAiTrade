@@ -4,7 +4,7 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AV PAF diagnostic logging fields:
+This AI memory has been refreshed during Checkpoint AW PAF diagnostic field verification approval:
 
 - `origin/main`: `a5edeec` (`Merge pull request #37 from tomahogzero/research/checkpoint-as-paf-shadow-outcome-spec`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
@@ -233,7 +233,13 @@ Known selected run:
 - Checkpoint AV did not run MT5 or Strategy Tester and did not change presets.
 - Checkpoint AV decision: `PAF_DIAGNOSTIC_LOGGING_FIELDS_ADDED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
 - Checkpoint AV recommendation: next safe checkpoint should be an approval package for one no-trade diagnostic run to verify the new fields appear in `ea_mirror.log`.
-- Current progress estimate: research-system readiness around `59%`; PAF diagnostic readiness around `52%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint AW creates an approval package for exactly one future no-trade PAF diagnostic field verification run.
+- Checkpoint AW does not run MT5 or Strategy Tester and does not change source code or presets beyond the already-open Checkpoint AV PR branch.
+- Checkpoint AW proposed future verification scope: `GOLD#` H1 from `2026-03-01` to `2026-03-08`.
+- Checkpoint AW requires the future run to confirm new fields in `ea_mirror.log`: `direction_context`, `direction_reason`, `entry_reference_price`, bar OHLC, `atr`, `ema_fast`, `ema_slow`, and `bb_width_percent`.
+- Checkpoint AW execution remains blocked until the user provides the exact approval phrase.
+- Checkpoint AW decision: `PAF_FIELD_VERIFICATION_APPROVAL_PACKAGE_CREATED`, `EXECUTION_STILL_BLOCKED_UNTIL_USER_APPROVAL`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `59%`; PAF diagnostic readiness around `53%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -250,4 +256,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AS, the next safe step is Checkpoint AT no-order PAF shadow-outcome parser prototype against AQ artifacts only. Do not implement entries/pending orders yet.
+6. After Checkpoint AW, the next safe step is Checkpoint AX only after PR #40 is merged and the user provides the exact approval phrase for one no-trade PAF diagnostic field verification run. Do not implement entries/pending orders yet.

@@ -278,7 +278,12 @@ Known selected run:
 - Checkpoint BA adds `research/templates/paf_lookahead_bars_schema.csv` as a schema example only.
 - Checkpoint BA future approval phrase: `Approved to execute Checkpoint BB offline PAF lookahead join with bars CSV <absolute_path_to_csv> for RunId run_20260707_172236.`
 - Checkpoint BA decision: `LOOKAHEAD_BARS_CHECKLIST_DEFINED`, `OFFLINE_JOIN_NOT_RUN`, `MT5_STILL_BLOCKED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `63%`; PAF diagnostic readiness around `63%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BB-Prep runs `tools/paf_lookahead_joiner.py` against synthetic fixtures only.
+- Checkpoint BB-Prep does not use real market data, does not run MT5, and does not run Strategy Tester.
+- Checkpoint BB-Prep self-test result: `PASS`.
+- Checkpoint BB-Prep expected labels were confirmed: `TP_FIRST`, `SL_FIRST`, `AMBIGUOUS_SAME_BAR`, and `DIRECTION_MISSING`.
+- Checkpoint BB-Prep decision: `LOOKAHEAD_JOINER_SELFTEST_PASS`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `MT5_STILL_BLOCKED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `64%`; PAF diagnostic readiness around `64%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation

@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AM PAF diagnostic execution:
+This AI memory has been refreshed after Checkpoint AN PAF diagnostic artifact review:
 
-- `origin/main`: `f958e65` (`Merge pull request #30 from tomahogzero/research/checkpoint-al-paf-diagnostic-run-approval`)
+- `origin/main`: `5478fde` (`Merge pull request #31 from tomahogzero/research/checkpoint-am-paf-diagnostic-execution`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -26,6 +26,7 @@ This AI memory has been refreshed after Checkpoint AM PAF diagnostic execution:
 - PR #28 / Checkpoint AJ Gold diagnostic artifact review is merged.
 - PR #29 / Checkpoint AK PAF diagnostic runner/parser integration is merged.
 - PR #30 / Checkpoint AL PAF diagnostic one-run approval package is merged.
+- PR #31 / Checkpoint AM PAF diagnostic execution result is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -178,6 +179,12 @@ Known selected run:
 - Checkpoint AM no-trade confirmation: `PASS_FROM_REPORT_AND_EA_LOGS`.
 - Checkpoint AM baseline fallback confirmation: `PASS_FROM_EA_LOGS`.
 - Checkpoint AM is diagnostic-only evidence and does not approve demo/live trading, pending orders, market orders, or lot/risk increase.
+- Checkpoint AN reviewed Checkpoint AM artifacts without rerunning MT5.
+- Checkpoint AN finding: AM `417` vs AJ `418` diagnostic count differs only at `2026.06.29 01:00:00`.
+- Checkpoint AN finding: AM classified that hour as `unsafe regime: spread too wide` with spread `115.0`, while AI/AJ logged a PAF `NO_SETUP` diagnostic for the same hour.
+- Checkpoint AN finding: the one-line difference is a safety/filter classification difference, not order behavior.
+- Checkpoint AN confirms AM safety review: total trades `0`, forbidden action markers `0`, baseline fallback markers `0`.
+- Current progress estimate: research-system readiness around `45%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -194,4 +201,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AM, the next safe step is Checkpoint AN artifact review. Do not run MT5 automatically. Review AM artifacts first and decide whether more no-trade diagnostic windows are needed.
+6. After Checkpoint AN, the next safe step is Checkpoint AO planning or approval-only for additional no-trade diagnostic windows. Do not run MT5 automatically and do not implement entries/pending orders yet.

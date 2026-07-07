@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AN PAF diagnostic artifact review:
+This AI memory has been refreshed during Checkpoint AO PAF diagnostic coverage planning:
 
-- `origin/main`: `5478fde` (`Merge pull request #31 from tomahogzero/research/checkpoint-am-paf-diagnostic-execution`)
+- `origin/main`: `e9231b8` (`Merge pull request #32 from tomahogzero/research/checkpoint-an-paf-diagnostic-artifact-review`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -27,6 +27,7 @@ This AI memory has been refreshed after Checkpoint AN PAF diagnostic artifact re
 - PR #29 / Checkpoint AK PAF diagnostic runner/parser integration is merged.
 - PR #30 / Checkpoint AL PAF diagnostic one-run approval package is merged.
 - PR #31 / Checkpoint AM PAF diagnostic execution result is merged.
+- PR #32 / Checkpoint AN PAF diagnostic artifact review is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -184,7 +185,10 @@ Known selected run:
 - Checkpoint AN finding: AM classified that hour as `unsafe regime: spread too wide` with spread `115.0`, while AI/AJ logged a PAF `NO_SETUP` diagnostic for the same hour.
 - Checkpoint AN finding: the one-line difference is a safety/filter classification difference, not order behavior.
 - Checkpoint AN confirms AM safety review: total trades `0`, forbidden action markers `0`, baseline fallback markers `0`.
-- Current progress estimate: research-system readiness around `45%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint AO is a planning-only checkpoint for future no-trade diagnostic coverage.
+- Checkpoint AO recommendation: do not implement PAF entries or pending orders yet.
+- Checkpoint AO proposed next step: Checkpoint AP approval package for 3 no-trade diagnostic windows, each no longer than 1 month.
+- Current progress estimate: research-system readiness around `47%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -201,4 +205,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AN, the next safe step is Checkpoint AO planning or approval-only for additional no-trade diagnostic windows. Do not run MT5 automatically and do not implement entries/pending orders yet.
+6. After Checkpoint AO, the next safe step is Checkpoint AP approval-only for multi-window no-trade diagnostics. Do not run MT5 automatically and do not implement entries/pending orders yet.

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "description": "Template matrix for Price Action/Fibo diagnostic-only Strategy Tester runs. Do not use without a reviewed checkpoint and explicit user approval.",
+  "periods": {
+    "diagnostic_window": {
+      "from": "NEED_USER_APPROVAL",
+      "to": "NEED_USER_APPROVAL"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.05,
+    "max_open_orders": 1,
+    "base_preset": "",
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "GOLD_HASH_H1_PAF_DIAG_TEMPLATE",
+      "enabled": true,
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "risk_percent": 0.05,
+      "diagnostic_only": true,
+      "enable_price_action_fibo": true,
+      "price_action_fibo_diagnostics_only": true,
+      "paf_use_pending_orders": false,
+      "paf_max_pending_orders": 0,
+      "paf_log_only_on_new_bar": true,
+      "paf_entry_timeframe": "H1",
+      "paf_higher_timeframe": "H1",
+      "manage_existing_positions": false,
+      "enable_exit_telemetry": false,
+      "log_position_modify_events": false
+    }
+  ],
+  "guardrails": [
+    "Strategy Tester only",
+    "No optimization",
+    "No market orders",
+    "No pending orders",
+    "No position modification",
+    "No lot or risk increase",
+    "No profitability interpretation"
+  ]
+}

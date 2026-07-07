@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "description": "Checkpoint AQ approved multi-window Price Action/Fibo diagnostic-only Strategy Tester matrix. Approved by user on 2026-07-07. No optimization, no orders, no position modification.",
+  "periods": {
+    "aq_w1_20260101_20260201": {
+      "from": "2026-01-01",
+      "to": "2026-02-01"
+    },
+    "aq_w2_20260201_20260301": {
+      "from": "2026-02-01",
+      "to": "2026-03-01"
+    },
+    "aq_w3_20260301_20260401": {
+      "from": "2026-03-01",
+      "to": "2026-04-01"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.05,
+    "max_open_orders": 1,
+    "base_preset": "",
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "GOLD_HASH_H1_PAF_DIAG_AQ",
+      "enabled": true,
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "currency": "USD",
+      "leverage": 500,
+      "model": 0,
+      "risk_percent": 0.05,
+      "diagnostic_only": true,
+      "enable_price_action_fibo": true,
+      "price_action_fibo_diagnostics_only": true,
+      "paf_use_pending_orders": false,
+      "paf_max_pending_orders": 0,
+      "paf_log_only_on_new_bar": true,
+      "paf_entry_timeframe": "H1",
+      "paf_higher_timeframe": "H1",
+      "manage_existing_positions": false,
+      "enable_exit_telemetry": false,
+      "log_position_modify_events": false
+    }
+  ],
+  "approved_scope": {
+    "checkpoint": "AQ",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "window_count": 3,
+    "strategy_tester_only": true,
+    "optimization": false,
+    "demo_live_forward_test": false,
+    "market_orders": false,
+    "pending_orders": false,
+    "position_modification": false,
+    "lot_or_risk_increase": false,
+    "profitability_interpretation": false
+  },
+  "guardrails": [
+    "Strategy Tester only",
+    "No optimization",
+    "No market orders",
+    "No pending orders",
+    "No position modification",
+    "No lot or risk increase",
+    "No profitability interpretation",
+    "Each window is one calendar month or shorter"
+  ]
+}

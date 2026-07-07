@@ -259,6 +259,12 @@ Known selected run:
 - Checkpoint AX shadow outcome labels: `DATA_MISSING=19`, `DIRECTION_MISSING=14`.
 - Checkpoint AX readiness: `BLOCKED_BY_MISSING_LOOKAHEAD_DATA`.
 - Checkpoint AX decision: `PAF_FIELD_VERIFICATION_PASS`, `NO_TRADE_DIAGNOSTIC_CONFIRMED`, `SHADOW_OUTCOME_BLOCKED_BY_MISSING_LOOKAHEAD_DATA`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Checkpoint AY defines a documentation-only plan for PAF OHLC/tick lookahead export.
+- Checkpoint AY does not change EA/source code, presets, scripts, or tools.
+- Checkpoint AY does not run MT5 or Strategy Tester.
+- Checkpoint AY recommendation: prefer offline bar-series artifact export and parser matching rather than adding future-aware logic into EA `Evaluate()`.
+- Checkpoint AY requires lookahead data to remain offline-only and never feed trading decisions.
+- Checkpoint AY decision: `LOOKAHEAD_EXPORT_PLAN_DEFINED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
 - Current progress estimate: research-system readiness around `60%`; PAF diagnostic readiness around `58%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
@@ -276,4 +282,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AX, the next safe step is Checkpoint AY planning or approval for diagnostic-only OHLC/tick lookahead export so shadow outcome labeling can be tested without any order path. Do not implement entries/pending orders yet.
+6. After Checkpoint AY, the next safe step is Checkpoint AZ as a narrow implementation or approval package for offline OHLC bar-series artifact export and parser matching. Do not implement entries/pending orders yet.

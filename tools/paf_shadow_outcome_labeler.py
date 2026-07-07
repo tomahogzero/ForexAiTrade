@@ -175,15 +175,21 @@ def label_shadow_event(event: dict[str, Any]) -> tuple[str, str]:
     if classification not in POSSIBLE_SETUP_LABELS:
         return "REGIME_FILTERED", "not a possible setup classification"
 
-    direction = str(event.get("direction") or event.get("dir") or "").strip()
+    direction = direction_context(event)
     if not direction:
         return "DIRECTION_MISSING", "diagnostic log has no direction field"
+    if direction == "DIRECTION_UNKNOWN":
+        return "DIRECTION_MISSING", "diagnostic log direction context is unknown"
 
     entry_price = event.get("entry_reference_price") or event.get("close_price") or event.get("close")
     if to_float(entry_price) is None:
         return "DATA_MISSING", "entry reference price is missing"
 
     return "DATA_MISSING", "OHLC/tick lookahead data is not available in the current artifact"
+
+
+def direction_context(event: dict[str, Any]) -> str:
+    return str(event.get("direction_context") or event.get("direction") or event.get("dir") or "").strip()
 
 
 def parse_case(case_dir: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -222,7 +228,8 @@ def parse_case(case_dir: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
             "spread": spread,
             "spread_bucket": spread_bucket(spread),
             "session_bucket": session_bucket(str(event.get("time") or "")),
-            "direction": event.get("direction") or event.get("dir") or "",
+            "direction": direction_context(event),
+            "direction_reason": event.get("direction_reason") or "",
             "entry_reference_price": event.get("entry_reference_price") or event.get("close_price") or event.get("close") or "",
             "outcome_label": outcome,
             "limitation": limitation,
@@ -275,6 +282,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "spread_bucket",
         "session_bucket",
         "direction",
+        "direction_reason",
         "entry_reference_price",
         "outcome_label",
         "limitation",

@@ -32,7 +32,18 @@ struct SPAFDiagnosticState
    double resistanceHigh;
    double fiboLow;
    double fiboHigh;
+   double diagnosticOpen;
+   double diagnosticHigh;
+   double diagnosticLow;
+   double diagnosticClose;
+   double entryReferencePrice;
+   double atr;
+   double emaFast;
+   double emaSlow;
+   double bbWidthPercent;
    string fiboLevels;
+   string directionContext;
+   string directionReason;
    string reason;
    EPAFDiagnosticClassification classification;
 };
@@ -55,7 +66,18 @@ void ResetPAFDiagnosticState(SPAFDiagnosticState &state)
    state.resistanceHigh = 0.0;
    state.fiboLow = 0.0;
    state.fiboHigh = 0.0;
+   state.diagnosticOpen = 0.0;
+   state.diagnosticHigh = 0.0;
+   state.diagnosticLow = 0.0;
+   state.diagnosticClose = 0.0;
+   state.entryReferencePrice = 0.0;
+   state.atr = 0.0;
+   state.emaFast = 0.0;
+   state.emaSlow = 0.0;
+   state.bbWidthPercent = 0.0;
    state.fiboLevels = "";
+   state.directionContext = "DIRECTION_UNKNOWN";
+   state.directionReason = "not evaluated";
    state.reason = "not evaluated";
    state.classification = PAF_NO_SETUP;
 }
@@ -373,6 +395,89 @@ private:
       return false;
    }
 
+   void CaptureDiagnosticContext(SPAFDiagnosticState &state, const SRegimeState &regime, const double atr) const
+   {
+      state.diagnosticOpen = m_market.Open(1);
+      state.diagnosticHigh = m_market.High(1);
+      state.diagnosticLow = m_market.Low(1);
+      state.diagnosticClose = m_market.Close(1);
+      state.entryReferencePrice = state.diagnosticClose;
+      state.atr = atr;
+      state.emaFast = m_market.FastEma(1);
+      state.emaSlow = m_market.SlowEma(1);
+      state.bbWidthPercent = regime.bbWidthPercent;
+   }
+
+   void DetermineDirectionContext(SPAFDiagnosticState &state,
+                                  const bool nearSupport,
+                                  const bool nearResistance,
+                                  const bool inFiboZone) const
+   {
+      state.directionContext = "DIRECTION_UNKNOWN";
+      state.directionReason = "direction not required for current classification";
+
+      if(state.classification == PAF_POSSIBLE_BREAK_RETEST)
+      {
+         if(state.diagnosticClose > state.swingHigh)
+         {
+            state.directionContext = "BUY_CONTEXT";
+            state.directionReason = "break_retest_above_prior_swing_high";
+            return;
+         }
+
+         if(state.diagnosticClose < state.swingLow)
+         {
+            state.directionContext = "SELL_CONTEXT";
+            state.directionReason = "break_retest_below_prior_swing_low";
+            return;
+         }
+
+         state.directionReason = "break_retest_without_clear_swing_side";
+         return;
+      }
+
+      if(state.classification == PAF_POSSIBLE_ZONE_REJECTION)
+      {
+         if(nearSupport && state.diagnosticClose > state.diagnosticOpen)
+         {
+            state.directionContext = "BUY_CONTEXT";
+            state.directionReason = "bullish_rejection_from_support_zone";
+            return;
+         }
+
+         if(nearResistance && state.diagnosticClose < state.diagnosticOpen)
+         {
+            state.directionContext = "SELL_CONTEXT";
+            state.directionReason = "bearish_rejection_from_resistance_zone";
+            return;
+         }
+
+         state.directionReason = "zone_rejection_without_directional_candle_context";
+         return;
+      }
+
+      if(state.classification == PAF_POSSIBLE_FIBO_PULLBACK)
+      {
+         if(inFiboZone && state.emaFast > 0.0 && state.emaSlow > 0.0 &&
+            state.diagnosticClose >= state.emaFast && state.emaFast >= state.emaSlow)
+         {
+            state.directionContext = "BUY_CONTEXT";
+            state.directionReason = "fibo_pullback_with_bullish_ema_context";
+            return;
+         }
+
+         if(inFiboZone && state.emaFast > 0.0 && state.emaSlow > 0.0 &&
+            state.diagnosticClose <= state.emaFast && state.emaFast <= state.emaSlow)
+         {
+            state.directionContext = "SELL_CONTEXT";
+            state.directionReason = "fibo_pullback_with_bearish_ema_context";
+            return;
+         }
+
+         state.directionReason = "fibo_pullback_without_clear_ema_direction_context";
+      }
+   }
+
    void EvaluateDiagnostics(const SRegimeState &regime)
    {
       ResetPAFDiagnosticState(m_lastDiagnostic);
@@ -410,6 +515,7 @@ private:
       }
 
       double atr = regime.atr > 0.0 ? regime.atr : m_market.ATR(1);
+      CaptureDiagnosticContext(m_lastDiagnostic, regime, atr);
       m_lastDiagnostic.zoneFound = DetectSupportResistanceZone(m_lastDiagnostic, atr, reason);
       if(!m_lastDiagnostic.zoneFound)
       {
@@ -449,6 +555,8 @@ private:
          m_lastDiagnostic.classification = PAF_POSSIBLE_ZONE_REJECTION;
       else
          m_lastDiagnostic.classification = PAF_NO_SETUP;
+
+      DetermineDirectionContext(m_lastDiagnostic, nearSupport, nearResistance, inFiboZone);
 
       if(m_lastDiagnostic.classification == PAF_NO_SETUP)
          m_lastDiagnostic.reason = breakoutReason + "; " + retestReason + "; " + rejectionReason + "; " + engulfingReason;
@@ -494,6 +602,17 @@ public:
              " fibo_zone_found=" + BoolText(m_lastDiagnostic.fiboZoneFound) +
              " fibo_levels=" + m_lastDiagnostic.fiboLevels +
              " fibo_zone=" + DoubleToString(m_lastDiagnostic.fiboLow, digits) + "-" + DoubleToString(m_lastDiagnostic.fiboHigh, digits) +
+             " direction_context=" + m_lastDiagnostic.directionContext +
+             " direction_reason=" + m_lastDiagnostic.directionReason +
+             " entry_reference_price=" + DoubleToString(m_lastDiagnostic.entryReferencePrice, digits) +
+             " bar_open=" + DoubleToString(m_lastDiagnostic.diagnosticOpen, digits) +
+             " bar_high=" + DoubleToString(m_lastDiagnostic.diagnosticHigh, digits) +
+             " bar_low=" + DoubleToString(m_lastDiagnostic.diagnosticLow, digits) +
+             " bar_close=" + DoubleToString(m_lastDiagnostic.diagnosticClose, digits) +
+             " atr=" + DoubleToString(m_lastDiagnostic.atr, digits) +
+             " ema_fast=" + DoubleToString(m_lastDiagnostic.emaFast, digits) +
+             " ema_slow=" + DoubleToString(m_lastDiagnostic.emaSlow, digits) +
+             " bb_width_percent=" + DoubleToString(m_lastDiagnostic.bbWidthPercent, 6) +
              " breakout=" + BoolText(m_lastDiagnostic.breakoutDetected) +
              " retest=" + BoolText(m_lastDiagnostic.retestDetected) +
              " rejection_candle=" + BoolText(m_lastDiagnostic.rejectionCandleDetected) +

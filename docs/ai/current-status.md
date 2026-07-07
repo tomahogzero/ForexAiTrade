@@ -4,7 +4,7 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AU PAF diagnostic field requirements:
+This AI memory has been refreshed during Checkpoint AV PAF diagnostic logging fields:
 
 - `origin/main`: `a5edeec` (`Merge pull request #37 from tomahogzero/research/checkpoint-as-paf-shadow-outcome-spec`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
@@ -226,7 +226,14 @@ Known selected run:
 - Checkpoint AU required future fields include `direction_context`, `direction_reason`, `entry_reference_price`, diagnostic bar OHLC, ATR/volatility context, and optional exported OHLC lookahead data.
 - Checkpoint AU decision: `PAF_DIAGNOSTIC_FIELD_REQUIREMENTS_DEFINED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
 - Checkpoint AU recommendation: next safe checkpoint can request a narrow diagnostic-logging-only EA change, still with no market orders, no pending orders, no position modification, no optimization, and no demo/live approval.
-- Current progress estimate: research-system readiness around `58%`; PAF diagnostic readiness around `47%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint AV adds diagnostic-logging-only fields to the Price Action / Fibo strategy and updates the shadow outcome parser to read `direction_context`.
+- Checkpoint AV changed MQL5 diagnostic logging only; `CPriceActionFiboStrategy::Evaluate()` still returns `SIGNAL_NONE`.
+- Checkpoint AV added diagnostic fields: `direction_context`, `direction_reason`, `entry_reference_price`, `bar_open`, `bar_high`, `bar_low`, `bar_close`, `atr`, `ema_fast`, `ema_slow`, and `bb_width_percent`.
+- Checkpoint AV compile result: `0 errors, 0 warnings`.
+- Checkpoint AV did not run MT5 or Strategy Tester and did not change presets.
+- Checkpoint AV decision: `PAF_DIAGNOSTIC_LOGGING_FIELDS_ADDED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Checkpoint AV recommendation: next safe checkpoint should be an approval package for one no-trade diagnostic run to verify the new fields appear in `ea_mirror.log`.
+- Current progress estimate: research-system readiness around `59%`; PAF diagnostic readiness around `52%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation

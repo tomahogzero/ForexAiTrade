@@ -283,7 +283,13 @@ Known selected run:
 - Checkpoint BB-Prep self-test result: `PASS`.
 - Checkpoint BB-Prep expected labels were confirmed: `TP_FIRST`, `SL_FIRST`, `AMBIGUOUS_SAME_BAR`, and `DIRECTION_MISSING`.
 - Checkpoint BB-Prep decision: `LOOKAHEAD_JOINER_SELFTEST_PASS`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `MT5_STILL_BLOCKED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `64%`; PAF diagnostic readiness around `64%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BC adds `tools/paf_lookahead_bars_validator.py`, an offline-only validator for `paf_lookahead_bars.csv`.
+- Checkpoint BC validator checks required columns, timestamp parsing, OHLC numeric parsing, exact diagnostic event timestamp matching, lookahead horizon coverage, and large timeframe gaps.
+- Checkpoint BC self-test used synthetic Checkpoint BB-Prep fixtures only.
+- Checkpoint BC self-test result: `PASS`.
+- Checkpoint BC self-test matched events: `4/4`, missing events: `0`, gap count: `0`.
+- Checkpoint BC decision: `LOOKAHEAD_BARS_VALIDATOR_ADDED`, `VALIDATOR_SELFTEST_PASS`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `MT5_STILL_BLOCKED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `65%`; PAF diagnostic readiness around `65%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation

@@ -4,7 +4,7 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AT PAF shadow-outcome parser prototype:
+This AI memory has been refreshed during Checkpoint AU PAF diagnostic field requirements:
 
 - `origin/main`: `a5edeec` (`Merge pull request #37 from tomahogzero/research/checkpoint-as-paf-shadow-outcome-spec`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
@@ -221,7 +221,12 @@ Known selected run:
 - Checkpoint AT finding: AQ diagnostics contain possible setup labels but lack direction context, entry reference price, and OHLC/tick lookahead needed for TP/SL shadow outcome labeling.
 - Checkpoint AT decision: `PAF_SHADOW_OUTCOME_PARSER_PROTOTYPE_CREATED`, `AQ_SHADOW_OUTCOME_BLOCKED_BY_MISSING_DIRECTION`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
 - Checkpoint AT recommendation: do not implement market orders or pending orders yet; first prepare a reviewed checkpoint to add richer diagnostic fields.
-- Current progress estimate: research-system readiness around `56%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint AU defines the required diagnostic fields before shadow TP/SL outcome labeling can become meaningful.
+- Checkpoint AU is documentation/research-plan only and does not change EA/source code, presets, scripts, or tools.
+- Checkpoint AU required future fields include `direction_context`, `direction_reason`, `entry_reference_price`, diagnostic bar OHLC, ATR/volatility context, and optional exported OHLC lookahead data.
+- Checkpoint AU decision: `PAF_DIAGNOSTIC_FIELD_REQUIREMENTS_DEFINED`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Checkpoint AU recommendation: next safe checkpoint can request a narrow diagnostic-logging-only EA change, still with no market orders, no pending orders, no position modification, no optimization, and no demo/live approval.
+- Current progress estimate: research-system readiness around `58%`; PAF diagnostic readiness around `47%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation

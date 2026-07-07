@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AP multi-window PAF no-trade diagnostic approval planning:
+This AI memory has been refreshed during Checkpoint AQ multi-window PAF no-trade diagnostic execution:
 
-- `origin/main`: `6faf237` (`Merge pull request #33 from tomahogzero/research/checkpoint-ao-paf-diagnostic-coverage-plan`)
+- `origin/main`: `626c572` (`Merge pull request #34 from tomahogzero/research/checkpoint-ap-multi-window-paf-diagnostic-approval`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -29,6 +29,7 @@ This AI memory has been refreshed during Checkpoint AP multi-window PAF no-trade
 - PR #31 / Checkpoint AM PAF diagnostic execution result is merged.
 - PR #32 / Checkpoint AN PAF diagnostic artifact review is merged.
 - PR #33 / Checkpoint AO PAF diagnostic coverage plan is merged.
+- PR #34 / Checkpoint AP multi-window PAF no-trade diagnostic approval is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -192,7 +193,15 @@ Known selected run:
 - Checkpoint AP is an approval-package-only checkpoint for a future Checkpoint AQ multi-window PAF no-trade diagnostic run.
 - Checkpoint AP does not run MT5, does not change EA/source, does not change presets, and does not approve order execution.
 - Future Checkpoint AQ remains blocked until the user provides concrete date windows in the required approval phrase.
-- Current progress estimate: research-system readiness around `48%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- User provided explicit approval for Checkpoint AQ with windows `2026-01-01` to `2026-02-01`, `2026-02-01` to `2026-03-01`, and `2026-03-01` to `2026-04-01`.
+- Checkpoint AQ executed exactly 3 `GOLD#` H1 PAF no-trade diagnostic windows using the official AK runner/parser workflow.
+- Checkpoint AQ RunId: `run_20260707_151857`.
+- Checkpoint AQ result: all 3 windows `PASS`, report artifacts `FOUND`, total trades `0`, forbidden action markers `0`, baseline fallback markers `0`.
+- Checkpoint AQ PAF diagnostic counts: W1 `386`, W2 `267`, W3 `301`.
+- Checkpoint AQ no-trade line counts: W1 `474`, W2 `458`, W3 `506`.
+- Checkpoint AQ artifact root: `G:\AiServer\Codex\ForexAiTrade\mt5_artifacts\run_20260707_151857`.
+- Checkpoint AQ does not prove profitability and does not approve demo/live trading, market orders, pending orders, or lot/risk increase.
+- Current progress estimate: research-system readiness around `52%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -209,4 +218,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AP, the next safe step is to review/merge the approval package, then wait for explicit Checkpoint AQ approval with concrete dates. Do not run MT5 automatically and do not implement entries/pending orders yet.
+6. After Checkpoint AQ, the next safe step is Checkpoint AR artifact review and diagnostic interpretation only. Do not implement entries/pending orders yet.

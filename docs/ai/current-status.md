@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AQ multi-window PAF no-trade diagnostic execution:
+This AI memory has been refreshed during Checkpoint AR AQ PAF diagnostic artifact review:
 
-- `origin/main`: `626c572` (`Merge pull request #34 from tomahogzero/research/checkpoint-ap-multi-window-paf-diagnostic-approval`)
+- `origin/main`: `1155732` (`Merge pull request #35 from tomahogzero/research/checkpoint-aq-multi-window-paf-no-trade-diagnostics`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -30,6 +30,7 @@ This AI memory has been refreshed during Checkpoint AQ multi-window PAF no-trade
 - PR #32 / Checkpoint AN PAF diagnostic artifact review is merged.
 - PR #33 / Checkpoint AO PAF diagnostic coverage plan is merged.
 - PR #34 / Checkpoint AP multi-window PAF no-trade diagnostic approval is merged.
+- PR #35 / Checkpoint AQ multi-window PAF no-trade diagnostic result is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -201,7 +202,12 @@ Known selected run:
 - Checkpoint AQ no-trade line counts: W1 `474`, W2 `458`, W3 `506`.
 - Checkpoint AQ artifact root: `G:\AiServer\Codex\ForexAiTrade\mt5_artifacts\run_20260707_151857`.
 - Checkpoint AQ does not prove profitability and does not approve demo/live trading, market orders, pending orders, or lot/risk increase.
-- Current progress estimate: research-system readiness around `52%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint AR reviewed Checkpoint AQ artifacts without rerunning MT5.
+- Checkpoint AR classification: `PAF_DIAGNOSTIC_WORKFLOW_PASS`, `SHADOW_OUTCOME_SPEC_READY`, `NOT_READY_FOR_ORDER_IMPLEMENTATION`.
+- Checkpoint AR finding: PAF labels appear across all 3 windows, but labels are not outcome evidence.
+- Checkpoint AR finding: AQ-W3 has materially higher spread than W1/W2 and needs spread attribution before strategy-quality conclusions.
+- Checkpoint AR recommendation: Checkpoint AS should define PAF shadow-outcome labeling before any order implementation.
+- Current progress estimate: research-system readiness around `54%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -218,4 +224,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AQ, the next safe step is Checkpoint AR artifact review and diagnostic interpretation only. Do not implement entries/pending orders yet.
+6. After Checkpoint AR, the next safe step is Checkpoint AS PAF shadow-outcome labeling specification. Do not implement entries/pending orders yet.

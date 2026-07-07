@@ -1,0 +1,32 @@
+{
+  "verdict": "PASS",
+  "bars_csv": "research\\selftests\\checkpoint_bb\\paf_lookahead_bars_fixture.csv",
+  "shadow_outcomes": "research\\selftests\\checkpoint_bb\\paf_shadow_outcomes_fixture.csv",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "horizon_bars": 4,
+  "fieldnames": [
+    "time",
+    "open",
+    "high",
+    "low",
+    "close"
+  ],
+  "bar_count": 20,
+  "coverage_from": "2026-03-01 00:00:00",
+  "coverage_to": "2026-03-01 19:00:00",
+  "event_count": 4,
+  "matched_event_count": 4,
+  "missing_event_count": 0,
+  "required_coverage_to": "2026-03-01 19:00:00",
+  "gap_count": 0,
+  "issues": [],
+  "guardrails": [
+    "offline validation only",
+    "no MT5 run",
+    "no Strategy Tester run",
+    "no orders",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

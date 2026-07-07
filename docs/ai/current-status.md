@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed after Checkpoint AI one-run Gold no-trade diagnostic retry execution:
+This AI memory has been refreshed after Checkpoint AJ Gold diagnostic artifact review:
 
-- `origin/main`: `f0d8a6b` (`Merge pull request #25 from tomahogzero/research/checkpoint-ag-mt5-report-runner-hardening`)
+- `origin/main`: `0b46477` (`Merge pull request #27 from tomahogzero/research/checkpoint-ai-gold-no-trade-retry`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -22,6 +22,7 @@ This AI memory has been refreshed after Checkpoint AI one-run Gold no-trade diag
 - PR #24 was a duplicate Codex-only workflow PR and was closed as superseded by PR #23.
 - PR #25 / Checkpoint AG MT5 report runner hardening is merged.
 - PR #26 / Checkpoint AH one-run retry approval package is merged.
+- PR #27 / Checkpoint AI Gold no-trade diagnostic retry result is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -149,6 +150,12 @@ Known selected run:
 - Checkpoint AI forbidden action marker count: `0`.
 - Checkpoint AI Price Action/Fibo diagnostic lines: `601`.
 - Checkpoint AI is not profitability evidence and does not approve demo/live trading.
+- Checkpoint AJ reviewed the Checkpoint AI artifacts without rerunning MT5.
+- Checkpoint AJ finding: `mt5_report.htm` confirms `Total Trades=0` and `Total Deals=0`.
+- Checkpoint AJ finding: authoritative EA mirror diagnostic count is `418`; the combined `601` count includes duplicate tester excerpt lines and should not be used as the main research count.
+- Checkpoint AJ finding: EA mirror no-trade lines count is `502`.
+- Checkpoint AJ finding: no forbidden order/pending/modify markers and no baseline fallback markers were found.
+- Checkpoint AJ finding: `scripts/run_mt5_research_batch.ps1` still needs official PAF diagnostic case support before repeating this as a reusable matrix workflow.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -165,4 +172,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AI, the next safe step is review/analysis-only of the collected artifacts. Do not optimize, do not convert diagnostic classifications into trade signals, and do not start demo/live forward testing.
+6. After Checkpoint AJ, the next safe step is Checkpoint AK: official PAF diagnostic runner/parser support planning or implementation. Do not run MT5 again until a new checkpoint explicitly approves it.

@@ -1,58 +1,58 @@
 # PAF Shadow Outcome Prototype Summary
 
-RunId: `run_20260707_151857`
+RunId: `run_20260707_172236`
 
-Checkpoint AT reads existing AQ no-trade diagnostics only. It does not run MT5, does not send orders, and does not optimize parameters.
+This summary reads existing no-trade diagnostic artifacts only. The parser itself does not run MT5, does not send orders, and does not optimize parameters.
 
 ## Case Summary
 
 | Case | Diagnostics | Possible setups | NO_SETUP skipped | Readiness |
 |---|---:|---:|---:|---|
-| `GOLD_HASH_H1_PAF_DIAG_AQ_aq_w1_20260101_20260201` | 386 | 105 | 281 | `BLOCKED_BY_MISSING_DIRECTION` |
-| `GOLD_HASH_H1_PAF_DIAG_AQ_aq_w2_20260201_20260301` | 267 | 66 | 201 | `BLOCKED_BY_MISSING_DIRECTION` |
-| `GOLD_HASH_H1_PAF_DIAG_AQ_aq_w3_20260301_20260401` | 301 | 96 | 205 | `BLOCKED_BY_MISSING_DIRECTION` |
+| `GOLD_HASH_H1_PAF_FIELD_VERIFY_AX_ax_field_verify_20260301_20260308` | 97 | 33 | 64 | `BLOCKED_BY_MISSING_LOOKAHEAD_DATA` |
 
 ## Aggregate Counts
 
-- Possible setup rows written: `267`
-- Total diagnostic events seen: `954`
-- Total NO_SETUP skipped: `687`
+- Possible setup rows written: `33`
+- Total diagnostic events seen: `97`
+- Total NO_SETUP skipped: `64`
 
 ### Outcome Labels
 
 | Value | Count |
 |---|---:|
-| `DIRECTION_MISSING` | 267 |
+| `DATA_MISSING` | 19 |
+| `DIRECTION_MISSING` | 14 |
 
 ### Possible Setup Classifications
 
 | Value | Count |
 |---|---:|
-| `POSSIBLE_FIBO_PULLBACK` | 145 |
-| `POSSIBLE_ZONE_REJECTION` | 85 |
-| `POSSIBLE_BREAK_RETEST` | 37 |
+| `POSSIBLE_FIBO_PULLBACK` | 25 |
+| `POSSIBLE_ZONE_REJECTION` | 6 |
+| `POSSIBLE_BREAK_RETEST` | 2 |
 
 ### Spread Buckets
 
 | Value | Count |
 |---|---:|
-| `LOW_SPREAD` | 164 |
-| `NORMAL_SPREAD` | 103 |
+| `NORMAL_SPREAD` | 32 |
+| `LOW_SPREAD` | 1 |
 
 ### Server-Time Session Buckets
 
 | Value | Count |
 |---|---:|
-| `ASIA` | 86 |
-| `LONDON` | 60 |
-| `NEW_YORK` | 59 |
-| `OVERLAP` | 39 |
-| `OTHER` | 23 |
+| `LONDON` | 11 |
+| `ASIA` | 7 |
+| `NEW_YORK` | 6 |
+| `OTHER` | 5 |
+| `OVERLAP` | 4 |
 
 ## Interpretation
 
-- Current AQ diagnostics contain possible setup labels, but they do not include a direction field.
-- Because direction is missing, the prototype correctly marks possible setups as `DIRECTION_MISSING` instead of guessing buy/sell context.
+- Diagnostic artifacts may contain possible setup labels, direction context, and entry reference data depending on the selected run.
+- If direction is missing or unknown, the prototype marks possible setups as `DIRECTION_MISSING` instead of guessing buy/sell context.
+- If direction exists but OHLC/tick lookahead data is unavailable, the prototype marks rows as `DATA_MISSING`.
 - No TP/SL, R-multiple, or profitability interpretation is possible from these artifacts.
 - The next safe step is to add richer diagnostic logging or exported OHLC context in a later reviewed checkpoint before any order-path implementation.
 

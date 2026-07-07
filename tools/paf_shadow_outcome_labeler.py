@@ -237,6 +237,16 @@ def parse_case(case_dir: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
         }
         rows.append(row)
 
+    outcome_counts = counter_dict(row["outcome_label"] for row in rows)
+    if not rows:
+        readiness = "NO_ELIGIBLE_SETUP_EVENTS"
+    elif set(outcome_counts.keys()) == {"DIRECTION_MISSING"}:
+        readiness = "BLOCKED_BY_MISSING_DIRECTION"
+    elif "DATA_MISSING" in outcome_counts:
+        readiness = "BLOCKED_BY_MISSING_LOOKAHEAD_DATA"
+    else:
+        readiness = "READY_FOR_SHADOW_OUTCOME_REVIEW"
+
     summary = {
         **metadata,
         "case_dir": str(case_dir),
@@ -245,13 +255,13 @@ def parse_case(case_dir: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
         "possible_setup_event_count": len(rows),
         "skipped_no_setup_count": skipped_no_setup,
         "skipped_other_classification_count": skipped_other,
-        "outcome_counts": counter_dict(row["outcome_label"] for row in rows),
+        "outcome_counts": outcome_counts,
         "classification_counts": counter_dict(row["classification"] for row in rows),
         "regime_counts": counter_dict(row["regime"] for row in rows),
         "spread_bucket_counts": counter_dict(row["spread_bucket"] for row in rows),
         "session_bucket_counts": counter_dict(row["session_bucket"] for row in rows),
         "limitations": sorted(set(row["limitation"] for row in rows)),
-        "shadow_outcome_readiness": "BLOCKED_BY_MISSING_DIRECTION" if rows else "NO_ELIGIBLE_SETUP_EVENTS",
+        "shadow_outcome_readiness": readiness,
     }
     return rows, summary
 
@@ -360,7 +370,7 @@ def write_aggregate_outputs(results_root: Path, run_id: str, rows: list[dict[str
         "",
         f"RunId: `{run_id}`",
         "",
-        "Checkpoint AT reads existing AQ no-trade diagnostics only. It does not run MT5, does not send orders, and does not optimize parameters.",
+        "This summary reads existing no-trade diagnostic artifacts only. The parser itself does not run MT5, does not send orders, and does not optimize parameters.",
         "",
         "## Case Summary",
         "",
@@ -393,8 +403,9 @@ def write_aggregate_outputs(results_root: Path, run_id: str, rows: list[dict[str
     lines += [
         "## Interpretation",
         "",
-        "- Current AQ diagnostics contain possible setup labels, but they do not include a direction field.",
-        "- Because direction is missing, the prototype correctly marks possible setups as `DIRECTION_MISSING` instead of guessing buy/sell context.",
+        "- Diagnostic artifacts may contain possible setup labels, direction context, and entry reference data depending on the selected run.",
+        "- If direction is missing or unknown, the prototype marks possible setups as `DIRECTION_MISSING` instead of guessing buy/sell context.",
+        "- If direction exists but OHLC/tick lookahead data is unavailable, the prototype marks rows as `DATA_MISSING`.",
         "- No TP/SL, R-multiple, or profitability interpretation is possible from these artifacts.",
         "- The next safe step is to add richer diagnostic logging or exported OHLC context in a later reviewed checkpoint before any order-path implementation.",
         "",
@@ -410,7 +421,6 @@ def write_aggregate_outputs(results_root: Path, run_id: str, rows: list[dict[str
     ]
     summary_md = "\n".join(lines) + "\n"
     (results_root / "paf_shadow_outcome_summary.md").write_text(summary_md, encoding="utf-8")
-    (results_root / "checkpoint_at_shadow_outcome_parser_summary.md").write_text(summary_md, encoding="utf-8")
 
 
 def main() -> int:

@@ -1,0 +1,146 @@
+{
+  "run_id": "run_20260707_151857",
+  "cases": [
+    {
+      "run_id": "run_20260707_151857",
+      "case_id": "GOLD_HASH_H1_PAF_DIAG_AQ_aq_w1_20260101_20260201",
+      "base_case_id": "GOLD_HASH_H1_PAF_DIAG_AQ",
+      "phase": "aq_w1_20260101_20260201",
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "period_from": "2026-01-01",
+      "period_to": "2026-02-01",
+      "execution_status": "PASS",
+      "report_artifact_status": "FOUND",
+      "total_trades": 0,
+      "case_dir": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\run_20260707_151857\\GOLD_HASH_H1_PAF_DIAG_AQ_aq_w1_20260101_20260201",
+      "authoritative_source": "ea_mirror.log",
+      "diagnostic_event_count": 386,
+      "possible_setup_event_count": 105,
+      "skipped_no_setup_count": 281,
+      "skipped_other_classification_count": 0,
+      "outcome_counts": {
+        "DIRECTION_MISSING": 105
+      },
+      "classification_counts": {
+        "POSSIBLE_ZONE_REJECTION": 50,
+        "POSSIBLE_FIBO_PULLBACK": 36,
+        "POSSIBLE_BREAK_RETEST": 19
+      },
+      "regime_counts": {
+        "trend": 99,
+        "breakout": 6
+      },
+      "spread_bucket_counts": {
+        "LOW_SPREAD": 98,
+        "NORMAL_SPREAD": 7
+      },
+      "session_bucket_counts": {
+        "ASIA": 38,
+        "LONDON": 24,
+        "NEW_YORK": 20,
+        "OVERLAP": 15,
+        "OTHER": 8
+      },
+      "limitations": [
+        "diagnostic log has no direction field"
+      ],
+      "shadow_outcome_readiness": "BLOCKED_BY_MISSING_DIRECTION"
+    },
+    {
+      "run_id": "run_20260707_151857",
+      "case_id": "GOLD_HASH_H1_PAF_DIAG_AQ_aq_w2_20260201_20260301",
+      "base_case_id": "GOLD_HASH_H1_PAF_DIAG_AQ",
+      "phase": "aq_w2_20260201_20260301",
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "period_from": "2026-02-01",
+      "period_to": "2026-03-01",
+      "execution_status": "PASS",
+      "report_artifact_status": "FOUND",
+      "total_trades": 0,
+      "case_dir": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\run_20260707_151857\\GOLD_HASH_H1_PAF_DIAG_AQ_aq_w2_20260201_20260301",
+      "authoritative_source": "ea_mirror.log",
+      "diagnostic_event_count": 267,
+      "possible_setup_event_count": 66,
+      "skipped_no_setup_count": 201,
+      "skipped_other_classification_count": 0,
+      "outcome_counts": {
+        "DIRECTION_MISSING": 66
+      },
+      "classification_counts": {
+        "POSSIBLE_FIBO_PULLBACK": 36,
+        "POSSIBLE_ZONE_REJECTION": 21,
+        "POSSIBLE_BREAK_RETEST": 9
+      },
+      "regime_counts": {
+        "trend": 39,
+        "breakout": 27
+      },
+      "spread_bucket_counts": {
+        "LOW_SPREAD": 58,
+        "NORMAL_SPREAD": 8
+      },
+      "session_bucket_counts": {
+        "NEW_YORK": 19,
+        "ASIA": 17,
+        "LONDON": 12,
+        "OVERLAP": 12,
+        "OTHER": 6
+      },
+      "limitations": [
+        "diagnostic log has no direction field"
+      ],
+      "shadow_outcome_readiness": "BLOCKED_BY_MISSING_DIRECTION"
+    },
+    {
+      "run_id": "run_20260707_151857",
+      "case_id": "GOLD_HASH_H1_PAF_DIAG_AQ_aq_w3_20260301_20260401",
+      "base_case_id": "GOLD_HASH_H1_PAF_DIAG_AQ",
+      "phase": "aq_w3_20260301_20260401",
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "period_from": "2026-03-01",
+      "period_to": "2026-04-01",
+      "execution_status": "PASS",
+      "report_artifact_status": "FOUND",
+      "total_trades": 0,
+      "case_dir": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\run_20260707_151857\\GOLD_HASH_H1_PAF_DIAG_AQ_aq_w3_20260301_20260401",
+      "authoritative_source": "ea_mirror.log",
+      "diagnostic_event_count": 301,
+      "possible_setup_event_count": 96,
+      "skipped_no_setup_count": 205,
+      "skipped_other_classification_count": 0,
+      "outcome_counts": {
+        "DIRECTION_MISSING": 96
+      },
+      "classification_counts": {
+        "POSSIBLE_FIBO_PULLBACK": 73,
+        "POSSIBLE_ZONE_REJECTION": 14,
+        "POSSIBLE_BREAK_RETEST": 9
+      },
+      "regime_counts": {
+        "trend": 78,
+        "breakout": 18
+      },
+      "spread_bucket_counts": {
+        "NORMAL_SPREAD": 88,
+        "LOW_SPREAD": 8
+      },
+      "session_bucket_counts": {
+        "ASIA": 31,
+        "LONDON": 24,
+        "NEW_YORK": 20,
+        "OVERLAP": 12,
+        "OTHER": 9
+      },
+      "limitations": [
+        "diagnostic log has no direction field"
+      ],
+      "shadow_outcome_readiness": "BLOCKED_BY_MISSING_DIRECTION"
+    }
+  ]
+}

@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AR AQ PAF diagnostic artifact review:
+This AI memory has been refreshed during Checkpoint AS PAF shadow-outcome labeling specification:
 
-- `origin/main`: `1155732` (`Merge pull request #35 from tomahogzero/research/checkpoint-aq-multi-window-paf-no-trade-diagnostics`)
+- `origin/main`: `6e625f6` (`Merge pull request #36 from tomahogzero/research/checkpoint-ar-aq-artifact-review`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -31,6 +31,7 @@ This AI memory has been refreshed during Checkpoint AR AQ PAF diagnostic artifac
 - PR #33 / Checkpoint AO PAF diagnostic coverage plan is merged.
 - PR #34 / Checkpoint AP multi-window PAF no-trade diagnostic approval is merged.
 - PR #35 / Checkpoint AQ multi-window PAF no-trade diagnostic result is merged.
+- PR #36 / Checkpoint AR AQ PAF diagnostic artifact review is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -207,7 +208,11 @@ Known selected run:
 - Checkpoint AR finding: PAF labels appear across all 3 windows, but labels are not outcome evidence.
 - Checkpoint AR finding: AQ-W3 has materially higher spread than W1/W2 and needs spread attribution before strategy-quality conclusions.
 - Checkpoint AR recommendation: Checkpoint AS should define PAF shadow-outcome labeling before any order implementation.
-- Current progress estimate: research-system readiness around `54%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint AS defines a no-order PAF shadow-outcome labeling specification.
+- Checkpoint AS decision: `SHADOW_OUTCOME_SPEC_DEFINED`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
+- Checkpoint AS requires deterministic entry references, explicit direction handling, pre-registered SL/TP/lookahead hypotheses, conservative same-bar ambiguity handling, and bucketed summaries by classification/regime/spread/volatility/session/window.
+- Checkpoint AS does not implement a parser and does not run MT5.
+- Current progress estimate: research-system readiness around `56%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -224,4 +229,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AR, the next safe step is Checkpoint AS PAF shadow-outcome labeling specification. Do not implement entries/pending orders yet.
+6. After Checkpoint AS, the next safe step is Checkpoint AT no-order PAF shadow-outcome parser prototype against AQ artifacts only. Do not implement entries/pending orders yet.

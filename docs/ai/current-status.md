@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AK PAF diagnostic runner/parser integration:
+This AI memory has been refreshed during Checkpoint AL PAF diagnostic one-run approval package:
 
-- `origin/main`: `b02318c` (`Merge pull request #28 from tomahogzero/research/checkpoint-aj-gold-diagnostic-artifact-review`)
+- `origin/main`: `621463d` (`Merge pull request #29 from tomahogzero/research/checkpoint-ak-paf-diagnostic-runner-parser`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -24,6 +24,7 @@ This AI memory has been refreshed during Checkpoint AK PAF diagnostic runner/par
 - PR #26 / Checkpoint AH one-run retry approval package is merged.
 - PR #27 / Checkpoint AI Gold no-trade diagnostic retry result is merged.
 - PR #28 / Checkpoint AJ Gold diagnostic artifact review is merged.
+- PR #29 / Checkpoint AK PAF diagnostic runner/parser integration is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -157,9 +158,12 @@ Known selected run:
 - Checkpoint AJ finding: EA mirror no-trade lines count is `502`.
 - Checkpoint AJ finding: no forbidden order/pending/modify markers and no baseline fallback markers were found.
 - Checkpoint AJ finding: `scripts/run_mt5_research_batch.ps1` still needs official PAF diagnostic case support before repeating this as a reusable matrix workflow.
-- Checkpoint AK is in progress to add official PAF diagnostic runner/parser support without rerunning MT5.
+- Checkpoint AK added official PAF diagnostic runner/parser support without rerunning MT5.
 - Checkpoint AK scope is runner/parser/research-template/docs only; it does not change EA/source code or presets.
 - Checkpoint AK parser must treat `ea_mirror.log` as the authoritative PAF diagnostic source and count `tester_log_excerpt.log` separately to avoid duplicate totals.
+- Checkpoint AL is an approval-package-only checkpoint for a future one-run PAF diagnostic using the official AK workflow.
+- Checkpoint AL does not run MT5 and does not approve execution by itself.
+- Proposed future execution remains blocked until a later explicit Checkpoint AM approval phrase with concrete date range is provided.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -176,4 +180,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint AK, the next safe step is Checkpoint AL: review or approval planning for a future one-run diagnostic execution using the official PAF runner/parser workflow. Do not run MT5 again until a new checkpoint explicitly approves it.
+6. After Checkpoint AL, the next safe step is to review/merge the approval package. Only after that can Checkpoint AM execute one approved diagnostic run, and only if the user provides the exact approval phrase with a date range of 1 month or less.

@@ -4,9 +4,9 @@ Last updated: 2026-07-07
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint AS PAF shadow-outcome labeling specification:
+This AI memory has been refreshed during Checkpoint AT PAF shadow-outcome parser prototype:
 
-- `origin/main`: `6e625f6` (`Merge pull request #36 from tomahogzero/research/checkpoint-ar-aq-artifact-review`)
+- `origin/main`: `a5edeec` (`Merge pull request #37 from tomahogzero/research/checkpoint-as-paf-shadow-outcome-spec`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -32,6 +32,7 @@ This AI memory has been refreshed during Checkpoint AS PAF shadow-outcome labeli
 - PR #34 / Checkpoint AP multi-window PAF no-trade diagnostic approval is merged.
 - PR #35 / Checkpoint AQ multi-window PAF no-trade diagnostic result is merged.
 - PR #36 / Checkpoint AR AQ PAF diagnostic artifact review is merged.
+- PR #37 / Checkpoint AS PAF shadow-outcome labeling specification is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -212,6 +213,14 @@ Known selected run:
 - Checkpoint AS decision: `SHADOW_OUTCOME_SPEC_DEFINED`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
 - Checkpoint AS requires deterministic entry references, explicit direction handling, pre-registered SL/TP/lookahead hypotheses, conservative same-bar ambiguity handling, and bucketed summaries by classification/regime/spread/volatility/session/window.
 - Checkpoint AS does not implement a parser and does not run MT5.
+- Checkpoint AT adds a no-order PAF shadow-outcome parser prototype that reads existing AQ artifacts only.
+- Checkpoint AT does not run MT5, does not change EA/source code, and does not change presets.
+- Checkpoint AT RunId parsed: `run_20260707_151857`.
+- Checkpoint AT possible setup rows written: `267`.
+- Checkpoint AT outcome labels: all `DIRECTION_MISSING`.
+- Checkpoint AT finding: AQ diagnostics contain possible setup labels but lack direction context, entry reference price, and OHLC/tick lookahead needed for TP/SL shadow outcome labeling.
+- Checkpoint AT decision: `PAF_SHADOW_OUTCOME_PARSER_PROTOTYPE_CREATED`, `AQ_SHADOW_OUTCOME_BLOCKED_BY_MISSING_DIRECTION`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
+- Checkpoint AT recommendation: do not implement market orders or pending orders yet; first prepare a reviewed checkpoint to add richer diagnostic fields.
 - Current progress estimate: research-system readiness around `56%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 

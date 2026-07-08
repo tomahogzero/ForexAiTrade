@@ -1,0 +1,34 @@
+{
+  "verdict": "FAIL",
+  "bars_csv": "research\\results\\checkpoint_bp_real_csv_pipeline\\paf_lookahead_bars.csv",
+  "shadow_outcomes": "research\\results\\paf_shadow_outcomes_all_cases.csv",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "horizon_bars": 48,
+  "fieldnames": [
+    "time",
+    "open",
+    "high",
+    "low",
+    "close"
+  ],
+  "bar_count": 139,
+  "coverage_from": "2026-03-02 01:00:00",
+  "coverage_to": "2026-03-10 00:00:00",
+  "event_count": 33,
+  "matched_event_count": 33,
+  "missing_event_count": 0,
+  "required_coverage_to": "2026-03-08 22:00:00",
+  "gap_count": 6,
+  "issues": [
+    "detected gaps larger than expected timeframe step: 6"
+  ],
+  "guardrails": [
+    "offline validation only",
+    "no MT5 run",
+    "no Strategy Tester run",
+    "no orders",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

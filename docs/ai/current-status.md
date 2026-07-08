@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BL PAF real CSV offline pipeline preflight result:
+This AI memory has been refreshed during Checkpoint BO PAF real CSV offline pipeline preflight result:
 
-- `origin/main`: `b09f552` (`checkpoint-bn: document paf csv availability preflight`)
+- `origin/main`: `0b86fc9` (`checkpoint-bl: document csv timeframe mismatch preflight`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -363,6 +363,13 @@ Known selected run:
 - Checkpoint BL did not run MT5, did not run Strategy Tester, did not run the offline pipeline, did not change EA/source code, and did not change presets.
 - Checkpoint BL future fix: export real `GOLD#` H1 bars CSV and use a new Checkpoint BO approval phrase.
 - Checkpoint BL decision: `BL_APPROVAL_RECEIVED`, `CSV_FILE_FOUND`, `RAW_MT5_STYLE_CSV_DETECTED`, `BLOCKED_TIMEFRAME_MISMATCH`, `CSV_APPEARS_M1_NOT_H1`, `OFFLINE_PIPELINE_NOT_RUN`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Checkpoint BO received explicit user approval to run offline PAF pipeline on `G:\AiServer\Codex\ForexAiTrade\mt5_artifacts\manual_exports\GOLD_HASH_H1_20260301_20260310_raw_mt5_H1.csv`.
+- Checkpoint BO preflight did not find the approved `_raw_mt5_H1.csv` file.
+- Checkpoint BO found a similar old file `GOLD_HASH_H1_20260301_20260310_raw_mt5.csv`, but did not use it because Checkpoint BL already detected that file as likely M1, not H1.
+- Checkpoint BO result: `BLOCKED_CSV_FILE_MISSING`.
+- Checkpoint BO did not run MT5, did not run Strategy Tester, did not run the offline pipeline, did not change EA/source code, and did not change presets.
+- Checkpoint BO future fix: save a real `GOLD#` H1 bars CSV exactly at the approved path and use a new Checkpoint BP approval phrase.
+- Checkpoint BO decision: `BO_APPROVAL_RECEIVED`, `BLOCKED_CSV_FILE_MISSING`, `APPROVED_CSV_PATH_NOT_FOUND`, `SIMILAR_OLD_CSV_EXISTS_BUT_NOT_USED`, `OFFLINE_PIPELINE_NOT_RUN`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
 - Current progress estimate: research-system readiness around `79%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `68%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
@@ -380,4 +387,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BL, the next safe step is for the user to export a real `GOLD#` H1 bars CSV, confirm rows progress by 1 hour, and provide explicit Checkpoint BO approval. Do not run Strategy Tester or implement entries/pending orders yet.
+6. After Checkpoint BO, the next safe step is for the user to save a real `GOLD#` H1 bars CSV at the exact approved path, confirm rows progress by 1 hour, and provide explicit Checkpoint BP approval. Do not run Strategy Tester or implement entries/pending orders yet.

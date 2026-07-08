@@ -1,12 +1,12 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-07
+Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BD PAF lookahead bars export approval:
+This AI memory has been refreshed during Checkpoint BE PAF lookahead bars manual export guide:
 
-- `origin/main`: `d2ba8de` (`Merge pull request #46 from tomahogzero/research/checkpoint-bc-paf-bars-validator`)
+- `origin/main`: `377aea2` (`checkpoint-bd: define paf bars export approval`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -34,6 +34,7 @@ This AI memory has been refreshed during Checkpoint BD PAF lookahead bars export
 - PR #36 / Checkpoint AR AQ PAF diagnostic artifact review is merged.
 - PR #37 / Checkpoint AS PAF shadow-outcome labeling specification is merged.
 - PR #46 / Checkpoint BC PAF lookahead bars validator is merged.
+- PR #47 / Checkpoint BD PAF lookahead bars export approval is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -297,7 +298,11 @@ Known selected run:
 - Checkpoint BD future export approval phrase: `Approved to execute Checkpoint BE one-time GOLD# H1 bars export for PAF lookahead with date range 2026-03-01 to 2026-03-10 using verified XM MT5 history only.`
 - Checkpoint BD keeps the Checkpoint BB offline join approval phrase unchanged for after a validated CSV exists.
 - Checkpoint BD decision: `BARS_EXPORT_APPROVAL_PACKAGE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `OFFLINE_JOIN_NOT_RUN`, `MT5_STILL_BLOCKED_UNTIL_EXPLICIT_EXPORT_APPROVAL`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `65%`; PAF diagnostic readiness around `65%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BE defines a manual export guide for creating `paf_lookahead_bars.csv` from XM MT5 `GOLD#` H1 history.
+- Checkpoint BE does not run MT5 by Codex, does not run Strategy Tester, does not change EA/source code, does not change presets, and does not run the offline join.
+- Checkpoint BE target artifact remains `paf_lookahead_bars.csv` for RunId `run_20260707_172236`, `GOLD#`, `H1`, with required coverage from `2026-03-01 00:00:00` through at least `2026-03-10 23:59:59`.
+- Checkpoint BE decision: `MANUAL_EXPORT_GUIDE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `OFFLINE_JOIN_NOT_RUN`, `MT5_NOT_RUN_BY_CODEX`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `69%`; PAF diagnostic readiness around `69%`; PAF shadow-outcome readiness around `57%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -314,4 +319,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BD, the next safe step is Checkpoint BE only if the user explicitly approves one-time `GOLD#` H1 bar export/preparation, or Checkpoint BB only if a validated `paf_lookahead_bars.csv` already exists. Do not run MT5 or implement entries/pending orders yet.
+6. After Checkpoint BE, the next safe step is either user manual export of `paf_lookahead_bars.csv` followed by Checkpoint BB offline validation/join approval, or a separate explicit approval for Codex to perform one-time bar export. Do not run Strategy Tester or implement entries/pending orders yet.

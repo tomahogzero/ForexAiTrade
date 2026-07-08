@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BJ PAF offline pipeline runner:
+This AI memory has been refreshed during Checkpoint BK PAF real CSV offline run approval package:
 
-- `origin/main`: `b8cd19b` (`Merge pull request #52 from tomahogzero/research/checkpoint-bi-paf-offline-pipeline-selftest`)
+- `origin/main`: `f2d283d` (`Merge pull request #53 from tomahogzero/research/checkpoint-bj-paf-offline-pipeline-runner`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -40,6 +40,7 @@ This AI memory has been refreshed during Checkpoint BJ PAF offline pipeline runn
 - PR #50 / Checkpoint BG PAF bars schema normalization plan is merged.
 - PR #51 / Checkpoint BH PAF bars schema normalizer is merged.
 - PR #52 / Checkpoint BI PAF offline pipeline self-test is merged.
+- PR #53 / Checkpoint BJ PAF offline pipeline runner is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -335,7 +336,12 @@ Known selected run:
 - Checkpoint BJ runner stop gate: if normalization or validation fails, downstream stages are not run.
 - Checkpoint BJ does not run MT5, does not run Strategy Tester, does not change EA/source code, does not change presets, and does not process real market data.
 - Checkpoint BJ decision: `OFFLINE_PIPELINE_RUNNER_ADDED`, `OFFLINE_PIPELINE_RUNNER_SELFTEST_PASS`, `NORMALIZE_VALIDATE_JOIN_CHAIN_PASS_ON_SYNTHETIC_FIXTURE`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `JOINER_NOT_RUN_ON_REAL_DATA`, `MT5_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `76%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `65%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BK defines a documentation-only approval package for a future offline pipeline run against a real `GOLD#` H1 CSV path.
+- Checkpoint BK target context remains RunId `run_20260707_172236`, `GOLD#`, `H1`, diagnostic range `2026-03-01` to `2026-03-08`, with required lookahead coverage through at least `2026-03-10 23:59:59`.
+- Checkpoint BK does not run the offline pipeline, does not run MT5, does not run Strategy Tester, does not change EA/source code, and does not change presets.
+- Checkpoint BK future approval phrase: `Approved to execute Checkpoint BL offline PAF pipeline on real GOLD# H1 bars CSV <absolute_path_to_csv> for RunId run_20260707_172236.`
+- Checkpoint BK decision: `REAL_CSV_OFFLINE_RUN_APPROVAL_PACKAGE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `OFFLINE_RUN_NOT_EXECUTED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `77%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `66%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -352,4 +358,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BJ, the next safe step is to receive a real raw or normalized `paf_lookahead_bars.csv` from the user and run the offline pipeline runner under explicit approval. Do not run Strategy Tester or implement entries/pending orders yet.
+6. After Checkpoint BK, the next safe step is to receive a real raw or normalized `GOLD#` H1 bars CSV absolute path from the user and run the offline pipeline runner only under explicit Checkpoint BL approval. Do not run Strategy Tester or implement entries/pending orders yet.

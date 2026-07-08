@@ -1,0 +1,27 @@
+{
+  "checkpoint": "BR",
+  "name": "PAF Gold H1 Gap Policy Review",
+  "source_checkpoint": "BQ",
+  "source_gap_file": "research/results/checkpoint_bq_gap_attribution/gap_attribution.csv",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "validator_changed": false,
+  "joiner_run": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "gap_counts": {
+    "total": 6,
+    "weekend_market_closure": 1,
+    "short_session_or_history_gap": 5
+  },
+  "policy_decision": {
+    "weekend_market_closure": "candidate_acceptable_for_review",
+    "daily_broker_session_gap": "needs_explicit_symbol_timeframe_policy",
+    "true_missing_data": "hard_blocker"
+  },
+  "joiner_status": "blocked",
+  "next_checkpoint": "BS",
+  "next_checkpoint_recommendation": "Create a validator dry-run gap policy mechanism before any joiner rerun."
+}

@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BK PAF real CSV offline run approval package:
+This AI memory has been refreshed during Checkpoint BL-Prep PAF real CSV handoff guide:
 
-- `origin/main`: `f2d283d` (`Merge pull request #53 from tomahogzero/research/checkpoint-bj-paf-offline-pipeline-runner`)
+- `origin/main`: `5f3efe7` (`checkpoint-bk: define real csv offline run approval`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -341,7 +341,11 @@ Known selected run:
 - Checkpoint BK does not run the offline pipeline, does not run MT5, does not run Strategy Tester, does not change EA/source code, and does not change presets.
 - Checkpoint BK future approval phrase: `Approved to execute Checkpoint BL offline PAF pipeline on real GOLD# H1 bars CSV <absolute_path_to_csv> for RunId run_20260707_172236.`
 - Checkpoint BK decision: `REAL_CSV_OFFLINE_RUN_APPROVAL_PACKAGE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `OFFLINE_RUN_NOT_EXECUTED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `77%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `66%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BL-Prep defines a documentation-only handoff guide for preparing the real `GOLD#` H1 CSV file required before Checkpoint BL can run the offline pipeline.
+- Checkpoint BL-Prep recommends placing the CSV under `G:\AiServer\Codex\ForexAiTrade\mt5_artifacts\manual_exports\` with a filename such as `GOLD_HASH_H1_20260301_20260310_raw_mt5.csv`.
+- Checkpoint BL-Prep does not run MT5, does not run Strategy Tester, does not run the offline pipeline, does not change EA/source code, and does not change presets.
+- Checkpoint BL-Prep decision: `REAL_CSV_HANDOFF_GUIDE_DEFINED`, `REAL_CSV_PATH_STILL_REQUIRED`, `OFFLINE_PIPELINE_NOT_RUN`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `78%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `67%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -358,4 +362,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BK, the next safe step is to receive a real raw or normalized `GOLD#` H1 bars CSV absolute path from the user and run the offline pipeline runner only under explicit Checkpoint BL approval. Do not run Strategy Tester or implement entries/pending orders yet.
+6. After Checkpoint BL-Prep, the next safe step is to receive a real raw or normalized `GOLD#` H1 bars CSV absolute path from the user and run the offline pipeline runner only under explicit Checkpoint BL approval. Do not run Strategy Tester or implement entries/pending orders yet.

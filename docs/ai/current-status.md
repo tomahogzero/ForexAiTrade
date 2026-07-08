@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BF PAF lookahead bars CSV intake validation:
+This AI memory has been refreshed during Checkpoint BG PAF bars schema normalization plan:
 
-- `origin/main`: `20b7b8e` (`checkpoint-be: add paf bars manual export guide`)
+- `origin/main`: `ef55bdc` (`checkpoint-bf: define paf bars csv intake validation`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -36,6 +36,7 @@ This AI memory has been refreshed during Checkpoint BF PAF lookahead bars CSV in
 - PR #46 / Checkpoint BC PAF lookahead bars validator is merged.
 - PR #47 / Checkpoint BD PAF lookahead bars export approval is merged.
 - PR #48 / Checkpoint BE PAF lookahead bars manual export guide is merged.
+- PR #49 / Checkpoint BF PAF lookahead bars CSV intake validation is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -308,7 +309,12 @@ Known selected run:
 - Checkpoint BF classifications include `INTAKE_BLOCKED_NO_FILE`, `SCHEMA_CONVERSION_REQUIRED`, `VALIDATOR_FAIL_NEEDS_FIX`, `NON_BROKER_COMPARABLE_DIAGNOSTIC_ONLY`, and `VALIDATOR_PASS_READY_FOR_JOIN`.
 - Checkpoint BF does not run MT5, does not run Strategy Tester, does not change EA/source code, does not change presets, does not run validator, and does not run joiner.
 - Checkpoint BF decision: `CSV_INTAKE_VALIDATION_GATE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `VALIDATOR_NOT_RUN`, `JOINER_NOT_RUN`, `MT5_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `70%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `58%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BG defines a documentation-only schema normalization plan for future MT5-exported OHLC bar files.
+- Checkpoint BG allows only format-level transformations such as column renaming, date/time combining, delimiter conversion, and timestamp formatting without timezone shift.
+- Checkpoint BG forbids OHLC price edits, unsourced missing-bar fills, undocumented timezone shifts, resampling without a separate checkpoint, and any use of lookahead data inside EA decisions.
+- Checkpoint BG proposes a future offline-only tool candidate `tools/paf_bars_schema_normalizer.py`, but does not implement it in this checkpoint.
+- Checkpoint BG decision: `SCHEMA_NORMALIZATION_PLAN_DEFINED`, `NORMALIZER_TOOL_NOT_IMPLEMENTED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `VALIDATOR_NOT_RUN`, `JOINER_NOT_RUN`, `MT5_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `71%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `59%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -325,4 +331,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BF, the next safe step is either user manual export of `paf_lookahead_bars.csv` followed by Checkpoint BB offline validation/join approval, or a separate explicit approval for Codex to perform one-time bars export. Do not run Strategy Tester or implement entries/pending orders yet.
+6. After Checkpoint BG, the next safe step is either implement an offline schema normalizer in a separate checkpoint, receive a real `paf_lookahead_bars.csv` from the user and run Checkpoint BB offline validation/join approval, or get separate explicit approval for Codex to perform one-time bars export. Do not run Strategy Tester or implement entries/pending orders yet.

@@ -1,0 +1,51 @@
+{
+  "verdict": "PASS",
+  "raw_csv": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_exports\\GOLD_HASH_H1_20260301_20260310_raw_mt5_H1.csv",
+  "normalized_csv": "research\\results\\checkpoint_bp_real_csv_pipeline\\paf_lookahead_bars.csv",
+  "raw_preserved_copy": "research\\results\\checkpoint_bp_real_csv_pipeline\\paf_lookahead_bars_raw.csv",
+  "source_symbol": "GOLD#",
+  "source_timeframe": "H1",
+  "broker_comparable": true,
+  "input_columns": [
+    "<DATE>",
+    "<TIME>",
+    "<OPEN>",
+    "<HIGH>",
+    "<LOW>",
+    "<CLOSE>",
+    "<TICKVOL>",
+    "<VOL>",
+    "<SPREAD>"
+  ],
+  "output_columns": [
+    "time",
+    "open",
+    "high",
+    "low",
+    "close"
+  ],
+  "delimiter_detected": "\t",
+  "column_mapping": {
+    "time": null,
+    "date": "<DATE>",
+    "time_only": "<TIME>",
+    "open": "<OPEN>",
+    "high": "<HIGH>",
+    "low": "<LOW>",
+    "close": "<CLOSE>"
+  },
+  "row_count_before": 139,
+  "row_count_after": 139,
+  "invalid_rows": 0,
+  "issues": [],
+  "guardrails": [
+    "offline normalization only",
+    "no MT5 run",
+    "no Strategy Tester run",
+    "no orders",
+    "no OHLC price editing",
+    "no missing-bar filling",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

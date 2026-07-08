@@ -1,0 +1,69 @@
+{
+  "verdict": "FAIL",
+  "raw_csv": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_exports\\GOLD_HASH_H1_20260301_20260310_raw_mt5_H1.csv",
+  "bars_csv": "research\\results\\checkpoint_bp_real_csv_pipeline\\paf_lookahead_bars.csv",
+  "shadow_outcomes": "research\\results\\paf_shadow_outcomes_all_cases.csv",
+  "results_root": "research\\results\\checkpoint_bp_real_csv_pipeline",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "horizon_bars": 48,
+  "join_horizons": "6,12,24,48",
+  "tp_atr_multiple": 1.5,
+  "sl_atr_multiple": 1.0,
+  "stages": [
+    {
+      "name": "normalize",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "Normalization verdict: PASS\nSummary: research\\results\\checkpoint_bp_real_csv_pipeline\\paf_bars_schema_normalization_summary.md\n",
+      "stderr": "",
+      "command": [
+        "C:\\Users\\tomah\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "tools/paf_bars_schema_normalizer.py",
+        "--raw-csv",
+        "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_exports\\GOLD_HASH_H1_20260301_20260310_raw_mt5_H1.csv",
+        "--output-csv",
+        "research\\results\\checkpoint_bp_real_csv_pipeline\\paf_lookahead_bars.csv",
+        "--results-root",
+        "research\\results\\checkpoint_bp_real_csv_pipeline",
+        "--source-symbol",
+        "GOLD#",
+        "--source-timeframe",
+        "H1"
+      ]
+    },
+    {
+      "name": "validate",
+      "status": "FAIL",
+      "returncode": 2,
+      "stdout": "Validation verdict: FAIL\nSummary: research\\results\\checkpoint_bp_real_csv_pipeline\\paf_lookahead_bars_validation_summary.md\n",
+      "stderr": "",
+      "command": [
+        "C:\\Users\\tomah\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "tools/paf_lookahead_bars_validator.py",
+        "--bars-csv",
+        "research\\results\\checkpoint_bp_real_csv_pipeline\\paf_lookahead_bars.csv",
+        "--shadow-outcomes",
+        "research\\results\\paf_shadow_outcomes_all_cases.csv",
+        "--results-root",
+        "research\\results\\checkpoint_bp_real_csv_pipeline",
+        "--symbol",
+        "GOLD#",
+        "--timeframe",
+        "H1",
+        "--horizon-bars",
+        "48"
+      ]
+    }
+  ],
+  "stop_reason": "validation failed; joiner was not run",
+  "guardrails": [
+    "offline pipeline only",
+    "no MT5 run",
+    "no Strategy Tester run",
+    "no orders",
+    "no position modification",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BP PAF real CSV offline pipeline result:
+This AI memory has been refreshed during Checkpoint BQ PAF H1 gap attribution:
 
-- `origin/main`: `1f0fb67` (`checkpoint-bo: document missing h1 csv preflight`)
+- `origin/main`: `8ead326` (`Merge pull request #60 from tomahogzero/research/checkpoint-bp-paf-real-csv-offline-pipeline`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -378,7 +378,11 @@ Known selected run:
 - Checkpoint BP runner stopped before joiner, so no enriched shadow outcome result was produced.
 - Checkpoint BP did not run MT5, did not run Strategy Tester, did not change EA/source code, and did not change presets.
 - Checkpoint BP decision: `BP_APPROVAL_RECEIVED`, `CSV_FILE_FOUND`, `CSV_APPEARS_H1`, `NORMALIZATION_PASS`, `VALIDATION_FAIL_GAPS_DETECTED`, `EVENT_MATCH_33_OF_33`, `MISSING_EVENTS_0`, `JOINER_NOT_RUN`, `OFFLINE_PIPELINE_STOP_GATE_WORKED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `80%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `69%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BQ inspected the 6 Checkpoint BP validation gaps from the normalized bars only.
+- Checkpoint BQ found `WEEKEND_MARKET_CLOSURE=1` and `SHORT_SESSION_OR_HISTORY_GAP=5`.
+- Checkpoint BQ did not run MT5, did not run Strategy Tester, did not run joiner, did not bypass validator, did not change EA/source code, and did not change presets.
+- Checkpoint BQ decision: `GAP_ATTRIBUTION_DONE`, `WEEKEND_MARKET_CLOSURE_1`, `SHORT_SESSION_OR_HISTORY_GAP_5`, `GAPS_REQUIRE_MANUAL_REVIEW`, `JOINER_STILL_BLOCKED`, `VALIDATOR_NOT_BYPASSED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `81%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `70%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -395,4 +399,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BP, the next safe step is to inspect the 6 validation gaps and decide whether they are expected market-session/weekend gaps or true missing data. Do not bypass validator, run Strategy Tester, or implement entries/pending orders yet.
+6. After Checkpoint BQ, the next safe step is to review validator gap policy for Gold/XM H1 data. The 6 gaps include 1 weekend closure and 5 short session/history gaps, so do not bypass validator or run joiner until a reviewed broker-session gap rule exists.

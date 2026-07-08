@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BM PAF offline result review plan:
+This AI memory has been refreshed during Checkpoint BN PAF CSV availability preflight:
 
-- `origin/main`: `cb495fa` (`checkpoint-bl-prep: document real csv handoff`)
+- `origin/main`: `a56a5e4` (`checkpoint-bm: define paf offline result review plan`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -350,6 +350,12 @@ Known selected run:
 - Checkpoint BM explicitly prohibits interpreting shadow outcomes as `PROFITABLE`, `LIVE_READY`, `DEMO_READY`, `ORDER_APPROVED`, or `OPTIMIZATION_READY`.
 - Checkpoint BM does not run MT5, does not run Strategy Tester, does not run the offline pipeline, does not change EA/source code, and does not change presets.
 - Checkpoint BM decision: `OFFLINE_RESULT_REVIEW_PLAN_DEFINED`, `REAL_CSV_PATH_STILL_REQUIRED`, `OFFLINE_PIPELINE_NOT_RUN`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Checkpoint BN performed a filesystem-only CSV availability preflight.
+- Checkpoint BN checked the recommended manual export folder: `G:\AiServer\Codex\ForexAiTrade\mt5_artifacts\manual_exports`.
+- Checkpoint BN observed result: `MISSING: mt5_artifacts\manual_exports`.
+- Checkpoint BN means Checkpoint BL remains blocked until the user provides a real `GOLD#` H1 CSV absolute path and the exact approval phrase.
+- Checkpoint BN does not run MT5, does not run Strategy Tester, does not run the offline pipeline, does not change EA/source code, and does not change presets.
+- Checkpoint BN decision: `CSV_AVAILABILITY_PREFLIGHT_DONE`, `MANUAL_EXPORT_FOLDER_MISSING`, `REAL_CSV_PATH_STILL_REQUIRED`, `CHECKPOINT_BL_BLOCKED`, `OFFLINE_PIPELINE_NOT_RUN`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
 - Current progress estimate: research-system readiness around `79%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `68%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
@@ -367,4 +373,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BM, the next safe step is to receive a real raw or normalized `GOLD#` H1 bars CSV absolute path from the user and run the offline pipeline runner only under explicit Checkpoint BL approval. Do not run Strategy Tester or implement entries/pending orders yet.
+6. After Checkpoint BN, the next safe step is for the user to create or provide a real raw or normalized `GOLD#` H1 bars CSV absolute path and run the offline pipeline runner only under explicit Checkpoint BL approval. Do not run Strategy Tester or implement entries/pending orders yet.

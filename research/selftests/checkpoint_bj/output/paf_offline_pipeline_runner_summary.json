@@ -1,0 +1,92 @@
+{
+  "verdict": "PASS",
+  "raw_csv": "research\\selftests\\checkpoint_bi\\paf_lookahead_bars_raw_mt5_style.csv",
+  "bars_csv": "research\\selftests\\checkpoint_bj\\output\\paf_lookahead_bars.csv",
+  "shadow_outcomes": "research\\selftests\\checkpoint_bi\\paf_shadow_outcomes_fixture.csv",
+  "results_root": "research\\selftests\\checkpoint_bj\\output",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "horizon_bars": 1,
+  "join_horizons": "1,2",
+  "tp_atr_multiple": 1.5,
+  "sl_atr_multiple": 1.0,
+  "stages": [
+    {
+      "name": "normalize",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "Normalization verdict: PASS\nSummary: research\\selftests\\checkpoint_bj\\output\\paf_bars_schema_normalization_summary.md\n",
+      "stderr": "",
+      "command": [
+        "C:\\Users\\tomah\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "tools/paf_bars_schema_normalizer.py",
+        "--raw-csv",
+        "research\\selftests\\checkpoint_bi\\paf_lookahead_bars_raw_mt5_style.csv",
+        "--output-csv",
+        "research\\selftests\\checkpoint_bj\\output\\paf_lookahead_bars.csv",
+        "--results-root",
+        "research\\selftests\\checkpoint_bj\\output",
+        "--source-symbol",
+        "GOLD#",
+        "--source-timeframe",
+        "H1"
+      ]
+    },
+    {
+      "name": "validate",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "Validation verdict: PASS\nSummary: research\\selftests\\checkpoint_bj\\output\\paf_lookahead_bars_validation_summary.md\n",
+      "stderr": "",
+      "command": [
+        "C:\\Users\\tomah\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "tools/paf_lookahead_bars_validator.py",
+        "--bars-csv",
+        "research\\selftests\\checkpoint_bj\\output\\paf_lookahead_bars.csv",
+        "--shadow-outcomes",
+        "research\\selftests\\checkpoint_bi\\paf_shadow_outcomes_fixture.csv",
+        "--results-root",
+        "research\\selftests\\checkpoint_bj\\output",
+        "--symbol",
+        "GOLD#",
+        "--timeframe",
+        "H1",
+        "--horizon-bars",
+        "1"
+      ]
+    },
+    {
+      "name": "join",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "Wrote enriched rows: research\\selftests\\checkpoint_bj\\output\\paf_shadow_outcomes_enriched.csv\nWrote summary: research\\selftests\\checkpoint_bj\\output\\paf_lookahead_join_summary.md\n",
+      "stderr": "",
+      "command": [
+        "C:\\Users\\tomah\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "tools/paf_lookahead_joiner.py",
+        "--shadow-outcomes",
+        "research\\selftests\\checkpoint_bi\\paf_shadow_outcomes_fixture.csv",
+        "--bars-csv",
+        "research\\selftests\\checkpoint_bj\\output\\paf_lookahead_bars.csv",
+        "--results-root",
+        "research\\selftests\\checkpoint_bj\\output",
+        "--horizons",
+        "1,2",
+        "--tp-atr-multiple",
+        "1.5",
+        "--sl-atr-multiple",
+        "1.0"
+      ]
+    }
+  ],
+  "stop_reason": "",
+  "guardrails": [
+    "offline pipeline only",
+    "no MT5 run",
+    "no Strategy Tester run",
+    "no orders",
+    "no position modification",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

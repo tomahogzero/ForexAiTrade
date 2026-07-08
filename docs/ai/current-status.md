@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BI PAF offline pipeline self-test:
+This AI memory has been refreshed during Checkpoint BJ PAF offline pipeline runner:
 
-- `origin/main`: `842df3c` (`Merge pull request #51 from tomahogzero/research/checkpoint-bh-paf-bars-schema-normalizer`)
+- `origin/main`: `b8cd19b` (`Merge pull request #52 from tomahogzero/research/checkpoint-bi-paf-offline-pipeline-selftest`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -39,6 +39,7 @@ This AI memory has been refreshed during Checkpoint BI PAF offline pipeline self
 - PR #49 / Checkpoint BF PAF lookahead bars CSV intake validation is merged.
 - PR #50 / Checkpoint BG PAF bars schema normalization plan is merged.
 - PR #51 / Checkpoint BH PAF bars schema normalizer is merged.
+- PR #52 / Checkpoint BI PAF offline pipeline self-test is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -328,7 +329,13 @@ Known selected run:
 - Checkpoint BI outcome labels on synthetic fixture: horizon 1 `TP_FIRST=1`, `SL_FIRST=1`; horizon 2 `TP_FIRST=1`, `SL_FIRST=1`.
 - Checkpoint BI does not run MT5, does not run Strategy Tester, does not change EA/source code, does not change presets, and does not process real market data.
 - Checkpoint BI decision: `OFFLINE_PIPELINE_SELFTEST_PASS`, `NORMALIZER_VALIDATOR_JOINER_CHAIN_PASS_ON_SYNTHETIC_FIXTURE`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `JOINER_NOT_RUN_ON_REAL_DATA`, `MT5_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `74%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `63%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BJ adds `tools/paf_offline_pipeline_runner.py`, an offline-only runner for raw/normalized bars CSV -> normalize -> validate -> join.
+- Checkpoint BJ self-test uses synthetic fixture data only.
+- Checkpoint BJ self-test result: syntax check `PASS`, runner verdict `PASS`, normalize stage `PASS`, validate stage `PASS`, join stage `PASS`, and `JOINED=2`.
+- Checkpoint BJ runner stop gate: if normalization or validation fails, downstream stages are not run.
+- Checkpoint BJ does not run MT5, does not run Strategy Tester, does not change EA/source code, does not change presets, and does not process real market data.
+- Checkpoint BJ decision: `OFFLINE_PIPELINE_RUNNER_ADDED`, `OFFLINE_PIPELINE_RUNNER_SELFTEST_PASS`, `NORMALIZE_VALIDATE_JOIN_CHAIN_PASS_ON_SYNTHETIC_FIXTURE`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `JOINER_NOT_RUN_ON_REAL_DATA`, `MT5_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `76%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `65%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -345,4 +352,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BI, the next safe step is to receive a real raw or normalized `paf_lookahead_bars.csv` from the user, then run offline intake/normalization/validation and only then consider the offline join on real data. Do not run Strategy Tester or implement entries/pending orders yet.
+6. After Checkpoint BJ, the next safe step is to receive a real raw or normalized `paf_lookahead_bars.csv` from the user and run the offline pipeline runner under explicit approval. Do not run Strategy Tester or implement entries/pending orders yet.

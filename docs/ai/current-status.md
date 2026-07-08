@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BQ PAF H1 gap attribution:
+This AI memory has been refreshed during Checkpoint BR PAF Gold H1 gap policy review:
 
-- `origin/main`: `8ead326` (`Merge pull request #60 from tomahogzero/research/checkpoint-bp-paf-real-csv-offline-pipeline`)
+- `origin/main`: `a478ca3` (`Merge pull request #61 from tomahogzero/research/checkpoint-bq-paf-h1-gap-attribution`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -382,7 +382,11 @@ Known selected run:
 - Checkpoint BQ found `WEEKEND_MARKET_CLOSURE=1` and `SHORT_SESSION_OR_HISTORY_GAP=5`.
 - Checkpoint BQ did not run MT5, did not run Strategy Tester, did not run joiner, did not bypass validator, did not change EA/source code, and did not change presets.
 - Checkpoint BQ decision: `GAP_ATTRIBUTION_DONE`, `WEEKEND_MARKET_CLOSURE_1`, `SHORT_SESSION_OR_HISTORY_GAP_5`, `GAPS_REQUIRE_MANUAL_REVIEW`, `JOINER_STILL_BLOCKED`, `VALIDATOR_NOT_BYPASSED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `81%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `70%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BR reviewed the Gold H1 gap policy without changing validator implementation.
+- Checkpoint BR defines weekend gaps as market-closure candidates for review, daily broker-session gaps as candidates that still need explicit symbol/timeframe-scoped policy, and true missing data as a hard blocker.
+- Checkpoint BR did not run MT5, did not run Strategy Tester, did not run joiner, did not change EA/source code, and did not change presets.
+- Checkpoint BR decision: `GAP_POLICY_REVIEW_DONE`, `WEEKEND_GAP_POLICY_CANDIDATE_DEFINED`, `DAILY_SESSION_GAP_POLICY_CANDIDATE_DEFINED`, `DAILY_SESSION_GAPS_NOT_AUTO_APPROVED`, `TRUE_MISSING_DATA_REMAINS_BLOCKER`, `VALIDATOR_NOT_CHANGED`, `JOINER_STILL_BLOCKED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `82%`; PAF diagnostic readiness around `71%`; PAF shadow-outcome readiness around `70%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -399,4 +403,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BQ, the next safe step is to review validator gap policy for Gold/XM H1 data. The 6 gaps include 1 weekend closure and 5 short session/history gaps, so do not bypass validator or run joiner until a reviewed broker-session gap rule exists.
+6. After Checkpoint BR, the next safe step is Checkpoint BS: create or specify a validator dry-run gap policy mechanism. It must classify each gap explicitly and keep joiner blocked unless all gaps are explained by reviewed symbol/timeframe-scoped policy.

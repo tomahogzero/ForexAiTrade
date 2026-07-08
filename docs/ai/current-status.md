@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BE PAF lookahead bars manual export guide:
+This AI memory has been refreshed during Checkpoint BF PAF lookahead bars CSV intake validation:
 
-- `origin/main`: `377aea2` (`checkpoint-bd: define paf bars export approval`)
+- `origin/main`: `20b7b8e` (`checkpoint-be: add paf bars manual export guide`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -35,6 +35,7 @@ This AI memory has been refreshed during Checkpoint BE PAF lookahead bars manual
 - PR #37 / Checkpoint AS PAF shadow-outcome labeling specification is merged.
 - PR #46 / Checkpoint BC PAF lookahead bars validator is merged.
 - PR #47 / Checkpoint BD PAF lookahead bars export approval is merged.
+- PR #48 / Checkpoint BE PAF lookahead bars manual export guide is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.
@@ -302,7 +303,12 @@ Known selected run:
 - Checkpoint BE does not run MT5 by Codex, does not run Strategy Tester, does not change EA/source code, does not change presets, and does not run the offline join.
 - Checkpoint BE target artifact remains `paf_lookahead_bars.csv` for RunId `run_20260707_172236`, `GOLD#`, `H1`, with required coverage from `2026-03-01 00:00:00` through at least `2026-03-10 23:59:59`.
 - Checkpoint BE decision: `MANUAL_EXPORT_GUIDE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `OFFLINE_JOIN_NOT_RUN`, `MT5_NOT_RUN_BY_CODEX`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `69%`; PAF diagnostic readiness around `69%`; PAF shadow-outcome readiness around `57%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BF defines a docs-only intake and validation gate for a future real `paf_lookahead_bars.csv`.
+- Checkpoint BF requires validator execution before any offline joiner attempt.
+- Checkpoint BF classifications include `INTAKE_BLOCKED_NO_FILE`, `SCHEMA_CONVERSION_REQUIRED`, `VALIDATOR_FAIL_NEEDS_FIX`, `NON_BROKER_COMPARABLE_DIAGNOSTIC_ONLY`, and `VALIDATOR_PASS_READY_FOR_JOIN`.
+- Checkpoint BF does not run MT5, does not run Strategy Tester, does not change EA/source code, does not change presets, does not run validator, and does not run joiner.
+- Checkpoint BF decision: `CSV_INTAKE_VALIDATION_GATE_DEFINED`, `REAL_MARKET_LOOKAHEAD_CSV_STILL_MISSING`, `VALIDATOR_NOT_RUN`, `JOINER_NOT_RUN`, `MT5_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `70%`; PAF diagnostic readiness around `70%`; PAF shadow-outcome readiness around `58%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -319,4 +325,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BE, the next safe step is either user manual export of `paf_lookahead_bars.csv` followed by Checkpoint BB offline validation/join approval, or a separate explicit approval for Codex to perform one-time bar export. Do not run Strategy Tester or implement entries/pending orders yet.
+6. After Checkpoint BF, the next safe step is either user manual export of `paf_lookahead_bars.csv` followed by Checkpoint BB offline validation/join approval, or a separate explicit approval for Codex to perform one-time bars export. Do not run Strategy Tester or implement entries/pending orders yet.

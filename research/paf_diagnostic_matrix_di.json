@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "description": "Checkpoint DI approved PAF/Fibo diagnostic-only coverage expansion. Approved by user on 2026-07-09. No optimization, no demo/live forward test, no EA or preset changes, no order logic, total trades must remain 0.",
+  "periods": {
+    "di_w1_20260426_20260503": {
+      "from": "2026-04-26",
+      "to": "2026-05-03"
+    },
+    "di_w2_20260503_20260510": {
+      "from": "2026-05-03",
+      "to": "2026-05-10"
+    },
+    "di_w3_20260510_20260517": {
+      "from": "2026-05-10",
+      "to": "2026-05-17"
+    },
+    "di_w4_20260517_20260524": {
+      "from": "2026-05-17",
+      "to": "2026-05-24"
+    },
+    "di_w5_20260524_20260531": {
+      "from": "2026-05-24",
+      "to": "2026-05-31"
+    },
+    "di_w6_20260531_20260607": {
+      "from": "2026-05-31",
+      "to": "2026-06-07"
+    },
+    "di_w7_20260607_20260614": {
+      "from": "2026-06-07",
+      "to": "2026-06-14"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.05,
+    "max_open_orders": 1,
+    "base_preset": "",
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "GOLD_HASH_H1_PAF_COVERAGE_EXPANSION_DI",
+      "enabled": true,
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "currency": "USD",
+      "leverage": 500,
+      "model": 0,
+      "risk_percent": 0.05,
+      "diagnostic_only": true,
+      "enable_price_action_fibo": true,
+      "price_action_fibo_diagnostics_only": true,
+      "paf_use_pending_orders": false,
+      "paf_max_pending_orders": 0,
+      "paf_log_only_on_new_bar": true,
+      "paf_entry_timeframe": "H1",
+      "paf_higher_timeframe": "H1",
+      "manage_existing_positions": false,
+      "enable_exit_telemetry": false,
+      "log_position_modify_events": false
+    }
+  ],
+  "approved_scope": {
+    "checkpoint": "DI",
+    "source_commit": "597904b",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "windows": [
+      {
+        "from": "2026-04-26",
+        "to": "2026-05-03"
+      },
+      {
+        "from": "2026-05-03",
+        "to": "2026-05-10"
+      },
+      {
+        "from": "2026-05-10",
+        "to": "2026-05-17"
+      },
+      {
+        "from": "2026-05-17",
+        "to": "2026-05-24"
+      },
+      {
+        "from": "2026-05-24",
+        "to": "2026-05-31"
+      },
+      {
+        "from": "2026-05-31",
+        "to": "2026-06-07"
+      },
+      {
+        "from": "2026-06-07",
+        "to": "2026-06-14"
+      }
+    ],
+    "run_count": 7,
+    "strategy_tester_only": true,
+    "optimization": false,
+    "demo_live_forward_test": false,
+    "ea_or_preset_changes": false,
+    "market_orders": false,
+    "pending_orders": false,
+    "position_modification": false,
+    "lot_or_risk_increase": false,
+    "profitability_interpretation": false,
+    "total_trades_required": 0
+  },
+  "guardrails": [
+    "Strategy Tester only",
+    "Exactly seven approved windows",
+    "No optimization",
+    "No demo/live forward test",
+    "No EA or preset changes",
+    "No order logic",
+    "No market orders",
+    "No pending orders",
+    "No position modification",
+    "No lot or risk increase",
+    "Total trades must remain 0",
+    "No profitability interpretation",
+    "Collect additional diagnostic rows only"
+  ]
+}

@@ -1,0 +1,6 @@
+session_bucket,rows,relabel_ready_rows,direction_missing_rows,data_missing_rows,horizon_context_missing_rows,partial_horizon_context_rows,required_fields_missing_rows,rows_with_missing_required,rows_with_missing_recommended,relabel_ready_rate_percent
+LONDON,11,5,5,1,0,0,0,0,6,45.45
+ASIA,7,6,0,1,0,0,0,0,1,85.71
+NEW_YORK,6,1,5,0,0,0,0,0,5,16.67
+OTHER,5,2,3,0,0,0,0,0,3,40.0
+OVERLAP,4,3,1,0,0,0,0,0,1,75.0

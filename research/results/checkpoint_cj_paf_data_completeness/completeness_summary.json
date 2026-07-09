@@ -1,0 +1,70 @@
+{
+  "checkpoint": "CJ",
+  "status": "PASS_OFFLINE_COMPLETENESS_AUDIT",
+  "rows_read": 33,
+  "readiness_counts": {
+    "RELABEL_READY": 17,
+    "DIRECTION_MISSING": 14,
+    "DATA_MISSING": 2
+  },
+  "ce_relabel_status_counts": {
+    "RELABEL_READY": 17,
+    "DIRECTION_MISSING": 14,
+    "DATA_MISSING": 2
+  },
+  "relabel_ready_rows": 17,
+  "direction_missing_rows": 14,
+  "data_missing_rows": 2,
+  "relabel_ready_rate_percent": 51.52,
+  "direction_missing_rate_percent": 42.42,
+  "data_missing_rate_percent": 6.06,
+  "missing_required_field_counts": {},
+  "missing_recommended_field_counts": {
+    "offline_atr_14": 16
+  },
+  "missing_horizon_field_counts": {
+    "ce_h12_bars_available": 16,
+    "ce_h12_sl_price": 16,
+    "ce_h12_tp_price": 16,
+    "ce_h24_bars_available": 16,
+    "ce_h24_sl_price": 16,
+    "ce_h24_tp_price": 16,
+    "ce_h48_bars_available": 16,
+    "ce_h48_sl_price": 16,
+    "ce_h48_tp_price": 16,
+    "ce_h6_bars_available": 16,
+    "ce_h6_sl_price": 16,
+    "ce_h6_tp_price": 16,
+    "h12": 16,
+    "h24": 16,
+    "h48": 16,
+    "h6": 16
+  },
+  "diagnostic_gate_results": {
+    "direction_missing_rate_lte_10_percent": false,
+    "data_missing_rate_lte_5_percent": false,
+    "relabel_ready_rows_gte_100": false,
+    "relabel_ready_rows_gte_300": false
+  },
+  "classification": "DATA_COMPLETENESS_GATE_FAIL",
+  "guardrails": [
+    "offline files only",
+    "MT5 not run",
+    "Strategy Tester not run",
+    "EA source not changed",
+    "presets not changed",
+    "order logic not approved",
+    "optimization not performed",
+    "profitability not claimed"
+  ],
+  "input_csv": "research\\results\\checkpoint_ce_paf_first_touch_relabel\\paf_shadow_outcomes_first_touch_relabel.csv",
+  "outputs": {
+    "summary_json": "research\\results\\checkpoint_cj_paf_data_completeness\\completeness_summary.json",
+    "summary_md": "research\\results\\checkpoint_cj_paf_data_completeness\\completeness_summary.md",
+    "missing_fields_by_row": "research\\results\\checkpoint_cj_paf_data_completeness\\missing_fields_by_row.csv",
+    "readiness_by_classification": "research\\results\\checkpoint_cj_paf_data_completeness\\readiness_by_classification.csv",
+    "readiness_by_session": "research\\results\\checkpoint_cj_paf_data_completeness\\readiness_by_session.csv",
+    "readiness_by_regime": "research\\results\\checkpoint_cj_paf_data_completeness\\readiness_by_regime.csv",
+    "guardrail_summary": "research\\results\\checkpoint_cj_paf_data_completeness\\completeness_guardrail_summary.md"
+  }
+}

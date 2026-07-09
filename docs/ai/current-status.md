@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CS PAF direction explainability implementation approval:
+This AI memory has been refreshed during Checkpoint CT PAF direction explainability fields implementation:
 
-- `origin/main`: `12b3a4c` (`Merge pull request #88 from tomahogzero/research/checkpoint-cr-paf-direction-gap-explainability-design`)
+- `origin/main`: `35d42e1` (`Merge pull request #89 from tomahogzero/research/checkpoint-cs-paf-direction-explainability-implementation-approval`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -133,6 +133,19 @@ This AI memory has been refreshed during Checkpoint CS PAF direction explainabil
 - CT must not run MT5 without a separate explicit approval checkpoint.
 - CT must keep `SIGNAL_BUY`, `SIGNAL_SELL`, market orders, pending orders, position modification, baseline fallback, optimization, lot/risk increase, and profitability interpretation blocked.
 - Approval phrase for CT: `Approved to implement Checkpoint CT diagnostics-only PAF direction explainability fields with compile verification and no MT5 run.`
+- PR #89 / Checkpoint CS PAF direction explainability implementation approval is merged.
+- Checkpoint CT implements diagnostics-only PAF direction explainability fields and parser support.
+- CT changed `MQL5/Include/ForexAiTrade/Strategies/PriceActionFiboStrategy.mqh` and `tools/paf_diagnostic_parser.py`.
+- CT adds Fibo Pullback explainability fields including `paf_fibo_ema_gap_points`, `paf_fibo_ema_slope_state`, `paf_fibo_price_vs_ema_state`, `paf_fibo_trend_alignment_state`, `paf_fibo_pullback_side`, and `paf_fibo_direction_gap_reason`.
+- CT adds Zone Rejection explainability fields including `paf_zone_touch_state`, `paf_rejection_candle_direction`, `paf_rejection_wick_side`, `paf_rejection_body_ratio`, `paf_rejection_wick_ratio`, and `paf_zone_direction_gap_reason`.
+- CT parser update remains backward-compatible and adds gap reason summaries.
+- CT Python syntax check: `PASS`.
+- CT compile result: `0 errors, 0 warnings`.
+- CT compile log: `docs/verification/compile_after_checkpoint_CT.log`.
+- CT did not run MT5 / Strategy Tester.
+- CT did not change presets, RiskManager, trade execution, lot/risk defaults, or MT5 runner behavior.
+- CT guardrail scan found no `SIGNAL_BUY`, `SIGNAL_SELL`, `OrderSend`, `.Buy(`, `.Sell(`, `BuyLimit`, `SellLimit`, `BuyStop`, `SellStop`, or `PositionModify` in `PriceActionFiboStrategy.mqh`.
+- Recommended next safe step is Checkpoint CU approval package for one-run Strategy Tester validation of CT field presence only. MT5 execution remains blocked until separate explicit approval.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

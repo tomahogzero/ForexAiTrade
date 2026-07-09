@@ -1,0 +1,59 @@
+﻿
+
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: compiling G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\Trade.mqh
+C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\Trade.mqh : information: including C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Object.mqh
+C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Object.mqh : information: including C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\StdLibErr.mqh
+C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\Trade.mqh : information: including C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\OrderInfo.mqh
+C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\Trade.mqh : information: including C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\HistoryOrderInfo.mqh
+C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\Trade.mqh : information: including C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\PositionInfo.mqh
+C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\Trade.mqh : information: including C:\Users\tomah\AppData\Roaming\MetaQuotes\Terminal\BB16F565FAAA6B23A20C26C49416FF05\MQL5\Include\Trade\DealInfo.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\Types.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\Inputs.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\TradeLogger.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\SymbolHelper.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\MarketData.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\RiskManager.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\ExitTelemetry.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\RegimeDetector.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\Strategies\TrendFollowing.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\Strategies\Breakout.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\Strategies\MeanReversion.mqh
+G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Experts\ForexAiTrade\ForexAiTrade.mq5 : information: including G:\AiServer\Codex\ForexAiTrade\_checkpoint_ct_paf_direction_explainability_fields_worktree\MQL5\Include\ForexAiTrade\Strategies\PriceActionFiboStrategy.mqh
+ : information: generating code
+ : information: generating code 3%
+ : information: generating code 6%
+ : information: generating code 9%
+ : information: generating code 12%
+ : information: generating code 15%
+ : information: generating code 18%
+ : information: generating code 21%
+ : information: generating code 24%
+ : information: generating code 27%
+ : information: generating code 30%
+ : information: generating code 33%
+ : information: generating code 36%
+ : information: generating code 39%
+ : information: generating code 42%
+ : information: generating code 45%
+ : information: generating code 48%
+ : information: generating code 51%
+ : information: generating code 54%
+ : information: generating code 57%
+ : information: generating code 60%
+ : information: generating code 63%
+ : information: generating code 66%
+ : information: generating code 69%
+ : information: generating code 72%
+ : information: generating code 75%
+ : information: generating code 78%
+ : information: generating code 81%
+ : information: generating code 84%
+ : information: generating code 87%
+ : information: generating code 90%
+ : information: generating code 93%
+ : information: generating code 95%
+ : information: generating code 100%
+ : information: code generated
+Result: 0 errors, 0 warnings, 8138 ms elapsed, cpu='X64 Regular'
+

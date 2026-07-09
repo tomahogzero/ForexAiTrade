@@ -45,6 +45,8 @@ struct SPAFDiagnosticState
    double bbWidthPercent;
    double fiboZoneLevel;
    double rejectionStrength;
+   double rejectionBodyRatio;
+   double rejectionWickRatio;
    double breakLevel;
    string fiboLevels;
    string directionContext;
@@ -61,6 +63,15 @@ struct SPAFDiagnosticState
    string pafWickSide;
    string pafBreakDirection;
    string pafRetestSide;
+   string pafFiboEmaSlopeState;
+   string pafFiboPriceVsEmaState;
+   string pafFiboTrendAlignmentState;
+   string pafFiboPullbackSide;
+   string pafFiboDirectionGapReason;
+   string pafZoneTouchState;
+   string pafRejectionCandleDirection;
+   string pafRejectionWickSide;
+   string pafZoneDirectionGapReason;
    string reason;
    EPAFDiagnosticClassification classification;
 };
@@ -96,6 +107,8 @@ void ResetPAFDiagnosticState(SPAFDiagnosticState &state)
    state.bbWidthPercent = 0.0;
    state.fiboZoneLevel = 0.0;
    state.rejectionStrength = 0.0;
+   state.rejectionBodyRatio = 0.0;
+   state.rejectionWickRatio = 0.0;
    state.breakLevel = 0.0;
    state.fiboLevels = "";
    state.directionContext = "DIRECTION_UNKNOWN";
@@ -112,6 +125,15 @@ void ResetPAFDiagnosticState(SPAFDiagnosticState &state)
    state.pafWickSide = "WICK_UNKNOWN";
    state.pafBreakDirection = "BREAK_UNKNOWN";
    state.pafRetestSide = "RETEST_UNKNOWN";
+   state.pafFiboEmaSlopeState = "UNKNOWN";
+   state.pafFiboPriceVsEmaState = "UNKNOWN";
+   state.pafFiboTrendAlignmentState = "UNKNOWN";
+   state.pafFiboPullbackSide = "UNKNOWN";
+   state.pafFiboDirectionGapReason = "NONE";
+   state.pafZoneTouchState = "UNKNOWN";
+   state.pafRejectionCandleDirection = "UNKNOWN";
+   state.pafRejectionWickSide = "UNKNOWN";
+   state.pafZoneDirectionGapReason = "NONE";
    state.reason = "not evaluated";
    state.classification = PAF_NO_SETUP;
 }
@@ -160,6 +182,148 @@ private:
       if(state.emaFast <= state.emaSlow && state.emaFastSlope <= 0.0 && state.emaSlowSlope <= 0.0)
          return "BEARISH_EMA_CONTEXT";
       return "MIXED_EMA_CONTEXT";
+   }
+
+   string FiboEmaSlopeState(const SPAFDiagnosticState &state) const
+   {
+      double point = m_market.PointValue();
+      if(point <= 0.0 || state.emaFast <= 0.0 || state.emaSlow <= 0.0)
+         return "UNKNOWN";
+
+      bool fastFlat = MathAbs(state.emaFastSlope) <= point;
+      bool slowFlat = MathAbs(state.emaSlowSlope) <= point;
+      if(fastFlat && slowFlat)
+         return "FLAT";
+      if(state.emaFastSlope > point && state.emaSlowSlope > point)
+         return "UP";
+      if(state.emaFastSlope < -point && state.emaSlowSlope < -point)
+         return "DOWN";
+      return "MIXED";
+   }
+
+   double FiboEmaGapPoints(const SPAFDiagnosticState &state) const
+   {
+      double point = m_market.PointValue();
+      if(point <= 0.0 || state.emaFast <= 0.0 || state.emaSlow <= 0.0)
+         return 0.0;
+      return MathAbs(state.emaFast - state.emaSlow) / point;
+   }
+
+   string FiboPriceVsEmaState(const SPAFDiagnosticState &state) const
+   {
+      if(state.emaFast <= 0.0 || state.emaSlow <= 0.0)
+         return "UNKNOWN";
+
+      double emaHigh = MathMax(state.emaFast, state.emaSlow);
+      double emaLow = MathMin(state.emaFast, state.emaSlow);
+      if(state.diagnosticClose >= emaHigh)
+         return "ABOVE_BOTH";
+      if(state.diagnosticClose <= emaLow)
+         return "BELOW_BOTH";
+      return "BETWEEN";
+   }
+
+   string FiboTrendAlignmentState(const SPAFDiagnosticState &state) const
+   {
+      if(state.pafTrendContext == "BULLISH_EMA_CONTEXT")
+         return "BULLISH";
+      if(state.pafTrendContext == "BEARISH_EMA_CONTEXT")
+         return "BEARISH";
+      if(state.pafTrendContext == "MIXED_EMA_CONTEXT")
+         return "CONFLICT";
+      return "UNKNOWN";
+   }
+
+   string FiboPullbackSideState(const SPAFDiagnosticState &state) const
+   {
+      if(state.pafCandidateDirection == "BUY" || state.pafPullbackSide == "BULLISH_PULLBACK")
+         return "BUY_SIDE";
+      if(state.pafCandidateDirection == "SELL" || state.pafPullbackSide == "BEARISH_PULLBACK")
+         return "SELL_SIDE";
+      if(state.pafFiboPriceVsEmaState == "BETWEEN")
+         return "BOTH";
+      if(state.classification == PAF_POSSIBLE_FIBO_PULLBACK)
+         return "UNKNOWN";
+      return "NONE";
+   }
+
+   string FiboDirectionGapReason(const SPAFDiagnosticState &state, const bool inFiboZone) const
+   {
+      if(state.classification != PAF_POSSIBLE_FIBO_PULLBACK || state.pafDirectionIsUsableForFirstTouch)
+         return "NONE";
+      if(!inFiboZone)
+         return "FIBO_ZONE_SIDE_CONFLICT";
+      if(state.emaFast <= 0.0 || state.emaSlow <= 0.0)
+         return "EMA_VALUES_MISSING";
+      if(FiboEmaGapPoints(state) <= 1.0)
+         return "EMA_GAP_TOO_SMALL";
+      if(state.pafFiboEmaSlopeState == "FLAT")
+         return "EMA_SLOPE_FLAT";
+      if(state.pafFiboPriceVsEmaState == "BETWEEN")
+         return "PRICE_BETWEEN_EMAS";
+      if(state.pafFiboTrendAlignmentState == "CONFLICT")
+         return "TREND_ALIGNMENT_CONFLICT";
+      if(state.pafFiboPullbackSide == "UNKNOWN" || state.pafFiboPullbackSide == "NONE")
+         return "PULLBACK_SIDE_UNKNOWN";
+      return "INSUFFICIENT_BAR_CONTEXT";
+   }
+
+   string ZoneTouchState(const bool nearSupport, const bool nearResistance) const
+   {
+      if(nearSupport && nearResistance)
+         return "TOUCHED_BOTH";
+      if(nearSupport)
+         return "TOUCHED_SUPPORT";
+      if(nearResistance)
+         return "TOUCHED_RESISTANCE";
+      return "NO_TOUCH";
+   }
+
+   string RejectionCandleDirection(const SPAFDiagnosticState &state) const
+   {
+      if(state.pafCandleBodyDirection == "BULLISH_BODY")
+         return "BULLISH";
+      if(state.pafCandleBodyDirection == "BEARISH_BODY")
+         return "BEARISH";
+      if(state.pafCandleBodyDirection == "DOJI_BODY")
+         return "DOJI";
+      return "UNKNOWN";
+   }
+
+   string RejectionWickSide(const SPAFDiagnosticState &state) const
+   {
+      if(state.pafWickSide == "LOWER_WICK")
+         return "LOWER";
+      if(state.pafWickSide == "UPPER_WICK")
+         return "UPPER";
+      if(state.pafWickSide == "BALANCED_WICK")
+         return "BOTH";
+      return "UNKNOWN";
+   }
+
+   string ZoneDirectionGapReason(const SPAFDiagnosticState &state,
+                                 const bool nearSupport,
+                                 const bool nearResistance) const
+   {
+      if(state.classification != PAF_POSSIBLE_ZONE_REJECTION || state.pafDirectionIsUsableForFirstTouch)
+         return "NONE";
+      if(!nearSupport && !nearResistance)
+         return "ZONE_TOUCH_MISSING";
+      if(nearSupport && nearResistance)
+         return "TOUCHED_BOTH_SIDES";
+      if(state.pafRejectionCandleDirection == "DOJI")
+         return "REJECTION_CANDLE_DOJI";
+      if(state.rejectionWickRatio <= 0.0 || state.rejectionWickRatio < InpPAFRejectionWickBodyRatio)
+         return "WICK_TOO_SMALL";
+      if((nearSupport && state.pafRejectionCandleDirection == "BEARISH") ||
+         (nearResistance && state.pafRejectionCandleDirection == "BULLISH"))
+         return "BODY_DIRECTION_CONFLICT";
+      if((nearSupport && state.pafRejectionWickSide == "UPPER") ||
+         (nearResistance && state.pafRejectionWickSide == "LOWER"))
+         return "WICK_SIDE_CONFLICT";
+      if(state.pafZoneSide == "ZONE_UNKNOWN" || state.pafZoneSide == "OUTSIDE_ZONE")
+         return "ZONE_SIDE_UNKNOWN";
+      return "INSUFFICIENT_BAR_CONTEXT";
    }
 
    string ClassificationName(const EPAFDiagnosticClassification classification) const
@@ -482,6 +646,18 @@ private:
       state.pafTrendContext = TrendContext(state);
       state.pafCandleBodyDirection = CandleBodyDirection(state);
       state.pafWickSide = DominantWickSide(state, state.rejectionStrength);
+      double range = state.diagnosticHigh - state.diagnosticLow;
+      double body = MathAbs(state.diagnosticClose - state.diagnosticOpen);
+      double upperWick = state.diagnosticHigh - MathMax(state.diagnosticOpen, state.diagnosticClose);
+      double lowerWick = MathMin(state.diagnosticOpen, state.diagnosticClose) - state.diagnosticLow;
+      double maxWick = MathMax(upperWick, lowerWick);
+      state.rejectionBodyRatio = range > 0.0 ? body / range : 0.0;
+      state.rejectionWickRatio = range > 0.0 ? maxWick / range : 0.0;
+      state.pafFiboEmaSlopeState = FiboEmaSlopeState(state);
+      state.pafFiboPriceVsEmaState = FiboPriceVsEmaState(state);
+      state.pafFiboTrendAlignmentState = FiboTrendAlignmentState(state);
+      state.pafRejectionCandleDirection = RejectionCandleDirection(state);
+      state.pafRejectionWickSide = RejectionWickSide(state);
    }
 
    void DetermineDirectionContext(SPAFDiagnosticState &state,
@@ -496,6 +672,7 @@ private:
       state.pafDirectionConfidence = "NONE";
       state.pafDirectionIsUsableForFirstTouch = false;
       state.pafZoneSide = nearSupport && nearResistance ? "SUPPORT_AND_RESISTANCE" : (nearSupport ? "SUPPORT_ZONE" : (nearResistance ? "RESISTANCE_ZONE" : "OUTSIDE_ZONE"));
+      state.pafZoneTouchState = ZoneTouchState(nearSupport, nearResistance);
 
       if(state.swingHigh > state.swingLow)
          state.fiboZoneLevel = (state.swingHigh - state.diagnosticClose) / (state.swingHigh - state.swingLow) * 100.0;
@@ -552,6 +729,7 @@ private:
             state.pafDirectionConfidence = "MEDIUM";
             state.pafDirectionIsUsableForFirstTouch = true;
             state.pafRejectionSide = "BULLISH_REJECTION_SUPPORT";
+            state.pafZoneDirectionGapReason = "NONE";
             return;
          }
 
@@ -564,10 +742,12 @@ private:
             state.pafDirectionConfidence = "MEDIUM";
             state.pafDirectionIsUsableForFirstTouch = true;
             state.pafRejectionSide = "BEARISH_REJECTION_RESISTANCE";
+            state.pafZoneDirectionGapReason = "NONE";
             return;
          }
 
          state.directionReason = "zone_rejection_without_directional_candle_context";
+         state.pafZoneDirectionGapReason = ZoneDirectionGapReason(state, nearSupport, nearResistance);
          return;
       }
 
@@ -583,6 +763,8 @@ private:
             state.pafDirectionConfidence = state.pafTrendContext == "BULLISH_EMA_CONTEXT" ? "HIGH" : "MEDIUM";
             state.pafDirectionIsUsableForFirstTouch = true;
             state.pafPullbackSide = "BULLISH_PULLBACK";
+            state.pafFiboPullbackSide = "BUY_SIDE";
+            state.pafFiboDirectionGapReason = "NONE";
             return;
          }
 
@@ -596,11 +778,17 @@ private:
             state.pafDirectionConfidence = state.pafTrendContext == "BEARISH_EMA_CONTEXT" ? "HIGH" : "MEDIUM";
             state.pafDirectionIsUsableForFirstTouch = true;
             state.pafPullbackSide = "BEARISH_PULLBACK";
+            state.pafFiboPullbackSide = "SELL_SIDE";
+            state.pafFiboDirectionGapReason = "NONE";
             return;
          }
 
          state.directionReason = "fibo_pullback_without_clear_ema_direction_context";
       }
+
+      state.pafFiboPullbackSide = FiboPullbackSideState(state);
+      state.pafFiboDirectionGapReason = FiboDirectionGapReason(state, inFiboZone);
+      state.pafZoneDirectionGapReason = ZoneDirectionGapReason(state, nearSupport, nearResistance);
    }
 
    void EvaluateDiagnostics(const SRegimeState &regime)
@@ -736,13 +924,27 @@ public:
              " paf_direction_is_usable_for_first_touch=" + BoolText(m_lastDiagnostic.pafDirectionIsUsableForFirstTouch) +
              " paf_trend_context=" + m_lastDiagnostic.pafTrendContext +
              " paf_pullback_side=" + m_lastDiagnostic.pafPullbackSide +
+             " paf_fibo_ema_fast_value=" + DoubleToString(m_lastDiagnostic.emaFast, digits) +
+             " paf_fibo_ema_slow_value=" + DoubleToString(m_lastDiagnostic.emaSlow, digits) +
+             " paf_fibo_ema_gap_points=" + DoubleToString(FiboEmaGapPoints(m_lastDiagnostic), 2) +
+             " paf_fibo_ema_slope_state=" + m_lastDiagnostic.pafFiboEmaSlopeState +
+             " paf_fibo_price_vs_ema_state=" + m_lastDiagnostic.pafFiboPriceVsEmaState +
+             " paf_fibo_trend_alignment_state=" + m_lastDiagnostic.pafFiboTrendAlignmentState +
+             " paf_fibo_pullback_side=" + m_lastDiagnostic.pafFiboPullbackSide +
+             " paf_fibo_direction_gap_reason=" + m_lastDiagnostic.pafFiboDirectionGapReason +
              " paf_ema_fast_value=" + DoubleToString(m_lastDiagnostic.emaFast, digits) +
              " paf_ema_slow_value=" + DoubleToString(m_lastDiagnostic.emaSlow, digits) +
              " paf_ema_fast_slope=" + DoubleToString(m_lastDiagnostic.emaFastSlope, digits) +
              " paf_ema_slow_slope=" + DoubleToString(m_lastDiagnostic.emaSlowSlope, digits) +
              " paf_fibo_zone_level=" + DoubleToString(m_lastDiagnostic.fiboZoneLevel, 2) +
              " paf_zone_side=" + m_lastDiagnostic.pafZoneSide +
+             " paf_zone_touch_state=" + m_lastDiagnostic.pafZoneTouchState +
              " paf_rejection_side=" + m_lastDiagnostic.pafRejectionSide +
+             " paf_rejection_candle_direction=" + m_lastDiagnostic.pafRejectionCandleDirection +
+             " paf_rejection_wick_side=" + m_lastDiagnostic.pafRejectionWickSide +
+             " paf_rejection_body_ratio=" + DoubleToString(m_lastDiagnostic.rejectionBodyRatio, 4) +
+             " paf_rejection_wick_ratio=" + DoubleToString(m_lastDiagnostic.rejectionWickRatio, 4) +
+             " paf_zone_direction_gap_reason=" + m_lastDiagnostic.pafZoneDirectionGapReason +
              " paf_candle_body_direction=" + m_lastDiagnostic.pafCandleBodyDirection +
              " paf_wick_side=" + m_lastDiagnostic.pafWickSide +
              " paf_rejection_strength=" + DoubleToString(m_lastDiagnostic.rejectionStrength, 4) +

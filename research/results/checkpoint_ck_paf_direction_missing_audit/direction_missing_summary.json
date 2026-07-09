@@ -1,0 +1,62 @@
+{
+  "checkpoint": "CK",
+  "status": "PASS_OFFLINE_DIRECTION_MISSING_AUDIT",
+  "rows_read": 33,
+  "direction_missing_rows": 14,
+  "direction_missing_rate_percent": 42.42,
+  "root_cause_counts": {
+    "FIBO_PULLBACK_EMA_DIRECTION_CONTEXT_MISSING": 10,
+    "ZONE_REJECTION_CANDLE_DIRECTION_CONTEXT_MISSING": 4
+  },
+  "direction_reason_counts": {
+    "fibo_pullback_without_clear_ema_direction_context": 10,
+    "zone_rejection_without_directional_candle_context": 4
+  },
+  "classification_counts": {
+    "POSSIBLE_FIBO_PULLBACK": 10,
+    "POSSIBLE_ZONE_REJECTION": 4
+  },
+  "session_counts": {
+    "LONDON": 5,
+    "NEW_YORK": 5,
+    "OTHER": 3,
+    "OVERLAP": 1
+  },
+  "regime_counts": {
+    "trend": 11,
+    "breakout": 3
+  },
+  "day_counts": {
+    "2026.03.04": 8,
+    "2026.03.05": 3,
+    "2026.03.03": 2,
+    "2026.03.06": 1
+  },
+  "all_direction_bucket_counts": {
+    "NOT_DIRECTION_MISSING": 19,
+    "FIBO_PULLBACK_EMA_DIRECTION_CONTEXT_MISSING": 10,
+    "ZONE_REJECTION_CANDLE_DIRECTION_CONTEXT_MISSING": 4
+  },
+  "classification": "DIRECTION_COMPLETENESS_FAIL",
+  "recommended_next_step": "Create a diagnostics-only field plan for explicit PAF candidate direction metadata before changing EA/source.",
+  "guardrails": [
+    "offline files only",
+    "MT5 not run",
+    "Strategy Tester not run",
+    "EA source not changed",
+    "presets not changed",
+    "order logic not approved",
+    "optimization not performed",
+    "profitability not claimed"
+  ],
+  "input_csv": "research\\results\\checkpoint_ce_paf_first_touch_relabel\\paf_shadow_outcomes_first_touch_relabel.csv",
+  "outputs": {
+    "summary_json": "research\\results\\checkpoint_ck_paf_direction_missing_audit\\direction_missing_summary.json",
+    "summary_md": "research\\results\\checkpoint_ck_paf_direction_missing_audit\\direction_missing_summary.md",
+    "missing_rows_csv": "research\\results\\checkpoint_ck_paf_direction_missing_audit\\direction_missing_rows.csv",
+    "root_cause_counts_csv": "research\\results\\checkpoint_ck_paf_direction_missing_audit\\direction_missing_root_cause_counts.csv",
+    "classification_counts_csv": "research\\results\\checkpoint_ck_paf_direction_missing_audit\\direction_missing_by_classification.csv",
+    "session_counts_csv": "research\\results\\checkpoint_ck_paf_direction_missing_audit\\direction_missing_by_session.csv",
+    "guardrail_summary": "research\\results\\checkpoint_ck_paf_direction_missing_audit\\direction_missing_guardrail_summary.md"
+  }
+}

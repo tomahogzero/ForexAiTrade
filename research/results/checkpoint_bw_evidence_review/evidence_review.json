@@ -1,0 +1,38 @@
+{
+  "checkpoint": "BW",
+  "name": "PAF Gold H1 Evidence Review",
+  "offline_evidence_review_only": true,
+  "mt5_run_by_codex": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "validator_production_changed": false,
+  "joiner_run": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "evidence_files": {
+    "screenshot": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\screenshots\\GOLD_HASH_H1_gap_overview_20260302_20260313.png",
+    "csv": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\csv\\GOLD#_H1_202603020100_202603132200.csv"
+  },
+  "csv_review": {
+    "h1_confirmed": true,
+    "row_count": 230,
+    "coverage_from": "2026-03-02 01:00:00",
+    "coverage_to": "2026-03-13 22:00:00",
+    "gap_count": 9,
+    "weekend_market_closure_count": 1,
+    "daily_session_gap_candidate_count": 8,
+    "unknown_irregular_gap_count": 0
+  },
+  "evidence_decision": "EVIDENCE_ACCEPTED_FOR_POLICY_DRY_RUN_UPDATE",
+  "gate_status": {
+    "daily_session_gap_production_approval": "BLOCKED",
+    "dry_run_policy_update": "READY_FOR_NEXT_CHECKPOINT",
+    "joiner": "BLOCKED",
+    "production_validator_change": "BLOCKED",
+    "optimization": "BLOCKED",
+    "demo_live": "BLOCKED"
+  },
+  "next_checkpoint": "BX",
+  "next_checkpoint_recommendation": "Update the draft dry-run policy for GOLD# H1 daily session gaps and rerun the dry-run tool. Keep joiner blocked unless verdict becomes PASS."
+}

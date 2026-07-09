@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CR PAF direction gap explainability design:
+This AI memory has been refreshed during Checkpoint CS PAF direction explainability implementation approval:
 
-- `origin/main`: `2bc2350` (`Merge pull request #87 from tomahogzero/research/checkpoint-cq-paf-direction-completeness-review`)
+- `origin/main`: `12b3a4c` (`Merge pull request #88 from tomahogzero/research/checkpoint-cr-paf-direction-gap-explainability-design`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -123,6 +123,16 @@ This AI memory has been refreshed during Checkpoint CR PAF direction gap explain
 - CR keeps `NO_SETUP_DIRECTION_NOT_REQUIRED` out of the failure count.
 - CR keeps market orders, pending orders, position modification, baseline fallback, optimization, lot/risk increase, demo/live, and profitability interpretation blocked.
 - Recommended next safe step is Checkpoint CS diagnostics-only implementation approval or diagnostics-only implementation with compile verification. Any implementation must remain logging/parser-only and must not run MT5 without separate explicit approval.
+- PR #88 / Checkpoint CR PAF direction gap explainability design is merged.
+- Checkpoint CS is documentation/approval-only.
+- CS does not run MT5 / Strategy Tester.
+- CS does not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+- CS approves only a future diagnostics-only implementation scope for Checkpoint CT.
+- CT may edit only PAF diagnostic logging/parser/doc files, not presets/risk manager/trade execution/runner behavior.
+- CT must compile active EA if MQL5 changes and must produce `docs/verification/compile_after_checkpoint_CT.log` with `0 errors, 0 warnings`.
+- CT must not run MT5 without a separate explicit approval checkpoint.
+- CT must keep `SIGNAL_BUY`, `SIGNAL_SELL`, market orders, pending orders, position modification, baseline fallback, optimization, lot/risk increase, and profitability interpretation blocked.
+- Approval phrase for CT: `Approved to implement Checkpoint CT diagnostics-only PAF direction explainability fields with compile verification and no MT5 run.`
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

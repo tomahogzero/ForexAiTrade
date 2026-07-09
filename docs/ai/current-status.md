@@ -2,6 +2,92 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DM Refresh
+
+Checkpoint DM executed the exact approved diagnostic-only `GOLD#` H1 PAF/Fibo usable-direction coverage expansion after Checkpoint DP.
+
+- PR #112 / Checkpoint DP is merged on `origin/main`.
+- Current base for DM: `ae9bfdb`.
+- DM run id: `run_20260709_234906`.
+- DM used Strategy Tester only.
+- DM did not change EA/MQL5 source code.
+- DM did not change presets.
+- DM did not optimize.
+- DM did not add order logic.
+- DM did not increase lot/risk.
+- DM did not run demo/live forward testing.
+- DM does not claim profitability.
+
+Approved windows:
+
+- `2026-06-14` to `2026-06-21`
+- `2026-06-21` to `2026-06-28`
+- `2026-06-28` to `2026-07-05`
+
+DM execution result:
+
+- all 3 windows: `execution_status=PASS`
+- all 3 windows: report artifact `FOUND`
+- all 3 windows: `total_trades=0`
+- all 3 windows: PAF diagnostics `FOUND`
+- all 3 windows: forbidden action markers `0`
+- all 3 windows: baseline fallback markers `0`
+- spawned PIDs: `39980`, `20088`, `35272`
+- runner closed only process IDs it started
+
+DM added:
+
+- diagnostic rows: `290`
+- possible setup rows: `67`
+- usable direction rows: `41`
+- Fibo Pullback rows: `35`
+- Fibo usable first-touch rows: `26`
+- Fibo direction gap rows: `9`
+- Fibo SELL rows: `23`
+- Fibo BUY rows: `3`
+- Fibo DIRECTION_UNKNOWN rows: `9`
+
+Combined CV + CY + DB + DI + DM:
+
+- diagnostic windows: `18`
+- diagnostic rows: `1589`
+- possible setup rows: `451`
+- total usable direction rows: `290`
+- Fibo Pullback rows: `277`
+- Fibo usable first-touch rows: `210`
+- Fibo direction gap rows: `67`
+- Fibo SELL rows: `164`
+- Fibo BUY rows: `46`
+- Fibo DIRECTION_UNKNOWN rows: `67`
+
+DM gate decisions:
+
+- window count >= `12`: `PASS`
+- Fibo usable first-touch rows >= `150`: `PASS`
+- total usable direction rows >= `300`: `FAIL`
+- low-window weakness: `FAIL_HISTORICAL_WEAKNESS_REMAINS`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DM:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `91%`
+- PAF diagnostic interpretation readiness: `80%`
+- Fibo Pullback interpretation readiness: `81%`
+- PAF rule-candidate readiness: `62%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DN: artifact-only review of DM artifacts and combined CV + CY + DB + DI + DM coverage.
+- Do not run MT5 again automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DP Refresh
 
 Checkpoint DP is a documentation-only blocker/status checkpoint after Checkpoint DO.

@@ -2,6 +2,60 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DT Refresh
+
+Checkpoint DT is a documentation-only blocker/status checkpoint after Checkpoint DS-Prep.
+
+- PR #116 / Checkpoint DS-Prep is merged on `origin/main`.
+- Current base for DT: `321966e`.
+- DT does not run MT5 / Strategy Tester.
+- DT does not create an execution research matrix.
+- DT does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DT does not add market orders, pending orders, position modification, or order signals.
+- DT does not claim profitability.
+
+Current blocker:
+
+- `EXACT_DR_APPROVAL_PHRASE_MISSING`
+- Short continuation, combo, or PR-count requests do not approve Future DR execution.
+- Future DR remains blocked until the exact approval phrase from Checkpoint DQ is provided.
+
+Current combined status:
+
+- diagnostic windows: `18`
+- diagnostic rows: `1589`
+- possible setup rows: `451`
+- total usable direction rows: `290`
+- total usable direction shortfall: `10`
+- Fibo usable first-touch rows: `210`
+- total usable direction gate: `FAIL`
+- low-window weakness: `FAIL_HISTORICAL_WEAKNESS_REMAINS`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Future DR exact approval phrase remains:
+
+`Approved to execute Checkpoint DR diagnostic-only GOLD# H1 PAF/Fibo usable-direction top-up with Strategy Tester only, no optimization, no demo/live forward test, no EA or preset changes, no order logic, total trades must remain 0, using windows 2026-02-15 to 2026-02-22 and 2026-02-22 to 2026-03-01 with the official AK runner/parser workflow.`
+
+Current readiness estimate after DT:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `91%`
+- PAF diagnostic interpretation readiness: `83%`
+- Fibo Pullback interpretation readiness: `84%`
+- PAF rule-candidate readiness: `63%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Pause until the exact Future DR approval phrase is provided, or continue docs-only planning that does not run MT5.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DS-Prep Refresh
 
 Checkpoint DS-Prep is a documentation-only post-DR artifact review template.

@@ -1,0 +1,37 @@
+{
+  "checkpoint": "CV",
+  "run_id": "run_20260709_182444",
+  "case_id": "GOLD_HASH_H1_PAF_FIELD_PRESENCE_CV_cv_field_presence_20260301_20260308",
+  "symbol": "GOLD#",
+  "canonical_symbol": "GOLD",
+  "timeframe": "H1",
+  "date_from": "2026-03-01",
+  "date_to": "2026-03-08",
+  "compile_result": "0 errors, 0 warnings",
+  "execution_status": "PASS",
+  "report_artifact_status": "FOUND",
+  "total_trades": 0,
+  "paf_diagnostics_status": "FOUND",
+  "paf_diagnostic_count": 97,
+  "paf_authoritative_source": "ea_mirror.log",
+  "no_trade_confirmation": "PASS_FROM_REPORT_AND_EA_LOGS",
+  "baseline_fallback_confirmation": "PASS_FROM_EA_LOGS",
+  "paf_forbidden_action_marker_count": 0,
+  "paf_baseline_fallback_marker_count": 0,
+  "required_log_fields_present": true,
+  "required_parser_keys_present": true,
+  "classification_counts": {
+    "NO_SETUP": 64,
+    "POSSIBLE_FIBO_PULLBACK": 25,
+    "POSSIBLE_ZONE_REJECTION": 6,
+    "POSSIBLE_BREAK_RETEST": 2
+  },
+  "direction_gap_counts": {
+    "NO_SETUP_DIRECTION_NOT_REQUIRED": 64,
+    "USABLE_DIRECTION": 19,
+    "TREND_ALIGNMENT_CONFLICT": 9,
+    "WICK_TOO_SMALL": 4,
+    "PRICE_BETWEEN_EMAS": 1
+  },
+  "guardrail_interpretation": "Diagnostic-only field presence validation. No profitability claim and no order logic approval."
+}

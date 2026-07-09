@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CK PAF direction missing root-cause audit:
+This AI memory has been refreshed during Checkpoint CL PAF direction context field specification:
 
-- `origin/main`: `3b26f3e` (`Merge pull request #80 from tomahogzero/research/checkpoint-cj-paf-data-completeness-audit`)
+- `origin/main`: `ced3149` (`Merge pull request #81 from tomahogzero/research/checkpoint-ck-paf-direction-missing-root-cause`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -65,7 +65,10 @@ This AI memory has been refreshed during Checkpoint CK PAF direction missing roo
 - CK root causes:
   - `FIBO_PULLBACK_EMA_DIRECTION_CONTEXT_MISSING`: `10` rows
   - `ZONE_REJECTION_CANDLE_DIRECTION_CONTEXT_MISSING`: `4` rows
-- Recommended next safe step is a diagnostics-only direction field specification before any EA/source change.
+- Checkpoint CL defines diagnostics-only PAF direction context fields.
+- CL keeps implementation blocked and order logic blocked.
+- CL field groups: common direction fields, Fibo Pullback fields, Zone Rejection fields, Break Retest fields, validation rules, parser compatibility.
+- Recommended next safe step is a separate diagnostics-only implementation approval package if the user wants to proceed.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

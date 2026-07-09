@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BW PAF Gold H1 evidence review:
+This AI memory has been refreshed during Checkpoint BX PAF Gold H1 gap policy dry-run PASS:
 
-- `origin/main`: `9fc7eff` (`Merge pull request #66 from tomahogzero/research/checkpoint-bv-paf-gap-evidence-intake-preflight`)
+- `origin/main`: `43cd7d8` (`Merge pull request #67 from tomahogzero/research/checkpoint-bw-paf-gap-evidence-review`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -406,7 +406,11 @@ Known selected run:
 - Checkpoint BW confirmed the CSV is H1, with 230 rows from `2026-03-02 01:00:00` to `2026-03-13 22:00:00`.
 - Checkpoint BW found 9 gaps: 1 weekend market closure, 8 daily session gap candidates, and 0 unknown irregular gaps.
 - Checkpoint BW decision: `EVIDENCE_REVIEW_DONE`, `CSV_FOUND`, `CSV_CONFIRMED_H1`, `SCREENSHOT_FOUND`, `DAILY_SESSION_PATTERN_CONFIRMED_IN_CSV`, `UNKNOWN_IRREGULAR_GAPS_0`, `EVIDENCE_ACCEPTED_FOR_POLICY_DRY_RUN_UPDATE`, `JOINER_STILL_BLOCKED`, `VALIDATOR_PRODUCTION_NOT_CHANGED`, `MT5_NOT_RUN_BY_CODEX`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `86%`; PAF diagnostic readiness around `74%`; PAF shadow-outcome readiness around `71%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BX updated the `GOLD#` H1 dry-run policy draft only and reran `tools/paf_gap_policy_dry_run.py`.
+- Checkpoint BX dry-run result: `PASS`; accepted gaps `9/9`; `ACCEPTED_DAILY_BROKER_SESSION_GAP=8`; `ACCEPTED_WEEKEND_MARKET_CLOSURE=1`; blocking/review gaps `0`.
+- Checkpoint BX did not run MT5, did not run Strategy Tester, did not change EA/source code, did not change presets, did not change the production validator, and did not run joiner.
+- Checkpoint BX decision: `GAP_POLICY_DRY_RUN_PASS`, `DAILY_SESSION_DRY_RUN_RULE_ENABLED`, `ACCEPTED_DAILY_SESSION_GAPS_8`, `ACCEPTED_WEEKEND_MARKET_CLOSURE_1`, `BLOCKING_OR_REVIEW_GAPS_0`, `JOINER_POLICY_GATE_READY_FOR_REVIEW`, `PRODUCTION_VALIDATOR_NOT_CHANGED`, `JOINER_NOT_RUN`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `87%`; PAF diagnostic readiness around `75%`; PAF shadow-outcome readiness around `72%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -423,4 +427,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BW, the next safe step is Checkpoint BX: update only the dry-run policy draft for `GOLD#` H1 daily session gaps and rerun the offline dry-run tool. Do not run joiner until dry-run verdict becomes `PASS`.
+6. After Checkpoint BX, the next safe step is Checkpoint BY: create an approval package for a future offline joiner run. Do not run joiner until BY is reviewed and explicitly approved.

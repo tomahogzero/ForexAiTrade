@@ -1,12 +1,13 @@
 {
   "policy_name": "paf_gold_h1_gap_policy_draft",
-  "policy_status": "draft_review_required",
+  "policy_status": "draft_daily_session_gap_enabled_for_dry_run_only",
   "symbol": "GOLD#",
   "timeframe": "H1",
   "notes": [
     "This is a dry-run policy only.",
     "It does not change validator behavior.",
-    "Daily broker-session gaps remain review-required until explicitly approved in a later checkpoint."
+    "Daily broker-session gaps are enabled for dry-run only after Checkpoint BW manual evidence review.",
+    "This does not change production validator behavior and does not approve joiner by itself."
   ],
   "allowed_weekend_market_closure": {
     "enabled": true,
@@ -17,8 +18,8 @@
   "daily_session_gap_rules": [
     {
       "name": "gold_h1_daily_session_candidate",
-      "enabled": false,
-      "review_required": true,
+      "enabled": true,
+      "review_required": false,
       "max_delta_hours": 2.0,
       "allowed_prev_times": ["22:00:00", "23:00:00"],
       "allowed_next_times": ["00:00:00", "01:00:00"]

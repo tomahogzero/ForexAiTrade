@@ -1,12 +1,12 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-08
+Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CH PAF first-touch attribution interpretation:
+This AI memory has been refreshed during Checkpoint CI PAF data completeness plan:
 
-- `origin/main`: `51a392f` (`Merge pull request #77 from tomahogzero/research/checkpoint-cg-first-touch-attribution`)
+- `origin/main`: `d1c3ede` (`checkpoint-ch: interpret first-touch attribution`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -42,13 +42,19 @@ This AI memory has been refreshed during Checkpoint CH PAF first-touch attributi
 - PR #52 / Checkpoint BI PAF offline pipeline self-test is merged.
 - PR #53 / Checkpoint BJ PAF offline pipeline runner is merged.
 - PR #77 / Checkpoint CG PAF first-touch attribution is merged.
+- PR #78 / Checkpoint CH PAF first-touch attribution interpretation is merged.
 - Checkpoint CH interprets CG attribution as documentation only.
 - Current PAF classification remains `NOT_READY_FOR_ORDER_LOGIC`.
 - `POSSIBLE_FIBO_PULLBACK` is the largest class but is still `SL_FIRST_DOMINANT`.
 - `DIRECTION_MISSING` remains high: `14` of `33` rows.
 - Relabel-ready rows remain low: `17` rows.
 - Session, spread, and regime findings are diagnostic only and must not be converted into filters yet.
-- Recommended next safe step is data completeness work before order logic.
+- Checkpoint CI defines data completeness gates before any order logic:
+  - `direction_missing_rate <= 10%`
+  - `data_missing_rate <= 5%`
+  - `relabel_ready_rows >= 100` for diagnostic interpretation
+  - `relabel_ready_rows >= 300` before rule-candidate discussion
+- Recommended next safe step is a tooling-only completeness audit report.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

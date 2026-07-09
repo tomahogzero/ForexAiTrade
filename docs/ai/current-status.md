@@ -2,6 +2,93 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DI Refresh
+
+Checkpoint DI executed the exact approved diagnostic-only `GOLD#` H1 PAF/Fibo coverage expansion after Checkpoint DH.
+
+- PR #104 / Checkpoint DH is merged on `origin/main`.
+- Current base for DI: `597904b`.
+- DI run id: `run_20260709_225603`.
+- DI used Strategy Tester only.
+- DI did not change EA/MQL5 source code.
+- DI did not change presets.
+- DI did not optimize.
+- DI did not add order logic.
+- DI did not increase lot/risk.
+- DI did not run demo/live forward testing.
+- DI does not claim profitability.
+
+Approved windows:
+
+- `2026-04-26` to `2026-05-03`
+- `2026-05-03` to `2026-05-10`
+- `2026-05-10` to `2026-05-17`
+- `2026-05-17` to `2026-05-24`
+- `2026-05-24` to `2026-05-31`
+- `2026-05-31` to `2026-06-07`
+- `2026-06-07` to `2026-06-14`
+
+DI execution result:
+
+- all 7 windows: `execution_status=PASS`
+- all 7 windows: report artifact `FOUND`
+- all 7 windows: `total_trades=0`
+- all 7 windows: PAF diagnostics `FOUND`
+- all 7 windows: forbidden action markers `0`
+- all 7 windows: baseline fallback markers `0`
+
+DI totals:
+
+- diagnostic rows: `678`
+- possible setup rows: `210`
+- usable direction rows: `143`
+- Fibo Pullback rows: `114`
+- Fibo usable first-touch rows: `99`
+- Fibo direction gap rows: `15`
+- Fibo SELL rows: `88`
+- Fibo BUY rows: `11`
+- Fibo DIRECTION_UNKNOWN rows: `15`
+
+Combined CV + CY + DB + DI:
+
+- diagnostic windows: `15`
+- diagnostic rows: `1299`
+- possible setup rows: `384`
+- total usable direction rows: `249`
+- Fibo Pullback rows: `242`
+- Fibo usable first-touch rows: `184`
+- Fibo direction gap rows: `58`
+- Fibo SELL rows: `141`
+- Fibo BUY rows: `43`
+- Fibo DIRECTION_UNKNOWN rows: `58`
+
+DI gate decisions:
+
+- window count >= `12`: `PASS`
+- Fibo usable first-touch rows >= `150`: `PASS`
+- total usable direction rows >= `300`: `FAIL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DI:
+
+- Research infrastructure readiness: `94%`
+- PAF diagnostic pipeline readiness: `88%`
+- PAF diagnostic interpretation readiness: `69%`
+- Fibo Pullback interpretation readiness: `68%`
+- PAF rule-candidate readiness: `45%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DJ: artifact-only review of CV + CY + DB + DI.
+- Do not run MT5 again.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DH Refresh
 
 Checkpoint DH is a documentation-only approval plan for future diagnostic data coverage expansion after Checkpoint DG.

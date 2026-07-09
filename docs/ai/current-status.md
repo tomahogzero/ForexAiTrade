@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CN PAF direction context diagnostics implementation:
+This AI memory has been refreshed during Checkpoint CO PAF direction context diagnostic validation approval:
 
-- `origin/main`: `a1d989d` (`checkpoint-cm: approve diagnostics-only direction implementation plan`)
+- `origin/main`: `c74296b` (`Merge pull request #84 from tomahogzero/research/checkpoint-cn-paf-direction-diagnostics-implementation`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -79,7 +79,12 @@ This AI memory has been refreshed during Checkpoint CN PAF direction context dia
 - CN compile result: `0 errors, 0 warnings`.
 - CN does not run MT5 / Strategy Tester.
 - CN does not prove direction completeness improvement yet; a future separately approved diagnostic run is required.
-- Recommended next safe step is GPT/Codex review of CN, then a separate approval package for one diagnostic validation run if CN is merged.
+- PR #84 / Checkpoint CN PAF direction context diagnostics implementation is merged.
+- Checkpoint CO creates an approval package for a future one-run diagnostic validation of CN fields.
+- CO is documentation-only and does not run MT5 / Strategy Tester.
+- CO keeps execution blocked until the user explicitly approves the future Checkpoint CP run.
+- CO requires future validation to prove `paf_*` fields appear in EA mirror logs and parser outputs before any direction completeness interpretation.
+- Recommended next safe step after CO merge is either review CO, or if approved by the user, run exactly one Checkpoint CP diagnostic validation with the specified approval phrase.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

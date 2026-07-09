@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BY PAF offline joiner approval package:
+This AI memory has been refreshed during Checkpoint BZ PAF offline joiner run:
 
-- `origin/main`: `238f82e` (`Merge pull request #68 from tomahogzero/research/checkpoint-bx-paf-gap-policy-pass-dry-run`)
+- `origin/main`: `0173f3e` (`Merge pull request #69 from tomahogzero/research/checkpoint-by-paf-offline-joiner-approval`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -414,7 +414,11 @@ Known selected run:
 - Checkpoint BY did not run MT5, did not run Strategy Tester, did not change EA/source code, did not change presets, did not change the production validator, and did not run joiner.
 - Checkpoint BY decision: `OFFLINE_JOINER_APPROVAL_PACKAGE_CREATED`, `JOINER_NOT_RUN`, `FUTURE_JOINER_SCOPE_DEFINED`, `BX_DRY_RUN_PASS_REQUIRED`, `PRODUCTION_VALIDATOR_NOT_CHANGED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
 - Checkpoint BY required approval phrase for future execution: `Approved to execute Checkpoint BZ offline PAF joiner for GOLD# H1 using BX PASS gap policy and offline files only.`
-- Current progress estimate: research-system readiness around `88%`; PAF diagnostic readiness around `75%`; PAF shadow-outcome readiness around `73%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BZ received explicit approval and ran offline normalization plus offline PAF lookahead joiner.
+- Checkpoint BZ result: normalization `PASS`; rows normalized `230`; shadow rows `33`; joined rows `19`; direction missing rows `14`; first-touch labels still unavailable because ATR is missing.
+- Checkpoint BZ did not run MT5, did not run Strategy Tester, did not change EA/source code, did not change presets, did not change the production validator, did not send orders, and did not optimize.
+- Checkpoint BZ decision: `BZ_OFFLINE_JOINER_EXECUTED`, `NORMALIZATION_PASS`, `JOINER_OUTPUT_CREATED`, `JOINED_ROWS_19`, `DIRECTION_MISSING_ROWS_14`, `ATR_MISSING_LIMITATION`, `FIRST_TOUCH_LABELS_NOT_AVAILABLE_YET`, `MFE_MAE_CONTEXT_AVAILABLE`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `89%`; PAF diagnostic readiness around `76%`; PAF shadow-outcome readiness around `74%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -431,4 +435,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BY, the next safe step is Checkpoint BZ only if the user explicitly approves the offline joiner run with the required phrase. Otherwise, joiner remains blocked.
+6. After Checkpoint BZ, the next safe step is Checkpoint CA: plan ATR enrichment/data-completeness before interpreting lookahead outcomes. Do not claim profitability from BZ because first-touch labels are still unavailable.

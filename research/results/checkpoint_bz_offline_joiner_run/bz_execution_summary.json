@@ -1,0 +1,43 @@
+{
+  "checkpoint": "BZ",
+  "name": "PAF Offline Joiner Run",
+  "approval_phrase_received": true,
+  "offline_joiner_run": true,
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "production_validator_changed": false,
+  "orders_sent": false,
+  "position_modified": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "normalization": {
+    "verdict": "PASS",
+    "rows_before": 230,
+    "rows_after": 230,
+    "invalid_rows": 0
+  },
+  "joiner": {
+    "rows": 33,
+    "joined": 19,
+    "direction_missing": 14,
+    "outcome_label_limitation": "atr is missing or invalid",
+    "first_touch_labels_available": false,
+    "mfe_mae_context_available": true
+  },
+  "decision": [
+    "BZ_OFFLINE_JOINER_EXECUTED",
+    "NORMALIZATION_PASS",
+    "JOINER_OUTPUT_CREATED",
+    "JOINED_ROWS_19",
+    "DIRECTION_MISSING_ROWS_14",
+    "ATR_MISSING_LIMITATION",
+    "FIRST_TOUCH_LABELS_NOT_AVAILABLE_YET",
+    "MFE_MAE_CONTEXT_AVAILABLE",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_PROFITABILITY_CLAIM"
+  ],
+  "next_checkpoint": "CA",
+  "next_checkpoint_recommendation": "Plan ATR enrichment/data-completeness before interpreting lookahead outcomes."
+}

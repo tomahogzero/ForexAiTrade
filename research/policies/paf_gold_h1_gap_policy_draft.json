@@ -1,0 +1,27 @@
+{
+  "policy_name": "paf_gold_h1_gap_policy_draft",
+  "policy_status": "draft_review_required",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "notes": [
+    "This is a dry-run policy only.",
+    "It does not change validator behavior.",
+    "Daily broker-session gaps remain review-required until explicitly approved in a later checkpoint."
+  ],
+  "allowed_weekend_market_closure": {
+    "enabled": true,
+    "max_delta_hours": 72,
+    "allowed_prev_weekdays": ["Friday"],
+    "allowed_next_weekdays": ["Monday"]
+  },
+  "daily_session_gap_rules": [
+    {
+      "name": "gold_h1_daily_session_candidate",
+      "enabled": false,
+      "review_required": true,
+      "max_delta_hours": 2.0,
+      "allowed_prev_times": ["22:00:00", "23:00:00"],
+      "allowed_next_times": ["00:00:00", "01:00:00"]
+    }
+  ]
+}

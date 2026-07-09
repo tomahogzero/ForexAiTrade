@@ -47,6 +47,29 @@ BASELINE_FALLBACK_MARKERS = (
     "Selected strategy",
 )
 
+PAF_DIRECTION_FIELDS = (
+    "paf_candidate_direction",
+    "paf_direction_source",
+    "paf_direction_confidence",
+    "paf_direction_reason",
+    "paf_direction_is_usable_for_first_touch",
+    "paf_trend_context",
+    "paf_pullback_side",
+    "paf_ema_fast_value",
+    "paf_ema_slow_value",
+    "paf_ema_fast_slope",
+    "paf_ema_slow_slope",
+    "paf_fibo_zone_level",
+    "paf_zone_side",
+    "paf_rejection_side",
+    "paf_candle_body_direction",
+    "paf_wick_side",
+    "paf_rejection_strength",
+    "paf_break_direction",
+    "paf_retest_side",
+    "paf_break_level",
+)
+
 
 def read_text(path: Path) -> str:
     if not path.exists():
@@ -70,6 +93,32 @@ def parse_key_values(body: str) -> dict[str, str]:
         value = match.group("value").strip()
         values[key] = value
     return values
+
+
+def direction_from_context(context: str) -> str:
+    if context == "BUY_CONTEXT":
+        return "BUY"
+    if context == "SELL_CONTEXT":
+        return "SELL"
+    return "DIRECTION_UNKNOWN"
+
+
+def normalize_diagnostic_fields(fields: dict[str, str]) -> dict[str, str]:
+    """Keep old logs usable while preferring the newer diagnostics-only fields."""
+    if "paf_candidate_direction" not in fields:
+        fields["paf_candidate_direction"] = direction_from_context(fields.get("direction_context", ""))
+    if "paf_direction_reason" not in fields and "direction_reason" in fields:
+        fields["paf_direction_reason"] = fields["direction_reason"]
+    if "paf_direction_source" not in fields:
+        fields["paf_direction_source"] = "LEGACY_DIRECTION_CONTEXT"
+    if "paf_direction_confidence" not in fields:
+        fields["paf_direction_confidence"] = "LEGACY" if fields.get("paf_candidate_direction") in {"BUY", "SELL"} else "NONE"
+    if "paf_direction_is_usable_for_first_touch" not in fields:
+        fields["paf_direction_is_usable_for_first_touch"] = "true" if fields.get("paf_candidate_direction") in {"BUY", "SELL"} else "false"
+
+    for key in PAF_DIRECTION_FIELDS:
+        fields.setdefault(key, "")
+    return fields
 
 
 def to_float(value: Any) -> float | None:
@@ -117,6 +166,7 @@ def extract_diagnostics(text: str) -> tuple[list[dict[str, Any]], list[dict[str,
         diag_match = DIAG_RE.match(line.strip())
         if diag_match:
             fields = parse_key_values(diag_match.group("body"))
+            fields = normalize_diagnostic_fields(fields)
             diagnostics.append({"time": diag_match.group("time"), **fields})
             continue
 
@@ -175,6 +225,15 @@ def parse_case_dir(case_dir: Path) -> dict[str, Any]:
         "tester_excerpt_no_trade_count": len(tester_no_trades),
         "classification_counts": counter_dict([row.get("classification") for row in diagnostics]),
         "regime_counts": counter_dict([row.get("regime") for row in diagnostics]),
+        "paf_candidate_direction_counts": counter_dict([row.get("paf_candidate_direction") for row in diagnostics]),
+        "paf_direction_source_counts": counter_dict([row.get("paf_direction_source") for row in diagnostics]),
+        "paf_direction_confidence_counts": counter_dict([row.get("paf_direction_confidence") for row in diagnostics]),
+        "paf_trend_context_counts": counter_dict([row.get("paf_trend_context") for row in diagnostics]),
+        "paf_zone_side_counts": counter_dict([row.get("paf_zone_side") for row in diagnostics]),
+        "paf_rejection_side_counts": counter_dict([row.get("paf_rejection_side") for row in diagnostics]),
+        "paf_pullback_side_counts": counter_dict([row.get("paf_pullback_side") for row in diagnostics]),
+        "paf_break_direction_counts": counter_dict([row.get("paf_break_direction") for row in diagnostics]),
+        "paf_first_touch_usable_counts": counter_dict([row.get("paf_direction_is_usable_for_first_touch") for row in diagnostics]),
         "no_trade_reason_counts": counter_dict([row.get("reason") for row in no_trades]),
         "spread_stats": summarize_numbers(spreads),
         "forbidden_action_marker_count": sum(forbidden_hits.values()),
@@ -220,6 +279,21 @@ def write_case_outputs(case_dir: Path, summary: dict[str, Any]) -> None:
     ]
     for name, count in summary.get("regime_counts", {}).items():
         lines.append(f"| `{name}` | {count} |")
+    lines += [
+        "",
+        "## Direction Context Counts",
+        "",
+        "| Field | Value | Count |",
+        "|---|---|---:|",
+    ]
+    for field in (
+        "paf_candidate_direction_counts",
+        "paf_direction_source_counts",
+        "paf_direction_confidence_counts",
+        "paf_first_touch_usable_counts",
+    ):
+        for name, count in summary.get(field, {}).items():
+            lines.append(f"| `{field.replace('_counts', '')}` | `{name}` | {count} |")
     lines += [
         "",
         "## No-Trade Reason Counts",
@@ -291,6 +365,10 @@ def flatten(summary: dict[str, Any]) -> dict[str, Any]:
         "baseline_fallback_confirmation": summary.get("baseline_fallback_confirmation"),
         "classification_counts": json.dumps(summary.get("classification_counts", {}), ensure_ascii=False),
         "regime_counts": json.dumps(summary.get("regime_counts", {}), ensure_ascii=False),
+        "paf_candidate_direction_counts": json.dumps(summary.get("paf_candidate_direction_counts", {}), ensure_ascii=False),
+        "paf_direction_source_counts": json.dumps(summary.get("paf_direction_source_counts", {}), ensure_ascii=False),
+        "paf_direction_confidence_counts": json.dumps(summary.get("paf_direction_confidence_counts", {}), ensure_ascii=False),
+        "paf_first_touch_usable_counts": json.dumps(summary.get("paf_first_touch_usable_counts", {}), ensure_ascii=False),
     }
 
 

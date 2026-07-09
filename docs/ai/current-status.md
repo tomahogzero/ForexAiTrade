@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CM PAF direction diagnostics implementation approval:
+This AI memory has been refreshed during Checkpoint CN PAF direction context diagnostics implementation:
 
-- `origin/main`: `e648f86` (`checkpoint-cl: define paf direction context fields`)
+- `origin/main`: `a1d989d` (`checkpoint-cm: approve diagnostics-only direction implementation plan`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -72,7 +72,14 @@ This AI memory has been refreshed during Checkpoint CM PAF direction diagnostics
 - CM does not implement code.
 - CM keeps MT5 execution blocked unless separately approved.
 - CM requires guardrail grep/check summaries and compile verification if MQL5 changes in future CN.
-- Recommended next safe step is CN diagnostics-only implementation of PAF direction context fields, if approved.
+- Checkpoint CN implements diagnostics-only PAF direction context fields in source and parser.
+- CN keeps `Evaluate()` diagnostic-only and does not emit trade signals.
+- CN adds `paf_*` fields for candidate direction, direction source, confidence, EMA trend context, fibo pullback context, zone rejection context, and break/retest context.
+- CN updates `tools/paf_diagnostic_parser.py` to normalize new fields and remain compatible with legacy logs.
+- CN compile result: `0 errors, 0 warnings`.
+- CN does not run MT5 / Strategy Tester.
+- CN does not prove direction completeness improvement yet; a future separately approved diagnostic run is required.
+- Recommended next safe step is GPT/Codex review of CN, then a separate approval package for one diagnostic validation run if CN is merged.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

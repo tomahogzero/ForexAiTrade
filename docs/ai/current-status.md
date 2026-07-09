@@ -4,7 +4,7 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CO PAF direction context diagnostic validation approval:
+This AI memory has been refreshed during Checkpoint CP PAF direction context diagnostic validation execution:
 
 - `origin/main`: `c74296b` (`Merge pull request #84 from tomahogzero/research/checkpoint-cn-paf-direction-diagnostics-implementation`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
@@ -84,7 +84,23 @@ This AI memory has been refreshed during Checkpoint CO PAF direction context dia
 - CO is documentation-only and does not run MT5 / Strategy Tester.
 - CO keeps execution blocked until the user explicitly approves the future Checkpoint CP run.
 - CO requires future validation to prove `paf_*` fields appear in EA mirror logs and parser outputs before any direction completeness interpretation.
-- Recommended next safe step after CO merge is either review CO, or if approved by the user, run exactly one Checkpoint CP diagnostic validation with the specified approval phrase.
+- PR #85 / Checkpoint CO PAF direction context diagnostic validation approval is merged.
+- Checkpoint CP executed exactly one approved Strategy Tester diagnostic validation run.
+- CP RunId: `run_20260709_155948`.
+- CP scope: `GOLD#` H1, `2026-03-01` to `2026-03-08`, Strategy Tester only, one run only.
+- CP execution status: `PASS`.
+- CP report artifact status: `FOUND`.
+- CP total trades: `0`.
+- CP PAF diagnostic count: `97`.
+- CP confirms all Checkpoint CN `paf_*` direction context fields appear on all 97 diagnostic lines.
+- CP no-trade confirmation: `PASS_FROM_REPORT_AND_EA_LOGS`.
+- CP baseline fallback confirmation: `PASS_FROM_EA_LOGS`.
+- CP forbidden action marker count: `0`.
+- CP baseline fallback marker count: `0`.
+- CP direction summary: `DIRECTION_UNKNOWN=78`, `SELL=10`, `BUY=9`.
+- CP first-touch usable summary: `false=78`, `true=19`.
+- CP proves diagnostic field logging works, but it does not prove profitability and does not approve order logic.
+- Recommended next safe step is Checkpoint CQ artifact review / direction completeness analysis. Do not add market orders, pending orders, optimization, or demo/live testing.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

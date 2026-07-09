@@ -1,0 +1,31 @@
+{
+  "checkpoint": "BU",
+  "name": "PAF Gold H1 Gap Evidence Collection Guide",
+  "documentation_only": true,
+  "mt5_run_by_codex": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "validator_production_changed": false,
+  "joiner_run": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "evidence_status": "WAITING_FOR_USER_EVIDENCE",
+  "required_evidence": [
+    "GOLD# H1 chart screenshots around the five daily gaps",
+    "longer GOLD# H1 CSV export, ideally 2026-02-01 to 2026-04-01",
+    "timestamp step confirmation showing H1, not M1",
+    "optional GOLD# symbol/session specification screenshots",
+    "manual notes documenting terminal, account type, symbol, timeframe, export date, and server time if known"
+  ],
+  "recommended_folder": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\",
+  "gate_status": {
+    "daily_session_gap_approval": "BLOCKED",
+    "joiner": "BLOCKED",
+    "production_validator_change": "BLOCKED",
+    "optimization": "BLOCKED",
+    "demo_live": "BLOCKED"
+  },
+  "next_checkpoint": "BV",
+  "next_checkpoint_recommendation": "Review returned manual evidence before approving any daily session gap policy."
+}

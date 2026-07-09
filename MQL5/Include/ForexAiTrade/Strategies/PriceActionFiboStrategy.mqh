@@ -40,10 +40,27 @@ struct SPAFDiagnosticState
    double atr;
    double emaFast;
    double emaSlow;
+   double emaFastSlope;
+   double emaSlowSlope;
    double bbWidthPercent;
+   double fiboZoneLevel;
+   double rejectionStrength;
+   double breakLevel;
    string fiboLevels;
    string directionContext;
    string directionReason;
+   string pafCandidateDirection;
+   string pafDirectionSource;
+   string pafDirectionConfidence;
+   bool pafDirectionIsUsableForFirstTouch;
+   string pafTrendContext;
+   string pafPullbackSide;
+   string pafZoneSide;
+   string pafRejectionSide;
+   string pafCandleBodyDirection;
+   string pafWickSide;
+   string pafBreakDirection;
+   string pafRetestSide;
    string reason;
    EPAFDiagnosticClassification classification;
 };
@@ -74,10 +91,27 @@ void ResetPAFDiagnosticState(SPAFDiagnosticState &state)
    state.atr = 0.0;
    state.emaFast = 0.0;
    state.emaSlow = 0.0;
+   state.emaFastSlope = 0.0;
+   state.emaSlowSlope = 0.0;
    state.bbWidthPercent = 0.0;
+   state.fiboZoneLevel = 0.0;
+   state.rejectionStrength = 0.0;
+   state.breakLevel = 0.0;
    state.fiboLevels = "";
    state.directionContext = "DIRECTION_UNKNOWN";
    state.directionReason = "not evaluated";
+   state.pafCandidateDirection = "DIRECTION_UNKNOWN";
+   state.pafDirectionSource = "NONE";
+   state.pafDirectionConfidence = "NONE";
+   state.pafDirectionIsUsableForFirstTouch = false;
+   state.pafTrendContext = "TREND_UNKNOWN";
+   state.pafPullbackSide = "PULLBACK_UNKNOWN";
+   state.pafZoneSide = "ZONE_UNKNOWN";
+   state.pafRejectionSide = "REJECTION_UNKNOWN";
+   state.pafCandleBodyDirection = "CANDLE_UNKNOWN";
+   state.pafWickSide = "WICK_UNKNOWN";
+   state.pafBreakDirection = "BREAK_UNKNOWN";
+   state.pafRetestSide = "RETEST_UNKNOWN";
    state.reason = "not evaluated";
    state.classification = PAF_NO_SETUP;
 }
@@ -91,6 +125,41 @@ private:
    string BoolText(const bool value) const
    {
       return value ? "true" : "false";
+   }
+
+   string CandleBodyDirection(const SPAFDiagnosticState &state) const
+   {
+      if(state.diagnosticClose > state.diagnosticOpen)
+         return "BULLISH_BODY";
+      if(state.diagnosticClose < state.diagnosticOpen)
+         return "BEARISH_BODY";
+      return "DOJI_BODY";
+   }
+
+   string DominantWickSide(const SPAFDiagnosticState &state, double &strength) const
+   {
+      double body = MathMax(MathAbs(state.diagnosticClose - state.diagnosticOpen), m_market.PointValue());
+      double upperWick = state.diagnosticHigh - MathMax(state.diagnosticOpen, state.diagnosticClose);
+      double lowerWick = MathMin(state.diagnosticOpen, state.diagnosticClose) - state.diagnosticLow;
+      double maxWick = MathMax(upperWick, lowerWick);
+      strength = body > 0.0 ? maxWick / body : 0.0;
+
+      if(upperWick > lowerWick)
+         return "UPPER_WICK";
+      if(lowerWick > upperWick)
+         return "LOWER_WICK";
+      return "BALANCED_WICK";
+   }
+
+   string TrendContext(const SPAFDiagnosticState &state) const
+   {
+      if(state.emaFast <= 0.0 || state.emaSlow <= 0.0)
+         return "TREND_UNKNOWN";
+      if(state.emaFast >= state.emaSlow && state.emaFastSlope >= 0.0 && state.emaSlowSlope >= 0.0)
+         return "BULLISH_EMA_CONTEXT";
+      if(state.emaFast <= state.emaSlow && state.emaFastSlope <= 0.0 && state.emaSlowSlope <= 0.0)
+         return "BEARISH_EMA_CONTEXT";
+      return "MIXED_EMA_CONTEXT";
    }
 
    string ClassificationName(const EPAFDiagnosticClassification classification) const
@@ -405,7 +474,14 @@ private:
       state.atr = atr;
       state.emaFast = m_market.FastEma(1);
       state.emaSlow = m_market.SlowEma(1);
+      double priorFastEma = m_market.FastEma(2);
+      double priorSlowEma = m_market.SlowEma(2);
+      state.emaFastSlope = (state.emaFast > 0.0 && priorFastEma > 0.0) ? state.emaFast - priorFastEma : 0.0;
+      state.emaSlowSlope = (state.emaSlow > 0.0 && priorSlowEma > 0.0) ? state.emaSlow - priorSlowEma : 0.0;
       state.bbWidthPercent = regime.bbWidthPercent;
+      state.pafTrendContext = TrendContext(state);
+      state.pafCandleBodyDirection = CandleBodyDirection(state);
+      state.pafWickSide = DominantWickSide(state, state.rejectionStrength);
    }
 
    void DetermineDirectionContext(SPAFDiagnosticState &state,
@@ -415,6 +491,27 @@ private:
    {
       state.directionContext = "DIRECTION_UNKNOWN";
       state.directionReason = "direction not required for current classification";
+      state.pafCandidateDirection = "DIRECTION_UNKNOWN";
+      state.pafDirectionSource = "NONE";
+      state.pafDirectionConfidence = "NONE";
+      state.pafDirectionIsUsableForFirstTouch = false;
+      state.pafZoneSide = nearSupport && nearResistance ? "SUPPORT_AND_RESISTANCE" : (nearSupport ? "SUPPORT_ZONE" : (nearResistance ? "RESISTANCE_ZONE" : "OUTSIDE_ZONE"));
+
+      if(state.swingHigh > state.swingLow)
+         state.fiboZoneLevel = (state.swingHigh - state.diagnosticClose) / (state.swingHigh - state.swingLow) * 100.0;
+
+      if(state.diagnosticClose > state.swingHigh)
+      {
+         state.pafBreakDirection = "BREAK_UP";
+         state.pafRetestSide = "PRIOR_SWING_HIGH";
+         state.breakLevel = state.swingHigh;
+      }
+      else if(state.diagnosticClose < state.swingLow)
+      {
+         state.pafBreakDirection = "BREAK_DOWN";
+         state.pafRetestSide = "PRIOR_SWING_LOW";
+         state.breakLevel = state.swingLow;
+      }
 
       if(state.classification == PAF_POSSIBLE_BREAK_RETEST)
       {
@@ -422,6 +519,10 @@ private:
          {
             state.directionContext = "BUY_CONTEXT";
             state.directionReason = "break_retest_above_prior_swing_high";
+            state.pafCandidateDirection = "BUY";
+            state.pafDirectionSource = "BREAK_RETEST";
+            state.pafDirectionConfidence = "HIGH";
+            state.pafDirectionIsUsableForFirstTouch = true;
             return;
          }
 
@@ -429,6 +530,10 @@ private:
          {
             state.directionContext = "SELL_CONTEXT";
             state.directionReason = "break_retest_below_prior_swing_low";
+            state.pafCandidateDirection = "SELL";
+            state.pafDirectionSource = "BREAK_RETEST";
+            state.pafDirectionConfidence = "HIGH";
+            state.pafDirectionIsUsableForFirstTouch = true;
             return;
          }
 
@@ -442,6 +547,11 @@ private:
          {
             state.directionContext = "BUY_CONTEXT";
             state.directionReason = "bullish_rejection_from_support_zone";
+            state.pafCandidateDirection = "BUY";
+            state.pafDirectionSource = "ZONE_REJECTION";
+            state.pafDirectionConfidence = "MEDIUM";
+            state.pafDirectionIsUsableForFirstTouch = true;
+            state.pafRejectionSide = "BULLISH_REJECTION_SUPPORT";
             return;
          }
 
@@ -449,6 +559,11 @@ private:
          {
             state.directionContext = "SELL_CONTEXT";
             state.directionReason = "bearish_rejection_from_resistance_zone";
+            state.pafCandidateDirection = "SELL";
+            state.pafDirectionSource = "ZONE_REJECTION";
+            state.pafDirectionConfidence = "MEDIUM";
+            state.pafDirectionIsUsableForFirstTouch = true;
+            state.pafRejectionSide = "BEARISH_REJECTION_RESISTANCE";
             return;
          }
 
@@ -463,6 +578,11 @@ private:
          {
             state.directionContext = "BUY_CONTEXT";
             state.directionReason = "fibo_pullback_with_bullish_ema_context";
+            state.pafCandidateDirection = "BUY";
+            state.pafDirectionSource = "FIBO_PULLBACK_EMA";
+            state.pafDirectionConfidence = state.pafTrendContext == "BULLISH_EMA_CONTEXT" ? "HIGH" : "MEDIUM";
+            state.pafDirectionIsUsableForFirstTouch = true;
+            state.pafPullbackSide = "BULLISH_PULLBACK";
             return;
          }
 
@@ -471,6 +591,11 @@ private:
          {
             state.directionContext = "SELL_CONTEXT";
             state.directionReason = "fibo_pullback_with_bearish_ema_context";
+            state.pafCandidateDirection = "SELL";
+            state.pafDirectionSource = "FIBO_PULLBACK_EMA";
+            state.pafDirectionConfidence = state.pafTrendContext == "BEARISH_EMA_CONTEXT" ? "HIGH" : "MEDIUM";
+            state.pafDirectionIsUsableForFirstTouch = true;
+            state.pafPullbackSide = "BEARISH_PULLBACK";
             return;
          }
 
@@ -604,6 +729,26 @@ public:
              " fibo_zone=" + DoubleToString(m_lastDiagnostic.fiboLow, digits) + "-" + DoubleToString(m_lastDiagnostic.fiboHigh, digits) +
              " direction_context=" + m_lastDiagnostic.directionContext +
              " direction_reason=" + m_lastDiagnostic.directionReason +
+             " paf_candidate_direction=" + m_lastDiagnostic.pafCandidateDirection +
+             " paf_direction_source=" + m_lastDiagnostic.pafDirectionSource +
+             " paf_direction_confidence=" + m_lastDiagnostic.pafDirectionConfidence +
+             " paf_direction_reason=" + m_lastDiagnostic.directionReason +
+             " paf_direction_is_usable_for_first_touch=" + BoolText(m_lastDiagnostic.pafDirectionIsUsableForFirstTouch) +
+             " paf_trend_context=" + m_lastDiagnostic.pafTrendContext +
+             " paf_pullback_side=" + m_lastDiagnostic.pafPullbackSide +
+             " paf_ema_fast_value=" + DoubleToString(m_lastDiagnostic.emaFast, digits) +
+             " paf_ema_slow_value=" + DoubleToString(m_lastDiagnostic.emaSlow, digits) +
+             " paf_ema_fast_slope=" + DoubleToString(m_lastDiagnostic.emaFastSlope, digits) +
+             " paf_ema_slow_slope=" + DoubleToString(m_lastDiagnostic.emaSlowSlope, digits) +
+             " paf_fibo_zone_level=" + DoubleToString(m_lastDiagnostic.fiboZoneLevel, 2) +
+             " paf_zone_side=" + m_lastDiagnostic.pafZoneSide +
+             " paf_rejection_side=" + m_lastDiagnostic.pafRejectionSide +
+             " paf_candle_body_direction=" + m_lastDiagnostic.pafCandleBodyDirection +
+             " paf_wick_side=" + m_lastDiagnostic.pafWickSide +
+             " paf_rejection_strength=" + DoubleToString(m_lastDiagnostic.rejectionStrength, 4) +
+             " paf_break_direction=" + m_lastDiagnostic.pafBreakDirection +
+             " paf_retest_side=" + m_lastDiagnostic.pafRetestSide +
+             " paf_break_level=" + DoubleToString(m_lastDiagnostic.breakLevel, digits) +
              " entry_reference_price=" + DoubleToString(m_lastDiagnostic.entryReferencePrice, digits) +
              " bar_open=" + DoubleToString(m_lastDiagnostic.diagnosticOpen, digits) +
              " bar_high=" + DoubleToString(m_lastDiagnostic.diagnosticHigh, digits) +

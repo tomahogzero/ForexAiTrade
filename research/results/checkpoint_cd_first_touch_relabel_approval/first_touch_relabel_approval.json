@@ -1,0 +1,73 @@
+{
+  "checkpoint": "CD",
+  "name": "PAF Offline First-Touch Relabel Approval Package",
+  "approval_package_only": true,
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "production_validator_changed": false,
+  "first_touch_relabel_run": false,
+  "r_multiple_computed": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "source_checkpoint": "CC",
+  "source_status": "PASS_OFFLINE_ATR_ENRICHMENT",
+  "source_counts": {
+    "bars_read": 230,
+    "event_rows": 33,
+    "events_with_valid_offline_atr_14": 17,
+    "events_missing_atr": 2,
+    "direction_missing_rows": 14,
+    "unknown_irregular_gaps": 0
+  },
+  "future_checkpoint": "CE",
+  "future_action_allowed": "offline_first_touch_relabel_only",
+  "future_inputs": [
+    "research/results/checkpoint_cc_offline_atr_enrichment/paf_shadow_outcomes_atr_enriched.csv",
+    "research/results/checkpoint_bz_offline_joiner_run/paf_lookahead_bars.csv",
+    "research/results/checkpoint_cc_offline_atr_enrichment/offline_atr_enrichment_summary.json"
+  ],
+  "future_outputs_proposed": [
+    "research/results/checkpoint_ce_paf_first_touch_relabel/paf_shadow_outcomes_first_touch_relabel.csv",
+    "research/results/checkpoint_ce_paf_first_touch_relabel/first_touch_relabel_summary.json",
+    "research/results/checkpoint_ce_paf_first_touch_relabel/first_touch_relabel_summary.md",
+    "research/results/checkpoint_ce_paf_first_touch_relabel/first_touch_relabel_by_horizon.csv",
+    "research/results/checkpoint_ce_paf_first_touch_relabel/first_touch_relabel_guardrail_summary.md"
+  ],
+  "required_atr_column": "offline_atr_14",
+  "tp_atr_multiple": 1.5,
+  "sl_atr_multiple": 1.0,
+  "horizons": [6, 12, 24, 48],
+  "allowed_outcome_labels": [
+    "TP_FIRST",
+    "SL_FIRST",
+    "NO_RESOLUTION",
+    "AMBIGUOUS_SAME_BAR",
+    "DATA_MISSING",
+    "DIRECTION_MISSING"
+  ],
+  "blocked_until_future_checkpoint": [
+    "first_touch_relabel_execution",
+    "r_multiple_computation",
+    "profitability_interpretation",
+    "mt5_strategy_tester",
+    "ea_source_changes",
+    "preset_changes",
+    "optimization"
+  ],
+  "decision": [
+    "FIRST_TOUCH_RELABEL_APPROVAL_PACKAGE_CREATED",
+    "OFFLINE_ATR_14_REQUIRED",
+    "ATR_READY_ROWS_ONLY_FOR_RELABEL",
+    "DIRECTION_MISSING_STAYS_BLOCKED",
+    "ATR_MISSING_STAYS_DATA_MISSING",
+    "SAME_BAR_AMBIGUITY_REQUIRED",
+    "NO_OPTIMIZATION_APPROVED",
+    "MT5_NOT_RUN",
+    "STRATEGY_TESTER_NOT_RUN",
+    "EA_SOURCE_NOT_CHANGED",
+    "PRESETS_NOT_CHANGED",
+    "NO_PROFITABILITY_CLAIM"
+  ]
+}

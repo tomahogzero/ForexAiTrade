@@ -1,0 +1,48 @@
+{
+  "checkpoint": "DG",
+  "type": "artifact_only_interpretation",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "input_checkpoint": "DF",
+  "fibo_rows": 128,
+  "fibo_usable_first_touch_rows": 85,
+  "fibo_direction_gap_rows": 43,
+  "fibo_usable_first_touch_share": 0.664,
+  "fibo_direction_gap_share": 0.336,
+  "direction_counts": {
+    "SELL": 53,
+    "BUY": 32,
+    "DIRECTION_UNKNOWN": 43
+  },
+  "gap_reason_counts": {
+    "PRICE_BETWEEN_EMAS": 28,
+    "TREND_ALIGNMENT_CONFLICT": 15
+  },
+  "window_count": 8,
+  "forbidden_action_marker_count": 0,
+  "baseline_fallback_marker_count": 0,
+  "gate_decisions": {
+    "fibo_row_level_slice_exists": "PASS",
+    "fibo_usable_rows_min_150": "FAIL",
+    "window_count_min_12": "FAIL",
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL"
+  },
+  "verdicts": [
+    "FIBO_DIAGNOSTIC_CONTEXT_IMPROVING",
+    "FIBO_USABLE_ROWS_STILL_INSUFFICIENT",
+    "FIBO_DIRECTION_GAPS_REMAIN_MATERIAL",
+    "FIBO_WINDOW_COVERAGE_STILL_INSUFFICIENT",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DH diagnostic-only data coverage expansion plan/approval package"
+}
+

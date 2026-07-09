@@ -2,6 +2,86 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DN Refresh
+
+Checkpoint DN is an artifact-only review of Checkpoint DM and the combined CV + CY + DB + DI + DM diagnostic set.
+
+- PR #113 / Checkpoint DM is merged on `origin/main`.
+- Current base for DN: `e899131`.
+- DN uses committed artifacts only.
+- DN does not run MT5 / Strategy Tester.
+- DN does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DN does not add market orders, pending orders, position modification, or order signals.
+- DN does not claim profitability.
+
+DN execution-safety review:
+
+- DM run id: `run_20260709_234906`
+- all 3 DM windows: `execution_status=PASS`
+- all 3 DM windows: report artifact `FOUND`
+- all 3 DM windows: `total_trades=0`
+- all 3 DM windows: PAF diagnostics `FOUND`
+- forbidden action markers: `0`
+- baseline fallback markers: `0`
+- runner stopped only spawned PIDs: `39980`, `20088`, `35272`
+
+Combined CV + CY + DB + DI + DM:
+
+- diagnostic windows: `18`
+- diagnostic rows: `1589`
+- possible setup rows: `451`
+- total usable direction rows: `290`
+- Fibo Pullback rows: `277`
+- Fibo usable first-touch rows: `210`
+- Fibo direction gap rows: `67`
+- Fibo SELL rows: `164`
+- Fibo BUY rows: `46`
+- Fibo DIRECTION_UNKNOWN rows: `67`
+- Fibo `PRICE_BETWEEN_EMAS` gaps: `43`
+- Fibo `TREND_ALIGNMENT_CONFLICT` gaps: `24`
+
+DN direction distribution review:
+
+- Pre-DM usable Fibo: SELL `141`, BUY `43`
+- DM-only usable Fibo: SELL `23`, BUY `3`
+- Combined usable Fibo: SELL `164`, BUY `46`
+- Distribution remains SELL-heavy but is not approved as a trading bias.
+
+DN gap attribution review:
+
+- Pre-DM Fibo gap share: `58 / 242 = 24.0%`
+- DM-only Fibo gap share: `9 / 35 = 25.7%`
+- Combined Fibo gap share: `67 / 277 = 24.2%`
+- Fibo gaps remain material and are not approved as trading filters.
+
+DN gate decisions:
+
+- window count >= `12`: `PASS`
+- Fibo usable first-touch rows >= `150`: `PASS`
+- total usable direction rows >= `300`: `FAIL` (`290 / 300`, short `10`)
+- low-window weakness: `FAIL_HISTORICAL_WEAKNESS_REMAINS`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DN:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `91%`
+- PAF diagnostic interpretation readiness: `82%`
+- Fibo Pullback interpretation readiness: `84%`
+- PAF rule-candidate readiness: `63%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DQ: docs-only approval package for a small diagnostic-only coverage top-up if more usable direction rows are desired.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DM Refresh
 
 Checkpoint DM executed the exact approved diagnostic-only `GOLD#` H1 PAF/Fibo usable-direction coverage expansion after Checkpoint DP.

@@ -1,0 +1,72 @@
+{
+  "checkpoint": "CE",
+  "status": "PASS_OFFLINE_FIRST_TOUCH_RELABEL",
+  "events_csv": "research\\results\\checkpoint_cc_offline_atr_enrichment\\paf_shadow_outcomes_atr_enriched.csv",
+  "bars_csv": "research\\results\\checkpoint_bz_offline_joiner_run\\paf_lookahead_bars.csv",
+  "rows_read": 33,
+  "relabel_ready_rows": 17,
+  "data_missing_rows": 2,
+  "direction_missing_rows": 14,
+  "relabel_status_counts": {
+    "DATA_MISSING": 2,
+    "DIRECTION_MISSING": 14,
+    "RELABEL_READY": 17
+  },
+  "required_atr_column": "offline_atr_14",
+  "tp_atr_multiple": 1.5,
+  "sl_atr_multiple": 1.0,
+  "horizons": [
+    6,
+    12,
+    24,
+    48
+  ],
+  "outcome_counts_by_horizon": {
+    "6": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14,
+      "NO_RESOLUTION": 2,
+      "SL_FIRST": 9,
+      "TP_FIRST": 5
+    },
+    "12": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14,
+      "SL_FIRST": 10,
+      "TP_FIRST": 6
+    },
+    "24": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14,
+      "SL_FIRST": 10,
+      "TP_FIRST": 6
+    },
+    "48": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14,
+      "SL_FIRST": 10,
+      "TP_FIRST": 6
+    }
+  },
+  "outputs": {
+    "relabeled_csv": "research\\results\\checkpoint_ce_paf_first_touch_relabel\\paf_shadow_outcomes_first_touch_relabel.csv",
+    "summary_json": "research\\results\\checkpoint_ce_paf_first_touch_relabel\\first_touch_relabel_summary.json",
+    "summary_md": "research\\results\\checkpoint_ce_paf_first_touch_relabel\\first_touch_relabel_summary.md",
+    "by_horizon_csv": "research\\results\\checkpoint_ce_paf_first_touch_relabel\\first_touch_relabel_by_horizon.csv",
+    "guardrail_md": "research\\results\\checkpoint_ce_paf_first_touch_relabel\\first_touch_relabel_guardrail_summary.md"
+  },
+  "guardrails": [
+    "offline files only",
+    "no MT5 run",
+    "no Strategy Tester run",
+    "no EA/source changes",
+    "no preset changes",
+    "no orders",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

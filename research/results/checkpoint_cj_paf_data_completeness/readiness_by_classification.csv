@@ -1,0 +1,4 @@
+classification,rows,relabel_ready_rows,direction_missing_rows,data_missing_rows,horizon_context_missing_rows,partial_horizon_context_rows,required_fields_missing_rows,rows_with_missing_required,rows_with_missing_recommended,relabel_ready_rate_percent
+POSSIBLE_FIBO_PULLBACK,25,15,10,0,0,0,0,0,10,60.0
+POSSIBLE_ZONE_REJECTION,6,2,4,0,0,0,0,0,4,33.33
+POSSIBLE_BREAK_RETEST,2,0,0,2,0,0,0,0,2,0.0

@@ -1,0 +1,64 @@
+{
+  "run_id": "run_20260709_155948",
+  "case_id": "GOLD_HASH_H1_PAF_DIRECTION_CONTEXT_CP_cp_direction_validate_20260301_20260308",
+  "diagnostic_count": 97,
+  "classification_counts": {
+    "POSSIBLE_BREAK_RETEST": 2,
+    "NO_SETUP": 64,
+    "POSSIBLE_FIBO_PULLBACK": 25,
+    "POSSIBLE_ZONE_REJECTION": 6
+  },
+  "candidate_direction_counts": {
+    "BUY": 9,
+    "DIRECTION_UNKNOWN": 78,
+    "SELL": 10
+  },
+  "direction_source_counts": {
+    "BREAK_RETEST": 2,
+    "NONE": 78,
+    "FIBO_PULLBACK_EMA": 15,
+    "ZONE_REJECTION": 2
+  },
+  "first_touch_usable_counts": {
+    "true": 19,
+    "false": 78
+  },
+  "direction_analysis_bucket_counts": {
+    "USABLE_DIRECTION": 19,
+    "NO_SETUP_DIRECTION_NOT_REQUIRED": 64,
+    "FIBO_PULLBACK_EMA_DIRECTION_CONTEXT_MISSING": 10,
+    "ZONE_REJECTION_CANDLE_DIRECTION_CONTEXT_MISSING": 4
+  },
+  "bucket_by_classification": {
+    "NO_SETUP": {
+      "NO_SETUP_DIRECTION_NOT_REQUIRED": 64
+    },
+    "POSSIBLE_BREAK_RETEST": {
+      "USABLE_DIRECTION": 2
+    },
+    "POSSIBLE_FIBO_PULLBACK": {
+      "USABLE_DIRECTION": 15,
+      "FIBO_PULLBACK_EMA_DIRECTION_CONTEXT_MISSING": 10
+    },
+    "POSSIBLE_ZONE_REJECTION": {
+      "ZONE_REJECTION_CANDLE_DIRECTION_CONTEXT_MISSING": 4,
+      "USABLE_DIRECTION": 2
+    }
+  },
+  "direction_source_by_classification": {
+    "NO_SETUP": {
+      "NONE": 64
+    },
+    "POSSIBLE_BREAK_RETEST": {
+      "BREAK_RETEST": 2
+    },
+    "POSSIBLE_FIBO_PULLBACK": {
+      "FIBO_PULLBACK_EMA": 15,
+      "NONE": 10
+    },
+    "POSSIBLE_ZONE_REJECTION": {
+      "NONE": 4,
+      "ZONE_REJECTION": 2
+    }
+  }
+}

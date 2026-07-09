@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CV PAF field presence validation execution:
+This AI memory has been refreshed during Checkpoint CY PAF multi-window field stability execution:
 
-- `origin/main`: `656580e` (`Merge pull request #91 from tomahogzero/research/checkpoint-cu-paf-field-presence-validation-approval`)
+- `origin/main`: `6969779` (`Merge pull request #92 from tomahogzero/research/checkpoint-cv-paf-field-presence-validation`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -175,6 +175,22 @@ This AI memory has been refreshed during Checkpoint CV PAF field presence valida
 - CV does not prove profitability, setup quality, entry quality, exit quality, drawdown safety, forward-test readiness, or order-logic readiness.
 - PAF remains `NOT_READY_FOR_ORDER_LOGIC`.
 - Recommended next safe step is Checkpoint CW artifact review / interpretation of CV field-presence results. Do not add order logic, do not optimize, do not increase lot/risk, and do not run demo/live.
+- Checkpoint CY executed exactly the approved multi-window diagnostic-only Strategy Tester run.
+- CY RunId: `run_20260709_202415`.
+- CY scope: `GOLD#` H1, windows `2026-03-08` to `2026-03-15`, `2026-03-15` to `2026-03-22`, and `2026-03-22` to `2026-03-29`.
+- CY compile result: `0 errors, 0 warnings`.
+- CY execution result:
+  - W1: `PASS`, report `FOUND`, trades `0`, diagnostics `74`, forbidden markers `0`, baseline fallback markers `0`
+  - W2: `PASS`, report `FOUND`, trades `0`, diagnostics `72`, forbidden markers `0`, baseline fallback markers `0`
+  - W3: `PASS`, report `FOUND`, trades `0`, diagnostics `31`, forbidden markers `0`, baseline fallback markers `0`
+- CY confirms CT field presence and parser gap summaries in all three windows.
+- CY verdicts:
+  - `FIELD_PRESENCE_CONFIRMED_ALL_WINDOWS`
+  - `NO_TRADE_CONFIRMED_ALL_WINDOWS`
+  - `DIRECTION_GAP_STABILITY_INCONCLUSIVE_LOW_SAMPLE`
+  - `PAF_NOT_READY_FOR_ORDER_LOGIC`
+- CY does not prove profitability and does not approve order logic.
+- Recommended next safe step is Checkpoint CZ artifact review / data sufficiency decision using CV+CY artifacts only, with no MT5 run unless separately approved.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

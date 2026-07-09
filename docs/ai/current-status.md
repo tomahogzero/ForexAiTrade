@@ -2,6 +2,71 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DH Refresh
+
+Checkpoint DH is a documentation-only approval plan for future diagnostic data coverage expansion after Checkpoint DG.
+
+- PR #103 / Checkpoint DG is merged on `origin/main`.
+- Current base for DH: `da70c1a`.
+- DH does not run MT5 / Strategy Tester.
+- DH does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DH does not add market orders, pending orders, position modification, or order signals.
+- DH does not claim profitability.
+
+Checkpoint DH keeps PAF / Price Action Fibo diagnostic-only:
+
+- Fibo Pullback rows: `128`
+- Fibo usable first-touch rows: `85`
+- Fibo direction gap rows: `43`
+- usable first-touch share: `66.4%`
+- direction gap share: `33.6%`
+- SELL rows: `53`
+- BUY rows: `32`
+- DIRECTION_UNKNOWN rows: `43`
+- current diagnostic windows: `8`
+
+DH gate decisions:
+
+- Fibo usable first-touch rows >= `150`: `FAIL`
+- window count >= `12`: `FAIL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+DH defines a future Checkpoint DI approval scope only. Proposed consecutive `GOLD#` H1 diagnostic-only windows:
+
+- `2026-04-26` to `2026-05-03`
+- `2026-05-03` to `2026-05-10`
+- `2026-05-10` to `2026-05-17`
+- `2026-05-17` to `2026-05-24`
+- `2026-05-24` to `2026-05-31`
+- `2026-05-31` to `2026-06-07`
+- `2026-06-07` to `2026-06-14`
+
+This would target `15` total windows and move Fibo usable first-touch rows from `85` toward `150+`. It is not optimization and not a profitability test.
+
+Future DI remains blocked until this exact phrase is provided:
+
+`Approved to execute Checkpoint DI diagnostic-only GOLD# H1 PAF/Fibo coverage expansion with Strategy Tester only, no optimization, no demo/live forward test, no EA or preset changes, no order logic, total trades must remain 0, using windows 2026-04-26 to 2026-05-03, 2026-05-03 to 2026-05-10, 2026-05-10 to 2026-05-17, 2026-05-17 to 2026-05-24, 2026-05-24 to 2026-05-31, 2026-05-31 to 2026-06-07, and 2026-06-07 to 2026-06-14 with the official AK runner/parser workflow.`
+
+Current readiness estimate after DH:
+
+- Research infrastructure readiness: `93%`
+- PAF diagnostic pipeline readiness: `87%`
+- PAF diagnostic interpretation readiness: `66%`
+- Fibo Pullback interpretation readiness: `62%`
+- PAF rule-candidate readiness: `36%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Review DH.
+- Do not run MT5 unless the exact DI approval phrase is provided later.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DG Refresh
 
 Checkpoint DG interprets the Checkpoint DF row-level Fibo Pullback slice.

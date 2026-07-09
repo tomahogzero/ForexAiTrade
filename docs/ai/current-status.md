@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CF PAF first-touch diagnostic interpretation:
+This AI memory has been refreshed during Checkpoint CG PAF first-touch attribution:
 
-- `origin/main`: `4043a23` (`Merge pull request #75 from tomahogzero/research/checkpoint-ce-first-touch-relabel`)
+- `origin/main`: `2c370d1` (`Merge pull request #76 from tomahogzero/research/checkpoint-cf-first-touch-diagnostic-interpretation`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -247,6 +247,12 @@ Known selected run:
 - Checkpoint CF finding: relabel-ready sample size is only `17` rows, too small for strategy approval.
 - Checkpoint CF classification: `NOT_READY_FOR_ORDER_LOGIC`.
 - Checkpoint CF recommended next step: Checkpoint CG diagnostic attribution by classification/session/spread/regime only.
+- Checkpoint CG adds `tools/paf_first_touch_attribution.py` and dry-runs attribution by `classification`, `session_bucket`, `spread_bucket`, and `regime`.
+- Checkpoint CG result: `PASS_OFFLINE_FIRST_TOUCH_ATTRIBUTION`.
+- Checkpoint CG finding: `POSSIBLE_FIBO_PULLBACK` is the largest class and is `SL_FIRST_DOMINANT` in every horizon.
+- Checkpoint CG finding: `POSSIBLE_ZONE_REJECTION` has only 2 relabel-ready rows, too small to conclude.
+- Checkpoint CG finding: `ASIA` and `OVERLAP` show SL-first concentration in the current tiny sample; `LONDON` and `NEW_YORK` must not be converted into filters yet.
+- Checkpoint CG classification remains `NOT_READY_FOR_ORDER_LOGIC`.
 - Checkpoint AS decision: `SHADOW_OUTCOME_SPEC_DEFINED`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
 - Checkpoint AS requires deterministic entry references, explicit direction handling, pre-registered SL/TP/lookahead hypotheses, conservative same-bar ambiguity handling, and bucketed summaries by classification/regime/spread/volatility/session/window.
 - Checkpoint AS does not implement a parser and does not run MT5.

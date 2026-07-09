@@ -1,0 +1,42 @@
+{
+  "checkpoint": "DA",
+  "type": "approval_package_only",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "input_checkpoint": "CZ",
+  "cz_counts": {
+    "total_diagnostic_rows": 274,
+    "possible_setup_rows": 91,
+    "usable_direction_rows": 63,
+    "diagnostic_interpretation_gate": 100,
+    "rule_candidate_gate": 300
+  },
+  "decision": [
+    "APPROVAL_PACKAGE_CREATED",
+    "FUTURE_DB_EXECUTION_BLOCKED_UNTIL_EXPLICIT_APPROVAL",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "future_db_scope": {
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "windows": [
+      "2026-03-29 to 2026-04-05",
+      "2026-04-05 to 2026-04-12",
+      "2026-04-12 to 2026-04-19",
+      "2026-04-19 to 2026-04-26"
+    ],
+    "strategy_tester_only": true,
+    "diagnostics_only": true,
+    "no_market_orders": true,
+    "no_pending_orders": true,
+    "no_position_modification": true,
+    "no_optimization": true,
+    "no_profitability_interpretation": true
+  },
+  "future_approval_phrase": "Approved to execute Checkpoint DB PAF diagnostic data collection expansion with symbol GOLD# timeframe H1 windows 2026-03-29 to 2026-04-05, 2026-04-05 to 2026-04-12, 2026-04-12 to 2026-04-19, and 2026-04-19 to 2026-04-26 using official AK runner/parser workflow."
+}

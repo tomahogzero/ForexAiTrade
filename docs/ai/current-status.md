@@ -640,3 +640,46 @@ Recommended next action:
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
 6. After Checkpoint CA, the next safe step is Checkpoint CB: create an approval package for offline ATR enrichment. Do not compute or interpret first-touch outcomes until ATR enrichment is reviewed and approved.
+
+## Checkpoint DA Refresh
+
+This section refreshes the latest known mainline status after PR #96.
+
+- `origin/main`: `30f6feb36ca17bfb548114e12e14a7f160da10f4`
+- PR #96 / Checkpoint CZ PAF data sufficiency review is merged.
+- Checkpoint CZ reviewed existing CV + CY artifacts only.
+- CZ combined counts:
+  - total diagnostic rows: `274`
+  - possible setup rows: `91`
+  - usable direction rows: `63`
+  - diagnostic interpretation gate: `100`
+  - rule-candidate gate: `300`
+- CZ decision: `DATA_SUFFICIENCY_FAIL_LOW_USABLE_DIRECTION`.
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`.
+
+Checkpoint DA creates a documentation-only approval package for future Checkpoint DB data collection expansion.
+
+DA does not run MT5 / Strategy Tester. DA does not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+
+Future DB remains blocked until explicit user approval. Proposed DB windows:
+
+- `2026-03-29` to `2026-04-05`
+- `2026-04-05` to `2026-04-12`
+- `2026-04-12` to `2026-04-19`
+- `2026-04-19` to `2026-04-26`
+
+Current progress estimate after DA:
+
+- Research infrastructure readiness: around `91%`
+- PAF diagnostic readiness: around `79%`
+- PAF data sufficiency toward diagnostic interpretation: `63%` of the 100 usable-row gate
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Current safe recommendation:
+
+1. Do not optimize.
+2. Do not add order logic.
+3. Do not increase lot/risk.
+4. Do not claim profitability.
+5. Do not run DB until the exact Checkpoint DB approval phrase is provided.

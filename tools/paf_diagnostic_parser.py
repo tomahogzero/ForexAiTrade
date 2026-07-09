@@ -55,13 +55,27 @@ PAF_DIRECTION_FIELDS = (
     "paf_direction_is_usable_for_first_touch",
     "paf_trend_context",
     "paf_pullback_side",
+    "paf_fibo_ema_fast_value",
+    "paf_fibo_ema_slow_value",
+    "paf_fibo_ema_gap_points",
+    "paf_fibo_ema_slope_state",
+    "paf_fibo_price_vs_ema_state",
+    "paf_fibo_trend_alignment_state",
+    "paf_fibo_pullback_side",
+    "paf_fibo_direction_gap_reason",
     "paf_ema_fast_value",
     "paf_ema_slow_value",
     "paf_ema_fast_slope",
     "paf_ema_slow_slope",
     "paf_fibo_zone_level",
     "paf_zone_side",
+    "paf_zone_touch_state",
     "paf_rejection_side",
+    "paf_rejection_candle_direction",
+    "paf_rejection_wick_side",
+    "paf_rejection_body_ratio",
+    "paf_rejection_wick_ratio",
+    "paf_zone_direction_gap_reason",
     "paf_candle_body_direction",
     "paf_wick_side",
     "paf_rejection_strength",
@@ -116,9 +130,33 @@ def normalize_diagnostic_fields(fields: dict[str, str]) -> dict[str, str]:
     if "paf_direction_is_usable_for_first_touch" not in fields:
         fields["paf_direction_is_usable_for_first_touch"] = "true" if fields.get("paf_candidate_direction") in {"BUY", "SELL"} else "false"
 
+    fields.setdefault("paf_fibo_ema_fast_value", fields.get("paf_ema_fast_value", ""))
+    fields.setdefault("paf_fibo_ema_slow_value", fields.get("paf_ema_slow_value", ""))
+    fields.setdefault("paf_fibo_pullback_side", fields.get("paf_pullback_side", "UNKNOWN"))
+    fields.setdefault("paf_fibo_direction_gap_reason", "NONE")
+    fields.setdefault("paf_zone_touch_state", "UNKNOWN")
+    fields.setdefault("paf_rejection_candle_direction", fields.get("paf_candle_body_direction", "UNKNOWN"))
+    fields.setdefault("paf_rejection_wick_side", fields.get("paf_wick_side", "UNKNOWN"))
+    fields.setdefault("paf_zone_direction_gap_reason", "NONE")
+
     for key in PAF_DIRECTION_FIELDS:
         fields.setdefault(key, "")
     return fields
+
+
+def direction_gap_bucket(row: dict[str, Any]) -> str:
+    classification = row.get("classification")
+    usable = str(row.get("paf_direction_is_usable_for_first_touch", "")).lower() == "true"
+    candidate = row.get("paf_candidate_direction")
+    if usable or candidate in {"BUY", "SELL"}:
+        return "USABLE_DIRECTION"
+    if classification == "NO_SETUP":
+        return "NO_SETUP_DIRECTION_NOT_REQUIRED"
+    if classification == "POSSIBLE_FIBO_PULLBACK":
+        return str(row.get("paf_fibo_direction_gap_reason") or "FIBO_PULLBACK_DIRECTION_CONTEXT_MISSING")
+    if classification == "POSSIBLE_ZONE_REJECTION":
+        return str(row.get("paf_zone_direction_gap_reason") or "ZONE_REJECTION_DIRECTION_CONTEXT_MISSING")
+    return "DIRECTION_NOT_USABLE"
 
 
 def to_float(value: Any) -> float | None:
@@ -230,8 +268,18 @@ def parse_case_dir(case_dir: Path) -> dict[str, Any]:
         "paf_direction_confidence_counts": counter_dict([row.get("paf_direction_confidence") for row in diagnostics]),
         "paf_trend_context_counts": counter_dict([row.get("paf_trend_context") for row in diagnostics]),
         "paf_zone_side_counts": counter_dict([row.get("paf_zone_side") for row in diagnostics]),
+        "paf_zone_touch_state_counts": counter_dict([row.get("paf_zone_touch_state") for row in diagnostics]),
         "paf_rejection_side_counts": counter_dict([row.get("paf_rejection_side") for row in diagnostics]),
+        "paf_rejection_candle_direction_counts": counter_dict([row.get("paf_rejection_candle_direction") for row in diagnostics]),
+        "paf_rejection_wick_side_counts": counter_dict([row.get("paf_rejection_wick_side") for row in diagnostics]),
         "paf_pullback_side_counts": counter_dict([row.get("paf_pullback_side") for row in diagnostics]),
+        "paf_fibo_ema_slope_state_counts": counter_dict([row.get("paf_fibo_ema_slope_state") for row in diagnostics]),
+        "paf_fibo_price_vs_ema_state_counts": counter_dict([row.get("paf_fibo_price_vs_ema_state") for row in diagnostics]),
+        "paf_fibo_trend_alignment_state_counts": counter_dict([row.get("paf_fibo_trend_alignment_state") for row in diagnostics]),
+        "paf_fibo_pullback_side_counts": counter_dict([row.get("paf_fibo_pullback_side") for row in diagnostics]),
+        "paf_fibo_direction_gap_reason_counts": counter_dict([row.get("paf_fibo_direction_gap_reason") for row in diagnostics]),
+        "paf_zone_direction_gap_reason_counts": counter_dict([row.get("paf_zone_direction_gap_reason") for row in diagnostics]),
+        "paf_direction_gap_bucket_counts": counter_dict([direction_gap_bucket(row) for row in diagnostics]),
         "paf_break_direction_counts": counter_dict([row.get("paf_break_direction") for row in diagnostics]),
         "paf_first_touch_usable_counts": counter_dict([row.get("paf_direction_is_usable_for_first_touch") for row in diagnostics]),
         "no_trade_reason_counts": counter_dict([row.get("reason") for row in no_trades]),
@@ -291,6 +339,20 @@ def write_case_outputs(case_dir: Path, summary: dict[str, Any]) -> None:
         "paf_direction_source_counts",
         "paf_direction_confidence_counts",
         "paf_first_touch_usable_counts",
+    ):
+        for name, count in summary.get(field, {}).items():
+            lines.append(f"| `{field.replace('_counts', '')}` | `{name}` | {count} |")
+    lines += [
+        "",
+        "## Direction Gap Explainability",
+        "",
+        "| Field | Value | Count |",
+        "|---|---|---:|",
+    ]
+    for field in (
+        "paf_direction_gap_bucket_counts",
+        "paf_fibo_direction_gap_reason_counts",
+        "paf_zone_direction_gap_reason_counts",
     ):
         for name, count in summary.get(field, {}).items():
             lines.append(f"| `{field.replace('_counts', '')}` | `{name}` | {count} |")
@@ -369,6 +431,9 @@ def flatten(summary: dict[str, Any]) -> dict[str, Any]:
         "paf_direction_source_counts": json.dumps(summary.get("paf_direction_source_counts", {}), ensure_ascii=False),
         "paf_direction_confidence_counts": json.dumps(summary.get("paf_direction_confidence_counts", {}), ensure_ascii=False),
         "paf_first_touch_usable_counts": json.dumps(summary.get("paf_first_touch_usable_counts", {}), ensure_ascii=False),
+        "paf_fibo_direction_gap_reason_counts": json.dumps(summary.get("paf_fibo_direction_gap_reason_counts", {}), ensure_ascii=False),
+        "paf_zone_direction_gap_reason_counts": json.dumps(summary.get("paf_zone_direction_gap_reason_counts", {}), ensure_ascii=False),
+        "paf_direction_gap_bucket_counts": json.dumps(summary.get("paf_direction_gap_bucket_counts", {}), ensure_ascii=False),
     }
 
 
@@ -396,6 +461,20 @@ def write_aggregate_outputs(results_root: Path, summaries: list[dict[str, Any]])
             f"{summary.get('diagnostic_count')} | {summary.get('no_trade_count')} | "
             f"{summary.get('total_trades')} | {summary.get('forbidden_action_marker_count')} | "
             f"{summary.get('baseline_fallback_marker_count')} |"
+        )
+    lines += [
+        "",
+        "## Direction Gap Explainability",
+        "",
+        "| Case | Gap buckets | Fibo gap reasons | Zone gap reasons |",
+        "|---|---|---|---|",
+    ]
+    for summary in summaries:
+        lines.append(
+            f"| `{summary.get('case_id')}` | "
+            f"`{json.dumps(summary.get('paf_direction_gap_bucket_counts', {}), ensure_ascii=False)}` | "
+            f"`{json.dumps(summary.get('paf_fibo_direction_gap_reason_counts', {}), ensure_ascii=False)}` | "
+            f"`{json.dumps(summary.get('paf_zone_direction_gap_reason_counts', {}), ensure_ascii=False)}` |"
         )
     lines += [
         "",

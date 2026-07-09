@@ -1,0 +1,60 @@
+{
+  "checkpoint": "DC",
+  "type": "artifact_review_only",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "inputs": [
+    {
+      "checkpoint": "CV",
+      "run_id": "run_20260709_182444"
+    },
+    {
+      "checkpoint": "CY",
+      "run_id": "run_20260709_202415"
+    },
+    {
+      "checkpoint": "DB",
+      "run_id": "run_20260709_212026"
+    }
+  ],
+  "combined_counts": {
+    "diagnostic_rows": 621,
+    "no_setup_direction_not_required": 447,
+    "possible_setup_rows": 174,
+    "usable_direction_rows": 106,
+    "trend_alignment_conflict": 15,
+    "wick_too_small": 25,
+    "price_between_emas": 28,
+    "possible_fibo_pullback": 128,
+    "possible_zone_rejection": 33,
+    "possible_break_retest": 13
+  },
+  "window_usable_direction_rows": {
+    "CV": 19,
+    "CY-W1": 18,
+    "CY-W2": 23,
+    "CY-W3": 3,
+    "DB-W1": 5,
+    "DB-W2": 12,
+    "DB-W3": 13,
+    "DB-W4": 13
+  },
+  "gates": {
+    "diagnostic_interpretation_min_usable_rows": 100,
+    "rule_candidate_min_usable_rows": 300,
+    "actual_usable_rows": 106,
+    "diagnostic_interpretation_gate": "PASS_LOW_MARGIN",
+    "rule_candidate_gate": "FAIL"
+  },
+  "verdicts": [
+    "DIAGNOSTIC_INTERPRETATION_ALLOWED_WITH_LOW_MARGIN",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DD documentation-only Fibo Pullback diagnostic interpretation plan"
+}

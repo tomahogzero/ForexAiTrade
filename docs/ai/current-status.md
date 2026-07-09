@@ -739,3 +739,54 @@ Updated progress estimate after DB:
 - PAF rule-candidate readiness: `35%` of the 300 usable-row gate
 - PAF order-logic readiness: `0%`
 - Demo/live readiness: `0%`
+
+## Checkpoint DC Refresh
+
+Checkpoint DC reviewed CV + CY + DB artifacts only.
+
+DC did not run MT5 / Strategy Tester. DC did not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+
+Combined CV + CY + DB:
+
+- diagnostic rows: `621`
+- possible setup rows: `174`
+- usable direction rows: `106`
+- diagnostic interpretation gate `100`: `PASS_LOW_MARGIN`
+- rule-candidate gate `300`: `FAIL`
+
+Window usable direction distribution:
+
+- CV: `19`
+- CY-W1: `18`
+- CY-W2: `23`
+- CY-W3: `3`
+- DB-W1: `5`
+- DB-W2: `12`
+- DB-W3: `13`
+- DB-W4: `13`
+
+Interpretation:
+
+- Diagnostic interpretation can start only with low confidence.
+- Fibo Pullback is the dominant setup family: `128` of `174` possible setup rows.
+- Zone Rejection and Break Retest sample sizes remain too small for rule discussion.
+- Main direction gap reasons are `PRICE_BETWEEN_EMAS`, `WICK_TOO_SMALL`, and `TREND_ALIGNMENT_CONFLICT`.
+
+DC verdicts:
+
+- `DIAGNOSTIC_INTERPRETATION_ALLOWED_WITH_LOW_MARGIN`
+- `RULE_CANDIDATE_GATE_FAIL`
+- `PAF_NOT_READY_FOR_ORDER_LOGIC`
+
+Recommended next safe checkpoint:
+
+Checkpoint DD documentation-only Fibo Pullback diagnostic interpretation plan. Do not run MT5, do not optimize, do not change EA/source code, do not change presets, and do not add order logic.
+
+Updated progress estimate after DC:
+
+- Research infrastructure readiness: around `92%`
+- PAF diagnostic readiness: around `83%`
+- PAF diagnostic interpretation readiness: around `55%`
+- PAF rule-candidate readiness: `35%` of the 300 usable-row gate
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`

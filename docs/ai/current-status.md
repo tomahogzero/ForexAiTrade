@@ -2,6 +2,73 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DD Refresh
+
+Checkpoint DD is a documentation / diagnostic-interpretation planning checkpoint only.
+
+- PR #99 / Checkpoint DC is merged on `origin/main`.
+- Latest known base for DD: `d660c1d1416bde2c121cd3e75d2e01ad4504e1d2`.
+- DD does not run MT5 / Strategy Tester.
+- DD does not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+- DD does not add market orders, pending orders, position modification, or order signals.
+- DD does not claim profitability.
+
+Checkpoint DC found enough data for low-margin diagnostic interpretation, but not enough for rule-candidate approval:
+
+- combined diagnostic rows: `621`
+- possible setup rows: `174`
+- usable direction rows: `106`
+- diagnostic interpretation gate `100`: `PASS_LOW_MARGIN`
+- rule-candidate gate `300`: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Checkpoint DD selects `Possible Fibo Pullback` as the first diagnostic interpretation focus because it is the largest possible-setup group:
+
+- Possible Fibo Pullback rows: `128` of `174` possible setup rows
+- approximate share: `73.6%`
+- this is a diagnostic focus only, not a buy/sell rule and not order logic approval
+
+DD requires future Fibo Pullback interpretation to review:
+
+- candidate direction
+- direction source
+- direction confidence
+- first-touch usability
+- EMA slope state
+- price vs EMA state
+- trend alignment state
+- Fibo direction gap reasons
+- window/date distribution
+- spread distribution
+- regime distribution
+
+DD minimum gates before any future rule-candidate discussion:
+
+- Fibo usable direction rows >= `150`
+- total usable direction rows >= `300`
+- at least `12` diagnostic windows
+- BUY/SELL distribution reviewed
+- direction gap attribution reviewed
+- no repeated low-window weakness
+- no-trade diagnostic safety remains intact
+
+Current readiness estimate:
+
+- Research infrastructure readiness: `92%`
+- PAF diagnostic pipeline readiness: `84%`
+- PAF diagnostic interpretation readiness: `58%`
+- Fibo Pullback interpretation readiness: `45%`
+- PAF rule-candidate readiness: `35%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DE: artifact-only Fibo Pullback diagnostic slice report from existing CV + CY + DB artifacts.
+- Do not run MT5 unless separately approved.
+- Do not implement order logic.
+- Do not optimize.
+
 ## Repository State Observed
 
 This AI memory has been refreshed during Checkpoint CZ PAF data sufficiency review:

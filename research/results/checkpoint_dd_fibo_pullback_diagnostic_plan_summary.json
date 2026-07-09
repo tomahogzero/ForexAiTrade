@@ -1,0 +1,50 @@
+{
+  "checkpoint": "DD",
+  "type": "documentation_review_only",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "input_checkpoint": "DC",
+  "dc_counts": {
+    "diagnostic_rows": 621,
+    "possible_setup_rows": 174,
+    "usable_direction_rows": 106,
+    "possible_fibo_pullback": 128,
+    "possible_zone_rejection": 33,
+    "possible_break_retest": 13
+  },
+  "focus": "FIBO_PULLBACK_DIAGNOSTIC_ONLY",
+  "future_slice_dimensions": [
+    "candidate_direction",
+    "direction_source",
+    "direction_confidence",
+    "first_touch_usable",
+    "ema_slope_state",
+    "price_vs_ema_state",
+    "trend_alignment_state",
+    "fibo_direction_gap_reason",
+    "window_distribution",
+    "spread_distribution",
+    "regime_distribution"
+  ],
+  "minimum_gates_before_rule_candidate": {
+    "fibo_usable_direction_rows": 150,
+    "total_usable_direction_rows": 300,
+    "minimum_windows": 12,
+    "no_repeated_low_window_weakness": true,
+    "buy_sell_distribution_reviewed": true,
+    "gap_attribution_reviewed": true,
+    "diagnostic_no_trade_safety_intact": true
+  },
+  "verdicts": [
+    "FIBO_PULLBACK_DIAGNOSTIC_FOCUS_APPROVED",
+    "RULE_CANDIDATE_NOT_APPROVED",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DE artifact-only Fibo Pullback diagnostic slice report"
+}

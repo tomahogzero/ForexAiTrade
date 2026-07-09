@@ -2,6 +2,67 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DG Refresh
+
+Checkpoint DG interprets the Checkpoint DF row-level Fibo Pullback slice.
+
+- PR #102 / Checkpoint DF is merged on `origin/main`.
+- Latest known base for DG: `8716591`.
+- DG does not run MT5 / Strategy Tester.
+- DG does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DG does not add market orders, pending orders, position modification, or order signals.
+- DG does not claim profitability.
+
+DG interpretation:
+
+- Fibo Pullback row-level context is improving.
+- Fibo Pullback rows: `128`
+- Fibo usable first-touch rows: `85`
+- Fibo direction gap rows: `43`
+- usable first-touch share: `66.4%`
+- direction gap share: `33.6%`
+- SELL rows: `53`
+- BUY rows: `32`
+- DIRECTION_UNKNOWN rows: `43`
+- forbidden action markers: `0`
+- baseline fallback markers: `0`
+
+Remaining gaps:
+
+- Fibo usable rows remain below the future Fibo-specific gate of `150`.
+- available windows remain `8`, below the future `12` window gate.
+- direction gaps remain material:
+  - `PRICE_BETWEEN_EMAS`: `28`
+  - `TREND_ALIGNMENT_CONFLICT`: `15`
+- no shadow outcome or entry-quality proof is available from this checkpoint.
+
+DG gate decisions:
+
+- Fibo row-level slice exists: `PASS`
+- Fibo usable rows >= `150`: `FAIL`
+- window count >= `12`: `FAIL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate:
+
+- Research infrastructure readiness: `93%`
+- PAF diagnostic pipeline readiness: `86%`
+- PAF diagnostic interpretation readiness: `65%`
+- Fibo Pullback interpretation readiness: `60%`
+- PAF rule-candidate readiness: `36%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DH: diagnostic-only data coverage expansion plan or approval package.
+- Goal: increase windows and Fibo usable rows.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DF Refresh
 
 Checkpoint DF creates an offline row-level Fibo Pullback slice from existing `ea_mirror.log` artifacts only.

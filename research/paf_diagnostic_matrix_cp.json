@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "description": "Checkpoint CP approved one-run Price Action/Fibo direction-context diagnostic validation. Approved by user on 2026-07-09. No optimization, no orders, no position modification, no profitability interpretation.",
+  "periods": {
+    "cp_direction_validate_20260301_20260308": {
+      "from": "2026-03-01",
+      "to": "2026-03-08"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.05,
+    "max_open_orders": 1,
+    "base_preset": "",
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "GOLD_HASH_H1_PAF_DIRECTION_CONTEXT_CP",
+      "enabled": true,
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "currency": "USD",
+      "leverage": 500,
+      "model": 0,
+      "risk_percent": 0.05,
+      "diagnostic_only": true,
+      "enable_price_action_fibo": true,
+      "price_action_fibo_diagnostics_only": true,
+      "paf_use_pending_orders": false,
+      "paf_max_pending_orders": 0,
+      "paf_log_only_on_new_bar": true,
+      "paf_entry_timeframe": "H1",
+      "paf_higher_timeframe": "H1",
+      "manage_existing_positions": false,
+      "enable_exit_telemetry": false,
+      "log_position_modify_events": false
+    }
+  ],
+  "approved_scope": {
+    "checkpoint": "CP",
+    "source_commit": "637628a",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "date_from": "2026-03-01",
+    "date_to": "2026-03-08",
+    "run_count": 1,
+    "strategy_tester_only": true,
+    "optimization": false,
+    "demo_live_forward_test": false,
+    "market_orders": false,
+    "pending_orders": false,
+    "position_modification": false,
+    "lot_or_risk_increase": false,
+    "profitability_interpretation": false
+  },
+  "guardrails": [
+    "Strategy Tester only",
+    "Exactly one run",
+    "No optimization",
+    "No market orders",
+    "No pending orders",
+    "No position modification",
+    "No lot or risk increase",
+    "No profitability interpretation",
+    "Validate Checkpoint CN paf_* direction context fields only"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "verdict": "REVIEW_REQUIRED",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "gap_csv": "research\\results\\checkpoint_bq_gap_attribution\\gap_attribution.csv",
+  "policy_json": "research\\policies\\paf_gold_h1_gap_policy_draft.json",
+  "policy_status": "draft_review_required",
+  "gap_count": 6,
+  "accepted_count": 1,
+  "blocking_or_review_count": 5,
+  "status_counts": {
+    "REVIEW_REQUIRED_DAILY_BROKER_SESSION_GAP": 5,
+    "ACCEPTED_WEEKEND_MARKET_CLOSURE": 1
+  },
+  "joiner_status": "blocked_by_gap_policy",
+  "guardrails": [
+    "offline gap policy dry-run only",
+    "no MT5 run",
+    "no Strategy Tester run",
+    "no orders",
+    "no validator implementation change",
+    "no joiner run",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

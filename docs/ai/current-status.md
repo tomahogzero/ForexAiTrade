@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CP PAF direction context diagnostic validation execution:
+This AI memory has been refreshed during Checkpoint CQ PAF direction completeness artifact review:
 
-- `origin/main`: `c74296b` (`Merge pull request #84 from tomahogzero/research/checkpoint-cn-paf-direction-diagnostics-implementation`)
+- `origin/main`: `668c7fa` (`Merge pull request #86 from tomahogzero/research/checkpoint-cp-paf-direction-validation-execution`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -100,7 +100,19 @@ This AI memory has been refreshed during Checkpoint CP PAF direction context dia
 - CP direction summary: `DIRECTION_UNKNOWN=78`, `SELL=10`, `BUY=9`.
 - CP first-touch usable summary: `false=78`, `true=19`.
 - CP proves diagnostic field logging works, but it does not prove profitability and does not approve order logic.
-- Recommended next safe step is Checkpoint CQ artifact review / direction completeness analysis. Do not add market orders, pending orders, optimization, or demo/live testing.
+- PR #86 / Checkpoint CP PAF direction context diagnostic validation execution is merged.
+- Checkpoint CQ reviewed CP artifacts only. It did not run MT5 / Strategy Tester.
+- CQ did not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+- CQ diagnostic rows reviewed: `97`.
+- CQ reclassifies `DIRECTION_UNKNOWN=78` into:
+  - `NO_SETUP_DIRECTION_NOT_REQUIRED`: `64`
+  - `FIBO_PULLBACK_EMA_DIRECTION_CONTEXT_MISSING`: `10`
+  - `ZONE_REJECTION_CANDLE_DIRECTION_CONTEXT_MISSING`: `4`
+- CQ confirms usable direction rows: `19`.
+- CQ confirms true possible-setup direction completeness gap: `14` rows.
+- CQ confirms CP no-trade / no-baseline-fallback evidence remains intact from CP artifacts.
+- CQ status: `DIRECTION_FIELD_LOGGING_CONFIRMED`, `DIRECTION_UNKNOWN_RECLASSIFIED`, `TRUE_DIRECTION_COMPLETENESS_GAP=14`, `ORDER_PATH_STILL_BLOCKED`.
+- Recommended next safe step is Checkpoint CR diagnostics-only design / approval for improving direction-context explainability on the 14 possible-setup gap rows. Do not add market orders, pending orders, optimization, or demo/live testing.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "description": "Checkpoint DB approved PAF diagnostic data collection expansion. Approved by user on 2026-07-09. No optimization, no orders, no position modification, no profitability interpretation.",
+  "periods": {
+    "db_w1_20260329_20260405": {
+      "from": "2026-03-29",
+      "to": "2026-04-05"
+    },
+    "db_w2_20260405_20260412": {
+      "from": "2026-04-05",
+      "to": "2026-04-12"
+    },
+    "db_w3_20260412_20260419": {
+      "from": "2026-04-12",
+      "to": "2026-04-19"
+    },
+    "db_w4_20260419_20260426": {
+      "from": "2026-04-19",
+      "to": "2026-04-26"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.05,
+    "max_open_orders": 1,
+    "base_preset": "",
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "GOLD_HASH_H1_PAF_DATA_EXPANSION_DB",
+      "enabled": true,
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "currency": "USD",
+      "leverage": 500,
+      "model": 0,
+      "risk_percent": 0.05,
+      "diagnostic_only": true,
+      "enable_price_action_fibo": true,
+      "price_action_fibo_diagnostics_only": true,
+      "paf_use_pending_orders": false,
+      "paf_max_pending_orders": 0,
+      "paf_log_only_on_new_bar": true,
+      "paf_entry_timeframe": "H1",
+      "paf_higher_timeframe": "H1",
+      "manage_existing_positions": false,
+      "enable_exit_telemetry": false,
+      "log_position_modify_events": false
+    }
+  ],
+  "approved_scope": {
+    "checkpoint": "DB",
+    "source_commit": "8248ca7",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "windows": [
+      {
+        "from": "2026-03-29",
+        "to": "2026-04-05"
+      },
+      {
+        "from": "2026-04-05",
+        "to": "2026-04-12"
+      },
+      {
+        "from": "2026-04-12",
+        "to": "2026-04-19"
+      },
+      {
+        "from": "2026-04-19",
+        "to": "2026-04-26"
+      }
+    ],
+    "run_count": 4,
+    "strategy_tester_only": true,
+    "optimization": false,
+    "demo_live_forward_test": false,
+    "market_orders": false,
+    "pending_orders": false,
+    "position_modification": false,
+    "lot_or_risk_increase": false,
+    "profitability_interpretation": false
+  },
+  "guardrails": [
+    "Strategy Tester only",
+    "Exactly four approved windows",
+    "No optimization",
+    "No market orders",
+    "No pending orders",
+    "No position modification",
+    "No lot or risk increase",
+    "No profitability interpretation",
+    "Collect additional diagnostic rows only"
+  ]
+}

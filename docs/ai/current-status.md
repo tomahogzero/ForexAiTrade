@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CD PAF first-touch relabel approval package:
+This AI memory has been refreshed during Checkpoint CE PAF offline first-touch relabel tool and dry run:
 
-- `origin/main`: `4e99f52` (`Merge pull request #73 from tomahogzero/research/checkpoint-cc-offline-atr-enrichment`)
+- `origin/main`: `0f03988` (`Merge pull request #74 from tomahogzero/research/checkpoint-cd-first-touch-relabel-approval`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -235,6 +235,12 @@ Known selected run:
 - Checkpoint CD fixes future relabel settings to BZ diagnostic assumptions: TP ATR multiple `1.5`, SL ATR multiple `1.0`, horizons `6,12,24,48`.
 - Checkpoint CD requires `AMBIGUOUS_SAME_BAR` when OHLC cannot prove whether TP or SL touched first inside a bar.
 - Checkpoint CD does not run MT5, does not run Strategy Tester, does not change EA/source, does not change presets, and does not compute new labels.
+- Checkpoint CE adds `tools/paf_first_touch_relabel.py` and dry-runs offline first-touch relabeling using `offline_atr_14`.
+- Checkpoint CE result: `PASS_OFFLINE_FIRST_TOUCH_RELABEL`.
+- Checkpoint CE rows read: `33`; relabel-ready rows: `17`; data-missing rows: `2`; direction-missing rows: `14`.
+- Checkpoint CE horizon 6 labels: TP_FIRST `5`, SL_FIRST `9`, NO_RESOLUTION `2`, AMBIGUOUS_SAME_BAR `1`, DATA_MISSING `2`, DIRECTION_MISSING `14`.
+- Checkpoint CE horizons 12/24/48 labels: TP_FIRST `6`, SL_FIRST `10`, AMBIGUOUS_SAME_BAR `1`, DATA_MISSING `2`, DIRECTION_MISSING `14`.
+- Checkpoint CE labels are hypothetical shadow diagnostics only and are not profit/loss, not strategy approval, and not order logic.
 - Checkpoint AS decision: `SHADOW_OUTCOME_SPEC_DEFINED`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
 - Checkpoint AS requires deterministic entry references, explicit direction handling, pre-registered SL/TP/lookahead hypotheses, conservative same-bar ambiguity handling, and bucketed summaries by classification/regime/spread/volatility/session/window.
 - Checkpoint AS does not implement a parser and does not run MT5.

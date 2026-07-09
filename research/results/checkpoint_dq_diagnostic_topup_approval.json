@@ -1,0 +1,106 @@
+{
+  "checkpoint": "DQ",
+  "type": "docs_only_diagnostic_topup_approval_package",
+  "date": "2026-07-09",
+  "base_commit": "9e37504",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "execution_matrix_created": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "current_combined_status": {
+    "diagnostic_windows": 18,
+    "diagnostic_rows": 1589,
+    "possible_setup_rows": 451,
+    "total_usable_direction_rows": 290,
+    "total_usable_direction_gate_min": 300,
+    "total_usable_direction_shortfall": 10,
+    "fibo_pullback_rows": 277,
+    "fibo_usable_first_touch_rows": 210,
+    "fibo_direction_gap_rows": 67,
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL",
+    "paf_status": "NOT_READY_FOR_ORDER_LOGIC"
+  },
+  "future_dr_scope": {
+    "status": "BLOCKED_UNTIL_EXACT_APPROVAL",
+    "purpose": "small diagnostic-only usable-direction coverage top-up",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "runner_parser": "official AK workflow",
+    "strategy_tester_only": true,
+    "optimization": false,
+    "demo_live_forward_test": false,
+    "source_change": false,
+    "preset_change": false,
+    "order_logic_added": false,
+    "total_trades_required": 0,
+    "target_windows": [
+      {
+        "window": "DR-W1",
+        "from": "2026-02-15",
+        "to": "2026-02-22"
+      },
+      {
+        "window": "DR-W2",
+        "from": "2026-02-22",
+        "to": "2026-03-01"
+      }
+    ],
+    "target_outcome": {
+      "move_total_usable_direction_rows_from": 290,
+      "toward_minimum": 300,
+      "minimum_additional_usable_direction_rows_needed": 10
+    }
+  },
+  "future_dr_exact_approval_phrase": "Approved to execute Checkpoint DR diagnostic-only GOLD# H1 PAF/Fibo usable-direction top-up with Strategy Tester only, no optimization, no demo/live forward test, no EA or preset changes, no order logic, total trades must remain 0, using windows 2026-02-15 to 2026-02-22 and 2026-02-22 to 2026-03-01 with the official AK runner/parser workflow.",
+  "future_dr_stop_conditions": [
+    "approval phrase absent or changed",
+    "target symbol differs from GOLD#",
+    "timeframe differs from H1",
+    "windows differ from approved DR windows",
+    "any total_trades value is greater than 0",
+    "MT5 report missing",
+    "parser cannot read report",
+    "PAF diagnostics missing",
+    "forbidden action markers greater than 0",
+    "baseline fallback markers greater than 0",
+    "runner needs to stop a process it did not spawn",
+    "EA/MQL5 changes become necessary",
+    "preset changes become necessary",
+    "optimization becomes necessary",
+    "lot/risk changes become necessary"
+  ],
+  "required_future_dr_artifacts": [
+    "DR research matrix used for execution",
+    "DR runner log",
+    "DR per-window MT5 reports",
+    "DR parsed execution summary",
+    "DR PAF diagnostics presence check",
+    "DR forbidden action marker scan",
+    "DR baseline fallback marker scan",
+    "combined CV + CY + DB + DI + DM + DR summary",
+    "Thai checkpoint document",
+    "AI current-status refresh"
+  ],
+  "post_dr_review_gate": "Checkpoint DS artifact-only review before any rule-candidate discussion",
+  "verdicts": [
+    "DQ_APPROVAL_PACKAGE_COMPLETE",
+    "DOCUMENTATION_ONLY",
+    "NO_MT5_RUN",
+    "NO_STRATEGY_TESTER_RUN",
+    "NO_EXECUTION_MATRIX_CREATED",
+    "FUTURE_DR_EXECUTION_BLOCKED_UNTIL_EXACT_APPROVAL",
+    "NO_EA_OR_PRESET_CHANGE",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_ORDER_LOGIC_APPROVED",
+    "NO_DEMO_LIVE_FORWARD_TEST",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ]
+}

@@ -683,3 +683,59 @@ Current safe recommendation:
 3. Do not increase lot/risk.
 4. Do not claim profitability.
 5. Do not run DB until the exact Checkpoint DB approval phrase is provided.
+
+## Checkpoint DB Refresh
+
+Checkpoint DB executed the exact approved PAF diagnostic data collection expansion.
+
+- RunId: `run_20260709_212026`
+- Symbol/timeframe: `GOLD#` H1
+- Windows:
+  - `2026-03-29` to `2026-04-05`
+  - `2026-04-05` to `2026-04-12`
+  - `2026-04-12` to `2026-04-19`
+  - `2026-04-19` to `2026-04-26`
+- Artifact root: `G:\AiServer\Codex\ForexAiTrade\mt5_artifacts\run_20260709_212026\`
+- All 4 windows: `execution_status=PASS`
+- All 4 windows: report artifact `FOUND`
+- All 4 windows: `total_trades=0`
+- Forbidden action markers: `0` in every window
+- Baseline fallback markers: `0` in every window
+
+DB added:
+
+- diagnostic rows: `347`
+- possible setup rows: `83`
+- usable direction rows: `43`
+
+Combined CV + CY + DB:
+
+- diagnostic rows: `621`
+- possible setup rows: `174`
+- usable direction rows: `106`
+- diagnostic interpretation gate `100`: `PASS_LOW_MARGIN`
+- rule-candidate gate `300`: `FAIL`
+
+DB verdicts:
+
+- `DB_EXECUTION_PASS`
+- `NO_TRADE_CONFIRMED_ALL_WINDOWS`
+- `PAF_DIAGNOSTICS_FOUND_ALL_WINDOWS`
+- `DIAGNOSTIC_INTERPRETATION_GATE_PASS_LOW_MARGIN`
+- `RULE_CANDIDATE_GATE_FAIL`
+- `PAF_NOT_READY_FOR_ORDER_LOGIC`
+
+This is still diagnostic-only evidence. It is not profitability evidence and does not approve order logic.
+
+Recommended next safe checkpoint:
+
+Checkpoint DC artifact-only diagnostic interpretation review using CV + CY + DB. Do not run MT5, do not optimize, do not change EA/source code, do not change presets, and do not add order logic.
+
+Updated progress estimate after DB:
+
+- Research infrastructure readiness: around `92%`
+- PAF diagnostic readiness: around `82%`
+- PAF data sufficiency toward diagnostic interpretation: `106%` of the 100 usable-row gate
+- PAF rule-candidate readiness: `35%` of the 300 usable-row gate
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`

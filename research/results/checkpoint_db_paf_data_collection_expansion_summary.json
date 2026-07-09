@@ -1,0 +1,104 @@
+{
+  "checkpoint": "DB",
+  "run_id": "run_20260709_212026",
+  "artifact_root": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\run_20260709_212026\\",
+  "mt5_run": true,
+  "strategy_tester_run": true,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "windows": [
+    {
+      "window": "DB-W1",
+      "from": "2026-03-29",
+      "to": "2026-04-05",
+      "execution_status": "PASS",
+      "report_artifact_status": "FOUND",
+      "total_trades": 0,
+      "diagnostics": 58,
+      "usable_direction": 5,
+      "forbidden_action_marker_count": 0,
+      "baseline_fallback_marker_count": 0
+    },
+    {
+      "window": "DB-W2",
+      "from": "2026-04-05",
+      "to": "2026-04-12",
+      "execution_status": "PASS",
+      "report_artifact_status": "FOUND",
+      "total_trades": 0,
+      "diagnostics": 94,
+      "usable_direction": 12,
+      "forbidden_action_marker_count": 0,
+      "baseline_fallback_marker_count": 0
+    },
+    {
+      "window": "DB-W3",
+      "from": "2026-04-12",
+      "to": "2026-04-19",
+      "execution_status": "PASS",
+      "report_artifact_status": "FOUND",
+      "total_trades": 0,
+      "diagnostics": 82,
+      "usable_direction": 13,
+      "forbidden_action_marker_count": 0,
+      "baseline_fallback_marker_count": 0
+    },
+    {
+      "window": "DB-W4",
+      "from": "2026-04-19",
+      "to": "2026-04-26",
+      "execution_status": "PASS",
+      "report_artifact_status": "FOUND",
+      "total_trades": 0,
+      "diagnostics": 113,
+      "usable_direction": 13,
+      "forbidden_action_marker_count": 0,
+      "baseline_fallback_marker_count": 0
+    }
+  ],
+  "db_totals": {
+    "diagnostic_rows": 347,
+    "possible_setup_rows": 83,
+    "usable_direction_rows": 43,
+    "no_setup_direction_not_required": 264,
+    "trend_alignment_conflict": 3,
+    "wick_too_small": 14,
+    "price_between_emas": 23,
+    "possible_fibo_pullback": 59,
+    "possible_zone_rejection": 19,
+    "possible_break_retest": 5
+  },
+  "combined_cv_cy_db": {
+    "diagnostic_rows": 621,
+    "possible_setup_rows": 174,
+    "usable_direction_rows": 106,
+    "no_setup_direction_not_required": 447,
+    "trend_alignment_conflict": 15,
+    "wick_too_small": 25,
+    "price_between_emas": 28,
+    "possible_fibo_pullback": 128,
+    "possible_zone_rejection": 33,
+    "possible_break_retest": 13
+  },
+  "gates": {
+    "diagnostic_interpretation_min_usable_rows": 100,
+    "rule_candidate_min_usable_rows": 300,
+    "actual_usable_rows": 106,
+    "diagnostic_interpretation_gate": "PASS_LOW_MARGIN",
+    "rule_candidate_gate": "FAIL"
+  },
+  "verdicts": [
+    "DB_EXECUTION_PASS",
+    "NO_TRADE_CONFIRMED_ALL_WINDOWS",
+    "PAF_DIAGNOSTICS_FOUND_ALL_WINDOWS",
+    "FORBIDDEN_MARKERS_ZERO",
+    "BASELINE_FALLBACK_ZERO",
+    "DIAGNOSTIC_INTERPRETATION_GATE_PASS_LOW_MARGIN",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DC artifact-only diagnostic interpretation review using CV + CY + DB"
+}

@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CT PAF direction explainability fields implementation:
+This AI memory has been refreshed during Checkpoint CU PAF field presence validation approval:
 
-- `origin/main`: `35d42e1` (`Merge pull request #89 from tomahogzero/research/checkpoint-cs-paf-direction-explainability-implementation-approval`)
+- `origin/main`: `fa56c3e` (`Merge pull request #90 from tomahogzero/research/checkpoint-ct-paf-direction-explainability-fields`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -146,6 +146,17 @@ This AI memory has been refreshed during Checkpoint CT PAF direction explainabil
 - CT did not change presets, RiskManager, trade execution, lot/risk defaults, or MT5 runner behavior.
 - CT guardrail scan found no `SIGNAL_BUY`, `SIGNAL_SELL`, `OrderSend`, `.Buy(`, `.Sell(`, `BuyLimit`, `SellLimit`, `BuyStop`, `SellStop`, or `PositionModify` in `PriceActionFiboStrategy.mqh`.
 - Recommended next safe step is Checkpoint CU approval package for one-run Strategy Tester validation of CT field presence only. MT5 execution remains blocked until separate explicit approval.
+- PR #90 / Checkpoint CT PAF direction explainability diagnostics is merged.
+- Checkpoint CU is documentation/approval-only.
+- CU does not run MT5 / Strategy Tester.
+- CU does not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+- CU proposes a future Checkpoint CV one-run Strategy Tester validation for CT field presence only.
+- Proposed future CV scope: `GOLD#` H1, `2026-03-01` to `2026-03-08`, Strategy Tester only, one run only.
+- CU requires future CV to prove required CT fields appear in EA mirror log and parser output.
+- CU requires future CV total trades = `0`, forbidden action marker count = `0`, baseline fallback marker count = `0`.
+- CU explicitly states that future CV must not prove profitability, setup quality, entry quality, exit quality, drawdown safety, demo/live readiness, or order logic readiness.
+- MT5 execution remains blocked until exact approval phrase is provided:
+  `Approved to execute Checkpoint CV one-run PAF field presence validation with symbol GOLD# timeframe H1 date range 2026-03-01 to 2026-03-08 using CT diagnostics-only fields.`
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

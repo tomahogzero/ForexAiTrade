@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CL PAF direction context field specification:
+This AI memory has been refreshed during Checkpoint CM PAF direction diagnostics implementation approval:
 
-- `origin/main`: `ced3149` (`Merge pull request #81 from tomahogzero/research/checkpoint-ck-paf-direction-missing-root-cause`)
+- `origin/main`: `e648f86` (`checkpoint-cl: define paf direction context fields`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -68,7 +68,11 @@ This AI memory has been refreshed during Checkpoint CL PAF direction context fie
 - Checkpoint CL defines diagnostics-only PAF direction context fields.
 - CL keeps implementation blocked and order logic blocked.
 - CL field groups: common direction fields, Fibo Pullback fields, Zone Rejection fields, Break Retest fields, validation rules, parser compatibility.
-- Recommended next safe step is a separate diagnostics-only implementation approval package if the user wants to proceed.
+- Checkpoint CM creates a diagnostics-only implementation approval package for a future CN checkpoint.
+- CM does not implement code.
+- CM keeps MT5 execution blocked unless separately approved.
+- CM requires guardrail grep/check summaries and compile verification if MQL5 changes in future CN.
+- Recommended next safe step is CN diagnostics-only implementation of PAF direction context fields, if approved.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

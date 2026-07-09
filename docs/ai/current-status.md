@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CY PAF multi-window field stability execution:
+This AI memory has been refreshed during Checkpoint CZ PAF data sufficiency review:
 
-- `origin/main`: `6969779` (`Merge pull request #92 from tomahogzero/research/checkpoint-cv-paf-field-presence-validation`)
+- `origin/main`: `94c556c` (`Merge pull request #95 from tomahogzero/research/checkpoint-cy-paf-multi-window-field-stability-exec`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -191,6 +191,21 @@ This AI memory has been refreshed during Checkpoint CY PAF multi-window field st
   - `PAF_NOT_READY_FOR_ORDER_LOGIC`
 - CY does not prove profitability and does not approve order logic.
 - Recommended next safe step is Checkpoint CZ artifact review / data sufficiency decision using CV+CY artifacts only, with no MT5 run unless separately approved.
+- PR #95 / Checkpoint CY PAF multi-window field stability diagnostics is merged.
+- Checkpoint CZ reviews existing CV + CY artifacts only.
+- CZ does not run MT5 / Strategy Tester.
+- CZ does not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+- CZ combined counts across CV + CY:
+  - total diagnostic rows: `274`
+  - possible setup rows: `91`
+  - usable direction rows: `63`
+  - no-setup direction not required: `183`
+  - trend alignment conflict: `12`
+  - wick too small: `11`
+  - price between EMAs: `5`
+- CZ data gate decision: `DATA_SUFFICIENCY_FAIL_LOW_USABLE_DIRECTION`.
+- CZ confirms no-trade diagnostic pipeline works, but PAF remains `NOT_READY_FOR_ORDER_LOGIC`.
+- Recommended next safe step is Checkpoint DA data collection expansion approval, not order logic implementation.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

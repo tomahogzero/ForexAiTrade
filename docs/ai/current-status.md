@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CC PAF offline ATR enrichment tool and dry run:
+This AI memory has been refreshed during Checkpoint CD PAF first-touch relabel approval package:
 
-- `origin/main`: `3218196` (`Merge pull request #72 from tomahogzero/research/checkpoint-cb-offline-atr-enrichment-approval`)
+- `origin/main`: `4e99f52` (`Merge pull request #73 from tomahogzero/research/checkpoint-cc-offline-atr-enrichment`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -230,6 +230,11 @@ Known selected run:
 - Checkpoint CC produced `offline_atr_14` for `17` event rows, kept `2` rows as `ATR_MISSING`, and preserved `14` rows as `DIRECTION_MISSING`.
 - Checkpoint CC detected `9` approved gaps from prior policy context and `0` unknown irregular gaps.
 - Checkpoint CC does not rerun first-touch labels and does not interpret TP-first / SL-first / profitability.
+- Checkpoint CD creates an approval package for future offline first-touch relabeling using Checkpoint CC `offline_atr_14`.
+- Checkpoint CD requires `ATR_READY` rows only for relabeling, keeps `ATR_MISSING` as `DATA_MISSING`, and keeps `DIRECTION_MISSING` blocked.
+- Checkpoint CD fixes future relabel settings to BZ diagnostic assumptions: TP ATR multiple `1.5`, SL ATR multiple `1.0`, horizons `6,12,24,48`.
+- Checkpoint CD requires `AMBIGUOUS_SAME_BAR` when OHLC cannot prove whether TP or SL touched first inside a bar.
+- Checkpoint CD does not run MT5, does not run Strategy Tester, does not change EA/source, does not change presets, and does not compute new labels.
 - Checkpoint AS decision: `SHADOW_OUTCOME_SPEC_DEFINED`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
 - Checkpoint AS requires deterministic entry references, explicit direction handling, pre-registered SL/TP/lookahead hypotheses, conservative same-bar ambiguity handling, and bucketed summaries by classification/regime/spread/volatility/session/window.
 - Checkpoint AS does not implement a parser and does not run MT5.

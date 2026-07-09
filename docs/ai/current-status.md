@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BZ PAF offline joiner run:
+This AI memory has been refreshed during Checkpoint CA PAF ATR enrichment / data completeness plan:
 
-- `origin/main`: `0173f3e` (`Merge pull request #69 from tomahogzero/research/checkpoint-by-paf-offline-joiner-approval`)
+- `origin/main`: `d0bbbc0` (`Merge pull request #70 from tomahogzero/research/checkpoint-bz-paf-offline-joiner-run`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -418,7 +418,11 @@ Known selected run:
 - Checkpoint BZ result: normalization `PASS`; rows normalized `230`; shadow rows `33`; joined rows `19`; direction missing rows `14`; first-touch labels still unavailable because ATR is missing.
 - Checkpoint BZ did not run MT5, did not run Strategy Tester, did not change EA/source code, did not change presets, did not change the production validator, did not send orders, and did not optimize.
 - Checkpoint BZ decision: `BZ_OFFLINE_JOINER_EXECUTED`, `NORMALIZATION_PASS`, `JOINER_OUTPUT_CREATED`, `JOINED_ROWS_19`, `DIRECTION_MISSING_ROWS_14`, `ATR_MISSING_LIMITATION`, `FIRST_TOUCH_LABELS_NOT_AVAILABLE_YET`, `MFE_MAE_CONTEXT_AVAILABLE`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `89%`; PAF diagnostic readiness around `76%`; PAF shadow-outcome readiness around `74%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint CA created an ATR enrichment/data-completeness plan.
+- Checkpoint CA confirms BZ first-touch labels remain blocked because ATR is missing or invalid.
+- Checkpoint CA recommends offline ATR enrichment from normalized `GOLD#` H1 bars with a fixed diagnostic ATR period, no future leakage, and no optimization.
+- Checkpoint CA decision: `ATR_ENRICHMENT_PLAN_CREATED`, `BZ_LIMITATION_CONFIRMED`, `FIRST_TOUCH_LABELS_STILL_BLOCKED`, `OFFLINE_ATR_OPTION_RECOMMENDED`, `NO_ATR_OPTIMIZATION_APPROVED`, `JOINER_NOT_RERUN`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `90%`; PAF diagnostic readiness around `77%`; PAF shadow-outcome readiness around `75%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -435,4 +439,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BZ, the next safe step is Checkpoint CA: plan ATR enrichment/data-completeness before interpreting lookahead outcomes. Do not claim profitability from BZ because first-touch labels are still unavailable.
+6. After Checkpoint CA, the next safe step is Checkpoint CB: create an approval package for offline ATR enrichment. Do not compute or interpret first-touch outcomes until ATR enrichment is reviewed and approved.

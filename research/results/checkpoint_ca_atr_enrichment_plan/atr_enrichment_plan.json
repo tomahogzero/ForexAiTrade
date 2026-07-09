@@ -1,0 +1,34 @@
+{
+  "checkpoint": "CA",
+  "name": "PAF ATR Enrichment / Data Completeness Plan",
+  "planning_only": true,
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "production_validator_changed": false,
+  "joiner_rerun": false,
+  "new_outcomes_computed": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "source_checkpoint": "BZ",
+  "source_limitation": {
+    "joined_rows": 19,
+    "direction_missing_rows": 14,
+    "first_touch_labels_available": false,
+    "reason": "atr is missing or invalid"
+  },
+  "recommended_option": "offline_atr_enrichment_from_h1_bars",
+  "proposed_atr_period": 14,
+  "proposed_output_column": "offline_atr_14",
+  "future_leakage_rule": "event ATR must use only bars available at or before event time",
+  "gate_status": {
+    "first_touch_interpretation": "BLOCKED_UNTIL_ATR_AVAILABLE",
+    "profitability_interpretation": "BLOCKED",
+    "mt5_strategy_tester": "BLOCKED",
+    "ea_source_changes": "BLOCKED",
+    "optimization": "BLOCKED"
+  },
+  "next_checkpoint": "CB",
+  "next_checkpoint_recommendation": "Create an approval package for offline ATR enrichment."
+}

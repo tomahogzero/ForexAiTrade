@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CJ PAF data completeness audit:
+This AI memory has been refreshed during Checkpoint CK PAF direction missing root-cause audit:
 
-- `origin/main`: `46331d7` (`checkpoint-ci: plan paf data completeness gates`)
+- `origin/main`: `3b26f3e` (`Merge pull request #80 from tomahogzero/research/checkpoint-cj-paf-data-completeness-audit`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -59,7 +59,13 @@ This AI memory has been refreshed during Checkpoint CJ PAF data completeness aud
 - CJ classification: `DATA_COMPLETENESS_GATE_FAIL`.
 - CJ counts: `33` rows, `17` relabel-ready rows, `14` direction-missing rows, `2` data-missing rows.
 - CJ confirms all CI gates fail and PAF remains `NOT_READY_FOR_ORDER_LOGIC`.
-- Recommended next safe step is diagnosing the root cause of `DIRECTION_MISSING`.
+- Checkpoint CK adds an offline-only root-cause audit for `DIRECTION_MISSING`.
+- CK result: `PASS_OFFLINE_DIRECTION_MISSING_AUDIT`.
+- CK classification: `DIRECTION_COMPLETENESS_FAIL`.
+- CK root causes:
+  - `FIBO_PULLBACK_EMA_DIRECTION_CONTEXT_MISSING`: `10` rows
+  - `ZONE_REJECTION_CANDLE_DIRECTION_CONTEXT_MISSING`: `4` rows
+- Recommended next safe step is a diagnostics-only direction field specification before any EA/source change.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

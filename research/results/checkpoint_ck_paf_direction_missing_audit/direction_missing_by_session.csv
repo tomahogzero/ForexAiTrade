@@ -1,0 +1,5 @@
+session_bucket,direction_missing_rows,share_of_missing_percent
+LONDON,5,35.71
+NEW_YORK,5,35.71
+OTHER,3,21.43
+OVERLAP,1,7.14

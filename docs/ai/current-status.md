@@ -2,6 +2,52 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DM-Prep Refresh
+
+Checkpoint DM-Prep is a documentation-only readiness package for a future Checkpoint DM diagnostic-only run.
+
+- PR #108 / Checkpoint DL is merged on `origin/main`.
+- Current base for DM-Prep: `e4abc7e`.
+- DM-Prep does not run MT5 / Strategy Tester.
+- DM-Prep does not create an execution research matrix.
+- DM-Prep does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DM-Prep does not add market orders, pending orders, position modification, or order signals.
+- DM-Prep does not claim profitability.
+
+Future DM remains blocked:
+
+- exact approval phrase is still required
+- ordinary continuation requests do not approve execution
+- target windows remain `2026-06-14` to `2026-06-21`, `2026-06-21` to `2026-06-28`, and `2026-06-28` to `2026-07-05`
+- total trades must remain `0` if DM is later approved
+- official AK runner/parser workflow is required
+
+DM-Prep defines:
+
+- pre-run checklist
+- expected matrix contract
+- required artifact contract
+- stop conditions
+- post-run DN review gate
+
+Current readiness estimate after DM-Prep:
+
+- Research infrastructure readiness: `95%`
+- PAF diagnostic pipeline readiness: `89%`
+- PAF diagnostic interpretation readiness: `77%`
+- Fibo Pullback interpretation readiness: `78%`
+- PAF rule-candidate readiness: `55%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DN-Prep: documentation-only post-DM review template, or provide the exact DM approval phrase if Future DM execution is desired.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DL Refresh
 
 Checkpoint DL is an artifact-only deep review after Checkpoint DK.

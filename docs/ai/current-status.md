@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BS PAF gap policy dry-run:
+This AI memory has been refreshed during Checkpoint BT PAF daily session gap review:
 
-- `origin/main`: `a3fdae6` (`Merge pull request #62 from tomahogzero/research/checkpoint-br-paf-gold-h1-gap-policy`)
+- `origin/main`: `8354d4a` (`Merge pull request #63 from tomahogzero/research/checkpoint-bs-paf-gap-policy-dry-run`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -390,7 +390,11 @@ Known selected run:
 - Checkpoint BS dry-run result: `REVIEW_REQUIRED`; `ACCEPTED_WEEKEND_MARKET_CLOSURE=1`; `REVIEW_REQUIRED_DAILY_BROKER_SESSION_GAP=5`; `joiner_status=blocked_by_gap_policy`.
 - Checkpoint BS did not run MT5, did not run Strategy Tester, did not change EA/source code, did not change presets, did not change the production validator, and did not run joiner.
 - Checkpoint BS decision: `GAP_POLICY_DRY_RUN_TOOL_ADDED`, `POLICY_DRAFT_ADDED`, `DRY_RUN_EXECUTED_OFFLINE_ONLY`, `VERDICT_REVIEW_REQUIRED`, `WEEKEND_GAP_ACCEPTED_1`, `DAILY_SESSION_GAPS_REVIEW_REQUIRED_5`, `JOINER_STILL_BLOCKED`, `VALIDATOR_PRODUCTION_NOT_CHANGED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `83%`; PAF diagnostic readiness around `72%`; PAF shadow-outcome readiness around `70%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BT reviewed whether daily broker-session gaps can be approved.
+- Checkpoint BT decision: daily broker-session gaps are `NOT_APPROVED_YET` because additional MT5/broker-session evidence is required.
+- Checkpoint BT did not run MT5, did not run Strategy Tester, did not change EA/source code, did not change presets, did not change the production validator, and did not run joiner.
+- Checkpoint BT decision: `DAILY_SESSION_GAP_REVIEW_DONE`, `DAILY_SESSION_GAP_NOT_APPROVED_YET`, `ADDITIONAL_EVIDENCE_REQUIRED`, `JOINER_STILL_BLOCKED`, `VALIDATOR_PRODUCTION_NOT_CHANGED`, `POLICY_DRAFT_NOT_PROMOTED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `84%`; PAF diagnostic readiness around `72%`; PAF shadow-outcome readiness around `70%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -407,4 +411,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BS, the next safe step is Checkpoint BT: review whether daily broker-session gaps for `GOLD#` H1 can be explicitly approved in a symbol/timeframe-scoped policy. Do not run joiner until the dry-run verdict can become `PASS` without allowing unknown gaps.
+6. After Checkpoint BT, the next safe step is Checkpoint BU: create a manual evidence collection guide for `GOLD#` H1 daily session gaps. Do not approve daily session gaps or run joiner until the evidence is collected and reviewed.

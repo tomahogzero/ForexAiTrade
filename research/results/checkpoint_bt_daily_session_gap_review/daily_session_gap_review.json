@@ -1,0 +1,28 @@
+{
+  "checkpoint": "BT",
+  "name": "PAF Gold H1 Daily Session Gap Review",
+  "review_only": true,
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "validator_production_changed": false,
+  "joiner_run": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "source_checkpoint": "BS",
+  "source_summary": "research/results/checkpoint_bs_gap_policy_dry_run/gap_policy_dry_run_summary.md",
+  "dry_run_verdict": "REVIEW_REQUIRED",
+  "daily_session_gap_review_required_count": 5,
+  "joiner_status": "blocked_by_gap_policy",
+  "decision": "DAILY_SESSION_GAP_NOT_APPROVED_YET",
+  "required_evidence": [
+    "manual MT5 chart/export evidence for missing H1 bars",
+    "pattern consistency evidence across more than one week",
+    "symbol/timeframe-scoped policy limited to GOLD# H1",
+    "unknown gaps remain blockers",
+    "dry-run verdict PASS before joiner"
+  ],
+  "next_checkpoint": "BU",
+  "next_checkpoint_recommendation": "Create a manual evidence collection guide for GOLD# H1 daily session gaps."
+}

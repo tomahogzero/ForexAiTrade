@@ -2,6 +2,66 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DF Refresh
+
+Checkpoint DF creates an offline row-level Fibo Pullback slice from existing `ea_mirror.log` artifacts only.
+
+- PR #101 / Checkpoint DE is merged on `origin/main`.
+- Latest known base for DF: `ade6041`.
+- DF does not run MT5 / Strategy Tester.
+- DF does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DF does not add market orders, pending orders, position modification, or order signals.
+- DF does not claim profitability.
+- DF adds `tools/paf_fibo_slice_report.py`, an offline research tool that reads existing artifacts only.
+
+DF row-level Fibo Pullback results:
+
+- artifact runs: `run_20260709_182444`, `run_20260709_202415`, `run_20260709_212026`
+- case/window count: `8`
+- diagnostic rows scanned: `621`
+- Fibo Pullback rows: `128`
+- Fibo usable first-touch rows: `85`
+- Fibo direction gap rows: `43`
+- forbidden action markers: `0`
+- baseline fallback markers: `0`
+
+Fibo direction distribution:
+
+- `SELL`: `53`
+- `BUY`: `32`
+- `DIRECTION_UNKNOWN`: `43`
+
+Fibo gap reasons:
+
+- `NONE`: `85`
+- `PRICE_BETWEEN_EMAS`: `28`
+- `TREND_ALIGNMENT_CONFLICT`: `15`
+
+DF gate decisions:
+
+- row-level Fibo slice: `BUILT`
+- Fibo-specific usable rows remain below future diagnostic confidence gate
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate:
+
+- Research infrastructure readiness: `93%`
+- PAF diagnostic pipeline readiness: `86%`
+- PAF diagnostic interpretation readiness: `63%`
+- Fibo Pullback interpretation readiness: `55%`
+- PAF rule-candidate readiness: `36%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DG: artifact-only interpretation of the Fibo row-level slice.
+- Do not run MT5 unless separately approved.
+- Do not implement order logic.
+- Do not optimize.
+
 ## Latest Checkpoint DE Refresh
 
 Checkpoint DE is an artifact-summary-only Fibo Pullback diagnostic slice report.

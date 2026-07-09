@@ -1,0 +1,99 @@
+{
+  "checkpoint": "DF",
+  "type": "offline_row_level_fibo_slice",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "artifact_runs": [
+    "run_20260709_182444",
+    "run_20260709_202415",
+    "run_20260709_212026"
+  ],
+  "case_count": 8,
+  "diagnostic_rows_total": 621,
+  "fibo_rows": 128,
+  "fibo_usable_first_touch_rows": 85,
+  "fibo_direction_gap_rows": 43,
+  "fibo_candidate_direction_counts": {
+    "SELL": 53,
+    "DIRECTION_UNKNOWN": 43,
+    "BUY": 32
+  },
+  "fibo_direction_source_counts": {
+    "FIBO_PULLBACK_EMA": 85,
+    "NONE": 43
+  },
+  "fibo_direction_confidence_counts": {
+    "HIGH": 85,
+    "NONE": 43
+  },
+  "fibo_first_touch_usable_counts": {
+    "true": 85,
+    "false": 43
+  },
+  "fibo_ema_slope_state_counts": {
+    "DOWN": 68,
+    "UP": 32,
+    "MIXED": 28
+  },
+  "fibo_price_vs_ema_state_counts": {
+    "BELOW_BOTH": 68,
+    "ABOVE_BOTH": 32,
+    "BETWEEN": 28
+  },
+  "fibo_trend_alignment_state_counts": {
+    "BEARISH": 53,
+    "CONFLICT": 43,
+    "BULLISH": 32
+  },
+  "fibo_pullback_side_counts": {
+    "SELL_SIDE": 53,
+    "BUY_SIDE": 32,
+    "BOTH": 28,
+    "UNKNOWN": 15
+  },
+  "fibo_direction_gap_reason_counts": {
+    "NONE": 85,
+    "PRICE_BETWEEN_EMAS": 28,
+    "TREND_ALIGNMENT_CONFLICT": 15
+  },
+  "regime_counts": {
+    "trend": 92,
+    "breakout": 36
+  },
+  "window_fibo_rows": {
+    "cv_field_presence_20260301_20260308": 25,
+    "db_w4_20260419_20260426": 21,
+    "cy_w1_20260308_20260315": 20,
+    "cy_w2_20260315_20260322": 20,
+    "db_w2_20260405_20260412": 19,
+    "db_w3_20260412_20260419": 13,
+    "db_w1_20260329_20260405": 6,
+    "cy_w3_20260322_20260329": 4
+  },
+  "window_usable_rows": {
+    "cy_w2_20260315_20260322": 20,
+    "cv_field_presence_20260301_20260308": 15,
+    "cy_w1_20260308_20260315": 15,
+    "db_w4_20260419_20260426": 12,
+    "db_w2_20260405_20260412": 10,
+    "db_w3_20260412_20260419": 9,
+    "cy_w3_20260322_20260329": 2,
+    "db_w1_20260329_20260405": 2
+  },
+  "forbidden_action_marker_count": 0,
+  "baseline_fallback_marker_count": 0,
+  "verdicts": [
+    "FIBO_ROW_LEVEL_SLICE_BUILT",
+    "FIBO_USABLE_DIRECTION_BELOW_RULE_CANDIDATE_GATE",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DG artifact-only interpretation of Fibo row-level slice; no MT5 and no order logic"
+}

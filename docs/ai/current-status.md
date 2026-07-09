@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint BV PAF Gold H1 evidence intake preflight:
+This AI memory has been refreshed during Checkpoint BW PAF Gold H1 evidence review:
 
-- `origin/main`: `8d23b8d` (`Merge pull request #65 from tomahogzero/research/checkpoint-bu-paf-gap-evidence-guide`)
+- `origin/main`: `9fc7eff` (`Merge pull request #66 from tomahogzero/research/checkpoint-bv-paf-gap-evidence-intake-preflight`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -402,7 +402,11 @@ Known selected run:
 - Checkpoint BV result: `MISSING_EVIDENCE_FOLDER`; evidence status remains `WAITING_FOR_USER_EVIDENCE`.
 - Checkpoint BV did not run MT5, did not run Strategy Tester, did not change EA/source code, did not change presets, did not change the production validator, and did not run joiner.
 - Checkpoint BV decision: `EVIDENCE_INTAKE_PREFLIGHT_DONE`, `MISSING_EVIDENCE_FOLDER`, `WAITING_FOR_USER_EVIDENCE`, `DAILY_SESSION_GAP_STILL_NOT_APPROVED`, `JOINER_STILL_BLOCKED`, `VALIDATOR_PRODUCTION_NOT_CHANGED`, `MT5_NOT_RUN`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
-- Current progress estimate: research-system readiness around `85%`; PAF diagnostic readiness around `73%`; PAF shadow-outcome readiness around `70%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
+- Checkpoint BW reviewed returned manual evidence: one `GOLD#` H1 screenshot and one H1 CSV export.
+- Checkpoint BW confirmed the CSV is H1, with 230 rows from `2026-03-02 01:00:00` to `2026-03-13 22:00:00`.
+- Checkpoint BW found 9 gaps: 1 weekend market closure, 8 daily session gap candidates, and 0 unknown irregular gaps.
+- Checkpoint BW decision: `EVIDENCE_REVIEW_DONE`, `CSV_FOUND`, `CSV_CONFIRMED_H1`, `SCREENSHOT_FOUND`, `DAILY_SESSION_PATTERN_CONFIRMED_IN_CSV`, `UNKNOWN_IRREGULAR_GAPS_0`, `EVIDENCE_ACCEPTED_FOR_POLICY_DRY_RUN_UPDATE`, `JOINER_STILL_BLOCKED`, `VALIDATOR_PRODUCTION_NOT_CHANGED`, `MT5_NOT_RUN_BY_CODEX`, `STRATEGY_TESTER_NOT_RUN`, `ORDER_PATH_STILL_BLOCKED`, `NO_OPTIMIZATION_APPROVED`, `NO_PROFITABILITY_CLAIM`.
+- Current progress estimate: research-system readiness around `86%`; PAF diagnostic readiness around `74%`; PAF shadow-outcome readiness around `71%`; real-money bot readiness around `10-15%`; demo/live readiness remains `0%`.
 - Local working tree may contain old uncommitted files from previous checkpoints.
 
 ## Current Safe Recommendation
@@ -419,4 +423,4 @@ Recommended next action:
 3. For Gold research, require documentation and diagnostic requirements before any implementation.
 4. Review Checkpoint AC result and missing report issue.
 5. Do not rerun strategy diagnostics automatically.
-6. After Checkpoint BV, the next safe step is for the user to place manual MT5 evidence under `mt5_artifacts/manual_gap_evidence/GOLD_HASH_H1/`, then ask Codex to continue evidence review. Do not approve daily session gaps or run joiner until evidence is present and reviewed.
+6. After Checkpoint BW, the next safe step is Checkpoint BX: update only the dry-run policy draft for `GOLD#` H1 daily session gaps and rerun the offline dry-run tool. Do not run joiner until dry-run verdict becomes `PASS`.

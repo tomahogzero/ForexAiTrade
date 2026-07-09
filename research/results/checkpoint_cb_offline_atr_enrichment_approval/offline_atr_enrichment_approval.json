@@ -1,0 +1,55 @@
+{
+  "checkpoint": "CB",
+  "name": "PAF Offline ATR Enrichment Approval Package",
+  "approval_package_only": true,
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "production_validator_changed": false,
+  "joiner_rerun": false,
+  "first_touch_outcomes_recomputed": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "source_checkpoint": "BZ",
+  "source_limitation": "atr is missing or invalid",
+  "future_checkpoint": "CC",
+  "future_action_allowed": "offline_atr_enrichment_only",
+  "future_inputs": [
+    "research/results/checkpoint_bz_offline_joiner_run/paf_lookahead_bars.csv",
+    "research/results/checkpoint_bz_offline_joiner_run/paf_shadow_outcomes_enriched.csv",
+    "research/results/checkpoint_bz_offline_joiner_run/paf_lookahead_join_summary.json"
+  ],
+  "future_outputs_proposed": [
+    "research/results/checkpoint_cc_offline_atr_enrichment/paf_shadow_outcomes_atr_enriched.csv",
+    "research/results/checkpoint_cc_offline_atr_enrichment/offline_atr_enrichment_summary.json",
+    "research/results/checkpoint_cc_offline_atr_enrichment/offline_atr_enrichment_summary.md",
+    "research/results/checkpoint_cc_offline_atr_enrichment/offline_atr_data_completeness.csv",
+    "research/results/checkpoint_cc_offline_atr_enrichment/offline_atr_guardrail_summary.md"
+  ],
+  "atr_period_fixed_for_diagnostic": 14,
+  "output_column": "offline_atr_14",
+  "future_leakage_guard": "event ATR must use only H1 bars available at or before event time",
+  "blocked_until_future_checkpoint": [
+    "joiner_rerun",
+    "first_touch_outcome_interpretation",
+    "profitability_interpretation",
+    "mt5_strategy_tester",
+    "ea_source_changes",
+    "preset_changes",
+    "optimization"
+  ],
+  "decision": [
+    "OFFLINE_ATR_ENRICHMENT_APPROVAL_PACKAGE_CREATED",
+    "ATR_PERIOD_FIXED_FOR_DIAGNOSTIC_ONLY",
+    "NO_ATR_OPTIMIZATION_APPROVED",
+    "FUTURE_LEAKAGE_GUARD_REQUIRED",
+    "FIRST_TOUCH_LABELS_STILL_BLOCKED",
+    "JOINER_RERUN_NOT_APPROVED",
+    "MT5_NOT_RUN",
+    "STRATEGY_TESTER_NOT_RUN",
+    "EA_SOURCE_NOT_CHANGED",
+    "PRESETS_NOT_CHANGED",
+    "NO_PROFITABILITY_CLAIM"
+  ]
+}

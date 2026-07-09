@@ -2,6 +2,43 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DP Refresh
+
+Checkpoint DP is a documentation-only blocker/status checkpoint after Checkpoint DO.
+
+- PR #111 / Checkpoint DO is merged on `origin/main`.
+- Current base for DP: `f990a02`.
+- DP does not run MT5 / Strategy Tester.
+- DP does not create an execution research matrix.
+- DP does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DP does not add market orders, pending orders, position modification, or order signals.
+- DP does not claim profitability.
+
+Current blocker:
+
+- `EXACT_DM_APPROVAL_PHRASE_MISSING`
+- Latest short continuation request does not approve Future DM execution.
+- Future DM remains blocked until the exact approval phrase from Checkpoint DO is provided.
+
+Current readiness estimate after DP:
+
+- Research infrastructure readiness: `95%`
+- PAF diagnostic pipeline readiness: `90%`
+- PAF diagnostic interpretation readiness: `78%`
+- Fibo Pullback interpretation readiness: `79%`
+- PAF rule-candidate readiness: `56%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Provide the exact DM approval phrase if Future DM execution is desired.
+- Otherwise pause; further work should remain docs-only or artifact-only with committed data.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DO Refresh
 
 Checkpoint DO is a documentation-only approval handoff for Future Checkpoint DM.

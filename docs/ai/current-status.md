@@ -4,9 +4,9 @@ Last updated: 2026-07-08
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CE PAF offline first-touch relabel tool and dry run:
+This AI memory has been refreshed during Checkpoint CF PAF first-touch diagnostic interpretation:
 
-- `origin/main`: `0f03988` (`Merge pull request #74 from tomahogzero/research/checkpoint-cd-first-touch-relabel-approval`)
+- `origin/main`: `4043a23` (`Merge pull request #75 from tomahogzero/research/checkpoint-ce-first-touch-relabel`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -241,6 +241,12 @@ Known selected run:
 - Checkpoint CE horizon 6 labels: TP_FIRST `5`, SL_FIRST `9`, NO_RESOLUTION `2`, AMBIGUOUS_SAME_BAR `1`, DATA_MISSING `2`, DIRECTION_MISSING `14`.
 - Checkpoint CE horizons 12/24/48 labels: TP_FIRST `6`, SL_FIRST `10`, AMBIGUOUS_SAME_BAR `1`, DATA_MISSING `2`, DIRECTION_MISSING `14`.
 - Checkpoint CE labels are hypothetical shadow diagnostics only and are not profit/loss, not strategy approval, and not order logic.
+- Checkpoint CF interprets Checkpoint CE labels as diagnostics only.
+- Checkpoint CF finding: `SL_FIRST` is greater than `TP_FIRST` in every horizon among currently relabel-ready rows.
+- Checkpoint CF finding: `DIRECTION_MISSING = 14/33` remains the largest data blocker.
+- Checkpoint CF finding: relabel-ready sample size is only `17` rows, too small for strategy approval.
+- Checkpoint CF classification: `NOT_READY_FOR_ORDER_LOGIC`.
+- Checkpoint CF recommended next step: Checkpoint CG diagnostic attribution by classification/session/spread/regime only.
 - Checkpoint AS decision: `SHADOW_OUTCOME_SPEC_DEFINED`, `NO_ORDER_IMPLEMENTATION_APPROVED`, `NO_OPTIMIZATION_APPROVED`.
 - Checkpoint AS requires deterministic entry references, explicit direction handling, pre-registered SL/TP/lookahead hypotheses, conservative same-bar ambiguity handling, and bucketed summaries by classification/regime/spread/volatility/session/window.
 - Checkpoint AS does not implement a parser and does not run MT5.

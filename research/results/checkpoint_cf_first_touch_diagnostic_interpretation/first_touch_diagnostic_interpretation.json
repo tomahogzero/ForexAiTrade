@@ -1,0 +1,77 @@
+{
+  "checkpoint": "CF",
+  "name": "PAF First-Touch Diagnostic Interpretation",
+  "interpretation_only": true,
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "tool_added": false,
+  "relabel_rerun": false,
+  "optimization_performed": false,
+  "order_logic_approved": false,
+  "profitability_claim": false,
+  "source_checkpoint": "CE",
+  "source_status": "PASS_OFFLINE_FIRST_TOUCH_RELABEL",
+  "counts": {
+    "rows_read": 33,
+    "relabel_ready_rows": 17,
+    "data_missing_rows": 2,
+    "direction_missing_rows": 14
+  },
+  "label_distribution": {
+    "6": {
+      "TP_FIRST": 5,
+      "SL_FIRST": 9,
+      "NO_RESOLUTION": 2,
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14
+    },
+    "12": {
+      "TP_FIRST": 6,
+      "SL_FIRST": 10,
+      "NO_RESOLUTION": 0,
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14
+    },
+    "24": {
+      "TP_FIRST": 6,
+      "SL_FIRST": 10,
+      "NO_RESOLUTION": 0,
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14
+    },
+    "48": {
+      "TP_FIRST": 6,
+      "SL_FIRST": 10,
+      "NO_RESOLUTION": 0,
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_MISSING": 2,
+      "DIRECTION_MISSING": 14
+    }
+  },
+  "classification": "NOT_READY_FOR_ORDER_LOGIC",
+  "main_blockers": [
+    "direction_missing_high",
+    "sample_size_small",
+    "sl_first_dominates_current_ready_rows",
+    "same_bar_ambiguity_exists"
+  ],
+  "next_checkpoint_recommendation": "CG diagnostic attribution by classification, session, spread bucket, and regime only",
+  "decision": [
+    "FIRST_TOUCH_DIAGNOSTIC_INTERPRETATION_CREATED",
+    "SL_FIRST_DOMINATES_CURRENT_READY_ROWS",
+    "DIRECTION_MISSING_REMAINS_MAJOR_BLOCKER",
+    "SAMPLE_SIZE_TOO_SMALL_FOR_STRATEGY_DECISION",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "OPTIMIZATION_NOT_APPROVED",
+    "MT5_NOT_RUN",
+    "STRATEGY_TESTER_NOT_RUN",
+    "EA_SOURCE_NOT_CHANGED",
+    "PRESETS_NOT_CHANGED",
+    "NO_PROFITABILITY_CLAIM"
+  ]
+}

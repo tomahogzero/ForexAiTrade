@@ -2,6 +2,59 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DE Refresh
+
+Checkpoint DE is an artifact-summary-only Fibo Pullback diagnostic slice report.
+
+- PR #100 / Checkpoint DD is merged on `origin/main`.
+- Latest known base for DE: `26594d3`.
+- DE does not run MT5 / Strategy Tester.
+- DE does not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+- DE does not add market orders, pending orders, position modification, or order signals.
+- DE does not claim profitability.
+
+DE confirms Fibo Pullback as the first diagnostic focus only:
+
+- combined diagnostic rows: `621`
+- possible setup rows: `174`
+- usable direction rows: `106`
+- possible Fibo Pullback rows: `128`
+- Fibo Pullback share of possible setup rows: `73.6%`
+- Fibo Pullback share of all diagnostic rows: `20.6%`
+
+DE gate decisions:
+
+- diagnostic interpretation gate: `PASS_LOW_MARGIN`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+DE limitations:
+
+- no committed row-level Fibo-specific usable direction count
+- no committed row-level Fibo-specific BUY/SELL distribution
+- no committed row-level Fibo-specific direction confidence distribution
+- no committed row-level Fibo-specific first-touch usability
+- no committed row-level Fibo-specific EMA state distribution
+- no committed row-level Fibo-specific spread/regime/session distribution
+
+Current readiness estimate:
+
+- Research infrastructure readiness: `92%`
+- PAF diagnostic pipeline readiness: `84%`
+- PAF diagnostic interpretation readiness: `60%`
+- Fibo Pullback interpretation readiness: `48%`
+- PAF rule-candidate readiness: `35%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DF: artifact-only row-level Fibo Pullback slice extractor/report from existing logs/artifacts if available.
+- Do not run MT5 unless separately approved.
+- Do not implement order logic.
+- Do not optimize.
+
 ## Latest Checkpoint DD Refresh
 
 Checkpoint DD is a documentation / diagnostic-interpretation planning checkpoint only.

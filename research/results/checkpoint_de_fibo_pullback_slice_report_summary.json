@@ -1,0 +1,59 @@
+{
+  "checkpoint": "DE",
+  "type": "artifact_summary_slice_only",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "inputs": [
+    "checkpoint_cv_paf_field_presence_validation_summary.json",
+    "checkpoint_cy_paf_multi_window_field_stability_summary.json",
+    "checkpoint_db_paf_data_collection_expansion_summary.json",
+    "checkpoint_dc_paf_diagnostic_interpretation_summary.json",
+    "checkpoint_dd_fibo_pullback_diagnostic_plan_summary.json"
+  ],
+  "combined_counts": {
+    "diagnostic_rows": 621,
+    "no_setup_direction_not_required": 447,
+    "possible_setup_rows": 174,
+    "usable_direction_rows": 106,
+    "possible_fibo_pullback": 128,
+    "possible_zone_rejection": 33,
+    "possible_break_retest": 13,
+    "trend_alignment_conflict": 15,
+    "wick_too_small": 25,
+    "price_between_emas": 28
+  },
+  "fibo_pullback_slice": {
+    "rows": 128,
+    "share_of_possible_setup_rows": 0.7356,
+    "share_of_all_diagnostic_rows": 0.2061,
+    "status": "DIAGNOSTIC_FOCUS_CONFIRMED_ONLY"
+  },
+  "gates": {
+    "diagnostic_interpretation_gate": "PASS_LOW_MARGIN",
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL"
+  },
+  "limitations": [
+    "No row-level Fibo-specific usable direction count in committed summaries",
+    "No row-level Fibo-specific BUY/SELL distribution in committed summaries",
+    "No row-level Fibo-specific direction confidence distribution in committed summaries",
+    "No row-level Fibo-specific first-touch usable distribution in committed summaries",
+    "No row-level Fibo-specific EMA state distribution in committed summaries",
+    "No row-level Fibo-specific spread/regime/session distribution in committed summaries"
+  ],
+  "verdicts": [
+    "FIBO_PULLBACK_DIAGNOSTIC_FOCUS_CONFIRMED",
+    "FIBO_PULLBACK_ROW_LEVEL_SLICE_REQUIRED",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DF artifact-only row-level Fibo Pullback slice extractor/report from existing logs/artifacts if available"
+}
+

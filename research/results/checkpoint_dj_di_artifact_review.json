@@ -1,0 +1,90 @@
+{
+  "checkpoint": "DJ",
+  "type": "artifact_only_review",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "inputs": [
+    "research/results/checkpoint_di_diagnostic_coverage_summary.json",
+    "research/results/checkpoint_di_diagnostic_coverage_summary.md",
+    "docs/127_Checkpoint_DI_Diagnostic_Coverage_Execution_TH.md"
+  ],
+  "combined_cv_cy_db_di": {
+    "diagnostic_windows": 15,
+    "diagnostic_rows": 1299,
+    "possible_setup_rows": 384,
+    "total_usable_direction_rows": 249,
+    "fibo_pullback_rows": 242,
+    "fibo_usable_first_touch_rows": 184,
+    "fibo_direction_gap_rows": 58,
+    "fibo_sell_rows": 141,
+    "fibo_buy_rows": 43,
+    "fibo_direction_unknown_rows": 58,
+    "fibo_price_between_emas": 40,
+    "fibo_trend_alignment_conflict": 18
+  },
+  "shares": {
+    "fibo_usable_first_touch_share": 0.7603,
+    "fibo_direction_gap_share": 0.2397,
+    "fibo_sell_share_all_fibo": 0.5826,
+    "fibo_buy_share_all_fibo": 0.1777,
+    "fibo_unknown_share_all_fibo": 0.2397,
+    "fibo_sell_share_usable": 0.7663,
+    "fibo_buy_share_usable": 0.2337
+  },
+  "gap_attribution": {
+    "price_between_emas": 40,
+    "trend_alignment_conflict": 18,
+    "price_between_emas_share_of_gaps": 0.6897,
+    "trend_alignment_conflict_share_of_gaps": 0.3103
+  },
+  "low_window_weakness": {
+    "status": "FAIL",
+    "weak_windows": [
+      {
+        "window": "CY-W3",
+        "fibo_usable_rows": 2
+      },
+      {
+        "window": "DB-W1",
+        "fibo_usable_rows": 2
+      },
+      {
+        "window": "DI-W3",
+        "fibo_usable_rows": 4
+      }
+    ],
+    "reason": "CY-W3 and DB-W1 remain consecutive weak windows; DI-W3 adds another weak window."
+  },
+  "gates": {
+    "diagnostic_windows_gate": "PASS",
+    "fibo_usable_first_touch_gate": "PASS",
+    "total_usable_direction_gate": "FAIL",
+    "low_window_weakness_gate": "FAIL",
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL"
+  },
+  "verdicts": [
+    "DJ_ARTIFACT_REVIEW_COMPLETE",
+    "DI_EXECUTION_STATUS_CONFIRMED_PASS",
+    "NO_TRADE_SAFETY_CONFIRMED",
+    "FIBO_USABLE_ROWS_GATE_PASS",
+    "WINDOW_COVERAGE_GATE_PASS",
+    "TOTAL_USABLE_DIRECTION_GATE_FAIL",
+    "LOW_WINDOW_WEAKNESS_GATE_FAIL",
+    "SELL_HEAVY_DISTRIBUTION_REVIEWED_NOT_APPROVED",
+    "FIBO_GAPS_REVIEWED_STILL_MATERIAL",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "NO_OPTIMIZATION_PERFORMED",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DK documentation-only planning for deeper artifact review or future diagnostic-only coverage approval"
+}

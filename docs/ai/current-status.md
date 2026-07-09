@@ -2,6 +2,66 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DJ Refresh
+
+Checkpoint DJ is an artifact-only review of Checkpoint DI and the combined CV + CY + DB + DI diagnostic set.
+
+- PR #105 / Checkpoint DI is merged on `origin/main`.
+- Current base for DJ: `5af4d75`.
+- DJ does not run MT5 / Strategy Tester.
+- DJ does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DJ does not add market orders, pending orders, position modification, or order signals.
+- DJ does not claim profitability.
+
+Combined CV + CY + DB + DI:
+
+- diagnostic windows: `15`
+- diagnostic rows: `1299`
+- possible setup rows: `384`
+- total usable direction rows: `249`
+- Fibo Pullback rows: `242`
+- Fibo usable first-touch rows: `184`
+- Fibo direction gap rows: `58`
+- Fibo SELL rows: `141`
+- Fibo BUY rows: `43`
+- Fibo DIRECTION_UNKNOWN rows: `58`
+
+DJ gate decisions:
+
+- window count >= `12`: `PASS`
+- Fibo usable first-touch rows >= `150`: `PASS`
+- total usable direction rows >= `300`: `FAIL`
+- low-window weakness: `FAIL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+DJ interpretation boundary:
+
+- Fibo-specific diagnostic coverage is materially better.
+- Fibo usable row and window-count gates now pass.
+- SELL-heavy distribution is reviewed but not approved as a bias.
+- `PRICE_BETWEEN_EMAS` and `TREND_ALIGNMENT_CONFLICT` remain material gap reasons.
+- No rule-candidate or order logic is approved.
+
+Current readiness estimate after DJ:
+
+- Research infrastructure readiness: `94%`
+- PAF diagnostic pipeline readiness: `89%`
+- PAF diagnostic interpretation readiness: `72%`
+- Fibo Pullback interpretation readiness: `72%`
+- PAF rule-candidate readiness: `50%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DK: documentation-only planning for deeper artifact review or future diagnostic-only coverage approval.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DI Refresh
 
 Checkpoint DI executed the exact approved diagnostic-only `GOLD#` H1 PAF/Fibo coverage expansion after Checkpoint DH.

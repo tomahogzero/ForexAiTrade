@@ -4,9 +4,9 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CU PAF field presence validation approval:
+This AI memory has been refreshed during Checkpoint CV PAF field presence validation execution:
 
-- `origin/main`: `fa56c3e` (`Merge pull request #90 from tomahogzero/research/checkpoint-ct-paf-direction-explainability-fields`)
+- `origin/main`: `656580e` (`Merge pull request #91 from tomahogzero/research/checkpoint-cu-paf-field-presence-validation-approval`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
 - PR #5 / Javis Codex project memory is merged.
 - PR #11 / Checkpoint T-Prep Fix is merged.
@@ -157,6 +157,24 @@ This AI memory has been refreshed during Checkpoint CU PAF field presence valida
 - CU explicitly states that future CV must not prove profitability, setup quality, entry quality, exit quality, drawdown safety, demo/live readiness, or order logic readiness.
 - MT5 execution remains blocked until exact approval phrase is provided:
   `Approved to execute Checkpoint CV one-run PAF field presence validation with symbol GOLD# timeframe H1 date range 2026-03-01 to 2026-03-08 using CT diagnostics-only fields.`
+- PR #91 / Checkpoint CU PAF field presence validation approval is merged.
+- Checkpoint CV executed exactly one approved Strategy Tester diagnostic field-presence validation run.
+- CV RunId: `run_20260709_182444`.
+- CV scope: `GOLD#` H1, `2026-03-01` to `2026-03-08`, Strategy Tester only, one run only.
+- CV compile result: `0 errors, 0 warnings`.
+- CV execution status: `PASS`.
+- CV report artifact status: `FOUND`.
+- CV total trades: `0`.
+- CV PAF diagnostic count: `97`.
+- CV authoritative source: `ea_mirror.log`.
+- CV confirms all Checkpoint CT direction explainability fields appear in EA mirror log and parser output.
+- CV no-trade confirmation: `PASS_FROM_REPORT_AND_EA_LOGS`.
+- CV baseline fallback confirmation: `PASS_FROM_EA_LOGS`.
+- CV forbidden action marker count: `0`.
+- CV baseline fallback marker count: `0`.
+- CV does not prove profitability, setup quality, entry quality, exit quality, drawdown safety, forward-test readiness, or order-logic readiness.
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`.
+- Recommended next safe step is Checkpoint CW artifact review / interpretation of CV field-presence results. Do not add order logic, do not optimize, do not increase lot/risk, and do not run demo/live.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

@@ -1,0 +1,32 @@
+{
+  "checkpoint": "BY",
+  "name": "PAF Offline Joiner Approval Package",
+  "approval_package_only": true,
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "ea_source_changed": false,
+  "presets_changed": false,
+  "production_validator_changed": false,
+  "joiner_run": false,
+  "optimization_performed": false,
+  "profitability_claim": false,
+  "source_checkpoint": "BX",
+  "required_gap_policy_dry_run_verdict": "PASS",
+  "required_blocking_or_review_count": 0,
+  "future_scope": {
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "tool": "tools/paf_lookahead_joiner.py",
+    "shadow_outcomes": "research/results/paf_shadow_outcomes_all_cases.csv",
+    "results_root": "research/results/checkpoint_bz_offline_joiner_run/"
+  },
+  "gate_status": {
+    "offline_joiner_execution": "BLOCKED_PENDING_EXPLICIT_APPROVAL",
+    "mt5": "BLOCKED",
+    "strategy_tester": "BLOCKED",
+    "production_validator_change": "BLOCKED",
+    "optimization": "BLOCKED",
+    "demo_live": "BLOCKED"
+  },
+  "required_approval_phrase": "Approved to execute Checkpoint BZ offline PAF joiner for GOLD# H1 using BX PASS gap policy and offline files only."
+}

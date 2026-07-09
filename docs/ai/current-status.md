@@ -2,6 +2,66 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DK Refresh
+
+Checkpoint DK is a documentation-only diagnostic review and coverage plan after Checkpoint DJ.
+
+- PR #106 / Checkpoint DJ is merged on `origin/main`.
+- Current base for DK: `32487d2`.
+- DK does not run MT5 / Strategy Tester.
+- DK does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DK does not add market orders, pending orders, position modification, or order signals.
+- DK does not claim profitability.
+
+Combined CV + CY + DB + DI remains:
+
+- diagnostic windows: `15`
+- diagnostic rows: `1299`
+- possible setup rows: `384`
+- total usable direction rows: `249`
+- Fibo Pullback rows: `242`
+- Fibo usable first-touch rows: `184`
+- Fibo direction gap rows: `58`
+- Fibo SELL rows: `141`
+- Fibo BUY rows: `43`
+- Fibo DIRECTION_UNKNOWN rows: `58`
+
+DK gate decisions:
+
+- window count >= `12`: `PASS`
+- Fibo usable first-touch rows >= `150`: `PASS`
+- total usable direction rows >= `300`: `FAIL`
+- low-window weakness: `FAIL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+DK next-step plan:
+
+- Checkpoint DL should be artifact-only deep review of low-window weakness, SELL-heavy distribution, BUY scarcity, and Fibo gap attribution.
+- Future Checkpoint DM may be a diagnostic-only coverage expansion only if explicitly approved later.
+- Future DM proposed windows: `2026-06-14` to `2026-06-21`, `2026-06-21` to `2026-06-28`, and `2026-06-28` to `2026-07-05`.
+- Future DM remains blocked until the exact approval phrase in `docs/129_Checkpoint_DK_Diagnostic_Review_And_Coverage_Plan_TH.md` is provided.
+- If DM is executed later, Checkpoint DN artifact-only review is required before any rule-candidate discussion.
+
+Current readiness estimate after DK:
+
+- Research infrastructure readiness: `94%`
+- PAF diagnostic pipeline readiness: `89%`
+- PAF diagnostic interpretation readiness: `74%`
+- Fibo Pullback interpretation readiness: `74%`
+- PAF rule-candidate readiness: `52%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DL: artifact-only deep review using existing committed artifacts.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DJ Refresh
 
 Checkpoint DJ is an artifact-only review of Checkpoint DI and the combined CV + CY + DB + DI diagnostic set.

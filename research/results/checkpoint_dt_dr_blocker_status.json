@@ -1,0 +1,70 @@
+{
+  "checkpoint": "DT",
+  "type": "docs_only_dr_blocker_status",
+  "date": "2026-07-09",
+  "base_commit": "321966e",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "execution_matrix_created": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "current_blocker": "EXACT_DR_APPROVAL_PHRASE_MISSING",
+  "non_approval_messages": [
+    "merge แล้ว ครับ ต่อ combo ได้เลยครับ",
+    "ต่อเลย",
+    "combo",
+    "continue"
+  ],
+  "future_dr_required_exact_approval_phrase": "Approved to execute Checkpoint DR diagnostic-only GOLD# H1 PAF/Fibo usable-direction top-up with Strategy Tester only, no optimization, no demo/live forward test, no EA or preset changes, no order logic, total trades must remain 0, using windows 2026-02-15 to 2026-02-22 and 2026-02-22 to 2026-03-01 with the official AK runner/parser workflow.",
+  "current_combined_status": {
+    "diagnostic_windows": 18,
+    "diagnostic_rows": 1589,
+    "possible_setup_rows": 451,
+    "total_usable_direction_rows": 290,
+    "total_usable_direction_gate_min": 300,
+    "total_usable_direction_shortfall": 10,
+    "fibo_usable_first_touch_rows": 210,
+    "total_usable_direction_gate": "FAIL",
+    "low_window_weakness_gate": "FAIL_HISTORICAL_WEAKNESS_REMAINS",
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL",
+    "paf_status": "NOT_READY_FOR_ORDER_LOGIC"
+  },
+  "allowed_next_steps_without_dr_approval": [
+    "pause",
+    "docs-only planning",
+    "artifact-only review of committed data",
+    "status refresh"
+  ],
+  "blocked_actions_without_dr_approval": [
+    "run MT5",
+    "run Strategy Tester",
+    "create execution research matrix for DR",
+    "optimize parameters",
+    "change EA/MQL5",
+    "change presets",
+    "add order logic",
+    "start demo/live forward test",
+    "claim profitability"
+  ],
+  "verdicts": [
+    "DT_BLOCKER_STATUS_RECORDED",
+    "DOCUMENTATION_ONLY",
+    "EXACT_DR_APPROVAL_PHRASE_MISSING",
+    "FUTURE_DR_EXECUTION_BLOCKED",
+    "NO_MT5_RUN",
+    "NO_STRATEGY_TESTER_RUN",
+    "NO_EXECUTION_MATRIX_CREATED",
+    "NO_EA_OR_PRESET_CHANGE",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_ORDER_LOGIC_APPROVED",
+    "NO_DEMO_LIVE_FORWARD_TEST",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ]
+}

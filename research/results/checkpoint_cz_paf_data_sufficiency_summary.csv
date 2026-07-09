@@ -1,0 +1,11 @@
+metric,count
+total_diagnostic_rows,274
+no_setup_direction_not_required,183
+possible_setup_rows,91
+usable_direction_rows,63
+trend_alignment_conflict,12
+wick_too_small,11
+price_between_emas,5
+possible_fibo_pullback,69
+possible_zone_rejection,14
+possible_break_retest,8

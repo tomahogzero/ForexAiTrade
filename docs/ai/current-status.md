@@ -2,6 +2,53 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DN-Prep Refresh
+
+Checkpoint DN-Prep is a documentation-only post-DM artifact review template.
+
+- PR #109 / Checkpoint DM-Prep is merged on `origin/main`.
+- Current base for DN-Prep: `de5a219`.
+- DN-Prep does not run MT5 / Strategy Tester.
+- DN-Prep does not review DM artifacts because DM has not been approved or executed yet.
+- DN-Prep does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DN-Prep does not add market orders, pending orders, position modification, or order signals.
+- DN-Prep does not claim profitability.
+
+DN-Prep defines:
+
+- post-DM execution safety review
+- post-DM coverage review
+- BUY/SELL distribution review boundaries
+- Fibo gap attribution review boundaries
+- DN classification set
+- DN decision matrix
+- required DN output artifacts
+
+Current blocker:
+
+- Future DM execution is still blocked until exact approval.
+- DN result is blocked until DM artifacts exist.
+- Rule candidate remains blocked today.
+- Order logic remains blocked today.
+
+Current readiness estimate after DN-Prep:
+
+- Research infrastructure readiness: `95%`
+- PAF diagnostic pipeline readiness: `90%`
+- PAF diagnostic interpretation readiness: `78%`
+- Fibo Pullback interpretation readiness: `79%`
+- PAF rule-candidate readiness: `56%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Provide the exact DM approval phrase if Future DM execution is desired.
+- Otherwise pause at documentation readiness; do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DM-Prep Refresh
 
 Checkpoint DM-Prep is a documentation-only readiness package for a future Checkpoint DM diagnostic-only run.

@@ -4,7 +4,7 @@ Last updated: 2026-07-09
 
 ## Repository State Observed
 
-This AI memory has been refreshed during Checkpoint CW PAF field presence artifact review:
+This AI memory has been refreshed during Checkpoint CX PAF multi-window field stability approval:
 
 - `origin/main`: `6969779` (`Merge pull request #92 from tomahogzero/research/checkpoint-cv-paf-field-presence-validation`)
 - PR #4 / Checkpoint N Price Action / Fibo diagnostics is merged.
@@ -189,6 +189,17 @@ This AI memory has been refreshed during Checkpoint CW PAF field presence artifa
   - `PRICE_BETWEEN_EMAS`: `1`
 - CW confirms the remaining blocker is not missing fields, but low sample size and lack of multi-window stability after CT fields.
 - Recommended next safe step is Checkpoint CX multi-window CT field-presence and direction-gap stability approval package. It should be approval-only first and must not run MT5 until separately approved.
+- Checkpoint CX is documentation/approval-only.
+- CX does not run MT5 / Strategy Tester.
+- CX does not change EA/source code, presets, trading logic, lot/risk, or optimization settings.
+- CX proposes future Checkpoint CY multi-window diagnostic-only validation for `GOLD#` H1.
+- Proposed CY windows:
+  - `2026-03-08` to `2026-03-15`
+  - `2026-03-15` to `2026-03-22`
+  - `2026-03-22` to `2026-03-29`
+- CX requires each future window to confirm CT field presence, parser gap reason summaries, `total_trades=0`, forbidden action markers `0`, and baseline fallback markers `0`.
+- CX keeps PAF status: `NOT_READY_FOR_ORDER_LOGIC`.
+- Future execution remains blocked until explicit approval phrase is provided for Checkpoint CY.
 - User requested a Codex-only self-review workflow so low-risk docs/planning checkpoints can proceed without GPT browser review.
 - Checkpoint AF defines Codex-first / GPT-optional workflow.
 - After Checkpoint AF is merged, Codex may self-review and auto-merge Tier 0/Tier 1 docs-only or runner-plan-only PRs when all guardrails pass.

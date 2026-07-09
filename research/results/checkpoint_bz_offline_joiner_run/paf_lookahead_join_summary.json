@@ -1,0 +1,24 @@
+{
+  "shadow_outcomes": "research\\results\\paf_shadow_outcomes_all_cases.csv",
+  "bars_csv": "research\\results\\checkpoint_bz_offline_joiner_run\\paf_lookahead_bars.csv",
+  "rows": 33,
+  "join_status_counts": {
+    "JOINED": 19,
+    "DIRECTION_MISSING": 14
+  },
+  "horizons": [
+    6,
+    12,
+    24,
+    48
+  ],
+  "tp_atr_multiple": 1.5,
+  "sl_atr_multiple": 1.0,
+  "guardrails": [
+    "offline diagnostic analysis only",
+    "no MT5 run",
+    "no orders",
+    "no optimization",
+    "no profitability claim"
+  ]
+}

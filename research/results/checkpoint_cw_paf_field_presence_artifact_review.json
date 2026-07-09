@@ -1,0 +1,31 @@
+{
+  "checkpoint": "CW",
+  "reviewed_run_id": "run_20260709_182444",
+  "reviewed_case_id": "GOLD_HASH_H1_PAF_FIELD_PRESENCE_CV_cv_field_presence_20260301_20260308",
+  "symbol": "GOLD#",
+  "canonical_symbol": "GOLD",
+  "timeframe": "H1",
+  "date_from": "2026-03-01",
+  "date_to": "2026-03-08",
+  "review_type": "artifact_review_only",
+  "mt5_run": false,
+  "source_or_preset_change": false,
+  "optimization": false,
+  "profitability_interpretation": false,
+  "verdict": "FIELD_PRESENCE_CONFIRMED",
+  "paf_status": "NOT_READY_FOR_ORDER_LOGIC",
+  "execution_status": "PASS",
+  "report_artifact_status": "FOUND",
+  "total_trades": 0,
+  "paf_diagnostic_count": 97,
+  "forbidden_action_marker_count": 0,
+  "baseline_fallback_marker_count": 0,
+  "direction_gap_counts": {
+    "NO_SETUP_DIRECTION_NOT_REQUIRED": 64,
+    "USABLE_DIRECTION": 19,
+    "TREND_ALIGNMENT_CONFLICT": 9,
+    "WICK_TOO_SMALL": 4,
+    "PRICE_BETWEEN_EMAS": 1
+  },
+  "next_safe_step": "Checkpoint CX: Multi-Window CT Field Presence and Direction-Gap Stability Approval"
+}

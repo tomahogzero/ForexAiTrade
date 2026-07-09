@@ -2,6 +2,45 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DO Refresh
+
+Checkpoint DO is a documentation-only approval handoff for Future Checkpoint DM.
+
+- PR #110 / Checkpoint DN-Prep is merged on `origin/main`.
+- Current base for DO: `9d475b6`.
+- DO does not run MT5 / Strategy Tester.
+- DO does not create an execution research matrix.
+- DO does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DO does not add market orders, pending orders, position modification, or order signals.
+- DO does not claim profitability.
+
+DO confirms:
+
+- Future DM remains blocked until exact approval phrase.
+- Short continuation messages such as `ต่อเลย`, `รันต่อ`, `continue`, or PR-count requests do not approve DM execution.
+- Future DM target windows remain `2026-06-14` to `2026-06-21`, `2026-06-21` to `2026-06-28`, and `2026-06-28` to `2026-07-05`.
+- Future DM must remain diagnostic-only with total trades `0`.
+- DM execution artifact PRs must not be auto-merged by default.
+- Checkpoint DN artifact-only review is required after any future DM execution.
+
+Current readiness estimate after DO:
+
+- Research infrastructure readiness: `95%`
+- PAF diagnostic pipeline readiness: `90%`
+- PAF diagnostic interpretation readiness: `78%`
+- Fibo Pullback interpretation readiness: `79%`
+- PAF rule-candidate readiness: `56%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Pause until the exact DM approval phrase is provided, or continue docs-only planning that does not run MT5.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DN-Prep Refresh
 
 Checkpoint DN-Prep is a documentation-only post-DM artifact review template.

@@ -2,6 +2,65 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DL Refresh
+
+Checkpoint DL is an artifact-only deep review after Checkpoint DK.
+
+- PR #107 / Checkpoint DK is merged on `origin/main`.
+- Current base for DL: `0734913`.
+- DL uses committed artifacts only.
+- DL does not run MT5 / Strategy Tester.
+- DL does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DL does not add market orders, pending orders, position modification, or order signals.
+- DL does not claim profitability.
+
+DL review boundary:
+
+- DF provides row-level Fibo slice detail for CV + CY + DB.
+- DI provides committed summary-level detail for the 7 DI windows.
+- DI does not yet provide committed row-level per-window BUY/SELL/gap detail.
+- DL does not infer DI per-window directional bias beyond committed summary data.
+
+DL findings:
+
+- weak windows remain: `CY-W3`, `DB-W1`, and `DI-W3`
+- weak Fibo rows: `19 / 242 = 7.9%`
+- weak Fibo usable rows: `8 / 184 = 4.3%`
+- `CY-W3` and `DB-W1` remain a consecutive weak pair
+- DF weak-pair gaps are all `PRICE_BETWEEN_EMAS`
+- combined usable Fibo direction remains SELL-heavy: `141` SELL vs `43` BUY
+- DI is the main driver of the stronger SELL skew: DI summary-level SELL `88` vs BUY `11`
+- BUY sample remains small
+- Fibo gaps remain material: `PRICE_BETWEEN_EMAS=40`, `TREND_ALIGNMENT_CONFLICT=18`
+
+DL gate decisions:
+
+- window count >= `12`: `PASS`
+- Fibo usable first-touch rows >= `150`: `PASS`
+- total usable direction rows >= `300`: `FAIL`
+- low-window weakness: `FAIL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DL:
+
+- Research infrastructure readiness: `94%`
+- PAF diagnostic pipeline readiness: `89%`
+- PAF diagnostic interpretation readiness: `77%`
+- Fibo Pullback interpretation readiness: `78%`
+- PAF rule-candidate readiness: `55%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- If more coverage is desired, use the exact Future DM approval phrase from Checkpoint DK.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DK Refresh
 
 Checkpoint DK is a documentation-only diagnostic review and coverage plan after Checkpoint DJ.

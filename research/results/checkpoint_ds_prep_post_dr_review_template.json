@@ -1,0 +1,125 @@
+{
+  "checkpoint": "DS-Prep",
+  "type": "docs_only_post_dr_review_template",
+  "date": "2026-07-09",
+  "base_commit": "f732bcf",
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "dr_artifacts_reviewed": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "current_combined_status": {
+    "diagnostic_windows": 18,
+    "diagnostic_rows": 1589,
+    "possible_setup_rows": 451,
+    "total_usable_direction_rows": 290,
+    "total_usable_direction_gate_min": 300,
+    "total_usable_direction_shortfall": 10,
+    "fibo_usable_first_touch_rows": 210,
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL",
+    "paf_status": "NOT_READY_FOR_ORDER_LOGIC"
+  },
+  "future_dr_status": "BLOCKED_UNTIL_EXACT_APPROVAL",
+  "future_ds_inputs_required": [
+    "DR research matrix used for execution",
+    "DR runner log",
+    "DR per-window MT5 reports",
+    "DR parsed execution summary",
+    "DR PAF diagnostics presence check",
+    "DR forbidden action marker scan",
+    "DR baseline fallback marker scan",
+    "combined CV + CY + DB + DI + DM + DR summary"
+  ],
+  "future_ds_execution_safety_checks": {
+    "approved_windows_present": "required",
+    "report_artifacts_found": "required_for_every_window",
+    "parser_status": "no_fatal_error_required",
+    "total_trades": "exactly_0_for_every_window",
+    "paf_diagnostics": "found_for_every_window",
+    "forbidden_action_markers": "0_required",
+    "baseline_fallback_markers": "0_required",
+    "symbol": "approved_broker_specific_GOLD#",
+    "timeframe": "H1",
+    "process_safety": "runner_only_stopped_spawned_pids"
+  },
+  "future_ds_coverage_gates": {
+    "diagnostic_windows": "review_only",
+    "total_usable_direction_rows": ">=300_required",
+    "fibo_usable_first_touch_rows": ">=150_required",
+    "weak_windows": "no_repeated_or_consecutive_low_window_issue_required",
+    "total_trades": "0_required"
+  },
+  "future_ds_classifications": [
+    "DS_REVIEW_COMPLETE",
+    "DR_EXECUTION_STATUS_PASS",
+    "DR_EXECUTION_STATUS_FAIL",
+    "DR_REVIEW_INCOMPLETE",
+    "TOTAL_USABLE_DIRECTION_GATE_PASS",
+    "TOTAL_USABLE_DIRECTION_GATE_FAIL",
+    "LOW_WINDOW_WEAKNESS_GATE_PASS",
+    "LOW_WINDOW_WEAKNESS_GATE_FAIL",
+    "BUY_SELL_DISTRIBUTION_REVIEWED_NOT_APPROVED",
+    "FIBO_GAPS_REVIEWED_STILL_MATERIAL",
+    "RULE_CANDIDATE_REVIEW_ALLOWED_NEXT",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "ORDER_LOGIC_NOT_APPROVED"
+  ],
+  "decision_matrix": [
+    {
+      "execution_safety": "FAIL",
+      "coverage_gate": "any",
+      "weak_window_gate": "any",
+      "distribution_gaps": "any",
+      "decision": "DR_EXECUTION_STATUS_FAIL"
+    },
+    {
+      "execution_safety": "PASS",
+      "coverage_gate": "FAIL",
+      "weak_window_gate": "any",
+      "distribution_gaps": "any",
+      "decision": "RULE_CANDIDATE_GATE_FAIL"
+    },
+    {
+      "execution_safety": "PASS",
+      "coverage_gate": "PASS",
+      "weak_window_gate": "FAIL",
+      "distribution_gaps": "any",
+      "decision": "RULE_CANDIDATE_GATE_FAIL"
+    },
+    {
+      "execution_safety": "PASS",
+      "coverage_gate": "PASS",
+      "weak_window_gate": "PASS",
+      "distribution_gaps": "not_reviewed",
+      "decision": "RULE_CANDIDATE_GATE_FAIL"
+    },
+    {
+      "execution_safety": "PASS",
+      "coverage_gate": "PASS",
+      "weak_window_gate": "PASS",
+      "distribution_gaps": "reviewed_diagnostic_only",
+      "decision": "RULE_CANDIDATE_REVIEW_ALLOWED_NEXT"
+    }
+  ],
+  "verdicts": [
+    "DS_PREP_REVIEW_TEMPLATE_COMPLETE",
+    "DOCUMENTATION_ONLY",
+    "NO_MT5_RUN",
+    "NO_STRATEGY_TESTER_RUN",
+    "NO_DR_ARTIFACTS_REVIEWED",
+    "FUTURE_DR_EXECUTION_STILL_BLOCKED",
+    "DS_RESULT_BLOCKED_UNTIL_DR_ARTIFACTS_EXIST",
+    "NO_EA_OR_PRESET_CHANGE",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_ORDER_LOGIC_APPROVED",
+    "NO_DEMO_LIVE_FORWARD_TEST",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ]
+}

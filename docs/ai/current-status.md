@@ -2,6 +2,63 @@
 
 Last updated: 2026-07-09
 
+## Latest Checkpoint DS-Prep Refresh
+
+Checkpoint DS-Prep is a documentation-only post-DR artifact review template.
+
+- PR #115 / Checkpoint DQ is merged on `origin/main`.
+- Current base for DS-Prep: `f732bcf`.
+- DS-Prep does not run MT5 / Strategy Tester.
+- DS-Prep does not review DR artifacts because DR has not been approved or executed yet.
+- DS-Prep does not change EA/MQL5 source code, presets, trading logic, lot/risk, or optimization settings.
+- DS-Prep does not add market orders, pending orders, position modification, or order signals.
+- DS-Prep does not claim profitability.
+
+Future DR remains blocked until the exact approval phrase from Checkpoint DQ is provided.
+
+DS-Prep defines:
+
+- post-DR execution safety review
+- post-DR coverage review
+- post-DR weak-window review
+- post-DR Fibo BUY/SELL distribution review boundaries
+- post-DR Fibo gap attribution review boundaries
+- DS classification set
+- DS decision matrix
+- required DS output artifacts
+
+Current combined status remains:
+
+- diagnostic windows: `18`
+- diagnostic rows: `1589`
+- possible setup rows: `451`
+- total usable direction rows: `290`
+- total usable direction shortfall: `10`
+- Fibo usable first-touch rows: `210`
+- total usable direction gate: `FAIL`
+- low-window weakness: `FAIL_HISTORICAL_WEAKNESS_REMAINS`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DS-Prep:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `91%`
+- PAF diagnostic interpretation readiness: `83%`
+- Fibo Pullback interpretation readiness: `84%`
+- PAF rule-candidate readiness: `63%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Pause until the exact Future DR approval phrase is provided, or continue docs-only planning that does not run MT5.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DQ Refresh
 
 Checkpoint DQ is a documentation-only approval package for a possible future Checkpoint DR diagnostic-only coverage top-up.

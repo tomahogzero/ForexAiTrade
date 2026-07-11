@@ -2,6 +2,42 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EB Refresh
+
+Checkpoint EB defined the docs-only diagnostic rule-candidate specification `PAF_FIBO_USABLE_DIRECTION_V1` from the EA-approved evidence boundary.
+
+- The candidate is a default-disabled diagnostic row-eligibility classifier, not a BUY/SELL signal or order permission.
+- Frozen outputs: `ELIGIBLE_DIAGNOSTIC_ROW`, `REJECTED_DIRECTION_GAP`, `NOT_APPLICABLE`, and `INVALID_DATA`.
+- Precedence is fail-closed: invalid/missing/conflicting data, non-Fibo classification, direction-gap rejection, then eligibility only when all required invariants pass.
+- Direction may not be inferred from classification alone; unknown direction, unusable direction, any declared gap, unknown enum, or conflicting fields cannot become eligible.
+- No MT5/Strategy Tester, optimization, EA/MQL5 or preset change, tool implementation, order logic, lot/risk increase, demo/live test, or profitability claim occurred.
+
+Current gates:
+
+- candidate specification: `DEFINED`
+- candidate implementation: `NOT_IMPLEMENTED`
+- candidate validation: `NOT_RUN`
+- candidate approval for research use: `NOT_APPROVED`
+- three-year long-horizon gate: `PASS`
+- existing 20-window historical gate: `FAIL_REPORTED_SEPARATELY`
+- order-logic gate: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after EB:
+
+- Research infrastructure readiness: `97%`
+- PAF diagnostic pipeline readiness: `96%`
+- PAF diagnostic interpretation readiness: `97%`
+- Fibo Pullback interpretation readiness: `97%`
+- PAF rule-candidate readiness: `92%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint EC docs-only approval/readiness package for an offline verifier with exact committed inputs, fixtures, outputs, and separate approval wording.
+- Do not run MT5, optimize, change EA/presets, add order logic, run demo/live tests, or claim profitability.
+
 ## Latest Checkpoint EA Refresh
 
 Checkpoint EA completed an artifact-only rule-candidate readiness review using committed DZ evidence only.

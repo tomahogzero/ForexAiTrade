@@ -2,6 +2,45 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EA Refresh
+
+Checkpoint EA completed an artifact-only rule-candidate readiness review using committed DZ evidence only.
+
+- No MT5 or Strategy Tester was run.
+- No optimization, EA/MQL5 or preset change, order logic, lot/risk increase, or demo/live forward test was performed.
+- EA makes no profitability claim.
+- Frozen DZ evidence remains: 156/156 execution/report/diagnostics PASS/FOUND, 0 trades/forbidden/baseline markers, 2353 Fibo rows, 1600 usable first-touch rows, and 753/753 attributed direction gaps.
+- Frozen stability remains: weak/watch/normal `23/22/111`, weak share `14.74%`, and maximum consecutive weak run `2`.
+
+EA decision:
+
+`READY_TO_DEFINE_DIAGNOSTIC_RULE_CANDIDATE`
+
+- evidence sufficiency for a later diagnostic candidate specification: `PASS`
+- diagnostic candidate in EA: `NOT_CREATED`
+- candidate validation: `NOT_RUN`
+- three-year long-horizon gate: `PASS`
+- existing 20-window historical gate: `FAIL_REPORTED_SEPARATELY`
+- order-logic gate: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+EA only permits a later docs-only candidate specification that freezes inputs, precedence, missing-data handling, no-order outputs, and a validation plan. It does not approve implementation or trading behavior.
+
+Current readiness estimate after EA:
+
+- Research infrastructure readiness: `97%`
+- PAF diagnostic pipeline readiness: `96%`
+- PAF diagnostic interpretation readiness: `97%`
+- Fibo Pullback interpretation readiness: `97%`
+- PAF rule-candidate readiness: `88%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint EB docs-only diagnostic rule-candidate specification.
+- Do not run MT5/Strategy Tester, optimize, change EA/presets, add order logic, increase risk, run demo/live tests, or claim profitability.
+
 ## Latest Checkpoint DZ Refresh
 
 Checkpoint DZ executed the exact DY-approved diagnostic-only `GOLD#` H1 three-year historical stability backtest with the official AK runner/parser workflow.

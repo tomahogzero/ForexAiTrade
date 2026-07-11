@@ -2,6 +2,21 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EH Refresh
+
+Checkpoint EH ran the offline verifier against the committed EF artifact.
+
+- input: `2353`
+- eligible/rejected: `1600/753`
+- invalid/not-applicable: `0/0`
+- conservation and eligible invariants: `PASS`
+- decision: `DIAGNOSTIC_CANDIDATE_ARTIFACT_VALIDATION_PASS`
+- no MT5, order logic, or profitability interpretation
+- existing 20-window gate remains `FAIL_REPORTED_SEPARATELY`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Next: EI artifact-only research-diagnostic readiness review. Readiness: infrastructure/pipeline `98%`, interpretation/Fibo `98%`, rule-candidate `98%`, order logic/demo-live `0%`.
+
 ## Latest Checkpoint EG Refresh
 
 Checkpoint EG implemented the offline-only `PAF_FIBO_USABLE_DIRECTION_V1` verifier with fail-closed precedence.

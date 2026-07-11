@@ -2,6 +2,24 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EE Refresh
+
+Checkpoint EE defined an extraction-only row-level artifact production approval package.
+
+- Frozen sources: existing DZ runs `run_20260711_145612`, `run_20260711_152017`, and `run_20260711_153941` only.
+- No MT5/Strategy Tester rerun or evidence reconstruction is allowed.
+- Missing authoritative source logs must stop as `BLOCKED_SOURCE_ARTIFACT_MISSING`.
+- Future output must reconcile to 2,353 rows, 1,600 usable, 753 gaps, reasons 554/198/1, and all 156 windows.
+- execution: `BLOCKED_UNTIL_EXACT_APPROVAL`
+- source availability: `NOT_CHECKED`
+- verifier implementation/validation: `NOT_APPROVED/NOT_RUN`
+- three-year gate: `PASS`
+- existing 20-window gate: `FAIL_REPORTED_SEPARATELY`
+- order logic: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+The exact Future EF approval phrase is recorded in the Thai checkpoint document. EE performed no MT5, optimization, code/preset change, demo/live test, or profitability claim.
+
 ## Latest Checkpoint ED Refresh
 
 Checkpoint ED defined the missing row-level diagnostic artifact contract without producing data or running MT5/Strategy Tester.

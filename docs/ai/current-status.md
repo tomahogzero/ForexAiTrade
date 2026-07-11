@@ -2,6 +2,24 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint ED Refresh
+
+Checkpoint ED defined the missing row-level diagnostic artifact contract without producing data or running MT5/Strategy Tester.
+
+Decision: `ROW_LEVEL_ARTIFACT_CONTRACT_DEFINED`
+
+- Future output: `research/results/checkpoint_ee_paf_fibo_row_level_diagnostics.csv`.
+- Required reconciliation: 2,353 rows; usable 1,600; gaps 753; reasons 554/198/1; all 156 windows; full provenance.
+- Rows must not be reconstructed from aggregates, sampled, or synthesized.
+- artifact production: `NOT_RUN`
+- verifier implementation: `NOT_APPROVED`
+- three-year gate: `PASS`
+- existing 20-window gate: `FAIL_REPORTED_SEPARATELY`
+- order logic: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Next: Checkpoint EE docs-only artifact-production approval package. No MT5, optimization, code/preset change, demo/live test, or profitability claim occurred.
+
 ## Latest Checkpoint EC Refresh
 
 Checkpoint EC performed a committed-artifact-only offline verifier readiness preflight.

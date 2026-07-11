@@ -2,6 +2,21 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EI Refresh
+
+Checkpoint EI completed the artifact-only readiness decision.
+
+Decision: `PAF_FIBO_USABLE_DIRECTION_V1_APPROVED_FOR_OFFLINE_RESEARCH_DIAGNOSTICS_ONLY`
+
+- approval covers offline diagnostic row classification and reporting only
+- EA/MQL5 implementation, BUY/SELL signals, order logic, risk changes, and demo/live remain unapproved
+- no profitability claim is allowed
+- DZ three-year gate: `PASS`
+- existing 20-window gate: `FAIL_REPORTED_SEPARATELY`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Readiness: infrastructure/pipeline `98%`, diagnostic/Fibo interpretation `98%`, diagnostic rule-candidate `100%`, order logic/demo-live `0%`.
+
 ## Latest Checkpoint EH Refresh
 
 Checkpoint EH ran the offline verifier against the committed EF artifact.

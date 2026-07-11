@@ -1,0 +1,25 @@
+{
+  "execution_status": "PASS",
+  "source_runs": [
+    "run_20260711_145612",
+    "run_20260711_152017",
+    "run_20260711_153941"
+  ],
+  "eh_input": "checkpoint_eh_paf_fibo_candidate_validation.csv",
+  "eh_eligible_rows": 1600,
+  "exact_matched_rows": 1600,
+  "required_exact_matches": 1600,
+  "exact_match_pass": true,
+  "missing_sources": [],
+  "duplicate_source_key_count": 0,
+  "duplicate_source_keys_sample": [],
+  "source_log_count": 156,
+  "source_fibo_diagnostic_count": 2353,
+  "duplicate_eligible_key_count": 0,
+  "unmatched_count": 0,
+  "provenance_conflict_count": 0,
+  "invalid_entry_or_atr_count": 0,
+  "no_mt5_run": true,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "profitability_claim": false
+}

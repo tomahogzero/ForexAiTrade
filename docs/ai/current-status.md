@@ -2,6 +2,18 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EG Refresh
+
+Checkpoint EG implemented the offline-only `PAF_FIBO_USABLE_DIRECTION_V1` verifier with fail-closed precedence.
+
+- fixture self-tests: `PASS 6/6`
+- syntax compile: `PASS`
+- real EF artifact validation: `NOT_RUN_IN_EG`
+- no MT5/Strategy Tester, MQL5/preset change, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Next: EH artifact-only validation on the committed EF CSV. Readiness: infrastructure `98%`, pipeline `98%`, interpretation `97%`, Fibo `97%`, rule-candidate `96%`, order logic/demo-live `0%`.
+
 ## Latest Checkpoint EF Refresh
 
 Checkpoint EF completed approved extraction-only production from the three original DZ run logs.

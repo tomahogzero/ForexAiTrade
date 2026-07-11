@@ -2,6 +2,21 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EL Refresh
+
+Checkpoint EL defined the shadow-data production approval package after read-only method inspection.
+
+- DZ logs contain real per-event `entry_reference_price` and `atr`; EM can extract/join them offline.
+- Future GOLD# H1 OHLC requires a separate EN one-time broker-history export covering 2023-01-01 through 2025-12-31.
+- existing normalizer, validator, joiner, and first-touch tools can be reused.
+- EM: `BLOCKED_UNTIL_USER_APPROVAL`
+- EN: `BLOCKED_UNTIL_SEPARATE_USER_APPROVAL`
+- shadow backtest: `NOT_RUN`
+- Strategy Tester/order logic: `NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Next approval point is EM offline entry/ATR extraction with exact 1600/1600 matching. Shadow readiness `30%`; order logic/demo-live `0%`.
+
 ## Latest Checkpoint EK Refresh
 
 Checkpoint EK audited committed shadow-backtest input readiness.

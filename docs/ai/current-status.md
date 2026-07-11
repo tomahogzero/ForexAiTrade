@@ -2,6 +2,68 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint DY Refresh
+
+Checkpoint DY corrects DX's future-date assumption and creates a docs-only historical stability readiness/approval package.
+
+- Base: `441ea91` after PR #123 / Checkpoint DX merged.
+- ForexAiTrade remains backtest-only; completed historical broker data replaces the future wait block.
+- DX future wait status is superseded by DY historical holdout specification.
+- DY did not run MT5 or Strategy Tester.
+- DY did not create an execution matrix.
+- DY did not change EA/MQL5, presets, scripts, tools, trading logic, lot/risk, or optimization settings.
+- DY did not add order logic or approve demo/live testing.
+- DY does not claim profitability.
+
+Frozen historical holdout:
+
+- broker-specific `GOLD#` H1
+- all `156` consecutive weekly windows
+- from `2023-01-01` through `2025-12-28`
+- no weekly sampling or post-result selection
+
+Frozen long-horizon criteria:
+
+- weak threshold `<5`
+- weak share <= `20.0%` (`31 / 156` maximum)
+- maximum consecutive weak run <= `2`
+- annual weak share <= `25.0%` (`13 / 52` maximum)
+- median and average usable rows >= `7`
+- total usable rows >= `1092`
+- per-window reports, diagnostics, counts, gaps, and gap reasons required
+- total trades and forbidden/baseline markers must remain `0`
+
+Current gates:
+
+- existing 20-window historical gate: `FAIL`, reported separately
+- three-year historical holdout gate: `NOT_RUN`
+- Future DZ: `BLOCKED_UNTIL_EXACT_APPROVAL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Future DZ exact approval phrase:
+
+`Approved to execute Checkpoint DZ diagnostic-only GOLD# H1 PAF/Fibo historical stability backtest with Strategy Tester only, no optimization, no demo/live forward test, no EA or preset changes, no order logic, total trades must remain 0, using all 156 consecutive weekly windows from 2023-01-01 through 2025-12-28 exactly as preregistered in Checkpoint DY with the official AK runner/parser workflow.`
+
+Current readiness estimate after DY:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `92%`
+- PAF diagnostic interpretation readiness: `91%`
+- Fibo Pullback interpretation readiness: `92%`
+- PAF rule-candidate readiness: `74%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Provide the exact Future DZ approval phrase if the 156-window diagnostic-only historical backtest is desired.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DX Refresh
 
 Checkpoint DX is a docs-only independent stability preregistration package.

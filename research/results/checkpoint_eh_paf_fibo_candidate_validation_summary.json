@@ -1,0 +1,9 @@
+{
+  "input_rows": 2353,
+  "outcome_counts": {
+    "ELIGIBLE_DIAGNOSTIC_ROW": 1600,
+    "REJECTED_DIRECTION_GAP": 753
+  },
+  "conservation_pass": true,
+  "eligible_invariant_pass": true
+}

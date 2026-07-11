@@ -2,6 +2,21 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EM Refresh
+
+Checkpoint EM completed offline entry/ATR extraction from the three original DZ runs.
+
+- EH eligible population: `1600`
+- exact entry/ATR matches: `1600/1600`, `PASS`
+- authoritative logs: `156`; source Fibo diagnostics: `2353`
+- missing, duplicate, unmatched, conflicting, or invalid rows: `0`
+- execution status: `PASS`
+- strategy performance: `NOT_EVALUATED`
+- no MT5, Strategy Tester, GOLD# bars export, EA/preset change, optimization, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+EN GOLD# H1 bars export remains blocked until separate user approval. Shadow readiness is `40%`; order logic/demo-live remain `0%`.
+
 ## Latest Checkpoint EL Refresh
 
 Checkpoint EL defined the shadow-data production approval package after read-only method inspection.

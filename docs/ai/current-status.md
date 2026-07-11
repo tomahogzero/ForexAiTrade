@@ -2,6 +2,23 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EJ Refresh
+
+Checkpoint EJ froze the docs-only shadow backtest rule specification using existing project contracts.
+
+- population: EH `ELIGIBLE_DIAGNOSTIC_ROW` only
+- entry: diagnostic-bar close
+- TP/SL: `1.5 ATR / 1.0 ATR`
+- horizons: H1 `6/12/24/48`
+- same-bar TP+SL: `AMBIGUOUS_SAME_BAR`, never counted as a win
+- next-bar evaluation prevents event-bar lookahead
+- input readiness: `NOT_EVALUATED`
+- shadow backtest: `NOT_RUN`
+- Strategy Tester trade backtest/order logic: `NOT_APPROVED`
+- no MT5, optimization, EA/preset change, demo/live test, or profitability claim
+
+Next: EK artifact-only readiness audit for entry price, ATR, and future H1 OHLC coverage. Shadow readiness `20%`; order logic/demo-live `0%`.
+
 ## Latest Checkpoint EI Refresh
 
 Checkpoint EI completed the artifact-only readiness decision.

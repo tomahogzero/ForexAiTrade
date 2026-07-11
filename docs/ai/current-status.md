@@ -2,6 +2,20 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EN Refresh
+
+Checkpoint EN stopped at the approved strict-validator gate.
+
+- existing XM MT5-style GOLD# H1 source normalization: `PASS`, 37,581 rows, 0 invalid
+- EH event timestamp matches: `1600/1600`
+- strict bars validator: `FAIL`, 1,641 gaps larger than H1
+- execution status: `PASS`; data validation: `FAIL`; strategy performance: `NOT_EVALUATED`
+- production EN bars artifact: `NOT_CREATED_DUE_TO_STOP_GATE`
+- no validator bypass/change, gap-policy run, join, shadow backtest, MT5/Strategy Tester run, EA/preset change, optimization, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Decision: `EN_BLOCKED_STRICT_VALIDATOR_GAPS`. Shadow readiness remains `40%`; order logic/demo-live remain `0%`. Further gap attribution/review requires separate direction.
+
 ## Latest Checkpoint EM Refresh
 
 Checkpoint EM completed offline entry/ATR extraction from the three original DZ runs.

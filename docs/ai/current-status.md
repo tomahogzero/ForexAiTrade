@@ -2,6 +2,67 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint DV Refresh
+
+Checkpoint DV is an artifact-only chronological stability map using committed DF, DI, DM, and DR summaries.
+
+- Base: `414579d` after PR #120 / Checkpoint DU merged.
+- DV did not run MT5 or Strategy Tester.
+- DV did not create an execution matrix.
+- DV did not change EA/MQL5, presets, scripts, tools, trading logic, lot/risk, or optimization settings.
+- DV did not add order logic or approve demo/live testing.
+- DV does not claim profitability.
+
+All 20 chronological windows:
+
+- weak: `4`
+- watch: `2`
+- normal: `14`
+- consecutive weak pair: `CY-W3 -> DB-W1`
+- isolated weak windows: `DR-W1`, `DI-W3`
+
+Weak-window attribution:
+
+- weak Fibo rows: `27`
+- weak usable rows: `11`
+- weak gaps: `16`
+- attributed `PRICE_BETWEEN_EMAS`: `6`
+- attributed `TREND_ALIGNMENT_CONFLICT`: `5`
+- DI-W3 per-window gap reasons unresolved at committed summary level: `5`
+
+Trailing observations:
+
+- latest 6 windows: weak `0`, watch `1`, usable `62 / 74`, gap share `16.2%`
+- latest 8 windows: weak `1`, watch `1`, usable `85 / 105`, gap share `19.0%`
+- trailing observations do not override the historical gate
+
+Current gates:
+
+- coverage gates: `PASS`
+- absolute historical stability gate: `FAIL`
+- trailing stability gate: `NOT_DEFINED_OR_APPROVED`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DV:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `92%`
+- PAF diagnostic interpretation readiness: `89%`
+- Fibo Pullback interpretation readiness: `90%`
+- PAF rule-candidate readiness: `71%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DW docs-only stability-gate specification decision using the DV map.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DU Refresh
 
 Checkpoint DU is a documentation-only weak-window stability review plan after Checkpoint DS.

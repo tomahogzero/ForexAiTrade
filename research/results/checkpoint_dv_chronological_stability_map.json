@@ -1,0 +1,124 @@
+{
+  "checkpoint": "DV",
+  "review_type": "artifact_only_chronological_stability_map",
+  "date": "2026-07-11",
+  "base_commit": "414579d",
+  "source_artifacts": [
+    "research/results/checkpoint_du_weak_window_stability_plan.json",
+    "research/results/checkpoint_df_fibo_pullback_row_level_slice_summary.json",
+    "research/results/checkpoint_di_diagnostic_coverage_summary.json",
+    "research/results/checkpoint_dm_diagnostic_coverage_summary.json",
+    "research/results/checkpoint_dr_diagnostic_topup_summary.json",
+    "docs/130_Checkpoint_DL_Artifact_Deep_Review_TH.md"
+  ],
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "execution_matrix_created": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "classification": {
+    "weak": "usable < 5",
+    "watch": "usable 5-6",
+    "normal": "usable >= 7"
+  },
+  "chronological_windows": [
+    {"order": 1, "window": "DR-W1", "from": "2026-02-15", "to": "2026-02-22", "fibo_rows": 8, "usable": 3, "gaps": 5, "class": "WEAK"},
+    {"order": 2, "window": "DR-W2", "from": "2026-02-22", "to": "2026-03-01", "fibo_rows": 7, "usable": 6, "gaps": 1, "class": "WATCH"},
+    {"order": 3, "window": "CV", "from": "2026-03-01", "to": "2026-03-08", "fibo_rows": 25, "usable": 15, "gaps": 10, "class": "NORMAL"},
+    {"order": 4, "window": "CY-W1", "from": "2026-03-08", "to": "2026-03-15", "fibo_rows": 20, "usable": 15, "gaps": 5, "class": "NORMAL"},
+    {"order": 5, "window": "CY-W2", "from": "2026-03-15", "to": "2026-03-22", "fibo_rows": 20, "usable": 20, "gaps": 0, "class": "NORMAL"},
+    {"order": 6, "window": "CY-W3", "from": "2026-03-22", "to": "2026-03-29", "fibo_rows": 4, "usable": 2, "gaps": 2, "class": "WEAK"},
+    {"order": 7, "window": "DB-W1", "from": "2026-03-29", "to": "2026-04-05", "fibo_rows": 6, "usable": 2, "gaps": 4, "class": "WEAK"},
+    {"order": 8, "window": "DB-W2", "from": "2026-04-05", "to": "2026-04-12", "fibo_rows": 19, "usable": 10, "gaps": 9, "class": "NORMAL"},
+    {"order": 9, "window": "DB-W3", "from": "2026-04-12", "to": "2026-04-19", "fibo_rows": 13, "usable": 9, "gaps": 4, "class": "NORMAL"},
+    {"order": 10, "window": "DB-W4", "from": "2026-04-19", "to": "2026-04-26", "fibo_rows": 21, "usable": 12, "gaps": 9, "class": "NORMAL"},
+    {"order": 11, "window": "DI-W1", "from": "2026-04-26", "to": "2026-05-03", "fibo_rows": 22, "usable": 21, "gaps": 1, "class": "NORMAL"},
+    {"order": 12, "window": "DI-W2", "from": "2026-05-03", "to": "2026-05-10", "fibo_rows": 22, "usable": 19, "gaps": 3, "class": "NORMAL"},
+    {"order": 13, "window": "DI-W3", "from": "2026-05-10", "to": "2026-05-17", "fibo_rows": 9, "usable": 4, "gaps": 5, "class": "WEAK"},
+    {"order": 14, "window": "DI-W4", "from": "2026-05-17", "to": "2026-05-24", "fibo_rows": 22, "usable": 19, "gaps": 3, "class": "NORMAL"},
+    {"order": 15, "window": "DI-W5", "from": "2026-05-24", "to": "2026-05-31", "fibo_rows": 12, "usable": 11, "gaps": 1, "class": "NORMAL"},
+    {"order": 16, "window": "DI-W6", "from": "2026-05-31", "to": "2026-06-07", "fibo_rows": 21, "usable": 19, "gaps": 2, "class": "NORMAL"},
+    {"order": 17, "window": "DI-W7", "from": "2026-06-07", "to": "2026-06-14", "fibo_rows": 6, "usable": 6, "gaps": 0, "class": "WATCH"},
+    {"order": 18, "window": "DM-W1", "from": "2026-06-14", "to": "2026-06-21", "fibo_rows": 13, "usable": 7, "gaps": 6, "class": "NORMAL"},
+    {"order": 19, "window": "DM-W2", "from": "2026-06-21", "to": "2026-06-28", "fibo_rows": 11, "usable": 11, "gaps": 0, "class": "NORMAL"},
+    {"order": 20, "window": "DM-W3", "from": "2026-06-28", "to": "2026-07-05", "fibo_rows": 11, "usable": 8, "gaps": 3, "class": "NORMAL"}
+  ],
+  "totals": {
+    "windows": 20,
+    "fibo_rows": 292,
+    "usable": 219,
+    "gaps": 73,
+    "weak_windows": 4,
+    "watch_windows": 2,
+    "normal_windows": 14
+  },
+  "adjacency": {
+    "consecutive_weak_pairs": ["CY-W3 -> DB-W1"],
+    "isolated_weak_windows": ["DR-W1", "DI-W3"],
+    "historical_absolute_stability_gate": "FAIL"
+  },
+  "weak_window_attribution": {
+    "weak_fibo_rows": 27,
+    "weak_usable_rows": 11,
+    "weak_gap_rows": 16,
+    "price_between_emas_attributed": 6,
+    "trend_alignment_conflict_attributed": 5,
+    "per_window_reason_unresolved": 5,
+    "unresolved_window": "DI-W3",
+    "limitation": "DI-W3 has committed summary-level counts but no committed per-window row-level gap-reason split."
+  },
+  "trailing_observations": {
+    "latest_6": {
+      "windows": ["DI-W5", "DI-W6", "DI-W7", "DM-W1", "DM-W2", "DM-W3"],
+      "weak_count": 0,
+      "watch_count": 1,
+      "fibo_rows": 74,
+      "usable": 62,
+      "gaps": 12,
+      "gap_share_percent": 16.2,
+      "observation": "NO_WEAK_WINDOWS"
+    },
+    "latest_8": {
+      "windows": ["DI-W3", "DI-W4", "DI-W5", "DI-W6", "DI-W7", "DM-W1", "DM-W2", "DM-W3"],
+      "weak_count": 1,
+      "watch_count": 1,
+      "fibo_rows": 105,
+      "usable": 85,
+      "gaps": 20,
+      "gap_share_percent": 19.0,
+      "observation": "ONE_ISOLATED_WEAK_WINDOW_NO_CONSECUTIVE_PAIR"
+    },
+    "interpretation_boundary": "Trailing observations do not override the failed absolute historical gate in DV."
+  },
+  "gate_state": {
+    "coverage_gates": "PASS",
+    "absolute_historical_stability_gate": "FAIL",
+    "trailing_stability_gate": "NOT_DEFINED_OR_APPROVED",
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL"
+  },
+  "verdicts": [
+    "DV_CHRONOLOGICAL_MAP_COMPLETE",
+    "ARTIFACT_ONLY_REVIEW",
+    "ALL_20_WINDOWS_MAPPED",
+    "FOUR_WEAK_TWO_WATCH_FOURTEEN_NORMAL",
+    "ONE_CONSECUTIVE_WEAK_PAIR_REMAINS",
+    "LATEST_6_NO_WEAK_OBSERVATION_ONLY",
+    "LATEST_8_ONE_ISOLATED_WEAK_OBSERVATION_ONLY",
+    "DI_W3_PER_WINDOW_GAP_REASON_LIMITATION",
+    "ABSOLUTE_HISTORICAL_STABILITY_GATE_FAIL",
+    "TRAILING_GATE_NOT_DEFINED_OR_APPROVED",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "NO_MT5_RUN",
+    "NO_STRATEGY_TESTER_RUN",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DW docs-only stability-gate specification decision using the DV map."
+}

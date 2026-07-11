@@ -2,6 +2,62 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint DX Refresh
+
+Checkpoint DX is a docs-only independent stability preregistration package.
+
+- Base: `5f3d510` after PR #122 / Checkpoint DW merged.
+- DX did not run MT5 or Strategy Tester.
+- DX did not create an execution matrix or approval phrase.
+- DX did not change EA/MQL5, presets, scripts, tools, trading logic, lot/risk, or optimization settings.
+- DX did not add order logic or approve demo/live testing.
+- DX does not claim profitability.
+
+Frozen independent block:
+
+- 8 consecutive weekly windows
+- from `2026-07-05` through `2026-08-30`
+- broker-specific future scope: `GOLD#` H1
+- block must be complete before readiness/approval review
+
+Frozen pass criteria:
+
+- weak threshold `<5` usable rows
+- weak windows maximum `1`
+- consecutive weak pairs maximum `0`
+- median usable rows minimum `7`
+- total usable rows minimum `56`
+- reports, diagnostics, per-window counts, and gap attribution required
+- total trades, forbidden markers, and baseline fallback markers must remain `0`
+
+Dual reporting contract:
+
+- historical absolute state remains separately `FAIL`
+- independent validation is `NOT_RUN`
+- future independent pass may only allow a future rule-candidate review
+- future independent pass cannot approve order logic
+
+Future Checkpoint DY is blocked until `2026-08-30`, DX remains unchanged, and a new exact approval phrase is created and provided.
+
+Current readiness estimate after DX:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `92%`
+- PAF diagnostic interpretation readiness: `91%`
+- Fibo Pullback interpretation readiness: `92%`
+- PAF rule-candidate readiness: `74%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Pause independent stability execution until all frozen windows complete on `2026-08-30`.
+- Then create Checkpoint DY docs-only readiness and approval package.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DW Refresh
 
 Checkpoint DW is a docs-only stability-gate specification decision using the committed DV map.

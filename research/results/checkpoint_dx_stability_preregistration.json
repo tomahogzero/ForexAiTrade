@@ -1,0 +1,104 @@
+{
+  "checkpoint": "DX",
+  "package_type": "docs_only_independent_stability_preregistration",
+  "date": "2026-07-11",
+  "base_commit": "5f3d510",
+  "source_artifacts": [
+    "research/results/checkpoint_dw_stability_gate_decision.json",
+    "research/results/checkpoint_dv_chronological_stability_map.json",
+    "research/results/checkpoint_du_weak_window_stability_plan.json"
+  ],
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "execution_matrix_created": false,
+  "approval_phrase_created": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "independent_block": {
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "window_count": 8,
+    "block_from": "2026-07-05",
+    "block_to": "2026-08-30",
+    "must_be_complete_before_readiness_review": true,
+    "windows": [
+      {"window": "DX-V1", "from": "2026-07-05", "to": "2026-07-12"},
+      {"window": "DX-V2", "from": "2026-07-12", "to": "2026-07-19"},
+      {"window": "DX-V3", "from": "2026-07-19", "to": "2026-07-26"},
+      {"window": "DX-V4", "from": "2026-07-26", "to": "2026-08-02"},
+      {"window": "DX-V5", "from": "2026-08-02", "to": "2026-08-09"},
+      {"window": "DX-V6", "from": "2026-08-09", "to": "2026-08-16"},
+      {"window": "DX-V7", "from": "2026-08-16", "to": "2026-08-23"},
+      {"window": "DX-V8", "from": "2026-08-23", "to": "2026-08-30"}
+    ]
+  },
+  "frozen_classification": {
+    "weak": "fibo_usable_first_touch_rows < 5",
+    "watch": "fibo_usable_first_touch_rows between 5 and 6 inclusive",
+    "normal": "fibo_usable_first_touch_rows >= 7",
+    "classification_change_after_evidence": "PROHIBITED"
+  },
+  "frozen_pass_criteria": {
+    "all_8_windows_present_and_contiguous": true,
+    "weak_window_count_max": 1,
+    "consecutive_weak_pair_count_max": 0,
+    "median_fibo_usable_rows_min": 7,
+    "total_fibo_usable_rows_min": 56,
+    "total_trades_each_window": 0,
+    "report_and_diagnostics_required_each_window": true,
+    "forbidden_action_markers_each_window": 0,
+    "baseline_fallback_markers_each_window": 0,
+    "per_window_fibo_rows_usable_gaps_required": true,
+    "per_window_gap_reason_attribution_required": true,
+    "watch_windows_are_reported_but_not_counted_as_weak": true
+  },
+  "dual_reporting_contract": {
+    "historical_absolute_gate": "ALWAYS_REPORTED_SEPARATELY",
+    "current_historical_state": "FAIL",
+    "independent_validation_gate": "NOT_RUN",
+    "historical_fail_may_not_be_erased": true,
+    "independent_pass_may_only_allow_future_rule_candidate_review": true,
+    "independent_pass_does_not_approve_order_logic": true
+  },
+  "fail_safe_outcomes": {
+    "any_pass_criterion_fails": "INDEPENDENT_STABILITY_VALIDATION_FAIL",
+    "artifact_or_attribution_missing": "INDEPENDENT_STABILITY_REVIEW_INCOMPLETE",
+    "all_criteria_pass": "INDEPENDENT_TRAILING_STABILITY_PASS_REVIEWABLE",
+    "threshold_or_horizon_changed_after_evidence": "PREREGISTRATION_INVALIDATED"
+  },
+  "future_checkpoint_dy": {
+    "type": "docs_only_readiness_and_approval_package",
+    "earliest_date": "2026-08-30",
+    "preconditions": [
+      "all eight windows are complete",
+      "DX preregistration remains unchanged",
+      "official AK runner/parser workflow remains available",
+      "a new exact approval phrase is created and provided by the user"
+    ],
+    "current_status": "BLOCKED_UNTIL_BLOCK_COMPLETE_AND_EXACT_APPROVAL"
+  },
+  "verdicts": [
+    "DX_PREREGISTRATION_COMPLETE",
+    "DOCUMENTATION_ONLY",
+    "EIGHT_INDEPENDENT_WINDOWS_FROZEN",
+    "CLASSIFICATION_FROZEN",
+    "PASS_CRITERIA_FROZEN",
+    "DUAL_REPORTING_CONTRACT_FROZEN",
+    "HISTORICAL_GATE_REMAINS_FAIL",
+    "FUTURE_DY_BLOCKED_UNTIL_2026_08_30",
+    "NO_APPROVAL_PHRASE_CREATED",
+    "NO_MT5_RUN",
+    "NO_STRATEGY_TESTER_RUN",
+    "NO_EXECUTION_MATRIX_CREATED",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_ORDER_LOGIC_APPROVED",
+    "NO_DEMO_LIVE_FORWARD_TEST",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Pause independent stability execution until all frozen windows complete on 2026-08-30; then create Checkpoint DY docs-only readiness and approval package."
+}

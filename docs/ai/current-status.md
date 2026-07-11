@@ -2,6 +2,25 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EC Refresh
+
+Checkpoint EC performed a committed-artifact-only offline verifier readiness preflight.
+
+Decision: `BLOCKED_ROW_LEVEL_DZ_ARTIFACT_NOT_COMMITTED`
+
+- DZ commits summary JSON/Markdown with aggregate and 156-window evidence, but no row-level records for the 2,353 Fibo rows.
+- Required EB fields cannot be evaluated per row from committed artifacts.
+- Rows must not be reconstructed from aggregate counts, and fixture-only tests cannot substitute for real-artifact validation.
+- verifier implementation: `NOT_APPROVED`
+- candidate validation: `NOT_RUN`
+- three-year gate: `PASS`
+- existing 20-window gate: `FAIL_REPORTED_SEPARATELY`
+- order logic: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+- No MT5/Strategy Tester, optimization, code/preset change, demo/live test, or profitability claim occurred.
+
+Recommended next safe step: Checkpoint ED docs-only row-level artifact contract before any approval to produce missing evidence.
+
 ## Latest Checkpoint EB Refresh
 
 Checkpoint EB defined the docs-only diagnostic rule-candidate specification `PAF_FIBO_USABLE_DIRECTION_V1` from the EA-approved evidence boundary.

@@ -1,0 +1,91 @@
+{
+  "checkpoint": "DW",
+  "decision_type": "docs_only_stability_gate_specification_decision",
+  "date": "2026-07-11",
+  "base_commit": "3c961aa",
+  "source_artifacts": [
+    "research/results/checkpoint_dv_chronological_stability_map.json",
+    "research/results/checkpoint_du_weak_window_stability_plan.json",
+    "research/results/checkpoint_ds_post_dr_artifact_review.json"
+  ],
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "execution_matrix_created": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "evidence_reviewed": {
+    "total_windows": 20,
+    "weak_windows": 4,
+    "watch_windows": 2,
+    "normal_windows": 14,
+    "consecutive_weak_pairs": 1,
+    "absolute_historical_gate": "FAIL",
+    "latest_6_weak_count": 0,
+    "latest_8_weak_count": 1,
+    "latest_8_consecutive_weak_pairs": 0,
+    "di_w3_per_window_gap_reason_status": "UNRESOLVED_SUMMARY_LEVEL_ONLY"
+  },
+  "candidate_decisions": {
+    "KEEP_ABSOLUTE_HISTORICAL_GATE_FAIL": "SUPPORTED_AS_CURRENT_STATE",
+    "PROPOSE_DUAL_HISTORICAL_AND_TRAILING_GATE_FOR_APPROVAL": "NOT_SUPPORTED_YET_POST_HOC_SELECTION_RISK",
+    "DATA_LIMITATION_BLOCKS_GATE_REVISION": "SELECTED"
+  },
+  "decision": "DATA_LIMITATION_BLOCKS_GATE_REVISION",
+  "decision_reasons": [
+    "The absolute historical set still contains the CY-W3 to DB-W1 consecutive weak pair.",
+    "Trailing horizons of 6 and 8 windows were inspected after outcomes were known and were not preregistered.",
+    "Selecting a favorable trailing horizon now would create post-hoc gate-fitting risk.",
+    "DI-W3 per-window gap reasons remain unavailable in committed artifacts.",
+    "Trailing observations are descriptive and cannot override the historical gate without a preregistered specification and independent evidence."
+  ],
+  "current_gate_state": {
+    "coverage_gates": "PASS",
+    "absolute_historical_stability_gate": "FAIL",
+    "trailing_stability_gate": "NOT_DEFINED_OR_APPROVED",
+    "dual_gate_proposal": "BLOCKED_PENDING_PREREGISTRATION",
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL"
+  },
+  "future_checkpoint_dx": {
+    "type": "docs_only_stability_gate_preregistration_package",
+    "required_before_any_new_evidence": [
+      "freeze the trailing horizon without using future outcomes",
+      "retain the weak threshold below 5 unless separately justified before evidence",
+      "freeze adjacency and weak-count pass criteria",
+      "define how watch windows are reported without converting them into weak windows",
+      "define minimum independent evidence required for validation",
+      "define fail-safe handling for missing row-level attribution",
+      "state that historical weakness remains visible even if a future trailing gate passes"
+    ],
+    "not_approved": [
+      "MT5 execution",
+      "Strategy Tester execution",
+      "optimization",
+      "rule candidate",
+      "order logic",
+      "demo/live forward test"
+    ]
+  },
+  "verdicts": [
+    "DW_GATE_DECISION_COMPLETE",
+    "DOCUMENTATION_ONLY",
+    "DATA_LIMITATION_BLOCKS_GATE_REVISION",
+    "ABSOLUTE_HISTORICAL_GATE_REMAINS_FAIL",
+    "TRAILING_OBSERVATIONS_REMAIN_DESCRIPTIVE",
+    "POST_HOC_HORIZON_SELECTION_PROHIBITED",
+    "DUAL_GATE_PROPOSAL_BLOCKED_PENDING_PREREGISTRATION",
+    "FUTURE_DX_PREREGISTRATION_REQUIRED",
+    "RULE_CANDIDATE_GATE_FAIL",
+    "ORDER_LOGIC_NOT_APPROVED",
+    "NO_MT5_RUN",
+    "NO_STRATEGY_TESTER_RUN",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DX docs-only stability-gate preregistration package before any new evidence or execution approval."
+}

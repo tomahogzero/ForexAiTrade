@@ -2,6 +2,59 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint DW Refresh
+
+Checkpoint DW is a docs-only stability-gate specification decision using the committed DV map.
+
+- Base: `3c961aa` after PR #121 / Checkpoint DV merged.
+- DW did not run MT5 or Strategy Tester.
+- DW did not create an execution matrix.
+- DW did not change EA/MQL5, presets, scripts, tools, trading logic, lot/risk, or optimization settings.
+- DW did not add order logic or approve demo/live testing.
+- DW does not claim profitability.
+
+DW decision:
+
+`DATA_LIMITATION_BLOCKS_GATE_REVISION`
+
+Reasons:
+
+- historical consecutive weak pair `CY-W3 -> DB-W1` remains
+- latest 6 and latest 8 observations were inspected after outcomes were known
+- no trailing horizon or pass criteria were preregistered
+- choosing a favorable horizon now would risk post-hoc gate fitting
+- DI-W3 per-window gap reasons remain unresolved at committed summary level
+
+Current gates:
+
+- coverage gates: `PASS`
+- absolute historical stability: `FAIL`
+- trailing stability gate: `NOT_DEFINED_OR_APPROVED`
+- dual gate proposal: `BLOCKED_PENDING_PREREGISTRATION`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+DW defines Future Checkpoint DX as a docs-only preregistration package that must freeze horizon, pass criteria, independent evidence requirements, and missing-data handling before any new evidence or execution approval.
+
+Current readiness estimate after DW:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `92%`
+- PAF diagnostic interpretation readiness: `90%`
+- Fibo Pullback interpretation readiness: `91%`
+- PAF rule-candidate readiness: `72%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DX docs-only stability-gate preregistration package.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DV Refresh
 
 Checkpoint DV is an artifact-only chronological stability map using committed DF, DI, DM, and DR summaries.

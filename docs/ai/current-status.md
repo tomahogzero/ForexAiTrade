@@ -2,6 +2,22 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EK Refresh
+
+Checkpoint EK audited committed shadow-backtest input readiness.
+
+Decision: `SHADOW_BACKTEST_BLOCKED_REQUIRED_INPUTS_NOT_COMMITTED`
+
+- EH eligible population: `1600`
+- per-event entry/ATR: `MISSING_FROM_COMMITTED_EF_EH_SCHEMA`
+- matching future GOLD# H1 OHLC through 48 bars: `NOT_COMMITTED_FOR_DZ_POPULATION`
+- old limited/self-test lookahead artifacts cannot substitute
+- shadow/Strategy Tester backtest: `NOT_RUN/NOT_APPROVED`
+- order logic: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Next: EL docs-only data-production contract/approval package. Shadow readiness remains `20%`; order logic/demo-live `0%`.
+
 ## Latest Checkpoint EJ Refresh
 
 Checkpoint EJ froze the docs-only shadow backtest rule specification using existing project contracts.

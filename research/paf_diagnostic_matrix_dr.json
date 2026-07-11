@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "description": "Checkpoint DR approved PAF/Fibo diagnostic-only usable-direction top-up. Approved by user on 2026-07-10. Strategy Tester only, no optimization, no demo/live forward test, no EA or preset changes, no order logic, total trades must remain 0.",
+  "periods": {
+    "dr_w1_20260215_20260222": {
+      "from": "2026-02-15",
+      "to": "2026-02-22"
+    },
+    "dr_w2_20260222_20260301": {
+      "from": "2026-02-22",
+      "to": "2026-03-01"
+    }
+  },
+  "defaults": {
+    "currency": "USD",
+    "leverage": 500,
+    "model": 0,
+    "risk_percent": 0.05,
+    "max_open_orders": 1,
+    "base_preset": "",
+    "enabled": true
+  },
+  "cases": [
+    {
+      "case_id": "GOLD_HASH_H1_PAF_USABLE_DIRECTION_TOPUP_DR",
+      "enabled": true,
+      "actual_symbol": "GOLD#",
+      "canonical_symbol": "GOLD",
+      "timeframe": "H1",
+      "deposit": 10000,
+      "currency": "USD",
+      "leverage": 500,
+      "model": 0,
+      "risk_percent": 0.05,
+      "diagnostic_only": true,
+      "enable_price_action_fibo": true,
+      "price_action_fibo_diagnostics_only": true,
+      "paf_use_pending_orders": false,
+      "paf_max_pending_orders": 0,
+      "paf_log_only_on_new_bar": true,
+      "paf_entry_timeframe": "H1",
+      "paf_higher_timeframe": "H1",
+      "manage_existing_positions": false,
+      "enable_exit_telemetry": false,
+      "log_position_modify_events": false
+    }
+  ],
+  "approved_scope": {
+    "checkpoint": "DR",
+    "source_commit": "4815c9e",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "windows": [
+      {
+        "from": "2026-02-15",
+        "to": "2026-02-22"
+      },
+      {
+        "from": "2026-02-22",
+        "to": "2026-03-01"
+      }
+    ],
+    "run_count": 2,
+    "strategy_tester_only": true,
+    "optimization": false,
+    "demo_live_forward_test": false,
+    "ea_or_preset_changes": false,
+    "market_orders": false,
+    "pending_orders": false,
+    "position_modification": false,
+    "lot_or_risk_increase": false,
+    "profitability_interpretation": false,
+    "total_trades_required": 0
+  },
+  "guardrails": [
+    "Strategy Tester only",
+    "Exactly two approved windows",
+    "No optimization",
+    "No demo/live forward test",
+    "No EA or preset changes",
+    "No order logic",
+    "No market orders",
+    "No pending orders",
+    "No position modification",
+    "No lot or risk increase",
+    "Total trades must remain 0",
+    "No profitability interpretation",
+    "Collect additional diagnostic rows only"
+  ]
+}

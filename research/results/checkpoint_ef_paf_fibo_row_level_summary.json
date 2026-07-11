@@ -1,0 +1,20 @@
+{
+  "execution_status": "PASS",
+  "source_runs": [
+    "run_20260711_145612",
+    "run_20260711_152017",
+    "run_20260711_153941"
+  ],
+  "row_count": 2353,
+  "usable_true": 1600,
+  "usable_false": 753,
+  "gap_reasons": {
+    "PRICE_BETWEEN_EMAS": 554,
+    "TREND_ALIGNMENT_CONFLICT": 198,
+    "EMA_SLOPE_FLAT": 1
+  },
+  "window_count": 156,
+  "reconciliation_pass": true,
+  "no_mt5_run": true,
+  "profitability_claim": false
+}

@@ -2,6 +2,23 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EF Refresh
+
+Checkpoint EF completed approved extraction-only production from the three original DZ run logs.
+
+- row-level Fibo rows: `2353`
+- usable/gaps: `1600/753`
+- gap reasons: `PRICE_BETWEEN_EMAS=554`, `TREND_ALIGNMENT_CONFLICT=198`, `EMA_SLOPE_FLAT=1`
+- windows: `156`
+- ED reconciliation: `PASS`
+- no MT5 or Strategy Tester was run
+- candidate verifier/validation: `NOT_IMPLEMENTED/NOT_RUN`
+- existing 20-window gate: `FAIL_REPORTED_SEPARATELY`
+- order logic: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness: infrastructure `98%`, pipeline `98%`, interpretation `97%`, Fibo interpretation `97%`, rule-candidate `94%`, order logic `0%`, demo/live `0%`.
+
 ## Latest Checkpoint EE Refresh
 
 Checkpoint EE defined an extraction-only row-level artifact production approval package.

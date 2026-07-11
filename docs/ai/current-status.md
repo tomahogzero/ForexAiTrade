@@ -2,6 +2,57 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint DZ Refresh
+
+Checkpoint DZ executed the exact DY-approved diagnostic-only `GOLD#` H1 three-year historical stability backtest with the official AK runner/parser workflow.
+
+- Base: `82ea719` after PR #124 / Checkpoint DY merged.
+- All `156` consecutive weekly windows from `2023-01-01` through `2025-12-28` were executed with no sampling.
+- Runs: `run_20260711_145612`, `run_20260711_152017`, and `run_20260711_153941`.
+- Execution, fresh reports, and diagnostics: `156/156 PASS/FOUND`.
+- Total trades, forbidden action markers, and baseline fallback markers: `0`.
+- DZ did not optimize, change EA/MQL5 or presets, add order logic, increase lot/risk, or run demo/live forward tests.
+- DZ does not claim profitability.
+
+Frozen DZ results:
+
+- Fibo rows: `2353`
+- Fibo usable first-touch rows: `1600`
+- Fibo direction gaps: `753`, attributed `753/753`
+- weak/watch/normal windows: `23/22/111`
+- weak share: `14.74%`
+- maximum consecutive weak run: `2`
+- annual-block weak counts: `6/52`, `8/52`, `9/52`
+- median usable: `9.5`
+- average usable: `10.2564`
+
+Current gates:
+
+- three-year historical long-horizon stability gate: `PASS`
+- existing 20-window historical gate: `FAIL_REPORTED_SEPARATELY`
+- later artifact-only rule-candidate readiness review: `ALLOWED`
+- rule-candidate gate: `NOT_APPROVED_IN_DZ`
+- order-logic gate: `FAIL_NOT_APPROVED`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DZ:
+
+- Research infrastructure readiness: `97%`
+- PAF diagnostic pipeline readiness: `96%`
+- PAF diagnostic interpretation readiness: `95%`
+- Fibo Pullback interpretation readiness: `96%`
+- PAF rule-candidate readiness: `82%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint EA artifact-only rule-candidate readiness review using frozen DZ evidence.
+- Do not run MT5 or Strategy Tester.
+- Do not optimize or change EA/presets.
+- Do not add order logic or run demo/live tests.
+- Do not claim profitability.
+
 ## Latest Checkpoint DY Refresh
 
 Checkpoint DY corrects DX's future-date assumption and creates a docs-only historical stability readiness/approval package.

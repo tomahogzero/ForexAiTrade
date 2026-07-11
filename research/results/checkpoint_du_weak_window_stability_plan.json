@@ -1,0 +1,145 @@
+{
+  "checkpoint": "DU",
+  "plan_type": "docs_only_weak_window_stability_review_plan",
+  "date": "2026-07-11",
+  "base_commit": "6899dd0",
+  "source_artifacts": [
+    "research/results/checkpoint_ds_post_dr_artifact_review.json",
+    "research/results/checkpoint_dr_diagnostic_topup_summary.json",
+    "research/results/checkpoint_dn_post_dm_artifact_review.json",
+    "research/results/checkpoint_di_diagnostic_coverage_summary.json",
+    "research/results/checkpoint_df_fibo_pullback_row_level_slice_summary.json",
+    "docs/130_Checkpoint_DL_Artifact_Deep_Review_TH.md"
+  ],
+  "mt5_run": false,
+  "strategy_tester_run": false,
+  "execution_matrix_created": false,
+  "source_change": false,
+  "preset_change": false,
+  "optimization": false,
+  "demo_live_forward_test": false,
+  "lot_or_risk_increase": false,
+  "profitability_interpretation": false,
+  "order_logic_added": false,
+  "current_combined": {
+    "diagnostic_windows": 20,
+    "diagnostic_rows": 1767,
+    "possible_setup_rows": 490,
+    "total_usable_direction_rows": 311,
+    "fibo_pullback_rows": 292,
+    "fibo_usable_first_touch_rows": 219,
+    "fibo_direction_gap_rows": 73
+  },
+  "frozen_window_classification": {
+    "weak": "fibo_usable_first_touch_rows < 5",
+    "watch": "fibo_usable_first_touch_rows between 5 and 6 inclusive",
+    "normal_for_stability_review": "fibo_usable_first_touch_rows >= 7",
+    "note": "These bands are diagnostic classifications only and are not trading parameters."
+  },
+  "known_weak_windows": [
+    {
+      "window": "DR-W1",
+      "from": "2026-02-15",
+      "to": "2026-02-22",
+      "fibo_rows": 8,
+      "fibo_usable_rows": 3,
+      "fibo_gap_rows": 5,
+      "chronology_note": "isolated before DR-W2"
+    },
+    {
+      "window": "CY-W3",
+      "from": "2026-03-22",
+      "to": "2026-03-29",
+      "fibo_rows": 4,
+      "fibo_usable_rows": 2,
+      "fibo_gap_rows": 2,
+      "chronology_note": "consecutive before DB-W1"
+    },
+    {
+      "window": "DB-W1",
+      "from": "2026-03-29",
+      "to": "2026-04-05",
+      "fibo_rows": 6,
+      "fibo_usable_rows": 2,
+      "fibo_gap_rows": 4,
+      "chronology_note": "consecutive after CY-W3"
+    },
+    {
+      "window": "DI-W3",
+      "from": "2026-05-10",
+      "to": "2026-05-17",
+      "fibo_rows": 9,
+      "fibo_usable_rows": 4,
+      "fibo_gap_rows": 5,
+      "chronology_note": "isolated before DI-W4"
+    }
+  ],
+  "weak_window_aggregate": {
+    "window_count": 4,
+    "fibo_rows": 27,
+    "fibo_usable_rows": 11,
+    "fibo_gap_rows": 16,
+    "share_of_all_windows_percent": 20.0,
+    "share_of_combined_fibo_rows_percent": 9.2,
+    "share_of_combined_fibo_usable_rows_percent": 5.0,
+    "gap_share_within_weak_windows_percent": 59.3,
+    "consecutive_weak_pairs": ["CY-W3 -> DB-W1"]
+  },
+  "current_gate_state": {
+    "diagnostic_windows_gate": "PASS",
+    "fibo_usable_first_touch_gate": "PASS",
+    "total_usable_direction_gate": "PASS",
+    "low_window_weakness_gate": "FAIL",
+    "rule_candidate_gate": "FAIL",
+    "order_logic_gate": "FAIL"
+  },
+  "future_checkpoint_dv": {
+    "type": "artifact_only_temporal_stability_map",
+    "mt5_allowed": false,
+    "required_outputs": [
+      "chronological table for all 20 committed windows",
+      "fixed weak/watch/normal classification for every window",
+      "adjacent weak-window pair map",
+      "weak-window Fibo usable and gap shares",
+      "gap-reason attribution where committed row-level evidence exists",
+      "explicit summary-level limitation where row-level evidence is unavailable",
+      "separate historical and trailing stability observations",
+      "no trading-filter or profitability interpretation"
+    ]
+  },
+  "future_checkpoint_dw": {
+    "type": "docs_only_stability_gate_specification_decision",
+    "precondition": "DV artifact-only map complete",
+    "allowed_decisions": [
+      "KEEP_ABSOLUTE_HISTORICAL_GATE_FAIL",
+      "PROPOSE_DUAL_HISTORICAL_AND_TRAILING_GATE_FOR_APPROVAL",
+      "DATA_LIMITATION_BLOCKS_GATE_REVISION"
+    ],
+    "prohibited": [
+      "change thresholds to force a pass",
+      "optimize thresholds",
+      "approve a trading rule",
+      "approve order logic",
+      "approve MT5 execution automatically"
+    ]
+  },
+  "verdicts": [
+    "DU_STABILITY_REVIEW_PLAN_COMPLETE",
+    "DOCUMENTATION_ONLY",
+    "WEAK_WINDOW_THRESHOLD_FROZEN_BELOW_5",
+    "FOUR_KNOWN_WEAK_WINDOWS",
+    "ONE_CONSECUTIVE_WEAK_PAIR_REMAINS",
+    "LOW_WINDOW_WEAKNESS_GATE_FAIL",
+    "FUTURE_DV_ARTIFACT_ONLY_MAP_DEFINED",
+    "FUTURE_DW_GATE_DECISION_DEFINED",
+    "NO_MT5_RUN",
+    "NO_STRATEGY_TESTER_RUN",
+    "NO_EXECUTION_MATRIX_CREATED",
+    "NO_OPTIMIZATION_APPROVED",
+    "NO_ORDER_LOGIC_APPROVED",
+    "NO_DEMO_LIVE_FORWARD_TEST",
+    "NO_PROFITABILITY_CLAIM",
+    "PAF_NOT_READY_FOR_ORDER_LOGIC"
+  ],
+  "next_safe_step": "Checkpoint DV artifact-only chronological stability map using committed artifacts only."
+}

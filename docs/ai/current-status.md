@@ -2,6 +2,74 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint DU Refresh
+
+Checkpoint DU is a documentation-only weak-window stability review plan after Checkpoint DS.
+
+- Base: `6899dd0` after PR #119 / Checkpoint DS merged.
+- DU did not run MT5 or Strategy Tester.
+- DU did not create an execution matrix.
+- DU did not change EA/MQL5, presets, scripts, tools, trading logic, lot/risk, or optimization settings.
+- DU did not add order logic or approve demo/live testing.
+- DU does not claim profitability.
+
+Frozen diagnostic classification:
+
+- weak window: Fibo usable first-touch rows `< 5`
+- watch window: `5-6`
+- normal for stability review: `>= 7`
+- these are diagnostic labels, not trading parameters
+
+Known weak windows:
+
+- DR-W1: `3` usable
+- CY-W3: `2` usable
+- DB-W1: `2` usable
+- DI-W3: `4` usable
+- consecutive weak pair: `CY-W3 -> DB-W1`
+
+Weak-window aggregate:
+
+- windows: `4 / 20 = 20.0%`
+- Fibo rows: `27 / 292 = 9.2%`
+- Fibo usable rows: `11 / 219 = 5.0%`
+- Fibo gaps: `16 / 27 = 59.3%`
+
+Current gates remain:
+
+- diagnostic windows: `PASS`
+- Fibo usable first-touch: `PASS`
+- total usable direction: `PASS`
+- low-window weakness: `FAIL`
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+DU defines:
+
+- Future Checkpoint DV: artifact-only chronological stability map for all 20 committed windows
+- Future Checkpoint DW: docs-only decision on the stability-gate specification after DV
+- thresholds must not be changed or optimized to force a pass
+- no MT5 execution is approved by DU
+
+Current readiness estimate after DU:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `92%`
+- PAF diagnostic interpretation readiness: `87%`
+- Fibo Pullback interpretation readiness: `88%`
+- PAF rule-candidate readiness: `69%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DV artifact-only chronological stability map using committed artifacts only.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
+
 ## Latest Checkpoint DS Refresh
 
 Checkpoint DS is an artifact-only post-DR review using committed evidence.

@@ -1,6 +1,67 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-10
+Last updated: 2026-07-11
+
+## Latest Checkpoint DS Refresh
+
+Checkpoint DS is an artifact-only post-DR review using committed evidence.
+
+- Base: `df10434` after PR #118 / Checkpoint DR merged.
+- DS did not run MT5 or Strategy Tester.
+- DS did not change EA/MQL5, presets, scripts, tools, trading logic, lot/risk, or optimization settings.
+- DS did not add order logic or approve demo/live testing.
+- DS does not claim profitability.
+
+DR execution-safety review:
+
+- selected run `run_20260710_101729`: `PASS`
+- both approved windows: report `FOUND`, diagnostics `FOUND`, total trades `0`
+- forbidden markers `0`, baseline fallback markers `0`
+- runner stopped only selected spawned PIDs `27136`, `32088`
+- initial report-path retry was not used as coverage evidence
+
+Combined CV + CY + DB + DI + DM + DR:
+
+- diagnostic windows: `20`
+- diagnostic rows: `1767`
+- possible setup rows: `490`
+- total usable direction rows: `311`
+- Fibo Pullback rows: `292`
+- Fibo usable first-touch rows: `219`
+- Fibo direction gap rows: `73`
+- Fibo SELL rows: `167`
+- Fibo BUY rows: `52`
+- Fibo DIRECTION_UNKNOWN rows: `73`
+
+DS interpretation:
+
+- total usable-direction gate: `PASS` (`311 / 300`, margin `11`)
+- Fibo usable first-touch gate: `PASS` (`219 / 150`)
+- DR-W1 Fibo usable rows: `3`, new weak window
+- low-window weakness gate: `FAIL`
+- combined SELL share changed from `78.1%` pre-DR to `76.3%`; distribution reviewed but not approved as bias
+- combined Fibo gap share changed from `24.2%` pre-DR to `25.0%`; gaps remain material
+- rule-candidate gate: `FAIL`
+- order-logic gate: `FAIL`
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Current readiness estimate after DS:
+
+- Research infrastructure readiness: `96%`
+- PAF diagnostic pipeline readiness: `92%`
+- PAF diagnostic interpretation readiness: `86%`
+- Fibo Pullback interpretation readiness: `87%`
+- PAF rule-candidate readiness: `68%`
+- PAF order-logic readiness: `0%`
+- Demo/live readiness: `0%`
+
+Recommended next safe step:
+
+- Checkpoint DU docs-only weak-window stability review plan.
+- Do not run MT5 automatically.
+- Do not implement order logic.
+- Do not optimize.
+- Do not claim profitability.
 
 ## Latest Checkpoint DR Refresh
 

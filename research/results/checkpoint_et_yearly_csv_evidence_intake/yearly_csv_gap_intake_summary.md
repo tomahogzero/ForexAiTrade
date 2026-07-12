@@ -1,0 +1,15 @@
+# Checkpoint ET Yearly CSV Intake
+
+- execution_status: `PASS`
+- frozen_gap_count: `28`
+- yearly_raw_file_count: `3`
+- yearly_files: `[{'file': 'GOLD#_H1_202301030100_202312292300.csv', 'sha256': 'BBE0C3B83439DBD223FF64F4E6FA75AF84981BEFFF3482CB00161936B56BD468', 'row_count': 5894, 'coverage_from': '2023-01-03 01:00:00', 'coverage_to': '2023-12-29 23:00:00'}, {'file': 'GOLD#_H1_202401020100_202412312000.csv', 'sha256': '883F5076CDC6EF6C30CAF8E995DD7E33F63E7F50E9E2A9F91F77D206FFBD4F0A', 'row_count': 5928, 'coverage_from': '2024-01-02 01:00:00', 'coverage_to': '2024-12-31 20:00:00'}, {'file': 'GOLD#_H1_202501020800_202512311900.csv', 'sha256': '368CE15FA4225C14BC1513D108EC75D1AB49274B82208B36DE03B1CBDC92195B', 'row_count': 5894, 'coverage_from': '2025-01-02 08:00:00', 'coverage_to': '2025-12-31 19:00:00'}]`
+- csv_confirmed_gaps: `28`
+- eq_layer_a_complete: `0`
+- eq_layer_b_complete: `0`
+- exact_broker_evidence_complete: `0`
+- acceptance_state_counts: `{'CONTEXT_ONLY': 28}`
+- policy_change_approved: `False`
+- mt5_opened: `False`
+- strategy_performance_status: `NOT_EVALUATED`
+- profitability_claim: `False`

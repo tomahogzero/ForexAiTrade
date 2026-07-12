@@ -2,6 +2,20 @@
 
 Last updated: 2026-07-12
 
+## Latest Checkpoint ET Refresh
+
+Checkpoint ET verified three fresh user-provided GOLD# H1 yearly CSV exports offline.
+
+- CSV-confirmed frozen gaps: `28/28`; no interior H1 bars for every gap
+- raw yearly files/rows: `3`, `5894/5928/5894`; hashes recorded in ET artifacts
+- EQ layer A/B and exact broker evidence complete: `0/28`, `0/28`, `0/28`
+- decision: `ET_CSV_GAP_CONFIRMATION_PASS_EQ_EVIDENCE_INCOMPLETE`
+- execution status: `PASS`; policy gate: `REVIEW_REQUIRED`; strategy performance: `NOT_EVALUATED`
+- no MT5/Strategy Tester run, policy/validator change or bypass, join, shadow backtest, EA/preset change, optimization, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Shadow readiness remains `40%`. EQ layer A/B collection requires separate approval; do not release the 28 gaps automatically.
+
 ## Latest Checkpoint ES Refresh
 
 Checkpoint ES stopped at MT5 process/export-interface preflight.

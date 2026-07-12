@@ -1,0 +1,18 @@
+{
+  "execution_status": "PASS",
+  "frozen_gap_count": 28,
+  "reviewed_gap_count": 28,
+  "history_csv_range_covered": 28,
+  "exact_gap_screenshot_present": 0,
+  "fresh_refresh_manifest_complete": 0,
+  "exact_xm_schedule_present": 0,
+  "exact_broker_evidence_complete": 0,
+  "context_only": 28,
+  "existing_file_count": 4,
+  "long_history_csv_sha256": "8CE8C11FD29DE0BC807E710DEE43ECE3570BEB1FA68B1693AA5FA6BC4532CAE6",
+  "decision": "ER_BLOCKED_EXISTING_EVIDENCE_INCOMPLETE_0_OF_28",
+  "policy_change_approved": false,
+  "mt5_opened": false,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "profitability_claim": false
+}

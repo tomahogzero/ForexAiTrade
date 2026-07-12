@@ -1,0 +1,52 @@
+{
+  "contract_id": "CHECKPOINT_EQ_EXACT_XM_GAP_EVIDENCE_V1",
+  "frozen_input": "research/results/checkpoint_ep_gap_evidence_review/gap_evidence_review.csv",
+  "expected_gap_count": 28,
+  "exact_key": ["prev_time", "next_time", "delta_hours"],
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "required_evidence_layers": [
+    "FRESH_BROKER_HISTORY_CONFIRMATION",
+    "EXACT_BROKER_SCHEDULE_OR_SESSION_PROVENANCE"
+  ],
+  "required_manifest_fields": [
+    "gap_id",
+    "prev_time",
+    "next_time",
+    "delta_hours",
+    "runtime_symbol",
+    "timeframe",
+    "xm_legal_entity",
+    "account_server",
+    "terminal_path",
+    "terminal_build",
+    "server_timezone",
+    "dst_state",
+    "source_paths",
+    "source_sha256",
+    "capture_time",
+    "schedule_source",
+    "schedule_sha256"
+  ],
+  "acceptance_states": [
+    "EXACT_BROKER_EVIDENCE_COMPLETE",
+    "BROKER_HISTORY_ONLY",
+    "SCHEDULE_ONLY",
+    "CONTEXT_ONLY",
+    "CONFLICTING_EVIDENCE",
+    "INVALID_OR_SENSITIVE",
+    "MISSING"
+  ],
+  "global_pass_requirements": {
+    "reconciled_rows": 28,
+    "exact_complete_rows": 28,
+    "duplicate_rows": 0,
+    "missing_rows": 0,
+    "conflicting_rows": 0
+  },
+  "failure_decision": "BLOCKED_EXACT_XM_EVIDENCE_INCOMPLETE",
+  "policy_change_approved": false,
+  "evidence_collection_run": false,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "profitability_claim": false
+}

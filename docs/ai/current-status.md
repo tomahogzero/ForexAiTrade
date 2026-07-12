@@ -2,6 +2,19 @@
 
 Last updated: 2026-07-12
 
+## Latest Checkpoint ES Refresh
+
+Checkpoint ES stopped at MT5 process/export-interface preflight.
+
+- an XM MT5 terminal was already running before ES; its PID is not ES-owned
+- no desktop/MT5 UI automation or safe non-UI fresh-evidence exporter is available in this session
+- fresh EQ evidence collection: `NOT_RUN`; ES-started terminal PIDs: `0`
+- decision: `ES_BLOCKED_UNOWNED_MT5_PROCESS_AND_NO_SAFE_EXPORT_INTERFACE`
+- no Strategy Tester, policy/validator change or bypass, join, shadow backtest, EA/preset change, optimization, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Shadow readiness remains `40%`. User direction is required to provide offline evidence, permit an ES-owned terminal with a controlled export path, or explicitly authorize attach/control of the existing terminal with a usable UI/export interface.
+
 ## Latest Checkpoint ER Refresh
 
 Checkpoint ER performed a read-only preflight of existing XM evidence without opening MT5.

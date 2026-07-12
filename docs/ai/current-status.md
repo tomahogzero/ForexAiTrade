@@ -1,6 +1,19 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-11
+Last updated: 2026-07-12
+
+## Latest Checkpoint EP Refresh
+
+Checkpoint EP reviewed official holiday/market evidence for all 28 EO-blocked GOLD# H1 gaps.
+
+- reviewed/context-supported: `28/28`
+- exact archived XM Global GOLD# server-hour support: `0/28`
+- decision: `EP_CONTEXT_SUPPORTED_EXACT_XM_HOURS_MISSING`
+- execution status: `PASS`; policy gate: `REVIEW_REQUIRED`; strategy performance: `NOT_EVALUATED`
+- no policy/validator change or bypass, join, shadow backtest, MT5/Strategy Tester run, EA/preset change, optimization, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Shadow readiness remains `40%`. Exact broker-specific evidence intake or a decision to keep all 28 gaps blocked requires a separate checkpoint.
 
 ## Latest Checkpoint EO Refresh
 

@@ -2,6 +2,20 @@
 
 Last updated: 2026-07-11
 
+## Latest Checkpoint EO Refresh
+
+Checkpoint EO attributed EN-range GOLD# H1 gaps and applied the unchanged reviewed dry-run policy offline.
+
+- bars/gaps: `17716/773`
+- attribution: weekend `151`, short-session-or-history `622`
+- policy accepted: `745`; blocked unclassified: `28`
+- policy verdict: `REVIEW_REQUIRED`
+- execution status: `PASS`; strategy performance: `NOT_EVALUATED`
+- no bar filling/price changes, validator or policy change/bypass, join, shadow backtest, MT5/Strategy Tester run, EA/preset change, optimization, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Decision: `EO_REVIEW_REQUIRED_28_UNCLASSIFIED_GAPS`. Shadow readiness remains `40%`; further broker-session/holiday evidence review requires separate approval.
+
 ## Latest Checkpoint EN Refresh
 
 Checkpoint EN stopped at the approved strict-validator gate.

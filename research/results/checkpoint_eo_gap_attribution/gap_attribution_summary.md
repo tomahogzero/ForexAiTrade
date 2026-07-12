@@ -1,0 +1,19 @@
+# GOLD# H1 Gap Attribution Summary
+
+Offline attribution only. No bars were filled or prices modified.
+
+- execution_status: `PASS`
+- symbol: `GOLD#`
+- timeframe: `H1`
+- requested_from: `2023-01-01 00:00:00`
+- requested_to: `2025-12-31 23:59:59`
+- coverage_from: `2023-01-03 01:00:00`
+- coverage_to: `2025-12-31 19:00:00`
+- bar_count: `17716`
+- gap_count: `773`
+- classification_counts: `{'SHORT_SESSION_OR_HISTORY_GAP': 622, 'WEEKEND_MARKET_CLOSURE': 151}`
+- missing_bars_estimate: `8535`
+- prices_modified: `False`
+- missing_bars_filled: `False`
+- strategy_performance_status: `NOT_EVALUATED`
+- profitability_claim: `False`

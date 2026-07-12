@@ -2,6 +2,20 @@
 
 Last updated: 2026-07-12
 
+## Latest Checkpoint ER Refresh
+
+Checkpoint ER performed a read-only preflight of existing XM evidence without opening MT5.
+
+- frozen/reviewed gaps: `28/28`
+- long GOLD# H1 CSV range covers all gap timestamps, but exact screenshots/fresh manifests/XM schedules are `0/0/0`
+- exact broker evidence complete: `0/28`; all rows remain `CONTEXT_ONLY`
+- decision: `ER_BLOCKED_EXISTING_EVIDENCE_INCOMPLETE_0_OF_28`
+- execution status: `PASS`; policy gate: `REVIEW_REQUIRED`; strategy performance: `NOT_EVALUATED`
+- no policy/validator change or bypass, join, shadow backtest, MT5/Strategy Tester run, EA/preset change, optimization, order logic, demo/live test, or profitability claim
+- PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Shadow readiness remains `40%`. Opening MT5 for fresh evidence collection requires explicit separate approval.
+
 ## Latest Checkpoint EQ Refresh
 
 Checkpoint EQ defined a fail-closed exact XM evidence contract for the frozen 28 EO/EP gaps.

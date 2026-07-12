@@ -2,6 +2,19 @@
 
 Last updated: 2026-07-12
 
+## Latest Checkpoint EQ Refresh
+
+Checkpoint EQ defined a fail-closed exact XM evidence contract for the frozen 28 EO/EP gaps.
+
+- every gap requires fresh exact-server GOLD# H1 broker-history confirmation plus year-specific XM schedule/session provenance
+- exact key/population: `prev_time + next_time + delta_hours`, `28`
+- global acceptance: `28/28 EXACT_BROKER_EVIDENCE_COMPLETE`; no missing, duplicate, or conflicting rows
+- CME/OPM holiday evidence remains `CONTEXT_ONLY`; pattern extrapolation is forbidden
+- evidence collection: `NOT_RUN`; policy/validator change: `NOT_APPROVED/NOT_DONE`
+- strategy performance: `NOT_EVALUATED`; PAF remains `NOT_READY_FOR_ORDER_LOGIC`
+
+Decision: `EQ_EXACT_XM_GAP_EVIDENCE_CONTRACT_DEFINED`. Shadow readiness remains `40%`; actual evidence collection/intake requires separate approval.
+
 ## Latest Checkpoint EP Refresh
 
 Checkpoint EP reviewed official holiday/market evidence for all 28 EO-blocked GOLD# H1 gaps.

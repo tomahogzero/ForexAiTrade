@@ -1,6 +1,20 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-12
+Last updated: 2026-07-13
+
+## Latest Checkpoint EU Refresh
+
+Checkpoint EU verified and imported a fail-closed offline shadow-analysis handoff.
+
+- handoff SHA-256 manifest: `PASS 6/6`
+- reproduced rows: `1600/1600`; compared event/horizon fields: `41`; mismatches: `0`
+- H6/H12/H24/H48 included: `1588/1561/1534/1471`; excluded: `12/39/66/129`
+- all exclusions: `BLOCKED_GAP_INSIDE_LOOKAHEAD`
+- execution status: `PASS`; strategy performance: `NOT_EVALUATED`
+- order logic: `NOT_APPROVED`; PAF: `NOT_READY_FOR_ORDER_LOGIC`
+- no MT5/Strategy Tester, policy/validator change or bypass, EA/preset change, optimization, order logic, lot/risk change, demo/live test, or profitability claim
+
+ZIP, temporary extraction, and raw broker CSV files are not committed. Shadow readiness remains `40%`; EQ layer A/B gaps remain unresolved.
 
 ## Latest Checkpoint ET Refresh
 

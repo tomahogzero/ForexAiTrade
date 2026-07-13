@@ -2,6 +2,20 @@
 
 Last updated: 2026-07-13
 
+## Latest Checkpoint EW Refresh
+
+Checkpoint EW received exact approval for evidence-only collection, but stopped at the safe export-interface precondition.
+
+- no `terminal64.exe` process was running before EW; the XM executable path exists
+- no UI automation or non-UI exporter can produce the required per-gap Layer A evidence bundle and provenance manifest
+- MT5 was not started; EW-owned PIDs: `0`
+- decision: `EW_BLOCKED_NO_SAFE_EXPORT_INTERFACE`
+- EQ layer A/B and exact broker evidence remain: `0/28`, `0/28`, `0/28`
+- execution status: `BLOCKED`; strategy performance: `NOT_EVALUATED`
+- order logic: `NOT_APPROVED`; PAF: `NOT_READY_FOR_ORDER_LOGIC`
+- no Strategy Tester, policy/validator, EA/preset, optimization, order/risk, demo/live, automatic gap release, or profitability claim
+
+Shadow readiness remains `40%`. A reviewed safe export interface or a user-provided per-gap EQ evidence bundle is required before any renewed collection approval.
 ## Latest Checkpoint EV Refresh
 
 Checkpoint EV created the documentation-only approval package for a future exact XM evidence collection.

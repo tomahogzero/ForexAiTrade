@@ -2,6 +2,19 @@
 
 Last updated: 2026-07-13
 
+## Latest Checkpoint EV Refresh
+
+Checkpoint EV created the documentation-only approval package for a future exact XM evidence collection.
+
+- frozen gaps: `28`; ET CSV confirmation: `28/28`
+- EQ layer A/B and exact broker evidence: `0/28`, `0/28`, `0/28`
+- future EW requires exact approval, a safe verifiable export interface, and an EW-owned MT5 PID only
+- any incomplete evidence: `BLOCKED_EXACT_XM_EVIDENCE_INCOMPLETE`; automatic gap release is forbidden
+- execution status: `PASS`; strategy performance: `NOT_EVALUATED`
+- order logic: `NOT_APPROVED`; PAF: `NOT_READY_FOR_ORDER_LOGIC`
+- EV did not open MT5/Strategy Tester or change policy/validator, EA/presets, optimization, order logic, lot/risk, demo/live, or profitability status
+
+Shadow readiness remains `40%`. EW remains `BLOCKED_UNTIL_EXACT_USER_APPROVAL`.
 ## Latest Checkpoint EU Refresh
 
 Checkpoint EU verified and imported a fail-closed offline shadow-analysis handoff.

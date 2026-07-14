@@ -1,0 +1,57 @@
+{
+  "execution_status": "PASS",
+  "evidence_status": "INCOMPLETE",
+  "frozen_gap_count": 28,
+  "csv_confirmed_gaps": 28,
+  "screenshot_name_and_png_signature_pass": 28,
+  "notes_sha256": "B6E7330AA1374C31F353A118C15536DD80F6DA176F26DC2A324D44C05BB33933",
+  "yearly_files": [
+    {
+      "file": "GOLD#_H1_202301030100_202312292300.csv",
+      "sha256": "BBE0C3B83439DBD223FF64F4E6FA75AF84981BEFFF3482CB00161936B56BD468",
+      "row_count": 5894,
+      "coverage_from": "2023-01-03 01:00:00",
+      "coverage_to": "2023-12-29 23:00:00"
+    },
+    {
+      "file": "GOLD#_H1_202401020100_202412312000.csv",
+      "sha256": "883F5076CDC6EF6C30CAF8E995DD7E33F63E7F50E9E2A9F91F77D206FFBD4F0A",
+      "row_count": 5928,
+      "coverage_from": "2024-01-02 01:00:00",
+      "coverage_to": "2024-12-31 20:00:00"
+    },
+    {
+      "file": "GOLD#_H1_202501020800_202512311900.csv",
+      "sha256": "368CE15FA4225C14BC1513D108EC75D1AB49274B82208B36DE03B1CBDC92195B",
+      "row_count": 5894,
+      "coverage_from": "2025-01-02 08:00:00",
+      "coverage_to": "2025-12-31 19:00:00"
+    }
+  ],
+  "note_checks": {
+    "symbol": true,
+    "timeframe": true,
+    "terminal_path": true,
+    "terminal_build": true,
+    "xm_server": true,
+    "chart_time_basis": true,
+    "history_refresh_user_attested": true,
+    "raw_files_unmodified_user_attested": true,
+    "timezone_dst_exact_source_attached": false
+  },
+  "layer_a_complete": 0,
+  "layer_b_complete": 0,
+  "exact_broker_evidence_complete": 0,
+  "acceptance_state": "CONTEXT_ONLY",
+  "blockers": [
+    "exact_timezone_dst_source_missing",
+    "screenshot_visual_content_not_automatically_verified",
+    "layer_b_exact_xm_schedule_or_session_source_missing"
+  ],
+  "policy_change_approved": false,
+  "mt5_opened": false,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "order_logic_status": "NOT_APPROVED",
+  "paf_status": "NOT_READY_FOR_ORDER_LOGIC",
+  "profitability_claim": false
+}

@@ -1,6 +1,14 @@
 # ForexAiTrade Current Status
 
 Last updated: 2026-07-15
+
+## Latest Checkpoint FE Refresh
+
+Checkpoint FE selected REJECT_CURRENT_CANDIDATE from FC/FD merged artifacts.
+
+- full population TP_FIRST is below SL_FIRST at every frozen horizon; no subgroup was selected to override it
+- no current follow-up checkpoint is justified; future candidate needs a separately preregistered hypothesis and materially new independent evidence
+- strategy performance: NOT_EVALUATED; order logic: NOT_APPROVED; PAF: NOT_READY_FOR_ORDER_LOGIC`n
 ## Latest Checkpoint FD Refresh
 
 Checkpoint FD ran the FC-preregistered artifact-only subgroup report.

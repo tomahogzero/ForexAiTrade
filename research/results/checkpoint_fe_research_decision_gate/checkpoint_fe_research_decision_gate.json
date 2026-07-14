@@ -1,0 +1,847 @@
+{
+  "execution_status": "PASS",
+  "method": "artifact-only FC/FD research decision gate",
+  "fc_fd_contract_integrity": "PASS",
+  "selected_disposition": "REJECT_CURRENT_CANDIDATE",
+  "full_population_first": {
+    "H6": {
+      "population": 1600,
+      "included": 1588,
+      "excluded": 12,
+      "exclusion_rate_pct": 0.75,
+      "status": "DESCRIPTIVE",
+      "outcomes": {
+        "TP_FIRST": 460,
+        "SL_FIRST": 750,
+        "AMBIGUOUS_SAME_BAR": 22,
+        "NO_RESOLUTION": 356
+      },
+      "descriptive_rates_pct": {
+        "TP_FIRST": 28.97,
+        "SL_FIRST": 47.23,
+        "AMBIGUOUS_SAME_BAR": 1.39,
+        "NO_RESOLUTION": 22.42
+      }
+    },
+    "H12": {
+      "population": 1600,
+      "included": 1561,
+      "excluded": 39,
+      "exclusion_rate_pct": 2.44,
+      "status": "DESCRIPTIVE",
+      "outcomes": {
+        "TP_FIRST": 567,
+        "SL_FIRST": 854,
+        "AMBIGUOUS_SAME_BAR": 24,
+        "NO_RESOLUTION": 116
+      },
+      "descriptive_rates_pct": {
+        "TP_FIRST": 36.32,
+        "SL_FIRST": 54.71,
+        "AMBIGUOUS_SAME_BAR": 1.54,
+        "NO_RESOLUTION": 7.43
+      }
+    },
+    "H24": {
+      "population": 1600,
+      "included": 1534,
+      "excluded": 66,
+      "exclusion_rate_pct": 4.12,
+      "status": "DESCRIPTIVE",
+      "outcomes": {
+        "TP_FIRST": 622,
+        "SL_FIRST": 878,
+        "AMBIGUOUS_SAME_BAR": 26,
+        "NO_RESOLUTION": 8
+      },
+      "descriptive_rates_pct": {
+        "TP_FIRST": 40.55,
+        "SL_FIRST": 57.24,
+        "AMBIGUOUS_SAME_BAR": 1.69,
+        "NO_RESOLUTION": 0.52
+      }
+    },
+    "H48": {
+      "population": 1600,
+      "included": 1471,
+      "excluded": 129,
+      "exclusion_rate_pct": 8.06,
+      "status": "DESCRIPTIVE",
+      "outcomes": {
+        "TP_FIRST": 604,
+        "SL_FIRST": 843,
+        "AMBIGUOUS_SAME_BAR": 24,
+        "NO_RESOLUTION": 0
+      },
+      "descriptive_rates_pct": {
+        "TP_FIRST": 41.06,
+        "SL_FIRST": 57.31,
+        "AMBIGUOUS_SAME_BAR": 1.63,
+        "NO_RESOLUTION": 0.0
+      }
+    }
+  },
+  "all_preregistered_subgroups": {
+    "full_population": {
+      "ALL": {
+        "H6": {
+          "population": 1600,
+          "included": 1588,
+          "excluded": 12,
+          "exclusion_rate_pct": 0.75,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 460,
+            "SL_FIRST": 750,
+            "AMBIGUOUS_SAME_BAR": 22,
+            "NO_RESOLUTION": 356
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 28.97,
+            "SL_FIRST": 47.23,
+            "AMBIGUOUS_SAME_BAR": 1.39,
+            "NO_RESOLUTION": 22.42
+          }
+        },
+        "H12": {
+          "population": 1600,
+          "included": 1561,
+          "excluded": 39,
+          "exclusion_rate_pct": 2.44,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 567,
+            "SL_FIRST": 854,
+            "AMBIGUOUS_SAME_BAR": 24,
+            "NO_RESOLUTION": 116
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 36.32,
+            "SL_FIRST": 54.71,
+            "AMBIGUOUS_SAME_BAR": 1.54,
+            "NO_RESOLUTION": 7.43
+          }
+        },
+        "H24": {
+          "population": 1600,
+          "included": 1534,
+          "excluded": 66,
+          "exclusion_rate_pct": 4.12,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 622,
+            "SL_FIRST": 878,
+            "AMBIGUOUS_SAME_BAR": 26,
+            "NO_RESOLUTION": 8
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 40.55,
+            "SL_FIRST": 57.24,
+            "AMBIGUOUS_SAME_BAR": 1.69,
+            "NO_RESOLUTION": 0.52
+          }
+        },
+        "H48": {
+          "population": 1600,
+          "included": 1471,
+          "excluded": 129,
+          "exclusion_rate_pct": 8.06,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 604,
+            "SL_FIRST": 843,
+            "AMBIGUOUS_SAME_BAR": 24,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 41.06,
+            "SL_FIRST": 57.31,
+            "AMBIGUOUS_SAME_BAR": 1.63,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      }
+    },
+    "direction": {
+      "BUY": {
+        "H6": {
+          "population": 833,
+          "included": 827,
+          "excluded": 6,
+          "exclusion_rate_pct": 0.72,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 263,
+            "SL_FIRST": 373,
+            "AMBIGUOUS_SAME_BAR": 6,
+            "NO_RESOLUTION": 185
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 31.8,
+            "SL_FIRST": 45.1,
+            "AMBIGUOUS_SAME_BAR": 0.73,
+            "NO_RESOLUTION": 22.37
+          }
+        },
+        "H12": {
+          "population": 833,
+          "included": 806,
+          "excluded": 27,
+          "exclusion_rate_pct": 3.24,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 329,
+            "SL_FIRST": 408,
+            "AMBIGUOUS_SAME_BAR": 7,
+            "NO_RESOLUTION": 62
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 40.82,
+            "SL_FIRST": 50.62,
+            "AMBIGUOUS_SAME_BAR": 0.87,
+            "NO_RESOLUTION": 7.69
+          }
+        },
+        "H24": {
+          "population": 833,
+          "included": 791,
+          "excluded": 42,
+          "exclusion_rate_pct": 5.04,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 359,
+            "SL_FIRST": 418,
+            "AMBIGUOUS_SAME_BAR": 7,
+            "NO_RESOLUTION": 7
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 45.39,
+            "SL_FIRST": 52.84,
+            "AMBIGUOUS_SAME_BAR": 0.88,
+            "NO_RESOLUTION": 0.88
+          }
+        },
+        "H48": {
+          "population": 833,
+          "included": 758,
+          "excluded": 75,
+          "exclusion_rate_pct": 9.0,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 345,
+            "SL_FIRST": 407,
+            "AMBIGUOUS_SAME_BAR": 6,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 45.51,
+            "SL_FIRST": 53.69,
+            "AMBIGUOUS_SAME_BAR": 0.79,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      },
+      "SELL": {
+        "H6": {
+          "population": 767,
+          "included": 761,
+          "excluded": 6,
+          "exclusion_rate_pct": 0.78,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 197,
+            "SL_FIRST": 377,
+            "AMBIGUOUS_SAME_BAR": 16,
+            "NO_RESOLUTION": 171
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 25.89,
+            "SL_FIRST": 49.54,
+            "AMBIGUOUS_SAME_BAR": 2.1,
+            "NO_RESOLUTION": 22.47
+          }
+        },
+        "H12": {
+          "population": 767,
+          "included": 755,
+          "excluded": 12,
+          "exclusion_rate_pct": 1.56,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 238,
+            "SL_FIRST": 446,
+            "AMBIGUOUS_SAME_BAR": 17,
+            "NO_RESOLUTION": 54
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 31.52,
+            "SL_FIRST": 59.07,
+            "AMBIGUOUS_SAME_BAR": 2.25,
+            "NO_RESOLUTION": 7.15
+          }
+        },
+        "H24": {
+          "population": 767,
+          "included": 743,
+          "excluded": 24,
+          "exclusion_rate_pct": 3.13,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 263,
+            "SL_FIRST": 460,
+            "AMBIGUOUS_SAME_BAR": 19,
+            "NO_RESOLUTION": 1
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 35.4,
+            "SL_FIRST": 61.91,
+            "AMBIGUOUS_SAME_BAR": 2.56,
+            "NO_RESOLUTION": 0.13
+          }
+        },
+        "H48": {
+          "population": 767,
+          "included": 713,
+          "excluded": 54,
+          "exclusion_rate_pct": 7.04,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 259,
+            "SL_FIRST": 436,
+            "AMBIGUOUS_SAME_BAR": 18,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 36.33,
+            "SL_FIRST": 61.15,
+            "AMBIGUOUS_SAME_BAR": 2.52,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      }
+    },
+    "year": {
+      "2023": {
+        "H6": {
+          "population": 647,
+          "included": 640,
+          "excluded": 7,
+          "exclusion_rate_pct": 1.08,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 179,
+            "SL_FIRST": 294,
+            "AMBIGUOUS_SAME_BAR": 14,
+            "NO_RESOLUTION": 153
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 27.97,
+            "SL_FIRST": 45.94,
+            "AMBIGUOUS_SAME_BAR": 2.19,
+            "NO_RESOLUTION": 23.91
+          }
+        },
+        "H12": {
+          "population": 647,
+          "included": 627,
+          "excluded": 20,
+          "exclusion_rate_pct": 3.09,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 231,
+            "SL_FIRST": 327,
+            "AMBIGUOUS_SAME_BAR": 16,
+            "NO_RESOLUTION": 53
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 36.84,
+            "SL_FIRST": 52.15,
+            "AMBIGUOUS_SAME_BAR": 2.55,
+            "NO_RESOLUTION": 8.45
+          }
+        },
+        "H24": {
+          "population": 647,
+          "included": 616,
+          "excluded": 31,
+          "exclusion_rate_pct": 4.79,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 256,
+            "SL_FIRST": 339,
+            "AMBIGUOUS_SAME_BAR": 18,
+            "NO_RESOLUTION": 3
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 41.56,
+            "SL_FIRST": 55.03,
+            "AMBIGUOUS_SAME_BAR": 2.92,
+            "NO_RESOLUTION": 0.49
+          }
+        },
+        "H48": {
+          "population": 647,
+          "included": 587,
+          "excluded": 60,
+          "exclusion_rate_pct": 9.27,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 249,
+            "SL_FIRST": 321,
+            "AMBIGUOUS_SAME_BAR": 17,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 42.42,
+            "SL_FIRST": 54.68,
+            "AMBIGUOUS_SAME_BAR": 2.9,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      },
+      "2024": {
+        "H6": {
+          "population": 508,
+          "included": 507,
+          "excluded": 1,
+          "exclusion_rate_pct": 0.2,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 129,
+            "SL_FIRST": 238,
+            "AMBIGUOUS_SAME_BAR": 7,
+            "NO_RESOLUTION": 133
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 25.44,
+            "SL_FIRST": 46.94,
+            "AMBIGUOUS_SAME_BAR": 1.38,
+            "NO_RESOLUTION": 26.23
+          }
+        },
+        "H12": {
+          "population": 508,
+          "included": 502,
+          "excluded": 6,
+          "exclusion_rate_pct": 1.18,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 164,
+            "SL_FIRST": 288,
+            "AMBIGUOUS_SAME_BAR": 7,
+            "NO_RESOLUTION": 43
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 32.67,
+            "SL_FIRST": 57.37,
+            "AMBIGUOUS_SAME_BAR": 1.39,
+            "NO_RESOLUTION": 8.57
+          }
+        },
+        "H24": {
+          "population": 508,
+          "included": 490,
+          "excluded": 18,
+          "exclusion_rate_pct": 3.54,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 184,
+            "SL_FIRST": 296,
+            "AMBIGUOUS_SAME_BAR": 7,
+            "NO_RESOLUTION": 3
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 37.55,
+            "SL_FIRST": 60.41,
+            "AMBIGUOUS_SAME_BAR": 1.43,
+            "NO_RESOLUTION": 0.61
+          }
+        },
+        "H48": {
+          "population": 508,
+          "included": 466,
+          "excluded": 42,
+          "exclusion_rate_pct": 8.27,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 177,
+            "SL_FIRST": 283,
+            "AMBIGUOUS_SAME_BAR": 6,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 37.98,
+            "SL_FIRST": 60.73,
+            "AMBIGUOUS_SAME_BAR": 1.29,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      },
+      "2025": {
+        "H6": {
+          "population": 445,
+          "included": 441,
+          "excluded": 4,
+          "exclusion_rate_pct": 0.9,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 152,
+            "SL_FIRST": 218,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 70
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 34.47,
+            "SL_FIRST": 49.43,
+            "AMBIGUOUS_SAME_BAR": 0.23,
+            "NO_RESOLUTION": 15.87
+          }
+        },
+        "H12": {
+          "population": 445,
+          "included": 432,
+          "excluded": 13,
+          "exclusion_rate_pct": 2.92,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 172,
+            "SL_FIRST": 239,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 20
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 39.81,
+            "SL_FIRST": 55.32,
+            "AMBIGUOUS_SAME_BAR": 0.23,
+            "NO_RESOLUTION": 4.63
+          }
+        },
+        "H24": {
+          "population": 445,
+          "included": 428,
+          "excluded": 17,
+          "exclusion_rate_pct": 3.82,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 182,
+            "SL_FIRST": 243,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 2
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 42.52,
+            "SL_FIRST": 56.78,
+            "AMBIGUOUS_SAME_BAR": 0.23,
+            "NO_RESOLUTION": 0.47
+          }
+        },
+        "H48": {
+          "population": 445,
+          "included": 418,
+          "excluded": 27,
+          "exclusion_rate_pct": 6.07,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 178,
+            "SL_FIRST": 239,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 42.58,
+            "SL_FIRST": 57.18,
+            "AMBIGUOUS_SAME_BAR": 0.24,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      }
+    },
+    "atr_regime": {
+      "LOW": {
+        "H6": {
+          "population": 528,
+          "included": 522,
+          "excluded": 6,
+          "exclusion_rate_pct": 1.14,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 157,
+            "SL_FIRST": 269,
+            "AMBIGUOUS_SAME_BAR": 18,
+            "NO_RESOLUTION": 78
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 30.08,
+            "SL_FIRST": 51.53,
+            "AMBIGUOUS_SAME_BAR": 3.45,
+            "NO_RESOLUTION": 14.94
+          }
+        },
+        "H12": {
+          "population": 528,
+          "included": 506,
+          "excluded": 22,
+          "exclusion_rate_pct": 4.17,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 188,
+            "SL_FIRST": 274,
+            "AMBIGUOUS_SAME_BAR": 20,
+            "NO_RESOLUTION": 24
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 37.15,
+            "SL_FIRST": 54.15,
+            "AMBIGUOUS_SAME_BAR": 3.95,
+            "NO_RESOLUTION": 4.74
+          }
+        },
+        "H24": {
+          "population": 528,
+          "included": 497,
+          "excluded": 31,
+          "exclusion_rate_pct": 5.87,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 203,
+            "SL_FIRST": 273,
+            "AMBIGUOUS_SAME_BAR": 21,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 40.85,
+            "SL_FIRST": 54.93,
+            "AMBIGUOUS_SAME_BAR": 4.23,
+            "NO_RESOLUTION": 0.0
+          }
+        },
+        "H48": {
+          "population": 528,
+          "included": 476,
+          "excluded": 52,
+          "exclusion_rate_pct": 9.85,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 199,
+            "SL_FIRST": 257,
+            "AMBIGUOUS_SAME_BAR": 20,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 41.81,
+            "SL_FIRST": 53.99,
+            "AMBIGUOUS_SAME_BAR": 4.2,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      },
+      "MID": {
+        "H6": {
+          "population": 545,
+          "included": 543,
+          "excluded": 2,
+          "exclusion_rate_pct": 0.37,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 146,
+            "SL_FIRST": 244,
+            "AMBIGUOUS_SAME_BAR": 3,
+            "NO_RESOLUTION": 150
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 26.89,
+            "SL_FIRST": 44.94,
+            "AMBIGUOUS_SAME_BAR": 0.55,
+            "NO_RESOLUTION": 27.62
+          }
+        },
+        "H12": {
+          "population": 545,
+          "included": 540,
+          "excluded": 5,
+          "exclusion_rate_pct": 0.92,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 182,
+            "SL_FIRST": 303,
+            "AMBIGUOUS_SAME_BAR": 3,
+            "NO_RESOLUTION": 52
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 33.7,
+            "SL_FIRST": 56.11,
+            "AMBIGUOUS_SAME_BAR": 0.56,
+            "NO_RESOLUTION": 9.63
+          }
+        },
+        "H24": {
+          "population": 545,
+          "included": 531,
+          "excluded": 14,
+          "exclusion_rate_pct": 2.57,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 209,
+            "SL_FIRST": 316,
+            "AMBIGUOUS_SAME_BAR": 4,
+            "NO_RESOLUTION": 2
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 39.36,
+            "SL_FIRST": 59.51,
+            "AMBIGUOUS_SAME_BAR": 0.75,
+            "NO_RESOLUTION": 0.38
+          }
+        },
+        "H48": {
+          "population": 545,
+          "included": 501,
+          "excluded": 44,
+          "exclusion_rate_pct": 8.07,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 201,
+            "SL_FIRST": 297,
+            "AMBIGUOUS_SAME_BAR": 3,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 40.12,
+            "SL_FIRST": 59.28,
+            "AMBIGUOUS_SAME_BAR": 0.6,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      },
+      "HIGH": {
+        "H6": {
+          "population": 527,
+          "included": 523,
+          "excluded": 4,
+          "exclusion_rate_pct": 0.76,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 157,
+            "SL_FIRST": 237,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 128
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 30.02,
+            "SL_FIRST": 45.32,
+            "AMBIGUOUS_SAME_BAR": 0.19,
+            "NO_RESOLUTION": 24.47
+          }
+        },
+        "H12": {
+          "population": 527,
+          "included": 515,
+          "excluded": 12,
+          "exclusion_rate_pct": 2.28,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 197,
+            "SL_FIRST": 277,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 40
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 38.25,
+            "SL_FIRST": 53.79,
+            "AMBIGUOUS_SAME_BAR": 0.19,
+            "NO_RESOLUTION": 7.77
+          }
+        },
+        "H24": {
+          "population": 527,
+          "included": 506,
+          "excluded": 21,
+          "exclusion_rate_pct": 3.98,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 210,
+            "SL_FIRST": 289,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 6
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 41.5,
+            "SL_FIRST": 57.11,
+            "AMBIGUOUS_SAME_BAR": 0.2,
+            "NO_RESOLUTION": 1.19
+          }
+        },
+        "H48": {
+          "population": 527,
+          "included": 494,
+          "excluded": 33,
+          "exclusion_rate_pct": 6.26,
+          "status": "DESCRIPTIVE",
+          "outcomes": {
+            "TP_FIRST": 204,
+            "SL_FIRST": 289,
+            "AMBIGUOUS_SAME_BAR": 1,
+            "NO_RESOLUTION": 0
+          },
+          "descriptive_rates_pct": {
+            "TP_FIRST": 41.3,
+            "SL_FIRST": 58.5,
+            "AMBIGUOUS_SAME_BAR": 0.2,
+            "NO_RESOLUTION": 0.0
+          }
+        }
+      }
+    },
+    "setup_subtype": {
+      "NOT_AVAILABLE": {
+        "availability": "NOT_AVAILABLE"
+      }
+    },
+    "diagnostic_reason": {
+      "NOT_AVAILABLE": {
+        "availability": "NOT_AVAILABLE"
+      }
+    },
+    "market_session": {
+      "NOT_AVAILABLE": {
+        "availability": "NOT_AVAILABLE"
+      }
+    }
+  },
+  "decision_matrix": [
+    {
+      "option": "REJECT_CURRENT_CANDIDATE",
+      "selected": true,
+      "evidence": "All full-population horizons have TP_FIRST counts below SL_FIRST; no preregistered subgroup is selected to override full-population evidence."
+    },
+    {
+      "option": "RESEARCH_MORE_WITH_NEW_HYPOTHESIS",
+      "selected": false,
+      "reason": "FD supplies no separately preregistered non-trading hypothesis that is justified without post-hoc selection."
+    },
+    {
+      "option": "INSUFFICIENT_EVIDENCE",
+      "selected": false,
+      "reason": "Current evidence is sufficient for a conservative disposition, not for execution design."
+    },
+    {
+      "option": "ELIGIBLE_FOR_SEPARATE_FORWARD_DIAGNOSTIC_DESIGN",
+      "selected": false,
+      "reason": "Consistency/adequacy criteria are not met without selecting post-hoc subgroups; order logic remains unapproved."
+    }
+  ],
+  "limitations": [
+    "Broker-history completeness is NOT_PROVEN.",
+    "Horizon populations differ because fail-closed exclusions differ.",
+    "Outcome counts/rates are diagnostic labels, not profitability, expected return, or trading-edge evidence.",
+    "setup subtype, diagnostic reason, and market session are NOT_AVAILABLE."
+  ],
+  "future_conditions": [
+    "No current follow-up checkpoint is justified.",
+    "Any future candidate requires a separately preregistered new hypothesis, frozen inputs, and materially new independent evidence before a new decision gate."
+  ],
+  "strategy_performance_status": "NOT_EVALUATED",
+  "order_logic_status": "NOT_APPROVED",
+  "paf_status": "NOT_READY_FOR_ORDER_LOGIC",
+  "profitability_claim": false
+}

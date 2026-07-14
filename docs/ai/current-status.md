@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-15
 
+## Latest Checkpoint FG Refresh
+
+Checkpoint FG audited feature availability only for the separate FF-frozen `MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1` candidate.
+
+- decision: `FG_PASS_FEATURES_AVAILABLE`; all 20 frozen feature inputs/derivations are available and deterministic, with 8/8 fixture tests passing
+- the checked GOLD# H1 CSV has 5,894 rows and 256 detectable timestamp gaps; broker-history completeness remains `NOT_PROVEN` and every required sequence touching a gap must exclude as `DATA_INCOMPLETE_GAP`
+- no historical final event population or TP/SL outcome was generated; FH is defined only as a separately approved deterministic event-generator prototype
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FF Refresh
 
 Checkpoint FF froze the documentation-only MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1 hypothesis contract.

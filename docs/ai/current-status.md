@@ -1,6 +1,16 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-14
+Last updated: 2026-07-15
+## Latest Checkpoint FD Refresh
+
+Checkpoint FD ran the FC-preregistered artifact-only subgroup report.
+
+- frozen dimensions: direction, year, fixed ATR regime, and H6/H12/H24/H48
+- setup subtype, diagnostic reason, and market session: `NOT_AVAILABLE`; no inference
+- all available subgroup/horizon samples are `>=30`; full population remains visible
+- results are descriptive diagnostic hypotheses only; no best-subgroup selection
+- strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`
+- order logic: `NOT_APPROVED`; PAF: `NOT_READY_FOR_ORDER_LOGIC`
 
 ## Latest Checkpoint FC Refresh
 

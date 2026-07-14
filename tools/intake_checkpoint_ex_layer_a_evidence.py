@@ -85,6 +85,7 @@ def main() -> int:
         "chart_time_basis": notes.get("chart_time_basis", "").startswith("XM MT5 server chart time"),
         "history_refresh_user_attested": notes.get("history_refresh", "").upper() == "YES",
         "raw_files_unmodified_user_attested": notes.get("raw_files_modified", "").upper() == "NO",
+        "screenshot_visual_content_user_attested": notes.get("screenshot_visual_content_user_attested", "").upper() == "YES",
         "timezone_dst_exact_source_attached": notes.get("server_timezone_dst", "").upper() not in {"", "UNKNOWN"},
     }
 
@@ -144,7 +145,7 @@ def main() -> int:
         "layer_b_complete": 0,
         "exact_broker_evidence_complete": 0,
         "acceptance_state": "CONTEXT_ONLY",
-        "blockers": ["exact_timezone_dst_source_missing", "screenshot_visual_content_not_automatically_verified", "layer_b_exact_xm_schedule_or_session_source_missing"],
+        "blockers": ["exact_timezone_dst_source_missing", "screenshot_visual_content_not_independently_verified", "layer_b_exact_xm_schedule_or_session_source_missing"],
         "policy_change_approved": False,
         "mt5_opened": False,
         "strategy_performance_status": "NOT_EVALUATED",

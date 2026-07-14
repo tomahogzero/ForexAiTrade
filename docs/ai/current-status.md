@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-14
 
+## Latest Checkpoint FC Refresh
+
+Checkpoint FC froze the documentation-only research interpretation contract for the valid fail-closed shadow population.
+
+- allowed dimensions and fixed ATR boundaries are preregistered; subgroup/horizon <30 is INSUFFICIENT_SAMPLE`n- every frozen group and full-population result must be reported; no best-subgroup selection or post-outcome categories
+- next FD is artifact-only subgroup interpretation; FC does not run it
+- strategy performance: NOT_EVALUATED; order logic: NOT_APPROVED; PAF: NOT_READY_FOR_ORDER_LOGIC`n
+
 ## Latest Checkpoint FB Refresh
 
 Checkpoint FB audited fail-closed inclusion/exclusion composition by year and frozen direction; it is coverage-only, not performance evidence.

@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-15
 
+## Latest Checkpoint FH Refresh
+
+Checkpoint FH froze the deterministic implementation contract for the FF-frozen `MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1` historical event detector.
+
+- states, next-valid-bar retest counting, exact-level touch, confirmation order, fail-closed gap handling, terminal statuses, deterministic identifiers, schema, duplicate suppression, and tie-breaking are frozen
+- no full historical event population and no TP/SL outcome was generated
+- FI is defined only for separately approved detector implementation and fixture tests; full-population execution needs another explicit approval
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FG Refresh
 
 Checkpoint FG audited feature availability only for the separate FF-frozen `MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1` candidate.

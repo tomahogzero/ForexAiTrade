@@ -2,6 +2,12 @@
 
 Last updated: 2026-07-14
 
+## Latest Checkpoint FB Refresh
+
+Checkpoint FB audited fail-closed inclusion/exclusion composition by year and frozen direction; it is coverage-only, not performance evidence.
+
+- execution: PASS; event-key conservation: 1600/1600; broker-history completeness: NOT_PROVEN`n- strategy performance: NOT_EVALUATED; profitability: NOT_CLAIMED; order logic: NOT_APPROVED`n
+
 ## Latest Checkpoint FA Refresh
 
 Checkpoint FA interpreted the valid fail-closed shadow population without a performance claim.

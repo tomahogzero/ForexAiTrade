@@ -2,6 +2,13 @@
 
 Last updated: 2026-07-14
 
+## Latest Checkpoint FA Refresh
+
+Checkpoint FA interpreted the valid fail-closed shadow population without a performance claim.
+
+- event-key conservation: PASS; valid H6/H12/H24/H48 populations: 1588/1561/1534/1471`n- horizon populations differ; outcome labels are diagnostic only and not comparable performance evidence
+- execution: PASS; strategy performance: NOT_EVALUATED; profitability: NOT_CLAIMED`n- order logic: NOT_APPROVED; PAF: NOT_READY_FOR_ORDER_LOGIC`n
+
 ## Latest Checkpoint EZ Refresh
 
 Checkpoint EZ adopts `PARTIAL_EVIDENCE_ACCEPTED_WITH_FAIL_CLOSED_EXCLUSIONS` for the 28 unverified GOLD# H1 gaps.

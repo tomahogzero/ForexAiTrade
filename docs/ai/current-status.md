@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-15
 
+## Latest Checkpoint FF Refresh
+
+Checkpoint FF froze the documentation-only MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1 hypothesis contract.
+
+- no events or outcomes were generated; candidate remains separate from rejected PAF/Fibo
+- FG is a future feature-availability audit only and is not created by FF
+- strategy performance: NOT_EVALUATED; order logic: NOT_APPROVED; candidate: NOT_READY_FOR_ORDER_LOGIC; profitability: NOT_CLAIMED`n
+
 ## Latest Checkpoint FE Refresh
 
 Checkpoint FE selected REJECT_CURRENT_CANDIDATE from FC/FD merged artifacts.

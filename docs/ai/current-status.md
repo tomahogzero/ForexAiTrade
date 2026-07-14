@@ -2,6 +2,18 @@
 
 Last updated: 2026-07-13
 
+## Latest Checkpoint EX Refresh
+
+Checkpoint EX completed offline intake of the user-provided Layer A evidence.
+
+- CSV frozen-gap confirmation: `28/28`; screenshot exact-name/PNG-signature validation: `28/28`
+- execution status: `PASS`; evidence status: `INCOMPLETE`
+- exact XM timezone/DST source, visual screenshot review, and Layer B schedule/session source remain missing
+- Layer A/B and exact broker evidence: `0/28`, `0/28`, `0/28`; acceptance: `CONTEXT_ONLY`
+- no MT5/Strategy Tester, policy/validator, EA/preset, optimization, order/risk, demo/live, or profitability change
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; PAF: `NOT_READY_FOR_ORDER_LOGIC`
+
+Shadow readiness remains `40%`; no gap release or policy decision is approved.
 ## Latest Checkpoint EW Refresh
 
 Checkpoint EW received exact approval for evidence-only collection, but stopped at the safe export-interface precondition.

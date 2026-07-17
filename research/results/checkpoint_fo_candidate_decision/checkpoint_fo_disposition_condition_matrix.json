@@ -1,0 +1,99 @@
+{
+  "ELIGIBLE_FOR_COST_AWARE_OFFLINE_DIAGNOSTIC_DESIGN": [
+    {
+      "evidence": "checkpoint_fo_h48_primary_decision.json",
+      "observed": 0.3871111914406242,
+      "pass": false,
+      "required": "H48 Wilson lower > 0.40"
+    },
+    {
+      "evidence": "checkpoint_fo_h24_consistency.json",
+      "observed": 0.41586998087954113,
+      "pass": true,
+      "required": "H24 point > 0.40"
+    },
+    {
+      "evidence": "checkpoint_fo_sample_size_validation.json",
+      "observed": true,
+      "pass": true,
+      "required": "all full/direction/year samples pass"
+    },
+    {
+      "evidence": "checkpoint_fo_direction_consistency.json; checkpoint_fo_year_consistency.json",
+      "observed": {
+        "direction": false,
+        "fm_pass": true,
+        "quality": false,
+        "year": false
+      },
+      "pass": true,
+      "required": "no direction/year contradiction or quality limitation and FM PASS"
+    }
+  ],
+  "INSUFFICIENT_EVIDENCE": [
+    {
+      "evidence": "checkpoint_fo_sample_size_validation.json",
+      "observed": true,
+      "pass": false,
+      "required": "required minimum denominator not met"
+    },
+    {
+      "evidence": "checkpoint_fo_h48_primary_decision.json",
+      "observed": false,
+      "pass": false,
+      "required": "data quality undermines advancement"
+    },
+    {
+      "evidence": "checkpoint_fo_h48_primary_decision.json",
+      "observed": {
+        "advancement": false,
+        "lower": 0.3871111914406242,
+        "upper": 0.4466719498539631
+      },
+      "pass": true,
+      "required": "H48 Wilson interval overlaps 0.40 and advancement does not pass"
+    },
+    {
+      "evidence": "checkpoint_fo_h24_consistency.json",
+      "observed": false,
+      "pass": false,
+      "required": "H24/H48 material conflict"
+    }
+  ],
+  "REJECT_CURRENT_CANDIDATE": [
+    {
+      "evidence": "checkpoint_fo_h48_primary_decision.json",
+      "observed": 0.4466719498539631,
+      "pass": false,
+      "required": "H48 Wilson upper <= 0.40"
+    },
+    {
+      "evidence": "checkpoint_fo_h24_consistency.json",
+      "observed": {
+        "H24": 0.41586998087954113,
+        "H48": 0.41658722592945663,
+        "adequate_samples": true,
+        "conflict": false
+      },
+      "pass": false,
+      "required": "H48 and H24 points below 0.40 with adequate samples and no conflict"
+    },
+    {
+      "evidence": "checkpoint_fo_direction_consistency.json; checkpoint_fo_year_consistency.json",
+      "observed": {
+        "direction": false,
+        "year": false
+      },
+      "pass": false,
+      "required": "material direction or year contradiction"
+    }
+  ],
+  "RESEARCH_MORE_WITH_NEW_HYPOTHESIS": [
+    {
+      "evidence": "checkpoint_fo_decision.json",
+      "observed": "none identified without post-hoc subgroup retention",
+      "pass": false,
+      "required": "specific frozen structural question requiring new hypothesis"
+    }
+  ]
+}

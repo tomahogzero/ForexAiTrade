@@ -1,0 +1,30 @@
+{
+  "H48_decision_sample_checks": {
+    "direction_year": {
+      "LONG|2023": "PASS",
+      "LONG|2024": "PASS",
+      "LONG|2025": "PASS",
+      "SHORT|2023": "PASS",
+      "SHORT|2024": "PASS",
+      "SHORT|2025": "PASS"
+    },
+    "directions": {
+      "LONG": true,
+      "SHORT": true
+    },
+    "full_population": true,
+    "years": {
+      "2023": true,
+      "2024": true,
+      "2025": true
+    }
+  },
+  "thresholds": {
+    "below_direction_year_minimum": "INSUFFICIENT_SAMPLE_LIMITATION_ONLY",
+    "direction_unambiguous_resolved_minimum": 200,
+    "direction_year_unambiguous_resolved_minimum": 75,
+    "full_population_unambiguous_resolved_minimum": 500,
+    "threshold_changes_prohibited": true,
+    "year_unambiguous_resolved_minimum": 100
+  }
+}

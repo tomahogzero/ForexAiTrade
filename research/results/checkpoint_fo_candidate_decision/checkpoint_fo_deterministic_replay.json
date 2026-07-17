@@ -1,0 +1,7 @@
+{
+  "byte_identical": true,
+  "canonical_metric_payload_sha256": "74d73b501b8ab309f62691c3e5148ffffa2cdc526ad010daf26cccd3c5b9847a",
+  "execution_status": "PASS",
+  "mismatch_count": 0,
+  "row_order_frozen": true
+}

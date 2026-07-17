@@ -1,0 +1,20 @@
+{
+  "artifacts": {
+    "checkpoint_fo_decision.json": "f9952ad95244d5f94c84069daeb94be7fbed269066e471de148d582983b124d0",
+    "checkpoint_fo_decision_matrix.json": "3b9e826a366b77b11c259d5ddce94355e022652000c1be29326b7551df03c543",
+    "checkpoint_fo_direction_consistency.json": "b167906488fbb2c00b9a258943a0299774d4e4ff83ffe6cea3d2061fbb4f2f0b",
+    "checkpoint_fo_direction_year_limitations.json": "c317971c7b7932f25d4f7e826e5123832c27f9e0a14aa7003a57d8968184201d",
+    "checkpoint_fo_disposition_condition_matrix.json": "80109d2d5a42e965b0af39a7cf534f7694e4f7d707336344999e259e0edbcd36",
+    "checkpoint_fo_full_population_horizons.json": "3eeafe2af6078549c0cf9111eda9dafd1e57e079e67c1fb76b034d6b5fd8e3cc",
+    "checkpoint_fo_h24_consistency.json": "927c612199cff7bee18847708b0a536c53839c68097120a9d21a5319eba75196",
+    "checkpoint_fo_h48_primary_decision.json": "14c860bc8f4460a0b5d0c70b7da3bf5bcbf59953bda1e73fdbb8f62bba209be3",
+    "checkpoint_fo_sample_size_validation.json": "cca00325abd255947985d8fa76e403b627def36fe42b7f17491579fe05a631fc",
+    "checkpoint_fo_year_consistency.json": "a7c43c73b606c8a8bda4b0059e0f71bd4a0808f360b095effee9dea47c349d6a"
+  },
+  "execution_status": "PASS",
+  "fj_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+  "fk_contract_sha256": "42182742575ef3e4add245ef8181a2424fb27907453c35f8ed73597b54d3cd55",
+  "fl_canonical_outcome_sha256_lf": "b05b38a11db6c776e177b2b738610724bbd877870f5a12cea0ce698fc636a804",
+  "fm_audit_sha256": "2e616bce9ea8b49d77f272311fefe0ae4d49f377c2a1639f53ebaaa6a9be1fa7",
+  "fn_contract_sha256": "822586fd1e2f829d6c4de4f49ce3f2562453d04c8cf7fe76337de6a603e9d7f2"
+}

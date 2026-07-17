@@ -33,7 +33,7 @@ Fixture tests A-L ครบ: valid LONG/SHORT, wick-only, swing not confirmed, r
 - syntax/static check: `PASS` (`python -m py_compile`)
 - fixture assertions: `12/12 PASS`
 - exact event schema validation: `PASS`
-- replay run 1/run 2 SHA-256: `8176cab50f970db4cb7f63f8228368250ab093fd9078c1331e994aeadb76d4f1`
+- replay run 1/run 2 SHA-256: `0b13abedc4f71f5be160b18830de69537438351ba13ec4cf2671616bf9db6abc`
 - byte-identical replay: `true`
 - zero event-key mismatches: `true`
 - reordered non-semantic metadata/input order preserves event IDs: `true`
@@ -53,6 +53,9 @@ Implementation includes all FH terminal statuses: `EVENT_EMITTED`, `NO_BREAK`, `
 
 FJ may only, with separate explicit approval, execute the FI-validated detector against the approved historical dataset; generate the frozen event population; and report coverage, exclusions and counts. FJ must not calculate TP/SL outcomes, tune rules, change FF/FH/FI, use MT5/Strategy Tester, modify EA/MQL5/presets, create order logic, or perform demo/live testing.
 
+## Post-FI Fail-Closed Correction
+
+During FJ, a deterministic regression demonstrated that an active swing could survive an unverified gap and later be reused. The implementation now clears active swing state at an unverified `gap_before`. This is a defect correction required by FH/FJ fail-closed policy, not a rule or parameter change. All 12 fixture cases still pass; the terminal-output golden hash is now `0b13abedc4f71f5be160b18830de69537438351ba13ec4cf2671616bf9db6abc`.
 ## Status
 
 - execution status: `PASS`

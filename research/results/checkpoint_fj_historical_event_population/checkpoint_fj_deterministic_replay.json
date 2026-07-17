@@ -1,0 +1,10 @@
+{
+  "byte_identical": true,
+  "event_ids_and_row_order_match": true,
+  "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+  "exclusion_population_sha256": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed",
+  "execution_status": "PASS",
+  "mismatch_count": 0,
+  "population_summary_sha256": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408",
+  "terminal_status_summary_sha256": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+}

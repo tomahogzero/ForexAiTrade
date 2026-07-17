@@ -1,0 +1,87 @@
+{
+  "accepted_closures": 745,
+  "broker_history_completeness": "NOT_PROVEN",
+  "candidate_status": "NOT_READY_FOR_ORDER_LOGIC",
+  "data_quality": {
+    "event_coverage_limitations": [
+      "broker-history completeness NOT_PROVEN",
+      "28 unverified gaps remain fail-closed",
+      "accepted daily/weekend closures reused from frozen EO/EU policy"
+    ],
+    "exclusions_by_detector_state": {
+      "SEEK_BREAK": 2,
+      "SEEK_CONFIRMATION": 6,
+      "SEEK_CONFIRMED_SWING": 4,
+      "SEEK_RETEST": 1557
+    },
+    "exclusions_by_reason": {
+      "ATR_UNAVAILABLE": 6,
+      "CONFIRMATION_NOT_FOUND_WITHIN_12_BARS": 171,
+      "DATA_INCOMPLETE_GAP": 13,
+      "DUPLICATE_SUPPRESSED": 1113,
+      "INSUFFICIENT_LEFT_HISTORY": 2,
+      "INSUFFICIENT_RIGHT_HISTORY": 3,
+      "NO_BREAK": 2,
+      "RETEST_NOT_FOUND_WITHIN_12_BARS": 259
+    },
+    "exclusions_by_year": {
+      "2023": 4,
+      "2024": 4,
+      "2025": 5,
+      "UNKNOWN": 1556
+    }
+  },
+  "decision": "FJ_PASS_POPULATION_GENERATED",
+  "detected_gap_count": 773,
+  "duplicate_source_timestamps": 0,
+  "event_population": {
+    "LONG": 588,
+    "SHORT": 491,
+    "counts_per_direction_year": {
+      "LONG": {
+        "2023": 176,
+        "2024": 216,
+        "2025": 196
+      },
+      "SHORT": {
+        "2023": 176,
+        "2024": 160,
+        "2025": 155
+      }
+    },
+    "counts_per_year": {
+      "2023": 352,
+      "2024": 376,
+      "2025": 351
+    },
+    "first_event_timestamp": "2023-01-05T14:00:00",
+    "last_event_timestamp": "2025-12-31T11:00:00",
+    "total_EVENT_EMITTED": 1079
+  },
+  "execution_status": "PASS",
+  "integrity": {
+    "duplicate_semantic_events": 0,
+    "unique_event_ids": 1079,
+    "unresolved_source_row_keys": 0
+  },
+  "order_logic_status": "NOT_APPROVED",
+  "profitability_claim": false,
+  "source_first_timestamp": "2023-01-03T01:00:00",
+  "source_last_timestamp": "2025-12-31T19:00:00",
+  "source_rows": 17716,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "symbol": "GOLD#",
+  "terminal_status_counts": {
+    "ATR_UNAVAILABLE": 6,
+    "CONFIRMATION_NOT_FOUND_WITHIN_12_BARS": 171,
+    "DATA_INCOMPLETE_GAP": 13,
+    "DUPLICATE_SUPPRESSED": 1113,
+    "EVENT_EMITTED": 1079,
+    "INSUFFICIENT_LEFT_HISTORY": 2,
+    "INSUFFICIENT_RIGHT_HISTORY": 3,
+    "NO_BREAK": 2,
+    "RETEST_NOT_FOUND_WITHIN_12_BARS": 259
+  },
+  "timeframe": "H1",
+  "unverified_gaps": 28
+}

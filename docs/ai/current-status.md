@@ -2,12 +2,21 @@
 
 Last updated: 2026-07-15
 
+## Latest Checkpoint FJ Refresh
+
+Checkpoint FJ generated the frozen historical population for the FF/FH/FI market-structure candidate from the three ET/EU-approved GOLD# H1 yearly sources.
+
+- decision: `FJ_PASS_POPULATION_GENERATED`; source bars `17,716`; emitted events `1,079` (LONG 588, SHORT 491); event IDs unique and semantic duplicates `0`
+- FI fixtures still passed 12/12; source hashes, `745` accepted closures and `28` unverified gaps were asserted; `DATA_INCOMPLETE_GAP=13`; broker-history completeness remains `NOT_PROVEN`
+- full generation replay is byte-identical with zero mismatches; no TP/SL outcome or strategy-performance interpretation was calculated
+- FK is defined only as a separately approved shadow-outcome contract checkpoint and is not created
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FI Refresh
 
 Checkpoint FI implemented the FH-frozen `MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1` detector and validated committed deterministic fixtures only.
 
 - all 12 fixtures A-L passed; exact event schema, fail-closed gaps, duplicate suppression, no re-anchor, stable SHA-256 identifiers, and anti-leakage ordering are validated
-- replay is byte-identical with SHA-256 `8176cab50f970db4cb7f63f8228368250ab093fd9078c1331e994aeadb76d4f1`; zero key mismatches and metadata/input-order invariance passed
+- replay is byte-identical with SHA-256 `0b13abedc4f71f5be160b18830de69537438351ba13ec4cf2671616bf9db6abc`; zero key mismatches and metadata/input-order invariance passed
 - no GOLD# historical population was run and no TP/SL outcome was calculated; FJ is defined only for separately approved population coverage/exclusion/count execution
 - strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FH Refresh

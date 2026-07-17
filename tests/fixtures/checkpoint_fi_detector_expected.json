@@ -408,11 +408,6 @@
         "bar_timestamp": "2024-01-01T21:00:00",
         "state": "SEEK_CONFIRMED_SWING",
         "status": "INSUFFICIENT_RIGHT_HISTORY"
-      },
-      {
-        "state": "SEEK_BREAK",
-        "status": "NO_BREAK",
-        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
       }
     ],
     "tie_break_order": [

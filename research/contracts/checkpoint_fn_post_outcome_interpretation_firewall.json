@@ -1,0 +1,64 @@
+{
+  "contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_POST_OUTCOME_INTERPRETATION_FIREWALL_FN_V1",
+  "contract_status": "FROZEN_DOCUMENTATION_ONLY_NO_OUTCOME_COUNTS_REPORTED",
+  "honesty_statement": "This is a post-outcome interpretation firewall, not prospective preregistration. Outcomes already exist. Its purpose is to prevent cherry-picking, post-hoc subgroup selection, metric switching, and unsupported trading conclusions.",
+  "frozen_evidence_boundary": {
+    "fj_event_count": 1079,
+    "long_event_count": 588,
+    "short_event_count": 491,
+    "fl_outcome_row_count": 4316,
+    "horizons_bars": [6, 12, 24, 48],
+    "fm_decision": "FM_PASS_INDEPENDENT_OUTCOME_AUDIT",
+    "fm_material_mismatches": 0,
+    "tp_multiple_atr": "1.5",
+    "sl_multiple_atr": "1.0",
+    "broker_history_completeness": "NOT_PROVEN"
+  },
+  "allowed_fo_sources": ["frozen_fj_event_population", "frozen_fk_outcome_contract", "fl_canonical_outcome_population", "fm_independent_audit_results", "fn_interpretation_contract"],
+  "fo_source_prohibitions": ["regenerate_events", "regenerate_outcomes", "change_fl_rows", "change_fk_rules"],
+  "canonical_denominators": {
+    "total_events": "all 1079 frozen events per horizon",
+    "excluded_outcomes": ["DATA_INCOMPLETE_GAP", "INSUFFICIENT_FUTURE_BARS", "INVALID_EVENT_INPUT"],
+    "eligible_outcomes": ["TP_FIRST", "SL_FIRST", "AMBIGUOUS_SAME_BAR", "NO_RESOLUTION"],
+    "unambiguous_resolved": "TP_FIRST + SL_FIRST",
+    "ambiguity_handling": "AMBIGUOUS_SAME_BAR is never TP_FIRST or SL_FIRST and remains reported",
+    "unresolved_handling": "NO_RESOLUTION is never a win or loss and remains reported"
+  },
+  "metrics": {
+    "eligibility_rate": "eligible / total_events",
+    "exclusion_rate": "excluded / total_events",
+    "tp_share_resolved": "TP_FIRST / (TP_FIRST + SL_FIRST)",
+    "sl_share_resolved": "SL_FIRST / (TP_FIRST + SL_FIRST)",
+    "ambiguous_rate": "AMBIGUOUS_SAME_BAR / eligible",
+    "unresolved_rate": "NO_RESOLUTION / eligible",
+    "tp_share_resolved_confidence_interval": {"method": "Wilson", "confidence_level": 0.95, "successes": "TP_FIRST", "trials": "TP_FIRST + SL_FIRST"}
+  },
+  "mathematical_reference": {
+    "zero_cost_break_even_tp_share": 0.4,
+    "formula": "1.0 / (1.5 + 1.0)",
+    "diagnostic_only": true,
+    "not": ["profitability_threshold", "expected_return_conclusion", "trading_edge_claim", "order_logic_authorization"],
+    "not_modeled": ["spread", "commission", "slippage", "swap", "latency", "execution_uncertainty"]
+  },
+  "horizon_roles": {"primary_decision": 48, "mandatory_consistency": 24, "early_resolution_descriptive_only": [6, 12], "selection_prohibited": true},
+  "mandatory_populations": ["full_population", "LONG", "SHORT", "calendar_year", "direction_x_calendar_year_limitation_only"],
+  "sample_size_contract": {"full_population_unambiguous_resolved_minimum": 500, "direction_unambiguous_resolved_minimum": 200, "year_unambiguous_resolved_minimum": 100, "direction_year_unambiguous_resolved_minimum": 75, "below_direction_year_minimum": "INSUFFICIENT_SAMPLE_LIMITATION_ONLY", "threshold_changes_prohibited": true},
+  "consistency_definitions": {
+    "h24_h48_material_conflict": "both full-population denominators meet minimum, Wilson intervals do not overlap, and H24/H48 point estimates are on opposite sides of 0.40",
+    "direction_material_contradiction": "both direction denominators meet minimum, their Wilson intervals do not overlap, and their point estimates are on opposite sides of 0.40",
+    "year_material_contradiction": "two or more year denominators meet minimum, one year Wilson upper bound is <= 0.40, another year Wilson lower bound is > 0.40",
+    "data_quality_undermines_advancement": "H48 full-population eligibility_rate < 0.95 or ambiguous_rate > 0.05",
+    "all_mandatory_groups_must_remain_visible": true,
+    "no_subgroup_override_of_full_population": true
+  },
+  "dispositions": {
+    "REJECT_CURRENT_CANDIDATE": ["H48 full-population Wilson upper bound <= 0.40", "or H48 and H24 full-population point estimates are both below 0.40 with adequate samples and no h24_h48_material_conflict", "or direction_material_contradiction or year_material_contradiction makes the combined frozen candidate unsuitable"],
+    "INSUFFICIENT_EVIDENCE": ["any required full/direction/year denominator is below its minimum", "or data_quality_undermines_advancement", "or H48 Wilson interval overlaps 0.40 and evidence does not meet advancement conditions", "or h24_h48_material_conflict", "or source-data limitations prevent stable disposition"],
+    "RESEARCH_MORE_WITH_NEW_HYPOTHESIS": ["current candidate cannot advance", "a frozen structural consistency check identifies one specific non-trading research question", "the question requires a completely new separately frozen hypothesis"],
+    "ELIGIBLE_FOR_COST_AWARE_OFFLINE_DIAGNOSTIC_DESIGN": ["H48 full-population Wilson lower bound > 0.40", "H24 full-population point estimate > 0.40", "all full/direction/year minimum samples pass", "no direction_material_contradiction", "no year_material_contradiction", "not data_quality_undermines_advancement", "FM integrity remains PASS"]
+  },
+  "disposition_selection": {"exactly_one_required": true, "precedence": ["REJECT_CURRENT_CANDIDATE when its conditions are satisfied", "INSUFFICIENT_EVIDENCE when rejection is not satisfied and advancement conditions are not all met", "RESEARCH_MORE_WITH_NEW_HYPOTHESIS only when a specific frozen structural question is documented without retaining a favorable subgroup", "ELIGIBLE_FOR_COST_AWARE_OFFLINE_DIAGNOSTIC_DESIGN only when all listed conditions are met"]},
+  "fo_required_outputs": ["full_population_table_h6_h12_h24_h48", "primary_h48_decision_analysis", "mandatory_h24_consistency_analysis", "direction_consistency_table", "year_consistency_table", "direction_year_limitation_table", "sample_size_warnings", "data_quality_limitations", "supporting_evidence", "contradicting_or_limiting_evidence", "exactly_one_disposition", "one_future_checkpoint_scope_if_any"],
+  "prohibited_conclusions_and_actions": ["monetary_profit", "expected_return", "annual_or_monthly_return", "win_rate_as_profitability", "future_performance_claim", "best_direction_year_horizon_or_subgroup", "optimization", "tp_sl_adjustment", "new_entry_filter", "order_logic", "ea_mql5_or_preset_changes", "demo_live_testing", "lot_or_risk_changes"],
+  "future_fo_scope": "Apply this contract to already-verified FL rows only; report every mandatory population and select exactly one disposition. Do not rerun or alter outcomes."
+}

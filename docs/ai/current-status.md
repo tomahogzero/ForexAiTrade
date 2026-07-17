@@ -2,6 +2,16 @@
 
 Last updated: 2026-07-15
 
+## Latest Checkpoint FL Refresh
+
+Checkpoint FL executed the frozen FK diagnostic outcome contract against the exact FJ population.
+
+- decision: `FL_PASS_OUTCOME_POPULATION_GENERATED`; canonical rows `4316`; event conservation `1079/1079`; LONG/SHORT source counts `588/491`
+- FI preflight passed 12/12; FJ source population and FK contract hashes matched; duplicate pairs/IDs, unknown event IDs, unresolved first-touch keys, and monotonicity contradictions are all `0`
+- full evaluator replay is byte-identical with zero mismatches; unverified gaps remain fail-closed and broker-history completeness is `NOT_PROVEN`
+- outcome labels/counts are diagnostic descriptions only; no profitability/edge/performance interpretation, subgroup selection, optimization, or order logic
+- FM is defined only for a separately approved FK/FL audit and is not created
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FK Refresh
 
 Checkpoint FK froze the documentation and machine-readable shadow-outcome contract for the FJ population only.

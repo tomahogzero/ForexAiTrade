@@ -1,0 +1,10 @@
+{
+  "byte_identical": true,
+  "canonical_outcome_csv_sha256": "b05b38a11db6c776e177b2b738610724bbd877870f5a12cea0ce698fc636a804",
+  "data_quality_exclusions_sha256": "0990fbaffb6a7742f87665e8a0413f1d24e4a7586e540641db40998767786d2b",
+  "execution_status": "PASS",
+  "integrity_report_sha256": "126fad004130616627be52862c2da30e3439490bd6fa33ab54345985655c33dc",
+  "mismatch_count": 0,
+  "population_summary_sha256": "41e5cf84a47ee577634f8028828457cdd12283fea7b1c52b7db4dcb422511753",
+  "row_order_frozen": true
+}

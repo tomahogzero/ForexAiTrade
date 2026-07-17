@@ -1,0 +1,24 @@
+{
+  "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+  "execution_status": "PASS",
+  "fk_contract_sha256": "42182742575ef3e4add245ef8181a2424fb27907453c35f8ed73597b54d3cd55",
+  "fk_contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_SHADOW_OUTCOME_FK_V1",
+  "raw_broker_csv_committed": false,
+  "sources": [
+    {
+      "file": "GOLD#_H1_202301030100_202312292300.csv",
+      "rows": 5894,
+      "sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468"
+    },
+    {
+      "file": "GOLD#_H1_202401020100_202412312000.csv",
+      "rows": 5928,
+      "sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a"
+    },
+    {
+      "file": "GOLD#_H1_202501020800_202512311900.csv",
+      "rows": 5894,
+      "sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b"
+    }
+  ]
+}

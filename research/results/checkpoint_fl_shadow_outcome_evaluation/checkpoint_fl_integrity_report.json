@@ -1,0 +1,19 @@
+{
+  "execution_status": "PASS",
+  "integrity": {
+    "canonical_rows": 4316,
+    "duplicate_event_horizon_pairs": 0,
+    "duplicate_outcome_row_ids": 0,
+    "event_key_conservation": "1079/1079",
+    "monotonicity_contradictions": 0,
+    "unknown_event_ids": 0,
+    "unresolved_first_touch_keys": 0
+  },
+  "preflight": {
+    "contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_SHADOW_OUTCOME_FK_V1",
+    "frozen_events": 1079,
+    "long_events": 588,
+    "short_events": 491,
+    "source_population_hash": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b"
+  }
+}

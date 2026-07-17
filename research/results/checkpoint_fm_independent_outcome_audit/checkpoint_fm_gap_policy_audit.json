@@ -1,0 +1,241 @@
+{
+  "accepted_closures_do_not_consume_bar_count": true,
+  "affected_row_count": 29,
+  "affected_rows": [
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "0900e49e14691288e2d1bf2b41a951d287992df86c6b8f96531ee1258bce0012",
+      "gap_end": "2024-01-16T01:00:00",
+      "gap_start": "2024-01-15T21:00:00",
+      "horizon_bars": 6
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "0900e49e14691288e2d1bf2b41a951d287992df86c6b8f96531ee1258bce0012",
+      "gap_end": "2024-01-16T01:00:00",
+      "gap_start": "2024-01-15T21:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "0900e49e14691288e2d1bf2b41a951d287992df86c6b8f96531ee1258bce0012",
+      "gap_end": "2024-01-16T01:00:00",
+      "gap_start": "2024-01-15T21:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "0900e49e14691288e2d1bf2b41a951d287992df86c6b8f96531ee1258bce0012",
+      "gap_end": "2024-01-16T01:00:00",
+      "gap_start": "2024-01-15T21:00:00",
+      "horizon_bars": 48
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 6,
+      "event_id": "20e54355a911742ef99492ad46cbaf2cd0142cd48256a460ffea48bb407082a6",
+      "gap_end": "2024-09-03T01:00:00",
+      "gap_start": "2024-09-02T21:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 6,
+      "event_id": "20e54355a911742ef99492ad46cbaf2cd0142cd48256a460ffea48bb407082a6",
+      "gap_end": "2024-09-03T01:00:00",
+      "gap_start": "2024-09-02T21:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 6,
+      "event_id": "20e54355a911742ef99492ad46cbaf2cd0142cd48256a460ffea48bb407082a6",
+      "gap_end": "2024-09-03T01:00:00",
+      "gap_start": "2024-09-02T21:00:00",
+      "horizon_bars": 48
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "2b274bbec2ba7aa5c3a5205e4c9a793390ec5029d2f48e645cf0fb88b86df7b5",
+      "gap_end": "2024-06-20T01:00:00",
+      "gap_start": "2024-06-19T21:00:00",
+      "horizon_bars": 6
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "2b274bbec2ba7aa5c3a5205e4c9a793390ec5029d2f48e645cf0fb88b86df7b5",
+      "gap_end": "2024-06-20T01:00:00",
+      "gap_start": "2024-06-19T21:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "2b274bbec2ba7aa5c3a5205e4c9a793390ec5029d2f48e645cf0fb88b86df7b5",
+      "gap_end": "2024-06-20T01:00:00",
+      "gap_start": "2024-06-19T21:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 0,
+      "event_id": "2b274bbec2ba7aa5c3a5205e4c9a793390ec5029d2f48e645cf0fb88b86df7b5",
+      "gap_end": "2024-06-20T01:00:00",
+      "gap_start": "2024-06-19T21:00:00",
+      "horizon_bars": 48
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 6,
+      "event_id": "33bbe805441290886988ceef8906c39c8473cba7416d01882f6c8029688bd597",
+      "gap_end": "2025-06-20T01:00:00",
+      "gap_start": "2025-06-19T21:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 6,
+      "event_id": "33bbe805441290886988ceef8906c39c8473cba7416d01882f6c8029688bd597",
+      "gap_end": "2025-06-20T01:00:00",
+      "gap_start": "2025-06-19T21:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 6,
+      "event_id": "33bbe805441290886988ceef8906c39c8473cba7416d01882f6c8029688bd597",
+      "gap_end": "2025-06-20T01:00:00",
+      "gap_start": "2025-06-19T21:00:00",
+      "horizon_bars": 48
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "74862e1c570b44f98768b0fbbfe1ca7955fd951280d101c94a7ebf97ee5ed8d5",
+      "gap_end": "2023-04-10T01:00:00",
+      "gap_start": "2023-04-06T23:00:00",
+      "horizon_bars": 6
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "74862e1c570b44f98768b0fbbfe1ca7955fd951280d101c94a7ebf97ee5ed8d5",
+      "gap_end": "2023-04-10T01:00:00",
+      "gap_start": "2023-04-06T23:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "74862e1c570b44f98768b0fbbfe1ca7955fd951280d101c94a7ebf97ee5ed8d5",
+      "gap_end": "2023-04-10T01:00:00",
+      "gap_start": "2023-04-06T23:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "74862e1c570b44f98768b0fbbfe1ca7955fd951280d101c94a7ebf97ee5ed8d5",
+      "gap_end": "2023-04-10T01:00:00",
+      "gap_start": "2023-04-06T23:00:00",
+      "horizon_bars": 48
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "8a03a42731dd80041487b74b373514ca18456e6419617ea4cce1edd0b7b4d994",
+      "gap_end": "2023-12-26T01:00:00",
+      "gap_start": "2023-12-22T23:00:00",
+      "horizon_bars": 6
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "8a03a42731dd80041487b74b373514ca18456e6419617ea4cce1edd0b7b4d994",
+      "gap_end": "2023-12-26T01:00:00",
+      "gap_start": "2023-12-22T23:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "8a03a42731dd80041487b74b373514ca18456e6419617ea4cce1edd0b7b4d994",
+      "gap_end": "2023-12-26T01:00:00",
+      "gap_start": "2023-12-22T23:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 3,
+      "event_id": "8a03a42731dd80041487b74b373514ca18456e6419617ea4cce1edd0b7b4d994",
+      "gap_end": "2023-12-26T01:00:00",
+      "gap_start": "2023-12-22T23:00:00",
+      "horizon_bars": 48
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 1,
+      "event_id": "b9253a1062cefb0d43b6ed7d8e9dca5f0c736fb8fe1e2f13278661f2d84b62c6",
+      "gap_end": "2024-01-02T01:00:00",
+      "gap_start": "2023-12-29T23:00:00",
+      "horizon_bars": 6
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 1,
+      "event_id": "b9253a1062cefb0d43b6ed7d8e9dca5f0c736fb8fe1e2f13278661f2d84b62c6",
+      "gap_end": "2024-01-02T01:00:00",
+      "gap_start": "2023-12-29T23:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 1,
+      "event_id": "b9253a1062cefb0d43b6ed7d8e9dca5f0c736fb8fe1e2f13278661f2d84b62c6",
+      "gap_end": "2024-01-02T01:00:00",
+      "gap_start": "2023-12-29T23:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 1,
+      "event_id": "b9253a1062cefb0d43b6ed7d8e9dca5f0c736fb8fe1e2f13278661f2d84b62c6",
+      "gap_end": "2024-01-02T01:00:00",
+      "gap_start": "2023-12-29T23:00:00",
+      "horizon_bars": 48
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 10,
+      "event_id": "cb290d37fd07b3aa101fe1609af61b491df1b714471f5ab7ce0fde460a1b5c93",
+      "gap_end": "2025-11-28T01:00:00",
+      "gap_start": "2025-11-27T21:00:00",
+      "horizon_bars": 12
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 10,
+      "event_id": "cb290d37fd07b3aa101fe1609af61b491df1b714471f5ab7ce0fde460a1b5c93",
+      "gap_end": "2025-11-28T01:00:00",
+      "gap_start": "2025-11-27T21:00:00",
+      "horizon_bars": 24
+    },
+    {
+      "approved_gap_inventory_match": true,
+      "evaluated_bar_count": 10,
+      "event_id": "cb290d37fd07b3aa101fe1609af61b491df1b714471f5ab7ce0fde460a1b5c93",
+      "gap_end": "2025-11-28T01:00:00",
+      "gap_start": "2025-11-27T21:00:00",
+      "horizon_bars": 48
+    }
+  ],
+  "all_gap_inventory_matches": true,
+  "broker_history_completeness": "NOT_PROVEN",
+  "unverified_gap_count": 28
+}

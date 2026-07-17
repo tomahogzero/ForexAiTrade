@@ -1,0 +1,9 @@
+{
+  "audited_rows": 4316,
+  "evaluated_bar_count_mismatches": 0,
+  "exact_outcome_matches": 4316,
+  "first_touch_bar_key_mismatches": 0,
+  "first_touch_timestamp_mismatches": 0,
+  "mismatch_examples": [],
+  "outcome_mismatches": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_sha256": {
+    "checkpoint_fm_ambiguity_audit.json": "b2e476a77896c7a18b1c030f4b942cd1966f62a5c8ea1ed632f352402f2aa013",
+    "checkpoint_fm_descriptive_count_reconciliation.json": "e742f684469920e67f78c1b238d54e0c4ae6649d56b600f2c4c17d23da053842",
+    "checkpoint_fm_event_key_conservation.json": "5347d247a2c570407a3a31c20b300a8d6bb3e85045b8e3e059a40241c0a66e69",
+    "checkpoint_fm_first_touch_reconciliation.json": "4b199088406dfca43651a624a5fbe4a65422f5302cec4c126d85ccaaaf618084",
+    "checkpoint_fm_formula_audit.json": "9c98e60a385c06f4f83ab24f6adb34de7746757bb86844f42a93ad87e3ce7f52",
+    "checkpoint_fm_gap_policy_audit.json": "9f6d371496b9a9534b5004fa0bd87401d07396055c39486e4c63d1e154ad2e6f",
+    "checkpoint_fm_horizon_monotonicity.json": "305cbe5d23981dc812dd388f13a2554baf31a0d118260e7b7c68756fdcab391b",
+    "checkpoint_fm_independent_audit.json": "31e627b0310ae0974883edfee483dda982ab813441c942297cf5f0fc06bcfd88",
+    "checkpoint_fm_sha256_manifest.json": "68e08920da71495f8f3b0c934bb05142486b1aec8149585d71f1ca43bada51f9"
+  },
+  "byte_identical": true,
+  "execution_status": "PASS",
+  "mismatch_count": 0,
+  "row_order_frozen": true
+}

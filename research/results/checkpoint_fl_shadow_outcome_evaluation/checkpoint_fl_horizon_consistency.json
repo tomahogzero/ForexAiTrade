@@ -1,0 +1,10 @@
+{
+  "execution_status": "PASS",
+  "monotonicity_contradictions": 0,
+  "rules": [
+    "resolved TP_FIRST or SL_FIRST remains identical in every longer horizon",
+    "AMBIGUOUS_SAME_BAR remains ambiguous in every longer horizon",
+    "DATA_INCOMPLETE_GAP must not overwrite a resolved-before-gap outcome",
+    "NO_RESOLUTION may resolve only in a longer complete horizon"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "accepted_closures": 745,
+  "broker_history_completeness": "NOT_PROVEN",
+  "candidate_status": "NOT_READY_FOR_ORDER_LOGIC",
+  "contract_sha256": "42182742575ef3e4add245ef8181a2424fb27907453c35f8ed73597b54d3cd55",
+  "contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_SHADOW_OUTCOME_FK_V1",
+  "decision": "FL_PASS_OUTCOME_POPULATION_GENERATED",
+  "descriptive_counts": {
+    "by_direction": {
+      "LONG": {
+        "AMBIGUOUS_SAME_BAR": 43,
+        "DATA_INCOMPLETE_GAP": 7,
+        "NO_RESOLUTION": 206,
+        "SL_FIRST": 1177,
+        "TP_FIRST": 919
+      },
+      "SHORT": {
+        "AMBIGUOUS_SAME_BAR": 44,
+        "DATA_INCOMPLETE_GAP": 22,
+        "NO_RESOLUTION": 134,
+        "SL_FIRST": 1090,
+        "TP_FIRST": 674
+      }
+    },
+    "by_direction_year": {
+      "LONG|2023": {
+        "AMBIGUOUS_SAME_BAR": 19,
+        "DATA_INCOMPLETE_GAP": 4,
+        "NO_RESOLUTION": 69,
+        "SL_FIRST": 352,
+        "TP_FIRST": 260
+      },
+      "LONG|2024": {
+        "AMBIGUOUS_SAME_BAR": 20,
+        "DATA_INCOMPLETE_GAP": 3,
+        "NO_RESOLUTION": 86,
+        "SL_FIRST": 391,
+        "TP_FIRST": 364
+      },
+      "LONG|2025": {
+        "AMBIGUOUS_SAME_BAR": 4,
+        "NO_RESOLUTION": 51,
+        "SL_FIRST": 434,
+        "TP_FIRST": 295
+      },
+      "SHORT|2023": {
+        "AMBIGUOUS_SAME_BAR": 20,
+        "DATA_INCOMPLETE_GAP": 8,
+        "NO_RESOLUTION": 55,
+        "SL_FIRST": 363,
+        "TP_FIRST": 258
+      },
+      "SHORT|2024": {
+        "AMBIGUOUS_SAME_BAR": 24,
+        "DATA_INCOMPLETE_GAP": 8,
+        "NO_RESOLUTION": 44,
+        "SL_FIRST": 382,
+        "TP_FIRST": 182
+      },
+      "SHORT|2025": {
+        "DATA_INCOMPLETE_GAP": 6,
+        "NO_RESOLUTION": 35,
+        "SL_FIRST": 345,
+        "TP_FIRST": 234
+      }
+    },
+    "by_horizon": {
+      "12": {
+        "eligible_denominator": 1071,
+        "excluded_denominator": 8,
+        "outcomes": {
+          "AMBIGUOUS_SAME_BAR": 22,
+          "DATA_INCOMPLETE_GAP": 8,
+          "NO_RESOLUTION": 74,
+          "SL_FIRST": 573,
+          "TP_FIRST": 402
+        },
+        "total": 1079
+      },
+      "24": {
+        "eligible_denominator": 1071,
+        "excluded_denominator": 8,
+        "outcomes": {
+          "AMBIGUOUS_SAME_BAR": 22,
+          "DATA_INCOMPLETE_GAP": 8,
+          "NO_RESOLUTION": 3,
+          "SL_FIRST": 611,
+          "TP_FIRST": 435
+        },
+        "total": 1079
+      },
+      "48": {
+        "eligible_denominator": 1071,
+        "excluded_denominator": 8,
+        "outcomes": {
+          "AMBIGUOUS_SAME_BAR": 22,
+          "DATA_INCOMPLETE_GAP": 8,
+          "SL_FIRST": 612,
+          "TP_FIRST": 437
+        },
+        "total": 1079
+      },
+      "6": {
+        "eligible_denominator": 1074,
+        "excluded_denominator": 5,
+        "outcomes": {
+          "AMBIGUOUS_SAME_BAR": 21,
+          "DATA_INCOMPLETE_GAP": 5,
+          "NO_RESOLUTION": 263,
+          "SL_FIRST": 471,
+          "TP_FIRST": 319
+        },
+        "total": 1079
+      }
+    },
+    "by_year": {
+      "2023": {
+        "AMBIGUOUS_SAME_BAR": 39,
+        "DATA_INCOMPLETE_GAP": 12,
+        "NO_RESOLUTION": 124,
+        "SL_FIRST": 715,
+        "TP_FIRST": 518
+      },
+      "2024": {
+        "AMBIGUOUS_SAME_BAR": 44,
+        "DATA_INCOMPLETE_GAP": 11,
+        "NO_RESOLUTION": 130,
+        "SL_FIRST": 773,
+        "TP_FIRST": 546
+      },
+      "2025": {
+        "AMBIGUOUS_SAME_BAR": 4,
+        "DATA_INCOMPLETE_GAP": 6,
+        "NO_RESOLUTION": 86,
+        "SL_FIRST": 779,
+        "TP_FIRST": 529
+      }
+    }
+  },
+  "execution_status": "PASS",
+  "integrity": {
+    "canonical_rows": 4316,
+    "duplicate_event_horizon_pairs": 0,
+    "duplicate_outcome_row_ids": 0,
+    "event_key_conservation": "1079/1079",
+    "monotonicity_contradictions": 0,
+    "unknown_event_ids": 0,
+    "unresolved_first_touch_keys": 0
+  },
+  "order_logic_status": "NOT_APPROVED",
+  "population": {
+    "canonical_rows": 4316,
+    "frozen_events": 1079,
+    "long_events": 588,
+    "short_events": 491
+  },
+  "profitability_claim": false,
+  "source_population_hash": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+  "source_rows": 17716,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "unverified_gaps": 28
+}

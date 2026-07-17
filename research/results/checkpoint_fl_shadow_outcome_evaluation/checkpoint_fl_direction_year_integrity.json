@@ -1,0 +1,84 @@
+{
+  "descriptive_counts_by_direction": {
+    "LONG": {
+      "AMBIGUOUS_SAME_BAR": 43,
+      "DATA_INCOMPLETE_GAP": 7,
+      "NO_RESOLUTION": 206,
+      "SL_FIRST": 1177,
+      "TP_FIRST": 919
+    },
+    "SHORT": {
+      "AMBIGUOUS_SAME_BAR": 44,
+      "DATA_INCOMPLETE_GAP": 22,
+      "NO_RESOLUTION": 134,
+      "SL_FIRST": 1090,
+      "TP_FIRST": 674
+    }
+  },
+  "descriptive_counts_by_direction_year": {
+    "LONG|2023": {
+      "AMBIGUOUS_SAME_BAR": 19,
+      "DATA_INCOMPLETE_GAP": 4,
+      "NO_RESOLUTION": 69,
+      "SL_FIRST": 352,
+      "TP_FIRST": 260
+    },
+    "LONG|2024": {
+      "AMBIGUOUS_SAME_BAR": 20,
+      "DATA_INCOMPLETE_GAP": 3,
+      "NO_RESOLUTION": 86,
+      "SL_FIRST": 391,
+      "TP_FIRST": 364
+    },
+    "LONG|2025": {
+      "AMBIGUOUS_SAME_BAR": 4,
+      "NO_RESOLUTION": 51,
+      "SL_FIRST": 434,
+      "TP_FIRST": 295
+    },
+    "SHORT|2023": {
+      "AMBIGUOUS_SAME_BAR": 20,
+      "DATA_INCOMPLETE_GAP": 8,
+      "NO_RESOLUTION": 55,
+      "SL_FIRST": 363,
+      "TP_FIRST": 258
+    },
+    "SHORT|2024": {
+      "AMBIGUOUS_SAME_BAR": 24,
+      "DATA_INCOMPLETE_GAP": 8,
+      "NO_RESOLUTION": 44,
+      "SL_FIRST": 382,
+      "TP_FIRST": 182
+    },
+    "SHORT|2025": {
+      "DATA_INCOMPLETE_GAP": 6,
+      "NO_RESOLUTION": 35,
+      "SL_FIRST": 345,
+      "TP_FIRST": 234
+    }
+  },
+  "descriptive_counts_by_year": {
+    "2023": {
+      "AMBIGUOUS_SAME_BAR": 39,
+      "DATA_INCOMPLETE_GAP": 12,
+      "NO_RESOLUTION": 124,
+      "SL_FIRST": 715,
+      "TP_FIRST": 518
+    },
+    "2024": {
+      "AMBIGUOUS_SAME_BAR": 44,
+      "DATA_INCOMPLETE_GAP": 11,
+      "NO_RESOLUTION": 130,
+      "SL_FIRST": 773,
+      "TP_FIRST": 546
+    },
+    "2025": {
+      "AMBIGUOUS_SAME_BAR": 4,
+      "DATA_INCOMPLETE_GAP": 6,
+      "NO_RESOLUTION": 86,
+      "SL_FIRST": 779,
+      "TP_FIRST": 529
+    }
+  },
+  "execution_status": "PASS"
+}

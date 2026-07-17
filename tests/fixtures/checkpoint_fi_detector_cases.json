@@ -1,0 +1,9 @@
+{
+  "fixture_contract": "FI fixture-only; no historical GOLD# input",
+  "cases": [
+    "A_valid_long_event", "B_valid_short_event", "C_wick_only_false_break", "D_swing_not_yet_confirmed",
+    "E_retest_after_12_valid_bars", "F_confirmation_failure", "G_unverified_gap_required_sequence",
+    "H_duplicate_suppression", "I_newer_swing_no_reanchor", "J_tied_eligible_swing_order",
+    "K_byte_identical_replay", "L_nonsemantic_metadata_order"
+  ]
+}

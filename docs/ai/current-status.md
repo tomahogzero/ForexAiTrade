@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-15
 
+## Latest Checkpoint FI Refresh
+
+Checkpoint FI implemented the FH-frozen `MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1` detector and validated committed deterministic fixtures only.
+
+- all 12 fixtures A-L passed; exact event schema, fail-closed gaps, duplicate suppression, no re-anchor, stable SHA-256 identifiers, and anti-leakage ordering are validated
+- replay is byte-identical with SHA-256 `8176cab50f970db4cb7f63f8228368250ab093fd9078c1331e994aeadb76d4f1`; zero key mismatches and metadata/input-order invariance passed
+- no GOLD# historical population was run and no TP/SL outcome was calculated; FJ is defined only for separately approved population coverage/exclusion/count execution
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FH Refresh
 
 Checkpoint FH froze the deterministic implementation contract for the FF-frozen `MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1` historical event detector.

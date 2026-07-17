@@ -2,6 +2,15 @@
 
 Last updated: 2026-07-17
 
+## Latest Checkpoint FP Refresh
+
+Checkpoint FP froze a new provenance boundary after FO `INSUFFICIENT_EVIDENCE` without generating or inspecting Candidate V2 events/outcomes.
+
+- decision: `FP_PASS_2020_2022_HISTORICAL_HOLDOUT_ELIGIBLE`; raw GOLD# H1 2020-2022 source availability, hashes, ordering, and duplicate checks are recorded
+- audited repository history, tracked artifacts, and 11 candidate-era temporary worktrees contain no evidence that Candidate V2 2020-2022 events/outcomes influenced frozen rules or FO decisions
+- this is provenance eligibility only: broker-history completeness remains `NOT_PROVEN`; no 2020-2022 closure is accepted until a future independent fail-closed source/gap validation
+- future work requires separate approval and must report 2020-2022 separately; pooling with 2023-2025 is prohibited without a prior separate contract
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`; FO disposition: `INSUFFICIENT_EVIDENCE`
 ## Latest Checkpoint FO Refresh
 
 Checkpoint FO applied the frozen FN post-outcome interpretation firewall to the verified FL population without changing events, outcomes, thresholds, metrics, or groups.

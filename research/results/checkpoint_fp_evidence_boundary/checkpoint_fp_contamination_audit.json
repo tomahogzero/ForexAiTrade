@@ -1,0 +1,16 @@
+{
+  "execution_status": "PASS",
+  "audit_method": "path-level and repository-history provenance audit; no Candidate V2 event/outcome distribution was opened or calculated",
+  "candidate_v2_introduced_in_history": "Checkpoint FF chain after existing raw 2020-2022 bars",
+  "repository_history_candidate_commits": 17,
+  "repository_history_holdout_source_path_commits": 0,
+  "tracked_candidate_2020_2022_path_hits": 0,
+  "tracked_tp_sl_2020_2022_path_hits": 0,
+  "candidate_era_temporary_worktrees_scanned": 11,
+  "candidate_era_temporary_contamination_path_hits": 0,
+  "raw_bars_existed": true,
+  "candidate_v2_events_or_outcomes_previously_generated_or_viewed": "NO_REPOSITORY_EVIDENCE_FOUND",
+  "candidate_v2_rule_influence_from_2020_2022_results": "NO_REPOSITORY_EVIDENCE_FOUND",
+  "limitation": "This cannot prove that no human ever viewed an individual price bar. The relevant audited question is whether frozen Candidate V2 design or decisions were influenced by Candidate V2 results from this period.",
+  "verdict": "HISTORICAL_HOLDOUT_PROVENANCE_ELIGIBLE"
+}

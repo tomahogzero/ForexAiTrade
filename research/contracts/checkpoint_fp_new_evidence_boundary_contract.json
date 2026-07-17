@@ -1,0 +1,38 @@
+{
+  "contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_NEW_EVIDENCE_BOUNDARY_FP_V1",
+  "contract_status": "FROZEN_PROVENANCE_BOUNDARY_ONLY_NO_EVENTS_OR_OUTCOMES",
+  "candidate_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1",
+  "detector_version": "FI_FROZEN_DETECTOR_IMPLEMENTATION_V1",
+  "event_contract_version": "FJ_FROZEN_EVENT_POPULATION_V1",
+  "outcome_contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_SHADOW_OUTCOME_FK_V1",
+  "interpretation_contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_POST_OUTCOME_INTERPRETATION_FIREWALL_FN_V1",
+  "selected_evidence_source": "HISTORICAL_HOLDOUT_2020_2022",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "boundary_start_timestamp": "2020-01-01T00:00:00",
+  "boundary_end_timestamp": "2022-12-31T23:59:59",
+  "source_bar_coverage": {
+    "first_available_bar": "2020-01-02T09:00:00",
+    "last_available_bar": "2022-12-30T23:00:00",
+    "total_rows": 17731,
+    "global_timestamp_ordered": true,
+    "cross_file_duplicate_timestamps": 0
+  },
+  "source_files": [
+    {"path": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\csv\\GOLD#_H1_202001020900_202012311800.csv", "sha256": "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc", "rows": 5912, "first_timestamp": "2020-01-02T09:00:00", "last_timestamp": "2020-12-31T18:00:00", "duplicate_timestamps": 0},
+    {"path": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\csv\\GOLD#_H1_202101040100_202112311800.csv", "sha256": "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5", "rows": 5902, "first_timestamp": "2021-01-04T01:00:00", "last_timestamp": "2021-12-31T18:00:00", "duplicate_timestamps": 0},
+    {"path": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\csv\\GOLD#_H1_202201030100_202212302300.csv", "sha256": "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a", "rows": 5917, "first_timestamp": "2022-01-03T01:00:00", "last_timestamp": "2022-12-30T23:00:00", "duplicate_timestamps": 0}
+  ],
+  "contamination_audit_result": "NO_REPOSITORY_EVIDENCE_OF_CANDIDATE_V2_2020_2022_EVENT_OR_OUTCOME_USE",
+  "raw_bar_existence": "RAW_BARS_EXISTED_BUT_EXISTENCE_ALONE_IS_NOT_CONTAMINATION",
+  "candidate_v2_results_previously_generated_or_viewed": "NO_REPOSITORY_OR_CANDIDATE_ERA_TEMPORARY_ARTIFACT_EVIDENCE_FOUND",
+  "candidate_rule_influence_from_2020_2022_results": "NO_REPOSITORY_EVIDENCE_FOUND",
+  "allowed_closure_policy": "NO_2020_2022_CLOSURE_IS_ACCEPTED_BY_FP; a future source-validation checkpoint must independently validate and freeze a contract-compatible closure inventory before any detector or outcome execution",
+  "unverified_gap_policy": "FAIL_CLOSED_DATA_INCOMPLETE_GAP; no interpolation, inferred prices, reconstruction, or silent gap bridging",
+  "broker_history_completeness": "NOT_PROVEN",
+  "optional_stopping_prohibition": "HISTORICAL_BOUNDARY_IS_FIXED; no early stop, selective event removal, or result-dependent boundary change",
+  "population_combination_prohibition": "DO_NOT_POOL_2020_2022_WITH_2023_2025_UNLESS_A_SEPARATE_CONTRACT_APPROVES_METHOD_BEFORE_ANY_2020_2022_OUTCOME_INSPECTION",
+  "frozen_candidate_rules": {"swing_width": "2_left_2_right", "break": "close_based", "retest": "exact_level", "retest_window_valid_bars": 12, "confirmation": "FF_FROZEN", "entry": "confirmation_close", "atr": "frozen_event_atr", "tp_atr_multiple": "1.5", "sl_atr_multiple": "1.0", "horizons": [6,12,24,48], "primary_horizon": 48, "consistency_horizon": 24, "fn_metrics_denominators_wilson_sample_rules": "UNCHANGED"},
+  "selected_fp_decision": "FP_PASS_2020_2022_HISTORICAL_HOLDOUT_ELIGIBLE",
+  "future_checkpoint_scope": "Validate and freeze 2020-2022 source bars and their contract-compatible fail-closed gap inventory; only then execute unchanged FI detector, FK evaluator, integrity validation, and FN firewall separately from 2023-2025. No pooling without prior separate approval."
+}

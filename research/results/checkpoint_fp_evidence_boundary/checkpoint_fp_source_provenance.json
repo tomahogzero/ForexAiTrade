@@ -1,0 +1,17 @@
+{
+  "execution_status": "PASS",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "boundary_start_timestamp": "2020-01-01T00:00:00",
+  "boundary_end_timestamp": "2022-12-31T23:59:59",
+  "total_rows": 17731,
+  "global_timestamp_ordered": true,
+  "cross_file_duplicate_timestamps": 0,
+  "broker_history_completeness": "NOT_PROVEN",
+  "data_quality_limitations": ["No 2020-2022 closure/gap inventory was generated in FP", "2023-2025 accepted-closure inventory is not assumed sufficient", "No 2020-2022 closure is accepted by FP", "Future execution must independently validate and freeze a contract-compatible closure inventory", "All unverified gaps must fail closed"],
+  "sources": [
+    {"file": "GOLD#_H1_202001020900_202012311800.csv", "rows": 5912, "sha256": "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc", "first_timestamp": "2020-01-02T09:00:00", "last_timestamp": "2020-12-31T18:00:00", "ordered": true, "duplicate_timestamps": 0},
+    {"file": "GOLD#_H1_202101040100_202112311800.csv", "rows": 5902, "sha256": "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5", "first_timestamp": "2021-01-04T01:00:00", "last_timestamp": "2021-12-31T18:00:00", "ordered": true, "duplicate_timestamps": 0},
+    {"file": "GOLD#_H1_202201030100_202212302300.csv", "rows": 5917, "sha256": "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a", "first_timestamp": "2022-01-03T01:00:00", "last_timestamp": "2022-12-30T23:00:00", "ordered": true, "duplicate_timestamps": 0}
+  ]
+}

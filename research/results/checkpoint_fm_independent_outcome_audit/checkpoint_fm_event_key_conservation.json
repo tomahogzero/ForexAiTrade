@@ -1,0 +1,10 @@
+{
+  "duplicate_event_horizon_pairs": 0,
+  "duplicate_outcome_row_ids": 0,
+  "event_key_conservation": "1079/1079",
+  "invalid_horizons": 0,
+  "missing_event_ids": 0,
+  "rows": 4316,
+  "unique_event_ids": 1079,
+  "unknown_event_ids": 0
+}

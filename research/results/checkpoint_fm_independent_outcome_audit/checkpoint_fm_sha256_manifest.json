@@ -1,0 +1,11 @@
+{
+  "accepted_closures": 745,
+  "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+  "execution_status": "PASS",
+  "fk_contract_sha256": "42182742575ef3e4add245ef8181a2424fb27907453c35f8ed73597b54d3cd55",
+  "fk_contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_SHADOW_OUTCOME_FK_V1",
+  "fl_canonical_outcome_sha256": "b05b38a11db6c776e177b2b738610724bbd877870f5a12cea0ce698fc636a804",
+  "raw_broker_csv_committed": false,
+  "source_rows": 17716,
+  "unverified_gaps": 28
+}

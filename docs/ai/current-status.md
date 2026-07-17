@@ -1,7 +1,17 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-15
+Last updated: 2026-07-17
 
+## Latest Checkpoint FM Refresh
+
+Checkpoint FM independently audited the frozen FL canonical outcome population against FJ, FK, the approved GOLD# H1 sources, and the frozen fail-closed gap policy.
+
+- decision: `FM_PASS_INDEPENDENT_OUTCOME_AUDIT`; material mismatch count `0`; event conservation `1079/1079`; rows `4316`
+- independent first-touch, TP/SL formula, source linkage, gap-inventory, ambiguity, horizon monotonicity, and descriptive-count reconciliation all match; all material mismatch categories are `0`
+- replay is byte-identical with mismatch `0`; broker-history completeness remains `NOT_PROVEN`; unverified gaps remain fail-closed
+- this is integrity/descriptive verification only; no strategy-performance or profitability/edge interpretation, subgroup selection, optimization, or order logic
+- FN is defined only as a separately approved preregistered interpretation/decision contract and is not created
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FL Refresh
 
 Checkpoint FL executed the frozen FK diagnostic outcome contract against the exact FJ population.

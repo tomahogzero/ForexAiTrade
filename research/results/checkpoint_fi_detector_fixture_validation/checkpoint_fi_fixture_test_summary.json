@@ -27,7 +27,7 @@
   ],
   "execution_status": "PASS",
   "fixture_count": 12,
-  "fixture_output_sha256": "8176cab50f970db4cb7f63f8228368250ab093fd9078c1331e994aeadb76d4f1",
+  "fixture_output_sha256": "0b13abedc4f71f5be160b18830de69537438351ba13ec4cf2671616bf9db6abc",
   "fixtures_passed": 12,
   "no_hidden_file_order_dependency": true,
   "no_random_or_current_timestamps": true,

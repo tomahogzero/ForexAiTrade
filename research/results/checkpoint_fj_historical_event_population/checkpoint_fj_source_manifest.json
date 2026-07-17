@@ -1,0 +1,38 @@
+{
+  "detector_commit_provenance": "f13108b49dfccd26bb2a08ca5d791c034239abee",
+  "detector_path": "tools/market_structure_break_retest_detector.py",
+  "detector_sha256": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144",
+  "execution_status": "PASS",
+  "fi_fixture_output_sha256": "0b13abedc4f71f5be160b18830de69537438351ba13ec4cf2671616bf9db6abc",
+  "gap_policy": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv",
+  "raw_broker_csv_committed": false,
+  "sources": [
+    {
+      "file": "GOLD#_H1_202301030100_202312292300.csv",
+      "first_timestamp": "2023-01-03 01:00:00",
+      "last_timestamp": "2023-12-29 23:00:00",
+      "path": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\csv\\GOLD#_H1_202301030100_202312292300.csv",
+      "row_count": 5894,
+      "sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+      "size_bytes": 371807
+    },
+    {
+      "file": "GOLD#_H1_202401020100_202412312000.csv",
+      "first_timestamp": "2024-01-02 01:00:00",
+      "last_timestamp": "2024-12-31 20:00:00",
+      "path": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\csv\\GOLD#_H1_202401020100_202412312000.csv",
+      "row_count": 5928,
+      "sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+      "size_bytes": 374786
+    },
+    {
+      "file": "GOLD#_H1_202501020800_202512311900.csv",
+      "first_timestamp": "2025-01-02 08:00:00",
+      "last_timestamp": "2025-12-31 19:00:00",
+      "path": "G:\\AiServer\\Codex\\ForexAiTrade\\mt5_artifacts\\manual_gap_evidence\\GOLD_HASH_H1\\csv\\GOLD#_H1_202501020800_202512311900.csv",
+      "row_count": 5894,
+      "sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b",
+      "size_bytes": 374055
+    }
+  ]
+}

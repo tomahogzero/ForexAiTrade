@@ -87,6 +87,10 @@ def detect(source_bars: list[dict[str, Any]], *, symbol: str = "GOLD#", timefram
                     _terminal(result, "DATA_INCOMPLETE_GAP", state=candidate["state"], candidate_id=candidate["candidate_id"], gap_timestamp=bar.get("timestamp"))
                     candidates[direction] = None
                     closed_swing[direction] = candidate["swing_id"]
+            # A later break must not reuse a swing whose required sequence crosses this gap.
+            if bar.get("gap_before"):
+                active["SWING_HIGH"] = None
+                active["SWING_LOW"] = None
             continue
 
         # Existing candidates observe this bar before any new break may be created on it.

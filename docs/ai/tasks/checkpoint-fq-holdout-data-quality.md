@@ -1,0 +1,1 @@
+# Checkpoint FQ`n`n- Status: completed`n- Decision: `FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK``n- Source-only validation; 625 unverified gaps frozen fail closed`n- No detector/events/outcomes inspected or generated`n- FR requires separate approval

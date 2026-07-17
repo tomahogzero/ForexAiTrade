@@ -1,0 +1,16 @@
+{
+  "gaps_by_year": {
+    "2020": 259,
+    "2021": 258,
+    "2022": 257
+  },
+  "longest_gap_hours": 79.0,
+  "missing_h1_slots_by_classification": {
+    "ACCEPTED_ROUTINE_WEEKEND_CLOSURE": 7319,
+    "UNVERIFIED_GAP": 1197
+  },
+  "routine_daily_closures_accepted": 0,
+  "routine_weekend_closures_accepted": 149,
+  "total_detected_gaps": 774,
+  "unverified_gaps": 625
+}

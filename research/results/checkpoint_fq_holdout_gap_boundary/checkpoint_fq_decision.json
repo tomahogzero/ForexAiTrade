@@ -1,0 +1,11 @@
+{
+  "broker_history_completeness": "NOT_PROVEN",
+  "complete_gap_inventory": true,
+  "conflicting_duplicates": 0,
+  "decision": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK",
+  "execution_status": "PASS",
+  "future_scope": "FR sealed holdout execution only; no pooling or rule changes",
+  "schema_ohlc_integrity_pass": true,
+  "source_hashes_match": true,
+  "unverified_gaps_fail_closed": true
+}

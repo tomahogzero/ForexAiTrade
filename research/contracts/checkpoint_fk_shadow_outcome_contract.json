@@ -1,0 +1,59 @@
+{
+  "contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_SHADOW_OUTCOME_FK_V1",
+  "contract_status": "FROZEN_NO_OUTCOMES_CALCULATED",
+  "source_population": {
+    "checkpoint": "FJ",
+    "event_count": 1079,
+    "long_count": 588,
+    "short_count": 491,
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "period": "2023-2025",
+    "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+    "broker_history_completeness": "NOT_PROVEN"
+  },
+  "entry": {
+    "price_field": "entry_reference_price",
+    "timestamp_field": "confirmation_timestamp",
+    "diagnostic_only": true,
+    "executable_order": false,
+    "evaluation_starts": "next_valid_h1_trading_bar_after_confirmation"
+  },
+  "levels": {
+    "atr_field": "atr",
+    "atr_recalculation": "PROHIBITED",
+    "tp_multiple": "1.5",
+    "sl_multiple": "1.0",
+    "LONG": {"tp": "entry + 1.5 * atr", "sl": "entry - 1.0 * atr"},
+    "SHORT": {"tp": "entry - 1.5 * atr", "sl": "entry + 1.0 * atr"}
+  },
+  "horizons_bars": [6, 12, 24, 48],
+  "bar_counting": "valid_h1_trading_bars_only_not_wall_clock_hours",
+  "first_touch": {
+    "LONG": {"tp": "high >= tp_level", "sl": "low <= sl_level"},
+    "SHORT": {"tp": "low <= tp_level", "sl": "high >= sl_level"},
+    "same_bar_both": "AMBIGUOUS_SAME_BAR_NO_INTRABAR_INFERENCE"
+  },
+  "outcomes": ["TP_FIRST", "SL_FIRST", "AMBIGUOUS_SAME_BAR", "NO_RESOLUTION", "DATA_INCOMPLETE_GAP", "INSUFFICIENT_FUTURE_BARS", "INVALID_EVENT_INPUT"],
+  "gap_policy": {
+    "accepted_daily_weekend_closures": "retain_frozen_policy_and_do_not_consume_bar_count",
+    "unverified_gap": "FAIL_CLOSED",
+    "outcome_before_gap": "retain_already_resolved_outcome",
+    "unresolved_before_gap": "DATA_INCOMPLETE_GAP",
+    "prohibited": ["bridge", "skip_silently", "interpolate", "reconstruct"]
+  },
+  "canonical_output": {
+    "row_granularity": "one_row_per_event_horizon",
+    "expected_rows": 4316,
+    "fields": ["outcome_row_id", "event_id", "symbol", "timeframe", "direction", "confirmation_timestamp", "entry_reference_price", "atr", "tp_multiple", "sl_multiple", "tp_level", "sl_level", "horizon_bars", "evaluated_bar_count", "first_touch_timestamp", "first_touch_bar_key", "outcome", "gap_start", "gap_end", "eligibility_status", "exclusion_reason", "source_population_hash", "outcome_contract_version"],
+    "outcome_row_id": "sha256(event_id|horizon_bars|outcome_contract_version)"
+  },
+  "integrity": {
+    "rows_per_event": 4,
+    "event_key_conservation": "1079/1079",
+    "allowed_horizons": [6, 12, 24, 48],
+    "replay": "byte_identical",
+    "monotonicity": ["resolved TP_FIRST or SL_FIRST remains identical in every longer horizon", "AMBIGUOUS_SAME_BAR remains ambiguous in every longer horizon", "DATA_INCOMPLETE_GAP must not overwrite a resolved-before-gap outcome", "NO_RESOLUTION may resolve only in a longer complete horizon"]
+  },
+  "prohibited": ["alternative_tp_sl_multiples", "parameter_search", "trailing_stop", "break_even", "execution_cost_model", "position_sizing", "filters", "subgroup_selection", "profitability_calculation", "trading_edge_claim", "order_logic"]
+}

@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-15
 
+## Latest Checkpoint FK Refresh
+
+Checkpoint FK froze the documentation and machine-readable shadow-outcome contract for the FJ population only.
+
+- source population: `1,079` FJ events (LONG 588, SHORT 491); canonical future output is four rows/event, `4,316` rows, with source hash locked
+- freezes entry, FJ ATR, 1.5/1.0 levels, next-valid-bar start, H6/H12/H24/H48, first touch, same-bar ambiguity, outcome-before-gap preservation, fail-closed gaps, schema, IDs, and monotonic consistency
+- no TP/SL outcome was calculated or inspected; FL is defined only for separately approved contract execution/validation and is not created
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FJ Refresh
 
 Checkpoint FJ generated the frozen historical population for the FF/FH/FI market-structure candidate from the three ET/EU-approved GOLD# H1 yearly sources.

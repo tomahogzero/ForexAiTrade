@@ -1,0 +1,860 @@
+{
+  "A_valid_long_event": {
+    "events": [
+      {
+        "atr": "9.571428571428571428571428571",
+        "break_close": "112",
+        "break_timestamp": "2024-01-01T21:00:00",
+        "confirmation_close": "114",
+        "confirmation_high": "115",
+        "confirmation_low": "109",
+        "confirmation_open": "110",
+        "confirmation_timestamp": "2024-01-01T23:00:00",
+        "data_quality_status": "VALID",
+        "direction": "LONG",
+        "entry_reference_price": "114",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "exclusion_reason": null,
+        "retest_price_reference": "110",
+        "retest_timestamp": "2024-01-01T22:00:00",
+        "source_row_keys": [
+          "fixture-row-017",
+          "fixture-row-020",
+          "fixture-row-021",
+          "fixture-row-022"
+        ],
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "year": "2024"
+      }
+    ],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "state": "SEEK_CONFIRMATION",
+        "status": "EVENT_EMITTED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "B_valid_short_event": {
+    "events": [
+      {
+        "atr": "10.42857142857142857142857143",
+        "break_close": "78",
+        "break_timestamp": "2024-01-01T21:00:00",
+        "confirmation_close": "75",
+        "confirmation_high": "80",
+        "confirmation_low": "74",
+        "confirmation_open": "79",
+        "confirmation_timestamp": "2024-01-01T23:00:00",
+        "data_quality_status": "VALID",
+        "direction": "SHORT",
+        "entry_reference_price": "75",
+        "event_id": "5a09a8d50f4e306cf5881e29a89969dd59b400eb67d46aa5eee391535deacf26",
+        "exclusion_reason": null,
+        "retest_price_reference": "80",
+        "retest_timestamp": "2024-01-01T22:00:00",
+        "source_row_keys": [
+          "fixture-row-017",
+          "fixture-row-020",
+          "fixture-row-021",
+          "fixture-row-022"
+        ],
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_price": "80",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_LOW",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "year": "2024"
+      }
+    ],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "d0a4c470d9299e2df364c5eaf8223517bda53ccb3182d2ae80a2fa72eaa51a84",
+        "swing_price": "80",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_LOW"
+      },
+      {
+        "source_row_key_center": "fixture-row-019",
+        "swing_confirmation_timestamp": "2024-01-01T22:00:00",
+        "swing_id": "4ecb174c28e3ea42bf0c10bf321b8edb3b99037f0074cdd8c77314bfe355eea7",
+        "swing_price": "97",
+        "swing_timestamp": "2024-01-01T19:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "a934d8a627ae3301b40ef7a03998a2994d536f957ff4b27328bd6cfc0498e655",
+        "duplicate_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_RETEST",
+        "status": "DUPLICATE_SUPPRESSED"
+      },
+      {
+        "candidate_id": "a934d8a627ae3301b40ef7a03998a2994d536f957ff4b27328bd6cfc0498e655",
+        "event_id": "5a09a8d50f4e306cf5881e29a89969dd59b400eb67d46aa5eee391535deacf26",
+        "state": "SEEK_CONFIRMATION",
+        "status": "EVENT_EMITTED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "4ecb174c28e3ea42bf0c10bf321b8edb3b99037f0074cdd8c77314bfe355eea7"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "d0a4c470d9299e2df364c5eaf8223517bda53ccb3182d2ae80a2fa72eaa51a84"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "C_wick_only_false_break": {
+    "events": [],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T19:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T20:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "D_swing_not_yet_confirmed": {
+    "events": [],
+    "swing_audit": [],
+    "terminals": [
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T17:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T18:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "E_retest_after_12_valid_bars": {
+    "events": [],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "duplicate_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_RETEST",
+        "status": "DUPLICATE_SUPPRESSED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-02T07:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-02T08:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      },
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "state": "SEEK_RETEST",
+        "status": "RETEST_NOT_FOUND_WITHIN_12_BARS"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "F_confirmation_failure": {
+    "events": [],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "state": "SEEK_RETEST",
+        "status": "CONFIRMATION_NOT_FOUND_WITHIN_12_BARS"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-02T07:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-02T08:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "G_unverified_gap_required_sequence": {
+    "events": [],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "gap_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_RETEST",
+        "status": "DATA_INCOMPLETE_GAP"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T20:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "H_duplicate_suppression": {
+    "events": [
+      {
+        "atr": "9.642857142857142857142857143",
+        "break_close": "112",
+        "break_timestamp": "2024-01-01T21:00:00",
+        "confirmation_close": "114",
+        "confirmation_high": "115",
+        "confirmation_low": "109",
+        "confirmation_open": "110",
+        "confirmation_timestamp": "2024-01-01T23:00:00",
+        "data_quality_status": "VALID",
+        "direction": "LONG",
+        "entry_reference_price": "114",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "exclusion_reason": null,
+        "retest_price_reference": "110",
+        "retest_timestamp": "2024-01-01T22:00:00",
+        "source_row_keys": [
+          "fixture-row-017",
+          "fixture-row-020",
+          "fixture-row-021",
+          "fixture-row-022"
+        ],
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "year": "2024"
+      }
+    ],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "duplicate_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_RETEST",
+        "status": "DUPLICATE_SUPPRESSED"
+      },
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "state": "SEEK_CONFIRMATION",
+        "status": "EVENT_EMITTED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "I_newer_swing_no_reanchor": {
+    "events": [
+      {
+        "atr": "9",
+        "break_close": "112",
+        "break_timestamp": "2024-01-01T21:00:00",
+        "confirmation_close": "116",
+        "confirmation_high": "116",
+        "confirmation_low": "108",
+        "confirmation_open": "110",
+        "confirmation_timestamp": "2024-01-02T02:00:00",
+        "data_quality_status": "VALID",
+        "direction": "LONG",
+        "entry_reference_price": "116",
+        "event_id": "438961e11af0fe1ba53b9c53cb849dd7dba2620c078cad6a24bf71a41bab9a04",
+        "exclusion_reason": null,
+        "retest_price_reference": "110",
+        "retest_timestamp": "2024-01-01T22:00:00",
+        "source_row_keys": [
+          "fixture-row-017",
+          "fixture-row-020",
+          "fixture-row-024",
+          "fixture-row-025"
+        ],
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "year": "2024"
+      }
+    ],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      },
+      {
+        "source_row_key_center": "fixture-row-022",
+        "swing_confirmation_timestamp": "2024-01-02T01:00:00",
+        "swing_id": "61cfff8bded650d9c9c59da3d00b6529e364a0e310cf4932753055a9f089be23",
+        "swing_price": "120",
+        "swing_timestamp": "2024-01-01T22:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "duplicate_timestamp": "2024-01-01T23:00:00",
+        "state": "SEEK_RETEST",
+        "status": "DUPLICATE_SUPPRESSED"
+      },
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "event_id": "438961e11af0fe1ba53b9c53cb849dd7dba2620c078cad6a24bf71a41bab9a04",
+        "state": "SEEK_CONFIRMATION",
+        "status": "EVENT_EMITTED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-02T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-02T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "61cfff8bded650d9c9c59da3d00b6529e364a0e310cf4932753055a9f089be23"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "J_tied_eligible_swing_order": {
+    "events": [
+      {
+        "atr": "9.571428571428571428571428571",
+        "break_close": "112",
+        "break_timestamp": "2024-01-01T21:00:00",
+        "confirmation_close": "114",
+        "confirmation_high": "115",
+        "confirmation_low": "109",
+        "confirmation_open": "110",
+        "confirmation_timestamp": "2024-01-01T23:00:00",
+        "data_quality_status": "VALID",
+        "direction": "LONG",
+        "entry_reference_price": "114",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "exclusion_reason": null,
+        "retest_price_reference": "110",
+        "retest_timestamp": "2024-01-01T22:00:00",
+        "source_row_keys": [
+          "fixture-row-017",
+          "fixture-row-020",
+          "fixture-row-021",
+          "fixture-row-022"
+        ],
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "year": "2024"
+      }
+    ],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "state": "SEEK_CONFIRMATION",
+        "status": "EVENT_EMITTED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "K_byte_identical_replay": {
+    "events": [
+      {
+        "atr": "9.571428571428571428571428571",
+        "break_close": "112",
+        "break_timestamp": "2024-01-01T21:00:00",
+        "confirmation_close": "114",
+        "confirmation_high": "115",
+        "confirmation_low": "109",
+        "confirmation_open": "110",
+        "confirmation_timestamp": "2024-01-01T23:00:00",
+        "data_quality_status": "VALID",
+        "direction": "LONG",
+        "entry_reference_price": "114",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "exclusion_reason": null,
+        "retest_price_reference": "110",
+        "retest_timestamp": "2024-01-01T22:00:00",
+        "source_row_keys": [
+          "fixture-row-017",
+          "fixture-row-020",
+          "fixture-row-021",
+          "fixture-row-022"
+        ],
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "year": "2024"
+      }
+    ],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "state": "SEEK_CONFIRMATION",
+        "status": "EVENT_EMITTED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  },
+  "L_nonsemantic_metadata_order": {
+    "events": [
+      {
+        "atr": "9.571428571428571428571428571",
+        "break_close": "112",
+        "break_timestamp": "2024-01-01T21:00:00",
+        "confirmation_close": "114",
+        "confirmation_high": "115",
+        "confirmation_low": "109",
+        "confirmation_open": "110",
+        "confirmation_timestamp": "2024-01-01T23:00:00",
+        "data_quality_status": "VALID",
+        "direction": "LONG",
+        "entry_reference_price": "114",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "exclusion_reason": null,
+        "retest_price_reference": "110",
+        "retest_timestamp": "2024-01-01T22:00:00",
+        "source_row_keys": [
+          "fixture-row-017",
+          "fixture-row-020",
+          "fixture-row-021",
+          "fixture-row-022"
+        ],
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "year": "2024"
+      }
+    ],
+    "swing_audit": [
+      {
+        "source_row_key_center": "fixture-row-017",
+        "swing_confirmation_timestamp": "2024-01-01T20:00:00",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4",
+        "swing_price": "110",
+        "swing_timestamp": "2024-01-01T17:00:00",
+        "swing_type": "SWING_HIGH"
+      }
+    ],
+    "terminals": [
+      {
+        "candidate_id": "62843bc192d9ce3fc6df566d066b6b1dd2f464058e835d5fa978df8305d90e0b",
+        "event_id": "973d670f382241c4667f9a0764de1cf9b176e7c4c17b7e191a49c8ff255f2879",
+        "state": "SEEK_CONFIRMATION",
+        "status": "EVENT_EMITTED"
+      },
+      {
+        "bar_timestamp": "2024-01-01T00:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T01:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_LEFT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T21:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "bar_timestamp": "2024-01-01T22:00:00",
+        "state": "SEEK_CONFIRMED_SWING",
+        "status": "INSUFFICIENT_RIGHT_HISTORY"
+      },
+      {
+        "state": "SEEK_BREAK",
+        "status": "NO_BREAK",
+        "swing_id": "51b0190efb6d396a7a1c0254de5685daaef9ba02433315999b11188a93efc3c4"
+      }
+    ],
+    "tie_break_order": [
+      "SWING_HIGH",
+      "SWING_LOW",
+      "LONG",
+      "SHORT"
+    ]
+  }
+}

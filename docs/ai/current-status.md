@@ -2,6 +2,15 @@
 
 Last updated: 2026-07-17
 
+## Latest Checkpoint FO Refresh
+
+Checkpoint FO applied the frozen FN post-outcome interpretation firewall to the verified FL population without changing events, outcomes, thresholds, metrics, or groups.
+
+- decision: `INSUFFICIENT_EVIDENCE`; H48 primary Wilson interval overlaps FN's diagnostic 0.40 reference, so the advancement condition does not pass
+- full/direction/year sample rules pass; H24/H48 have no FN material conflict; no FN direction/year material contradiction; no subgroup overrides the full-population decision
+- replay is byte-identical with mismatch `0`; broker-history completeness remains `NOT_PROVEN`; exclusions and H1 intrabar ambiguity remain limitations
+- no automatic follow-up: a later review needs materially new independent chronology-separated evidence and separate approval; do not rerun the same data or repeat audits
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FN Refresh
 
 Checkpoint FN froze a post-outcome interpretation firewall and machine-readable decision contract for the verified FL population.

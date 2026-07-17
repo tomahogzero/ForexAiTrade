@@ -1,0 +1,153 @@
+{
+  "candidate_status": "NOT_READY_FOR_ORDER_LOGIC",
+  "consistency": {
+    "data_quality_undermines_advancement": false,
+    "direction_material_contradiction": false,
+    "h24_h48_material_conflict": false,
+    "year_material_contradiction": false
+  },
+  "decision": "INSUFFICIENT_EVIDENCE",
+  "decision_matrix": [
+    {
+      "blocking_conditions": [
+        "No FN reject condition is met"
+      ],
+      "disposition": "REJECT_CURRENT_CANDIDATE",
+      "eligible": false,
+      "fn_conditions_met": false
+    },
+    {
+      "blocking_conditions": [],
+      "disposition": "INSUFFICIENT_EVIDENCE",
+      "eligible": true,
+      "fn_conditions_met": true
+    },
+    {
+      "blocking_conditions": [
+        "No specific frozen structural research question is identified in FO"
+      ],
+      "disposition": "RESEARCH_MORE_WITH_NEW_HYPOTHESIS",
+      "eligible": false,
+      "fn_conditions_met": false
+    },
+    {
+      "blocking_conditions": [
+        "All FN advancement conditions are not met"
+      ],
+      "disposition": "ELIGIBLE_FOR_COST_AWARE_OFFLINE_DIAGNOSTIC_DESIGN",
+      "eligible": false,
+      "fn_conditions_met": false
+    }
+  ],
+  "execution_status": "PASS",
+  "fn_contract_version": "MARKET_STRUCTURE_BREAK_RETEST_CONFIRMATION_V1_POST_OUTCOME_INTERPRETATION_FIREWALL_FN_V1",
+  "future_scope": "No automatic follow-up. Materially new independent, chronology-separated evidence using the same frozen definitions and an explicitly approved new design would be required before any later decision review.",
+  "limiting_evidence": [
+    "H48 Wilson interval is evaluated only as FN's diagnostic mathematical reference",
+    "broker-history completeness is NOT_PROVEN",
+    "unverified gaps remain fail-closed",
+    "H1 OHLC cannot resolve intrabar order",
+    "spread, commission, slippage, swap, latency, position sizing, and forward unseen-data validation are not modeled"
+  ],
+  "mandatory_h24": {
+    "AMBIGUOUS_SAME_BAR": 22,
+    "DATA_INCOMPLETE_GAP": 8,
+    "INSUFFICIENT_FUTURE_BARS": 0,
+    "INVALID_EVENT_INPUT": 0,
+    "NO_RESOLUTION": 3,
+    "SL_FIRST": 611,
+    "TP_FIRST": 435,
+    "ambiguous_rate": 0.02054154995331466,
+    "eligibility_rate": 0.9925857275254866,
+    "eligible": 1071,
+    "excluded": 8,
+    "exclusion_rate": 0.0074142724745134385,
+    "sl_share_resolved": 0.5841300191204589,
+    "total_events": 1079,
+    "tp_share_resolved": 0.41586998087954113,
+    "unambiguous_resolved": 1046,
+    "unresolved_rate": 0.0028011204481792717,
+    "wilson_95_tp_share_resolved": {
+      "lower": 0.38636226255787076,
+      "upper": 0.44599337693296814
+    }
+  },
+  "order_logic_status": "NOT_APPROVED",
+  "preflight": {
+    "canonical_rows": 4316,
+    "events": 1079,
+    "fj_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+    "fk_contract_sha256": "42182742575ef3e4add245ef8181a2424fb27907453c35f8ed73597b54d3cd55",
+    "fl_canonical_outcome_sha256_lf": "b05b38a11db6c776e177b2b738610724bbd877870f5a12cea0ce698fc636a804",
+    "fm_decision": "FM_PASS_INDEPENDENT_OUTCOME_AUDIT",
+    "fm_material_mismatches": 0,
+    "horizons": [
+      6,
+      12,
+      24,
+      48
+    ],
+    "long_events": 588,
+    "short_events": 491
+  },
+  "primary_h48": {
+    "AMBIGUOUS_SAME_BAR": 22,
+    "DATA_INCOMPLETE_GAP": 8,
+    "INSUFFICIENT_FUTURE_BARS": 0,
+    "INVALID_EVENT_INPUT": 0,
+    "NO_RESOLUTION": 0,
+    "SL_FIRST": 612,
+    "TP_FIRST": 437,
+    "ambiguous_rate": 0.02054154995331466,
+    "eligibility_rate": 0.9925857275254866,
+    "eligible": 1071,
+    "excluded": 8,
+    "exclusion_rate": 0.0074142724745134385,
+    "sl_share_resolved": 0.5834127740705434,
+    "total_events": 1079,
+    "tp_share_resolved": 0.41658722592945663,
+    "unambiguous_resolved": 1049,
+    "unresolved_rate": 0.0,
+    "wilson_95_tp_share_resolved": {
+      "lower": 0.3871111914406242,
+      "upper": 0.4466719498539631
+    }
+  },
+  "profitability_claim": false,
+  "sample_size": {
+    "H48_decision_sample_checks": {
+      "direction_year": {
+        "LONG|2023": "PASS",
+        "LONG|2024": "PASS",
+        "LONG|2025": "PASS",
+        "SHORT|2023": "PASS",
+        "SHORT|2024": "PASS",
+        "SHORT|2025": "PASS"
+      },
+      "directions": {
+        "LONG": true,
+        "SHORT": true
+      },
+      "full_population": true,
+      "years": {
+        "2023": true,
+        "2024": true,
+        "2025": true
+      }
+    },
+    "thresholds": {
+      "below_direction_year_minimum": "INSUFFICIENT_SAMPLE_LIMITATION_ONLY",
+      "direction_unambiguous_resolved_minimum": 200,
+      "direction_year_unambiguous_resolved_minimum": 75,
+      "full_population_unambiguous_resolved_minimum": 500,
+      "threshold_changes_prohibited": true,
+      "year_unambiguous_resolved_minimum": 100
+    }
+  },
+  "strategy_performance_status": "NOT_EVALUATED",
+  "supporting_evidence": [
+    "FM integrity PASS with zero material mismatches",
+    "all mandatory H48 full/direction/year sample thresholds evaluated under FN",
+    "H24/H48, directions, years, and direction-year cells remain visible"
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "blocking_conditions": [
+      "No FN reject condition is met"
+    ],
+    "disposition": "REJECT_CURRENT_CANDIDATE",
+    "eligible": false,
+    "fn_conditions_met": false
+  },
+  {
+    "blocking_conditions": [],
+    "disposition": "INSUFFICIENT_EVIDENCE",
+    "eligible": true,
+    "fn_conditions_met": true
+  },
+  {
+    "blocking_conditions": [
+      "No specific frozen structural research question is identified in FO"
+    ],
+    "disposition": "RESEARCH_MORE_WITH_NEW_HYPOTHESIS",
+    "eligible": false,
+    "fn_conditions_met": false
+  },
+  {
+    "blocking_conditions": [
+      "All FN advancement conditions are not met"
+    ],
+    "disposition": "ELIGIBLE_FOR_COST_AWARE_OFFLINE_DIAGNOSTIC_DESIGN",
+    "eligible": false,
+    "fn_conditions_met": false
+  }
+]

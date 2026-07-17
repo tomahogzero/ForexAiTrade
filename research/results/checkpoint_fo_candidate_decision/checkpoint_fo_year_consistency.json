@@ -1,0 +1,284 @@
+{
+  "2023": {
+    "12": {
+      "AMBIGUOUS_SAME_BAR": 10,
+      "DATA_INCOMPLETE_GAP": 3,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 34,
+      "SL_FIRST": 178,
+      "TP_FIRST": 127,
+      "ambiguous_rate": 0.02865329512893983,
+      "eligibility_rate": 0.9914772727272727,
+      "eligible": 349,
+      "excluded": 3,
+      "exclusion_rate": 0.008522727272727272,
+      "sl_share_resolved": 0.5836065573770491,
+      "total_events": 352,
+      "tp_share_resolved": 0.4163934426229508,
+      "unambiguous_resolved": 305,
+      "unresolved_rate": 0.09742120343839542,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.3624451030485739,
+        "upper": 0.47242162697289847
+      }
+    },
+    "24": {
+      "AMBIGUOUS_SAME_BAR": 10,
+      "DATA_INCOMPLETE_GAP": 3,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 1,
+      "SL_FIRST": 195,
+      "TP_FIRST": 143,
+      "ambiguous_rate": 0.02865329512893983,
+      "eligibility_rate": 0.9914772727272727,
+      "eligible": 349,
+      "excluded": 3,
+      "exclusion_rate": 0.008522727272727272,
+      "sl_share_resolved": 0.5769230769230769,
+      "total_events": 352,
+      "tp_share_resolved": 0.4230769230769231,
+      "unambiguous_resolved": 338,
+      "unresolved_rate": 0.0028653295128939827,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.3715615905022166,
+        "upper": 0.47632110874850375
+      }
+    },
+    "48": {
+      "AMBIGUOUS_SAME_BAR": 10,
+      "DATA_INCOMPLETE_GAP": 3,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 0,
+      "SL_FIRST": 195,
+      "TP_FIRST": 144,
+      "ambiguous_rate": 0.02865329512893983,
+      "eligibility_rate": 0.9914772727272727,
+      "eligible": 349,
+      "excluded": 3,
+      "exclusion_rate": 0.008522727272727272,
+      "sl_share_resolved": 0.5752212389380531,
+      "total_events": 352,
+      "tp_share_resolved": 0.4247787610619469,
+      "unambiguous_resolved": 339,
+      "unresolved_rate": 0.0,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.37329088923867415,
+        "upper": 0.47795230586547177
+      }
+    },
+    "6": {
+      "AMBIGUOUS_SAME_BAR": 9,
+      "DATA_INCOMPLETE_GAP": 3,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 89,
+      "SL_FIRST": 147,
+      "TP_FIRST": 104,
+      "ambiguous_rate": 0.025787965616045846,
+      "eligibility_rate": 0.9914772727272727,
+      "eligible": 349,
+      "excluded": 3,
+      "exclusion_rate": 0.008522727272727272,
+      "sl_share_resolved": 0.5856573705179283,
+      "total_events": 352,
+      "tp_share_resolved": 0.41434262948207173,
+      "unambiguous_resolved": 251,
+      "unresolved_rate": 0.25501432664756446,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.35513963883646193,
+        "upper": 0.47612800419545664
+      }
+    }
+  },
+  "2024": {
+    "12": {
+      "AMBIGUOUS_SAME_BAR": 11,
+      "DATA_INCOMPLETE_GAP": 3,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 25,
+      "SL_FIRST": 196,
+      "TP_FIRST": 141,
+      "ambiguous_rate": 0.029490616621983913,
+      "eligibility_rate": 0.9920212765957447,
+      "eligible": 373,
+      "excluded": 3,
+      "exclusion_rate": 0.007978723404255319,
+      "sl_share_resolved": 0.5816023738872403,
+      "total_events": 376,
+      "tp_share_resolved": 0.41839762611275966,
+      "unambiguous_resolved": 337,
+      "unresolved_rate": 0.06702412868632708,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.3669396134564641,
+        "upper": 0.47169504034915255
+      }
+    },
+    "24": {
+      "AMBIGUOUS_SAME_BAR": 11,
+      "DATA_INCOMPLETE_GAP": 3,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 1,
+      "SL_FIRST": 210,
+      "TP_FIRST": 151,
+      "ambiguous_rate": 0.029490616621983913,
+      "eligibility_rate": 0.9920212765957447,
+      "eligible": 373,
+      "excluded": 3,
+      "exclusion_rate": 0.007978723404255319,
+      "sl_share_resolved": 0.5817174515235457,
+      "total_events": 376,
+      "tp_share_resolved": 0.4182825484764543,
+      "unambiguous_resolved": 361,
+      "unresolved_rate": 0.002680965147453083,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.3685197539423682,
+        "upper": 0.4697661684122065
+      }
+    },
+    "48": {
+      "AMBIGUOUS_SAME_BAR": 11,
+      "DATA_INCOMPLETE_GAP": 3,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 0,
+      "SL_FIRST": 211,
+      "TP_FIRST": 151,
+      "ambiguous_rate": 0.029490616621983913,
+      "eligibility_rate": 0.9920212765957447,
+      "eligible": 373,
+      "excluded": 3,
+      "exclusion_rate": 0.007978723404255319,
+      "sl_share_resolved": 0.5828729281767956,
+      "total_events": 376,
+      "tp_share_resolved": 0.4171270718232044,
+      "unambiguous_resolved": 362,
+      "unresolved_rate": 0.0,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.3674628601191949,
+        "upper": 0.46853167097246257
+      }
+    },
+    "6": {
+      "AMBIGUOUS_SAME_BAR": 11,
+      "DATA_INCOMPLETE_GAP": 2,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 104,
+      "SL_FIRST": 156,
+      "TP_FIRST": 103,
+      "ambiguous_rate": 0.029411764705882353,
+      "eligibility_rate": 0.9946808510638298,
+      "eligible": 374,
+      "excluded": 2,
+      "exclusion_rate": 0.005319148936170213,
+      "sl_share_resolved": 0.6023166023166023,
+      "total_events": 376,
+      "tp_share_resolved": 0.39768339768339767,
+      "unambiguous_resolved": 259,
+      "unresolved_rate": 0.27807486631016043,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.33999249795303027,
+        "upper": 0.45836503575646076
+      }
+    }
+  },
+  "2025": {
+    "12": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_INCOMPLETE_GAP": 2,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 15,
+      "SL_FIRST": 199,
+      "TP_FIRST": 134,
+      "ambiguous_rate": 0.0028653295128939827,
+      "eligibility_rate": 0.9943019943019943,
+      "eligible": 349,
+      "excluded": 2,
+      "exclusion_rate": 0.005698005698005698,
+      "sl_share_resolved": 0.5975975975975976,
+      "total_events": 351,
+      "tp_share_resolved": 0.4024024024024024,
+      "unambiguous_resolved": 333,
+      "unresolved_rate": 0.04297994269340974,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.35113512613646247,
+        "upper": 0.45589575353146916
+      }
+    },
+    "24": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_INCOMPLETE_GAP": 2,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 1,
+      "SL_FIRST": 206,
+      "TP_FIRST": 141,
+      "ambiguous_rate": 0.0028653295128939827,
+      "eligibility_rate": 0.9943019943019943,
+      "eligible": 349,
+      "excluded": 2,
+      "exclusion_rate": 0.005698005698005698,
+      "sl_share_resolved": 0.5936599423631124,
+      "total_events": 351,
+      "tp_share_resolved": 0.40634005763688763,
+      "unambiguous_resolved": 347,
+      "unresolved_rate": 0.0028653295128939827,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.3559620562054622,
+        "upper": 0.45876907557557467
+      }
+    },
+    "48": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_INCOMPLETE_GAP": 2,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 0,
+      "SL_FIRST": 206,
+      "TP_FIRST": 142,
+      "ambiguous_rate": 0.0028653295128939827,
+      "eligibility_rate": 0.9943019943019943,
+      "eligible": 349,
+      "excluded": 2,
+      "exclusion_rate": 0.005698005698005698,
+      "sl_share_resolved": 0.5919540229885057,
+      "total_events": 351,
+      "tp_share_resolved": 0.40804597701149425,
+      "unambiguous_resolved": 348,
+      "unresolved_rate": 0.0,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.35768626865469777,
+        "upper": 0.460413621521645
+      }
+    },
+    "6": {
+      "AMBIGUOUS_SAME_BAR": 1,
+      "DATA_INCOMPLETE_GAP": 0,
+      "INSUFFICIENT_FUTURE_BARS": 0,
+      "INVALID_EVENT_INPUT": 0,
+      "NO_RESOLUTION": 70,
+      "SL_FIRST": 168,
+      "TP_FIRST": 112,
+      "ambiguous_rate": 0.002849002849002849,
+      "eligibility_rate": 1.0,
+      "eligible": 351,
+      "excluded": 0,
+      "exclusion_rate": 0.0,
+      "sl_share_resolved": 0.6,
+      "total_events": 351,
+      "tp_share_resolved": 0.4,
+      "unambiguous_resolved": 280,
+      "unresolved_rate": 0.19943019943019943,
+      "wilson_95_tp_share_resolved": {
+        "lower": 0.344345065701913,
+        "upper": 0.458361698022213
+      }
+    }
+  }
+}

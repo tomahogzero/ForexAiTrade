@@ -1,0 +1,9 @@
+{
+  "artifacts": {
+    "checkpoint_fq_decision.json": "85490a2e081332cdfbbcbb64893f8fefaae5ef61108f3daf9e92594812196419",
+    "checkpoint_fq_fail_closed_usability.json": "120bf8dfa13b4035c118fd1fd0aa1e3a39ae9d4e52606ef47b8ee0ae29bca62c",
+    "checkpoint_fq_gap_inventory.json": "48e41f7c496378ef6033fcb719104271ca3a763fff5ee7f83bf33850ca9da9bc",
+    "checkpoint_fq_gap_summary.json": "ef223496d54ed74bae8d52ca3938bf0b2f8332853eee0acfc703efa742a3c6e3",
+    "checkpoint_fq_source_integrity.json": "948258a087e71e6ff8e56fb9ea129f2ae259a92077d3abbb34fd3ded18fc41ab"
+  }
+}

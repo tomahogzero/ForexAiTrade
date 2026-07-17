@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-17
 
+## Latest Checkpoint FQ Refresh
+
+FQ validated the FP 2020-2022 GOLD# H1 sources and froze a fail-closed gap boundary without Candidate V2 execution.
+
+- decision: `FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK`; hashes/schema/OHLC/timeline pass; `774` gaps, `149` narrow-rule weekend accepted, `625` unverified fail-closed
+- broker-history completeness remains `NOT_PROVEN`; source availability has high exclusion risk and is not outcome evidence
+- FR requires separate approval; no detector/event/outcome/order work was done
+- FO disposition remains `INSUFFICIENT_EVIDENCE`; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`
 ## Latest Checkpoint FP Refresh
 
 Checkpoint FP froze a new provenance boundary after FO `INSUFFICIENT_EVIDENCE` without generating or inspecting Candidate V2 events/outcomes.

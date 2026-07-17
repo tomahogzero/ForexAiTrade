@@ -1,0 +1,33 @@
+{
+  "by_year": {
+    "2020": {
+      "accepted_closures": 50,
+      "clean_contiguous_segments": "GLOBAL_FAIL_CLOSED_SEGMENT_STATS_RECORDED",
+      "estimated_bars_excluded_only_source_integrity_reasons": 0,
+      "longest_clean_segment_valid_h1_bars": 47,
+      "median_clean_segment_length": 24,
+      "total_bars": 5912,
+      "unverified_gaps": 209
+    },
+    "2021": {
+      "accepted_closures": 50,
+      "clean_contiguous_segments": "GLOBAL_FAIL_CLOSED_SEGMENT_STATS_RECORDED",
+      "estimated_bars_excluded_only_source_integrity_reasons": 0,
+      "longest_clean_segment_valid_h1_bars": 47,
+      "median_clean_segment_length": 24,
+      "total_bars": 5902,
+      "unverified_gaps": 208
+    },
+    "2022": {
+      "accepted_closures": 49,
+      "clean_contiguous_segments": "GLOBAL_FAIL_CLOSED_SEGMENT_STATS_RECORDED",
+      "estimated_bars_excluded_only_source_integrity_reasons": 0,
+      "longest_clean_segment_valid_h1_bars": 47,
+      "median_clean_segment_length": 24,
+      "total_bars": 5917,
+      "unverified_gaps": 208
+    }
+  },
+  "execution_status": "PASS",
+  "policy": "unverified gaps reset swing/break/retest/confirmation and require post-gap warmup; accepted closures do not consume trading-bar count"
+}

@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-17
 
+## Latest Checkpoint FN Refresh
+
+Checkpoint FN froze a post-outcome interpretation firewall and machine-readable decision contract for the verified FL population.
+
+- FN explicitly is not prospective preregistration because outcomes already exist; it prevents cherry-picking, post-hoc subgroup selection, metric switching, and unsupported conclusions
+- freezes denominators, Wilson 95% metric, H48/H24 roles, mandatory populations, sample thresholds, consistency definitions, dispositions, and prohibited conclusions without reporting FL outcome counts/rates
+- FO is defined only as a separately approved application of this contract to existing FL rows; FN does not create FO or interpret the candidate
+- strategy performance: `NOT_EVALUATED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`; profitability: `NOT_CLAIMED`
 ## Latest Checkpoint FM Refresh
 
 Checkpoint FM independently audited the frozen FL canonical outcome population against FJ, FK, the approved GOLD# H1 sources, and the frozen fail-closed gap policy.

@@ -1,9 +1,9 @@
 # FR-Prep Generic Adapter Handoff
 
-## 1. Current branch and latest commit
+## 1. Current branch and latest implementation commit
 
 - Branch: `agent/fr-prep-generic-adapter`
-- Latest commit: `363006c3c40c0b16d52c21d508ddeb0b33e7f63c`
+- Implementation commit: `142ec4558936b127931b88c7e0e243adc0e0d1d7`
 
 ## 2. Base origin/main commit
 
@@ -13,11 +13,13 @@
 
 - A0: adapter inventory and frozen interface design
 - A1a: generic source manifest and source adapter core
+- A1b-1: negative source validation cases 1–9 and frozen failure codes
 
 ## 4. Files added or changed
 
 - A0: `docs/ai/current-status.md` and `docs/ai/tasks/checkpoint-fr-prep-a0-*`
 - A1a: `.gitattributes`, `tools/historical_source_adapter.py`, A1a fixture runner, manifest schema, positive fixtures/golden output, machine-readable summary, checkpoint document, and current-status marker
+- A1b-1: stable-code adapter update, negative fixture runner, nine negative cases/golden failures, deterministic summary, checkpoint document, and current-status marker
 
 ## 5. Validation results
 
@@ -25,6 +27,8 @@
 - Normalized manifest schema validation: `4/4 PASS`
 - Deterministic replay mismatch: `0`
 - Positive golden SHA-256: `717da59654afbab1a983a5444d65739df5541b593d6d393fa3bc2a363f57261b`
+- A1b-1 negative fixtures: `9/9 PASS`; unexpected passes, wrong failures, unknown codes, and mismatches: `0`
+- Negative replay/golden SHA-256: `97cf9cc363d58615fab7f1c50f7c8535498a62aaf39485810d3975863c37cbb8`
 - `git diff --check`, references, staged scope, and frozen-file hashes: `PASS`
 
 ## 6. Frozen files that must not change
@@ -37,11 +41,11 @@
 
 ## 7. Current project safety status
 
-`broker_history_completeness=NOT_PROVEN`; detector, events, outcomes, FJ replay, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
+`broker_history_completeness=NOT_PROVEN`; A1b-1 source validation only; gap policy, detector/FI, population, events/outcomes, FJ replay, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
 
 ## 8. Exact next micro-step
 
-FR-Prep-A1b: add negative synthetic source-validation fixtures and deterministic frozen failure codes; rerun A1a positives unchanged. No gap-policy work.
+FR-Prep-A1b-2: add remaining negative source/aggregate fixtures and stable codes for first/last timestamp, boundary escape, duplicate source/timestamp, and aggregate count/rows/range/hash; rerun A1a and A1b-1 unchanged. No gap-policy work.
 
 ## 9. Prohibited work
 

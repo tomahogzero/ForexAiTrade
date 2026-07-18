@@ -20,6 +20,16 @@ A1B1_VALIDATION_CODES = frozenset({
     "OHLC_NON_FINITE_OR_NON_POSITIVE", "OHLC_INCONSISTENT",
     "SOURCE_NOT_CHRONOLOGICAL", "SOURCE_ROW_COUNT_MISMATCH",
 })
+A1B2_VALIDATION_CODES = frozenset({
+    "SOURCE_FIRST_TIMESTAMP_MISMATCH", "SOURCE_LAST_TIMESTAMP_MISMATCH",
+    "SOURCE_ROW_BEFORE_BOUNDARY", "SOURCE_ROW_AFTER_BOUNDARY",
+    "DUPLICATE_SOURCE_ID", "AGGREGATE_DUPLICATE_TIMESTAMP",
+    "AGGREGATE_TIMESTAMP_OHLC_CONFLICT", "AGGREGATE_SOURCE_COUNT_MISMATCH",
+    "AGGREGATE_TOTAL_ROW_COUNT_MISMATCH", "AGGREGATE_FIRST_TIMESTAMP_MISMATCH",
+    "AGGREGATE_LAST_TIMESTAMP_MISMATCH", "AGGREGATE_TIMELINE_RANGE_MISMATCH",
+    "CANONICAL_TIMELINE_SHA256_MISMATCH",
+})
+A1_VALIDATION_CODES = A1B1_VALIDATION_CODES | A1B2_VALIDATION_CODES
 
 
 class AdapterValidationError(ValueError):
@@ -157,8 +167,10 @@ def _read_source(spec: dict[str, Any], root: Path, start: datetime, end: datetim
             except (TypeError, ValueError) as exc:
                 raise AdapterValidationError("SOURCE_TIMESTAMP_UNPARSEABLE") from exc
             op, high, low, close = _ohlc(row, f"{spec['source_id']}:{line}")
-            if stamp < start or stamp > end:
-                raise AdapterValidationError(f"source row outside boundary: {spec['source_id']}:{line}")
+            if stamp < start:
+                raise AdapterValidationError("SOURCE_ROW_BEFORE_BOUNDARY")
+            if stamp > end:
+                raise AdapterValidationError("SOURCE_ROW_AFTER_BOUNDARY")
             times.append(stamp)
             bars.append({"timestamp": stamp.isoformat(), "source_id": spec["source_id"],
                 "source_row_key": f"{spec['source_id']}:{line}", "open": op,
@@ -170,9 +182,9 @@ def _read_source(spec: dict[str, Any], root: Path, start: datetime, end: datetim
     if len(bars) != spec["row_count"]:
         raise AdapterValidationError("SOURCE_ROW_COUNT_MISMATCH")
     if times[0] != _timestamp(spec["first_timestamp"], "source first timestamp"):
-        raise AdapterValidationError(f"source first timestamp mismatch: {spec['source_id']}")
+        raise AdapterValidationError("SOURCE_FIRST_TIMESTAMP_MISMATCH")
     if times[-1] != _timestamp(spec["last_timestamp"], "source last timestamp"):
-        raise AdapterValidationError(f"source last timestamp mismatch: {spec['source_id']}")
+        raise AdapterValidationError("SOURCE_LAST_TIMESTAMP_MISMATCH")
     source_result = {
         "source_id": spec["source_id"], "file_name": spec["file_name"],
         "sha256": spec["sha256"].lower(), "size_bytes": path.stat().st_size,
@@ -191,19 +203,25 @@ def validate_manifest_data(raw: dict[str, Any], manifest_root: Path) -> dict[str
     end = _timestamp(manifest["boundary_end_timestamp"], "boundary end")
     if start > end:
         raise AdapterValidationError("manifest boundary is reversed")
+    declared_source_ids = [spec.get("source_id") for spec in manifest["sources"]]
+    if len(declared_source_ids) != len(set(declared_source_ids)):
+        raise AdapterValidationError("DUPLICATE_SOURCE_ID")
     source_results, bars = [], []
     for spec in manifest["sources"]:
         result, source_bars = _read_source(spec, manifest_root, start, end)
         source_results.append(result)
         bars.extend(source_bars)
-    source_ids = [item["source_id"] for item in source_results]
-    if len(source_ids) != len(set(source_ids)):
-        raise AdapterValidationError("duplicate source_id")
     bars.sort(key=lambda item: (item["timestamp"], item["source_row_key"]))
     timestamps = [item["timestamp"] for item in bars]
     duplicates = len(timestamps) - len(set(timestamps))
     if duplicates:
-        raise AdapterValidationError("duplicate aggregate timestamps")
+        by_timestamp: dict[str, set[tuple[str, str, str, str]]] = {}
+        for item in bars:
+            ohlc = (item["open"], item["high"], item["low"], item["close"])
+            by_timestamp.setdefault(item["timestamp"], set()).add(ohlc)
+        if any(len(values) > 1 for values in by_timestamp.values()):
+            raise AdapterValidationError("AGGREGATE_TIMESTAMP_OHLC_CONFLICT")
+        raise AdapterValidationError("AGGREGATE_DUPLICATE_TIMESTAMP")
     timeline_hash = hashlib.sha256(canonical_bytes(bars)).hexdigest()
     expected = manifest["expected_timeline"]
     _require(expected, ("source_count", "total_rows", "first_timestamp",
@@ -213,12 +231,22 @@ def validate_manifest_data(raw: dict[str, Any], manifest_root: Path) -> dict[str
         "first_timestamp": timestamps[0], "last_timestamp": timestamps[-1],
         "duplicate_timestamps": duplicates, "canonical_timeline_sha256": timeline_hash,
     }
-    for key, value in observed.items():
-        declared = expected[key]
-        if key.endswith("timestamp"):
-            declared = _timestamp(declared, key).isoformat()
-        if declared != value:
-            raise AdapterValidationError(f"aggregate {key} mismatch")
+    if expected["source_count"] != observed["source_count"]:
+        raise AdapterValidationError("AGGREGATE_SOURCE_COUNT_MISMATCH")
+    if expected["total_rows"] != observed["total_rows"]:
+        raise AdapterValidationError("AGGREGATE_TOTAL_ROW_COUNT_MISMATCH")
+    expected_first = _timestamp(expected["first_timestamp"], "aggregate first timestamp").isoformat()
+    expected_last = _timestamp(expected["last_timestamp"], "aggregate last timestamp").isoformat()
+    if expected_first != observed["first_timestamp"]:
+        raise AdapterValidationError("AGGREGATE_FIRST_TIMESTAMP_MISMATCH")
+    if expected_last != observed["last_timestamp"]:
+        raise AdapterValidationError("AGGREGATE_LAST_TIMESTAMP_MISMATCH")
+    if observed["first_timestamp"] != start.isoformat() or observed["last_timestamp"] != end.isoformat():
+        raise AdapterValidationError("AGGREGATE_TIMELINE_RANGE_MISMATCH")
+    if expected["duplicate_timestamps"] != observed["duplicate_timestamps"]:
+        raise AdapterValidationError("aggregate duplicate_timestamps mismatch")
+    if expected["canonical_timeline_sha256"].lower() != observed["canonical_timeline_sha256"]:
+        raise AdapterValidationError("CANONICAL_TIMELINE_SHA256_MISMATCH")
     identity_payload = {
         "dataset_id": manifest["dataset_id"], "symbol": manifest["symbol"],
         "timeframe": manifest["timeframe"],

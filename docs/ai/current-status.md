@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-A1b-2 Refresh
+
+- status: `FR_PREP_A1B2_SOURCE_VALIDATION_COMPLETE`
+- remaining source/aggregate negative fixtures: `13/13 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
+- A1a positive regression: `4/4 PASS`; A1b-1 negative regression: `9/9 PASS`; frozen golden hashes unchanged
+- gap policy, detector, FI fixtures, FJ replay, population, events, outcomes, and holdout preflight: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`
+
 ## Latest FR-Prep-A1b-1 Refresh
 
 - status: `FR_PREP_A1B1_NEGATIVE_SOURCE_VALIDATION`

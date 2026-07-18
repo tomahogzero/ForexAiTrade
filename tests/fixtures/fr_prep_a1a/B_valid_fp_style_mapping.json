@@ -1,0 +1,32 @@
+{
+  "mapping_profile": "FP_SOURCE_CONTRACT_V1",
+  "dataset_context": {
+    "dataset_id": "SYNTHETIC_FP_MAPPING_V1",
+    "expected_timeline": {
+      "source_count": 1, "total_rows": 2,
+      "first_timestamp": "2021-02-01T10:00:00",
+      "last_timestamp": "2021-02-01T11:00:00",
+      "duplicate_timestamps": 0,
+      "canonical_timeline_sha256": "a43159b0173c58ea3439c581865d38f2b385b787eeb8e33384b7b56fda4ecccb"
+    }
+  },
+  "source_identities": [{
+    "source_id": "FP_SYNTH_SOURCE",
+    "file_name": "explicit-fp-source.tsv",
+    "runtime_path": "sources/fp.tsv"
+  }],
+  "contract": {
+    "symbol": "FP_SYNTH#", "timeframe": "H1",
+    "boundary_start_timestamp": "2021-02-01T10:00:00",
+    "boundary_end_timestamp": "2021-02-01T11:00:00",
+    "broker_history_completeness": "NOT_PROVEN",
+    "raw_broker_csv_committed": false,
+    "source_files": [{
+      "path": "unused-development-locator",
+      "sha256": "59607cf82d42965dc803d6bbd6c5b27915981ca0296c9a1eda93e318e6d10518",
+      "size_bytes": 122, "rows": 2,
+      "first_timestamp": "2021-02-01T10:00:00",
+      "last_timestamp": "2021-02-01T11:00:00"
+    }]
+  }
+}

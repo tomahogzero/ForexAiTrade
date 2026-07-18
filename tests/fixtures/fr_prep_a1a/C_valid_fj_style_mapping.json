@@ -1,0 +1,33 @@
+{
+  "mapping_profile": "FJ_SOURCE_PROVENANCE_V1",
+  "dataset_context": {
+    "dataset_id": "SYNTHETIC_FJ_MAPPING_V1",
+    "symbol": "FJ_SYNTH#", "timeframe": "H1",
+    "boundary_start_timestamp": "2023-03-06T08:00:00",
+    "boundary_end_timestamp": "2023-03-06T09:00:00",
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_timeline": {
+      "source_count": 1, "total_rows": 2,
+      "first_timestamp": "2023-03-06T08:00:00",
+      "last_timestamp": "2023-03-06T09:00:00",
+      "duplicate_timestamps": 0,
+      "canonical_timeline_sha256": "b55b4af15669f74225f4c62585b73684e0bb9d6a376a074a7ac4641642f06fad"
+    }
+  },
+  "source_identities": [{
+    "source_id": "FJ_SYNTH_SOURCE",
+    "file_name": "explicit-fj-source.tsv",
+    "runtime_path": "sources/fj.tsv"
+  }],
+  "provenance": {
+    "raw_broker_csv_committed": false,
+    "sources": [{
+      "path": "unused-development-locator",
+      "file": "not-used-for-identity.tsv",
+      "sha256": "ab0802ed72cb0ca0e787bd842506fd43192c4748cef58b59120886ceab8353aa",
+      "size_bytes": 122, "row_count": 2,
+      "first_timestamp": "2023-03-06T08:00:00",
+      "last_timestamp": "2023-03-06T09:00:00"
+    }]
+  }
+}

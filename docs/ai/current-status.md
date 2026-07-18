@@ -2,6 +2,13 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-A1a Refresh
+
+- status: `FR_PREP_A1A_SOURCE_ADAPTER_CORE`
+- four positive synthetic source fixtures: `PASS`; deterministic mismatch count: `0`
+- gap policy, detector, FI fixtures, FJ replay, events, outcomes, and holdout preflight: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`
+
 ## Latest FR-Prep-A0 Refresh
 
 - status: `FR_PREP_A0_DESIGN_ONLY`

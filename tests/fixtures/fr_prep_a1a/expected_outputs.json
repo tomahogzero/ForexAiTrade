@@ -1,0 +1,130 @@
+{
+  "A_valid_minimal_generic_manifest": {
+    "boundary_end_timestamp": "2020-01-02T02:00:00",
+    "boundary_start_timestamp": "2020-01-02T00:00:00",
+    "broker_history_completeness": "NOT_PROVEN",
+    "dataset_id": "SYNTHETIC_GENERIC_MINIMAL_V1",
+    "dataset_identity_sha256": "a28846df1380d97314f62bec44aad7a8e1d9e7a336a110b54baf8af8e1a241d5",
+    "raw_broker_csv_committed": false,
+    "schema_version": "historical_source_manifest.v1",
+    "sources": [
+      {
+        "chronological": true,
+        "file_name": "synthetic-minimal.tsv",
+        "first_timestamp": "2020-01-02T00:00:00",
+        "last_timestamp": "2020-01-02T02:00:00",
+        "ohlc_integrity": "PASS",
+        "row_count": 3,
+        "sha256": "6d554d1055aafd0e3fc727d7d520863da3f93498b216264b685aa2a15114bd47",
+        "size_bytes": 149,
+        "source_id": "SYNTH_MINIMAL_SOURCE"
+      }
+    ],
+    "symbol": "SYNTH#",
+    "timeframe": "H1",
+    "timeline": {
+      "canonical_timeline_sha256": "a9ddc4ed4429c19b8d9336093075da7f76849ea30246a37d476aa4a43c8eca8e",
+      "duplicate_timestamps": 0,
+      "first_timestamp": "2020-01-02T00:00:00",
+      "last_timestamp": "2020-01-02T02:00:00",
+      "source_count": 1,
+      "total_rows": 3
+    }
+  },
+  "B_valid_fp_style_mapping": {
+    "boundary_end_timestamp": "2021-02-01T11:00:00",
+    "boundary_start_timestamp": "2021-02-01T10:00:00",
+    "broker_history_completeness": "NOT_PROVEN",
+    "dataset_id": "SYNTHETIC_FP_MAPPING_V1",
+    "dataset_identity_sha256": "fc4a70b14fd9d39962e26312bdad9f3fc93e169340015cce9d046757c1b18028",
+    "raw_broker_csv_committed": false,
+    "schema_version": "historical_source_manifest.v1",
+    "sources": [
+      {
+        "chronological": true,
+        "file_name": "explicit-fp-source.tsv",
+        "first_timestamp": "2021-02-01T10:00:00",
+        "last_timestamp": "2021-02-01T11:00:00",
+        "ohlc_integrity": "PASS",
+        "row_count": 2,
+        "sha256": "59607cf82d42965dc803d6bbd6c5b27915981ca0296c9a1eda93e318e6d10518",
+        "size_bytes": 122,
+        "source_id": "FP_SYNTH_SOURCE"
+      }
+    ],
+    "symbol": "FP_SYNTH#",
+    "timeframe": "H1",
+    "timeline": {
+      "canonical_timeline_sha256": "a43159b0173c58ea3439c581865d38f2b385b787eeb8e33384b7b56fda4ecccb",
+      "duplicate_timestamps": 0,
+      "first_timestamp": "2021-02-01T10:00:00",
+      "last_timestamp": "2021-02-01T11:00:00",
+      "source_count": 1,
+      "total_rows": 2
+    }
+  },
+  "C_valid_fj_style_mapping": {
+    "boundary_end_timestamp": "2023-03-06T09:00:00",
+    "boundary_start_timestamp": "2023-03-06T08:00:00",
+    "broker_history_completeness": "NOT_PROVEN",
+    "dataset_id": "SYNTHETIC_FJ_MAPPING_V1",
+    "dataset_identity_sha256": "6110534ec1bfee5594b5ef93c180fae002ff6a20adc2178c36a8ec0f83b9cac1",
+    "raw_broker_csv_committed": false,
+    "schema_version": "historical_source_manifest.v1",
+    "sources": [
+      {
+        "chronological": true,
+        "file_name": "explicit-fj-source.tsv",
+        "first_timestamp": "2023-03-06T08:00:00",
+        "last_timestamp": "2023-03-06T09:00:00",
+        "ohlc_integrity": "PASS",
+        "row_count": 2,
+        "sha256": "ab0802ed72cb0ca0e787bd842506fd43192c4748cef58b59120886ceab8353aa",
+        "size_bytes": 122,
+        "source_id": "FJ_SYNTH_SOURCE"
+      }
+    ],
+    "symbol": "FJ_SYNTH#",
+    "timeframe": "H1",
+    "timeline": {
+      "canonical_timeline_sha256": "b55b4af15669f74225f4c62585b73684e0bb9d6a376a074a7ac4641642f06fad",
+      "duplicate_timestamps": 0,
+      "first_timestamp": "2023-03-06T08:00:00",
+      "last_timestamp": "2023-03-06T09:00:00",
+      "source_count": 1,
+      "total_rows": 2
+    }
+  },
+  "D_valid_runtime_path_relocation": {
+    "boundary_end_timestamp": "2020-01-02T02:00:00",
+    "boundary_start_timestamp": "2020-01-02T00:00:00",
+    "broker_history_completeness": "NOT_PROVEN",
+    "dataset_id": "SYNTHETIC_GENERIC_MINIMAL_V1",
+    "dataset_identity_sha256": "a28846df1380d97314f62bec44aad7a8e1d9e7a336a110b54baf8af8e1a241d5",
+    "raw_broker_csv_committed": false,
+    "schema_version": "historical_source_manifest.v1",
+    "sources": [
+      {
+        "chronological": true,
+        "file_name": "synthetic-minimal.tsv",
+        "first_timestamp": "2020-01-02T00:00:00",
+        "last_timestamp": "2020-01-02T02:00:00",
+        "ohlc_integrity": "PASS",
+        "row_count": 3,
+        "sha256": "6d554d1055aafd0e3fc727d7d520863da3f93498b216264b685aa2a15114bd47",
+        "size_bytes": 149,
+        "source_id": "SYNTH_MINIMAL_SOURCE"
+      }
+    ],
+    "symbol": "SYNTH#",
+    "timeframe": "H1",
+    "timeline": {
+      "canonical_timeline_sha256": "a9ddc4ed4429c19b8d9336093075da7f76849ea30246a37d476aa4a43c8eca8e",
+      "duplicate_timestamps": 0,
+      "first_timestamp": "2020-01-02T00:00:00",
+      "last_timestamp": "2020-01-02T02:00:00",
+      "source_count": 1,
+      "total_rows": 3
+    }
+  }
+}

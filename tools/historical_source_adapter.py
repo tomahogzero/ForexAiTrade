@@ -14,10 +14,20 @@ MANIFEST_VERSION = "historical_source_manifest.v1"
 SOURCE_VERSION = "source_file_descriptor.v1"
 FORMAT_PROFILE = "MT5_TSV_OHLC_V1"
 REQUIRED_COLUMNS = ("<DATE>", "<TIME>", "<OPEN>", "<HIGH>", "<LOW>", "<CLOSE>")
+A1B1_VALIDATION_CODES = frozenset({
+    "SOURCE_PATH_MISSING", "SOURCE_SHA256_MISMATCH", "SOURCE_SIZE_MISMATCH",
+    "MT5_TSV_SCHEMA_INVALID", "SOURCE_TIMESTAMP_UNPARSEABLE",
+    "OHLC_NON_FINITE_OR_NON_POSITIVE", "OHLC_INCONSISTENT",
+    "SOURCE_NOT_CHRONOLOGICAL", "SOURCE_ROW_COUNT_MISMATCH",
+})
 
 
 class AdapterValidationError(ValueError):
     """Frozen source expectation was not satisfied."""
+
+    def __init__(self, code: str):
+        self.code = code
+        super().__init__(code)
 
 
 def canonical_bytes(value: Any) -> bytes:
@@ -114,10 +124,10 @@ def _ohlc(row: dict[str, str], label: str) -> tuple[str, str, str, str]:
     except (InvalidOperation, KeyError) as exc:
         raise AdapterValidationError(f"invalid OHLC at {label}") from exc
     if not all(value.is_finite() and value > 0 for value in values):
-        raise AdapterValidationError(f"non-finite or non-positive OHLC at {label}")
+        raise AdapterValidationError("OHLC_NON_FINITE_OR_NON_POSITIVE")
     op, high, low, close = values
     if high < max(op, close) or low > min(op, close) or high < low:
-        raise AdapterValidationError(f"inconsistent OHLC at {label}")
+        raise AdapterValidationError("OHLC_INCONSISTENT")
     return tuple(format(value.normalize(), "f") for value in values)
 
 
@@ -130,22 +140,22 @@ def _read_source(spec: dict[str, Any], root: Path, start: datetime, end: datetim
     if not path.is_absolute():
         path = root / path
     if not path.is_file():
-        raise AdapterValidationError(f"source path does not exist: {spec['source_id']}")
+        raise AdapterValidationError("SOURCE_PATH_MISSING")
     if sha256_file(path) != spec["sha256"].lower():
-        raise AdapterValidationError(f"source SHA-256 mismatch: {spec['source_id']}")
+        raise AdapterValidationError("SOURCE_SHA256_MISMATCH")
     if spec.get("size_bytes") is not None and path.stat().st_size != spec["size_bytes"]:
-        raise AdapterValidationError(f"source byte-size mismatch: {spec['source_id']}")
+        raise AdapterValidationError("SOURCE_SIZE_MISMATCH")
     bars: list[dict[str, str]] = []
     times: list[datetime] = []
     with path.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         if reader.fieldnames is None or not set(REQUIRED_COLUMNS).issubset(reader.fieldnames):
-            raise AdapterValidationError(f"MT5 TSV schema mismatch: {spec['source_id']}")
+            raise AdapterValidationError("MT5_TSV_SCHEMA_INVALID")
         for line, row in enumerate(reader, start=2):
             try:
                 stamp = datetime.strptime(f"{row['<DATE>']} {row['<TIME>']}", "%Y.%m.%d %H:%M:%S")
             except (TypeError, ValueError) as exc:
-                raise AdapterValidationError(f"invalid timestamp: {spec['source_id']}:{line}") from exc
+                raise AdapterValidationError("SOURCE_TIMESTAMP_UNPARSEABLE") from exc
             op, high, low, close = _ohlc(row, f"{spec['source_id']}:{line}")
             if stamp < start or stamp > end:
                 raise AdapterValidationError(f"source row outside boundary: {spec['source_id']}:{line}")
@@ -156,9 +166,9 @@ def _read_source(spec: dict[str, Any], root: Path, start: datetime, end: datetim
     if not bars:
         raise AdapterValidationError(f"empty source: {spec['source_id']}")
     if any(left >= right for left, right in zip(times, times[1:])):
-        raise AdapterValidationError(f"source rows not strictly chronological: {spec['source_id']}")
+        raise AdapterValidationError("SOURCE_NOT_CHRONOLOGICAL")
     if len(bars) != spec["row_count"]:
-        raise AdapterValidationError(f"source row-count mismatch: {spec['source_id']}")
+        raise AdapterValidationError("SOURCE_ROW_COUNT_MISMATCH")
     if times[0] != _timestamp(spec["first_timestamp"], "source first timestamp"):
         raise AdapterValidationError(f"source first timestamp mismatch: {spec['source_id']}")
     if times[-1] != _timestamp(spec["last_timestamp"], "source last timestamp"):
@@ -173,9 +183,8 @@ def _read_source(spec: dict[str, Any], root: Path, start: datetime, end: datetim
     return source_result, bars
 
 
-def validate_manifest(manifest_path: Path) -> dict[str, Any]:
-    """Normalize and validate sources; return path-independent canonical output."""
-    raw = json.loads(manifest_path.read_text(encoding="utf-8"))
+def validate_manifest_data(raw: dict[str, Any], manifest_root: Path) -> dict[str, Any]:
+    """Validate in-memory manifest data relative to an explicit runtime root."""
     manifest = normalize_manifest(raw)
     _validate_manifest_shape(manifest)
     start = _timestamp(manifest["boundary_start_timestamp"], "boundary start")
@@ -184,7 +193,7 @@ def validate_manifest(manifest_path: Path) -> dict[str, Any]:
         raise AdapterValidationError("manifest boundary is reversed")
     source_results, bars = [], []
     for spec in manifest["sources"]:
-        result, source_bars = _read_source(spec, manifest_path.parent, start, end)
+        result, source_bars = _read_source(spec, manifest_root, start, end)
         source_results.append(result)
         bars.extend(source_bars)
     source_ids = [item["source_id"] for item in source_results]
@@ -229,3 +238,9 @@ def validate_manifest(manifest_path: Path) -> dict[str, Any]:
         "sources": source_results,
         "timeline": observed,
     }
+
+
+def validate_manifest(manifest_path: Path) -> dict[str, Any]:
+    """Load, normalize, and validate a manifest from disk."""
+    raw = json.loads(manifest_path.read_text(encoding="utf-8"))
+    return validate_manifest_data(raw, manifest_path.parent)

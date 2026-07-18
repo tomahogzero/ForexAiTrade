@@ -1,0 +1,56 @@
+{
+  "01_missing_source_path": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_PATH_MISSING",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_PATH_MISSING"
+  },
+  "02_sha256_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_SHA256_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_SHA256_MISMATCH"
+  },
+  "03_optional_byte_size_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_SIZE_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_SIZE_MISMATCH"
+  },
+  "04_invalid_mt5_tsv_columns": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "MT5_TSV_SCHEMA_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "MT5_TSV_SCHEMA_INVALID"
+  },
+  "05_unparseable_timestamp": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_TIMESTAMP_UNPARSEABLE",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_TIMESTAMP_UNPARSEABLE"
+  },
+  "06_nonfinite_or_nonpositive_ohlc": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "OHLC_NON_FINITE_OR_NON_POSITIVE",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "OHLC_NON_FINITE_OR_NON_POSITIVE"
+  },
+  "07_internally_inconsistent_ohlc": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "OHLC_INCONSISTENT",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "OHLC_INCONSISTENT"
+  },
+  "08_non_chronological_source_rows": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_NOT_CHRONOLOGICAL",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_NOT_CHRONOLOGICAL"
+  },
+  "09_declared_row_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_ROW_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_ROW_COUNT_MISMATCH"
+  }
+}

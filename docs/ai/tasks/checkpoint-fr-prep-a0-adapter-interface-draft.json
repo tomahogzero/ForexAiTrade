@@ -1,0 +1,70 @@
+{
+  "artifact_type": "FR_PREP_ADAPTER_INTERFACE_DRAFT",
+  "checkpoint": "FR-Prep-A0",
+  "design_status": "FR_PREP_A0_DESIGN_ONLY",
+  "draft_version": "0.1.0",
+  "implementation_present": false,
+  "interfaces": {
+    "source_file_descriptor": {
+      "version": "source_file_descriptor.v1",
+      "required": ["source_id", "file_name", "runtime_path", "sha256", "row_count", "first_timestamp", "last_timestamp", "format"],
+      "format_profile": "MT5_TSV_OHLC_V1",
+      "invariants": ["runtime path is not identity", "no filename inference", "hash rows range order and duplicates are explicit checks"]
+    },
+    "historical_source_manifest": {
+      "version": "historical_source_manifest.v1",
+      "required": ["dataset_id", "symbol", "timeframe", "boundary_start_timestamp", "boundary_end_timestamp", "sources", "expected_timeline"],
+      "expected_timeline_required": ["total_rows", "first_timestamp", "last_timestamp", "duplicate_timestamps", "canonical_timeline_sha256"],
+      "constants": {"timeframe": "H1", "duplicate_timestamps": 0, "broker_history_completeness": "NOT_PROVEN", "raw_broker_csv_committed": false}
+    },
+    "canonical_timeline_input": {
+      "version": "canonical_timeline_input.v1",
+      "required": ["dataset_id", "symbol", "timeframe", "bars", "canonical_timeline_sha256"],
+      "bar_required": ["timestamp", "source_row_key", "open", "high", "low", "close"],
+      "bar_optional": ["gap_before", "gap_details"],
+      "invariants": ["sorted unique timestamps", "all source keys resolve", "non-accepted gap marks next bar", "no synthetic bars"]
+    },
+    "gap_policy_entry": {
+      "version": "gap_policy_entry.v1",
+      "required": ["previous_bar_timestamp", "next_bar_timestamp", "source_classification", "closure_disposition", "accepted_for_trading_bar_skip", "fail_closed_required", "source_schema"],
+      "closure_disposition": ["ACCEPTED_CLOSURE", "UNVERIFIED_GAP"],
+      "invariants": ["exact allowlist only", "unknown missing duplicate or contradictory entries fail closed"]
+    },
+    "dataset_execution_descriptor": {
+      "version": "dataset_execution_descriptor.v1",
+      "required": ["dataset_id", "source_manifest_path", "gap_policy", "output_root", "detector_integrity", "preflight", "execution_mode"],
+      "gap_policy_required": ["path", "schema"],
+      "detector_integrity_required": ["path", "sha256", "fi_fixture_output_sha256"],
+      "preflight_status": ["NOT_RUN", "PASS"],
+      "execution_mode": ["LEGACY_FJ_BACKWARD_COMPATIBLE", "SEALED_HOLDOUT"],
+      "invariants": ["SEALED_HOLDOUT requires preflight PASS before detector call", "explicit output root", "explicit detector symbol and timeframe"]
+    }
+  },
+  "classification_profiles": {
+    "EO_FJ_CSV_V1": {
+      "columns": ["prev_time", "next_time", "delta_hours", "missing_h1_bars_estimate", "prev_weekday", "next_weekday", "classification", "policy_status"],
+      "key_columns": ["prev_time", "next_time"],
+      "accepted": ["ACCEPTED_DAILY_BROKER_SESSION_GAP", "ACCEPTED_WEEKEND_MARKET_CLOSURE"],
+      "unverified": ["BLOCKED_UNCLASSIFIED_GAP"]
+    },
+    "FQ_GAP_INVENTORY_V1": {
+      "key_columns": ["previous_bar_timestamp", "next_bar_timestamp"],
+      "accepted": ["ACCEPTED_ROUTINE_DAILY_SESSION_CLOSURE", "ACCEPTED_ROUTINE_WEEKEND_CLOSURE"],
+      "unverified": ["UNVERIFIED_GAP"]
+    }
+  },
+  "frozen_byte_for_byte_files": [
+    "tools/market_structure_break_retest_detector.py",
+    "tools/run_checkpoint_fi_detector_fixtures.py",
+    "tests/fixtures/checkpoint_fi_detector_cases.json",
+    "tests/fixtures/checkpoint_fi_detector_inputs.json",
+    "tests/fixtures/checkpoint_fi_detector_expected.json"
+  ],
+  "future_fixtures": {
+    "FR-Prep-A1": ["manifest valid", "FP mapping", "FJ mapping", "hash row range duplicate and relocation guards"],
+    "FR-Prep-A2": ["EO accepted and blocked", "FQ accepted and unverified", "unknown contradictory duplicate and missing policy guards"],
+    "FR-Prep-A3": ["canonical order", "stable source keys", "EO and FQ golden adapter replay"],
+    "FR-Prep-B": ["legacy FJ compatibility", "holdout preflight not-run mismatch and pass guards"]
+  },
+  "safety": {"adapter_implemented": false, "fixtures_executed": false, "detector_executed": false, "events_created": false, "outcomes_created": false, "holdout_preflight_executed": false}
+}

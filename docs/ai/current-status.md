@@ -1,6 +1,12 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-17
+Last updated: 2026-07-18
+
+## Latest FR-Prep-A0 Refresh
+
+- status: `FR_PREP_A0_DESIGN_ONLY`
+- adapter implementation, fixtures, detector, events, outcomes, and holdout preflight: `NOT_RUN`
+- strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`
 
 ## Latest Checkpoint FQ Refresh
 

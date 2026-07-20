@@ -3,7 +3,7 @@
 ## 1. Current branch and latest implementation commit
 
 - Branch: `agent/fr-prep-generic-adapter`
-- Implementation commit: `5624954ed61beabdbe56cdd50ce5bd127888f99a`
+- Implementation commit: `5819877e9676b10f1d5b50fcf36e8bad181b0f03`
 
 ## 2. Base origin/main commit
 
@@ -15,6 +15,7 @@
 - A1 complete: source adapter core, positive fixtures, and all frozen negative validation codes
 - A2 positive gap adapter complete: generic schema/core, EO/FJ and FQ mappings, and eight positive fixtures
 - A2b-1 complete: negative gap-contract validation with 18 fixtures and 17 stable codes
+- A2b-2 complete: negative inventory validation with 20 fixtures; complete A2 registry has 37 stable codes
 
 ## 4. Files added or changed
 
@@ -24,6 +25,7 @@
 - A1b-2: stable-code adapter update, 13 negative cases/golden failures, deterministic runner/summary, validation registry/precedence, checkpoint document, and current-status marker
 - A2: gap-policy schema/adapter, EO/FJ and FQ mappings, eight positive fixtures/golden, deterministic runner/summary, checkpoint document, and current-status marker
 - A2b-1: stable-code adapter update, 18 negative fixtures/golden, registry/precedence, deterministic runner/summary, checkpoint document, and current-status marker
+- A2b-2: inventory guards, 20 synthetic fixtures/golden, complete registry, canonical identity contract, deterministic runner/summary, Thai checkpoint document, and current-status marker
 
 ## 5. Validation results
 
@@ -39,6 +41,9 @@
 - A2 replay/golden SHA-256: `7a6c6b95c1f1019be4f743906dfc633b26069f14a0df2e63236c121b33d7f6ff`
 - A2b-1 negative fixtures: `18/18 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
 - A2b-1 replay/golden SHA-256: `e12d040363487ac48f972f86a976aacc72305940a08ce92c1d162544a89357a7`
+- A2b-2 negative fixtures: `20/20 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
+- A2b-2 replay/golden SHA-256: `7b439bf5e716c60d6ba1c9fac8e26402bdba624cee7c8dc7de6c31d1cbd1dbae`
+- Decision: `FR_PREP_A2B2_PASS_GAP_VALIDATION_COMPLETE`
 - `git diff --check`, references, staged scope, and frozen-file hashes: `PASS`
 
 ## 6. Frozen files that must not change
@@ -48,18 +53,20 @@
 - `tests/fixtures/checkpoint_fi_detector_cases.json`
 - `tests/fixtures/checkpoint_fi_detector_inputs.json`
 - `tests/fixtures/checkpoint_fi_detector_expected.json`
+- `tools/run_checkpoint_fj_historical_event_population.py`
+- `tools/run_checkpoint_fq_holdout_gap_boundary.py`
 
 ## 7. Current project safety status
 
-`broker_history_completeness=NOT_PROVEN`; A1, A2 positive, and A2b-1 contract validation complete; detector/FI, FJ/FQ runners, population, events/ATR-events/outcomes, TP/SL, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
+`broker_history_completeness=NOT_PROVEN`; A1, A2 positive, A2b-1, and A2b-2 validation complete; detector/FI, FJ/FQ runners, real FQ inventory, population, events/ATR-events/outcomes, TP/SL, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
 
 ## 8. Exact next micro-step
 
-FR-Prep-A2b-2 — Negative Gap-Policy Inventory Validation: duplicate gap IDs, source identities, timestamp pairs, expected-count mismatch, invalid/empty inventory shape, and normalized inventory identity/hash guards.
+FR-Prep-A3 — Generic Adapter Contract Closure and Synthetic End-to-End Replay. Adapter-only and synthetic; no detector integration or real holdout execution.
 
 ## 9. Prohibited work
 
-No gap-policy adapter, detector/FI execution, FJ replay, holdout preflight, events/ATR-events, TP/SL, outcomes, candidate changes, optimization, MT5/Strategy Tester, EA/order logic, demo/live, or profitability claim.
+No gap reclassification, detector integration/execution, FI fixture execution, FJ replay, holdout preflight, real FQ inventory, historical population, events/ATR-events, TP/SL, outcomes, candidate changes, optimization, MT5/Strategy Tester, EA/order logic, demo/live, or profitability claim.
 
 ## 10. Important worktree path
 

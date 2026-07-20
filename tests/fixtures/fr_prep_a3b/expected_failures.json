@@ -1,0 +1,218 @@
+{
+  "01_descriptor_root_not_object": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_ROOT_NOT_OBJECT",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_ROOT_NOT_OBJECT"
+  },
+  "02_unsupported_descriptor_schema_version": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_SCHEMA_VERSION_UNSUPPORTED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_SCHEMA_VERSION_UNSUPPORTED"
+  },
+  "03_missing_required_descriptor_field": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_REQUIRED_FIELD_MISSING",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_REQUIRED_FIELD_MISSING"
+  },
+  "04_dataset_id_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_DATASET_ID_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_DATASET_ID_MISMATCH"
+  },
+  "05_dataset_role_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_DATASET_ROLE_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_DATASET_ROLE_MISMATCH"
+  },
+  "06_symbol_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_SYMBOL_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_SYMBOL_MISMATCH"
+  },
+  "07_timeframe_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_TIMEFRAME_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_TIMEFRAME_MISMATCH"
+  },
+  "08_frozen_start_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_BOUNDARY_START_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_BOUNDARY_START_MISMATCH"
+  },
+  "09_frozen_end_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DESCRIPTOR_BOUNDARY_END_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DESCRIPTOR_BOUNDARY_END_MISMATCH"
+  },
+  "10_source_manifest_identity_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_MANIFEST_IDENTITY_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_MANIFEST_IDENTITY_MISMATCH"
+  },
+  "11_source_manifest_sha256_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_MANIFEST_SHA256_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_MANIFEST_SHA256_MISMATCH"
+  },
+  "12_canonical_timeline_identity_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "CANONICAL_TIMELINE_IDENTITY_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "CANONICAL_TIMELINE_IDENTITY_MISMATCH"
+  },
+  "13_canonical_timeline_sha256_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "CANONICAL_TIMELINE_SHA256_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "CANONICAL_TIMELINE_SHA256_MISMATCH"
+  },
+  "14_canonical_bar_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "CANONICAL_BAR_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "CANONICAL_BAR_COUNT_MISMATCH"
+  },
+  "15_canonical_first_timestamp_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "CANONICAL_FIRST_TIMESTAMP_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "CANONICAL_FIRST_TIMESTAMP_MISMATCH"
+  },
+  "16_canonical_last_timestamp_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "CANONICAL_LAST_TIMESTAMP_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "CANONICAL_LAST_TIMESTAMP_MISMATCH"
+  },
+  "17_gap_dataset_binding_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_DATASET_BINDING_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_DATASET_BINDING_MISMATCH"
+  },
+  "18_gap_previous_timestamp_unresolved": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_PREVIOUS_TIMESTAMP_UNRESOLVED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_PREVIOUS_TIMESTAMP_UNRESOLVED"
+  },
+  "19_gap_next_timestamp_unresolved": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_NEXT_TIMESTAMP_UNRESOLVED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_NEXT_TIMESTAMP_UNRESOLVED"
+  },
+  "20_gap_timestamp_outside_boundary": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_TIMESTAMP_OUTSIDE_SOURCE_BOUNDARY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_TIMESTAMP_OUTSIDE_SOURCE_BOUNDARY"
+  },
+  "21_gap_entry_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_ENTRY_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_ENTRY_COUNT_MISMATCH"
+  },
+  "22_accepted_closure_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_ACCEPTED_CLOSURE_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_ACCEPTED_CLOSURE_COUNT_MISMATCH"
+  },
+  "23_unverified_gap_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_UNVERIFIED_GAP_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_UNVERIFIED_GAP_COUNT_MISMATCH"
+  },
+  "24_disposition_counts_do_not_reconcile": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_DISPOSITION_COUNT_TOTAL_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_DISPOSITION_COUNT_TOTAL_MISMATCH"
+  },
+  "25_allowlist_identity_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "CLASSIFICATION_ALLOWLIST_IDENTITY_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "CLASSIFICATION_ALLOWLIST_IDENTITY_MISMATCH"
+  },
+  "26_broker_history_completeness_not_proven": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "BROKER_HISTORY_COMPLETENESS_NOT_PROVEN",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "BROKER_HISTORY_COMPLETENESS_NOT_PROVEN"
+  },
+  "27_detector_version_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DETECTOR_CONTRACT_VERSION_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DETECTOR_CONTRACT_VERSION_MISMATCH"
+  },
+  "28_outcome_contract_version_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "OUTCOME_CONTRACT_VERSION_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "OUTCOME_CONTRACT_VERSION_MISMATCH"
+  },
+  "29_interpretation_contract_version_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "INTERPRETATION_CONTRACT_VERSION_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "INTERPRETATION_CONTRACT_VERSION_MISMATCH"
+  },
+  "30_execution_mode_not_adapter_validation_only": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "EXECUTION_MODE_NOT_ADAPTER_VALIDATION_ONLY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "EXECUTION_MODE_NOT_ADAPTER_VALIDATION_ONLY"
+  },
+  "31_detector_execution_allowed": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DETECTOR_EXECUTION_PERMISSION_NOT_FALSE",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DETECTOR_EXECUTION_PERMISSION_NOT_FALSE"
+  },
+  "32_outcome_execution_allowed": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "OUTCOME_EXECUTION_PERMISSION_NOT_FALSE",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "OUTCOME_EXECUTION_PERMISSION_NOT_FALSE"
+  },
+  "33_detector_execution_requested": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "ADAPTER_ONLY_DETECTOR_REQUESTED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "ADAPTER_ONLY_DETECTOR_REQUESTED"
+  },
+  "34_event_or_atr_event_requested": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "ADAPTER_ONLY_EVENT_OR_ATR_REQUESTED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "ADAPTER_ONLY_EVENT_OR_ATR_REQUESTED"
+  },
+  "35_tp_sl_or_outcome_requested": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "ADAPTER_ONLY_TP_SL_OR_OUTCOME_REQUESTED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "ADAPTER_ONLY_TP_SL_OR_OUTCOME_REQUESTED"
+  },
+  "36_fn_interpretation_requested": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "ADAPTER_ONLY_FN_INTERPRETATION_REQUESTED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "ADAPTER_ONLY_FN_INTERPRETATION_REQUESTED"
+  }
+}

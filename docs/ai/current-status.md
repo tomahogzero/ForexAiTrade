@@ -2,6 +2,11 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-A3b Refresh
+
+- status: `FR_PREP_A3B_ADAPTER_CONTRACT_CLOSED`
+- decision: `FR_PREP_A3B_PASS_ADAPTER_CONTRACT_CLOSED`
+
 ## Latest FR-Prep-A3a Refresh
 
 - status: `FR_PREP_A3A_SYNTHETIC_COMPOSITION`

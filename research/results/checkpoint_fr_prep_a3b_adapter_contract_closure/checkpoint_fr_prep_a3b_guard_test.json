@@ -1,0 +1,15 @@
+{
+  "atr_event_artifact_count": 0,
+  "blocked_request_codes": [
+    "ADAPTER_ONLY_DETECTOR_REQUESTED",
+    "ADAPTER_ONLY_EVENT_OR_ATR_REQUESTED",
+    "ADAPTER_ONLY_TP_SL_OR_OUTCOME_REQUESTED",
+    "ADAPTER_ONLY_FN_INTERPRETATION_REQUESTED"
+  ],
+  "detector_execution_count": 0,
+  "detector_import_count": 0,
+  "event_artifact_count": 0,
+  "execution_status": "PASS",
+  "outcome_artifact_count": 0,
+  "tp_sl_artifact_count": 0
+}

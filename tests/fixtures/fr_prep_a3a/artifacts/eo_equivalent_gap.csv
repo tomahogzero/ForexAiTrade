@@ -1,0 +1,2 @@
+prev_time,next_time,delta_hours,missing_h1_bars_estimate,prev_weekday,next_weekday,classification,policy_status
+2024-09-06T23:00:00,2024-09-09T01:00:00,50,49,Friday,Monday,WEEKEND,ACCEPTED_WEEKEND_MARKET_CLOSURE

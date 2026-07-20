@@ -2,6 +2,16 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-A3a Refresh
+
+- status: `FR_PREP_A3A_SYNTHETIC_COMPOSITION`
+- decision: `FR_PREP_A3A_PASS_SYNTHETIC_COMPOSITION`
+- synthetic composition fixtures: `8/8 PASS`; deterministic mismatch `0`; relocation and repeated composition identical; EO/FJ and FQ normalized semantic equivalence confirmed
+- adapter-validation-only guard blocked detector, event, ATR-event, TP/SL, and outcome actions
+- A1: `4/4`, `9/9`, `13/13 PASS`; A2: `8/8`, `18/18`, `20/20 PASS`; frozen hashes/codes unchanged
+- detector/FI, FJ/FQ runners, real holdout inventory, population, holdout preflight, events, ATR-events, TP/SL, and outcomes: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
 ## Latest FR-Prep-A2b-2 Refresh
 
 - status: `FR_PREP_A2B2_GAP_VALIDATION_COMPLETE`

@@ -3,7 +3,7 @@
 ## 1. Current branch and latest implementation commit
 
 - Branch: `agent/fr-prep-generic-adapter`
-- Implementation commit: `194df4cf276fa33d46543f77aaefd256542e586d`
+- Implementation commit: `649480e0b1421b686014d0cb28f3c1a9afeb8831`
 
 ## 2. Base origin/main commit
 
@@ -17,6 +17,7 @@
 - A2b-1 complete: negative gap-contract validation with 18 fixtures and 17 stable codes
 - A2b-2 complete: negative inventory validation with 20 fixtures; complete A2 registry has 37 stable codes
 - A3a complete: synthetic dataset execution descriptor composition with eight positive fixtures and an adapter-validation-only execution guard
+- A3b complete: 36 synthetic negative cross-contract fixtures, frozen validation precedence/codes, and adapter contract closure
 
 ## 4. Files added or changed
 
@@ -28,6 +29,7 @@
 - A2b-1: stable-code adapter update, 18 negative fixtures/golden, registry/precedence, deterministic runner/summary, checkpoint document, and current-status marker
 - A2b-2: inventory guards, 20 synthetic fixtures/golden, complete registry, canonical identity contract, deterministic runner/summary, Thai checkpoint document, and current-status marker
 - A3a: dataset execution descriptor schema/composition module, eight synthetic fixtures/golden, deterministic runner/summary, Thai checkpoint document, current-status marker, and execution guard
+- A3b: minimal composition-module validation additions, 36 synthetic negative fixtures/golden, stable registry/precedence, deterministic runner/summary, guard import proof, Thai checkpoint document, and current-status marker
 
 ## 5. Validation results
 
@@ -50,6 +52,10 @@
 - A3a replay/golden SHA-256: `743b528744ff03a33d6805099e1618dcafc8f426f7fd8bf7f885e79d5a7827bd`
 - A3a execution guard: detector, event, ATR-event, TP/SL, and outcome actions blocked
 - Decision: `FR_PREP_A3A_PASS_SYNTHETIC_COMPOSITION`
+- A3b negative fixtures: `36/36 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
+- A3b replay/golden SHA-256: `6afc17f47997d6478749a48bc56eba79064050b1dc0b9dd2c63f8e476ae7f443`
+- A3b detector import/execution and event/ATR-event/TP-SL/outcome artifact counts: `0`
+- Decision: `FR_PREP_A3B_PASS_ADAPTER_CONTRACT_CLOSED`
 - `git diff --check`, references, staged scope, and frozen-file hashes: `PASS`
 
 ## 6. Frozen files that must not change
@@ -64,11 +70,11 @@
 
 ## 7. Current project safety status
 
-`broker_history_completeness=NOT_PROVEN`; A1/A2 validation and A3a synthetic composition complete; detector/FI, FJ/FQ runners, real FJ/FQ inventory, population, events/ATR-events/outcomes, TP/SL, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
+`broker_history_completeness=NOT_PROVEN`; A0 through A3b adapter-contract work complete; detector/FI, FJ/FQ runners, real FJ/FQ inventory, population, events/ATR-events/outcomes, TP/SL, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
 
 ## 8. Exact next micro-step
 
-FR-Prep-A3b — Synthetic Dataset Execution Descriptor Negative Cross-Contract Validation and Frozen Failure Codes. Adapter-only and synthetic; validate descriptor binding/timeline/count/identity/guard failures without detector integration or real holdout execution.
+FR-Prep adapter branch review and merge. After merge, start FR-Prep-B on a fresh branch for FJ backward-compatible replay and holdout preflight guard.
 
 ## 9. Prohibited work
 

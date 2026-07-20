@@ -1,0 +1,287 @@
+{
+  "A_valid_minimal_generic_accepted": {
+    "artifact_sha256": "3cfbe89afc918b050cae3b717dcf99145e98a8bf018544f0da2026b3c8815aec",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_CLOSURE",
+      "UNVERIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": true,
+        "closure_disposition": "ACCEPTED_CLOSURE",
+        "fail_closed_required": false,
+        "gap_id": "GAP-GENERIC-ACCEPTED-001",
+        "next_bar_timestamp": "2024-01-08T01:00:00",
+        "policy_classification": "ACCEPTED_CLOSURE",
+        "previous_bar_timestamp": "2024-01-05T23:00:00",
+        "prohibit_event_crossing": false,
+        "require_fresh_post_gap_warmup": false,
+        "reset_active_swing_state": false,
+        "reset_open_break_candidate": false,
+        "reset_retest_confirmation_state": false,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "GENERIC_GAP_POLICY_V1",
+        "source_record_identity": "GENERIC:ACCEPTED:001"
+      }
+    ],
+    "entry_count": 1,
+    "normalized_entries_sha256": "0d68e7f19a76762d12bd35ea358884e1cb1ce086a1dfb53822b1994c346515ec",
+    "policy_id": "SYNTH_GENERIC_ACCEPTED_V1",
+    "policy_identity_sha256": "5831dd4f1e164b127ae5f7e5a80305604a1d89cbcc209623eb0927e47fe3246d",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "GENERIC_GAP_POLICY_V1"
+  },
+  "B_valid_minimal_generic_unverified": {
+    "artifact_sha256": "acc9e4be74a933b2af798a7113c16c4edb16ca840a8be7c3d5b3a51ec00a8671",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_CLOSURE",
+      "UNVERIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": false,
+        "closure_disposition": "UNVERIFIED_GAP",
+        "fail_closed_required": true,
+        "gap_id": "GAP-GENERIC-UNVERIFIED-001",
+        "next_bar_timestamp": "2024-02-01T14:00:00",
+        "policy_classification": "UNVERIFIED_GAP",
+        "previous_bar_timestamp": "2024-02-01T10:00:00",
+        "prohibit_event_crossing": true,
+        "require_fresh_post_gap_warmup": true,
+        "reset_active_swing_state": true,
+        "reset_open_break_candidate": true,
+        "reset_retest_confirmation_state": true,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "GENERIC_GAP_POLICY_V1",
+        "source_record_identity": "GENERIC:UNVERIFIED:001"
+      }
+    ],
+    "entry_count": 1,
+    "normalized_entries_sha256": "f6bd0385c6937b158e131f83e43909b1c74bc0c2e66eb0825c4ecca70f50c988",
+    "policy_id": "SYNTH_GENERIC_UNVERIFIED_V1",
+    "policy_identity_sha256": "b6f466b0e5d45a4109aaa2617a21be4a4312fe371cae9be7104c187f5a36a172",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "GENERIC_GAP_POLICY_V1"
+  },
+  "C_valid_eo_fj_accepted_mapping": {
+    "artifact_sha256": "12b85156dacff2340ce20e770b8b0b49370a6d29812d0916e538e62bec18fc32",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_DAILY_BROKER_SESSION_GAP",
+      "ACCEPTED_WEEKEND_MARKET_CLOSURE",
+      "BLOCKED_UNCLASSIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": true,
+        "closure_disposition": "ACCEPTED_CLOSURE",
+        "fail_closed_required": false,
+        "gap_id": "EOFJ-57F2BA9F0AE81B23",
+        "next_bar_timestamp": "2024-03-04T01:00:00",
+        "policy_classification": "ACCEPTED_WEEKEND_MARKET_CLOSURE",
+        "previous_bar_timestamp": "2024-03-01T23:00:00",
+        "prohibit_event_crossing": false,
+        "require_fresh_post_gap_warmup": false,
+        "reset_active_swing_state": false,
+        "reset_open_break_candidate": false,
+        "reset_retest_confirmation_state": false,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "EO_FJ_CSV_V1",
+        "source_record_identity": "EO_FJ_CSV_V1:SYNTH_EO_FJ_ACCEPTED_V1:ROW:000002"
+      }
+    ],
+    "entry_count": 1,
+    "normalized_entries_sha256": "77b6802e596b3cffbb071fe6fe71e42fcdcd33e6368e8d29ab605c4bc4e5a163",
+    "policy_id": "SYNTH_EO_FJ_ACCEPTED_V1",
+    "policy_identity_sha256": "405c2eae16324c2d183f55f3bc7d429aeaaae278069f917e31984868cb7baaa2",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "EO_FJ_CSV_V1"
+  },
+  "D_valid_eo_fj_unverified_mapping": {
+    "artifact_sha256": "9c37ffa92269e7e94c4753248683f382069506f4f6316c1c8efbf3855f54dc53",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_DAILY_BROKER_SESSION_GAP",
+      "ACCEPTED_WEEKEND_MARKET_CLOSURE",
+      "BLOCKED_UNCLASSIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": false,
+        "closure_disposition": "UNVERIFIED_GAP",
+        "fail_closed_required": true,
+        "gap_id": "EOFJ-2D990B6F9B040327",
+        "next_bar_timestamp": "2024-04-02T15:00:00",
+        "policy_classification": "BLOCKED_UNCLASSIFIED_GAP",
+        "previous_bar_timestamp": "2024-04-02T10:00:00",
+        "prohibit_event_crossing": true,
+        "require_fresh_post_gap_warmup": true,
+        "reset_active_swing_state": true,
+        "reset_open_break_candidate": true,
+        "reset_retest_confirmation_state": true,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "EO_FJ_CSV_V1",
+        "source_record_identity": "EO_FJ_CSV_V1:SYNTH_EO_FJ_UNVERIFIED_V1:ROW:000002"
+      }
+    ],
+    "entry_count": 1,
+    "normalized_entries_sha256": "51807c99683b7268afbc118308bfb626b71f2697ac7931f23ae27acbe7dfdb73",
+    "policy_id": "SYNTH_EO_FJ_UNVERIFIED_V1",
+    "policy_identity_sha256": "4f6e3ff608c9a8004e9920c5b4d2edca2a59e17c0c8c77e8fa29c4263ef9f5e4",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "EO_FJ_CSV_V1"
+  },
+  "E_valid_fq_accepted_mapping": {
+    "artifact_sha256": "77c5ac6ad99e0cf68bb6e3347e3970505d892676c78b6d721e3f9cea289bf4ba",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_ROUTINE_DAILY_SESSION_CLOSURE",
+      "ACCEPTED_ROUTINE_WEEKEND_CLOSURE",
+      "UNVERIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": true,
+        "closure_disposition": "ACCEPTED_CLOSURE",
+        "fail_closed_required": false,
+        "gap_id": "GQ-SYNTH-ACCEPTED-001",
+        "next_bar_timestamp": "2021-05-10T01:00:00",
+        "policy_classification": "ACCEPTED_ROUTINE_WEEKEND_CLOSURE",
+        "previous_bar_timestamp": "2021-05-07T23:00:00",
+        "prohibit_event_crossing": false,
+        "require_fresh_post_gap_warmup": false,
+        "reset_active_swing_state": false,
+        "reset_open_break_candidate": false,
+        "reset_retest_confirmation_state": false,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "FQ_GAP_INVENTORY_V1",
+        "source_record_identity": "FQ_GAP_INVENTORY_V1:GQ-SYNTH-ACCEPTED-001"
+      }
+    ],
+    "entry_count": 1,
+    "normalized_entries_sha256": "a53d1a3259eaad1b7935f8140ef019e6ca22b698f12f25cc6b36a7c33f0995d0",
+    "policy_id": "SYNTH_FQ_ACCEPTED_V1",
+    "policy_identity_sha256": "2169198e1103228ceeed1c135cbfcb8b2ebbd71bce4368f476295fbcc4d83d82",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "FQ_GAP_INVENTORY_V1"
+  },
+  "F_valid_fq_unverified_mapping": {
+    "artifact_sha256": "ec5cdb274eae6451c81d135b1341e1d781d20245a5845c33e5ea8fc9b273da44",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_ROUTINE_DAILY_SESSION_CLOSURE",
+      "ACCEPTED_ROUTINE_WEEKEND_CLOSURE",
+      "UNVERIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": false,
+        "closure_disposition": "UNVERIFIED_GAP",
+        "fail_closed_required": true,
+        "gap_id": "GQ-SYNTH-UNVERIFIED-001",
+        "next_bar_timestamp": "2021-06-10T18:00:00",
+        "policy_classification": "UNVERIFIED_GAP",
+        "previous_bar_timestamp": "2021-06-10T12:00:00",
+        "prohibit_event_crossing": true,
+        "require_fresh_post_gap_warmup": true,
+        "reset_active_swing_state": true,
+        "reset_open_break_candidate": true,
+        "reset_retest_confirmation_state": true,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "FQ_GAP_INVENTORY_V1",
+        "source_record_identity": "FQ_GAP_INVENTORY_V1:GQ-SYNTH-UNVERIFIED-001"
+      }
+    ],
+    "entry_count": 1,
+    "normalized_entries_sha256": "06cbd58ddf894f6674ff55713aefc7972a27a09e6e534c4b1f59b5a9424ebe0d",
+    "policy_id": "SYNTH_FQ_UNVERIFIED_V1",
+    "policy_identity_sha256": "35002fadeb80fbbb02c8ede28bf114d8eb5ba2d8001608b843418cbf42781f85",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "FQ_GAP_INVENTORY_V1"
+  },
+  "G_valid_mixed_ordered_inventory": {
+    "artifact_sha256": "35bf041f3c0240a081a08e2178fcbe3013e3c2eea344ee0eb4efb5949aec4db1",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_CLOSURE",
+      "UNVERIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": false,
+        "closure_disposition": "UNVERIFIED_GAP",
+        "fail_closed_required": true,
+        "gap_id": "GAP-MIXED-001",
+        "next_bar_timestamp": "2024-07-01T13:00:00",
+        "policy_classification": "UNVERIFIED_GAP",
+        "previous_bar_timestamp": "2024-07-01T09:00:00",
+        "prohibit_event_crossing": true,
+        "require_fresh_post_gap_warmup": true,
+        "reset_active_swing_state": true,
+        "reset_open_break_candidate": true,
+        "reset_retest_confirmation_state": true,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "GENERIC_GAP_POLICY_V1",
+        "source_record_identity": "GENERIC:MIXED:001"
+      },
+      {
+        "accepted_for_trading_bar_skip": true,
+        "closure_disposition": "ACCEPTED_CLOSURE",
+        "fail_closed_required": false,
+        "gap_id": "GAP-MIXED-002",
+        "next_bar_timestamp": "2024-08-05T01:00:00",
+        "policy_classification": "ACCEPTED_CLOSURE",
+        "previous_bar_timestamp": "2024-08-02T23:00:00",
+        "prohibit_event_crossing": false,
+        "require_fresh_post_gap_warmup": false,
+        "reset_active_swing_state": false,
+        "reset_open_break_candidate": false,
+        "reset_retest_confirmation_state": false,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "GENERIC_GAP_POLICY_V1",
+        "source_record_identity": "GENERIC:MIXED:002"
+      }
+    ],
+    "entry_count": 2,
+    "normalized_entries_sha256": "ccfef3715cd91f781271b05f3b626adeeeb4a31b016f68b600c2bc24c7619d07",
+    "policy_id": "SYNTH_GENERIC_MIXED_V1",
+    "policy_identity_sha256": "129907523f665d5d77aa01585ab5fc205bc3519ec4d54a7da9596ab044e7b5f8",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "GENERIC_GAP_POLICY_V1"
+  },
+  "H_valid_runtime_path_relocation": {
+    "artifact_sha256": "3cfbe89afc918b050cae3b717dcf99145e98a8bf018544f0da2026b3c8815aec",
+    "broker_history_completeness": "NOT_PROVEN",
+    "classification_allowlist": [
+      "ACCEPTED_CLOSURE",
+      "UNVERIFIED_GAP"
+    ],
+    "entries": [
+      {
+        "accepted_for_trading_bar_skip": true,
+        "closure_disposition": "ACCEPTED_CLOSURE",
+        "fail_closed_required": false,
+        "gap_id": "GAP-GENERIC-ACCEPTED-001",
+        "next_bar_timestamp": "2024-01-08T01:00:00",
+        "policy_classification": "ACCEPTED_CLOSURE",
+        "previous_bar_timestamp": "2024-01-05T23:00:00",
+        "prohibit_event_crossing": false,
+        "require_fresh_post_gap_warmup": false,
+        "reset_active_swing_state": false,
+        "reset_open_break_candidate": false,
+        "reset_retest_confirmation_state": false,
+        "schema_version": "gap_policy_entry.v1",
+        "source_contract_type": "GENERIC_GAP_POLICY_V1",
+        "source_record_identity": "GENERIC:ACCEPTED:001"
+      }
+    ],
+    "entry_count": 1,
+    "normalized_entries_sha256": "0d68e7f19a76762d12bd35ea358884e1cb1ce086a1dfb53822b1994c346515ec",
+    "policy_id": "SYNTH_GENERIC_ACCEPTED_V1",
+    "policy_identity_sha256": "5831dd4f1e164b127ae5f7e5a80305604a1d89cbcc209623eb0927e47fe3246d",
+    "schema_version": "gap_policy_manifest.v1",
+    "source_contract_type": "GENERIC_GAP_POLICY_V1"
+  }
+}

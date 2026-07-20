@@ -1,0 +1,269 @@
+#!/usr/bin/env python3
+"""Generic gap-policy adapter only; never executes detector state instructions."""
+from __future__ import annotations
+
+import csv
+import hashlib
+import json
+from datetime import datetime
+from pathlib import Path
+from typing import Any
+
+MANIFEST_VERSION = "gap_policy_manifest.v1"
+ENTRY_VERSION = "gap_policy_entry.v1"
+GENERIC_CONTRACT = "GENERIC_GAP_POLICY_V1"
+EO_FJ_CONTRACT = "EO_FJ_CSV_V1"
+FQ_CONTRACT = "FQ_GAP_INVENTORY_V1"
+CONTRACT_TYPES = frozenset({GENERIC_CONTRACT, EO_FJ_CONTRACT, FQ_CONTRACT})
+
+ACCEPTED_CLASSIFICATIONS = {
+    GENERIC_CONTRACT: frozenset({"ACCEPTED_CLOSURE"}),
+    EO_FJ_CONTRACT: frozenset({
+        "ACCEPTED_DAILY_BROKER_SESSION_GAP",
+        "ACCEPTED_WEEKEND_MARKET_CLOSURE",
+    }),
+    FQ_CONTRACT: frozenset({
+        "ACCEPTED_ROUTINE_DAILY_SESSION_CLOSURE",
+        "ACCEPTED_ROUTINE_WEEKEND_CLOSURE",
+    }),
+}
+UNVERIFIED_CLASSIFICATIONS = {
+    GENERIC_CONTRACT: frozenset({"UNVERIFIED_GAP"}),
+    EO_FJ_CONTRACT: frozenset({"BLOCKED_UNCLASSIFIED_GAP"}),
+    FQ_CONTRACT: frozenset({"UNVERIFIED_GAP"}),
+}
+EO_REQUIRED_COLUMNS = (
+    "prev_time", "next_time", "delta_hours", "missing_h1_bars_estimate",
+    "prev_weekday", "next_weekday", "classification", "policy_status",
+)
+SEMANTIC_FIELDS = (
+    "accepted_for_trading_bar_skip", "fail_closed_required",
+    "reset_active_swing_state", "reset_open_break_candidate",
+    "reset_retest_confirmation_state", "prohibit_event_crossing",
+    "require_fresh_post_gap_warmup",
+)
+
+
+class GapPolicyValidationError(ValueError):
+    """Gap-policy input violates the frozen adapter contract."""
+
+
+def canonical_bytes(value: Any) -> bytes:
+    return json.dumps(value, ensure_ascii=True, sort_keys=True, separators=(",", ":")).encode("ascii")
+
+
+def digest(value: Any) -> str:
+    return hashlib.sha256(canonical_bytes(value)).hexdigest()
+
+
+def sha256_file(path: Path) -> str:
+    checksum = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            checksum.update(chunk)
+    return checksum.hexdigest()
+
+
+def _require(mapping: dict[str, Any], keys: tuple[str, ...], label: str) -> None:
+    missing = [key for key in keys if key not in mapping]
+    if missing:
+        raise GapPolicyValidationError(f"{label} missing required fields")
+
+
+def _timestamp(value: Any) -> str:
+    if not isinstance(value, str):
+        raise GapPolicyValidationError("gap timestamp is not a string")
+    try:
+        parsed = datetime.fromisoformat(value)
+    except ValueError as exc:
+        raise GapPolicyValidationError("gap timestamp is not parseable") from exc
+    if parsed.tzinfo is not None:
+        raise GapPolicyValidationError("timezone-aware gap timestamp is not allowed")
+    return parsed.isoformat()
+
+
+def _semantics(contract: str, classification: str) -> dict[str, Any]:
+    if classification in ACCEPTED_CLASSIFICATIONS[contract]:
+        accepted = True
+    elif classification in UNVERIFIED_CLASSIFICATIONS[contract]:
+        accepted = False
+    else:
+        raise GapPolicyValidationError("classification is not in the exact frozen allowlist")
+    return {
+        "closure_disposition": "ACCEPTED_CLOSURE" if accepted else "UNVERIFIED_GAP",
+        "accepted_for_trading_bar_skip": accepted,
+        "fail_closed_required": not accepted,
+        "reset_active_swing_state": not accepted,
+        "reset_open_break_candidate": not accepted,
+        "reset_retest_confirmation_state": not accepted,
+        "prohibit_event_crossing": not accepted,
+        "require_fresh_post_gap_warmup": not accepted,
+    }
+
+
+def _entry(
+    contract: str, gap_id: str, previous: Any, next_: Any,
+    classification: str, source_record_identity: str,
+) -> dict[str, Any]:
+    previous_timestamp = _timestamp(previous)
+    next_timestamp = _timestamp(next_)
+    if datetime.fromisoformat(previous_timestamp) >= datetime.fromisoformat(next_timestamp):
+        raise GapPolicyValidationError("previous gap timestamp must precede next timestamp")
+    if not all(isinstance(value, str) and value for value in (
+        gap_id, classification, source_record_identity,
+    )):
+        raise GapPolicyValidationError("gap identity and classification must be explicit")
+    return {
+        "schema_version": ENTRY_VERSION,
+        "gap_id": gap_id,
+        "previous_bar_timestamp": previous_timestamp,
+        "next_bar_timestamp": next_timestamp,
+        "policy_classification": classification,
+        **_semantics(contract, classification),
+        "source_contract_type": contract,
+        "source_record_identity": source_record_identity,
+    }
+
+
+def _read_generic(path: Path) -> list[dict[str, Any]]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("schema_version") != "gap_policy_entries.v1":
+        raise GapPolicyValidationError("generic gap artifact schema mismatch")
+    records = payload.get("entries")
+    if not isinstance(records, list) or not records:
+        raise GapPolicyValidationError("generic gap artifact requires entries")
+    entries = []
+    for record in records:
+        _require(record, (
+            "gap_id", "previous_bar_timestamp", "next_bar_timestamp",
+            "policy_classification", "source_record_identity", *SEMANTIC_FIELDS,
+        ), "generic gap entry")
+        normalized = _entry(
+            GENERIC_CONTRACT, record["gap_id"], record["previous_bar_timestamp"],
+            record["next_bar_timestamp"], record["policy_classification"],
+            record["source_record_identity"],
+        )
+        if any(record[field] != normalized[field] for field in SEMANTIC_FIELDS):
+            raise GapPolicyValidationError("generic semantic booleans conflict with classification")
+        entries.append(normalized)
+    return entries
+
+
+def _eo_gap_id(policy_id: str, row_number: int, row: dict[str, str]) -> str:
+    payload = {
+        "policy_id": policy_id, "row_number": row_number,
+        "previous_bar_timestamp": row["prev_time"],
+        "next_bar_timestamp": row["next_time"],
+        "policy_classification": row["policy_status"],
+    }
+    return "EOFJ-" + digest(payload)[:16].upper()
+
+
+def _read_eo_fj(path: Path, policy_id: str) -> list[dict[str, Any]]:
+    entries = []
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        if reader.fieldnames is None or not set(EO_REQUIRED_COLUMNS).issubset(reader.fieldnames):
+            raise GapPolicyValidationError("EO/FJ gap CSV schema mismatch")
+        for row_number, row in enumerate(reader, start=2):
+            source_identity = f"{EO_FJ_CONTRACT}:{policy_id}:ROW:{row_number:06d}"
+            entries.append(_entry(
+                EO_FJ_CONTRACT, _eo_gap_id(policy_id, row_number, row),
+                row["prev_time"], row["next_time"], row["policy_status"],
+                source_identity,
+            ))
+    if not entries:
+        raise GapPolicyValidationError("EO/FJ gap CSV requires rows")
+    return entries
+
+
+def _read_fq(path: Path) -> list[dict[str, Any]]:
+    records = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(records, list) or not records:
+        raise GapPolicyValidationError("FQ gap inventory requires rows")
+    entries = []
+    for record in records:
+        _require(record, (
+            "gap_id", "previous_bar_timestamp", "next_bar_timestamp",
+            "policy_classification", "accepted_for_trading_bar_skip",
+            "fail_closed_required",
+        ), "FQ gap entry")
+        normalized = _entry(
+            FQ_CONTRACT, record["gap_id"], record["previous_bar_timestamp"],
+            record["next_bar_timestamp"], record["policy_classification"],
+            record.get("source_record_identity", f"{FQ_CONTRACT}:{record['gap_id']}"),
+        )
+        if any(record[field] != normalized[field] for field in (
+            "accepted_for_trading_bar_skip", "fail_closed_required",
+        )):
+            raise GapPolicyValidationError("FQ explicit booleans conflict with classification")
+        entries.append(normalized)
+    return entries
+
+
+def validate_gap_policy_data(manifest: dict[str, Any], manifest_root: Path) -> dict[str, Any]:
+    _require(manifest, (
+        "schema_version", "policy_id", "source_contract_type", "runtime_path",
+        "artifact_sha256", "classification_allowlist", "expected_entry_count",
+        "broker_history_completeness",
+    ), "gap policy manifest")
+    if manifest["schema_version"] != MANIFEST_VERSION:
+        raise GapPolicyValidationError("gap policy manifest version mismatch")
+    contract = manifest["source_contract_type"]
+    if contract not in CONTRACT_TYPES:
+        raise GapPolicyValidationError("unsupported source contract type")
+    if manifest["broker_history_completeness"] != "NOT_PROVEN":
+        raise GapPolicyValidationError("broker history completeness must remain NOT_PROVEN")
+    exact_allowlist = sorted(ACCEPTED_CLASSIFICATIONS[contract] | UNVERIFIED_CLASSIFICATIONS[contract])
+    if manifest["classification_allowlist"] != exact_allowlist:
+        raise GapPolicyValidationError("declared classification allowlist is not exact")
+    path = Path(manifest["runtime_path"])
+    if not path.is_absolute():
+        path = manifest_root / path
+    if not path.is_file() or sha256_file(path) != manifest["artifact_sha256"].lower():
+        raise GapPolicyValidationError("gap policy artifact integrity failure")
+    if contract == GENERIC_CONTRACT:
+        entries = _read_generic(path)
+    elif contract == EO_FJ_CONTRACT:
+        entries = _read_eo_fj(path, manifest["policy_id"])
+    else:
+        entries = _read_fq(path)
+    entries.sort(key=lambda item: (
+        item["previous_bar_timestamp"], item["next_bar_timestamp"],
+        item["gap_id"], item["source_record_identity"],
+    ))
+    if len(entries) != manifest["expected_entry_count"]:
+        raise GapPolicyValidationError("gap policy entry count mismatch")
+    for field in ("gap_id", "source_record_identity"):
+        values = [entry[field] for entry in entries]
+        if len(values) != len(set(values)):
+            raise GapPolicyValidationError(f"duplicate normalized {field}")
+    pairs = [(entry["previous_bar_timestamp"], entry["next_bar_timestamp"]) for entry in entries]
+    if len(pairs) != len(set(pairs)):
+        raise GapPolicyValidationError("duplicate normalized gap timestamp pair")
+    entries_sha256 = digest(entries)
+    identity_payload = {
+        "schema_version": MANIFEST_VERSION,
+        "policy_id": manifest["policy_id"],
+        "source_contract_type": contract,
+        "artifact_sha256": manifest["artifact_sha256"].lower(),
+        "classification_allowlist": exact_allowlist,
+        "normalized_entries_sha256": entries_sha256,
+    }
+    return {
+        "schema_version": MANIFEST_VERSION,
+        "policy_id": manifest["policy_id"],
+        "policy_identity_sha256": digest(identity_payload),
+        "source_contract_type": contract,
+        "artifact_sha256": manifest["artifact_sha256"].lower(),
+        "classification_allowlist": exact_allowlist,
+        "broker_history_completeness": "NOT_PROVEN",
+        "entry_count": len(entries),
+        "normalized_entries_sha256": entries_sha256,
+        "entries": entries,
+    }
+
+
+def validate_gap_policy(manifest_path: Path) -> dict[str, Any]:
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    return validate_gap_policy_data(manifest, manifest_path.parent)

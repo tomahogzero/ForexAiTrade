@@ -2,6 +2,15 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-A2 Refresh
+
+- status: `FR_PREP_A2_GAP_POLICY_ADAPTER_POSITIVE`
+- decision: `FR_PREP_A2_PASS_GAP_ADAPTER_POSITIVE`
+- synthetic positive gap fixtures: `8/8 PASS`; deterministic mismatch `0`; runtime relocation identical
+- A1 regressions: A1a `4/4 PASS`, A1b-1 `9/9 PASS`, A1b-2 `13/13 PASS`; frozen hashes/codes unchanged
+- detector/FI, FJ/FQ runners, population, holdout preflight, events, ATR-events, TP/SL, and outcomes: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
 ## Latest FR-Prep-A1b-2 Refresh
 
 - status: `FR_PREP_A1B2_SOURCE_VALIDATION_COMPLETE`

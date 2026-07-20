@@ -1,3 +1,4 @@
 tests/fixtures/fr_prep_a1a/**/*.tsv text eol=lf
 tests/fixtures/fr_prep_a1b1/**/*.tsv text eol=lf
 tests/fixtures/fr_prep_a1b2/**/*.tsv text eol=lf
+tests/fixtures/fr_prep_a2/**/* text eol=lf

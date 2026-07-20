@@ -1,0 +1,33 @@
+{
+  "schema_version": "gap_policy_inventory_identity.v1",
+  "canonical_json": {
+    "encoding": "ASCII",
+    "ensure_ascii": true,
+    "sort_keys": true,
+    "separators": [",", ":"],
+    "terminal_newline_in_hash_input": false
+  },
+  "canonical_order": [
+    "previous_bar_timestamp",
+    "next_bar_timestamp",
+    "gap_id",
+    "source_record_identity"
+  ],
+  "classification_allowlist_sha256_payload": [
+    "source_contract_type",
+    "classification_allowlist"
+  ],
+  "normalized_inventory_sha256_payload": "canonical ordered normalized entry array",
+  "normalized_inventory_identity_sha256_payload": [
+    "schema_version",
+    "policy_id",
+    "source_contract_type",
+    "artifact_sha256",
+    "classification_allowlist",
+    "normalized_entries_sha256"
+  ],
+  "path_identity_rule": "runtime_path and filename are excluded from every canonical identity payload",
+  "duplicate_rule": "no raw record or normalized record may overwrite an earlier record",
+  "classification_rule": "exact frozen allowlist membership only; prefix and substring inference are prohibited",
+  "broker_history_completeness": "NOT_PROVEN"
+}

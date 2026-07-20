@@ -2,6 +2,15 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-A2b-2 Refresh
+
+- status: `FR_PREP_A2B2_GAP_VALIDATION_COMPLETE`
+- decision: `FR_PREP_A2B2_PASS_GAP_VALIDATION_COMPLETE`
+- synthetic negative gap-inventory fixtures: `20/20 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
+- A1 regressions: `4/4`, `9/9`, `13/13 PASS`; A2 positive: `8/8 PASS`; A2b-1: `18/18 PASS`; frozen hashes/codes unchanged
+- detector/FI, FJ/FQ runners, real holdout inventory, population, holdout preflight, events, ATR-events, TP/SL, and outcomes: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
 ## Latest FR-Prep-A2b-1 Refresh
 
 - status: `FR_PREP_A2B1_NEGATIVE_GAP_CONTRACT_VALIDATION`

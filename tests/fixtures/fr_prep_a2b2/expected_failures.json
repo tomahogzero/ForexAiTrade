@@ -1,0 +1,122 @@
+{
+  "01_inventory_value_not_array": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_INVENTORY_NOT_ARRAY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_INVENTORY_NOT_ARRAY"
+  },
+  "02_empty_inventory": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_INVENTORY_EMPTY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_INVENTORY_EMPTY"
+  },
+  "03_inventory_entry_not_object": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_INVENTORY_ENTRY_NOT_OBJECT",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_INVENTORY_ENTRY_NOT_OBJECT"
+  },
+  "04_duplicate_gap_id": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_DUPLICATE_GAP_ID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_DUPLICATE_GAP_ID"
+  },
+  "05_duplicate_source_record_identity": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_DUPLICATE_SOURCE_RECORD_IDENTITY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_DUPLICATE_SOURCE_RECORD_IDENTITY"
+  },
+  "06_duplicate_timestamp_pair": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_DUPLICATE_TIMESTAMP_PAIR",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_DUPLICATE_TIMESTAMP_PAIR"
+  },
+  "07_duplicate_raw_eo_fj_row": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_DUPLICATE_RAW_EO_FJ_ROW",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_DUPLICATE_RAW_EO_FJ_ROW"
+  },
+  "08_timestamp_pair_classification_conflict": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_TIMESTAMP_PAIR_CLASSIFICATION_CONFLICT",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_TIMESTAMP_PAIR_CLASSIFICATION_CONFLICT"
+  },
+  "09_timestamp_pair_semantic_conflict": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_TIMESTAMP_PAIR_SEMANTIC_CONFLICT",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_TIMESTAMP_PAIR_SEMANTIC_CONFLICT"
+  },
+  "10_expected_entry_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_EXPECTED_ENTRY_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_EXPECTED_ENTRY_COUNT_MISMATCH"
+  },
+  "11_accepted_closure_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_ACCEPTED_CLOSURE_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_ACCEPTED_CLOSURE_COUNT_MISMATCH"
+  },
+  "12_unverified_gap_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_UNVERIFIED_GAP_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_UNVERIFIED_GAP_COUNT_MISMATCH"
+  },
+  "13_classification_count_total_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_CLASSIFICATION_COUNT_TOTAL_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_CLASSIFICATION_COUNT_TOTAL_MISMATCH"
+  },
+  "14_normalized_inventory_undeclared_classification": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_UNDECLARED_INVENTORY_CLASSIFICATION",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_UNDECLARED_INVENTORY_CLASSIFICATION"
+  },
+  "15_declared_allowlist_differs_frozen": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_CLASSIFICATION_ALLOWLIST_NOT_EXACT",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_CLASSIFICATION_ALLOWLIST_NOT_EXACT"
+  },
+  "16_allowlist_identity_hash_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_CLASSIFICATION_ALLOWLIST_SHA256_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_CLASSIFICATION_ALLOWLIST_SHA256_MISMATCH"
+  },
+  "17_normalized_inventory_identity_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_NORMALIZED_INVENTORY_IDENTITY_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_NORMALIZED_INVENTORY_IDENTITY_MISMATCH"
+  },
+  "18_normalized_inventory_sha256_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_NORMALIZED_INVENTORY_SHA256_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_NORMALIZED_INVENTORY_SHA256_MISMATCH"
+  },
+  "19_noncanonical_inventory_order": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_CANONICAL_ORDER_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_CANONICAL_ORDER_MISMATCH"
+  },
+  "20_duplicate_normalized_entry_after_fq_mapping": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_DUPLICATE_NORMALIZED_CANONICAL_ENTRY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_DUPLICATE_NORMALIZED_CANONICAL_ENTRY"
+  }
+}

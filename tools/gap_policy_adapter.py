@@ -57,6 +57,27 @@ A2B1_VALIDATION_CODES = frozenset({
     "GAP_POLICY_EVENT_CROSSING_BOOLEAN_INVALID",
     "GAP_POLICY_WARMUP_BOOLEAN_INVALID",
 })
+A2B2_VALIDATION_CODES = frozenset({
+    "GAP_POLICY_INVENTORY_NOT_ARRAY", "GAP_POLICY_INVENTORY_EMPTY",
+    "GAP_POLICY_INVENTORY_ENTRY_NOT_OBJECT",
+    "GAP_POLICY_DUPLICATE_GAP_ID",
+    "GAP_POLICY_DUPLICATE_SOURCE_RECORD_IDENTITY",
+    "GAP_POLICY_DUPLICATE_TIMESTAMP_PAIR",
+    "GAP_POLICY_DUPLICATE_RAW_EO_FJ_ROW",
+    "GAP_POLICY_TIMESTAMP_PAIR_CLASSIFICATION_CONFLICT",
+    "GAP_POLICY_TIMESTAMP_PAIR_SEMANTIC_CONFLICT",
+    "GAP_POLICY_EXPECTED_ENTRY_COUNT_MISMATCH",
+    "GAP_POLICY_ACCEPTED_CLOSURE_COUNT_MISMATCH",
+    "GAP_POLICY_UNVERIFIED_GAP_COUNT_MISMATCH",
+    "GAP_POLICY_CLASSIFICATION_COUNT_TOTAL_MISMATCH",
+    "GAP_POLICY_UNDECLARED_INVENTORY_CLASSIFICATION",
+    "GAP_POLICY_CLASSIFICATION_ALLOWLIST_NOT_EXACT",
+    "GAP_POLICY_CLASSIFICATION_ALLOWLIST_SHA256_MISMATCH",
+    "GAP_POLICY_NORMALIZED_INVENTORY_IDENTITY_MISMATCH",
+    "GAP_POLICY_NORMALIZED_INVENTORY_SHA256_MISMATCH",
+    "GAP_POLICY_CANONICAL_ORDER_MISMATCH",
+    "GAP_POLICY_DUPLICATE_NORMALIZED_CANONICAL_ENTRY",
+})
 
 
 class GapPolicyValidationError(ValueError):
@@ -146,13 +167,19 @@ def _entry(
 
 def _read_generic(path: Path) -> list[dict[str, Any]]:
     payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise GapPolicyValidationError("GAP_POLICY_INVENTORY_NOT_ARRAY")
     if payload.get("schema_version") != "gap_policy_entries.v1":
         raise GapPolicyValidationError("generic gap artifact schema mismatch")
     records = payload.get("entries")
-    if not isinstance(records, list) or not records:
-        raise GapPolicyValidationError("generic gap artifact requires entries")
+    if not isinstance(records, list):
+        raise GapPolicyValidationError("GAP_POLICY_INVENTORY_NOT_ARRAY")
+    if not records:
+        raise GapPolicyValidationError("GAP_POLICY_INVENTORY_EMPTY")
     entries = []
     for record in records:
+        if not isinstance(record, dict):
+            raise GapPolicyValidationError("GAP_POLICY_INVENTORY_ENTRY_NOT_OBJECT")
         _require(record, (
             "gap_id", "previous_bar_timestamp", "next_bar_timestamp",
             "source_record_identity", *SEMANTIC_FIELDS,
@@ -191,11 +218,16 @@ def _eo_gap_id(policy_id: str, row_number: int, row: dict[str, str]) -> str:
 
 def _read_eo_fj(path: Path, policy_id: str) -> list[dict[str, Any]]:
     entries = []
+    raw_rows: set[bytes] = set()
     with path.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         if reader.fieldnames is None or not set(EO_REQUIRED_COLUMNS).issubset(reader.fieldnames):
             raise GapPolicyValidationError("EO/FJ gap CSV schema mismatch")
         for row_number, row in enumerate(reader, start=2):
+            raw_identity = canonical_bytes({key: row.get(key) for key in EO_REQUIRED_COLUMNS})
+            if raw_identity in raw_rows:
+                raise GapPolicyValidationError("GAP_POLICY_DUPLICATE_RAW_EO_FJ_ROW")
+            raw_rows.add(raw_identity)
             source_identity = f"{EO_FJ_CONTRACT}:{policy_id}:ROW:{row_number:06d}"
             entries.append(_entry(
                 EO_FJ_CONTRACT, _eo_gap_id(policy_id, row_number, row),
@@ -209,10 +241,14 @@ def _read_eo_fj(path: Path, policy_id: str) -> list[dict[str, Any]]:
 
 def _read_fq(path: Path) -> list[dict[str, Any]]:
     records = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(records, list) or not records:
-        raise GapPolicyValidationError("FQ gap inventory requires rows")
+    if not isinstance(records, list):
+        raise GapPolicyValidationError("GAP_POLICY_INVENTORY_NOT_ARRAY")
+    if not records:
+        raise GapPolicyValidationError("GAP_POLICY_INVENTORY_EMPTY")
     entries = []
     for record in records:
+        if not isinstance(record, dict):
+            raise GapPolicyValidationError("GAP_POLICY_INVENTORY_ENTRY_NOT_OBJECT")
         _require(record, (
             "gap_id", "previous_bar_timestamp", "next_bar_timestamp",
             "accepted_for_trading_bar_skip",
@@ -250,8 +286,6 @@ def validate_gap_policy_data(manifest: dict[str, Any], manifest_root: Path) -> d
     if manifest["broker_history_completeness"] != "NOT_PROVEN":
         raise GapPolicyValidationError("broker history completeness must remain NOT_PROVEN")
     exact_allowlist = sorted(ACCEPTED_CLASSIFICATIONS[contract] | UNVERIFIED_CLASSIFICATIONS[contract])
-    if manifest["classification_allowlist"] != exact_allowlist:
-        raise GapPolicyValidationError("declared classification allowlist is not exact")
     path = Path(manifest["runtime_path"])
     if not path.is_absolute():
         path = manifest_root / path
@@ -265,19 +299,72 @@ def validate_gap_policy_data(manifest: dict[str, Any], manifest_root: Path) -> d
         entries = _read_eo_fj(path, manifest["policy_id"])
     else:
         entries = _read_fq(path)
-    entries.sort(key=lambda item: (
+    canonical_key = lambda item: (
         item["previous_bar_timestamp"], item["next_bar_timestamp"],
         item["gap_id"], item["source_record_identity"],
-    ))
-    if len(entries) != manifest["expected_entry_count"]:
-        raise GapPolicyValidationError("gap policy entry count mismatch")
+    )
+    canonical_entries = sorted(entries, key=canonical_key)
+    serialized_entries = [canonical_bytes(entry) for entry in entries]
+    if len(serialized_entries) != len(set(serialized_entries)):
+        raise GapPolicyValidationError("GAP_POLICY_DUPLICATE_NORMALIZED_CANONICAL_ENTRY")
     for field in ("gap_id", "source_record_identity"):
         values = [entry[field] for entry in entries]
         if len(values) != len(set(values)):
-            raise GapPolicyValidationError(f"duplicate normalized {field}")
-    pairs = [(entry["previous_bar_timestamp"], entry["next_bar_timestamp"]) for entry in entries]
-    if len(pairs) != len(set(pairs)):
-        raise GapPolicyValidationError("duplicate normalized gap timestamp pair")
+            code = (
+                "GAP_POLICY_DUPLICATE_GAP_ID" if field == "gap_id"
+                else "GAP_POLICY_DUPLICATE_SOURCE_RECORD_IDENTITY"
+            )
+            raise GapPolicyValidationError(code)
+    by_pair: dict[tuple[str, str], list[dict[str, Any]]] = {}
+    for entry in entries:
+        pair = (entry["previous_bar_timestamp"], entry["next_bar_timestamp"])
+        by_pair.setdefault(pair, []).append(entry)
+    for pair_entries in by_pair.values():
+        if len(pair_entries) < 2:
+            continue
+        semantic_values = {tuple(entry[field] for field in SEMANTIC_FIELDS) for entry in pair_entries}
+        classifications = {entry["policy_classification"] for entry in pair_entries}
+        if len(semantic_values) > 1:
+            raise GapPolicyValidationError("GAP_POLICY_TIMESTAMP_PAIR_SEMANTIC_CONFLICT")
+        if len(classifications) > 1:
+            raise GapPolicyValidationError("GAP_POLICY_TIMESTAMP_PAIR_CLASSIFICATION_CONFLICT")
+        raise GapPolicyValidationError("GAP_POLICY_DUPLICATE_TIMESTAMP_PAIR")
+    if manifest.get("require_canonical_source_order") is True and entries != canonical_entries:
+        raise GapPolicyValidationError("GAP_POLICY_CANONICAL_ORDER_MISMATCH")
+    entries = canonical_entries
+    if len(entries) != manifest["expected_entry_count"]:
+        raise GapPolicyValidationError("GAP_POLICY_EXPECTED_ENTRY_COUNT_MISMATCH")
+    accepted_count = sum(entry["closure_disposition"] == "ACCEPTED_CLOSURE" for entry in entries)
+    unverified_count = sum(entry["closure_disposition"] == "UNVERIFIED_GAP" for entry in entries)
+    if ("expected_accepted_closure_count" in manifest
+            and accepted_count != manifest["expected_accepted_closure_count"]):
+        raise GapPolicyValidationError("GAP_POLICY_ACCEPTED_CLOSURE_COUNT_MISMATCH")
+    if ("expected_unverified_gap_count" in manifest
+            and unverified_count != manifest["expected_unverified_gap_count"]):
+        raise GapPolicyValidationError("GAP_POLICY_UNVERIFIED_GAP_COUNT_MISMATCH")
+    declared_counts = manifest.get("expected_classification_counts")
+    if declared_counts is not None:
+        if sum(declared_counts.values()) != manifest["expected_entry_count"]:
+            raise GapPolicyValidationError("GAP_POLICY_CLASSIFICATION_COUNT_TOTAL_MISMATCH")
+        if any(entry["policy_classification"] not in declared_counts for entry in entries):
+            raise GapPolicyValidationError("GAP_POLICY_UNDECLARED_INVENTORY_CLASSIFICATION")
+        actual_counts = {
+            classification: sum(
+                entry["policy_classification"] == classification for entry in entries
+            )
+            for classification in declared_counts
+        }
+        if actual_counts != declared_counts:
+            raise GapPolicyValidationError("GAP_POLICY_CLASSIFICATION_COUNT_TOTAL_MISMATCH")
+    allowlist_sha256 = digest({
+        "source_contract_type": contract,
+        "classification_allowlist": exact_allowlist,
+    })
+    if manifest["classification_allowlist"] != exact_allowlist:
+        raise GapPolicyValidationError("GAP_POLICY_CLASSIFICATION_ALLOWLIST_NOT_EXACT")
+    if ("classification_allowlist_sha256" in manifest
+            and manifest["classification_allowlist_sha256"].lower() != allowlist_sha256):
+        raise GapPolicyValidationError("GAP_POLICY_CLASSIFICATION_ALLOWLIST_SHA256_MISMATCH")
     entries_sha256 = digest(entries)
     identity_payload = {
         "schema_version": MANIFEST_VERSION,
@@ -287,10 +374,18 @@ def validate_gap_policy_data(manifest: dict[str, Any], manifest_root: Path) -> d
         "classification_allowlist": exact_allowlist,
         "normalized_entries_sha256": entries_sha256,
     }
+    policy_identity_sha256 = digest(identity_payload)
+    if ("expected_normalized_inventory_identity_sha256" in manifest
+            and manifest["expected_normalized_inventory_identity_sha256"].lower()
+            != policy_identity_sha256):
+        raise GapPolicyValidationError("GAP_POLICY_NORMALIZED_INVENTORY_IDENTITY_MISMATCH")
+    if ("expected_normalized_inventory_sha256" in manifest
+            and manifest["expected_normalized_inventory_sha256"].lower() != entries_sha256):
+        raise GapPolicyValidationError("GAP_POLICY_NORMALIZED_INVENTORY_SHA256_MISMATCH")
     return {
         "schema_version": MANIFEST_VERSION,
         "policy_id": manifest["policy_id"],
-        "policy_identity_sha256": digest(identity_payload),
+        "policy_identity_sha256": policy_identity_sha256,
         "source_contract_type": contract,
         "artifact_sha256": manifest["artifact_sha256"].lower(),
         "classification_allowlist": exact_allowlist,

@@ -22,6 +22,16 @@
       "items": {"type": "string", "minLength": 1}
     },
     "expected_entry_count": {"type": "integer", "minimum": 1},
+    "expected_accepted_closure_count": {"type": "integer", "minimum": 0},
+    "expected_unverified_gap_count": {"type": "integer", "minimum": 0},
+    "expected_classification_counts": {
+      "type": "object", "minProperties": 1,
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "classification_allowlist_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "expected_normalized_inventory_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "expected_normalized_inventory_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "require_canonical_source_order": {"type": "boolean"},
     "broker_history_completeness": {"const": "NOT_PROVEN"}
   },
   "$defs": {

@@ -1,0 +1,32 @@
+{
+  "fixture_contract": "FR-Prep-A2b-1 deterministic negative gap-policy contract validation only",
+  "base_positive_manifest": "A_valid_minimal_generic_accepted.json",
+  "cases": [
+    {"name":"01_missing_gap_policy_manifest","mode":"manifest_path","manifest_path":"missing_manifest.json","expected_code":"GAP_POLICY_MANIFEST_MISSING"},
+    {"name":"02_malformed_gap_policy_manifest","mode":"manifest_path","manifest_path":"malformed_manifest.json","expected_code":"GAP_POLICY_MANIFEST_MALFORMED"},
+    {"name":"03_manifest_required_field_missing","mode":"manifest_data","remove_manifest_fields":["policy_id"],"expected_code":"GAP_POLICY_MANIFEST_REQUIRED_FIELD_MISSING"},
+    {"name":"04_unsupported_schema_version","mode":"manifest_data","manifest_updates":{"schema_version":"gap_policy_manifest.v999"},"expected_code":"GAP_POLICY_MANIFEST_SCHEMA_VERSION_UNSUPPORTED"},
+    {"name":"05_missing_gap_artifact","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/missing.json"},"expected_code":"GAP_POLICY_ARTIFACT_MISSING"},
+    {"name":"06_artifact_sha256_mismatch","mode":"manifest_data","manifest_updates":{"artifact_sha256":"0000000000000000000000000000000000000000000000000000000000000000"},"expected_code":"GAP_POLICY_ARTIFACT_SHA256_MISMATCH"},
+    {"name":"07_gap_entry_required_field_missing","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/missing_entry_field.json","artifact_sha256":"a2b93237ab9cf238c6f1cb9299e844e900354196e09a89ca479ecff1306da1da"},"expected_code":"GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING"},
+    {"name":"08_invalid_previous_timestamp","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/invalid_previous.json","artifact_sha256":"338cc4231388fbe3fc6f97c60ba1e7d76ca2c05cda8c55969372b6e247a28e2f"},"expected_code":"GAP_POLICY_PREVIOUS_TIMESTAMP_INVALID"},
+    {"name":"09_invalid_next_timestamp","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/invalid_next.json","artifact_sha256":"600776b060486723d4d8d1366011229baf16a434228277d35f5b5ed8c7edf719"},"expected_code":"GAP_POLICY_NEXT_TIMESTAMP_INVALID"},
+    {"name":"10_equal_previous_next_timestamp","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/equal_timestamps.json","artifact_sha256":"0d487d279b191359e3b65f151d430a9af8ca02cfff0b1b38b685a4897ef43e2e"},"expected_code":"GAP_POLICY_TIMESTAMP_ORDER_INVALID"},
+    {"name":"11_previous_later_than_next_timestamp","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/later_previous.json","artifact_sha256":"fe9fc6a7c586a7b60fc3f8e92406c56f2be97229af76d2a07b85f1de764ade5a"},"expected_code":"GAP_POLICY_TIMESTAMP_ORDER_INVALID"},
+    {"name":"12_missing_classification","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/missing_classification.json","artifact_sha256":"6572daa77399da0aad2b3d9c7edb8b365a0c8e9b7afce2e78c112b0081d48afe"},"expected_code":"GAP_POLICY_CLASSIFICATION_MISSING"},
+    {"name":"13_classification_outside_exact_allowlist","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/classification_outside_allowlist.json","artifact_sha256":"4952c9a79169699bc8e35deb9646026b102cf4d6f587556b9f08d12a9be36537"},"expected_code":"GAP_POLICY_CLASSIFICATION_NOT_ALLOWLISTED"},
+    {
+      "name":"14_contradictory_fq_accepted_closure_booleans","mode":"manifest_data",
+      "manifest_updates":{"policy_id":"NEG_FQ_ACCEPTED","source_contract_type":"FQ_GAP_INVENTORY_V1","runtime_path":"../fr_prep_a2b1/artifacts/fq_accepted_contradiction.json","artifact_sha256":"b7882f1cc17a0fb17b04888c08664e7308c95c6ed842c35fa27b51e9289871bd","classification_allowlist":["ACCEPTED_ROUTINE_DAILY_SESSION_CLOSURE","ACCEPTED_ROUTINE_WEEKEND_CLOSURE","UNVERIFIED_GAP"]},
+      "expected_code":"FQ_ACCEPTED_CLOSURE_BOOLEANS_CONTRADICTORY"
+    },
+    {
+      "name":"15_contradictory_fq_unverified_gap_booleans","mode":"manifest_data",
+      "manifest_updates":{"policy_id":"NEG_FQ_UNVERIFIED","source_contract_type":"FQ_GAP_INVENTORY_V1","runtime_path":"../fr_prep_a2b1/artifacts/fq_unverified_contradiction.json","artifact_sha256":"b19ac23adb8d0db5ce0ebba6e0197e4d74bd0a27464120d2d387eec40e64d7fe","classification_allowlist":["ACCEPTED_ROUTINE_DAILY_SESSION_CLOSURE","ACCEPTED_ROUTINE_WEEKEND_CLOSURE","UNVERIFIED_GAP"]},
+      "expected_code":"FQ_UNVERIFIED_GAP_BOOLEANS_CONTRADICTORY"
+    },
+    {"name":"16_invalid_reset_booleans","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/invalid_reset_boolean.json","artifact_sha256":"00ec21951ad90b11d82501c5eb60d1628b90c30ad7988fe62a761cbe553f7f85"},"expected_code":"GAP_POLICY_RESET_BOOLEANS_INVALID"},
+    {"name":"17_invalid_event_crossing_boolean","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/invalid_event_crossing_boolean.json","artifact_sha256":"c7cc413d130ba0d6706c09e31b7292b0ea15547c69939fc58ec75a53c3dad18d"},"expected_code":"GAP_POLICY_EVENT_CROSSING_BOOLEAN_INVALID"},
+    {"name":"18_invalid_warmup_boolean","mode":"manifest_data","manifest_updates":{"runtime_path":"../fr_prep_a2b1/artifacts/invalid_warmup_boolean.json","artifact_sha256":"ddd926a0b0b171fb586b68b1bd5784f7fa90433f8993358ffe33f4c542e58d43"},"expected_code":"GAP_POLICY_WARMUP_BOOLEAN_INVALID"}
+  ]
+}

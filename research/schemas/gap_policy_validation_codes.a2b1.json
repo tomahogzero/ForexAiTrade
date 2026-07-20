@@ -1,0 +1,36 @@
+{
+  "schema_version": "gap_policy_validation_codes.a2b1",
+  "checkpoint": "FR-Prep-A2b-1",
+  "precedence_contract": [
+    "manifest path existence",
+    "manifest JSON decoding and object shape",
+    "manifest required fields",
+    "manifest schema version and frozen profile declarations",
+    "artifact path existence",
+    "artifact SHA-256",
+    "entry required fields",
+    "previous timestamp, next timestamp, then strict pair ordering",
+    "classification presence then exact allowlist membership",
+    "generic reset, event-crossing, and warmup semantic consistency",
+    "FQ explicit accepted/fail-closed consistency"
+  ],
+  "codes": [
+    {"code":"GAP_POLICY_MANIFEST_MISSING","validation_layer":"manifest_path","meaning":"Declared gap-policy manifest path does not exist.","precedence":10,"fixture":"01_missing_gap_policy_manifest"},
+    {"code":"GAP_POLICY_MANIFEST_MALFORMED","validation_layer":"manifest_parse","meaning":"Manifest is not valid JSON or is not an object.","precedence":20,"fixture":"02_malformed_gap_policy_manifest"},
+    {"code":"GAP_POLICY_MANIFEST_REQUIRED_FIELD_MISSING","validation_layer":"manifest_shape","meaning":"Manifest omits a required v1 field.","precedence":30,"fixture":"03_manifest_required_field_missing"},
+    {"code":"GAP_POLICY_MANIFEST_SCHEMA_VERSION_UNSUPPORTED","validation_layer":"manifest_schema","meaning":"Manifest schema version is not gap_policy_manifest.v1.","precedence":40,"fixture":"04_unsupported_schema_version"},
+    {"code":"GAP_POLICY_ARTIFACT_MISSING","validation_layer":"artifact_path","meaning":"Relocatable gap artifact path does not resolve to a file.","precedence":50,"fixture":"05_missing_gap_artifact"},
+    {"code":"GAP_POLICY_ARTIFACT_SHA256_MISMATCH","validation_layer":"artifact_integrity","meaning":"Gap artifact bytes do not match the declared SHA-256.","precedence":60,"fixture":"06_artifact_sha256_mismatch"},
+    {"code":"GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING","validation_layer":"entry_shape","meaning":"A gap entry omits a required non-classification field.","precedence":70,"fixture":"07_gap_entry_required_field_missing"},
+    {"code":"GAP_POLICY_PREVIOUS_TIMESTAMP_INVALID","validation_layer":"entry_timestamp","meaning":"Previous-bar timestamp is not a valid naive timestamp.","precedence":80,"fixture":"08_invalid_previous_timestamp"},
+    {"code":"GAP_POLICY_NEXT_TIMESTAMP_INVALID","validation_layer":"entry_timestamp","meaning":"Next-bar timestamp is not a valid naive timestamp.","precedence":90,"fixture":"09_invalid_next_timestamp"},
+    {"code":"GAP_POLICY_TIMESTAMP_ORDER_INVALID","validation_layer":"entry_timestamp_order","meaning":"Previous timestamp is equal to or later than next timestamp.","precedence":100,"fixture":["10_equal_previous_next_timestamp","11_previous_later_than_next_timestamp"]},
+    {"code":"GAP_POLICY_CLASSIFICATION_MISSING","validation_layer":"entry_classification","meaning":"Policy classification is absent or empty.","precedence":110,"fixture":"12_missing_classification"},
+    {"code":"GAP_POLICY_CLASSIFICATION_NOT_ALLOWLISTED","validation_layer":"entry_classification","meaning":"Classification is outside the exact frozen contract allowlist.","precedence":120,"fixture":"13_classification_outside_exact_allowlist"},
+    {"code":"GAP_POLICY_RESET_BOOLEANS_INVALID","validation_layer":"entry_semantics","meaning":"One or more reset flags conflict with frozen classification semantics.","precedence":130,"fixture":"16_invalid_reset_booleans"},
+    {"code":"GAP_POLICY_EVENT_CROSSING_BOOLEAN_INVALID","validation_layer":"entry_semantics","meaning":"Event-crossing prohibition conflicts with frozen classification semantics.","precedence":140,"fixture":"17_invalid_event_crossing_boolean"},
+    {"code":"GAP_POLICY_WARMUP_BOOLEAN_INVALID","validation_layer":"entry_semantics","meaning":"Post-gap warmup flag conflicts with frozen classification semantics.","precedence":150,"fixture":"18_invalid_warmup_boolean"},
+    {"code":"FQ_ACCEPTED_CLOSURE_BOOLEANS_CONTRADICTORY","validation_layer":"fq_explicit_semantics","meaning":"FQ accepted closure declares contradictory accepted/fail-closed booleans.","precedence":160,"fixture":"14_contradictory_fq_accepted_closure_booleans"},
+    {"code":"FQ_UNVERIFIED_GAP_BOOLEANS_CONTRADICTORY","validation_layer":"fq_explicit_semantics","meaning":"FQ UNVERIFIED_GAP declares contradictory accepted/fail-closed booleans.","precedence":170,"fixture":"15_contradictory_fq_unverified_gap_booleans"}
+  ]
+}

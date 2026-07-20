@@ -42,10 +42,29 @@ SEMANTIC_FIELDS = (
     "reset_retest_confirmation_state", "prohibit_event_crossing",
     "require_fresh_post_gap_warmup",
 )
+A2B1_VALIDATION_CODES = frozenset({
+    "GAP_POLICY_MANIFEST_MISSING", "GAP_POLICY_MANIFEST_MALFORMED",
+    "GAP_POLICY_MANIFEST_REQUIRED_FIELD_MISSING",
+    "GAP_POLICY_MANIFEST_SCHEMA_VERSION_UNSUPPORTED",
+    "GAP_POLICY_ARTIFACT_MISSING", "GAP_POLICY_ARTIFACT_SHA256_MISMATCH",
+    "GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING",
+    "GAP_POLICY_PREVIOUS_TIMESTAMP_INVALID", "GAP_POLICY_NEXT_TIMESTAMP_INVALID",
+    "GAP_POLICY_TIMESTAMP_ORDER_INVALID", "GAP_POLICY_CLASSIFICATION_MISSING",
+    "GAP_POLICY_CLASSIFICATION_NOT_ALLOWLISTED",
+    "FQ_ACCEPTED_CLOSURE_BOOLEANS_CONTRADICTORY",
+    "FQ_UNVERIFIED_GAP_BOOLEANS_CONTRADICTORY",
+    "GAP_POLICY_RESET_BOOLEANS_INVALID",
+    "GAP_POLICY_EVENT_CROSSING_BOOLEAN_INVALID",
+    "GAP_POLICY_WARMUP_BOOLEAN_INVALID",
+})
 
 
 class GapPolicyValidationError(ValueError):
     """Gap-policy input violates the frozen adapter contract."""
+
+    def __init__(self, code: str):
+        self.code = code
+        super().__init__(code)
 
 
 def canonical_bytes(value: Any) -> bytes:
@@ -64,21 +83,21 @@ def sha256_file(path: Path) -> str:
     return checksum.hexdigest()
 
 
-def _require(mapping: dict[str, Any], keys: tuple[str, ...], label: str) -> None:
+def _require(mapping: dict[str, Any], keys: tuple[str, ...], code: str) -> None:
     missing = [key for key in keys if key not in mapping]
     if missing:
-        raise GapPolicyValidationError(f"{label} missing required fields")
+        raise GapPolicyValidationError(code)
 
 
-def _timestamp(value: Any) -> str:
+def _timestamp(value: Any, code: str) -> str:
     if not isinstance(value, str):
-        raise GapPolicyValidationError("gap timestamp is not a string")
+        raise GapPolicyValidationError(code)
     try:
         parsed = datetime.fromisoformat(value)
     except ValueError as exc:
-        raise GapPolicyValidationError("gap timestamp is not parseable") from exc
+        raise GapPolicyValidationError(code) from exc
     if parsed.tzinfo is not None:
-        raise GapPolicyValidationError("timezone-aware gap timestamp is not allowed")
+        raise GapPolicyValidationError(code)
     return parsed.isoformat()
 
 
@@ -88,7 +107,7 @@ def _semantics(contract: str, classification: str) -> dict[str, Any]:
     elif classification in UNVERIFIED_CLASSIFICATIONS[contract]:
         accepted = False
     else:
-        raise GapPolicyValidationError("classification is not in the exact frozen allowlist")
+        raise GapPolicyValidationError("GAP_POLICY_CLASSIFICATION_NOT_ALLOWLISTED")
     return {
         "closure_disposition": "ACCEPTED_CLOSURE" if accepted else "UNVERIFIED_GAP",
         "accepted_for_trading_bar_skip": accepted,
@@ -105,14 +124,14 @@ def _entry(
     contract: str, gap_id: str, previous: Any, next_: Any,
     classification: str, source_record_identity: str,
 ) -> dict[str, Any]:
-    previous_timestamp = _timestamp(previous)
-    next_timestamp = _timestamp(next_)
+    previous_timestamp = _timestamp(previous, "GAP_POLICY_PREVIOUS_TIMESTAMP_INVALID")
+    next_timestamp = _timestamp(next_, "GAP_POLICY_NEXT_TIMESTAMP_INVALID")
     if datetime.fromisoformat(previous_timestamp) >= datetime.fromisoformat(next_timestamp):
-        raise GapPolicyValidationError("previous gap timestamp must precede next timestamp")
-    if not all(isinstance(value, str) and value for value in (
-        gap_id, classification, source_record_identity,
-    )):
-        raise GapPolicyValidationError("gap identity and classification must be explicit")
+        raise GapPolicyValidationError("GAP_POLICY_TIMESTAMP_ORDER_INVALID")
+    if not all(isinstance(value, str) and value for value in (gap_id, source_record_identity)):
+        raise GapPolicyValidationError("GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING")
+    if not isinstance(classification, str) or not classification:
+        raise GapPolicyValidationError("GAP_POLICY_CLASSIFICATION_MISSING")
     return {
         "schema_version": ENTRY_VERSION,
         "gap_id": gap_id,
@@ -136,15 +155,26 @@ def _read_generic(path: Path) -> list[dict[str, Any]]:
     for record in records:
         _require(record, (
             "gap_id", "previous_bar_timestamp", "next_bar_timestamp",
-            "policy_classification", "source_record_identity", *SEMANTIC_FIELDS,
-        ), "generic gap entry")
+            "source_record_identity", *SEMANTIC_FIELDS,
+        ), "GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING")
         normalized = _entry(
             GENERIC_CONTRACT, record["gap_id"], record["previous_bar_timestamp"],
-            record["next_bar_timestamp"], record["policy_classification"],
+            record["next_bar_timestamp"], record.get("policy_classification"),
             record["source_record_identity"],
         )
-        if any(record[field] != normalized[field] for field in SEMANTIC_FIELDS):
+        if any(record[field] != normalized[field] for field in (
+            "accepted_for_trading_bar_skip", "fail_closed_required",
+        )):
             raise GapPolicyValidationError("generic semantic booleans conflict with classification")
+        if any(record[field] != normalized[field] for field in (
+            "reset_active_swing_state", "reset_open_break_candidate",
+            "reset_retest_confirmation_state",
+        )):
+            raise GapPolicyValidationError("GAP_POLICY_RESET_BOOLEANS_INVALID")
+        if record["prohibit_event_crossing"] != normalized["prohibit_event_crossing"]:
+            raise GapPolicyValidationError("GAP_POLICY_EVENT_CROSSING_BOOLEAN_INVALID")
+        if record["require_fresh_post_gap_warmup"] != normalized["require_fresh_post_gap_warmup"]:
+            raise GapPolicyValidationError("GAP_POLICY_WARMUP_BOOLEAN_INVALID")
         entries.append(normalized)
     return entries
 
@@ -185,18 +215,23 @@ def _read_fq(path: Path) -> list[dict[str, Any]]:
     for record in records:
         _require(record, (
             "gap_id", "previous_bar_timestamp", "next_bar_timestamp",
-            "policy_classification", "accepted_for_trading_bar_skip",
+            "accepted_for_trading_bar_skip",
             "fail_closed_required",
-        ), "FQ gap entry")
+        ), "GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING")
         normalized = _entry(
             FQ_CONTRACT, record["gap_id"], record["previous_bar_timestamp"],
-            record["next_bar_timestamp"], record["policy_classification"],
+            record["next_bar_timestamp"], record.get("policy_classification"),
             record.get("source_record_identity", f"{FQ_CONTRACT}:{record['gap_id']}"),
         )
         if any(record[field] != normalized[field] for field in (
             "accepted_for_trading_bar_skip", "fail_closed_required",
         )):
-            raise GapPolicyValidationError("FQ explicit booleans conflict with classification")
+            code = (
+                "FQ_ACCEPTED_CLOSURE_BOOLEANS_CONTRADICTORY"
+                if normalized["closure_disposition"] == "ACCEPTED_CLOSURE"
+                else "FQ_UNVERIFIED_GAP_BOOLEANS_CONTRADICTORY"
+            )
+            raise GapPolicyValidationError(code)
         entries.append(normalized)
     return entries
 
@@ -206,9 +241,9 @@ def validate_gap_policy_data(manifest: dict[str, Any], manifest_root: Path) -> d
         "schema_version", "policy_id", "source_contract_type", "runtime_path",
         "artifact_sha256", "classification_allowlist", "expected_entry_count",
         "broker_history_completeness",
-    ), "gap policy manifest")
+    ), "GAP_POLICY_MANIFEST_REQUIRED_FIELD_MISSING")
     if manifest["schema_version"] != MANIFEST_VERSION:
-        raise GapPolicyValidationError("gap policy manifest version mismatch")
+        raise GapPolicyValidationError("GAP_POLICY_MANIFEST_SCHEMA_VERSION_UNSUPPORTED")
     contract = manifest["source_contract_type"]
     if contract not in CONTRACT_TYPES:
         raise GapPolicyValidationError("unsupported source contract type")
@@ -220,8 +255,10 @@ def validate_gap_policy_data(manifest: dict[str, Any], manifest_root: Path) -> d
     path = Path(manifest["runtime_path"])
     if not path.is_absolute():
         path = manifest_root / path
-    if not path.is_file() or sha256_file(path) != manifest["artifact_sha256"].lower():
-        raise GapPolicyValidationError("gap policy artifact integrity failure")
+    if not path.is_file():
+        raise GapPolicyValidationError("GAP_POLICY_ARTIFACT_MISSING")
+    if sha256_file(path) != manifest["artifact_sha256"].lower():
+        raise GapPolicyValidationError("GAP_POLICY_ARTIFACT_SHA256_MISMATCH")
     if contract == GENERIC_CONTRACT:
         entries = _read_generic(path)
     elif contract == EO_FJ_CONTRACT:
@@ -265,5 +302,12 @@ def validate_gap_policy_data(manifest: dict[str, Any], manifest_root: Path) -> d
 
 
 def validate_gap_policy(manifest_path: Path) -> dict[str, Any]:
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if not manifest_path.is_file():
+        raise GapPolicyValidationError("GAP_POLICY_MANIFEST_MISSING")
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, UnicodeError) as exc:
+        raise GapPolicyValidationError("GAP_POLICY_MANIFEST_MALFORMED") from exc
+    if not isinstance(manifest, dict):
+        raise GapPolicyValidationError("GAP_POLICY_MANIFEST_MALFORMED")
     return validate_gap_policy_data(manifest, manifest_path.parent)

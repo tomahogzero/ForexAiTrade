@@ -1,0 +1,110 @@
+{
+  "01_missing_gap_policy_manifest": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_MANIFEST_MISSING",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_MANIFEST_MISSING"
+  },
+  "02_malformed_gap_policy_manifest": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_MANIFEST_MALFORMED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_MANIFEST_MALFORMED"
+  },
+  "03_manifest_required_field_missing": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_MANIFEST_REQUIRED_FIELD_MISSING",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_MANIFEST_REQUIRED_FIELD_MISSING"
+  },
+  "04_unsupported_schema_version": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_MANIFEST_SCHEMA_VERSION_UNSUPPORTED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_MANIFEST_SCHEMA_VERSION_UNSUPPORTED"
+  },
+  "05_missing_gap_artifact": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_ARTIFACT_MISSING",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_ARTIFACT_MISSING"
+  },
+  "06_artifact_sha256_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_ARTIFACT_SHA256_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_ARTIFACT_SHA256_MISMATCH"
+  },
+  "07_gap_entry_required_field_missing": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_ENTRY_REQUIRED_FIELD_MISSING"
+  },
+  "08_invalid_previous_timestamp": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_PREVIOUS_TIMESTAMP_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_PREVIOUS_TIMESTAMP_INVALID"
+  },
+  "09_invalid_next_timestamp": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_NEXT_TIMESTAMP_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_NEXT_TIMESTAMP_INVALID"
+  },
+  "10_equal_previous_next_timestamp": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_TIMESTAMP_ORDER_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_TIMESTAMP_ORDER_INVALID"
+  },
+  "11_previous_later_than_next_timestamp": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_TIMESTAMP_ORDER_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_TIMESTAMP_ORDER_INVALID"
+  },
+  "12_missing_classification": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_CLASSIFICATION_MISSING",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_CLASSIFICATION_MISSING"
+  },
+  "13_classification_outside_exact_allowlist": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_CLASSIFICATION_NOT_ALLOWLISTED",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_CLASSIFICATION_NOT_ALLOWLISTED"
+  },
+  "14_contradictory_fq_accepted_closure_booleans": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "FQ_ACCEPTED_CLOSURE_BOOLEANS_CONTRADICTORY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "FQ_ACCEPTED_CLOSURE_BOOLEANS_CONTRADICTORY"
+  },
+  "15_contradictory_fq_unverified_gap_booleans": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "FQ_UNVERIFIED_GAP_BOOLEANS_CONTRADICTORY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "FQ_UNVERIFIED_GAP_BOOLEANS_CONTRADICTORY"
+  },
+  "16_invalid_reset_booleans": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_RESET_BOOLEANS_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_RESET_BOOLEANS_INVALID"
+  },
+  "17_invalid_event_crossing_boolean": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_EVENT_CROSSING_BOOLEAN_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_EVENT_CROSSING_BOOLEAN_INVALID"
+  },
+  "18_invalid_warmup_boolean": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "GAP_POLICY_WARMUP_BOOLEAN_INVALID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "GAP_POLICY_WARMUP_BOOLEAN_INVALID"
+  }
+}

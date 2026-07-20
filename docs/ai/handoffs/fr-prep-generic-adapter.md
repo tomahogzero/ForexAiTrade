@@ -3,7 +3,7 @@
 ## 1. Current branch and latest implementation commit
 
 - Branch: `agent/fr-prep-generic-adapter`
-- Implementation commit: `1a76e8d8248de89712e2df67e0e0907c5b3ecc12`
+- Implementation commit: `9df4b7039f262560ffa6072b676506fbe015ed0e`
 
 ## 2. Base origin/main commit
 
@@ -11,10 +11,9 @@
 
 ## 3. Completed micro-steps
 
-- A0: adapter inventory and frozen interface design
-- A1a: generic source manifest and source adapter core
-- A1b-1: negative source validation cases 1–9 and frozen failure codes
-- A1b-2: remaining source/aggregate negative validation and complete A1 code registry
+- A0 complete: adapter inventory and frozen interface design
+- A1 complete: source adapter core, positive fixtures, and all frozen negative validation codes
+- A2 positive gap adapter complete: generic schema/core, EO/FJ and FQ mappings, and eight positive fixtures
 
 ## 4. Files added or changed
 
@@ -22,6 +21,7 @@
 - A1a: `.gitattributes`, `tools/historical_source_adapter.py`, A1a fixture runner, manifest schema, positive fixtures/golden output, machine-readable summary, checkpoint document, and current-status marker
 - A1b-1: stable-code adapter update, negative fixture runner, nine negative cases/golden failures, deterministic summary, checkpoint document, and current-status marker
 - A1b-2: stable-code adapter update, 13 negative cases/golden failures, deterministic runner/summary, validation registry/precedence, checkpoint document, and current-status marker
+- A2: gap-policy schema/adapter, EO/FJ and FQ mappings, eight positive fixtures/golden, deterministic runner/summary, checkpoint document, and current-status marker
 
 ## 5. Validation results
 
@@ -33,6 +33,8 @@
 - Negative replay/golden SHA-256: `97cf9cc363d58615fab7f1c50f7c8535498a62aaf39485810d3975863c37cbb8`
 - A1b-2 negative fixtures: `13/13 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
 - A1b-2 replay/golden SHA-256: `5bde1d04d27c67a089103c344ff17918a795d9dc14176fae6dffc58782b242a4`
+- A2 positive gap fixtures: `8/8 PASS`; mismatch `0`; relocation identical
+- A2 replay/golden SHA-256: `7a6c6b95c1f1019be4f743906dfc633b26069f14a0df2e63236c121b33d7f6ff`
 - `git diff --check`, references, staged scope, and frozen-file hashes: `PASS`
 
 ## 6. Frozen files that must not change
@@ -45,11 +47,11 @@
 
 ## 7. Current project safety status
 
-`broker_history_completeness=NOT_PROVEN`; A1 source validation complete; gap policy, detector/FI, population, events/ATR-events/outcomes, FJ replay, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
+`broker_history_completeness=NOT_PROVEN`; A1 validation and A2 positive adapter fixtures complete; detector/FI, FJ/FQ runners, population, events/ATR-events/outcomes, TP/SL, and holdout preflight not executed; strategy performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`.
 
 ## 8. Exact next micro-step
 
-FR-Prep-A2 — Generic Gap-Policy Adapter Design and Positive Fixtures.
+FR-Prep-A2b — Negative Gap-Policy Validation and Frozen Failure Codes.
 
 ## 9. Prohibited work
 

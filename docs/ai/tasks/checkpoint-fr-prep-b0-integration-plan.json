@@ -1,0 +1,30 @@
+{
+  "schema_version": "fr_prep_b0_integration_plan.v1",
+  "checkpoint": "FR-Prep-B0",
+  "decision": "FR_PREP_B0_PASS_INTEGRATION_PLAN_READY",
+  "base_commit": "bbc0e5df0ce59663bb2a0ad074ed4fd61cc7de85",
+  "design_only": true,
+  "frozen_files": ["tools/market_structure_break_retest_detector.py", "tools/run_checkpoint_fi_detector_fixtures.py", "tests/fixtures/checkpoint_fi_detector_cases.json", "tests/fixtures/checkpoint_fi_detector_inputs.json", "tests/fixtures/checkpoint_fi_detector_expected.json"],
+  "fj_runner_change_required": false,
+  "preferred_architecture": {
+    "new_module": "tools/fr_prep_runner_execution_wrapper.py",
+    "authorization_contract": "fr_prep_runner_execution_authorization.v1",
+    "authorization_modes": ["FJ_BACKWARD_COMPATIBLE_REPLAY_ONLY", "PREFLIGHT_ONLY"],
+    "order": ["validate authorization before detector import", "validate historical_source_manifest.v1", "validate gap_policy_manifest.v1", "compose and validate dataset_execution_descriptor.v1", "reconcile profile-specific frozen counts", "import unchanged detector only for FJ_BACKWARD_COMPATIBLE_REPLAY_ONLY"]
+  },
+  "fj_replay_contract": {"dataset": "FJ_2023_2025_GOLD_H1", "fi_fixtures": "12/12 PASS", "bars": 17716, "events": 1079, "long": 588, "short": 491, "event_ids_identical": true, "row_ordering_identical": true, "canonical_population_byte_identical": true, "mismatch_count": 0, "detector_rule_change": false, "gap_policy_semantic_change": false},
+  "holdout_preflight_contract": {
+    "mode": "PREFLIGHT_ONLY", "cli_flag": "--preflight-only", "dataset": "FP_FQ_2020_2022_GOLD_H1",
+    "reconciliation": {"bars": 17731, "total_gaps": 774, "accepted_weekend_closures": 149, "unverified_gap": 625},
+    "allowed_operations": ["source path/hash/schema/timeline validation", "FQ inventory validation", "descriptor composition", "frozen-count reconciliation", "sealed preflight report"],
+    "prohibited_operations": ["detector import", "detector execution", "swing/break/retest/confirmation detection", "events", "ATR events", "TP/SL", "outcome traversal", "FN interpretation"],
+    "guard_proof": {"detector_import_count": 0, "detector_execution_count": 0}
+  },
+  "steps": [
+    {"id": "FR-Prep-B1", "scope": "wrapper implementation and synthetic execution-guard fixtures"},
+    {"id": "FR-Prep-B2", "scope": "frozen FJ 2023-2025 backward-compatible replay"},
+    {"id": "FR-Prep-B3", "scope": "real FP/FQ 2020-2022 preflight-only validation"},
+    {"id": "Future sealed FR", "scope": "holdout detector, outcomes, independent audit, and FN disposition"}
+  ],
+  "safety_status": {"broker_history_completeness": "NOT_PROVEN", "strategy_performance": "NOT_EVALUATED", "profitability": "NOT_CLAIMED", "order_logic": "NOT_APPROVED", "candidate": "NOT_READY_FOR_ORDER_LOGIC"}
+}

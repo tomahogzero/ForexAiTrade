@@ -2,6 +2,13 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-B0 Refresh
+
+- status: `FR_PREP_B0_DESIGN_ONLY`
+- decision: `FR_PREP_B0_PASS_INTEGRATION_PLAN_READY`
+- design inventory only: FJ runner remains unchanged; B1 is a separate wrapper plus synthetic guards; B2/B3/FR are not run
+- broker-history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
 ## Latest FR-Prep-A3b Refresh
 
 - status: `FR_PREP_A3B_ADAPTER_CONTRACT_CLOSED`

@@ -2,6 +2,12 @@
 
 Last updated: 2026-07-18
 
+## Latest FR-Prep-B1 Refresh
+
+- status: `FR_PREP_B1_SYNTHETIC_WRAPPER_GUARDS`
+- decision: `FR_PREP_B1_PASS_SYNTHETIC_WRAPPER_GUARDS`; synthetic positives `8/8`, negatives `27/27 PASS`; real detector import/execution `0/0`
+- B2/B3 remain not run; broker history `NOT_PROVEN`; performance `NOT_EVALUATED`; profitability `NOT_CLAIMED`; order logic `NOT_APPROVED`; candidate `NOT_READY_FOR_ORDER_LOGIC`
+
 ## Latest FR-Prep-B0 Refresh
 
 - status: `FR_PREP_B0_DESIGN_ONLY`

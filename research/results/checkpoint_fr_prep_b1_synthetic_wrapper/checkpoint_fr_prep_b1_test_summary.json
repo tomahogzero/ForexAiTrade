@@ -1,0 +1,429 @@
+{
+  "atr_event_emit_count": 0,
+  "checkpoint_status": "FR_PREP_B1_SYNTHETIC_WRAPPER_GUARDS",
+  "deterministic_mismatch_count": 0,
+  "fn_interpretation_count": 0,
+  "golden_sha256": "942b04a08065d04fb969141dc97c5586cf15c64543c95402da01e589eb7b36e6",
+  "negative": [
+    {
+      "actual": "AUTHORIZATION_ARTIFACT_MISSING",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "AUTHORIZATION_ARTIFACT_MISSING",
+      "fixture": "01"
+    },
+    {
+      "actual": "AUTHORIZATION_JSON_MALFORMED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "AUTHORIZATION_JSON_MALFORMED",
+      "fixture": "02"
+    },
+    {
+      "actual": "AUTHORIZATION_SCHEMA_VERSION_UNSUPPORTED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "AUTHORIZATION_SCHEMA_VERSION_UNSUPPORTED",
+      "fixture": "03"
+    },
+    {
+      "actual": "AUTHORIZATION_REQUIRED_FIELD_MISSING",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "AUTHORIZATION_REQUIRED_FIELD_MISSING",
+      "fixture": "04"
+    },
+    {
+      "actual": "AUTHORIZATION_MODE_NOT_ALLOWLISTED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "AUTHORIZATION_MODE_NOT_ALLOWLISTED",
+      "fixture": "05"
+    },
+    {
+      "actual": "REQUESTED_OPERATION_NOT_ALLOWLISTED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "REQUESTED_OPERATION_NOT_ALLOWLISTED",
+      "fixture": "06"
+    },
+    {
+      "actual": "B1_REAL_DATASET_REJECTED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "B1_REAL_DATASET_REJECTED",
+      "fixture": "07"
+    },
+    {
+      "actual": "B1_REAL_DATASET_REJECTED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "B1_REAL_DATASET_REJECTED",
+      "fixture": "08"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "09"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "10"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "11"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "12"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "13"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "14"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "15"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "16"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "17"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "18"
+    },
+    {
+      "actual": "MODE_OPERATION_NOT_AUTHORIZED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "MODE_OPERATION_NOT_AUTHORIZED",
+      "fixture": "19"
+    },
+    {
+      "actual": "AUTHORIZATION_DATASET_ID_MISMATCH",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "AUTHORIZATION_DATASET_ID_MISMATCH",
+      "fixture": "20"
+    },
+    {
+      "actual": "AUTHORIZATION_DESCRIPTOR_MODE_CONFLICT",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "AUTHORIZATION_DESCRIPTOR_MODE_CONFLICT",
+      "fixture": "21"
+    },
+    {
+      "actual": "DETECTOR_PERMISSION_CONTRADICTS_MODE",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "DETECTOR_PERMISSION_CONTRADICTS_MODE",
+      "fixture": "22"
+    },
+    {
+      "actual": "OUTCOME_PERMISSION_NOT_FALSE",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "OUTCOME_PERMISSION_NOT_FALSE",
+      "fixture": "23"
+    },
+    {
+      "actual": "SOURCE_VALIDATION_FAILED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "SOURCE_VALIDATION_FAILED",
+      "fixture": "24"
+    },
+    {
+      "actual": "GAP_POLICY_VALIDATION_FAILED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "GAP_POLICY_VALIDATION_FAILED",
+      "fixture": "25"
+    },
+    {
+      "actual": "DESCRIPTOR_VALIDATION_FAILED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "DESCRIPTOR_VALIDATION_FAILED",
+      "fixture": "26"
+    },
+    {
+      "actual": "FROZEN_COUNT_RECONCILIATION_FAILED",
+      "counters": {
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "real_detector_import_count": 0
+      },
+      "expected": "FROZEN_COUNT_RECONCILIATION_FAILED",
+      "fixture": "27"
+    }
+  ],
+  "negative_fixture_count": 27,
+  "negative_fixtures_passed": 27,
+  "outcome_emit_count": 0,
+  "positive": [
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":0,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":0,\"injected_stub_loader_count\":0,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_SEALED_PREFLIGHT_REPORT\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"19cdc2c3d29377eb8761d7db07c637770d3a9baa6d64956f58814911f482ac43\",\"authorization_mode\":\"PREFLIGHT_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"execution_descriptor_sha256\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_EVENT_POPULATION\",\"EMIT_OUTCOMES\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":null}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 0,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "A",
+      "ok": true
+    },
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":0,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":0,\"injected_stub_loader_count\":0,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_SEALED_PREFLIGHT_REPORT\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"19cdc2c3d29377eb8761d7db07c637770d3a9baa6d64956f58814911f482ac43\",\"authorization_mode\":\"PREFLIGHT_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"execution_descriptor_sha256\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_EVENT_POPULATION\",\"EMIT_OUTCOMES\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":null}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 0,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "B",
+      "ok": true
+    },
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":0,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":0,\"injected_stub_loader_count\":0,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_SEALED_PREFLIGHT_REPORT\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"19cdc2c3d29377eb8761d7db07c637770d3a9baa6d64956f58814911f482ac43\",\"authorization_mode\":\"PREFLIGHT_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"execution_descriptor_sha256\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_EVENT_POPULATION\",\"EMIT_OUTCOMES\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":null}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 0,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "C",
+      "ok": true
+    },
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":0,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":0,\"injected_stub_loader_count\":0,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_SEALED_PREFLIGHT_REPORT\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"19cdc2c3d29377eb8761d7db07c637770d3a9baa6d64956f58814911f482ac43\",\"authorization_mode\":\"PREFLIGHT_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"execution_descriptor_sha256\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_EVENT_POPULATION\",\"EMIT_OUTCOMES\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":null}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 0,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "D",
+      "ok": true
+    },
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":0,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":0,\"injected_stub_loader_count\":0,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_SEALED_PREFLIGHT_REPORT\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"19cdc2c3d29377eb8761d7db07c637770d3a9baa6d64956f58814911f482ac43\",\"authorization_mode\":\"PREFLIGHT_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"execution_descriptor_sha256\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_EVENT_POPULATION\",\"EMIT_OUTCOMES\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":null}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 0,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "E",
+      "ok": true
+    },
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":0,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":0,\"injected_stub_loader_count\":0,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_SEALED_PREFLIGHT_REPORT\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"19cdc2c3d29377eb8761d7db07c637770d3a9baa6d64956f58814911f482ac43\",\"authorization_mode\":\"PREFLIGHT_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"execution_descriptor_sha256\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_EVENT_POPULATION\",\"EMIT_OUTCOMES\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":null}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 0,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "F",
+      "ok": true
+    },
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":1,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":1,\"injected_stub_loader_count\":1,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_EVENT_POPULATION\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"76ff8f4992c39e9179dcc8f21851813a95e7c0f02dfb5c119192d96754b976a3\",\"authorization_mode\":\"FJ_BACKWARD_COMPATIBLE_REPLAY_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"85bad934423e8bd7ee9551a6382d46350eb5c5063c706dc3a0ea5124ea32fc54\",\"execution_descriptor_sha256\":\"85bad934423e8bd7ee9551a6382d46350eb5c5063c706dc3a0ea5124ea32fc54\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_OUTCOMES\",\"EMIT_SEALED_PREFLIGHT_REPORT\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":{\"event_id\":\"SYNTH-E1\"}}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 1,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 1,
+        "injected_stub_loader_count": 1,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "G",
+      "ok": true
+    },
+    {
+      "canonical": "{\"counters\":{\"atr_event_emit_count\":0,\"event_population_emit_count\":0,\"fn_interpretation_count\":0,\"injected_stub_execution_count\":0,\"injected_stub_loader_count\":0,\"outcome_emit_count\":0,\"real_detector_execution_count\":0,\"real_detector_import_count\":0,\"real_fj_fq_file_open_count\":0,\"tp_sl_calculation_count\":0},\"report\":{\"allowed_operations\":[\"COMPOSE_EXECUTION_DESCRIPTOR\",\"EMIT_SEALED_PREFLIGHT_REPORT\",\"RECONCILE_FROZEN_COUNTS\",\"VALIDATE_GAP_POLICY\",\"VALIDATE_SOURCE\"],\"authorization_identity\":\"19cdc2c3d29377eb8761d7db07c637770d3a9baa6d64956f58814911f482ac43\",\"authorization_mode\":\"PREFLIGHT_ONLY\",\"dataset_identity\":\"301b2699cbac5eac1ea7d62fe5bbde117ad848ff588c0f5fdbaf3a6c8fc1add0\",\"detector_execution_count\":0,\"detector_import_count\":0,\"execution_descriptor_identity\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"execution_descriptor_sha256\":\"b5c74ef5d1c633aa79951ce0fe5af5e2de96483a138112a473f87a880cc7a838\",\"gap_policy_validation_identity\":\"SYNTH_GAP\",\"gap_policy_validation_sha256\":\"1111111111111111111111111111111111111111111111111111111111111111\",\"reconciled_synthetic_counts\":{\"bars\":3},\"rejected_execution_capabilities\":[\"APPLY_FN_INTERPRETATION\",\"CALCULATE_TP_SL\",\"EMIT_ATR_EVENTS\",\"EMIT_EVENT_POPULATION\",\"EMIT_OUTCOMES\",\"EXECUTE_DETECTOR\",\"IMPORT_DETECTOR\"],\"safety_status\":{\"broker_history_completeness\":\"NOT_PROVEN\",\"candidate\":\"NOT_READY_FOR_ORDER_LOGIC\",\"order_logic\":\"NOT_APPROVED\",\"profitability\":\"NOT_CLAIMED\",\"strategy_performance\":\"NOT_EVALUATED\"},\"source_validation_identity\":\"SYNTH_SOURCE\",\"source_validation_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"},\"synthetic_event_population\":null}",
+      "counters": {
+        "atr_event_emit_count": 0,
+        "event_population_emit_count": 0,
+        "fn_interpretation_count": 0,
+        "injected_stub_execution_count": 0,
+        "injected_stub_loader_count": 0,
+        "outcome_emit_count": 0,
+        "real_detector_execution_count": 0,
+        "real_detector_import_count": 0,
+        "real_fj_fq_file_open_count": 0,
+        "tp_sl_calculation_count": 0
+      },
+      "fixture": "H",
+      "ok": true
+    }
+  ],
+  "positive_fixture_count": 8,
+  "positive_fixtures_passed": 8,
+  "real_detector_execution_count": 0,
+  "real_detector_import_count": 0,
+  "real_fj_fq_file_open_count": 0,
+  "tp_sl_calculation_count": 0,
+  "unexpected_pass_count": 0,
+  "unknown_validation_code_count": 0,
+  "wrong_validation_code_count": 0
+}

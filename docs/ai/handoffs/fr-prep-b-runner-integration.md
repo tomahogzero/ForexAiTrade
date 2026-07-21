@@ -1,5 +1,10 @@
 # FR-Prep-B Runner Integration Handoff
 
+
+- B1 complete: synthetic positives 8/8 and negatives 27/27 PASS; deterministic hash `942b04a08065d04fb969141dc97c5586cf15c64543c95402da01e589eb7b36e6`; real detector import/execution 0/0.
+- Implementation commit: pending handoff update.
+- Decision: `FR_PREP_B1_PASS_SYNTHETIC_WRAPPER_GUARDS`.
+- Next: FR-Prep-B2 ? Frozen FJ 2023?2025 Backward-Compatible Replay: enable only exact FJ identity, run FI 12/12, compare legacy runner/wrapper 17,716 bars and 1,079 events (588/491), IDs/order/canonical output identical, mismatch 0; no FQ, ATR-event, TP/SL, outcome, or FN.
 - Branch/base: `agent/fr-prep-b-runner-integration` from `bbc0e5df0ce59663bb2a0ad074ed4fd61cc7de85`.
 - Completed: B0 design-only inventory; merged A0–A3b adapter contract remains frozen.
 - B0 decision: `FR_PREP_B0_PASS_INTEGRATION_PLAN_READY`.

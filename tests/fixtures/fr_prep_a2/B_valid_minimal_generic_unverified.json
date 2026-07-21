@@ -1,0 +1,10 @@
+{
+  "schema_version": "gap_policy_manifest.v1",
+  "policy_id": "SYNTH_GENERIC_UNVERIFIED_V1",
+  "source_contract_type": "GENERIC_GAP_POLICY_V1",
+  "runtime_path": "artifacts/generic_unverified.json",
+  "artifact_sha256": "acc9e4be74a933b2af798a7113c16c4edb16ca840a8be7c3d5b3a51ec00a8671",
+  "classification_allowlist": ["ACCEPTED_CLOSURE", "UNVERIFIED_GAP"],
+  "expected_entry_count": 1,
+  "broker_history_completeness": "NOT_PROVEN"
+}

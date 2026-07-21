@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dataset_execution_descriptor.v1.schema.json",
+  "title": "ForexAiTrade Synthetic Dataset Execution Descriptor v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "dataset_id", "dataset_role", "symbol", "timeframe",
+    "boundary_start_timestamp", "boundary_end_timestamp",
+    "source_manifest_identity_sha256", "source_manifest_sha256",
+    "canonical_timeline_identity_sha256", "canonical_timeline_sha256",
+    "canonical_bar_count", "canonical_timeline_boundary",
+    "gap_policy_identity_sha256", "gap_policy_sha256",
+    "gap_counts_by_classification", "gap_counts_by_disposition",
+    "classification_allowlist_identity_sha256",
+    "broker_history_completeness", "detector_contract_version",
+    "outcome_contract_version", "interpretation_contract_version",
+    "execution_mode", "detector_execution_allowed",
+    "outcome_execution_allowed", "descriptor_identity_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "dataset_execution_descriptor.v1"},
+    "dataset_id": {"type": "string", "minLength": 1},
+    "dataset_role": {"type": "string", "minLength": 1},
+    "symbol": {"type": "string", "minLength": 1},
+    "timeframe": {"type": "string", "minLength": 1},
+    "boundary_start_timestamp": {"type": "string", "minLength": 1},
+    "boundary_end_timestamp": {"type": "string", "minLength": 1},
+    "source_manifest_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "canonical_timeline_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "canonical_timeline_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "canonical_bar_count": {"type": "integer", "minimum": 1},
+    "canonical_timeline_boundary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["first_timestamp", "last_timestamp"],
+      "properties": {
+        "first_timestamp": {"type": "string", "minLength": 1},
+        "last_timestamp": {"type": "string", "minLength": 1}
+      }
+    },
+    "gap_policy_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "gap_policy_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "gap_counts_by_classification": {
+      "type": "object", "minProperties": 1,
+      "additionalProperties": {"type": "integer", "minimum": 1}
+    },
+    "gap_counts_by_disposition": {
+      "type": "object", "minProperties": 1,
+      "additionalProperties": {"type": "integer", "minimum": 1}
+    },
+    "classification_allowlist_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "broker_history_completeness": {"const": "NOT_PROVEN"},
+    "detector_contract_version": {"const": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1"},
+    "outcome_contract_version": {"const": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1"},
+    "interpretation_contract_version": {"const": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1"},
+    "execution_mode": {"const": "ADAPTER_VALIDATION_ONLY"},
+    "detector_execution_allowed": {"const": false},
+    "outcome_execution_allowed": {"const": false},
+    "descriptor_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

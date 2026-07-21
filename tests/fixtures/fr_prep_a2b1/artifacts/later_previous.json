@@ -1,0 +1,17 @@
+{
+  "schema_version": "gap_policy_entries.v1",
+  "entries": [{
+    "gap_id": "NEG-LATER-PREVIOUS",
+    "previous_bar_timestamp": "2024-01-08T01:00:00",
+    "next_bar_timestamp": "2024-01-05T23:00:00",
+    "policy_classification": "ACCEPTED_CLOSURE",
+    "accepted_for_trading_bar_skip": true,
+    "fail_closed_required": false,
+    "reset_active_swing_state": false,
+    "reset_open_break_candidate": false,
+    "reset_retest_confirmation_state": false,
+    "prohibit_event_crossing": false,
+    "require_fresh_post_gap_warmup": false,
+    "source_record_identity": "NEG:LATER:PREVIOUS"
+  }]
+}

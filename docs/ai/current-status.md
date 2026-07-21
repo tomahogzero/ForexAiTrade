@@ -1,6 +1,77 @@
 # ForexAiTrade Current Status
 
-Last updated: 2026-07-17
+Last updated: 2026-07-18
+
+## Latest FR-Prep-A3b Refresh
+
+- status: `FR_PREP_A3B_ADAPTER_CONTRACT_CLOSED`
+- decision: `FR_PREP_A3B_PASS_ADAPTER_CONTRACT_CLOSED`
+
+## Latest FR-Prep-A3a Refresh
+
+- status: `FR_PREP_A3A_SYNTHETIC_COMPOSITION`
+- decision: `FR_PREP_A3A_PASS_SYNTHETIC_COMPOSITION`
+- synthetic composition fixtures: `8/8 PASS`; deterministic mismatch `0`; relocation and repeated composition identical; EO/FJ and FQ normalized semantic equivalence confirmed
+- adapter-validation-only guard blocked detector, event, ATR-event, TP/SL, and outcome actions
+- A1: `4/4`, `9/9`, `13/13 PASS`; A2: `8/8`, `18/18`, `20/20 PASS`; frozen hashes/codes unchanged
+- detector/FI, FJ/FQ runners, real holdout inventory, population, holdout preflight, events, ATR-events, TP/SL, and outcomes: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
+## Latest FR-Prep-A2b-2 Refresh
+
+- status: `FR_PREP_A2B2_GAP_VALIDATION_COMPLETE`
+- decision: `FR_PREP_A2B2_PASS_GAP_VALIDATION_COMPLETE`
+- synthetic negative gap-inventory fixtures: `20/20 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
+- A1 regressions: `4/4`, `9/9`, `13/13 PASS`; A2 positive: `8/8 PASS`; A2b-1: `18/18 PASS`; frozen hashes/codes unchanged
+- detector/FI, FJ/FQ runners, real holdout inventory, population, holdout preflight, events, ATR-events, TP/SL, and outcomes: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
+## Latest FR-Prep-A2b-1 Refresh
+
+- status: `FR_PREP_A2B1_NEGATIVE_GAP_CONTRACT_VALIDATION`
+- decision: `FR_PREP_A2B1_PASS_NEGATIVE_GAP_CONTRACT_VALIDATION`
+- synthetic negative gap-contract fixtures: `18/18 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
+- A1 regressions: `4/4`, `9/9`, `13/13 PASS`; A2 positive regression: `8/8 PASS`; all golden hashes/codes unchanged
+- detector/FI, FJ/FQ runners, population, holdout preflight, events, ATR-events, TP/SL, and outcomes: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
+## Latest FR-Prep-A2 Refresh
+
+- status: `FR_PREP_A2_GAP_POLICY_ADAPTER_POSITIVE`
+- decision: `FR_PREP_A2_PASS_GAP_ADAPTER_POSITIVE`
+- synthetic positive gap fixtures: `8/8 PASS`; deterministic mismatch `0`; runtime relocation identical
+- A1 regressions: A1a `4/4 PASS`, A1b-1 `9/9 PASS`, A1b-2 `13/13 PASS`; frozen hashes/codes unchanged
+- detector/FI, FJ/FQ runners, population, holdout preflight, events, ATR-events, TP/SL, and outcomes: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`; candidate: `NOT_READY_FOR_ORDER_LOGIC`
+
+## Latest FR-Prep-A1b-2 Refresh
+
+- status: `FR_PREP_A1B2_SOURCE_VALIDATION_COMPLETE`
+- remaining source/aggregate negative fixtures: `13/13 PASS`; unexpected passes, wrong codes, unknown codes, and mismatches: `0`
+- A1a positive regression: `4/4 PASS`; A1b-1 negative regression: `9/9 PASS`; frozen golden hashes unchanged
+- gap policy, detector, FI fixtures, FJ replay, population, events, outcomes, and holdout preflight: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`
+
+## Latest FR-Prep-A1b-1 Refresh
+
+- status: `FR_PREP_A1B1_NEGATIVE_SOURCE_VALIDATION`
+- negative source fixtures: `9/9 PASS`; unexpected passes, wrong failures, unknown codes, and mismatches: `0`
+- A1a positive regression: `4/4 PASS`; golden SHA-256 unchanged; relocation output identical
+- gap policy, detector, FI fixtures, FJ replay, population, events, outcomes, and holdout preflight: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`
+
+## Latest FR-Prep-A1a Refresh
+
+- status: `FR_PREP_A1A_SOURCE_ADAPTER_CORE`
+- four positive synthetic source fixtures: `PASS`; deterministic mismatch count: `0`
+- gap policy, detector, FI fixtures, FJ replay, events, outcomes, and holdout preflight: `NOT_RUN`
+- broker history completeness: `NOT_PROVEN`; strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`
+
+## Latest FR-Prep-A0 Refresh
+
+- status: `FR_PREP_A0_DESIGN_ONLY`
+- adapter implementation, fixtures, detector, events, outcomes, and holdout preflight: `NOT_RUN`
+- strategy performance: `NOT_EVALUATED`; profitability: `NOT_CLAIMED`; order logic: `NOT_APPROVED`
 
 ## Latest Checkpoint FQ Refresh
 

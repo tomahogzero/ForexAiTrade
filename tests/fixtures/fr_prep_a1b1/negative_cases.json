@@ -1,0 +1,71 @@
+{
+  "fixture_contract": "FR-Prep-A1b-1 deterministic negative source validation only",
+  "base_positive_manifest": "A_valid_minimal_generic_manifest.json",
+  "cases": [
+    {
+      "name": "01_missing_source_path",
+      "expected_code": "SOURCE_PATH_MISSING",
+      "source_updates": {"runtime_path": "../fr_prep_a1b1/sources/missing.tsv"}
+    },
+    {
+      "name": "02_sha256_mismatch",
+      "expected_code": "SOURCE_SHA256_MISMATCH",
+      "source_updates": {"sha256": "0000000000000000000000000000000000000000000000000000000000000000"}
+    },
+    {
+      "name": "03_optional_byte_size_mismatch",
+      "expected_code": "SOURCE_SIZE_MISMATCH",
+      "source_updates": {"size_bytes": 150}
+    },
+    {
+      "name": "04_invalid_mt5_tsv_columns",
+      "expected_code": "MT5_TSV_SCHEMA_INVALID",
+      "source_updates": {
+        "runtime_path": "../fr_prep_a1b1/sources/bad_columns.tsv",
+        "sha256": "47aa9ef2529c8108b7eb34288ee5527dbed5df38c2d50648c12c049579d788b0",
+        "size_bytes": 81, "row_count": 1
+      }
+    },
+    {
+      "name": "05_unparseable_timestamp",
+      "expected_code": "SOURCE_TIMESTAMP_UNPARSEABLE",
+      "source_updates": {
+        "runtime_path": "../fr_prep_a1b1/sources/bad_timestamp.tsv",
+        "sha256": "2639d7594b2dc062aaa8e1f0e4ff869063bf2086c130186b01b8dc767eaf835f",
+        "size_bytes": 79, "row_count": 1
+      }
+    },
+    {
+      "name": "06_nonfinite_or_nonpositive_ohlc",
+      "expected_code": "OHLC_NON_FINITE_OR_NON_POSITIVE",
+      "source_updates": {
+        "runtime_path": "../fr_prep_a1b1/sources/nonfinite.tsv",
+        "sha256": "ebd4bdd9487780d2240246df1a2b369f42fc5c88058e15f11743f2ce58f9368c",
+        "size_bytes": 77, "row_count": 1
+      }
+    },
+    {
+      "name": "07_internally_inconsistent_ohlc",
+      "expected_code": "OHLC_INCONSISTENT",
+      "source_updates": {
+        "runtime_path": "../fr_prep_a1b1/sources/inconsistent.tsv",
+        "sha256": "dc10aa8fb21521d69484470b519f66bde8325f490e7dae5893f043b17fc719a1",
+        "size_bytes": 76, "row_count": 1
+      }
+    },
+    {
+      "name": "08_non_chronological_source_rows",
+      "expected_code": "SOURCE_NOT_CHRONOLOGICAL",
+      "source_updates": {
+        "runtime_path": "../fr_prep_a1b1/sources/nonchronological.tsv",
+        "sha256": "8daf23178053a3a5578ac7bd7af6a7d8ca60848d1ff91d84106e24b93e4cb12c",
+        "size_bytes": 113, "row_count": 2
+      }
+    },
+    {
+      "name": "09_declared_row_count_mismatch",
+      "expected_code": "SOURCE_ROW_COUNT_MISMATCH",
+      "source_updates": {"row_count": 4}
+    }
+  ]
+}

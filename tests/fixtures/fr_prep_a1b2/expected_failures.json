@@ -1,0 +1,80 @@
+{
+  "01_declared_first_timestamp_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_FIRST_TIMESTAMP_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_FIRST_TIMESTAMP_MISMATCH"
+  },
+  "02_declared_last_timestamp_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_LAST_TIMESTAMP_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_LAST_TIMESTAMP_MISMATCH"
+  },
+  "03_source_row_before_frozen_boundary": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_ROW_BEFORE_BOUNDARY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_ROW_BEFORE_BOUNDARY"
+  },
+  "04_source_row_after_frozen_boundary": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "SOURCE_ROW_AFTER_BOUNDARY",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "SOURCE_ROW_AFTER_BOUNDARY"
+  },
+  "05_duplicate_source_id": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "DUPLICATE_SOURCE_ID",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "DUPLICATE_SOURCE_ID"
+  },
+  "06_duplicate_timestamp_across_sources": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "AGGREGATE_DUPLICATE_TIMESTAMP",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "AGGREGATE_DUPLICATE_TIMESTAMP"
+  },
+  "07_conflicting_ohlc_same_timestamp": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "AGGREGATE_TIMESTAMP_OHLC_CONFLICT",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "AGGREGATE_TIMESTAMP_OHLC_CONFLICT"
+  },
+  "08_aggregate_source_count_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "AGGREGATE_SOURCE_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "AGGREGATE_SOURCE_COUNT_MISMATCH"
+  },
+  "09_aggregate_total_row_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "AGGREGATE_TOTAL_ROW_COUNT_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "AGGREGATE_TOTAL_ROW_COUNT_MISMATCH"
+  },
+  "10_aggregate_first_timestamp_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "AGGREGATE_FIRST_TIMESTAMP_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "AGGREGATE_FIRST_TIMESTAMP_MISMATCH"
+  },
+  "11_aggregate_last_timestamp_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "AGGREGATE_LAST_TIMESTAMP_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "AGGREGATE_LAST_TIMESTAMP_MISMATCH"
+  },
+  "12_aggregate_timeline_range_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "AGGREGATE_TIMELINE_RANGE_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "AGGREGATE_TIMELINE_RANGE_MISMATCH"
+  },
+  "13_canonical_timeline_sha256_mismatch": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "expected_code": "CANONICAL_TIMELINE_SHA256_MISMATCH",
+    "status": "EXPECTED_FAILURE",
+    "validation_code": "CANONICAL_TIMELINE_SHA256_MISMATCH"
+  }
+}

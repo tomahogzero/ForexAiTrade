@@ -1,0 +1,3 @@
+prev_time,next_time,delta_hours,missing_h1_bars_estimate,prev_weekday,next_weekday,classification,policy_status
+2024-01-05T23:00:00,2024-01-08T01:00:00,50,49,Friday,Monday,DAILY,ACCEPTED_DAILY_BROKER_SESSION_GAP
+2024-01-05T23:00:00,2024-01-08T01:00:00,50,49,Friday,Monday,WEEKEND,ACCEPTED_WEEKEND_MARKET_CLOSURE

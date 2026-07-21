@@ -1,0 +1,14 @@
+{
+  "schema_version": "gap_policy_manifest.v1",
+  "policy_id": "SYNTH_FQ_ACCEPTED_V1",
+  "source_contract_type": "FQ_GAP_INVENTORY_V1",
+  "runtime_path": "artifacts/fq_accepted.json",
+  "artifact_sha256": "77c5ac6ad99e0cf68bb6e3347e3970505d892676c78b6d721e3f9cea289bf4ba",
+  "classification_allowlist": [
+    "ACCEPTED_ROUTINE_DAILY_SESSION_CLOSURE",
+    "ACCEPTED_ROUTINE_WEEKEND_CLOSURE",
+    "UNVERIFIED_GAP"
+  ],
+  "expected_entry_count": 1,
+  "broker_history_completeness": "NOT_PROVEN"
+}

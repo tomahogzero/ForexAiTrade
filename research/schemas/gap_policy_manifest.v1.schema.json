@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gap_policy_manifest.v1.schema.json",
+  "title": "ForexAiTrade Generic Gap Policy Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "policy_id", "source_contract_type", "runtime_path",
+    "artifact_sha256", "classification_allowlist", "expected_entry_count",
+    "broker_history_completeness"
+  ],
+  "properties": {
+    "schema_version": {"const": "gap_policy_manifest.v1"},
+    "policy_id": {"type": "string", "minLength": 1},
+    "source_contract_type": {
+      "enum": ["GENERIC_GAP_POLICY_V1", "EO_FJ_CSV_V1", "FQ_GAP_INVENTORY_V1"]
+    },
+    "runtime_path": {"type": "string", "minLength": 1},
+    "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "classification_allowlist": {
+      "type": "array", "minItems": 2, "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "expected_entry_count": {"type": "integer", "minimum": 1},
+    "expected_accepted_closure_count": {"type": "integer", "minimum": 0},
+    "expected_unverified_gap_count": {"type": "integer", "minimum": 0},
+    "expected_classification_counts": {
+      "type": "object", "minProperties": 1,
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "classification_allowlist_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "expected_normalized_inventory_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "expected_normalized_inventory_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "require_canonical_source_order": {"type": "boolean"},
+    "broker_history_completeness": {"const": "NOT_PROVEN"}
+  },
+  "$defs": {
+    "gap_policy_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "gap_id", "previous_bar_timestamp",
+        "next_bar_timestamp", "policy_classification", "closure_disposition",
+        "accepted_for_trading_bar_skip", "fail_closed_required",
+        "reset_active_swing_state", "reset_open_break_candidate",
+        "reset_retest_confirmation_state", "prohibit_event_crossing",
+        "require_fresh_post_gap_warmup", "source_contract_type",
+        "source_record_identity"
+      ],
+      "properties": {
+        "schema_version": {"const": "gap_policy_entry.v1"},
+        "gap_id": {"type": "string", "minLength": 1},
+        "previous_bar_timestamp": {"type": "string", "minLength": 1},
+        "next_bar_timestamp": {"type": "string", "minLength": 1},
+        "policy_classification": {"type": "string", "minLength": 1},
+        "closure_disposition": {"enum": ["ACCEPTED_CLOSURE", "UNVERIFIED_GAP"]},
+        "accepted_for_trading_bar_skip": {"type": "boolean"},
+        "fail_closed_required": {"type": "boolean"},
+        "reset_active_swing_state": {"type": "boolean"},
+        "reset_open_break_candidate": {"type": "boolean"},
+        "reset_retest_confirmation_state": {"type": "boolean"},
+        "prohibit_event_crossing": {"type": "boolean"},
+        "require_fresh_post_gap_warmup": {"type": "boolean"},
+        "source_contract_type": {
+          "enum": ["GENERIC_GAP_POLICY_V1", "EO_FJ_CSV_V1", "FQ_GAP_INVENTORY_V1"]
+        },
+        "source_record_identity": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

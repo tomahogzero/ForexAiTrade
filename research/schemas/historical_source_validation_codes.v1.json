@@ -1,0 +1,36 @@
+{
+  "schema_version": "historical_source_validation_codes.v1",
+  "broker_history_completeness": "NOT_PROVEN",
+  "precedence_contract": [
+    "manifest shape and frozen safety invariants",
+    "duplicate source ID before any source-file open",
+    "source path, hash, optional size, TSV schema, timestamp, OHLC, boundary, chronology, row count, and declared range",
+    "aggregate OHLC conflict before identical duplicate timestamp",
+    "aggregate source count, total rows, first timestamp, last timestamp, and exact frozen-boundary range",
+    "canonical timeline SHA-256 last"
+  ],
+  "codes": [
+    {"code":"SOURCE_PATH_MISSING","validation_layer":"source","meaning":"Declared runtime source path is not a file.","precedence":10,"fixture_proving_the_code":"A1b-1/01_missing_source_path"},
+    {"code":"SOURCE_SHA256_MISMATCH","validation_layer":"source","meaning":"Source bytes do not match the declared SHA-256.","precedence":20,"fixture_proving_the_code":"A1b-1/02_sha256_mismatch"},
+    {"code":"SOURCE_SIZE_MISMATCH","validation_layer":"source","meaning":"Source byte size does not match the optional declaration.","precedence":30,"fixture_proving_the_code":"A1b-1/03_optional_byte_size_mismatch"},
+    {"code":"MT5_TSV_SCHEMA_INVALID","validation_layer":"source","meaning":"Required MT5 TSV OHLC columns are absent or invalid.","precedence":40,"fixture_proving_the_code":"A1b-1/04_invalid_mt5_tsv_columns"},
+    {"code":"SOURCE_TIMESTAMP_UNPARSEABLE","validation_layer":"source","meaning":"A source row timestamp cannot be parsed by the frozen profile.","precedence":50,"fixture_proving_the_code":"A1b-1/05_unparseable_timestamp"},
+    {"code":"OHLC_NON_FINITE_OR_NON_POSITIVE","validation_layer":"source","meaning":"A source OHLC value is non-finite or non-positive.","precedence":60,"fixture_proving_the_code":"A1b-1/06_nonfinite_or_nonpositive_ohlc"},
+    {"code":"OHLC_INCONSISTENT","validation_layer":"source","meaning":"A source OHLC tuple violates high/low consistency.","precedence":70,"fixture_proving_the_code":"A1b-1/07_internally_inconsistent_ohlc"},
+    {"code":"SOURCE_ROW_BEFORE_BOUNDARY","validation_layer":"source_boundary","meaning":"A row precedes the frozen start boundary.","precedence":80,"fixture_proving_the_code":"A1b-2/03_source_row_before_frozen_boundary"},
+    {"code":"SOURCE_ROW_AFTER_BOUNDARY","validation_layer":"source_boundary","meaning":"A row follows the frozen end boundary.","precedence":81,"fixture_proving_the_code":"A1b-2/04_source_row_after_frozen_boundary"},
+    {"code":"SOURCE_NOT_CHRONOLOGICAL","validation_layer":"source","meaning":"Source timestamps are not strictly increasing.","precedence":90,"fixture_proving_the_code":"A1b-1/08_non_chronological_source_rows"},
+    {"code":"SOURCE_ROW_COUNT_MISMATCH","validation_layer":"source","meaning":"Observed source rows differ from the declaration.","precedence":100,"fixture_proving_the_code":"A1b-1/09_declared_row_count_mismatch"},
+    {"code":"SOURCE_FIRST_TIMESTAMP_MISMATCH","validation_layer":"source","meaning":"Observed source first timestamp differs from the declaration.","precedence":110,"fixture_proving_the_code":"A1b-2/01_declared_first_timestamp_mismatch"},
+    {"code":"SOURCE_LAST_TIMESTAMP_MISMATCH","validation_layer":"source","meaning":"Observed source last timestamp differs from the declaration.","precedence":120,"fixture_proving_the_code":"A1b-2/02_declared_last_timestamp_mismatch"},
+    {"code":"DUPLICATE_SOURCE_ID","validation_layer":"manifest","meaning":"Two source descriptors declare the same source ID; detected before file I/O.","precedence":5,"fixture_proving_the_code":"A1b-2/05_duplicate_source_id"},
+    {"code":"AGGREGATE_TIMESTAMP_OHLC_CONFLICT","validation_layer":"aggregate","meaning":"The same aggregate timestamp carries conflicting OHLC tuples.","precedence":130,"fixture_proving_the_code":"A1b-2/07_conflicting_ohlc_same_timestamp"},
+    {"code":"AGGREGATE_DUPLICATE_TIMESTAMP","validation_layer":"aggregate","meaning":"The same aggregate timestamp occurs across sources with identical OHLC.","precedence":140,"fixture_proving_the_code":"A1b-2/06_duplicate_timestamp_across_sources"},
+    {"code":"AGGREGATE_SOURCE_COUNT_MISMATCH","validation_layer":"aggregate_metadata","meaning":"Observed source count differs from expected timeline metadata.","precedence":150,"fixture_proving_the_code":"A1b-2/08_aggregate_source_count_mismatch"},
+    {"code":"AGGREGATE_TOTAL_ROW_COUNT_MISMATCH","validation_layer":"aggregate_metadata","meaning":"Observed aggregate rows differ from expected timeline metadata.","precedence":160,"fixture_proving_the_code":"A1b-2/09_aggregate_total_row_mismatch"},
+    {"code":"AGGREGATE_FIRST_TIMESTAMP_MISMATCH","validation_layer":"aggregate_metadata","meaning":"Observed aggregate first timestamp differs from expected timeline metadata.","precedence":170,"fixture_proving_the_code":"A1b-2/10_aggregate_first_timestamp_mismatch"},
+    {"code":"AGGREGATE_LAST_TIMESTAMP_MISMATCH","validation_layer":"aggregate_metadata","meaning":"Observed aggregate last timestamp differs from expected timeline metadata.","precedence":180,"fixture_proving_the_code":"A1b-2/11_aggregate_last_timestamp_mismatch"},
+    {"code":"AGGREGATE_TIMELINE_RANGE_MISMATCH","validation_layer":"aggregate_metadata","meaning":"Observed aggregate first/last timestamps do not exactly cover the frozen manifest boundaries.","precedence":190,"fixture_proving_the_code":"A1b-2/12_aggregate_timeline_range_mismatch"},
+    {"code":"CANONICAL_TIMELINE_SHA256_MISMATCH","validation_layer":"aggregate_hash","meaning":"Canonical aggregate bars do not match the expected timeline SHA-256.","precedence":200,"fixture_proving_the_code":"A1b-2/13_canonical_timeline_sha256_mismatch"}
+  ]
+}

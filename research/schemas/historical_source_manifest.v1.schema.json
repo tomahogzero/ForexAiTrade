@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "historical_source_manifest.v1.schema.json",
+  "title": "ForexAiTrade Historical Source Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset_id", "symbol", "timeframe", "boundary_start_timestamp", "boundary_end_timestamp", "broker_history_completeness", "raw_broker_csv_committed", "sources", "expected_timeline"],
+  "properties": {
+    "schema_version": {"const": "historical_source_manifest.v1"},
+    "dataset_id": {"type": "string", "minLength": 1},
+    "symbol": {"type": "string", "minLength": 1},
+    "timeframe": {"type": "string", "minLength": 1},
+    "boundary_start_timestamp": {"type": "string", "minLength": 1},
+    "boundary_end_timestamp": {"type": "string", "minLength": 1},
+    "broker_history_completeness": {"const": "NOT_PROVEN"},
+    "raw_broker_csv_committed": {"const": false},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source_file_descriptor"}},
+    "expected_timeline": {"$ref": "#/$defs/expected_timeline"}
+  },
+  "$defs": {
+    "source_file_descriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "source_id", "file_name", "runtime_path", "sha256", "row_count", "first_timestamp", "last_timestamp", "format"],
+      "properties": {
+        "schema_version": {"const": "source_file_descriptor.v1"},
+        "source_id": {"type": "string", "minLength": 1},
+        "file_name": {"type": "string", "minLength": 1},
+        "runtime_path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "size_bytes": {"type": "integer", "minimum": 1},
+        "row_count": {"type": "integer", "minimum": 1},
+        "first_timestamp": {"type": "string", "minLength": 1},
+        "last_timestamp": {"type": "string", "minLength": 1},
+        "format": {"const": "MT5_TSV_OHLC_V1"}
+      }
+    },
+    "expected_timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_count", "total_rows", "first_timestamp", "last_timestamp", "duplicate_timestamps", "canonical_timeline_sha256"],
+      "properties": {
+        "source_count": {"type": "integer", "minimum": 1},
+        "total_rows": {"type": "integer", "minimum": 1},
+        "first_timestamp": {"type": "string", "minLength": 1},
+        "last_timestamp": {"type": "string", "minLength": 1},
+        "duplicate_timestamps": {"const": 0},
+        "canonical_timeline_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

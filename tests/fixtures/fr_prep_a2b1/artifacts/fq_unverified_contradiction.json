@@ -1,0 +1,10 @@
+[
+  {
+    "gap_id": "NEG-FQ-UNVERIFIED-CONTRADICTION",
+    "previous_bar_timestamp": "2021-06-10T12:00:00",
+    "next_bar_timestamp": "2021-06-10T18:00:00",
+    "policy_classification": "UNVERIFIED_GAP",
+    "accepted_for_trading_bar_skip": true,
+    "fail_closed_required": false
+  }
+]

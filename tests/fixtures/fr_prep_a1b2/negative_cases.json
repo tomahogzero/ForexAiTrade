@@ -1,0 +1,46 @@
+{
+  "fixture_contract": "FR-Prep-A1b-2 remaining deterministic source and aggregate validation only",
+  "base_positive_manifest": "A_valid_minimal_generic_manifest.json",
+  "cases": [
+    {"name":"01_declared_first_timestamp_mismatch","expected_code":"SOURCE_FIRST_TIMESTAMP_MISMATCH","source_updates":{"0":{"first_timestamp":"2020-01-02T01:00:00"}}},
+    {"name":"02_declared_last_timestamp_mismatch","expected_code":"SOURCE_LAST_TIMESTAMP_MISMATCH","source_updates":{"0":{"last_timestamp":"2020-01-02T01:00:00"}}},
+    {"name":"03_source_row_before_frozen_boundary","expected_code":"SOURCE_ROW_BEFORE_BOUNDARY","manifest_updates":{"boundary_start_timestamp":"2020-01-02T01:00:00"}},
+    {"name":"04_source_row_after_frozen_boundary","expected_code":"SOURCE_ROW_AFTER_BOUNDARY","manifest_updates":{"boundary_end_timestamp":"2020-01-02T01:00:00"}},
+    {
+      "name":"05_duplicate_source_id","expected_code":"DUPLICATE_SOURCE_ID",
+      "append_sources":[{
+        "schema_version":"source_file_descriptor.v1","source_id":"SYNTH_MINIMAL_SOURCE",
+        "file_name":"must-not-open.tsv","runtime_path":"../fr_prep_a1b2/sources/must-not-open.tsv",
+        "sha256":"0000000000000000000000000000000000000000000000000000000000000000",
+        "size_bytes":1,"row_count":1,"first_timestamp":"2020-01-02T01:00:00",
+        "last_timestamp":"2020-01-02T01:00:00","format":"MT5_TSV_OHLC_V1"
+      }]
+    },
+    {
+      "name":"06_duplicate_timestamp_across_sources","expected_code":"AGGREGATE_DUPLICATE_TIMESTAMP",
+      "append_sources":[{
+        "schema_version":"source_file_descriptor.v1","source_id":"SYNTH_DUPLICATE_SAME",
+        "file_name":"duplicate-same.tsv","runtime_path":"../fr_prep_a1b2/sources/duplicate_same.tsv",
+        "sha256":"5166e9aad766feab80eee3068c57eebf0a40791eb9a816ce0fa978d83e849db7",
+        "size_bytes":78,"row_count":1,"first_timestamp":"2020-01-02T01:00:00",
+        "last_timestamp":"2020-01-02T01:00:00","format":"MT5_TSV_OHLC_V1"
+      }]
+    },
+    {
+      "name":"07_conflicting_ohlc_same_timestamp","expected_code":"AGGREGATE_TIMESTAMP_OHLC_CONFLICT",
+      "append_sources":[{
+        "schema_version":"source_file_descriptor.v1","source_id":"SYNTH_DUPLICATE_CONFLICT",
+        "file_name":"duplicate-conflict.tsv","runtime_path":"../fr_prep_a1b2/sources/duplicate_conflict.tsv",
+        "sha256":"4e6b8a02335f275c54e250f756af15739a8a015a23c6e3d8b482c0a59eb290a7",
+        "size_bytes":78,"row_count":1,"first_timestamp":"2020-01-02T01:00:00",
+        "last_timestamp":"2020-01-02T01:00:00","format":"MT5_TSV_OHLC_V1"
+      }]
+    },
+    {"name":"08_aggregate_source_count_mismatch","expected_code":"AGGREGATE_SOURCE_COUNT_MISMATCH","expected_timeline_updates":{"source_count":2}},
+    {"name":"09_aggregate_total_row_mismatch","expected_code":"AGGREGATE_TOTAL_ROW_COUNT_MISMATCH","expected_timeline_updates":{"total_rows":4}},
+    {"name":"10_aggregate_first_timestamp_mismatch","expected_code":"AGGREGATE_FIRST_TIMESTAMP_MISMATCH","expected_timeline_updates":{"first_timestamp":"2020-01-01T23:00:00"}},
+    {"name":"11_aggregate_last_timestamp_mismatch","expected_code":"AGGREGATE_LAST_TIMESTAMP_MISMATCH","expected_timeline_updates":{"last_timestamp":"2020-01-02T03:00:00"}},
+    {"name":"12_aggregate_timeline_range_mismatch","expected_code":"AGGREGATE_TIMELINE_RANGE_MISMATCH","manifest_updates":{"boundary_start_timestamp":"2020-01-01T23:00:00"}},
+    {"name":"13_canonical_timeline_sha256_mismatch","expected_code":"CANONICAL_TIMELINE_SHA256_MISMATCH","expected_timeline_updates":{"canonical_timeline_sha256":"0000000000000000000000000000000000000000000000000000000000000000"}}
+  ]
+}

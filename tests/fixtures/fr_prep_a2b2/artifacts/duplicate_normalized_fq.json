@@ -1,0 +1,18 @@
+[
+  {
+    "gap_id": "FQ-DUPLICATE-001",
+    "previous_bar_timestamp": "2024-01-05T23:00:00",
+    "next_bar_timestamp": "2024-01-08T01:00:00",
+    "policy_classification": "ACCEPTED_ROUTINE_WEEKEND_CLOSURE",
+    "accepted_for_trading_bar_skip": true,
+    "fail_closed_required": false
+  },
+  {
+    "gap_id": "FQ-DUPLICATE-001",
+    "previous_bar_timestamp": "2024-01-05T23:00:00",
+    "next_bar_timestamp": "2024-01-08T01:00:00",
+    "policy_classification": "ACCEPTED_ROUTINE_WEEKEND_CLOSURE",
+    "accepted_for_trading_bar_skip": true,
+    "fail_closed_required": false
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "schema_version": "gap_policy_manifest.v1",
+  "policy_id": "SYNTH_EO_FJ_UNVERIFIED_V1",
+  "source_contract_type": "EO_FJ_CSV_V1",
+  "runtime_path": "artifacts/eo_unverified.csv",
+  "artifact_sha256": "9c37ffa92269e7e94c4753248683f382069506f4f6316c1c8efbf3855f54dc53",
+  "classification_allowlist": [
+    "ACCEPTED_DAILY_BROKER_SESSION_GAP",
+    "ACCEPTED_WEEKEND_MARKET_CLOSURE",
+    "BLOCKED_UNCLASSIFIED_GAP"
+  ],
+  "expected_entry_count": 1,
+  "broker_history_completeness": "NOT_PROVEN"
+}

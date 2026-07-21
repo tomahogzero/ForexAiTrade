@@ -1,0 +1,398 @@
+{
+  "A_generic_source_accepted": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2024-01-08T01:00:00",
+      "boundary_start_timestamp": "2024-01-05T23:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 2,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2024-01-05T23:00:00",
+        "last_timestamp": "2024-01-08T01:00:00"
+      },
+      "canonical_timeline_identity_sha256": "42d80d82b04a6bd2359a85c4913025ea9138607691d349ee9e7224a96ab5bca8",
+      "canonical_timeline_sha256": "232016ee1a797280a7ede2d05f783188d4d758ca345cb4765bb8c7dafb8c8aef",
+      "classification_allowlist_identity_sha256": "d096bda36fe96172a1b564f4fcd9fe505d0f221f6916571b3b0e0633889af1d0",
+      "dataset_id": "A3A_GENERIC_ACCEPTED_V1",
+      "dataset_role": "SYNTHETIC_GENERIC",
+      "descriptor_identity_sha256": "3ff5f9b2dad0cce43fbfb9c0133ab681760150484279041888eef1d63736e306",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_counts_by_disposition": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_policy_identity_sha256": "b7ef04fd85f4808d4b6a979ccd1b6727f27a02d5b058509cdf6a371c73486e09",
+      "gap_policy_sha256": "74ea037bfcb98c7580857c50843ad18e52b2e7a660e54956f00538dd0d395cc9",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "c84c0e79e4e7b3284e7965b741566995cc325375f8013e1e9a0690b2aeaa1620",
+      "source_manifest_sha256": "ffdf4f684b8d66b72f7ea3b121beea5af3bb57a17834937a64bb9fae52d968a2",
+      "symbol": "SYNTH#",
+      "timeframe": "H1"
+    }
+  },
+  "B_generic_source_unverified": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2024-02-01T14:00:00",
+      "boundary_start_timestamp": "2024-02-01T10:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 2,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2024-02-01T10:00:00",
+        "last_timestamp": "2024-02-01T14:00:00"
+      },
+      "canonical_timeline_identity_sha256": "c850ad80c6790eb905c2363e23732ace5997f39eab764b973e72f5b68bcb746b",
+      "canonical_timeline_sha256": "d1f03fc8fcbd78feab34efacc2b6aa5c048013a63d052ecbda61c17243e1bfae",
+      "classification_allowlist_identity_sha256": "d096bda36fe96172a1b564f4fcd9fe505d0f221f6916571b3b0e0633889af1d0",
+      "dataset_id": "A3A_GENERIC_UNVERIFIED_V1",
+      "dataset_role": "SYNTHETIC_GENERIC",
+      "descriptor_identity_sha256": "55352664a9d821904dc626ab3c7ac4785af97c8e4d16b1d6e27fca35bbc7cd25",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "UNVERIFIED_GAP": 1
+      },
+      "gap_counts_by_disposition": {
+        "UNVERIFIED_GAP": 1
+      },
+      "gap_policy_identity_sha256": "aa51f58a39bf7154398b5861ccaf0ca66b86232b60cab194a1fdc85c89ab61bb",
+      "gap_policy_sha256": "c18cdd92b4b5d6df7aee88233250b4c73d98e762761cbd47803e8ad4de9fee26",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "75b10badf840d5f71e4221aceb1a29fbb3c9998977e89aee9323597be6e62e28",
+      "source_manifest_sha256": "eddc5b27e64d396fa14c951cedebbf13d4d337f08065eb074c709116abb83ca8",
+      "symbol": "SYNTH#",
+      "timeframe": "H1"
+    }
+  },
+  "C_fp_source_fq_gaps": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2021-05-10T01:00:00",
+      "boundary_start_timestamp": "2021-05-07T23:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 2,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2021-05-07T23:00:00",
+        "last_timestamp": "2021-05-10T01:00:00"
+      },
+      "canonical_timeline_identity_sha256": "06f98ecb45b26077025c16bccbee1a7ce39a297260de7ddcb9f1a2b8b6d07642",
+      "canonical_timeline_sha256": "c71ea5aee03c047ccd2766d88880858fc033b9c57c317b718396d6d0f627bf58",
+      "classification_allowlist_identity_sha256": "8ee719b0f6b51673d71108aee4b3d78c02d1d05dbeaedff5bb1e7f79b1bf6f4a",
+      "dataset_id": "A3A_FP_FQ_V1",
+      "dataset_role": "SYNTHETIC_FP",
+      "descriptor_identity_sha256": "a89bb1fe82cbe2ad0d12d5b75d5d61b59cad37ec202defa7e3384894afd0b9ec",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "ACCEPTED_ROUTINE_WEEKEND_CLOSURE": 1
+      },
+      "gap_counts_by_disposition": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_policy_identity_sha256": "59b527948e41648257985c5089823e9511b7f2862b5460e1662b71010c6ecabb",
+      "gap_policy_sha256": "7aa2fdc4ad75ab448b9622e6f7486a53e3f2ab5365c047e9bed62a10021c3e44",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "64822c07addd480e31b57e6e815e02e58fd9267d79f8ffa8db3da038519c7a53",
+      "source_manifest_sha256": "0c44f1fc224f42b1f09123ebcfb2721b1ac469825b1ab733520477b6829428bb",
+      "symbol": "FP_SYNTH#",
+      "timeframe": "H1"
+    }
+  },
+  "D_fj_source_eo_fj_gaps": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2023-03-04T01:00:00",
+      "boundary_start_timestamp": "2023-03-01T23:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 2,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2023-03-01T23:00:00",
+        "last_timestamp": "2023-03-04T01:00:00"
+      },
+      "canonical_timeline_identity_sha256": "c181263a6c52e4800905d43f7044a118a3b61b17a2b2c0f74b7e0ba69c85b753",
+      "canonical_timeline_sha256": "c32ce3a04d341021494673661924fce3d2dad4892d9de3c5aac0d938bf04cfb4",
+      "classification_allowlist_identity_sha256": "c8b13c2d53f40826a69dc732dd5ab03fee3d6cc299d32be50f8fab02270c237e",
+      "dataset_id": "A3A_FJ_EO_V1",
+      "dataset_role": "SYNTHETIC_FJ",
+      "descriptor_identity_sha256": "9a78373dcc248e61beb7176e01c8ec592c6ebf8fb089d133feea6305c627b364",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "ACCEPTED_WEEKEND_MARKET_CLOSURE": 1
+      },
+      "gap_counts_by_disposition": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_policy_identity_sha256": "16d33f59c99cd7cb7ccac1447f884bde95b521f9f92781f05bb6d7726e3061ea",
+      "gap_policy_sha256": "b7cec4d394f9f753844bc951663941268b46707de4b0442c9ecc82ade881b1b8",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "11510fd9797a49d9c3b0318a42e9424b5820a98b1c151f27d2a82fad815ef1c5",
+      "source_manifest_sha256": "bbdae81adaff7bb9ebc91c4af225c819f77157486f81fbe6426cd9eea6f3798e",
+      "symbol": "FJ_SYNTH#",
+      "timeframe": "H1"
+    }
+  },
+  "E_multiple_sources_mixed_gaps": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2024-08-05T01:00:00",
+      "boundary_start_timestamp": "2024-07-01T09:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 4,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2024-07-01T09:00:00",
+        "last_timestamp": "2024-08-05T01:00:00"
+      },
+      "canonical_timeline_identity_sha256": "cf5beb2c4cedc91d2731f4a214b37896186d6141ffb2977040f0fc4188880335",
+      "canonical_timeline_sha256": "67e63a8f78df43376344483dc8b728378a419aae174b8300f1423db2616eb767",
+      "classification_allowlist_identity_sha256": "d096bda36fe96172a1b564f4fcd9fe505d0f221f6916571b3b0e0633889af1d0",
+      "dataset_id": "A3A_MIXED_MULTI_V1",
+      "dataset_role": "SYNTHETIC_MULTI_SOURCE",
+      "descriptor_identity_sha256": "dbd12302f490d68029ffeb2eeafec665ee50aa126edddd7a8077e4b2682d91bf",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "ACCEPTED_CLOSURE": 1,
+        "UNVERIFIED_GAP": 1
+      },
+      "gap_counts_by_disposition": {
+        "ACCEPTED_CLOSURE": 1,
+        "UNVERIFIED_GAP": 1
+      },
+      "gap_policy_identity_sha256": "9c8a47678630eac17d304f1a47db45950ca7266802f08ae09d8864433807c61b",
+      "gap_policy_sha256": "35b7b2ea4bd9b178056eb08b6fa55e433e29ae88a79a7d52ace290fadc46378e",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "5bb14c77f6f88f404a90064ff370fa33d850352e11339d1e1d18f927c9fc1aae",
+      "source_manifest_sha256": "91e81f4f9f290c20d1784beea21ceb7b5ec6161f5c9573fbcc75e69556c035ff",
+      "symbol": "SYNTH#",
+      "timeframe": "H1"
+    }
+  },
+  "F_runtime_path_relocation": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2024-01-08T01:00:00",
+      "boundary_start_timestamp": "2024-01-05T23:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 2,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2024-01-05T23:00:00",
+        "last_timestamp": "2024-01-08T01:00:00"
+      },
+      "canonical_timeline_identity_sha256": "42d80d82b04a6bd2359a85c4913025ea9138607691d349ee9e7224a96ab5bca8",
+      "canonical_timeline_sha256": "232016ee1a797280a7ede2d05f783188d4d758ca345cb4765bb8c7dafb8c8aef",
+      "classification_allowlist_identity_sha256": "d096bda36fe96172a1b564f4fcd9fe505d0f221f6916571b3b0e0633889af1d0",
+      "dataset_id": "A3A_GENERIC_ACCEPTED_V1",
+      "dataset_role": "SYNTHETIC_GENERIC",
+      "descriptor_identity_sha256": "3ff5f9b2dad0cce43fbfb9c0133ab681760150484279041888eef1d63736e306",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_counts_by_disposition": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_policy_identity_sha256": "b7ef04fd85f4808d4b6a979ccd1b6727f27a02d5b058509cdf6a371c73486e09",
+      "gap_policy_sha256": "74ea037bfcb98c7580857c50843ad18e52b2e7a660e54956f00538dd0d395cc9",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "c84c0e79e4e7b3284e7965b741566995cc325375f8013e1e9a0690b2aeaa1620",
+      "source_manifest_sha256": "ffdf4f684b8d66b72f7ea3b121beea5af3bb57a17834937a64bb9fae52d968a2",
+      "symbol": "SYNTH#",
+      "timeframe": "H1"
+    }
+  },
+  "G_eo_fq_equivalent_semantics": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2024-09-09T01:00:00",
+      "boundary_start_timestamp": "2024-09-06T23:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 2,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2024-09-06T23:00:00",
+        "last_timestamp": "2024-09-09T01:00:00"
+      },
+      "canonical_timeline_identity_sha256": "dc4fc39c92475968faca6c87e6ab9e135a9c2faa6ee8c9ed0c1bec961d863163",
+      "canonical_timeline_sha256": "cca18a41d579872f67252f2c1fba677ed58d7a7cddd7d7975e1dd294f0708f92",
+      "classification_allowlist_identity_sha256": "8ee719b0f6b51673d71108aee4b3d78c02d1d05dbeaedff5bb1e7f79b1bf6f4a",
+      "dataset_id": "A3A_EQUIVALENT_V1",
+      "dataset_role": "SYNTHETIC_EQUIVALENCE",
+      "descriptor_identity_sha256": "4bea79ccdd03c832a36f33ae2b1a456cc4486acc010f194984b1796f4febe84c",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "ACCEPTED_ROUTINE_WEEKEND_CLOSURE": 1
+      },
+      "gap_counts_by_disposition": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_policy_identity_sha256": "8cc191e058484470393c93d5961e5cb031cdcac05cf51a766b36fc60ecbccea8",
+      "gap_policy_sha256": "f2c00b0b8ab374a3b78b8f356789fc90e4ccc30a0ff3cdb142d4044929506447",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "47978e43f8ea67c1eac13d75bc5c0c77a1ae5fcee48b57842eb995f73668a541",
+      "source_manifest_sha256": "c40de1522d294f349aa2beb6d6928e54dac9cc272b532d87d1552112dd6365c6",
+      "symbol": "SYNTH#",
+      "timeframe": "H1"
+    },
+    "equivalent_semantics": true
+  },
+  "H_repeated_deterministic_composition": {
+    "adapter_validation_only_guard": {
+      "blocked_actions": [
+        "execute_detector",
+        "emit_event",
+        "emit_atr_event",
+        "calculate_tp_sl",
+        "emit_outcome"
+      ],
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "outcome_execution_allowed": false
+    },
+    "descriptor": {
+      "boundary_end_timestamp": "2024-01-08T01:00:00",
+      "boundary_start_timestamp": "2024-01-05T23:00:00",
+      "broker_history_completeness": "NOT_PROVEN",
+      "canonical_bar_count": 2,
+      "canonical_timeline_boundary": {
+        "first_timestamp": "2024-01-05T23:00:00",
+        "last_timestamp": "2024-01-08T01:00:00"
+      },
+      "canonical_timeline_identity_sha256": "99687cb46da20b4494c19338097e5d1902e230e2ae0af3434525789d99dbefe5",
+      "canonical_timeline_sha256": "232016ee1a797280a7ede2d05f783188d4d758ca345cb4765bb8c7dafb8c8aef",
+      "classification_allowlist_identity_sha256": "d096bda36fe96172a1b564f4fcd9fe505d0f221f6916571b3b0e0633889af1d0",
+      "dataset_id": "A3A_REPEAT_V1",
+      "dataset_role": "SYNTHETIC_REPEAT",
+      "descriptor_identity_sha256": "a722f576a9165f0fea9248b2f2a0d8792b9ca8c294cadcf42ae0f53ef65b6f28",
+      "detector_contract_version": "DETECTOR_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "detector_execution_allowed": false,
+      "execution_mode": "ADAPTER_VALIDATION_ONLY",
+      "gap_counts_by_classification": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_counts_by_disposition": {
+        "ACCEPTED_CLOSURE": 1
+      },
+      "gap_policy_identity_sha256": "3a3c0d04b413a9d4c862aed41e541b00b6c41b59c1227048e95dc1e8996469e9",
+      "gap_policy_sha256": "74ea037bfcb98c7580857c50843ad18e52b2e7a660e54956f00538dd0d395cc9",
+      "interpretation_contract_version": "INTERPRETATION_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_contract_version": "OUTCOME_NOT_EXECUTED_ADAPTER_ONLY_V1",
+      "outcome_execution_allowed": false,
+      "schema_version": "dataset_execution_descriptor.v1",
+      "source_manifest_identity_sha256": "8fc5a21536b6b5884f7e25a338a6e1c2cf2b6ec03fd019dae14162d48a0da18c",
+      "source_manifest_sha256": "1900f32571eb737da6b0e8c485f8485c587b24e0e59caa14f7cce5d5906af256",
+      "symbol": "SYNTH#",
+      "timeframe": "H1"
+    },
+    "repeated_descriptor_byte_identical": true
+  }
+}

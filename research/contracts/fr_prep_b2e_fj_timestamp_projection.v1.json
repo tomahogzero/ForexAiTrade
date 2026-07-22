@@ -1,0 +1,37 @@
+{
+  "schema_version": "fr_prep_b2e_fj_timestamp_projection.v1",
+  "checkpoint": "FR_PREP_B2E_R1A2",
+  "projection_version": "fj_timestamp_projection.v1",
+  "helper_path": "tools/fr_prep_b2e_fj_metadata_projection.py",
+  "helper_fixture_deterministic_sha256": "ff5f49dfa09d51a4734c70c2faa39181b89a20f23d93190e3889de8633246f10",
+  "accepted_formats": [
+    "YYYY-MM-DDTHH:MM:SS",
+    "YYYY-MM-DD HH:MM:SS",
+    "YYYY.MM.DDTHH:MM:SS",
+    "YYYY.MM.DD HH:MM:SS"
+  ],
+  "accepted_format_ids": [
+    "ISO_DATE_T",
+    "ISO_DATE_SPACE",
+    "MT5_DOTTED_DATE_T",
+    "MT5_DOTTED_DATE_SPACE"
+  ],
+  "canonical_output_format": "YYYY-MM-DDTHH:MM:SS",
+  "projected_field_paths": [
+    "dataset_context.boundary_start_timestamp",
+    "dataset_context.boundary_end_timestamp",
+    "dataset_context.expected_timeline.first_timestamp",
+    "dataset_context.expected_timeline.last_timestamp",
+    "provenance.sources[*].first_timestamp",
+    "provenance.sources[*].last_timestamp"
+  ],
+  "timezone_policy": "NAIVE_ONLY_TIMEZONE_VALUES_REJECTED",
+  "fractional_second_policy": "REJECTED",
+  "whitespace_policy": "LEADING_TRAILING_REJECTED",
+  "ambiguity_policy": "EXACT_ALLOWLIST_NO_GUESSING",
+  "original_representation_excluded_from_identity": true,
+  "audit_excluded_from_identity": true,
+  "runtime_paths_excluded_from_identity": true,
+  "frozen_evidence_modified": false,
+  "real_data_access_allowed": false
+}

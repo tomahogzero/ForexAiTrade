@@ -1,0 +1,106 @@
+{
+  "fixture_schema_version": "fr_prep_b2e_r1a2_projection_integration.v1",
+  "expected": {
+    "audit_entry_count": 8,
+    "audit_field_names": [
+      "dataset_context.boundary_start_timestamp",
+      "dataset_context.boundary_end_timestamp",
+      "dataset_context.expected_timeline.first_timestamp",
+      "dataset_context.expected_timeline.last_timestamp",
+      "provenance.sources[0].first_timestamp",
+      "provenance.sources[0].last_timestamp",
+      "provenance.sources[1].first_timestamp",
+      "provenance.sources[1].last_timestamp"
+    ],
+    "accepted_format_ids": {
+      "legacy_view": {
+        "dataset_context.boundary_start_timestamp": "MT5_DOTTED_DATE_T",
+        "dataset_context.boundary_end_timestamp": "MT5_DOTTED_DATE_SPACE",
+        "dataset_context.expected_timeline.first_timestamp": "MT5_DOTTED_DATE_SPACE",
+        "dataset_context.expected_timeline.last_timestamp": "MT5_DOTTED_DATE_T",
+        "provenance.sources[0].first_timestamp": "MT5_DOTTED_DATE_T",
+        "provenance.sources[0].last_timestamp": "MT5_DOTTED_DATE_SPACE",
+        "provenance.sources[1].first_timestamp": "MT5_DOTTED_DATE_SPACE",
+        "provenance.sources[1].last_timestamp": "MT5_DOTTED_DATE_T"
+      },
+      "iso_view": {
+        "dataset_context.boundary_start_timestamp": "ISO_DATE_T",
+        "dataset_context.boundary_end_timestamp": "ISO_DATE_SPACE",
+        "dataset_context.expected_timeline.first_timestamp": "ISO_DATE_SPACE",
+        "dataset_context.expected_timeline.last_timestamp": "ISO_DATE_T",
+        "provenance.sources[0].first_timestamp": "ISO_DATE_T",
+        "provenance.sources[0].last_timestamp": "ISO_DATE_SPACE",
+        "provenance.sources[1].first_timestamp": "ISO_DATE_SPACE",
+        "provenance.sources[1].last_timestamp": "ISO_DATE_T"
+      }
+    }
+  },
+  "views": {
+    "legacy_view": {
+      "dataset_context": {
+        "dataset_id": "FJ_SYNTHETIC_2023_2025_GOLD_H1",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "boundary_start_timestamp": "2023.01.03T01:00:00",
+        "boundary_end_timestamp": "2025.01.02 23:00:00",
+        "expected_timeline": {
+          "first_timestamp": "2023.01.03 01:00:00",
+          "last_timestamp": "2025.01.02T23:00:00"
+        },
+        "runtime_path": "C:\\synthetic\\legacy\\manifest.json"
+      },
+      "provenance": {
+        "sources": [
+          {
+            "source_id": "SYNTHETIC_SOURCE_2023",
+            "file_name": "synthetic_2023.tsv",
+            "first_timestamp": "2023.01.03T01:00:00",
+            "last_timestamp": "2023.12.29 23:00:00",
+            "runtime_path": "C:\\synthetic\\legacy\\synthetic_2023.tsv"
+          },
+          {
+            "source_id": "SYNTHETIC_SOURCE_2024_2025",
+            "file_name": "synthetic_2024_2025.tsv",
+            "first_timestamp": "2024.01.02 00:00:00",
+            "last_timestamp": "2025.01.02T23:00:00",
+            "runtime_path": "C:\\synthetic\\legacy\\synthetic_2024_2025.tsv"
+          }
+        ],
+        "scratch_path": "C:\\synthetic\\legacy\\scratch"
+      }
+    },
+    "iso_view": {
+      "dataset_context": {
+        "dataset_id": "FJ_SYNTHETIC_2023_2025_GOLD_H1",
+        "symbol": "GOLD#",
+        "timeframe": "H1",
+        "boundary_start_timestamp": "2023-01-03T01:00:00",
+        "boundary_end_timestamp": "2025-01-02 23:00:00",
+        "expected_timeline": {
+          "first_timestamp": "2023-01-03 01:00:00",
+          "last_timestamp": "2025-01-02T23:00:00"
+        },
+        "runtime_path": "D:\\isolated\\iso\\manifest.json"
+      },
+      "provenance": {
+        "sources": [
+          {
+            "source_id": "SYNTHETIC_SOURCE_2023",
+            "file_name": "synthetic_2023.tsv",
+            "first_timestamp": "2023-01-03T01:00:00",
+            "last_timestamp": "2023-12-29 23:00:00",
+            "runtime_path": "D:\\isolated\\iso\\synthetic_2023.tsv"
+          },
+          {
+            "source_id": "SYNTHETIC_SOURCE_2024_2025",
+            "file_name": "synthetic_2024_2025.tsv",
+            "first_timestamp": "2024-01-02 00:00:00",
+            "last_timestamp": "2025-01-02T23:00:00",
+            "runtime_path": "D:\\isolated\\iso\\synthetic_2024_2025.tsv"
+          }
+        ],
+        "scratch_path": "D:\\isolated\\iso\\scratch"
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "fr_prep_b2e_r1b_fj_real_data_authorization.v1",
+  "checkpoint": "FR_PREP_B2E_R1B1",
+  "dataset_id": "FJ_2023_2025_GOLD_H1",
+  "dataset_role": "DEVELOPMENT_BACKWARD_COMPATIBILITY_REPLAY",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "execution_mode": "ADAPTER_VALIDATION_ONLY",
+  "real_data_access_allowed": true,
+  "runtime_source_root_supplied_separately": true,
+  "absolute_paths_excluded_from_canonical_identities": true,
+  "allowed_operations": [
+    "TIMESTAMP_METADATA_PROJECTION",
+    "FROZEN_SOURCE_HASH_VERIFICATION",
+    "HISTORICAL_SOURCE_ADAPTER_VALIDATION",
+    "EO_FJ_GAP_POLICY_ADAPTER_VALIDATION",
+    "DETERMINISTIC_REPLAY",
+    "CONTROLLED_TEMPORARY_RELOCATION_VALIDATION"
+  ],
+  "denied_operations": [
+    "DESCRIPTOR_COMPOSITION_DURING_R1B1",
+    "DETECTOR_IMPORT",
+    "DETECTOR_EXECUTION",
+    "FI_EXECUTION",
+    "LEGACY_FJ_RUNNER_IMPORT",
+    "LEGACY_FJ_RUNNER_EXECUTION",
+    "WRAPPER_REPLAY",
+    "FQ_OR_HOLDOUT_ACCESS",
+    "EVENT_GENERATION",
+    "ATR_EVENT_GENERATION",
+    "TP_SL_CALCULATION",
+    "OUTCOME_GENERATION",
+    "FN_INTERPRETATION",
+    "ORDER_LOGIC",
+    "FORWARD_TESTING",
+    "DEMO_LIVE_TRADING",
+    "RISK_LOT_OR_PARAMETER_CHANGES",
+    "OPTIMIZATION"
+  ],
+  "timestamp_projection_binding": {
+    "contract_path": "research/contracts/fr_prep_b2e_fj_timestamp_projection.v1.json",
+    "contract_sha256": "1030bcbb0a453947d53ce661bfd5bbccb4bba76f63577e9d1b14ade0e119ea3b",
+    "helper_path": "tools/fr_prep_b2e_fj_metadata_projection.py",
+    "helper_sha256": "d4982c5170663698924d6b6fd56e8bbd1fe02109669d1d29cf24dd3b6529a286",
+    "projection_runner_path": "tools/run_fr_prep_b2e_fj_adapter_binding_evidence.py",
+    "projection_runner_sha256": "26db920cdb5f5c987af5f6d71bd2e3aaf8dc31f637695427e4537f54fce7f57e",
+    "r1a1_deterministic_sha256": "ff5f49dfa09d51a4734c70c2faa39181b89a20f23d93190e3889de8633246f10",
+    "r1a2_deterministic_sha256": "59498757751f0dfef520bd1698db1be01444619e495bd974cb646f6384135a4a"
+  },
+  "historical_source_manifest_evidence": {
+    "path": "research/results/checkpoint_fj_historical_event_population/checkpoint_fj_source_manifest.json",
+    "sha256": "f64519a6341488578b95ca06103268ff3323f4593e177a3e4eba2f583e75469c"
+  },
+  "gap_policy": {
+    "path": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv",
+    "source_contract_type": "EO_FJ_CSV_V1"
+  },
+  "frozen_sources": [
+    {
+      "file_name": "GOLD#_H1_202301030100_202312292300.csv",
+      "sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+      "expected_rows": 5894,
+      "source_id": "FJ_GOLD_H1_2023"
+    },
+    {
+      "file_name": "GOLD#_H1_202401020100_202412312000.csv",
+      "sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+      "expected_rows": 5928,
+      "source_id": "FJ_GOLD_H1_2024"
+    },
+    {
+      "file_name": "GOLD#_H1_202501020800_202512311900.csv",
+      "sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b",
+      "expected_rows": 5894,
+      "source_id": "FJ_GOLD_H1_2025"
+    }
+  ],
+  "expected_total_rows": 17716,
+  "expected_source_count": 3,
+  "expected_first_timestamp": "2023-01-03T01:00:00",
+  "expected_last_timestamp": "2025-12-31T19:00:00",
+  "descriptor_composition_allowed": false,
+  "detector_allowed": false,
+  "event_generation_allowed": false,
+  "outcome_generation_allowed": false,
+  "forward_test_allowed": false,
+  "demo_live_trading_allowed": false,
+  "optimization_allowed": false
+}

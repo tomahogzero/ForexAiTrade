@@ -1,0 +1,161 @@
+{
+  "schema_version": "fr_prep_b2e_r1b1_fj_source_gap_bindings.v1",
+  "checkpoint": "FR_PREP_B2E_R1B1",
+  "decision": "FR_PREP_B2E_R1B1_PASS_FJ_SOURCE_GAP_BINDINGS_FROZEN",
+  "authorization_contract": {
+    "path": "research/contracts/fr_prep_b2e_r1b_fj_real_data_authorization.v1.json",
+    "sha256": "bd9c8b9f61483e20a723dbd3cd15ce8b0d39f958b767ab70fba647db3428ecfc"
+  },
+  "timestamp_projection_contract": {
+    "path": "research/contracts/fr_prep_b2e_fj_timestamp_projection.v1.json",
+    "sha256": "1030bcbb0a453947d53ce661bfd5bbccb4bba76f63577e9d1b14ade0e119ea3b",
+    "helper_path": "tools/fr_prep_b2e_fj_metadata_projection.py",
+    "helper_sha256": "d4982c5170663698924d6b6fd56e8bbd1fe02109669d1d29cf24dd3b6529a286",
+    "r1a1_deterministic_sha256": "ff5f49dfa09d51a4734c70c2faa39181b89a20f23d93190e3889de8633246f10",
+    "r1a2_deterministic_sha256": "59498757751f0dfef520bd1698db1be01444619e495bd974cb646f6384135a4a",
+    "r1b1_projection_identity": "1d7151761233277824bdd8772b945b61939195b1feb0b8a19fdf93769ded6053"
+  },
+  "historical_source_manifest_evidence": {
+    "path": "research/results/checkpoint_fj_historical_event_population/checkpoint_fj_source_manifest.json",
+    "sha256": "f64519a6341488578b95ca06103268ff3323f4593e177a3e4eba2f583e75469c"
+  },
+  "dataset": {
+    "dataset_id": "FJ_2023_2025_GOLD_H1",
+    "dataset_role": "DEVELOPMENT_BACKWARD_COMPATIBILITY_REPLAY",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "execution_mode": "ADAPTER_VALIDATION_ONLY",
+    "mapping_profile": "FJ_SOURCE_PROVENANCE_V1",
+    "broker_history_completeness": "NOT_PROVEN",
+    "raw_broker_csv_committed": false
+  },
+  "sources": [
+    {
+      "source_id": "FJ_GOLD_H1_2023",
+      "file_name": "GOLD#_H1_202301030100_202312292300.csv",
+      "sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+      "row_count": 5894,
+      "size_bytes": 371807,
+      "first_timestamp": "2023-01-03T01:00:00",
+      "last_timestamp": "2023-12-29T23:00:00"
+    },
+    {
+      "source_id": "FJ_GOLD_H1_2024",
+      "file_name": "GOLD#_H1_202401020100_202412312000.csv",
+      "sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+      "row_count": 5928,
+      "size_bytes": 374786,
+      "first_timestamp": "2024-01-02T01:00:00",
+      "last_timestamp": "2024-12-31T20:00:00"
+    },
+    {
+      "source_id": "FJ_GOLD_H1_2025",
+      "file_name": "GOLD#_H1_202501020800_202512311900.csv",
+      "sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b",
+      "row_count": 5894,
+      "size_bytes": 374055,
+      "first_timestamp": "2025-01-02T08:00:00",
+      "last_timestamp": "2025-12-31T19:00:00"
+    }
+  ],
+  "frozen_boundaries": {
+    "first_timestamp": "2023-01-03T01:00:00",
+    "last_timestamp": "2025-12-31T19:00:00"
+  },
+  "source_count": 3,
+  "total_rows": 17716,
+  "duplicate_timestamps": 0,
+  "source_dataset_identity": "b9cc38c6da2474ba22947053a6333f4b7312c2e39221cd1cb4ff3cf47f6c7122",
+  "canonical_timeline_sha256": "3afe66cadf8e7ecdfd9aa8f37145ca5fe047a62b66f62ef82dad11887ecbdd02",
+  "canonical_timeline_observation_provenance": {
+    "derived_at_checkpoint": "FR_PREP_B2E_R1B1",
+    "historical_timeline_hash_claimed": false,
+    "algorithm": {
+      "encoding": "UTF-8-SIG",
+      "timestamp_format": "%Y.%m.%d %H:%M:%S",
+      "decimal_normalization": "Decimal.normalize_then_fixed",
+      "ordering": "timestamp_then_source_row_key",
+      "canonical_json": "sorted_keys_compact_ascii"
+    }
+  },
+  "gap_binding": {
+    "artifact_path": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv",
+    "artifact_sha256": "136bedb63c3b40242da7dd3aefc4587583f8084f145dd88302868d3386dfd944",
+    "policy_id": "FJ_2023_2025_EO_GAP_POLICY",
+    "source_contract_type": "EO_FJ_CSV_V1",
+    "gap_policy_identity": "8390e1079a05af021701887da42e1824b6982af7da64137d23289324be31f8f9",
+    "normalized_gap_inventory_sha256": "d94812339fa30ec9cb4fdbe617b105fc72211bda79d19ce50a618ee819dd1ca4",
+    "classification_allowlist": [
+      "ACCEPTED_DAILY_BROKER_SESSION_GAP",
+      "ACCEPTED_WEEKEND_MARKET_CLOSURE",
+      "BLOCKED_UNCLASSIFIED_GAP"
+    ],
+    "classification_allowlist_identity": "c8b13c2d53f40826a69dc732dd5ab03fee3d6cc299d32be50f8fab02270c237e",
+    "classification_counts": {
+      "ACCEPTED_DAILY_BROKER_SESSION_GAP": 594,
+      "ACCEPTED_WEEKEND_MARKET_CLOSURE": 151,
+      "BLOCKED_UNCLASSIFIED_GAP": 28
+    },
+    "entry_count": 773,
+    "accepted_closure_count": 745,
+    "unverified_gap_count": 28,
+    "duplicate_gap_id_count": 0,
+    "duplicate_source_record_identity_count": 0,
+    "duplicate_timestamp_pair_count": 0,
+    "semantic_conflict_count": 0
+  },
+  "deterministic_mismatch_counters": {
+    "source_identity_mismatch_count": 0,
+    "timeline_mismatch_count": 0,
+    "gap_identity_mismatch_count": 0,
+    "normalized_gap_inventory_mismatch_count": 0,
+    "allowlist_identity_mismatch_count": 0,
+    "count_mismatch": 0,
+    "boundary_mismatch": 0,
+    "relocation_mismatch": 0,
+    "canonical_summary_mismatch": 0
+  },
+  "relocation_proof": {
+    "temporary_directory_outside_repository": true,
+    "copied_bytes_hash_verified": true,
+    "timestamp_projection_identity_unchanged": true,
+    "source_dataset_identity_unchanged": true,
+    "canonical_timeline_sha256_unchanged": true,
+    "gap_policy_identity_unchanged": true,
+    "normalized_gap_inventory_sha256_unchanged": true,
+    "classification_allowlist_identity_unchanged": true,
+    "counts_and_boundaries_unchanged": true
+  },
+  "permitted_real_file_open_counters": {
+    "committed_fj_manifest_evidence_open_count": 1,
+    "approved_fj_source_files_open_count": 27,
+    "eo_fj_policy_open_count": 11,
+    "temporary_relocated_copies_open_count": 25
+  },
+  "safety_counters": {
+    "source_adapter_import_count": 1,
+    "gap_adapter_import_count": 1,
+    "descriptor_adapter_import_count": 0,
+    "detector_import_count": 0,
+    "detector_execution_count": 0,
+    "fi_import_count": 0,
+    "fi_execution_count": 0,
+    "legacy_runner_import_count": 0,
+    "legacy_runner_execution_count": 0,
+    "wrapper_import_count": 0,
+    "wrapper_execution_count": 0,
+    "fq_source_file_open_count": 0,
+    "fq_gap_inventory_open_count": 0,
+    "event_population_emit_count": 0,
+    "atr_event_emit_count": 0,
+    "tp_sl_calculation_count": 0,
+    "outcome_emit_count": 0,
+    "fn_interpretation_count": 0
+  },
+  "frozen_evidence_modified": false,
+  "source_data_semantics_changed": false,
+  "detector_executed": false,
+  "events_generated": false,
+  "outcomes_generated": false,
+  "descriptor_composed": false
+}

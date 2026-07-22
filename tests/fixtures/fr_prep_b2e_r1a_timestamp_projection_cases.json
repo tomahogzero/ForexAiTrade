@@ -1,0 +1,113 @@
+{
+  "schema_version": "fr_prep_b2e_r1a_timestamp_projection_cases.v1",
+  "positive_fixtures": [
+    {
+      "fixture_id": "positive_dot_date_t_separator",
+      "values": ["2023.01.03T01:00:00"],
+      "expected": "2023-01-03T01:00:00"
+    },
+    {
+      "fixture_id": "positive_dot_date_space_separator",
+      "values": ["2023.01.03 01:00:00"],
+      "expected": "2023-01-03T01:00:00"
+    },
+    {
+      "fixture_id": "positive_hyphen_date_space_separator",
+      "values": ["2023-01-03 01:00:00"],
+      "expected": "2023-01-03T01:00:00"
+    },
+    {
+      "fixture_id": "positive_canonical_format",
+      "values": ["2023-01-03T01:00:00"],
+      "expected": "2023-01-03T01:00:00"
+    },
+    {
+      "fixture_id": "positive_all_formats_one_canonical",
+      "values": [
+        "2023-01-03T01:00:00",
+        "2023-01-03 01:00:00",
+        "2023.01.03T01:00:00",
+        "2023.01.03 01:00:00"
+      ],
+      "expected": "2023-01-03T01:00:00"
+    },
+    {
+      "fixture_id": "positive_valid_leap_day",
+      "values": ["2024.02.29T12:34:56"],
+      "expected": "2024-02-29T12:34:56"
+    },
+    {
+      "fixture_id": "positive_valid_end_of_day",
+      "values": ["2023-12-31 23:59:59"],
+      "expected": "2023-12-31T23:59:59"
+    },
+    {
+      "fixture_id": "positive_repeated_canonicalization_identical",
+      "values": ["2023.01.03T01:00:00"],
+      "expected": "2023-01-03T01:00:00",
+      "repeat_count": 3
+    }
+  ],
+  "negative_fixtures": [
+    {
+      "fixture_id": "negative_slash_separated_date",
+      "value": "2023/01/03T01:00:00",
+      "expected_validation_code": "TIMESTAMP_FORMAT_NOT_ALLOWLISTED"
+    },
+    {
+      "fixture_id": "negative_date_only_value",
+      "value": "2023-01-03",
+      "expected_validation_code": "TIMESTAMP_FORMAT_NOT_ALLOWLISTED"
+    },
+    {
+      "fixture_id": "negative_timezone_offset",
+      "value": "2023-01-03T01:00:00+07:00",
+      "expected_validation_code": "TIMESTAMP_TIMEZONE_NOT_ALLOWED"
+    },
+    {
+      "fixture_id": "negative_timezone_name",
+      "value": "2023-01-03T01:00:00 UTC",
+      "expected_validation_code": "TIMESTAMP_TIMEZONE_NOT_ALLOWED"
+    },
+    {
+      "fixture_id": "negative_fractional_seconds",
+      "value": "2023-01-03T01:00:00.123",
+      "expected_validation_code": "TIMESTAMP_FRACTION_NOT_ALLOWED"
+    },
+    {
+      "fixture_id": "negative_invalid_month",
+      "value": "2023-13-03T01:00:00",
+      "expected_validation_code": "TIMESTAMP_CALENDAR_INVALID"
+    },
+    {
+      "fixture_id": "negative_invalid_day",
+      "value": "2023-02-30T01:00:00",
+      "expected_validation_code": "TIMESTAMP_CALENDAR_INVALID"
+    },
+    {
+      "fixture_id": "negative_invalid_hour",
+      "value": "2023-01-03T24:00:00",
+      "expected_validation_code": "TIMESTAMP_CALENDAR_INVALID"
+    },
+    {
+      "fixture_id": "negative_ambiguous_dd_mm_yyyy",
+      "value": "03-01-2023T01:00:00",
+      "expected_validation_code": "TIMESTAMP_FORMAT_NOT_ALLOWLISTED"
+    },
+    {
+      "fixture_id": "negative_empty_string",
+      "value": "",
+      "expected_validation_code": "TIMESTAMP_VALUE_EMPTY"
+    },
+    {
+      "fixture_id": "negative_non_string_value",
+      "value": 1672707600,
+      "expected_validation_code": "TIMESTAMP_VALUE_NOT_STRING"
+    },
+    {
+      "fixture_id": "negative_leading_or_trailing_whitespace",
+      "value": " 2023-01-03T01:00:00",
+      "expected_validation_code": "TIMESTAMP_WHITESPACE_NOT_ALLOWED"
+    }
+  ]
+}

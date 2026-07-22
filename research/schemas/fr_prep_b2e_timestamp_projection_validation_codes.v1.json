@@ -1,0 +1,54 @@
+{
+  "schema_version": "fr_prep_b2e_timestamp_projection_validation_codes.v1",
+  "validation_codes": [
+    {
+      "validation_code": "TIMESTAMP_VALUE_NOT_STRING",
+      "validation_layer": "timestamp_projection",
+      "meaning": "The timestamp value is not a string.",
+      "precedence": 1,
+      "proving_fixture": "negative_non_string_value"
+    },
+    {
+      "validation_code": "TIMESTAMP_VALUE_EMPTY",
+      "validation_layer": "timestamp_projection",
+      "meaning": "The timestamp value is an empty string.",
+      "precedence": 2,
+      "proving_fixture": "negative_empty_string"
+    },
+    {
+      "validation_code": "TIMESTAMP_WHITESPACE_NOT_ALLOWED",
+      "validation_layer": "timestamp_projection",
+      "meaning": "The timestamp has leading or trailing whitespace.",
+      "precedence": 3,
+      "proving_fixture": "negative_leading_or_trailing_whitespace"
+    },
+    {
+      "validation_code": "TIMESTAMP_TIMEZONE_NOT_ALLOWED",
+      "validation_layer": "timestamp_projection",
+      "meaning": "The timestamp contains a timezone offset or timezone name.",
+      "precedence": 4,
+      "proving_fixture": "negative_timezone_offset"
+    },
+    {
+      "validation_code": "TIMESTAMP_FRACTION_NOT_ALLOWED",
+      "validation_layer": "timestamp_projection",
+      "meaning": "The timestamp contains fractional seconds.",
+      "precedence": 5,
+      "proving_fixture": "negative_fractional_seconds"
+    },
+    {
+      "validation_code": "TIMESTAMP_FORMAT_NOT_ALLOWLISTED",
+      "validation_layer": "timestamp_projection",
+      "meaning": "The timestamp does not exactly match an allowlisted naive format.",
+      "precedence": 6,
+      "proving_fixture": "negative_slash_separated_date"
+    },
+    {
+      "validation_code": "TIMESTAMP_CALENDAR_INVALID",
+      "validation_layer": "timestamp_projection",
+      "meaning": "The timestamp matches an allowlisted shape but is not calendar-valid.",
+      "precedence": 7,
+      "proving_fixture": "negative_invalid_month"
+    }
+  ]
+}

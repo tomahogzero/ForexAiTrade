@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b2e_r1b2_fj_descriptor_composition_authorization.v1.schema.json",
+  "title": "FR-Prep-B2e R1b-2 frozen FJ descriptor composition authorization",
+  "description": "Exact fail-closed authorization contract for adapter-only descriptor composition.",
+  "const": {
+    "schema_version": "fr_prep_b2e_r1b2_fj_descriptor_composition_authorization.v1",
+    "checkpoint": "FR_PREP_B2E_R1B2",
+    "execution_mode": "ADAPTER_VALIDATION_ONLY",
+    "dataset_id": "FJ_2023_2025_GOLD_H1",
+    "dataset_role": "DEVELOPMENT_BACKWARD_COMPATIBILITY_REPLAY",
+    "symbol": "GOLD#",
+    "timeframe": "H1",
+    "r1b1c_evidence_binding": {
+      "contract_path": "research/contracts/fr_prep_b2e_r1b1_fj_source_gap_bindings.v1.json",
+      "contract_file_sha256": "71d235978e183bf99f77fc427acdf7552640f063f0ccdb9d2364242e7a71c9ae",
+      "result_path": "research/results/checkpoint_fr_prep_b2e_r1b1/fj_source_gap_binding_summary.json",
+      "result_file_sha256": "ff52db9b93f6c5edb0de117b33362d1c7c1ef9a30c90bbb9e847f2ad39b01754",
+      "schema_path": "research/schemas/fr_prep_b2e_r1b1_fj_source_gap_bindings.v1.schema.json",
+      "schema_file_sha256": "a5decec85283eef28c653f3b818297c8f0592a0e6bf83867f2b88d4b94846ad9",
+      "required_decision": "FR_PREP_B2E_R1B1_PASS_FROZEN_BINDING_EVIDENCE",
+      "required_canonical_summary_sha256": "da22164a2cf95c2524ea645a65e07eb3a1188df836d97b963e1cd577657cfd44"
+    },
+    "descriptor_adapter_binding": {
+      "path": "tools/dataset_execution_descriptor_adapter.py",
+      "file_sha256": "70fc650106f16476f5778ce1460767987d4bcf6411955c08ed96f5620bc865df",
+      "descriptor_schema_path": "research/schemas/dataset_execution_descriptor.v1.schema.json",
+      "descriptor_schema_file_sha256": "4507930c190414ce29535dd90b52d68f490b23ba2fafcbbdcd1e80ac1874a8b9"
+    },
+    "authorized_gap_policy": {
+      "path": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv",
+      "file_sha256": "136bedb63c3b40242da7dd3aefc4587583f8084f145dd88302868d3386dfd944"
+    },
+    "frozen_sources": [
+      {
+        "source_id": "FJ_GOLD_H1_2023",
+        "file_name": "GOLD#_H1_202301030100_202312292300.csv",
+        "file_sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+        "row_count": 5894
+      },
+      {
+        "source_id": "FJ_GOLD_H1_2024",
+        "file_name": "GOLD#_H1_202401020100_202412312000.csv",
+        "file_sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+        "row_count": 5928
+      },
+      {
+        "source_id": "FJ_GOLD_H1_2025",
+        "file_name": "GOLD#_H1_202501020800_202512311900.csv",
+        "file_sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b",
+        "row_count": 5894
+      }
+    ],
+    "allowed_operations": [
+      "FROZEN_FJ_DESCRIPTOR_COMPOSITION",
+      "DESCRIPTOR_VALIDATION",
+      "DETERMINISTIC_REPLAY",
+      "CONTROLLED_TEMPORARY_RELOCATION_VALIDATION",
+      "ADAPTER_ONLY_GUARD_NEGATIVE_VALIDATION"
+    ],
+    "denied_operations": [
+      "DETECTOR_IMPORT_OR_EXECUTION",
+      "FI_EXECUTION",
+      "LEGACY_FJ_EXECUTION",
+      "WRAPPER_REPLAY",
+      "FQ_OR_HOLDOUT_ACCESS",
+      "EVENT_GENERATION",
+      "ATR_EVENT_GENERATION",
+      "TP_SL_CALCULATION",
+      "OUTCOME_GENERATION",
+      "FN_INTERPRETATION",
+      "FORWARD_TESTING",
+      "MT5_OR_EA_EXECUTION",
+      "ORDER_LOGIC",
+      "RISK_OR_LOT_CHANGES",
+      "OPTIMIZATION",
+      "STRATEGY_MODIFICATION",
+      "INDICATOR_ADDITION",
+      "PROFITABILITY_CLAIMS"
+    ],
+    "real_data_access_allowed": true,
+    "descriptor_composition_allowed": true,
+    "detector_execution_allowed": false,
+    "outcome_execution_allowed": false,
+    "fq_access_allowed": false,
+    "mt5_execution_allowed": false,
+    "ea_execution_allowed": false,
+    "runtime_source_root_supplied_separately": true,
+    "absolute_runtime_paths_excluded_from_canonical_identities": true
+  }
+}

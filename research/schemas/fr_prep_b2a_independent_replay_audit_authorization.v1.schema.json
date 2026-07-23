@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b2a_independent_replay_audit_authorization.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "mode",
+    "allowed_operations",
+    "committed_artifacts",
+    "expected",
+    "detector_import_allowed",
+    "legacy_runner_import_allowed",
+    "wrapper_import_allowed",
+    "b2_runner_import_allowed",
+    "fq_access_allowed",
+    "external_process_allowed",
+    "mt5_execution_allowed",
+    "ea_execution_allowed",
+    "profitability_claim_allowed",
+    "absolute_runtime_paths_excluded_from_identity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "fr_prep_b2a_independent_replay_audit_authorization.v1"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B2A"
+    },
+    "mode": {
+      "const": "INDEPENDENT_COMMITTED_ARTIFACT_AUDIT_ONLY"
+    },
+    "allowed_operations": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "PARSE_COMMITTED_EVENT_CSV",
+          "PARSE_COMMITTED_CANDIDATE_CSV",
+          "VALIDATE_B2_CONTRACT_AND_RESULT",
+          "RECOMPUTE_CANONICAL_HASHES",
+          "DETERMINISTIC_REPEAT",
+          "CONTROLLED_TEMPORARY_RELOCATION",
+          "FAIL_CLOSED_NEGATIVE_TESTS"
+        ]
+      }
+    },
+    "committed_artifacts": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "artifact_id",
+          "category",
+          "path",
+          "file_sha256"
+        ],
+        "properties": {
+          "artifact_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^(research/|tools/)"
+          },
+          "file_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "b2_decision",
+        "b2_canonical_summary_sha256",
+        "source_rows",
+        "gap_count",
+        "accepted_closures",
+        "unverified_gaps",
+        "events",
+        "long",
+        "short",
+        "hashes"
+      ],
+      "properties": {
+        "b2_decision": {
+          "const": "FR_PREP_B2_PASS_FROZEN_FJ_BACKWARD_COMPATIBLE_REPLAY"
+        },
+        "b2_canonical_summary_sha256": {
+          "const": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0"
+        },
+        "source_rows": {
+          "const": 17716
+        },
+        "gap_count": {
+          "const": 773
+        },
+        "accepted_closures": {
+          "const": 745
+        },
+        "unverified_gaps": {
+          "const": 28
+        },
+        "events": {
+          "const": 1079
+        },
+        "long": {
+          "const": 588
+        },
+        "short": {
+          "const": 491
+        },
+        "hashes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "event_population_sha256",
+            "exclusion_population_sha256",
+            "population_summary_sha256",
+            "terminal_status_summary_sha256"
+          ],
+          "properties": {
+            "event_population_sha256": {
+              "const": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b"
+            },
+            "exclusion_population_sha256": {
+              "const": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed"
+            },
+            "population_summary_sha256": {
+              "const": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408"
+            },
+            "terminal_status_summary_sha256": {
+              "const": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+            }
+          }
+        }
+      }
+    },
+    "detector_import_allowed": {
+      "const": false
+    },
+    "legacy_runner_import_allowed": {
+      "const": false
+    },
+    "wrapper_import_allowed": {
+      "const": false
+    },
+    "b2_runner_import_allowed": {
+      "const": false
+    },
+    "fq_access_allowed": {
+      "const": false
+    },
+    "external_process_allowed": {
+      "const": false
+    },
+    "mt5_execution_allowed": {
+      "const": false
+    },
+    "ea_execution_allowed": {
+      "const": false
+    },
+    "profitability_claim_allowed": {
+      "const": false
+    },
+    "absolute_runtime_paths_excluded_from_identity": {
+      "const": true
+    }
+  }
+}

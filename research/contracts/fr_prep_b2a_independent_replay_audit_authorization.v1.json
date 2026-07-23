@@ -1,0 +1,50 @@
+{
+  "schema_version": "fr_prep_b2a_independent_replay_audit_authorization.v1",
+  "checkpoint": "FR_PREP_B2A",
+  "mode": "INDEPENDENT_COMMITTED_ARTIFACT_AUDIT_ONLY",
+  "allowed_operations": [
+    "PARSE_COMMITTED_EVENT_CSV",
+    "PARSE_COMMITTED_CANDIDATE_CSV",
+    "VALIDATE_B2_CONTRACT_AND_RESULT",
+    "RECOMPUTE_CANONICAL_HASHES",
+    "DETERMINISTIC_REPEAT",
+    "CONTROLLED_TEMPORARY_RELOCATION",
+    "FAIL_CLOSED_NEGATIVE_TESTS"
+  ],
+  "committed_artifacts": [
+    {"artifact_id":"b2_contract","category":"b2_contract","path":"research/contracts/fr_prep_b2_fj_backward_compatible_replay.v1.json","file_sha256":"079cadc0ad4fb2c64edf2bf3ffa2707113ab5aa5d59e5919b5124e579685fb99"},
+    {"artifact_id":"b2_schema","category":"b2_schema","path":"research/schemas/fr_prep_b2_fj_backward_compatible_replay.v1.schema.json","file_sha256":"d0a2277573e30b2e17f0125f6cc59ba60c577cfcf964b78b460caba697139d0a"},
+    {"artifact_id":"b2_result","category":"b2_result","path":"research/results/checkpoint_fr_prep_b2/fj_backward_compatible_replay_summary.json","file_sha256":"1c2142665eeb9554ed194d3d4a4284b80af78d5787faf25942649157ca3a9771"},
+    {"artifact_id":"events","category":"committed_event_population","path":"research/results/checkpoint_fj_historical_event_population/checkpoint_fj_event_population.csv","file_sha256":"b42640c02fa94abfb4f7bdd5026a250c1878b9f42008303b69d43de00eb9003c"},
+    {"artifact_id":"candidates","category":"committed_candidate_population","path":"research/results/checkpoint_fj_historical_event_population/checkpoint_fj_candidate_status.csv","file_sha256":"55140e6d1e5de901d25b490491f28f183030961b604a40b53afb43661a562148"},
+    {"artifact_id":"population_summary","category":"committed_population_summary","path":"research/results/checkpoint_fj_historical_event_population/checkpoint_fj_population_summary.json","file_sha256":"9fa5d138e07281bf422d09dac7604c9e9b0e2c078291b6f27ea4eb1a7f967766"},
+    {"artifact_id":"deterministic_replay","category":"committed_deterministic_replay","path":"research/results/checkpoint_fj_historical_event_population/checkpoint_fj_deterministic_replay.json","file_sha256":"76f2511c7b29c0ee2b561dbaa02ed0daecd6b7243503fd5fd1ed89a2296452f5"}
+  ],
+  "expected": {
+    "b2_decision": "FR_PREP_B2_PASS_FROZEN_FJ_BACKWARD_COMPATIBLE_REPLAY",
+    "b2_canonical_summary_sha256": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+    "source_rows": 17716,
+    "gap_count": 773,
+    "accepted_closures": 745,
+    "unverified_gaps": 28,
+    "events": 1079,
+    "long": 588,
+    "short": 491,
+    "hashes": {
+      "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+      "exclusion_population_sha256": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed",
+      "population_summary_sha256": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408",
+      "terminal_status_summary_sha256": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+    }
+  },
+  "detector_import_allowed": false,
+  "legacy_runner_import_allowed": false,
+  "wrapper_import_allowed": false,
+  "b2_runner_import_allowed": false,
+  "fq_access_allowed": false,
+  "external_process_allowed": false,
+  "mt5_execution_allowed": false,
+  "ea_execution_allowed": false,
+  "profitability_claim_allowed": false,
+  "absolute_runtime_paths_excluded_from_identity": true
+}

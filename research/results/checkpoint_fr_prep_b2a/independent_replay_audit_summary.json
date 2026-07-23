@@ -1,0 +1,32 @@
+{
+  "b2_canonical_summary_sha256": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+  "canonical_summary_sha256": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251",
+  "decision": "FR_PREP_B2A_PASS_INDEPENDENT_REPLAY_AUDIT",
+  "events": {
+    "LONG": 588,
+    "SHORT": 491,
+    "total": 1079
+  },
+  "execution_status": "PASS",
+  "hashes": {
+    "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+    "exclusion_population_sha256": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed",
+    "population_summary_sha256": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408",
+    "terminal_status_summary_sha256": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+  },
+  "mismatch_count": 0,
+  "negative_tests": {
+    "passed": 8,
+    "total": 8
+  },
+  "profitability": "NOT_CLAIMED",
+  "prohibited_execution_count": 0,
+  "prohibited_import_count": 0,
+  "rows_gaps": {
+    "accepted": 745,
+    "gaps": 773,
+    "rows": 17716,
+    "unverified": 28
+  },
+  "strategy_performance_status": "NOT_EVALUATED"
+}

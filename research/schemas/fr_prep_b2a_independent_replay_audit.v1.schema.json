@@ -1,0 +1,355 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b2a_independent_replay_audit.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "decision",
+    "b2_evidence",
+    "source_rows",
+    "gap_count",
+    "accepted_closures",
+    "unverified_gaps",
+    "event_count",
+    "long_count",
+    "short_count",
+    "recomputed_hashes",
+    "event_ids_unique",
+    "semantic_events_unique",
+    "event_row_order_canonical",
+    "candidate_row_order_canonical",
+    "normal_repeat_identical",
+    "relocation_identical",
+    "mismatch_counters",
+    "negative_tests",
+    "runtime_audit",
+    "prohibited_modules",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "execution_status",
+    "strategy_performance_status",
+    "profitability",
+    "order_logic",
+    "candidate",
+    "fq_accessed",
+    "atr_events_generated",
+    "tp_sl_calculated",
+    "outcomes_generated",
+    "fn_interpretation_performed",
+    "mt5_executed",
+    "ea_executed",
+    "canonical_summary_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "fr_prep_b2a_independent_replay_audit.v1"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B2A"
+    },
+    "decision": {
+      "const": "FR_PREP_B2A_PASS_INDEPENDENT_REPLAY_AUDIT"
+    },
+    "b2_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision",
+        "canonical_summary_sha256",
+        "contract_schema_validated",
+        "compact_result_schema_validated",
+        "contract_result_projection_match"
+      ],
+      "properties": {
+        "decision": {
+          "const": "FR_PREP_B2_PASS_FROZEN_FJ_BACKWARD_COMPATIBLE_REPLAY"
+        },
+        "canonical_summary_sha256": {
+          "const": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0"
+        },
+        "contract_schema_validated": {
+          "const": true
+        },
+        "compact_result_schema_validated": {
+          "const": true
+        },
+        "contract_result_projection_match": {
+          "const": true
+        }
+      }
+    },
+    "source_rows": {
+      "const": 17716
+    },
+    "gap_count": {
+      "const": 773
+    },
+    "accepted_closures": {
+      "const": 745
+    },
+    "unverified_gaps": {
+      "const": 28
+    },
+    "event_count": {
+      "const": 1079
+    },
+    "long_count": {
+      "const": 588
+    },
+    "short_count": {
+      "const": 491
+    },
+    "recomputed_hashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_population_sha256",
+        "exclusion_population_sha256",
+        "population_summary_sha256",
+        "terminal_status_summary_sha256"
+      ],
+      "properties": {
+        "event_population_sha256": {
+          "const": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b"
+        },
+        "exclusion_population_sha256": {
+          "const": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed"
+        },
+        "population_summary_sha256": {
+          "const": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408"
+        },
+        "terminal_status_summary_sha256": {
+          "const": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+        }
+      }
+    },
+    "event_ids_unique": {
+      "const": true
+    },
+    "semantic_events_unique": {
+      "const": true
+    },
+    "event_row_order_canonical": {
+      "const": true
+    },
+    "candidate_row_order_canonical": {
+      "const": true
+    },
+    "normal_repeat_identical": {
+      "const": true
+    },
+    "relocation_identical": {
+      "const": true
+    },
+    "mismatch_counters": {
+      "type": "object",
+      "minProperties": 8,
+      "additionalProperties": {
+        "type": "integer",
+        "const": 0
+      }
+    },
+    "negative_tests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "test_count",
+        "tests_passed",
+        "all_passed",
+        "results"
+      ],
+      "properties": {
+        "test_count": {
+          "const": 8
+        },
+        "tests_passed": {
+          "const": 8
+        },
+        "all_passed": {
+          "const": true
+        },
+        "results": {
+          "type": "object",
+          "minProperties": 8,
+          "additionalProperties": {
+            "const": true
+          }
+        }
+      }
+    },
+    "runtime_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module_import_counts",
+        "prohibited_execution_counts",
+        "file_access",
+        "external_process",
+        "counter_provenance"
+      ],
+      "properties": {
+        "module_import_counts": {
+          "type": "object",
+          "minProperties": 6,
+          "additionalProperties": {
+            "type": "integer",
+            "const": 0
+          }
+        },
+        "prohibited_execution_counts": {
+          "type": "object",
+          "minProperties": 12,
+          "additionalProperties": {
+            "type": "integer",
+            "const": 0
+          }
+        },
+        "file_access": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "unique_logical_file_counts",
+            "raw_read_operation_counts",
+            "blocked_unauthorized_read_attempt_count",
+            "blocked_attempt_categories",
+            "unauthorized_successful_read_count",
+            "fq_successful_read_count"
+          ],
+          "properties": {
+            "unique_logical_file_counts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "raw_read_operation_counts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "blocked_unauthorized_read_attempt_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "blocked_attempt_categories": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "unauthorized_successful_read_count": {
+              "type": "integer",
+              "const": 0
+            },
+            "fq_successful_read_count": {
+              "type": "integer",
+              "const": 0
+            }
+          }
+        },
+        "external_process": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "successful_external_process_launch_count",
+            "successful_mt5_launch_count",
+            "successful_ea_execution_count",
+            "blocked_external_launch_attempt_count",
+            "blocked_attempt_categories"
+          ],
+          "properties": {
+            "successful_external_process_launch_count": {
+              "type": "integer",
+              "const": 0
+            },
+            "successful_mt5_launch_count": {
+              "type": "integer",
+              "const": 0
+            },
+            "successful_ea_execution_count": {
+              "type": "integer",
+              "const": 0
+            },
+            "blocked_external_launch_attempt_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "blocked_attempt_categories": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "counter_provenance": {
+          "type": "object",
+          "required": [
+            "module_imports",
+            "file_access",
+            "external_process",
+            "executions"
+          ],
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "prohibited_modules": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "type": "integer",
+      "const": 0
+    },
+    "execution_status": {
+      "const": "PASS"
+    },
+    "strategy_performance_status": {
+      "const": "NOT_EVALUATED"
+    },
+    "profitability": {
+      "const": "NOT_CLAIMED"
+    },
+    "order_logic": {
+      "const": "NOT_APPROVED"
+    },
+    "candidate": {
+      "const": "NOT_READY_FOR_ORDER_LOGIC"
+    },
+    "fq_accessed": {
+      "const": false
+    },
+    "atr_events_generated": {
+      "const": false
+    },
+    "tp_sl_calculated": {
+      "const": false
+    },
+    "outcomes_generated": {
+      "const": false
+    },
+    "fn_interpretation_performed": {
+      "const": false
+    },
+    "mt5_executed": {
+      "const": false
+    },
+    "ea_executed": {
+      "const": false
+    },
+    "canonical_summary_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "accepted_closures": 745,
+  "atr_events_generated": false,
+  "broker_history_completeness": "NOT_PROVEN",
+  "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+  "canonical_summary_sha256": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+  "checkpoint": "FR_PREP_B2",
+  "dataset_id": "FJ_2023_2025_GOLD_H1",
+  "decision": "FR_PREP_B2_PASS_FROZEN_FJ_BACKWARD_COMPATIBLE_REPLAY",
+  "descriptor_identity_sha256": "dd325e9a81de40c07e5a579226b4d82d3bfdb06b8a14e3f1a562b8e847119848",
+  "ea_executed": false,
+  "event_count": 1079,
+  "event_ids_and_row_order_match": true,
+  "execution_status": "PASS",
+  "fn_interpretation_performed": false,
+  "fq_accessed": false,
+  "gap_count": 773,
+  "legacy_wrapper_identical": true,
+  "long_count": 588,
+  "mismatch_counters": {
+    "count_mismatch": 0,
+    "event_id_or_row_order_mismatch": 0,
+    "hash_mismatch": 0,
+    "legacy_wrapper_mismatch": 0,
+    "normal_repeat_mismatch": 0,
+    "relocation_mismatch": 0,
+    "source_gap_binding_mismatch": 0
+  },
+  "mt5_executed": false,
+  "normal_repeat_identical": true,
+  "order_logic": "NOT_APPROVED",
+  "outcomes_generated": false,
+  "profitability": "NOT_CLAIMED",
+  "r1b1c_canonical_summary_sha256": "da22164a2cf95c2524ea645a65e07eb3a1188df836d97b963e1cd577657cfd44",
+  "r1b2_canonical_summary_sha256": "b34fc49c4fc83696abceeccf6d2194253be83811b14b4ed060e33b3eed7936a3",
+  "raw_csv_committed": false,
+  "relocation_identical": true,
+  "replay_hashes": {
+    "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+    "exclusion_population_sha256": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed",
+    "population_summary_sha256": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408",
+    "terminal_status_summary_sha256": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+  },
+  "runtime_audit": {
+    "function_execution_counts": {
+      "atr_event_generation_count": 0,
+      "detector_execution_count": 4,
+      "ea_execution_count": 0,
+      "external_process_launch_count": 0,
+      "fn_interpretation_count": 0,
+      "fq_access_count": 0,
+      "legacy_direct_replay_count": 1,
+      "mt5_execution_count": 0,
+      "optimization_count": 0,
+      "outcome_generation_count": 0,
+      "tp_sl_calculation_count": 0,
+      "wrapper_replay_count": 3
+    },
+    "module_import_counts": {
+      "detector_import_count": 1,
+      "fq_import_count": 0,
+      "legacy_runner_import_count": 1,
+      "wrapper_import_count": 1
+    }
+  },
+  "schema_version": "fr_prep_b2_fj_backward_compatible_replay.v1",
+  "short_count": 491,
+  "source_rows": 17716,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "tp_sl_calculated": false,
+  "unverified_gaps": 28
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "fr_prep_b2_fj_replay_authorization.v1",
+  "checkpoint": "FR_PREP_B2",
+  "implementation_stage": "FR_PREP_B2_FROZEN_FJ_BACKWARD_COMPATIBLE_REPLAY",
+  "dataset_id": "FJ_2023_2025_GOLD_H1",
+  "dataset_role": "DEVELOPMENT_BACKWARD_COMPATIBILITY_REPLAY",
+  "symbol": "GOLD#",
+  "timeframe": "H1",
+  "mode": "FJ_BACKWARD_COMPATIBLE_REPLAY_ONLY",
+  "descriptor_identity_sha256": "dd325e9a81de40c07e5a579226b4d82d3bfdb06b8a14e3f1a562b8e847119848",
+  "r1b1c_canonical_summary_sha256": "da22164a2cf95c2524ea645a65e07eb3a1188df836d97b963e1cd577657cfd44",
+  "r1b2_canonical_summary_sha256": "b34fc49c4fc83696abceeccf6d2194253be83811b14b4ed060e33b3eed7936a3",
+  "r1b2_contract": {
+    "path": "research/contracts/fr_prep_b2e_r1b2_fj_descriptor_composition.v1.json",
+    "file_sha256": "71bcece542d1da5be499465599685d34468d0045be28c6baf08bb59182a2d162"
+  },
+  "r1b2_result": {
+    "path": "research/results/checkpoint_fr_prep_b2e_r1b2/fj_descriptor_composition_summary.json",
+    "file_sha256": "ef45daff6584ac95e67396e0b81e7f6bc94b3176845d15639e9062b776182c7d"
+  },
+  "wrapper": {
+    "path": "tools/fr_prep_runner_execution_wrapper.py",
+    "file_sha256": "a1137e0cf4ed5b1899c1b4cda399ac71cc6fd62e8ed3e6334f60396a43cb9a6a"
+  },
+  "legacy_runner": {
+    "path": "tools/run_checkpoint_fj_historical_event_population.py",
+    "file_sha256": "bad3d37b38a767745c23f6ebc632fff20cd6c5c0262be6df666f33abf8683ec0"
+  },
+  "detector": {
+    "path": "tools/market_structure_break_retest_detector.py",
+    "file_sha256": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144"
+  },
+  "gap_policy": {
+    "path": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv",
+    "file_sha256": "136bedb63c3b40242da7dd3aefc4587583f8084f145dd88302868d3386dfd944"
+  },
+  "sources": [
+    {"file_name": "GOLD#_H1_202301030100_202312292300.csv", "file_sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468", "row_count": 5894},
+    {"file_name": "GOLD#_H1_202401020100_202412312000.csv", "file_sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a", "row_count": 5928},
+    {"file_name": "GOLD#_H1_202501020800_202512311900.csv", "file_sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b", "row_count": 5894}
+  ],
+  "expected_counts": {"source_rows": 17716, "gap_count": 773, "accepted_closures": 745, "unverified_gaps": 28, "events": 1079, "long": 588, "short": 491},
+  "expected_hashes": {
+    "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+    "exclusion_population_sha256": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed",
+    "population_summary_sha256": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408",
+    "terminal_status_summary_sha256": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+  },
+  "requested_operations": [
+    "COMPARE_LEGACY_EVENT_POPULATION",
+    "CONTROLLED_RELOCATION_REPLAY",
+    "EXECUTE_FROZEN_FJ_REPLAY",
+    "IMPORT_FROZEN_DETECTOR",
+    "VALIDATE_FROZEN_R1B1C_EVIDENCE",
+    "VALIDATE_FROZEN_R1B2_DESCRIPTOR"
+  ],
+  "detector_execution_allowed": true,
+  "outcome_execution_allowed": false,
+  "fq_access_allowed": false,
+  "atr_event_generation_allowed": false,
+  "tp_sl_calculation_allowed": false,
+  "fn_interpretation_allowed": false,
+  "mt5_execution_allowed": false,
+  "ea_execution_allowed": false,
+  "profitability_claim_allowed": false,
+  "runtime_paths_excluded_from_identity": true,
+  "raw_csv_commit_allowed": false
+}

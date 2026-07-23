@@ -1,0 +1,36 @@
+{
+  "canonical_summary_sha256": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+  "decision": "FR_PREP_B2_PASS_FROZEN_FJ_BACKWARD_COMPATIBLE_REPLAY",
+  "events": {
+    "LONG": 588,
+    "SHORT": 491,
+    "total": 1079
+  },
+  "execution_status": "PASS",
+  "mismatch_count": 0,
+  "profitability": "NOT_CLAIMED",
+  "prohibited_execution_counts": {
+    "atr_event_generation_count": 0,
+    "ea_execution_count": 0,
+    "external_process_launch_count": 0,
+    "fn_interpretation_count": 0,
+    "fq_access_count": 0,
+    "mt5_execution_count": 0,
+    "optimization_count": 0,
+    "outcome_generation_count": 0,
+    "tp_sl_calculation_count": 0
+  },
+  "replay_hashes": {
+    "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+    "exclusion_population_sha256": "1a150cfc3ae0f338e0f43710187c9bc6363e32dd453fd85a9e5f4a231e4952ed",
+    "population_summary_sha256": "5a45eb6e58b7b38764c6ecbf51fbf6e8472c702b8ebe28c97bee9beafcfba408",
+    "terminal_status_summary_sha256": "b9edb4f6455d4742e9e77f1d3b23b920c145cc1b3eee3d53eed9d1b05235b1ef"
+  },
+  "rows_gaps": {
+    "accepted": 745,
+    "gaps": 773,
+    "rows": 17716,
+    "unverified": 28
+  },
+  "strategy_performance_status": "NOT_EVALUATED"
+}

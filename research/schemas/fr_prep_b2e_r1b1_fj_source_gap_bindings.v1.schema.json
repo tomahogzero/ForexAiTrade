@@ -1,87 +1,177 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "fr_prep_b2e_r1b1_fj_source_gap_bindings.v1.schema.json",
-  "title": "FR-Prep-B2e R1b-1 Frozen FJ Source and Gap Bindings",
+  "$comment": "R1b-1c corrected frozen binding evidence schema. Raw read-open counts are runtime observations and intentionally are not pinned.",
   "type": "object",
-  "additionalProperties": false,
   "required": [
-    "schema_version",
-    "checkpoint",
-    "decision",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "atr_events_generated",
     "authorization_contract",
-    "timestamp_projection_contract",
-    "historical_source_manifest_evidence",
-    "dataset",
-    "sources",
-    "frozen_boundaries",
-    "source_count",
-    "total_rows",
-    "duplicate_timestamps",
-    "source_dataset_identity",
-    "canonical_timeline_sha256",
+    "binding_origin_checkpoint",
+    "broker_history_completeness",
+    "candidate",
+    "canonical_summary_sha256",
     "canonical_timeline_observation_provenance",
-    "gap_binding",
-    "deterministic_mismatch_counters",
-    "relocation_proof",
-    "permitted_real_file_open_counters",
-    "safety_counters",
-    "frozen_evidence_modified",
-    "source_data_semantics_changed",
+    "canonical_timeline_sha256",
+    "checkpoint",
+    "dataset",
+    "decision",
+    "descriptor_composed",
     "detector_executed",
+    "deterministic_mismatch_counters",
+    "duplicate_timestamps",
+    "ea_executed",
     "events_generated",
+    "execution_mode",
+    "frozen_boundaries",
+    "frozen_evidence_modified",
+    "gap_binding",
+    "historical_source_manifest_evidence",
+    "input_mutation_count",
+    "mt5_executed",
+    "order_logic",
     "outcomes_generated",
-    "descriptor_composed"
+    "performance",
+    "profitability",
+    "prohibited_modules",
+    "relocation_proof",
+    "runtime_audit",
+    "schema_version",
+    "source_count",
+    "source_data_semantics_changed",
+    "source_dataset_identity",
+    "sources",
+    "timestamp_projection_contract",
+    "total_rows",
+    "tp_sl_calculated",
+    "unauthorized_file_access_count"
   ],
   "properties": {
-    "schema_version": {
-      "const": "fr_prep_b2e_r1b1_fj_source_gap_bindings.v1"
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
     },
-    "checkpoint": {
-      "const": "FR_PREP_B2E_R1B1"
-    },
-    "decision": {
-      "const": "FR_PREP_B2E_R1B1_PASS_FJ_SOURCE_GAP_BINDINGS_FROZEN"
+    "atr_events_generated": {
+      "const": false
     },
     "authorization_contract": {
       "const": {
         "path": "research/contracts/fr_prep_b2e_r1b_fj_real_data_authorization.v1.json",
-        "sha256": "bd9c8b9f61483e20a723dbd3cd15ce8b0d39f958b767ab70fba647db3428ecfc"
+        "sha256": "312c93c89c0a0aba322f4e8c7380cb9e769211ecf637996d8fa421f6c7b4b390"
       }
     },
-    "timestamp_projection_contract": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "path",
-        "sha256",
-        "helper_path",
-        "helper_sha256",
-        "r1a1_deterministic_sha256",
-        "r1a2_deterministic_sha256",
-        "r1b1_projection_identity"
-      ],
-      "properties": {
-        "path": {
-          "const": "research/contracts/fr_prep_b2e_fj_timestamp_projection.v1.json"
+    "binding_origin_checkpoint": {
+      "const": "FR_PREP_B2E_R1B1"
+    },
+    "broker_history_completeness": {
+      "const": "NOT_PROVEN"
+    },
+    "candidate": {
+      "const": "NOT_READY_FOR_ORDER_LOGIC"
+    },
+    "canonical_summary_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "canonical_timeline_observation_provenance": {
+      "const": {
+        "algorithm": {
+          "canonical_json": "sorted_keys_compact_ascii",
+          "decimal_normalization": "Decimal.normalize_then_fixed",
+          "encoding": "UTF-8-SIG",
+          "ordering": "timestamp_then_source_row_key",
+          "timestamp_format": "%Y.%m.%d %H:%M:%S"
         },
-        "sha256": {
-          "const": "1030bcbb0a453947d53ce661bfd5bbccb4bba76f63577e9d1b14ade0e119ea3b"
+        "derived_at_checkpoint": "FR_PREP_B2E_R1B1",
+        "historical_timeline_hash_claimed": false
+      }
+    },
+    "canonical_timeline_sha256": {
+      "const": "3afe66cadf8e7ecdfd9aa8f37145ca5fe047a62b66f62ef82dad11887ecbdd02"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B2E_R1B1C"
+    },
+    "dataset": {
+      "const": {
+        "broker_history_completeness": "NOT_PROVEN",
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "dataset_role": "DEVELOPMENT_BACKWARD_COMPATIBILITY_REPLAY",
+        "execution_mode": "ADAPTER_VALIDATION_ONLY",
+        "mapping_profile": "FJ_SOURCE_PROVENANCE_V1",
+        "raw_broker_csv_committed": false,
+        "symbol": "GOLD#",
+        "timeframe": "H1"
+      }
+    },
+    "decision": {
+      "const": "FR_PREP_B2E_R1B1_PASS_FROZEN_BINDING_EVIDENCE"
+    },
+    "descriptor_composed": {
+      "const": false
+    },
+    "detector_executed": {
+      "const": false
+    },
+    "deterministic_mismatch_counters": {
+      "const": {
+        "allowlist_identity_mismatch_count": 0,
+        "boundary_mismatch": 0,
+        "canonical_summary_mismatch": 0,
+        "count_mismatch": 0,
+        "gap_identity_mismatch_count": 0,
+        "normalized_gap_inventory_mismatch_count": 0,
+        "relocation_mismatch": 0,
+        "source_identity_mismatch_count": 0,
+        "timeline_mismatch_count": 0
+      }
+    },
+    "duplicate_timestamps": {
+      "const": 0
+    },
+    "ea_executed": {
+      "const": false
+    },
+    "events_generated": {
+      "const": false
+    },
+    "execution_mode": {
+      "const": "ADAPTER_VALIDATION_ONLY"
+    },
+    "frozen_boundaries": {
+      "const": {
+        "first_timestamp": "2023-01-03T01:00:00",
+        "last_timestamp": "2025-12-31T19:00:00"
+      }
+    },
+    "frozen_evidence_modified": {
+      "const": false
+    },
+    "gap_binding": {
+      "const": {
+        "accepted_closure_count": 745,
+        "artifact_path": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv",
+        "artifact_sha256": "136bedb63c3b40242da7dd3aefc4587583f8084f145dd88302868d3386dfd944",
+        "classification_allowlist": [
+          "ACCEPTED_DAILY_BROKER_SESSION_GAP",
+          "ACCEPTED_WEEKEND_MARKET_CLOSURE",
+          "BLOCKED_UNCLASSIFIED_GAP"
+        ],
+        "classification_allowlist_identity": "c8b13c2d53f40826a69dc732dd5ab03fee3d6cc299d32be50f8fab02270c237e",
+        "classification_counts": {
+          "ACCEPTED_DAILY_BROKER_SESSION_GAP": 594,
+          "ACCEPTED_WEEKEND_MARKET_CLOSURE": 151,
+          "BLOCKED_UNCLASSIFIED_GAP": 28
         },
-        "helper_path": {
-          "const": "tools/fr_prep_b2e_fj_metadata_projection.py"
-        },
-        "helper_sha256": {
-          "const": "d4982c5170663698924d6b6fd56e8bbd1fe02109669d1d29cf24dd3b6529a286"
-        },
-        "r1a1_deterministic_sha256": {
-          "const": "ff5f49dfa09d51a4734c70c2faa39181b89a20f23d93190e3889de8633246f10"
-        },
-        "r1a2_deterministic_sha256": {
-          "const": "59498757751f0dfef520bd1698db1be01444619e495bd974cb646f6384135a4a"
-        },
-        "r1b1_projection_identity": {
-          "$ref": "#/$defs/sha256"
-        }
+        "duplicate_gap_id_count": 0,
+        "duplicate_source_record_identity_count": 0,
+        "duplicate_timestamp_pair_count": 0,
+        "entry_count": 773,
+        "gap_policy_identity": "8390e1079a05af021701887da42e1824b6982af7da64137d23289324be31f8f9",
+        "normalized_gap_inventory_sha256": "d94812339fa30ec9cb4fdbe617b105fc72211bda79d19ce50a618ee819dd1ca4",
+        "policy_id": "FJ_2023_2025_EO_GAP_POLICY",
+        "semantic_conflict_count": 0,
+        "source_contract_type": "EO_FJ_CSV_V1",
+        "unverified_gap_count": 28
       }
     },
     "historical_source_manifest_evidence": {
@@ -90,263 +180,259 @@
         "sha256": "f64519a6341488578b95ca06103268ff3323f4593e177a3e4eba2f583e75469c"
       }
     },
-    "dataset": {
-      "const": {
-        "dataset_id": "FJ_2023_2025_GOLD_H1",
-        "dataset_role": "DEVELOPMENT_BACKWARD_COMPATIBILITY_REPLAY",
-        "symbol": "GOLD#",
-        "timeframe": "H1",
-        "execution_mode": "ADAPTER_VALIDATION_ONLY",
-        "mapping_profile": "FJ_SOURCE_PROVENANCE_V1",
-        "broker_history_completeness": "NOT_PROVEN",
-        "raw_broker_csv_committed": false
-      }
-    },
-    "sources": {
-      "type": "array",
-      "minItems": 3,
-      "maxItems": 3,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "source_id",
-          "file_name",
-          "sha256",
-          "row_count",
-          "size_bytes",
-          "first_timestamp",
-          "last_timestamp"
-        ],
-        "properties": {
-          "source_id": {
-            "enum": [
-              "FJ_GOLD_H1_2023",
-              "FJ_GOLD_H1_2024",
-              "FJ_GOLD_H1_2025"
-            ]
-          },
-          "file_name": {
-            "type": "string",
-            "minLength": 1
-          },
-          "sha256": {
-            "$ref": "#/$defs/sha256"
-          },
-          "row_count": {
-            "enum": [
-              5894,
-              5928
-            ]
-          },
-          "size_bytes": {
-            "type": "integer",
-            "minimum": 1
-          },
-          "first_timestamp": {
-            "type": "string",
-            "minLength": 19
-          },
-          "last_timestamp": {
-            "type": "string",
-            "minLength": 19
-          }
-        }
-      }
-    },
-    "frozen_boundaries": {
-      "const": {
-        "first_timestamp": "2023-01-03T01:00:00",
-        "last_timestamp": "2025-12-31T19:00:00"
-      }
-    },
-    "source_count": {
-      "const": 3
-    },
-    "total_rows": {
-      "const": 17716
-    },
-    "duplicate_timestamps": {
+    "input_mutation_count": {
       "const": 0
     },
-    "source_dataset_identity": {
-      "$ref": "#/$defs/sha256"
-    },
-    "canonical_timeline_sha256": {
-      "$ref": "#/$defs/sha256"
-    },
-    "canonical_timeline_observation_provenance": {
-      "const": {
-        "derived_at_checkpoint": "FR_PREP_B2E_R1B1",
-        "historical_timeline_hash_claimed": false,
-        "algorithm": {
-          "encoding": "UTF-8-SIG",
-          "timestamp_format": "%Y.%m.%d %H:%M:%S",
-          "decimal_normalization": "Decimal.normalize_then_fixed",
-          "ordering": "timestamp_then_source_row_key",
-          "canonical_json": "sorted_keys_compact_ascii"
-        }
-      }
-    },
-    "gap_binding": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "artifact_path",
-        "artifact_sha256",
-        "policy_id",
-        "source_contract_type",
-        "gap_policy_identity",
-        "normalized_gap_inventory_sha256",
-        "classification_allowlist",
-        "classification_allowlist_identity",
-        "classification_counts",
-        "entry_count",
-        "accepted_closure_count",
-        "unverified_gap_count",
-        "duplicate_gap_id_count",
-        "duplicate_source_record_identity_count",
-        "duplicate_timestamp_pair_count",
-        "semantic_conflict_count"
-      ],
-      "properties": {
-        "artifact_path": {
-          "const": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv"
-        },
-        "artifact_sha256": {
-          "$ref": "#/$defs/sha256"
-        },
-        "policy_id": {
-          "const": "FJ_2023_2025_EO_GAP_POLICY"
-        },
-        "source_contract_type": {
-          "const": "EO_FJ_CSV_V1"
-        },
-        "gap_policy_identity": {
-          "$ref": "#/$defs/sha256"
-        },
-        "normalized_gap_inventory_sha256": {
-          "$ref": "#/$defs/sha256"
-        },
-        "classification_allowlist": {
-          "const": [
-            "ACCEPTED_DAILY_BROKER_SESSION_GAP",
-            "ACCEPTED_WEEKEND_MARKET_CLOSURE",
-            "BLOCKED_UNCLASSIFIED_GAP"
-          ]
-        },
-        "classification_allowlist_identity": {
-          "$ref": "#/$defs/sha256"
-        },
-        "classification_counts": {
-          "const": {
-            "ACCEPTED_DAILY_BROKER_SESSION_GAP": 594,
-            "ACCEPTED_WEEKEND_MARKET_CLOSURE": 151,
-            "BLOCKED_UNCLASSIFIED_GAP": 28
-          }
-        },
-        "entry_count": {
-          "const": 773
-        },
-        "accepted_closure_count": {
-          "const": 745
-        },
-        "unverified_gap_count": {
-          "const": 28
-        },
-        "duplicate_gap_id_count": {
-          "const": 0
-        },
-        "duplicate_source_record_identity_count": {
-          "const": 0
-        },
-        "duplicate_timestamp_pair_count": {
-          "const": 0
-        },
-        "semantic_conflict_count": {
-          "const": 0
-        }
-      }
-    },
-    "deterministic_mismatch_counters": {
-      "const": {
-        "source_identity_mismatch_count": 0,
-        "timeline_mismatch_count": 0,
-        "gap_identity_mismatch_count": 0,
-        "normalized_gap_inventory_mismatch_count": 0,
-        "allowlist_identity_mismatch_count": 0,
-        "count_mismatch": 0,
-        "boundary_mismatch": 0,
-        "relocation_mismatch": 0,
-        "canonical_summary_mismatch": 0
-      }
-    },
-    "relocation_proof": {
-      "const": {
-        "temporary_directory_outside_repository": true,
-        "copied_bytes_hash_verified": true,
-        "timestamp_projection_identity_unchanged": true,
-        "source_dataset_identity_unchanged": true,
-        "canonical_timeline_sha256_unchanged": true,
-        "gap_policy_identity_unchanged": true,
-        "normalized_gap_inventory_sha256_unchanged": true,
-        "classification_allowlist_identity_unchanged": true,
-        "counts_and_boundaries_unchanged": true
-      }
-    },
-    "permitted_real_file_open_counters": {
-      "const": {
-        "committed_fj_manifest_evidence_open_count": 1,
-        "approved_fj_source_files_open_count": 27,
-        "eo_fj_policy_open_count": 11,
-        "temporary_relocated_copies_open_count": 25
-      }
-    },
-    "safety_counters": {
-      "const": {
-        "source_adapter_import_count": 1,
-        "gap_adapter_import_count": 1,
-        "descriptor_adapter_import_count": 0,
-        "detector_import_count": 0,
-        "detector_execution_count": 0,
-        "fi_import_count": 0,
-        "fi_execution_count": 0,
-        "legacy_runner_import_count": 0,
-        "legacy_runner_execution_count": 0,
-        "wrapper_import_count": 0,
-        "wrapper_execution_count": 0,
-        "fq_source_file_open_count": 0,
-        "fq_gap_inventory_open_count": 0,
-        "event_population_emit_count": 0,
-        "atr_event_emit_count": 0,
-        "tp_sl_calculation_count": 0,
-        "outcome_emit_count": 0,
-        "fn_interpretation_count": 0
-      }
-    },
-    "frozen_evidence_modified": {
+    "mt5_executed": {
       "const": false
     },
-    "source_data_semantics_changed": {
-      "const": false
-    },
-    "detector_executed": {
-      "const": false
-    },
-    "events_generated": {
-      "const": false
+    "order_logic": {
+      "const": "NOT_APPROVED"
     },
     "outcomes_generated": {
       "const": false
     },
-    "descriptor_composed": {
+    "performance": {
+      "const": "NOT_EVALUATED"
+    },
+    "profitability": {
+      "const": "NOT_CLAIMED"
+    },
+    "prohibited_modules": {
+      "const": []
+    },
+    "relocation_proof": {
+      "const": {
+        "canonical_identities_unchanged": true,
+        "copied_bytes_hash_verified": true,
+        "temporary_directory_outside_repository": true
+      }
+    },
+    "schema_version": {
+      "const": "fr_prep_b2e_r1b1_fj_source_gap_bindings.v1"
+    },
+    "source_count": {
+      "const": 3
+    },
+    "source_data_semantics_changed": {
       "const": false
+    },
+    "source_dataset_identity": {
+      "const": "b9cc38c6da2474ba22947053a6333f4b7312c2e39221cd1cb4ff3cf47f6c7122"
+    },
+    "sources": {
+      "const": [
+        {
+          "chronological": true,
+          "file_name": "GOLD#_H1_202301030100_202312292300.csv",
+          "first_timestamp": "2023-01-03T01:00:00",
+          "last_timestamp": "2023-12-29T23:00:00",
+          "ohlc_integrity": "PASS",
+          "row_count": 5894,
+          "sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+          "size_bytes": 371807,
+          "source_id": "FJ_GOLD_H1_2023"
+        },
+        {
+          "chronological": true,
+          "file_name": "GOLD#_H1_202401020100_202412312000.csv",
+          "first_timestamp": "2024-01-02T01:00:00",
+          "last_timestamp": "2024-12-31T20:00:00",
+          "ohlc_integrity": "PASS",
+          "row_count": 5928,
+          "sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+          "size_bytes": 374786,
+          "source_id": "FJ_GOLD_H1_2024"
+        },
+        {
+          "chronological": true,
+          "file_name": "GOLD#_H1_202501020800_202512311900.csv",
+          "first_timestamp": "2025-01-02T08:00:00",
+          "last_timestamp": "2025-12-31T19:00:00",
+          "ohlc_integrity": "PASS",
+          "row_count": 5894,
+          "sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b",
+          "size_bytes": 374055,
+          "source_id": "FJ_GOLD_H1_2025"
+        }
+      ]
+    },
+    "timestamp_projection_contract": {
+      "const": {
+        "helper_path": "tools/fr_prep_b2e_fj_metadata_projection.py",
+        "helper_sha256": "d4982c5170663698924d6b6fd56e8bbd1fe02109669d1d29cf24dd3b6529a286",
+        "path": "research/contracts/fr_prep_b2e_fj_timestamp_projection.v1.json",
+        "r1a1_deterministic_sha256": "ff5f49dfa09d51a4734c70c2faa39181b89a20f23d93190e3889de8633246f10",
+        "r1a2_deterministic_sha256": "59498757751f0dfef520bd1698db1be01444619e495bd974cb646f6384135a4a",
+        "r1b1_projection_identity": "1d7151761233277824bdd8772b945b61939195b1feb0b8a19fdf93769ded6053",
+        "sha256": "1030bcbb0a453947d53ce661bfd5bbccb4bba76f63577e9d1b14ade0e119ea3b"
+      }
+    },
+    "total_rows": {
+      "const": 17716
+    },
+    "tp_sl_calculated": {
+      "const": false
+    },
+    "unauthorized_file_access_count": {
+      "const": 0
+    },
+    "runtime_audit": {
+      "type": "object",
+      "required": [
+        "counter_provenance",
+        "external_execution",
+        "file_access",
+        "function_execution_counts",
+        "import_dispatches",
+        "module_import_counts",
+        "rejected_import_dispatches"
+      ],
+      "properties": {
+        "counter_provenance": {
+          "const": {
+            "external_execution": "subprocess.Popen, os.system, and os.startfile launch interception",
+            "file_access": "resolved-path read-open interception at pathlib.Path.open and builtins.open",
+            "function_execution": "sys.setprofile call events classified by module and function",
+            "module_imports": "sys.modules before/after delta plus allowlisted import dispatch"
+          }
+        },
+        "external_execution": {
+          "const": {
+            "ea_execution_count": 0,
+            "mt5_terminal_launch_count": 0,
+            "observed_launches": [],
+            "subprocess_launch_count": 0
+          }
+        },
+        "function_execution_counts": {
+          "const": {
+            "atr_event_emit_count": 0,
+            "descriptor_composition_count": 0,
+            "detector_execution_count": 0,
+            "event_population_emit_count": 0,
+            "fi_execution_count": 0,
+            "fn_interpretation_count": 0,
+            "fq_execution_count": 0,
+            "legacy_runner_execution_count": 0,
+            "outcome_emit_count": 0,
+            "tp_sl_calculation_count": 0,
+            "wrapper_execution_count": 0
+          }
+        },
+        "import_dispatches": {
+          "const": [
+            "historical_source_adapter",
+            "gap_policy_adapter"
+          ]
+        },
+        "module_import_counts": {
+          "const": {
+            "descriptor_adapter_import_count": 0,
+            "detector_import_count": 0,
+            "fi_import_count": 0,
+            "fq_runner_import_count": 0,
+            "gap_adapter_import_count": 1,
+            "legacy_runner_import_count": 0,
+            "source_adapter_import_count": 1,
+            "wrapper_import_count": 0
+          }
+        },
+        "rejected_import_dispatches": {
+          "const": []
+        },
+        "file_access": {
+          "type": "object",
+          "required": [
+            "accessed_file_names_by_category",
+            "raw_read_open_operation_counts",
+            "unique_logical_file_counts"
+          ],
+          "properties": {
+            "accessed_file_names_by_category": {
+              "const": {
+                "approved_original_fj_source_files": [
+                  "GOLD#_H1_202301030100_202312292300.csv",
+                  "GOLD#_H1_202401020100_202412312000.csv",
+                  "GOLD#_H1_202501020800_202512311900.csv"
+                ],
+                "authorized_eo_fj_gap_policy": [
+                  "gap_policy_dry_run.csv"
+                ],
+                "committed_fj_source_manifest_evidence": [
+                  "checkpoint_fj_source_manifest.json"
+                ],
+                "fq_gap_inventories": [],
+                "fq_source_files": [],
+                "relocated_temporary_files": [
+                  "GOLD#_H1_202301030100_202312292300.csv",
+                  "GOLD#_H1_202401020100_202412312000.csv",
+                  "GOLD#_H1_202501020800_202512311900.csv",
+                  "gap_policy_dry_run.csv"
+                ],
+                "unauthorized_files": []
+              }
+            },
+            "unique_logical_file_counts": {
+              "const": {
+                "approved_original_fj_source_files": 3,
+                "authorized_eo_fj_gap_policy": 1,
+                "committed_fj_source_manifest_evidence": 1,
+                "fq_gap_inventories": 0,
+                "fq_source_files": 0,
+                "relocated_temporary_files": 4,
+                "unauthorized_files": 0
+              }
+            },
+            "raw_read_open_operation_counts": {
+              "type": "object",
+              "required": [
+                "approved_original_fj_source_files",
+                "authorized_eo_fj_gap_policy",
+                "committed_fj_source_manifest_evidence",
+                "fq_gap_inventories",
+                "fq_source_files",
+                "relocated_temporary_files",
+                "unauthorized_files"
+              ],
+              "properties": {
+                "approved_original_fj_source_files": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "authorized_eo_fj_gap_policy": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "committed_fj_source_manifest_evidence": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "fq_gap_inventories": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "fq_source_files": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "relocated_temporary_files": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "unauthorized_files": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     }
   },
-  "$defs": {
-    "sha256": {
-      "type": "string",
-      "pattern": "^[0-9a-f]{64}$"
-    }
-  }
+  "additionalProperties": false
 }

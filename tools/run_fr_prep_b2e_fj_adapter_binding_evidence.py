@@ -385,30 +385,69 @@ def _run_projection_fixture(fixture: Mapping[str, Any]) -> dict[str, Any]:
     }
 
 
-def _parse_args() -> argparse.Namespace:
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="FR-Prep-B2e evidence runner with fail-closed explicit modes"
+        description="Unified fail-closed FR-Prep-B2e adapter-binding evidence runner"
     )
     parser.add_argument(
-        "--projection-only-fixture",
-        type=Path,
-        help="run only the supplied synthetic timestamp projection fixture",
+        "--mode",
+        required=True,
+        choices=("projection-fixture", "r1b1-frozen-binding"),
     )
-    args = parser.parse_args()
-    if args.projection_only_fixture is None:
+    parser.add_argument("--fixture", type=Path)
+    parser.add_argument("--authorization", type=Path)
+    parser.add_argument("--source-root", type=Path)
+    parser.add_argument("--gap-policy", type=Path)
+    parser.add_argument("--output-root", type=Path)
+    return parser
+
+
+def _validate_mode_args(
+    parser: argparse.ArgumentParser, args: argparse.Namespace
+) -> None:
+    real_args = (
+        args.authorization,
+        args.source_root,
+        args.gap_policy,
+        args.output_root,
+    )
+    if args.mode == "projection-fixture":
+        if args.fixture is None or any(value is not None for value in real_args):
+            parser.error(
+                "projection-fixture requires only --fixture and rejects real-data arguments"
+            )
+        return
+    if args.fixture is not None or any(value is None for value in real_args):
         parser.error(
-            "fail closed: an explicit mode is required; real FJ binding is unavailable"
+            "r1b1-frozen-binding requires --authorization, --source-root, "
+            "--gap-policy, and --output-root only"
         )
-    return args
 
 
 def main() -> int:
-    args = _parse_args()
-    with args.projection_only_fixture.open("r", encoding="utf-8") as fixture_file:
-        fixture = json.load(fixture_file)
-    summary = _run_projection_fixture(fixture)
-    print(_canonical_json(summary))
-    return 0 if summary["execution_status"] == "PASS" else 1
+    parser = _build_parser()
+    args = parser.parse_args()
+    _validate_mode_args(parser, args)
+    if args.mode == "projection-fixture":
+        with args.fixture.open("r", encoding="utf-8") as fixture_file:
+            fixture = json.load(fixture_file)
+        summary = _run_projection_fixture(fixture)
+        print(_canonical_json(summary))
+        return 0 if summary["execution_status"] == "PASS" else 1
+
+    from run_fr_prep_b2e_r1b1_fj_source_gap_binding_evidence import (
+        run_authorized_binding,
+    )
+
+    result = run_authorized_binding(
+        authorization_path=args.authorization,
+        source_root=args.source_root,
+        gap_policy_path=args.gap_policy,
+        output_root=args.output_root,
+        project_metadata=project_fj_manifest_metadata,
+    )
+    print(_canonical_json(result))
+    return 0
 
 
 if __name__ == "__main__":

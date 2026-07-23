@@ -38,7 +38,7 @@
       "const": "fr_prep_b2e_r1b_fj_real_data_authorization.v1"
     },
     "checkpoint": {
-      "const": "FR_PREP_B2E_R1B1"
+      "const": "FR_PREP_B2E_R1B1C"
     },
     "dataset_id": {
       "const": "FJ_2023_2025_GOLD_H1"
@@ -103,9 +103,11 @@
         "helper_path": "tools/fr_prep_b2e_fj_metadata_projection.py",
         "helper_sha256": "d4982c5170663698924d6b6fd56e8bbd1fe02109669d1d29cf24dd3b6529a286",
         "projection_runner_path": "tools/run_fr_prep_b2e_fj_adapter_binding_evidence.py",
-        "projection_runner_sha256": "26db920cdb5f5c987af5f6d71bd2e3aaf8dc31f637695427e4537f54fce7f57e",
+        "projection_runner_sha256": "147ab992bbbb74ba96b5000cba7a7fedd9101b0d09155f8fd1cb65446509ce67",
         "r1a1_deterministic_sha256": "ff5f49dfa09d51a4734c70c2faa39181b89a20f23d93190e3889de8633246f10",
-        "r1a2_deterministic_sha256": "59498757751f0dfef520bd1698db1be01444619e495bd974cb646f6384135a4a"
+        "r1a2_deterministic_sha256": "59498757751f0dfef520bd1698db1be01444619e495bd974cb646f6384135a4a",
+        "r1b1_internal_runner_path": "tools/run_fr_prep_b2e_r1b1_fj_source_gap_binding_evidence.py",
+        "r1b1_internal_runner_sha256": "15d8476fab447b0439c68a1a35cc0579e65c5f4b727f095c83e728a424a52ebb"
       }
     },
     "historical_source_manifest_evidence": {

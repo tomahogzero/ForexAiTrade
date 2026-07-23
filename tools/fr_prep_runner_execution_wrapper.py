@@ -112,3 +112,69 @@ def execute_frozen_fj_replay(authorization, validated, loader, executor):
         raise ValidationError("B2_LAZY_DETECTOR_BOUNDARY_REQUIRED")
     loaded = loader()
     return executor(loaded)
+
+# FR-Prep-B3 exact frozen-FQ preflight boundary. This gate authorizes source
+# and gap validation only; it cannot import or execute the detector.
+B3_STAGE = "FR_PREP_B3_FQ_HOLDOUT_PREFLIGHT_ONLY"
+B3_DATASET = "FP_FQ_2020_2022_GOLD_H1"
+B3_B2A_SUMMARY_ID = "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251"
+B3_OPERATIONS = frozenset({
+    "VALIDATE_B2A_INDEPENDENT_AUDIT",
+    "VALIDATE_FROZEN_FQ_SOURCES",
+    "VALIDATE_FROZEN_FQ_GAPS",
+    "COMPARE_COMMITTED_FQ_ARTIFACTS",
+    "DETERMINISTIC_PREFLIGHT_REPLAY",
+    "CONTROLLED_RELOCATION_PREFLIGHT",
+})
+B3_EXPECTED = {
+    "source_rows": 17731,
+    "canonical_timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+    "gap_count": 774,
+    "accepted_weekend_closures": 149,
+    "accepted_daily_closures": 0,
+    "unverified_gaps": 625,
+    "fq_decision": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK",
+    "deterministic_payload_sha256": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641",
+}
+
+
+def execute_fq_holdout_preflight(authorization, validated, executor):
+    """Run only the exact FQ source/gap preflight after every gate is proven."""
+    if not isinstance(authorization, dict):
+        raise ValidationError("B3_AUTHORIZATION_NOT_OBJECT")
+    if authorization.get("implementation_stage") != B3_STAGE:
+        raise ValidationError("B3_AUTHORIZATION_STAGE_MISMATCH")
+    if authorization.get("dataset_id") != B3_DATASET:
+        raise ValidationError("B3_AUTHORIZATION_DATASET_MISMATCH")
+    if authorization.get("mode") != "FQ_HOLDOUT_PREFLIGHT_ONLY":
+        raise ValidationError("B3_AUTHORIZATION_MODE_MISMATCH")
+    requested = authorization.get("requested_operations")
+    if not isinstance(requested, list) or set(requested) != B3_OPERATIONS:
+        raise ValidationError("B3_AUTHORIZATION_OPERATION_MISMATCH")
+    denied = (
+        "holdout_execution_allowed",
+        "detector_import_allowed",
+        "detector_execution_allowed",
+        "event_generation_allowed",
+        "atr_event_generation_allowed",
+        "tp_sl_calculation_allowed",
+        "outcome_execution_allowed",
+        "fn_interpretation_allowed",
+        "external_process_allowed",
+        "mt5_execution_allowed",
+        "ea_execution_allowed",
+    )
+    if any(authorization.get(key) is not False for key in denied):
+        raise ValidationError("B3_PROHIBITED_PERMISSION_NOT_FALSE")
+    if not isinstance(validated, dict):
+        raise ValidationError("B3_VALIDATION_STATE_MISSING")
+    exact = {
+        "b2a_validated": True,
+        "b2a_summary_sha256": B3_B2A_SUMMARY_ID,
+        **B3_EXPECTED,
+    }
+    if any(validated.get(key) != value for key, value in exact.items()):
+        raise ValidationError("B3_FROZEN_BINDING_MISMATCH")
+    if executor is None:
+        raise ValidationError("B3_PREFLIGHT_EXECUTOR_REQUIRED")
+    return executor()

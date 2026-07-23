@@ -1,0 +1,21 @@
+{
+  "accepted_daily_closures": 0,
+  "accepted_weekend_closures": 149,
+  "bars": 17731,
+  "canonical_summary_sha256": "eec147eed43a60aad28a058d2f906181010da225b18964acd00d87ba984659ad",
+  "decision": "FR_PREP_B3_PASS_FQ_HOLDOUT_PREFLIGHT_SEALED",
+  "deterministic_payload_sha256": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641",
+  "fq_decision": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK",
+  "gaps": 774,
+  "mismatch_count": 0,
+  "negative_tests": {
+    "passed": 8,
+    "total": 8
+  },
+  "performance": "NOT_EVALUATED",
+  "profitability": "NOT_CLAIMED",
+  "prohibited_execution_count": 0,
+  "prohibited_import_count": 0,
+  "timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+  "unverified_gaps": 625
+}

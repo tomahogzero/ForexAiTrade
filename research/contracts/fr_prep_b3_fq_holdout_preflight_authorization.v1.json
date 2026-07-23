@@ -1,0 +1,86 @@
+{
+  "schema_version": "fr_prep_b3_fq_holdout_preflight_authorization.v1",
+  "checkpoint": "FR_PREP_B3",
+  "implementation_stage": "FR_PREP_B3_FQ_HOLDOUT_PREFLIGHT_ONLY",
+  "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+  "mode": "FQ_HOLDOUT_PREFLIGHT_ONLY",
+  "requested_operations": [
+    "VALIDATE_B2A_INDEPENDENT_AUDIT",
+    "VALIDATE_FROZEN_FQ_SOURCES",
+    "VALIDATE_FROZEN_FQ_GAPS",
+    "COMPARE_COMMITTED_FQ_ARTIFACTS",
+    "DETERMINISTIC_PREFLIGHT_REPLAY",
+    "CONTROLLED_RELOCATION_PREFLIGHT"
+  ],
+  "bindings": {
+    "b2a_contract": {
+      "path": "research/contracts/fr_prep_b2a_independent_replay_audit.v1.json",
+      "file_sha256": "535bd17c8aa12babb25709c04c255989ff192fa5f71b0be0ef2a866ce4e145e4",
+      "canonical_summary_sha256": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251"
+    },
+    "b2a_result": {
+      "path": "research/results/checkpoint_fr_prep_b2a/independent_replay_audit_summary.json",
+      "file_sha256": "71fc6f9e0c0cab3fb02aad9df1b056e34021c747328b6b647ca8cffb9ee827d6"
+    },
+    "wrapper": {
+      "path": "tools/fr_prep_runner_execution_wrapper.py",
+      "file_sha256": "afd3af0a7d5bb83bbf0b9d507f810ec1f0c3738351fdf75c44373393f0c5e562"
+    },
+    "fq_validator": {
+      "path": "tools/run_checkpoint_fq_holdout_gap_boundary.py",
+      "file_sha256": "085f45bd69d3aede08f8ec693d2aae08f5e13842aa3fd15832931e631106d957"
+    },
+    "source_contract": {
+      "path": "research/contracts/checkpoint_fp_new_evidence_boundary_contract.json",
+      "file_sha256": "eb321cc544303f93ecc8eb8cda5baeb13742498efb61536cbf6d31cf7df61e25"
+    }
+  },
+  "source_files": [
+    {
+      "filename": "GOLD#_H1_202001020900_202012311800.csv",
+      "sha256": "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc",
+      "rows": 5912
+    },
+    {
+      "filename": "GOLD#_H1_202101040100_202112311800.csv",
+      "sha256": "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5",
+      "rows": 5902
+    },
+    {
+      "filename": "GOLD#_H1_202201030100_202212302300.csv",
+      "sha256": "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a",
+      "rows": 5917
+    }
+  ],
+  "frozen_artifacts": {
+    "checkpoint_fq_decision.json": "6eee18bb34350f34ee2a4d8c0c34b703b3d3a17eacfa416c30a184e14f77dd0c",
+    "checkpoint_fq_deterministic_replay.json": "d8df3e873af0557a99212dc6fb9be8ff0afd3f68035d749a8b0d6061088a9d53",
+    "checkpoint_fq_fail_closed_usability.json": "05dda8b328d2c429c989fee98b0d1d620d6941fef2a1265dfae682ac5b203ca0",
+    "checkpoint_fq_gap_inventory.json": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+    "checkpoint_fq_gap_summary.json": "61e6a22eac76c5852a4862a41182f5d0b6f4d45c794a59e16740fc3a2be739e7",
+    "checkpoint_fq_sha256_manifest.json": "90ddd7222c84130337ff68b5190305f8a2b9276f05bb53044f33541264485276",
+    "checkpoint_fq_source_integrity.json": "ea4dba94f43b5f112625416dd3d723dd71c9b66520412ec2707330fa93b3797a"
+  },
+  "expected": {
+    "bars": 17731,
+    "timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+    "gaps": 774,
+    "accepted_weekend_closures": 149,
+    "accepted_daily_closures": 0,
+    "unverified_gaps": 625,
+    "fq_decision": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK",
+    "deterministic_payload_sha256": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641"
+  },
+  "holdout_execution_allowed": false,
+  "detector_import_allowed": false,
+  "detector_execution_allowed": false,
+  "event_generation_allowed": false,
+  "atr_event_generation_allowed": false,
+  "tp_sl_calculation_allowed": false,
+  "outcome_execution_allowed": false,
+  "fn_interpretation_allowed": false,
+  "external_process_allowed": false,
+  "mt5_execution_allowed": false,
+  "ea_execution_allowed": false,
+  "absolute_runtime_paths_excluded_from_identity": true
+}

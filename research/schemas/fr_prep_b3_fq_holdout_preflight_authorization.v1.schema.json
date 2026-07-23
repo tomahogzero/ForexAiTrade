@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b3_fq_holdout_preflight_authorization.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "implementation_stage",
+    "dataset_id",
+    "mode",
+    "requested_operations",
+    "bindings",
+    "source_files",
+    "frozen_artifacts",
+    "expected",
+    "holdout_execution_allowed",
+    "detector_import_allowed",
+    "detector_execution_allowed",
+    "event_generation_allowed",
+    "atr_event_generation_allowed",
+    "tp_sl_calculation_allowed",
+    "outcome_execution_allowed",
+    "fn_interpretation_allowed",
+    "external_process_allowed",
+    "mt5_execution_allowed",
+    "ea_execution_allowed",
+    "absolute_runtime_paths_excluded_from_identity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "fr_prep_b3_fq_holdout_preflight_authorization.v1"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B3"
+    },
+    "implementation_stage": {
+      "const": "FR_PREP_B3_FQ_HOLDOUT_PREFLIGHT_ONLY"
+    },
+    "dataset_id": {
+      "const": "FP_FQ_2020_2022_GOLD_H1"
+    },
+    "mode": {
+      "const": "FQ_HOLDOUT_PREFLIGHT_ONLY"
+    },
+    "requested_operations": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "VALIDATE_B2A_INDEPENDENT_AUDIT",
+          "VALIDATE_FROZEN_FQ_SOURCES",
+          "VALIDATE_FROZEN_FQ_GAPS",
+          "COMPARE_COMMITTED_FQ_ARTIFACTS",
+          "DETERMINISTIC_PREFLIGHT_REPLAY",
+          "CONTROLLED_RELOCATION_PREFLIGHT"
+        ]
+      }
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "b2a_contract",
+        "b2a_result",
+        "wrapper",
+        "fq_validator",
+        "source_contract"
+      ],
+      "properties": {
+        "b2a_contract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "file_sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "file_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "canonical_summary_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        },
+        "b2a_result": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "file_sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "file_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "canonical_summary_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        },
+        "wrapper": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "file_sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "file_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "canonical_summary_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        },
+        "fq_validator": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "file_sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "file_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "canonical_summary_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        },
+        "source_contract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "file_sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "file_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "canonical_summary_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      }
+    },
+    "source_files": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "filename",
+          "sha256",
+          "rows"
+        ],
+        "properties": {
+          "filename": {
+            "type": "string",
+            "pattern": "^GOLD#_H1_"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "rows": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "frozen_artifacts": {
+      "type": "object",
+      "minProperties": 7,
+      "maxProperties": 7,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bars",
+        "timeline_sha256",
+        "gaps",
+        "accepted_weekend_closures",
+        "accepted_daily_closures",
+        "unverified_gaps",
+        "fq_decision",
+        "deterministic_payload_sha256"
+      ],
+      "properties": {
+        "bars": {
+          "const": 17731
+        },
+        "timeline_sha256": {
+          "const": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38"
+        },
+        "gaps": {
+          "const": 774
+        },
+        "accepted_weekend_closures": {
+          "const": 149
+        },
+        "accepted_daily_closures": {
+          "const": 0
+        },
+        "unverified_gaps": {
+          "const": 625
+        },
+        "fq_decision": {
+          "const": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK"
+        },
+        "deterministic_payload_sha256": {
+          "const": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641"
+        }
+      }
+    },
+    "holdout_execution_allowed": {
+      "const": false
+    },
+    "detector_import_allowed": {
+      "const": false
+    },
+    "detector_execution_allowed": {
+      "const": false
+    },
+    "event_generation_allowed": {
+      "const": false
+    },
+    "atr_event_generation_allowed": {
+      "const": false
+    },
+    "tp_sl_calculation_allowed": {
+      "const": false
+    },
+    "outcome_execution_allowed": {
+      "const": false
+    },
+    "fn_interpretation_allowed": {
+      "const": false
+    },
+    "external_process_allowed": {
+      "const": false
+    },
+    "mt5_execution_allowed": {
+      "const": false
+    },
+    "ea_execution_allowed": {
+      "const": false
+    },
+    "absolute_runtime_paths_excluded_from_identity": {
+      "const": true
+    }
+  }
+}

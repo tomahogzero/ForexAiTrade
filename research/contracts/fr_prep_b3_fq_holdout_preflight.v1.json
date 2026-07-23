@@ -1,0 +1,107 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "artifact_comparison": {
+    "committed_artifact_file_sha256": {
+      "checkpoint_fq_decision.json": "6eee18bb34350f34ee2a4d8c0c34b703b3d3a17eacfa416c30a184e14f77dd0c",
+      "checkpoint_fq_deterministic_replay.json": "d8df3e873af0557a99212dc6fb9be8ff0afd3f68035d749a8b0d6061088a9d53",
+      "checkpoint_fq_fail_closed_usability.json": "05dda8b328d2c429c989fee98b0d1d620d6941fef2a1265dfae682ac5b203ca0",
+      "checkpoint_fq_gap_inventory.json": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+      "checkpoint_fq_gap_summary.json": "61e6a22eac76c5852a4862a41182f5d0b6f4d45c794a59e16740fc3a2be739e7",
+      "checkpoint_fq_sha256_manifest.json": "90ddd7222c84130337ff68b5190305f8a2b9276f05bb53044f33541264485276",
+      "checkpoint_fq_source_integrity.json": "ea4dba94f43b5f112625416dd3d723dd71c9b66520412ec2707330fa93b3797a"
+    },
+    "normal_run_1_matches_committed": true,
+    "normal_run_2_matches_committed": true,
+    "normal_runs_identical": true,
+    "relocation_manifest_self_consistent": true,
+    "relocation_semantics_match": true
+  },
+  "atr_events_generated": false,
+  "b2a_evidence": {
+    "canonical_summary_sha256": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251",
+    "contract_file_sha256": "535bd17c8aa12babb25709c04c255989ff192fa5f71b0be0ef2a866ce4e145e4",
+    "result_file_sha256": "71fc6f9e0c0cab3fb02aad9df1b056e34021c747328b6b647ca8cffb9ee827d6",
+    "validated": true
+  },
+  "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+  "canonical_summary_sha256": "eec147eed43a60aad28a058d2f906181010da225b18964acd00d87ba984659ad",
+  "checkpoint": "FR_PREP_B3",
+  "decision": "FR_PREP_B3_PASS_FQ_HOLDOUT_PREFLIGHT_SEALED",
+  "detector_executed": false,
+  "ea_executed": false,
+  "events_generated": false,
+  "fn_interpretation_performed": false,
+  "fq_preflight": {
+    "accepted_daily_closures": 0,
+    "accepted_weekend_closures": 149,
+    "bars": 17731,
+    "deterministic_payload_sha256": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641",
+    "fq_decision": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK",
+    "gaps": 774,
+    "timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+    "unverified_gaps": 625
+  },
+  "holdout_execution_allowed": false,
+  "mismatch_counters": {
+    "count_or_hash_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "normal_repeat_mismatch": 0,
+    "normal_run_1_mismatch": 0,
+    "normal_run_2_mismatch": 0,
+    "prohibited_import_mismatch": 0,
+    "relocation_manifest_mismatch": 0,
+    "relocation_semantic_mismatch": 0
+  },
+  "mt5_executed": false,
+  "negative_tests": {
+    "all_passed": true,
+    "passed": 8,
+    "results": {
+      "absolute_runtime_path_leakage_detected": true,
+      "altered_source_blocked": true,
+      "detector_request_blocked": true,
+      "external_process_blocked": true,
+      "holdout_execution_request_blocked": true,
+      "missing_source_blocked": true,
+      "wrong_authorization_blocked": true,
+      "wrong_counts_or_hash_blocked": true
+    },
+    "total": 8
+  },
+  "order_logic": "NOT_APPROVED",
+  "outcomes_generated": false,
+  "performance": "NOT_EVALUATED",
+  "profitability": "NOT_CLAIMED",
+  "runtime_audit": {
+    "counter_provenance": {
+      "external_process": "subprocess, os.system and os.startfile interception",
+      "function_executions": "audited wrapper gate and FQ validator dispatch counters",
+      "module_imports": "sys.modules before/after delta and final prohibited-module absence"
+    },
+    "external_process_audit": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "function_execution_counts": {
+      "atr_event_generation_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "event_generation_count": 0,
+      "fn_interpretation_count": 0,
+      "fq_validator_execution_count": 5,
+      "holdout_execution_count": 0,
+      "mt5_execution_count": 0,
+      "outcome_generation_count": 0,
+      "preflight_authorization_count": 5,
+      "tp_sl_calculation_count": 0
+    },
+    "module_import_counts": {
+      "detector_import_count": 0,
+      "fq_validator_import_count": 1,
+      "mt5_ea_import_count": 0,
+      "wrapper_import_count": 1
+    }
+  },
+  "schema_version": "fr_prep_b3_fq_holdout_preflight.v1",
+  "tp_sl_calculated": false
+}

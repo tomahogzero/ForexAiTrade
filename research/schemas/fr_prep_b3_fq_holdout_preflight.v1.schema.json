@@ -1,0 +1,292 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b3_fq_holdout_preflight.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "decision",
+    "b2a_evidence",
+    "fq_preflight",
+    "artifact_comparison",
+    "mismatch_counters",
+    "negative_tests",
+    "runtime_audit",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "holdout_execution_allowed",
+    "detector_executed",
+    "events_generated",
+    "atr_events_generated",
+    "tp_sl_calculated",
+    "outcomes_generated",
+    "fn_interpretation_performed",
+    "mt5_executed",
+    "ea_executed",
+    "performance",
+    "profitability",
+    "order_logic",
+    "candidate",
+    "canonical_summary_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "fr_prep_b3_fq_holdout_preflight.v1"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B3"
+    },
+    "decision": {
+      "const": "FR_PREP_B3_PASS_FQ_HOLDOUT_PREFLIGHT_SEALED"
+    },
+    "b2a_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_summary_sha256",
+        "contract_file_sha256",
+        "result_file_sha256",
+        "validated"
+      ],
+      "properties": {
+        "canonical_summary_sha256": {
+          "const": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251"
+        },
+        "contract_file_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "result_file_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "validated": {
+          "const": true
+        }
+      }
+    },
+    "fq_preflight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bars",
+        "timeline_sha256",
+        "gaps",
+        "accepted_weekend_closures",
+        "accepted_daily_closures",
+        "unverified_gaps",
+        "fq_decision",
+        "deterministic_payload_sha256"
+      ],
+      "properties": {
+        "bars": {
+          "const": 17731
+        },
+        "timeline_sha256": {
+          "const": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38"
+        },
+        "gaps": {
+          "const": 774
+        },
+        "accepted_weekend_closures": {
+          "const": 149
+        },
+        "accepted_daily_closures": {
+          "const": 0
+        },
+        "unverified_gaps": {
+          "const": 625
+        },
+        "fq_decision": {
+          "const": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK"
+        },
+        "deterministic_payload_sha256": {
+          "const": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641"
+        }
+      }
+    },
+    "artifact_comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "normal_run_1_matches_committed",
+        "normal_run_2_matches_committed",
+        "normal_runs_identical",
+        "relocation_semantics_match",
+        "relocation_manifest_self_consistent",
+        "committed_artifact_file_sha256"
+      ],
+      "properties": {
+        "normal_run_1_matches_committed": {
+          "const": true
+        },
+        "normal_run_2_matches_committed": {
+          "const": true
+        },
+        "normal_runs_identical": {
+          "const": true
+        },
+        "relocation_semantics_match": {
+          "const": true
+        },
+        "relocation_manifest_self_consistent": {
+          "const": true
+        },
+        "committed_artifact_file_sha256": {
+          "type": "object",
+          "minProperties": 7,
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "mismatch_counters": {
+      "type": "object",
+      "minProperties": 8,
+      "additionalProperties": {
+        "type": "integer",
+        "const": 0
+      }
+    },
+    "negative_tests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "passed",
+        "total",
+        "all_passed",
+        "results"
+      ],
+      "properties": {
+        "passed": {
+          "const": 8
+        },
+        "total": {
+          "const": 8
+        },
+        "all_passed": {
+          "const": true
+        },
+        "results": {
+          "type": "object",
+          "minProperties": 8,
+          "additionalProperties": {
+            "const": true
+          }
+        }
+      }
+    },
+    "runtime_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module_import_counts",
+        "function_execution_counts",
+        "external_process_audit",
+        "counter_provenance"
+      ],
+      "properties": {
+        "module_import_counts": {
+          "type": "object",
+          "required": [
+            "wrapper_import_count",
+            "fq_validator_import_count",
+            "detector_import_count",
+            "mt5_ea_import_count"
+          ],
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "function_execution_counts": {
+          "type": "object",
+          "required": [
+            "preflight_authorization_count",
+            "fq_validator_execution_count",
+            "detector_execution_count",
+            "event_generation_count",
+            "atr_event_generation_count",
+            "tp_sl_calculation_count",
+            "outcome_generation_count",
+            "fn_interpretation_count",
+            "holdout_execution_count",
+            "mt5_execution_count",
+            "ea_execution_count"
+          ],
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "external_process_audit": {
+          "type": "object",
+          "required": [
+            "successful_launch_count",
+            "blocked_launch_count"
+          ],
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "counter_provenance": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "type": "integer",
+      "const": 0
+    },
+    "holdout_execution_allowed": {
+      "const": false
+    },
+    "detector_executed": {
+      "const": false
+    },
+    "events_generated": {
+      "const": false
+    },
+    "atr_events_generated": {
+      "const": false
+    },
+    "tp_sl_calculated": {
+      "const": false
+    },
+    "outcomes_generated": {
+      "const": false
+    },
+    "fn_interpretation_performed": {
+      "const": false
+    },
+    "mt5_executed": {
+      "const": false
+    },
+    "ea_executed": {
+      "const": false
+    },
+    "performance": {
+      "const": "NOT_EVALUATED"
+    },
+    "profitability": {
+      "const": "NOT_CLAIMED"
+    },
+    "order_logic": {
+      "const": "NOT_APPROVED"
+    },
+    "candidate": {
+      "const": "NOT_READY_FOR_ORDER_LOGIC"
+    },
+    "canonical_summary_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

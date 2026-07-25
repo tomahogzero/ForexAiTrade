@@ -1,0 +1,66 @@
+{
+  "schema_version": "fr_prep_b3a_fq_holdout_execution_authorization.v1",
+  "checkpoint": "FR_PREP_B3A",
+  "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+  "authorization_scope": "NEXT_CHECKPOINT_ONLY",
+  "b3_binding": {
+    "decision": "FR_PREP_B3_PASS_FQ_HOLDOUT_PREFLIGHT_SEALED",
+    "canonical_summary_sha256": "eec147eed43a60aad28a058d2f906181010da225b18964acd00d87ba984659ad"
+  },
+  "prior_evidence_bindings": {
+    "b2_frozen_replay_identity": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+    "b2a_independent_audit_identity": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251"
+  },
+  "fq_preflight": {
+    "bars": 17731,
+    "gaps": 774,
+    "accepted_weekend_closures": 149,
+    "accepted_daily_closures": 0,
+    "unverified_gaps": 625,
+    "timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+    "deterministic_payload_sha256": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641",
+    "decision": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK"
+  },
+  "source_files": [
+    {"filename": "GOLD#_H1_202001020900_202012311800.csv", "sha256": "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc", "rows": 5912},
+    {"filename": "GOLD#_H1_202101040100_202112311800.csv", "sha256": "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5", "rows": 5902},
+    {"filename": "GOLD#_H1_202201030100_202212302300.csv", "sha256": "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a", "rows": 5917}
+  ],
+  "gap_artifacts": {
+    "checkpoint_fq_decision.json": "6eee18bb34350f34ee2a4d8c0c34b703b3d3a17eacfa416c30a184e14f77dd0c",
+    "checkpoint_fq_deterministic_replay.json": "d8df3e873af0557a99212dc6fb9be8ff0afd3f68035d749a8b0d6061088a9d53",
+    "checkpoint_fq_fail_closed_usability.json": "05dda8b328d2c429c989fee98b0d1d620d6941fef2a1265dfae682ac5b203ca0",
+    "checkpoint_fq_gap_inventory.json": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+    "checkpoint_fq_gap_summary.json": "61e6a22eac76c5852a4862a41182f5d0b6f4d45c794a59e16740fc3a2be739e7",
+    "checkpoint_fq_sha256_manifest.json": "90ddd7222c84130337ff68b5190305f8a2b9276f05bb53044f33541264485276",
+    "checkpoint_fq_source_integrity.json": "ea4dba94f43b5f112625416dd3d723dd71c9b66520412ec2707330fa93b3797a"
+  },
+  "detector_binding": {
+    "path": "tools/market_structure_break_retest_detector.py",
+    "file_sha256": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144",
+    "proven_by": "FR_PREP_B2"
+  },
+  "authorized_next_checkpoint_operations": [
+    "VALIDATE_FROZEN_B3_EVIDENCE",
+    "VALIDATE_EXACT_FQ_SOURCES_AND_GAP_INVENTORY",
+    "IMPORT_EXACT_FROZEN_DETECTOR_AFTER_VALIDATION",
+    "EXECUTE_ONE_SEALED_FQ_EVENT_POPULATION_REPLAY",
+    "EMIT_ORDINARY_DETECTOR_EVENTS",
+    "REPEAT_DETERMINISTIC_REPLAY",
+    "CONTROLLED_TEMPORARY_RELOCATION_REPLAY",
+    "COMPARE_EVENT_IDS_ROW_ORDER_COUNTS_AND_HASHES"
+  ],
+  "atr_event_pipeline_allowed": false,
+  "tp_sl_allowed": false,
+  "outcomes_allowed": false,
+  "fn_interpretation_allowed": false,
+  "optimization_allowed": false,
+  "parameter_changes_allowed": false,
+  "indicator_changes_allowed": false,
+  "lot_risk_order_logic_allowed": false,
+  "mt5_ea_execution_allowed": false,
+  "profitability_claim_allowed": false,
+  "network_external_process_allowed": false,
+  "strategy_detector_gap_rule_changes_allowed": false,
+  "absolute_runtime_source_paths_excluded_from_identity": true
+}

@@ -1,0 +1,33 @@
+{
+  "authorization_identity_sha256": "b2fb6bfe4c96f8d18d910b78180ea7b70d3c9ba2ad4142c859e03be6559ea97d",
+  "authorization_sealed": true,
+  "b3_canonical_summary_sha256": "eec147eed43a60aad28a058d2f906181010da225b18964acd00d87ba984659ad",
+  "canonical_summary_sha256": "c31476f8e75b36231fa1c6b67b2e1d1a95668abe1a8311cc69d30e62e8d1eeab",
+  "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+  "decision": "FR_PREP_B3A_PASS_FQ_HOLDOUT_EXECUTION_AUTHORIZATION_SEALED",
+  "detector_binding": {
+    "file_sha256": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144",
+    "path": "tools/market_structure_break_retest_detector.py",
+    "proven_by": "FR_PREP_B2"
+  },
+  "fq_preflight": {
+    "accepted_daily_closures": 0,
+    "accepted_weekend_closures": 149,
+    "bars": 17731,
+    "decision": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK",
+    "deterministic_payload_sha256": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641",
+    "gaps": 774,
+    "timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+    "unverified_gaps": 625
+  },
+  "holdout_executed": false,
+  "holdout_execution_authorized_for_next_checkpoint": true,
+  "negative_tests": {
+    "passed": 8,
+    "total": 8
+  },
+  "performance": "NOT_EVALUATED",
+  "profitability": "NOT_CLAIMED",
+  "prohibited_execution_count": 0,
+  "prohibited_import_count": 0
+}

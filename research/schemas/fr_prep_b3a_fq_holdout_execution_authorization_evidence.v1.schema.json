@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b3a_fq_holdout_execution_authorization_evidence.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "decision",
+    "authorization_identity_sha256",
+    "validated_bindings",
+    "negative_tests",
+    "runtime_audit",
+    "authorization_sealed",
+    "holdout_execution_authorized_for_next_checkpoint",
+    "holdout_executed",
+    "detector_imported",
+    "detector_executed",
+    "events_generated",
+    "atr_events_generated",
+    "tp_sl_calculated",
+    "outcomes_generated",
+    "performance",
+    "profitability",
+    "order_logic",
+    "candidate",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "canonical_summary_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "fr_prep_b3a_fq_holdout_execution_authorization_evidence.v1"},
+    "checkpoint": {"const": "FR_PREP_B3A"},
+    "decision": {"const": "FR_PREP_B3A_PASS_FQ_HOLDOUT_EXECUTION_AUTHORIZATION_SEALED"},
+    "authorization_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "validated_bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["b3_identity", "b2_identity", "b2a_identity", "fq_counts_and_hashes", "source_files", "gap_artifacts", "detector"],
+      "properties": {
+        "b3_identity": {"const": "eec147eed43a60aad28a058d2f906181010da225b18964acd00d87ba984659ad"},
+        "b2_identity": {"const": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0"},
+        "b2a_identity": {"const": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251"},
+        "fq_counts_and_hashes": {"const": true},
+        "source_files": {"const": true},
+        "gap_artifacts": {"const": true},
+        "detector": {"const": true}
+      }
+    },
+    "negative_tests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "all_passed", "results"],
+      "properties": {
+        "passed": {"const": 8},
+        "total": {"const": 8},
+        "all_passed": {"const": true},
+        "results": {"type": "object", "minProperties": 8, "additionalProperties": {"const": true}}
+      }
+    },
+    "runtime_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["module_import_counts", "execution_counts", "external_process_audit", "counter_provenance"],
+      "properties": {
+        "module_import_counts": {"type": "object", "additionalProperties": {"const": 0}},
+        "execution_counts": {"type": "object", "additionalProperties": {"const": 0}},
+        "external_process_audit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["successful_launch_count", "blocked_launch_count"],
+          "properties": {
+            "successful_launch_count": {"const": 0},
+            "blocked_launch_count": {"const": 1}
+          }
+        },
+        "counter_provenance": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}}
+      }
+    },
+    "authorization_sealed": {"const": true},
+    "holdout_execution_authorized_for_next_checkpoint": {"const": true},
+    "holdout_executed": {"const": false},
+    "detector_imported": {"const": false},
+    "detector_executed": {"const": false},
+    "events_generated": {"const": false},
+    "atr_events_generated": {"const": false},
+    "tp_sl_calculated": {"const": false},
+    "outcomes_generated": {"const": false},
+    "performance": {"const": "NOT_EVALUATED"},
+    "profitability": {"const": "NOT_CLAIMED"},
+    "order_logic": {"const": "NOT_APPROVED"},
+    "candidate": {"const": "NOT_READY_FOR_ORDER_LOGIC"},
+    "absolute_runtime_path_in_canonical_identity_count": {"const": 0},
+    "canonical_summary_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "atr_events_generated": false,
+  "authorization_identity_sha256": "b2fb6bfe4c96f8d18d910b78180ea7b70d3c9ba2ad4142c859e03be6559ea97d",
+  "authorization_sealed": true,
+  "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+  "canonical_summary_sha256": "c31476f8e75b36231fa1c6b67b2e1d1a95668abe1a8311cc69d30e62e8d1eeab",
+  "checkpoint": "FR_PREP_B3A",
+  "decision": "FR_PREP_B3A_PASS_FQ_HOLDOUT_EXECUTION_AUTHORIZATION_SEALED",
+  "detector_executed": false,
+  "detector_imported": false,
+  "events_generated": false,
+  "holdout_executed": false,
+  "holdout_execution_authorized_for_next_checkpoint": true,
+  "negative_tests": {
+    "all_passed": true,
+    "passed": 8,
+    "results": {
+      "absolute_path_leakage_detected": true,
+      "changed_fq_counts_or_hash_blocked": true,
+      "execution_attempt_blocked": true,
+      "external_launch_blocked": true,
+      "tp_sl_or_outcome_request_blocked": true,
+      "unauthorized_operation_blocked": true,
+      "wrong_b3_identity_or_decision_blocked": true,
+      "wrong_detector_binding_blocked": true
+    },
+    "total": 8
+  },
+  "order_logic": "NOT_APPROVED",
+  "outcomes_generated": false,
+  "performance": "NOT_EVALUATED",
+  "profitability": "NOT_CLAIMED",
+  "runtime_audit": {
+    "counter_provenance": {
+      "executions": "authorization-only runner exposes no execution dispatch",
+      "external_process": "subprocess, os.system and os.startfile interception",
+      "module_imports": "sys.modules before/after delta and final prohibited-module absence"
+    },
+    "execution_counts": {
+      "atr_event_generation_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "event_generation_count": 0,
+      "fn_interpretation_count": 0,
+      "holdout_execution_count": 0,
+      "mt5_execution_count": 0,
+      "outcome_generation_count": 0,
+      "tp_sl_calculation_count": 0
+    },
+    "external_process_audit": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "module_import_counts": {
+      "detector_import_count": 0,
+      "execution_wrapper_import_count": 0,
+      "fq_validator_import_count": 0,
+      "legacy_fj_runner_import_count": 0,
+      "mt5_ea_import_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b3a_fq_holdout_execution_authorization_evidence.v1",
+  "tp_sl_calculated": false,
+  "validated_bindings": {
+    "b2_identity": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+    "b2a_identity": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251",
+    "b3_identity": "eec147eed43a60aad28a058d2f906181010da225b18964acd00d87ba984659ad",
+    "detector": true,
+    "fq_counts_and_hashes": true,
+    "gap_artifacts": true,
+    "source_files": true
+  }
+}

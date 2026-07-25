@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b3a_fq_holdout_execution_authorization.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "dataset_id",
+    "authorization_scope",
+    "b3_binding",
+    "prior_evidence_bindings",
+    "fq_preflight",
+    "source_files",
+    "gap_artifacts",
+    "detector_binding",
+    "authorized_next_checkpoint_operations",
+    "atr_event_pipeline_allowed",
+    "tp_sl_allowed",
+    "outcomes_allowed",
+    "fn_interpretation_allowed",
+    "optimization_allowed",
+    "parameter_changes_allowed",
+    "indicator_changes_allowed",
+    "lot_risk_order_logic_allowed",
+    "mt5_ea_execution_allowed",
+    "profitability_claim_allowed",
+    "network_external_process_allowed",
+    "strategy_detector_gap_rule_changes_allowed",
+    "absolute_runtime_source_paths_excluded_from_identity"
+  ],
+  "properties": {
+    "schema_version": {"const": "fr_prep_b3a_fq_holdout_execution_authorization.v1"},
+    "checkpoint": {"const": "FR_PREP_B3A"},
+    "dataset_id": {"const": "FP_FQ_2020_2022_GOLD_H1"},
+    "authorization_scope": {"const": "NEXT_CHECKPOINT_ONLY"},
+    "b3_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "canonical_summary_sha256"],
+      "properties": {
+        "decision": {"const": "FR_PREP_B3_PASS_FQ_HOLDOUT_PREFLIGHT_SEALED"},
+        "canonical_summary_sha256": {"const": "eec147eed43a60aad28a058d2f906181010da225b18964acd00d87ba984659ad"}
+      }
+    },
+    "prior_evidence_bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["b2_frozen_replay_identity", "b2a_independent_audit_identity"],
+      "properties": {
+        "b2_frozen_replay_identity": {"const": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0"},
+        "b2a_independent_audit_identity": {"const": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251"}
+      }
+    },
+    "fq_preflight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bars", "gaps", "accepted_weekend_closures", "accepted_daily_closures", "unverified_gaps", "timeline_sha256", "deterministic_payload_sha256", "decision"],
+      "properties": {
+        "bars": {"const": 17731},
+        "gaps": {"const": 774},
+        "accepted_weekend_closures": {"const": 149},
+        "accepted_daily_closures": {"const": 0},
+        "unverified_gaps": {"const": 625},
+        "timeline_sha256": {"const": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38"},
+        "deterministic_payload_sha256": {"const": "1b724dda83136a926beb48125b4d2ebc771fa642d798ad556df8b3905d86e641"},
+        "decision": {"const": "FQ_CONDITIONAL_PASS_HIGH_EXCLUSION_RISK"}
+      }
+    },
+    "source_files": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["filename", "sha256", "rows"],
+        "properties": {
+          "filename": {"type": "string", "pattern": "^GOLD#_H1_"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "rows": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "gap_artifacts": {
+      "type": "object",
+      "minProperties": 7,
+      "maxProperties": 7,
+      "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "detector_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "file_sha256", "proven_by"],
+      "properties": {
+        "path": {"const": "tools/market_structure_break_retest_detector.py"},
+        "file_sha256": {"const": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144"},
+        "proven_by": {"const": "FR_PREP_B2"}
+      }
+    },
+    "authorized_next_checkpoint_operations": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "VALIDATE_FROZEN_B3_EVIDENCE",
+          "VALIDATE_EXACT_FQ_SOURCES_AND_GAP_INVENTORY",
+          "IMPORT_EXACT_FROZEN_DETECTOR_AFTER_VALIDATION",
+          "EXECUTE_ONE_SEALED_FQ_EVENT_POPULATION_REPLAY",
+          "EMIT_ORDINARY_DETECTOR_EVENTS",
+          "REPEAT_DETERMINISTIC_REPLAY",
+          "CONTROLLED_TEMPORARY_RELOCATION_REPLAY",
+          "COMPARE_EVENT_IDS_ROW_ORDER_COUNTS_AND_HASHES"
+        ]
+      }
+    },
+    "atr_event_pipeline_allowed": {"const": false},
+    "tp_sl_allowed": {"const": false},
+    "outcomes_allowed": {"const": false},
+    "fn_interpretation_allowed": {"const": false},
+    "optimization_allowed": {"const": false},
+    "parameter_changes_allowed": {"const": false},
+    "indicator_changes_allowed": {"const": false},
+    "lot_risk_order_logic_allowed": {"const": false},
+    "mt5_ea_execution_allowed": {"const": false},
+    "profitability_claim_allowed": {"const": false},
+    "network_external_process_allowed": {"const": false},
+    "strategy_detector_gap_rule_changes_allowed": {"const": false},
+    "absolute_runtime_source_paths_excluded_from_identity": {"const": true}
+  }
+}

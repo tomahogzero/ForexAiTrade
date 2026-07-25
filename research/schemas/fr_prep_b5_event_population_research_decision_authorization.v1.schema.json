@@ -1,0 +1,106 @@
+{
+  "$id": "fr_prep_b5_event_population_research_decision_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_paths_excluded_from_identity": {"const": true},
+    "allowed_operations": {"type":"array","minItems":7,"maxItems":7,"uniqueItems":true},
+    "checkpoint": {"const": "FR_PREP_B5"},
+    "committed_artifacts": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["artifact_id","category","path","file_sha256"],
+        "properties": {
+          "artifact_id": {"type":"string","minLength":1},
+          "category": {"type":"string","minLength":1},
+          "path": {"type":"string","pattern":"^research/"},
+          "file_sha256": {"type":"string","pattern":"^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "detector_import_allowed": {"const": false},
+    "ea_execution_allowed": {"const": false},
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision","evidence_identities","fj","fq","required_conclusions"],
+      "properties": {
+        "decision": {"const":"FR_PREP_B5_CONDITIONAL_PASS_TO_OUTCOME_CONTRACT_DESIGN_ONLY"},
+        "evidence_identities": {
+          "type":"object","additionalProperties":false,"required":["b2","b2a","b4","b4a"],
+          "properties": {
+            "b2":{"const":"bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0"},
+            "b2a":{"const":"1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251"},
+            "b4":{"const":"fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134"},
+            "b4a":{"const":"d420f009c77d2288502c1188a89a21c112374d3a8e7439b452a9ea62165306fb"}
+          }
+        },
+        "fj": {"$ref":"#/$defs/fj"},
+        "fq": {"$ref":"#/$defs/fq"},
+        "required_conclusions": {"$ref":"#/$defs/conclusions"}
+      }
+    },
+    "external_process_allowed": {"const": false},
+    "fj_or_fq_replay_allowed": {"const": false},
+    "mode": {"const":"COMMITTED_EVENT_POPULATION_EVIDENCE_SYNTHESIS_ONLY"},
+    "mt5_execution_allowed": {"const": false},
+    "outcome_execution_allowed": {"const": false},
+    "post_holdout_thresholds_allowed": {"const": false},
+    "profitability_or_performance_claim_allowed": {"const": false},
+    "raw_csv_access_allowed": {"const": false},
+    "schema_version": {"const":"fr_prep_b5_event_population_research_decision_authorization.v1"},
+    "wrapper_import_allowed": {"const": false}
+  },
+  "required": [
+    "schema_version","checkpoint","mode","allowed_operations","committed_artifacts","expected",
+    "detector_import_allowed","wrapper_import_allowed","fj_or_fq_replay_allowed",
+    "outcome_execution_allowed","raw_csv_access_allowed","external_process_allowed",
+    "mt5_execution_allowed","ea_execution_allowed","profitability_or_performance_claim_allowed",
+    "post_holdout_thresholds_allowed","absolute_runtime_paths_excluded_from_identity"
+  ],
+  "type": "object",
+  "$defs": {
+    "dataset": {
+      "type":"object","additionalProperties":false,
+      "required":["role","dataset_id","bars","events","long","short","years","gaps","accepted_closures","unverified_gaps","data_incomplete_gap_exclusions"],
+      "properties": {
+        "role":{"type":"string"},"dataset_id":{"type":"string"},"bars":{"type":"integer"},
+        "events":{"type":"integer"},"long":{"type":"integer"},"short":{"type":"integer"},
+        "years":{"type":"object"},"gaps":{"type":"integer"},"accepted_closures":{"type":"integer"},
+        "unverified_gaps":{"type":"integer"},"data_incomplete_gap_exclusions":{"type":"integer"}
+      }
+    },
+    "fj": {
+      "allOf":[
+        {"$ref":"#/$defs/dataset"},
+        {"properties":{"role":{"const":"FROZEN_DEVELOPMENT_REPLAY"},"dataset_id":{"const":"FJ_2023_2025_GOLD_H1"},"bars":{"const":17716},"events":{"const":1079},"long":{"const":588},"short":{"const":491},"gaps":{"const":773},"accepted_closures":{"const":745},"unverified_gaps":{"const":28},"data_incomplete_gap_exclusions":{"const":13},"years":{"const":{"2023":352,"2024":376,"2025":351}}}}
+      ]
+    },
+    "fq": {
+      "allOf":[
+        {"$ref":"#/$defs/dataset"},
+        {"properties":{"role":{"const":"SEALED_HOLDOUT_REPLAY"},"dataset_id":{"const":"FP_FQ_2020_2022_GOLD_H1"},"bars":{"const":17731},"events":{"const":493},"long":{"const":252},"short":{"const":241},"gaps":{"const":774},"accepted_closures":{"const":149},"unverified_gaps":{"const":625},"data_incomplete_gap_exclusions":{"const":347},"years":{"const":{"2020":149,"2021":181,"2022":163}}}}
+      ]
+    },
+    "conclusions": {
+      "type":"object","additionalProperties":false,
+      "required":["event_population_replay_integrity","cross_period_event_presence","directional_coverage","event_density_stability","data_quality_comparability","strategy_performance","profitability","order_logic","candidate","next_allowed_scope"],
+      "properties": {
+        "event_population_replay_integrity":{"const":"PROVEN"},
+        "cross_period_event_presence":{"const":"PROVEN"},
+        "directional_coverage":{"const":"PROVEN"},
+        "event_density_stability":{"const":"NOT_PROVEN"},
+        "data_quality_comparability":{"const":"MATERIAL_LIMITATION"},
+        "strategy_performance":{"const":"NOT_EVALUATED"},
+        "profitability":{"const":"NOT_CLAIMED"},
+        "order_logic":{"const":"NOT_APPROVED"},
+        "candidate":{"const":"NOT_READY_FOR_ORDER_LOGIC"},
+        "next_allowed_scope":{"const":"OUTCOME_CONTRACT_DESIGN_ONLY"}
+      }
+    }
+  }
+}

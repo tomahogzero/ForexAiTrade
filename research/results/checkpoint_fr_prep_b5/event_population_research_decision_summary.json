@@ -1,0 +1,69 @@
+{
+  "canonical_summary_sha256": "915ed724f35ee106f7a78e8618f2d69d2795b4b25cc8278bf4773efd74b27a03",
+  "comparison": {
+    "fq_event_density_reduction_percent": 54.348199,
+    "fq_minus_fj_accepted_closures": -596,
+    "fq_minus_fj_data_incomplete_gap_exclusions": 334,
+    "fq_minus_fj_fail_closed_gaps_per_1000_bars": 33.668507,
+    "fq_minus_fj_long_share_percentage_points": -3.379284,
+    "fq_minus_fj_short_share_percentage_points": 3.379284,
+    "fq_minus_fj_total_gaps": 1,
+    "fq_minus_fj_unverified_gap_share_percentage_points": 77.127103,
+    "fq_minus_fj_unverified_gaps": 597,
+    "fq_to_fj_event_density_ratio": 0.456518,
+    "fq_to_fj_fail_closed_gap_rate_ratio": 22.302545
+  },
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "cross_period_event_presence": "PROVEN",
+    "data_quality_comparability": "MATERIAL_LIMITATION",
+    "directional_coverage": "PROVEN",
+    "event_density_stability": "NOT_PROVEN",
+    "event_population_replay_integrity": "PROVEN",
+    "next_allowed_scope": "OUTCOME_CONTRACT_DESIGN_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "profitability": "NOT_CLAIMED",
+    "strategy_performance": "NOT_EVALUATED"
+  },
+  "decision": "FR_PREP_B5_CONDITIONAL_PASS_TO_OUTCOME_CONTRACT_DESIGN_ONLY",
+  "evidence_identities": {
+    "b2": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+    "b2a": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251",
+    "b4": "fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134",
+    "b4a": "d420f009c77d2288502c1188a89a21c112374d3a8e7439b452a9ea62165306fb"
+  },
+  "execution_status": "PASS",
+  "fj": {
+    "bars": 17716,
+    "events": 1079,
+    "events_per_1000_bars": 60.905396,
+    "long_share_percent": 54.494903,
+    "short_share_percent": 45.505097,
+    "years": {
+      "2023": 352,
+      "2024": 376,
+      "2025": 351
+    }
+  },
+  "fq": {
+    "bars": 17731,
+    "events": 493,
+    "events_per_1000_bars": 27.80441,
+    "long_share_percent": 51.115619,
+    "short_share_percent": 48.884381,
+    "years": {
+      "2020": 149,
+      "2021": 181,
+      "2022": 163
+    }
+  },
+  "mismatch_count": 0,
+  "negative_tests": {
+    "passed": 8,
+    "total": 8
+  },
+  "profitability": "NOT_CLAIMED",
+  "prohibited_execution_count": 0,
+  "prohibited_import_count": 0,
+  "strategy_performance": "NOT_EVALUATED"
+}

@@ -1,0 +1,247 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "atr_events_generated": false,
+  "canonical_summary_sha256": "915ed724f35ee106f7a78e8618f2d69d2795b4b25cc8278bf4773efd74b27a03",
+  "checkpoint": "FR_PREP_B5",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "cross_period_event_presence": "PROVEN",
+    "data_quality_comparability": "MATERIAL_LIMITATION",
+    "directional_coverage": "PROVEN",
+    "event_density_stability": "NOT_PROVEN",
+    "event_population_replay_integrity": "PROVEN",
+    "next_allowed_scope": "OUTCOME_CONTRACT_DESIGN_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "profitability": "NOT_CLAIMED",
+    "strategy_performance": "NOT_EVALUATED"
+  },
+  "cross_period_comparison": {
+    "fq_event_density_reduction_percent": 54.348199,
+    "fq_minus_fj_accepted_closures": -596,
+    "fq_minus_fj_data_incomplete_gap_exclusions": 334,
+    "fq_minus_fj_fail_closed_gaps_per_1000_bars": 33.668507,
+    "fq_minus_fj_long_share_percentage_points": -3.379284,
+    "fq_minus_fj_short_share_percentage_points": 3.379284,
+    "fq_minus_fj_total_gaps": 1,
+    "fq_minus_fj_unverified_gap_share_percentage_points": 77.127103,
+    "fq_minus_fj_unverified_gaps": 597,
+    "fq_to_fj_event_density_ratio": 0.456518,
+    "fq_to_fj_fail_closed_gap_rate_ratio": 22.302545
+  },
+  "decision": "FR_PREP_B5_CONDITIONAL_PASS_TO_OUTCOME_CONTRACT_DESIGN_ONLY",
+  "ea_executed": false,
+  "evidence_validation": {
+    "b2": {
+      "canonical_summary_sha256": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+      "contract_schema_validated": true,
+      "decision": "FR_PREP_B2_PASS_FROZEN_FJ_BACKWARD_COMPATIBLE_REPLAY",
+      "identity_validated": true,
+      "mismatch_count_zero": true,
+      "result_projection_validated": true
+    },
+    "b2a": {
+      "canonical_summary_sha256": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251",
+      "contract_schema_validated": true,
+      "decision": "FR_PREP_B2A_PASS_INDEPENDENT_REPLAY_AUDIT",
+      "identity_validated": true,
+      "mismatch_count_zero": true,
+      "result_projection_validated": true
+    },
+    "b4": {
+      "canonical_summary_sha256": "fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134",
+      "contract_schema_validated": true,
+      "decision": "FR_PREP_B4_PASS_SEALED_FQ_EVENT_POPULATION_REPLAY",
+      "identity_validated": true,
+      "mismatch_count_zero": true,
+      "result_projection_validated": true
+    },
+    "b4a": {
+      "canonical_summary_sha256": "d420f009c77d2288502c1188a89a21c112374d3a8e7439b452a9ea62165306fb",
+      "contract_schema_validated": true,
+      "decision": "FR_PREP_B4A_PASS_INDEPENDENT_FQ_REPLAY_AUDIT",
+      "identity_validated": true,
+      "mismatch_count_zero": true,
+      "result_projection_validated": true
+    }
+  },
+  "execution_status": "PASS",
+  "explicit_statements": {
+    "data_quality_limit": "The 625 unverified FQ gaps materially limit direct comparability.",
+    "density_interpretation_limit": "The lower FQ event density cannot be interpreted as better or worse performance.",
+    "operational_generalization": "The detector generalizes operationally by producing deterministic, independently audited events in both periods.",
+    "trading_conclusion_limit": "No trading, profitability or order-readiness conclusion is permitted."
+  },
+  "fj": {
+    "accepted_closures": 745,
+    "bars": 17716,
+    "data_incomplete_gap_exclusions": 13,
+    "dataset_id": "FJ_2023_2025_GOLD_H1",
+    "events": 1079,
+    "events_per_1000_bars": 60.905396,
+    "fail_closed_gaps_per_1000_bars": 1.580492,
+    "gaps": 773,
+    "long": 588,
+    "long_share_percent": 54.494903,
+    "role": "FROZEN_DEVELOPMENT_REPLAY",
+    "short": 491,
+    "short_share_percent": 45.505097,
+    "unverified_gap_share_percent": 3.622251,
+    "unverified_gaps": 28,
+    "year_count_variation": {
+      "coefficient_of_variation_percent": 3.213148,
+      "maximum": 376,
+      "mean": 359.666667,
+      "minimum": 351,
+      "population_standard_deviation": 11.556624,
+      "range": 25
+    },
+    "years": {
+      "2023": 352,
+      "2024": 376,
+      "2025": 351
+    }
+  },
+  "fn_interpretation_performed": false,
+  "fq": {
+    "accepted_closures": 149,
+    "bars": 17731,
+    "data_incomplete_gap_exclusions": 347,
+    "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+    "events": 493,
+    "events_per_1000_bars": 27.80441,
+    "fail_closed_gaps_per_1000_bars": 35.248999,
+    "gaps": 774,
+    "long": 252,
+    "long_share_percent": 51.115619,
+    "role": "SEALED_HOLDOUT_REPLAY",
+    "short": 241,
+    "short_share_percent": 48.884381,
+    "unverified_gap_share_percent": 80.749354,
+    "unverified_gaps": 625,
+    "year_count_variation": {
+      "coefficient_of_variation_percent": 7.970338,
+      "maximum": 181,
+      "mean": 164.333333,
+      "minimum": 149,
+      "population_standard_deviation": 13.097922,
+      "range": 32
+    },
+    "years": {
+      "2020": 149,
+      "2021": 181,
+      "2022": 163
+    }
+  },
+  "mismatch_counters": {
+    "conclusion_mismatch": 0,
+    "dataset_role_mismatch": 0,
+    "evidence_identity_mismatch": 0,
+    "evidence_schema_mismatch": 0,
+    "input_count_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "repeat_mismatch": 0,
+    "result_projection_mismatch": 0,
+    "upstream_mismatch_counter_mismatch": 0
+  },
+  "mt5_executed": false,
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "absolute_path_leakage_blocked": true,
+      "changed_counts_blocked": true,
+      "detector_import_request_blocked": true,
+      "external_process_blocked": true,
+      "outcome_execution_request_blocked": true,
+      "profitability_or_performance_claim_blocked": true,
+      "swapped_dataset_roles_blocked": true,
+      "wrong_evidence_identity_blocked": true
+    },
+    "test_count": 8,
+    "tests_passed": 8
+  },
+  "optimization_performed": false,
+  "outcomes_generated": false,
+  "post_holdout_thresholds_introduced": false,
+  "prohibited_modules": [],
+  "raw_csv_accessed": false,
+  "runtime_audit": {
+    "blocked_detector_import_requests": 1,
+    "counter_provenance": {
+      "executions": "evidence synthesis contains no detector, replay, outcome, MT5, or EA dispatch",
+      "external_process": "Popen, os.system, and os.startfile fail-closed interception",
+      "file_access": "exact resolved-path allowlist for committed JSON evidence only",
+      "module_imports": "sys.modules delta plus fail-closed import interception"
+    },
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "file_access": {
+      "raw_read_operation_counts": {
+        "b2_contract": 2,
+        "b2_result": 2,
+        "b2_schema": 2,
+        "b2a_contract": 2,
+        "b2a_result": 2,
+        "b2a_schema": 2,
+        "b4_contract": 2,
+        "b4_result": 2,
+        "b4_schema": 2,
+        "b4a_contract": 2,
+        "b4a_result": 2,
+        "b4a_schema": 2,
+        "b5_authorization": 1,
+        "b5_authorization_schema": 1,
+        "b5_evidence_schema": 0,
+        "fj_population_summary": 2
+      },
+      "unauthorized_successful_read_count": 0,
+      "unique_logical_file_counts": {
+        "b2_contract": 1,
+        "b2_result": 1,
+        "b2_schema": 1,
+        "b2a_contract": 1,
+        "b2a_result": 1,
+        "b2a_schema": 1,
+        "b4_contract": 1,
+        "b4_result": 1,
+        "b4_schema": 1,
+        "b4a_contract": 1,
+        "b4a_result": 1,
+        "b4a_schema": 1,
+        "b5_authorization": 1,
+        "b5_authorization_schema": 1,
+        "b5_evidence_schema": 0,
+        "fj_population_summary": 1
+      }
+    },
+    "module_import_counts": {
+      "b2_runner_import_count": 0,
+      "b4_runner_import_count": 0,
+      "detector_import_count": 0,
+      "fj_runner_import_count": 0,
+      "fq_validator_import_count": 0,
+      "mt5_or_ea_import_count": 0,
+      "wrapper_import_count": 0
+    },
+    "prohibited_execution_counts": {
+      "atr_event_generation_count": 0,
+      "b2_runner_execution_count": 0,
+      "b4_runner_execution_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "fj_replay_execution_count": 0,
+      "fn_interpretation_count": 0,
+      "fq_replay_execution_count": 0,
+      "mt5_execution_count": 0,
+      "optimization_count": 0,
+      "outcome_generation_count": 0,
+      "tp_sl_calculation_count": 0,
+      "wrapper_execution_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b5_event_population_research_decision.v1",
+  "strategy_or_parameter_changes": false,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "tp_sl_calculated": false
+}

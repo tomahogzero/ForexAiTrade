@@ -1,0 +1,87 @@
+{
+  "absolute_runtime_paths_excluded_from_identity": true,
+  "allowed_operations": [
+    "READ_COMMITTED_EVIDENCE_JSON",
+    "VALIDATE_EVIDENCE_SCHEMAS",
+    "VALIDATE_EVIDENCE_IDENTITIES",
+    "RECONCILE_COMMITTED_COUNTS",
+    "CALCULATE_DESCRIPTIVE_EVENT_POPULATION_METRICS",
+    "SYNTHESIZE_SCOPED_RESEARCH_DECISION",
+    "FAIL_CLOSED_NEGATIVE_TESTS"
+  ],
+  "checkpoint": "FR_PREP_B5",
+  "committed_artifacts": [
+    {"artifact_id":"b2_contract","category":"b2_contract","path":"research/contracts/fr_prep_b2_fj_backward_compatible_replay.v1.json","file_sha256":"079cadc0ad4fb2c64edf2bf3ffa2707113ab5aa5d59e5919b5124e579685fb99"},
+    {"artifact_id":"b2_schema","category":"b2_schema","path":"research/schemas/fr_prep_b2_fj_backward_compatible_replay.v1.schema.json","file_sha256":"d0a2277573e30b2e17f0125f6cc59ba60c577cfcf964b78b460caba697139d0a"},
+    {"artifact_id":"b2_result","category":"b2_result","path":"research/results/checkpoint_fr_prep_b2/fj_backward_compatible_replay_summary.json","file_sha256":"1c2142665eeb9554ed194d3d4a4284b80af78d5787faf25942649157ca3a9771"},
+    {"artifact_id":"b2a_contract","category":"b2a_contract","path":"research/contracts/fr_prep_b2a_independent_replay_audit.v1.json","file_sha256":"535bd17c8aa12babb25709c04c255989ff192fa5f71b0be0ef2a866ce4e145e4"},
+    {"artifact_id":"b2a_schema","category":"b2a_schema","path":"research/schemas/fr_prep_b2a_independent_replay_audit.v1.schema.json","file_sha256":"1f3061e5cacdb7b912b59fdcbd5bbd37e61124891e23cb096672821b6622ee85"},
+    {"artifact_id":"b2a_result","category":"b2a_result","path":"research/results/checkpoint_fr_prep_b2a/independent_replay_audit_summary.json","file_sha256":"71fc6f9e0c0cab3fb02aad9df1b056e34021c747328b6b647ca8cffb9ee827d6"},
+    {"artifact_id":"fj_population_summary","category":"fj_population_summary","path":"research/results/checkpoint_fj_historical_event_population/checkpoint_fj_population_summary.json","file_sha256":"9fa5d138e07281bf422d09dac7604c9e9b0e2c078291b6f27ea4eb1a7f967766"},
+    {"artifact_id":"b4_contract","category":"b4_contract","path":"research/contracts/fr_prep_b4_fq_holdout_event_population_replay.v1.json","file_sha256":"83dced701ad551fb0f7825f38c0ce1c1d530daf1530a7ee2c704623e5d4e4cbc"},
+    {"artifact_id":"b4_schema","category":"b4_schema","path":"research/schemas/fr_prep_b4_fq_holdout_event_population_replay.v1.schema.json","file_sha256":"c37eac35e7b0718e787f83b560f4e9b0a92be943dd1d283fa792c6bf065f2efb"},
+    {"artifact_id":"b4_result","category":"b4_result","path":"research/results/checkpoint_fr_prep_b4/fq_event_population_summary.json","file_sha256":"e0733c0a901d9f600613c2185a5450a6810aaed2c77f7d915ad64559fcabef23"},
+    {"artifact_id":"b4a_contract","category":"b4a_contract","path":"research/contracts/fr_prep_b4a_independent_fq_replay_audit.v1.json","file_sha256":"2be1c44f51cc41b70fc7d3c341a03c51e003ff295aabaeb73ba4df0b17d7917a"},
+    {"artifact_id":"b4a_schema","category":"b4a_schema","path":"research/schemas/fr_prep_b4a_independent_fq_replay_audit.v1.schema.json","file_sha256":"f61f3fcae5812a08c80dc6da2d50f2893270f42a39d4e7c395545fd895e17632"},
+    {"artifact_id":"b4a_result","category":"b4a_result","path":"research/results/checkpoint_fr_prep_b4a/independent_fq_replay_audit_summary.json","file_sha256":"8589e6d311f538f4c6ca08131336a646c6609610d0ac4ee516d3d28b62d4e4a7"}
+  ],
+  "detector_import_allowed": false,
+  "ea_execution_allowed": false,
+  "external_process_allowed": false,
+  "fj_or_fq_replay_allowed": false,
+  "mode": "COMMITTED_EVENT_POPULATION_EVIDENCE_SYNTHESIS_ONLY",
+  "mt5_execution_allowed": false,
+  "outcome_execution_allowed": false,
+  "post_holdout_thresholds_allowed": false,
+  "profitability_or_performance_claim_allowed": false,
+  "raw_csv_access_allowed": false,
+  "schema_version": "fr_prep_b5_event_population_research_decision_authorization.v1",
+  "wrapper_import_allowed": false,
+  "expected": {
+    "decision": "FR_PREP_B5_CONDITIONAL_PASS_TO_OUTCOME_CONTRACT_DESIGN_ONLY",
+    "evidence_identities": {
+      "b2": "bc6fafc40b9c550a7d9d7e798a92a6f685e5de208c7c224c738726bce00608a0",
+      "b2a": "1f63983bf783452bd0e56d6c265f67f3baccbaae644eedcacb59a1f79a895251",
+      "b4": "fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134",
+      "b4a": "d420f009c77d2288502c1188a89a21c112374d3a8e7439b452a9ea62165306fb"
+    },
+    "fj": {
+      "accepted_closures": 745,
+      "bars": 17716,
+      "data_incomplete_gap_exclusions": 13,
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "events": 1079,
+      "gaps": 773,
+      "long": 588,
+      "role": "FROZEN_DEVELOPMENT_REPLAY",
+      "short": 491,
+      "unverified_gaps": 28,
+      "years": {"2023":352,"2024":376,"2025":351}
+    },
+    "fq": {
+      "accepted_closures": 149,
+      "bars": 17731,
+      "data_incomplete_gap_exclusions": 347,
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "events": 493,
+      "gaps": 774,
+      "long": 252,
+      "role": "SEALED_HOLDOUT_REPLAY",
+      "short": 241,
+      "unverified_gaps": 625,
+      "years": {"2020":149,"2021":181,"2022":163}
+    },
+    "required_conclusions": {
+      "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+      "cross_period_event_presence": "PROVEN",
+      "data_quality_comparability": "MATERIAL_LIMITATION",
+      "directional_coverage": "PROVEN",
+      "event_density_stability": "NOT_PROVEN",
+      "event_population_replay_integrity": "PROVEN",
+      "next_allowed_scope": "OUTCOME_CONTRACT_DESIGN_ONLY",
+      "order_logic": "NOT_APPROVED",
+      "profitability": "NOT_CLAIMED",
+      "strategy_performance": "NOT_EVALUATED"
+    }
+  }
+}

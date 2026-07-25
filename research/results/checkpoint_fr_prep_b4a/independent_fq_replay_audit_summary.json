@@ -1,0 +1,41 @@
+{
+  "b4_canonical_summary_sha256": "fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134",
+  "canonical_summary_sha256": "d420f009c77d2288502c1188a89a21c112374d3a8e7439b452a9ea62165306fb",
+  "decision": "FR_PREP_B4A_PASS_INDEPENDENT_FQ_REPLAY_AUDIT",
+  "events": {
+    "LONG": 252,
+    "SHORT": 241,
+    "by_year": {
+      "2020": 149,
+      "2021": 181,
+      "2022": 163
+    },
+    "total": 493
+  },
+  "execution_status": "PASS",
+  "hashes": {
+    "candidate_status_sha256": "fc83e886b505d837263755fac0ab31c75754eef7fa433df86743a29cd7553610",
+    "complete_output_sha256": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46",
+    "event_population_sha256": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81",
+    "population_summary_sha256": "742472143107468c802cb601c6a29253ed771c3e1efb60e0386c5295c53a2046",
+    "terminal_status_summary_sha256": "fce8936f7f866096582700306f3a7734309498bc7e2cc9f01c8b58a522802ee1"
+  },
+  "mismatch_count": 0,
+  "negative_tests": {
+    "passed": 7,
+    "total": 7
+  },
+  "profitability": "NOT_CLAIMED",
+  "prohibited_execution_count": 0,
+  "prohibited_import_count": 0,
+  "relocation_identical": true,
+  "repeat_identical": true,
+  "rows_gaps": {
+    "accepted_daily": 0,
+    "accepted_weekend": 149,
+    "gaps": 774,
+    "rows": 17731,
+    "unverified": 625
+  },
+  "strategy_performance_status": "NOT_EVALUATED"
+}

@@ -1,0 +1,132 @@
+{
+  "$id": "fr_prep_b4a_independent_fq_replay_audit_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_paths_excluded_from_identity": {"const": true},
+    "allowed_operations": {
+      "items": {
+        "enum": [
+          "PARSE_COMMITTED_EVENT_CSV",
+          "PARSE_COMMITTED_CANDIDATE_CSV",
+          "VALIDATE_B4_CONTRACT_AND_RESULT",
+          "RECOMPUTE_CANONICAL_HASHES",
+          "DETERMINISTIC_REPEAT",
+          "CONTROLLED_TEMPORARY_ARTIFACT_RELOCATION",
+          "FAIL_CLOSED_NEGATIVE_TESTS"
+        ]
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "b4_runner_import_allowed": {"const": false},
+    "checkpoint": {"const": "FR_PREP_B4A"},
+    "committed_artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "artifact_id": {"minLength": 1, "type": "string"},
+          "category": {"minLength": 1, "type": "string"},
+          "file_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+          "path": {"pattern": "^research/", "type": "string"}
+        },
+        "required": ["artifact_id", "category", "file_sha256", "path"],
+        "type": "object"
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array"
+    },
+    "detector_import_allowed": {"const": false},
+    "ea_execution_allowed": {"const": false},
+    "expected": {
+      "additionalProperties": false,
+      "properties": {
+        "accepted_daily_closures": {"const": 0},
+        "accepted_weekend_closures": {"const": 149},
+        "b4_canonical_summary_sha256": {"const": "fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134"},
+        "b4_decision": {"const": "FR_PREP_B4_PASS_SEALED_FQ_EVENT_POPULATION_REPLAY"},
+        "event_count": {"const": 493},
+        "gap_count": {"const": 774},
+        "hashes": {
+          "additionalProperties": false,
+          "properties": {
+            "candidate_status_sha256": {"const": "fc83e886b505d837263755fac0ab31c75754eef7fa433df86743a29cd7553610"},
+            "complete_output_sha256": {"const": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46"},
+            "event_population_sha256": {"const": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81"},
+            "population_summary_sha256": {"const": "742472143107468c802cb601c6a29253ed771c3e1efb60e0386c5295c53a2046"},
+            "terminal_status_summary_sha256": {"const": "fce8936f7f866096582700306f3a7734309498bc7e2cc9f01c8b58a522802ee1"}
+          },
+          "required": ["candidate_status_sha256", "complete_output_sha256", "event_population_sha256", "population_summary_sha256", "terminal_status_summary_sha256"],
+          "type": "object"
+        },
+        "long_count": {"const": 252},
+        "short_count": {"const": 241},
+        "source_manifest": {
+          "additionalProperties": false,
+          "properties": {
+            "absolute_runtime_paths_excluded": {"const": true},
+            "authorization_identity_sha256": {"const": "b2fb6bfe4c96f8d18d910b78180ea7b70d3c9ba2ad4142c859e03be6559ea97d"},
+            "canonical_timeline_sha256": {"const": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38"},
+            "dataset_id": {"const": "FP_FQ_2020_2022_GOLD_H1"},
+            "detector_path": {"const": "tools/market_structure_break_retest_detector.py"},
+            "detector_sha256": {"const": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144"},
+            "gap_inventory": {"type": "object"},
+            "raw_broker_csv_committed": {"const": false},
+            "source_rows": {"const": 17731},
+            "sources": {"maxItems": 3, "minItems": 3, "type": "array"},
+            "symbol": {"const": "GOLD#"},
+            "timeframe": {"const": "H1"}
+          },
+          "required": ["absolute_runtime_paths_excluded", "authorization_identity_sha256", "canonical_timeline_sha256", "dataset_id", "detector_path", "detector_sha256", "gap_inventory", "raw_broker_csv_committed", "source_rows", "sources", "symbol", "timeframe"],
+          "type": "object"
+        },
+        "source_rows": {"const": 17731},
+        "unverified_gaps": {"const": 625},
+        "year_counts": {
+          "additionalProperties": false,
+          "properties": {
+            "2020": {"const": 149},
+            "2021": {"const": 181},
+            "2022": {"const": 163}
+          },
+          "required": ["2020", "2021", "2022"],
+          "type": "object"
+        }
+      },
+      "required": ["accepted_daily_closures", "accepted_weekend_closures", "b4_canonical_summary_sha256", "b4_decision", "event_count", "gap_count", "hashes", "long_count", "short_count", "source_manifest", "source_rows", "unverified_gaps", "year_counts"],
+      "type": "object"
+    },
+    "external_process_allowed": {"const": false},
+    "fj_runner_import_allowed": {"const": false},
+    "fq_validator_import_allowed": {"const": false},
+    "mode": {"const": "INDEPENDENT_COMMITTED_FQ_ARTIFACT_AUDIT_ONLY"},
+    "mt5_execution_allowed": {"const": false},
+    "profitability_claim_allowed": {"const": false},
+    "raw_fq_source_access_allowed": {"const": false},
+    "schema_version": {"const": "fr_prep_b4a_independent_fq_replay_audit_authorization.v1"},
+    "wrapper_import_allowed": {"const": false}
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "mode",
+    "allowed_operations",
+    "committed_artifacts",
+    "expected",
+    "detector_import_allowed",
+    "b4_runner_import_allowed",
+    "wrapper_import_allowed",
+    "fj_runner_import_allowed",
+    "fq_validator_import_allowed",
+    "raw_fq_source_access_allowed",
+    "external_process_allowed",
+    "mt5_execution_allowed",
+    "ea_execution_allowed",
+    "profitability_claim_allowed",
+    "absolute_runtime_paths_excluded_from_identity"
+  ],
+  "type": "object"
+}

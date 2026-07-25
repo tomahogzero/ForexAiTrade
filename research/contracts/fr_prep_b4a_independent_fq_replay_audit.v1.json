@@ -1,0 +1,161 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "accepted_daily_closures": 0,
+  "accepted_weekend_closures": 149,
+  "atr_events_generated": false,
+  "b4_evidence": {
+    "canonical_summary_sha256": "fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134",
+    "contract_result_projection_match": true,
+    "contract_schema_validated": true,
+    "decision": "FR_PREP_B4_PASS_SEALED_FQ_EVENT_POPULATION_REPLAY",
+    "result_schema_validated": true
+  },
+  "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+  "candidate_event_mapping_valid": true,
+  "candidate_row_order_canonical": true,
+  "canonical_summary_sha256": "d420f009c77d2288502c1188a89a21c112374d3a8e7439b452a9ea62165306fb",
+  "checkpoint": "FR_PREP_B4A",
+  "committed_fq_artifacts_read": true,
+  "decision": "FR_PREP_B4A_PASS_INDEPENDENT_FQ_REPLAY_AUDIT",
+  "deterministic_replay_validated": true,
+  "ea_executed": false,
+  "event_count": 493,
+  "event_ids_unique": true,
+  "event_row_order_canonical": true,
+  "event_years_valid": true,
+  "execution_status": "PASS",
+  "fn_interpretation_performed": false,
+  "fq_validator_executed": false,
+  "gap_count": 774,
+  "long_count": 252,
+  "mismatch_counters": {
+    "candidate_event_mapping_mismatch": 0,
+    "count_mismatch": 0,
+    "deterministic_replay_mismatch": 0,
+    "event_year_mismatch": 0,
+    "hash_mismatch": 0,
+    "identity_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "ordering_mismatch": 0,
+    "relocation_mismatch": 0,
+    "repeat_mismatch": 0,
+    "schema_or_projection_mismatch": 0,
+    "source_manifest_mismatch": 0,
+    "source_row_key_mismatch": 0,
+    "summary_mismatch": 0,
+    "timestamp_mismatch": 0,
+    "uniqueness_mismatch": 0
+  },
+  "mt5_executed": false,
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "changed_event_detected": true,
+      "external_process_attempt_blocked": true,
+      "forbidden_module_import_blocked": true,
+      "reordered_event_detected": true,
+      "wrong_count_detected": true,
+      "wrong_decision_detected": true,
+      "wrong_hash_detected": true
+    },
+    "test_count": 7,
+    "tests_passed": 7
+  },
+  "normal_repeat_identical": true,
+  "optimization_performed": false,
+  "order_logic": "NOT_APPROVED",
+  "outcomes_generated": false,
+  "profitability": "NOT_CLAIMED",
+  "prohibited_modules": [],
+  "raw_fq_sources_accessed": false,
+  "recomputed_hashes": {
+    "candidate_status_sha256": "fc83e886b505d837263755fac0ab31c75754eef7fa433df86743a29cd7553610",
+    "complete_output_sha256": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46",
+    "event_population_sha256": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81",
+    "population_summary_sha256": "742472143107468c802cb601c6a29253ed771c3e1efb60e0386c5295c53a2046",
+    "terminal_status_summary_sha256": "fce8936f7f866096582700306f3a7734309498bc7e2cc9f01c8b58a522802ee1"
+  },
+  "relocation_identical": true,
+  "resolved_source_row_keys": true,
+  "runtime_audit": {
+    "counter_provenance": {
+      "executions": "the independent audit contains no replay, detector, validator, MT5, or EA dispatch",
+      "external_process": "Popen, os.system, and os.startfile fail-closed interception",
+      "file_access": "exact resolved-path allowlist for committed B4 artifacts",
+      "module_imports": "sys.modules delta plus fail-closed builtins import interception"
+    },
+    "external_process": {
+      "blocked_external_launch_attempt_count": 1,
+      "successful_ea_execution_count": 0,
+      "successful_external_process_launch_count": 0,
+      "successful_mt5_launch_count": 0
+    },
+    "file_access": {
+      "raw_read_operation_counts": {
+        "b4_contract": 6,
+        "b4_schema": 5,
+        "b4a_authorization": 1,
+        "b4a_authorization_schema": 1,
+        "b4a_evidence_schema": 0,
+        "committed_candidate_population": 5,
+        "committed_deterministic_replay": 5,
+        "committed_event_population": 5,
+        "committed_population_summary": 5,
+        "committed_source_manifest": 5,
+        "relocated_committed_artifacts": 14
+      },
+      "unauthorized_successful_read_count": 0,
+      "unique_logical_file_counts": {
+        "b4_contract": 1,
+        "b4_schema": 1,
+        "b4a_authorization": 1,
+        "b4a_authorization_schema": 1,
+        "b4a_evidence_schema": 0,
+        "committed_candidate_population": 1,
+        "committed_deterministic_replay": 1,
+        "committed_event_population": 1,
+        "committed_population_summary": 1,
+        "committed_source_manifest": 1,
+        "relocated_committed_artifacts": 7
+      }
+    },
+    "module_import_counts": {
+      "b4_runner_import_count": 0,
+      "detector_import_count": 0,
+      "ea_import_count": 0,
+      "fj_runner_import_count": 0,
+      "fq_validator_import_count": 0,
+      "mt5_import_count": 0,
+      "wrapper_import_count": 0
+    },
+    "prohibited_execution_counts": {
+      "atr_event_generation_count": 0,
+      "b4_runner_execution_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "fj_runner_execution_count": 0,
+      "fn_interpretation_count": 0,
+      "fq_validator_execution_count": 0,
+      "mt5_execution_count": 0,
+      "optimization_count": 0,
+      "outcome_generation_count": 0,
+      "tp_sl_calculation_count": 0,
+      "wrapper_execution_count": 0
+    },
+    "prohibited_import_attempts_blocked": 1
+  },
+  "schema_version": "fr_prep_b4a_independent_fq_replay_audit.v1",
+  "semantic_events_unique": true,
+  "short_count": 241,
+  "source_manifest_validated": true,
+  "source_rows": 17731,
+  "strategy_performance_status": "NOT_EVALUATED",
+  "tp_sl_calculated": false,
+  "unverified_gaps": 625,
+  "valid_timestamp_ordering": true,
+  "year_counts": {
+    "2020": 149,
+    "2021": 181,
+    "2022": 163
+  }
+}

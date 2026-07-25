@@ -1,0 +1,77 @@
+{
+  "accepted_daily_closures": 0,
+  "accepted_weekend_closures": 149,
+  "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+  "canonical_summary_sha256": "fd1c7570e7cba00ba77c20b406d041c92247a189836414c10933ed31783d0134",
+  "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+  "decision": "FR_PREP_B4_PASS_SEALED_FQ_EVENT_POPULATION_REPLAY",
+  "detected_gap_count": 774,
+  "detector_sha256": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144",
+  "event_population": {
+    "LONG": 252,
+    "SHORT": 241,
+    "counts_per_direction_year": {
+      "LONG": {
+        "2020": 79,
+        "2021": 88,
+        "2022": 85
+      },
+      "SHORT": {
+        "2020": 70,
+        "2021": 93,
+        "2022": 78
+      }
+    },
+    "counts_per_year": {
+      "2020": 149,
+      "2021": 181,
+      "2022": 163
+    },
+    "first_event_timestamp": "2020-01-08T00:00:00",
+    "last_event_timestamp": "2022-12-19T22:00:00",
+    "total": 493
+  },
+  "exclusion_counts": {
+    "ATR_UNAVAILABLE": 123,
+    "CONFIRMATION_NOT_FOUND_WITHIN_12_BARS": 55,
+    "DATA_INCOMPLETE_GAP": 347,
+    "DUPLICATE_SUPPRESSED": 789,
+    "INSUFFICIENT_LEFT_HISTORY": 2,
+    "INSUFFICIENT_RIGHT_HISTORY": 2,
+    "NO_BREAK": 2,
+    "RETEST_NOT_FOUND_WITHIN_12_BARS": 68
+  },
+  "execution_status": "PASS",
+  "mismatch_count": 0,
+  "negative_tests": {
+    "passed": 4,
+    "total": 4
+  },
+  "order_logic": "NOT_APPROVED",
+  "output_hashes": {
+    "candidate_status_sha256": "fc83e886b505d837263755fac0ab31c75754eef7fa433df86743a29cd7553610",
+    "complete_output_sha256": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46",
+    "event_population_sha256": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81",
+    "population_summary_sha256": "742472143107468c802cb601c6a29253ed771c3e1efb60e0386c5295c53a2046",
+    "terminal_status_summary_sha256": "fce8936f7f866096582700306f3a7734309498bc7e2cc9f01c8b58a522802ee1"
+  },
+  "performance": "NOT_EVALUATED",
+  "profitability": "NOT_CLAIMED",
+  "prohibited_execution_count": 0,
+  "prohibited_import_count": 0,
+  "source_rows": 17731,
+  "symbol": "GOLD#",
+  "terminal_status_counts": {
+    "ATR_UNAVAILABLE": 123,
+    "CONFIRMATION_NOT_FOUND_WITHIN_12_BARS": 55,
+    "DATA_INCOMPLETE_GAP": 347,
+    "DUPLICATE_SUPPRESSED": 789,
+    "EVENT_EMITTED": 493,
+    "INSUFFICIENT_LEFT_HISTORY": 2,
+    "INSUFFICIENT_RIGHT_HISTORY": 2,
+    "NO_BREAK": 2,
+    "RETEST_NOT_FOUND_WITHIN_12_BARS": 68
+  },
+  "timeframe": "H1",
+  "unverified_gaps": 625
+}

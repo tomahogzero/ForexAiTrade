@@ -1,0 +1,18 @@
+{
+  "byte_identical": true,
+  "candidate_status_sha256": "fc83e886b505d837263755fac0ab31c75754eef7fa433df86743a29cd7553610",
+  "complete_output_sha256": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46",
+  "decision": "FR_PREP_B4_PASS_SEALED_FQ_EVENT_POPULATION_REPLAY",
+  "event_population_sha256": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81",
+  "execution_status": "PASS",
+  "mismatch_count": 0,
+  "normal_repeat_identical": true,
+  "population_summary_sha256": "742472143107468c802cb601c6a29253ed771c3e1efb60e0386c5295c53a2046",
+  "relocation_identical": true,
+  "run_sha256": {
+    "normal_1": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46",
+    "normal_2": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46",
+    "relocated": "aa7380d0a9c232be6e6fbdea52afcc4b015fbe6e3b5847556f645a05cf84cf46"
+  },
+  "terminal_status_summary_sha256": "fce8936f7f866096582700306f3a7734309498bc7e2cc9f01c8b58a522802ee1"
+}

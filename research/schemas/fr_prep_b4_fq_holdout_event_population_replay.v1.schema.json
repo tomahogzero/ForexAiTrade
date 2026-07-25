@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b4_fq_holdout_event_population_replay.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "decision",
+    "authorization_identity_sha256",
+    "b3a_summary_sha256",
+    "dataset_id",
+    "source_rows",
+    "gap_count",
+    "accepted_weekend_closures",
+    "accepted_daily_closures",
+    "unverified_gaps",
+    "event_count",
+    "long_count",
+    "short_count",
+    "year_counts",
+    "output_hashes",
+    "mismatch_counters",
+    "negative_tests",
+    "runtime_audit",
+    "unique_event_ids",
+    "valid_timestamp_ordering",
+    "resolved_source_row_keys",
+    "performance",
+    "profitability",
+    "order_logic",
+    "candidate",
+    "atr_events_generated",
+    "tp_sl_calculated",
+    "outcomes_generated",
+    "fn_interpretation_performed",
+    "mt5_ea_executed",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "canonical_summary_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "fr_prep_b4_fq_holdout_event_population_replay.v1"},
+    "checkpoint": {"const": "FR_PREP_B4"},
+    "decision": {"const": "FR_PREP_B4_PASS_SEALED_FQ_EVENT_POPULATION_REPLAY"},
+    "authorization_identity_sha256": {"const": "b2fb6bfe4c96f8d18d910b78180ea7b70d3c9ba2ad4142c859e03be6559ea97d"},
+    "b3a_summary_sha256": {"const": "c31476f8e75b36231fa1c6b67b2e1d1a95668abe1a8311cc69d30e62e8d1eeab"},
+    "dataset_id": {"const": "FP_FQ_2020_2022_GOLD_H1"},
+    "source_rows": {"const": 17731},
+    "gap_count": {"const": 774},
+    "accepted_weekend_closures": {"const": 149},
+    "accepted_daily_closures": {"const": 0},
+    "unverified_gaps": {"const": 625},
+    "event_count": {"type": "integer", "minimum": 1},
+    "long_count": {"type": "integer", "minimum": 0},
+    "short_count": {"type": "integer", "minimum": 0},
+    "year_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["2020", "2021", "2022"],
+      "properties": {
+        "2020": {"type": "integer", "minimum": 0},
+        "2021": {"type": "integer", "minimum": 0},
+        "2022": {"type": "integer", "minimum": 0}
+      }
+    },
+    "output_hashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_population_sha256", "candidate_status_sha256", "population_summary_sha256", "terminal_status_summary_sha256", "complete_output_sha256"],
+      "properties": {
+        "event_population_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "candidate_status_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "population_summary_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "terminal_status_summary_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "complete_output_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "mismatch_counters": {
+      "type": "object",
+      "minProperties": 8,
+      "additionalProperties": {"const": 0}
+    },
+    "negative_tests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "all_passed", "results"],
+      "properties": {
+        "passed": {"const": 4},
+        "total": {"const": 4},
+        "all_passed": {"const": true},
+        "results": {"type": "object", "minProperties": 4, "additionalProperties": {"const": true}}
+      }
+    },
+    "runtime_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["module_import_counts", "function_execution_counts", "external_process_audit"],
+      "properties": {
+        "module_import_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "function_execution_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "external_process_audit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["successful_launch_count", "blocked_launch_count"],
+          "properties": {
+            "successful_launch_count": {"const": 0},
+            "blocked_launch_count": {"const": 1}
+          }
+        }
+      }
+    },
+    "unique_event_ids": {"const": true},
+    "valid_timestamp_ordering": {"const": true},
+    "resolved_source_row_keys": {"const": true},
+    "performance": {"const": "NOT_EVALUATED"},
+    "profitability": {"const": "NOT_CLAIMED"},
+    "order_logic": {"const": "NOT_APPROVED"},
+    "candidate": {"const": "NOT_READY_FOR_ORDER_LOGIC"},
+    "atr_events_generated": {"const": false},
+    "tp_sl_calculated": {"const": false},
+    "outcomes_generated": {"const": false},
+    "fn_interpretation_performed": {"const": false},
+    "mt5_ea_executed": {"const": false},
+    "absolute_runtime_path_in_canonical_identity_count": {"const": 0},
+    "canonical_summary_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

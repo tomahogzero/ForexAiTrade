@@ -1,0 +1,43 @@
+{
+  "absolute_runtime_paths_excluded": true,
+  "authorization_identity_sha256": "b2fb6bfe4c96f8d18d910b78180ea7b70d3c9ba2ad4142c859e03be6559ea97d",
+  "canonical_timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+  "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+  "detector_path": "tools/market_structure_break_retest_detector.py",
+  "detector_sha256": "9d7496581806d267df9130a35c0ec0dd948b6d77fcc30d8cca115edd4b746144",
+  "gap_inventory": {
+    "accepted_daily": 0,
+    "accepted_weekend": 149,
+    "filename": "checkpoint_fq_gap_inventory.json",
+    "gaps": 774,
+    "sha256": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+    "unverified_fail_closed": 625
+  },
+  "raw_broker_csv_committed": false,
+  "source_rows": 17731,
+  "sources": [
+    {
+      "filename": "GOLD#_H1_202001020900_202012311800.csv",
+      "first_timestamp": "2020-01-02T09:00:00",
+      "last_timestamp": "2020-12-31T18:00:00",
+      "rows": 5912,
+      "sha256": "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc"
+    },
+    {
+      "filename": "GOLD#_H1_202101040100_202112311800.csv",
+      "first_timestamp": "2021-01-04T01:00:00",
+      "last_timestamp": "2021-12-31T18:00:00",
+      "rows": 5902,
+      "sha256": "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5"
+    },
+    {
+      "filename": "GOLD#_H1_202201030100_202212302300.csv",
+      "first_timestamp": "2022-01-03T01:00:00",
+      "last_timestamp": "2022-12-30T23:00:00",
+      "rows": 5917,
+      "sha256": "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a"
+    }
+  ],
+  "symbol": "GOLD#",
+  "timeframe": "H1"
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "fr_prep_b6a_synthetic_outcome_inputs.v1",
+  "fixture_set_id": "FR_PREP_B6A_SYNTHETIC_SET_V1",
+  "synthetic_only": true,
+  "base_timestamp": "2030-01-01T00:00:00",
+  "events": [
+    {"event_id":"fx_long_mixed","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"mixed"},
+    {"event_id":"fx_short_mixed","dataset_id":"SYNTHETIC_FIXTURES","direction":"SHORT","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"mixed"},
+    {"event_id":"fx_long_clamp","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"long_clamp"},
+    {"event_id":"fx_short_clamp","dataset_id":"SYNTHETIC_FIXTURES","direction":"SHORT","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"short_clamp"},
+    {"event_id":"fx_accepted_closure","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"accepted_closure"},
+    {"event_id":"fx_gap_partial","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"gap_partial"},
+    {"event_id":"fx_right_censor","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"right_censor"},
+    {"event_id":"fx_invalid_partial","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"invalid_partial"},
+    {"event_id":"fx_invalid_entry","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"NaN","entry_reference_price":"NaN","synthetic_source_id":"right_censor"},
+    {"event_id":"fx_tie_half_even","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"tie_half_even"}
+  ],
+  "timeline_templates": {
+    "mixed": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[
+        {"classification":"VALID_BAR","offset_hours":[1],"open":"100","high":"101.5","low":"99.5","close":"101"},
+        {"classification":"VALID_BAR","offset_hours":[2],"open":"101","high":"103","low":"100","close":"102"},
+        {"classification":"VALID_BAR","offset_hours":[3],"open":"100","high":"100.5","low":"98","close":"99"},
+        {"classification":"VALID_BAR","offset_hours":[4,5,6,7,8,9,10,11],"open":"100","high":"100.5","low":"99.5","close":"100"},
+        {"classification":"VALID_BAR","offset_hours":[12],"open":"100","high":"102.5","low":"99","close":"102"}
+      ]
+    },
+    "long_clamp": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[{"classification":"VALID_BAR","offset_hours":[1,2,3,4,5,6,7,8,9,10,11,12],"open":"99","high":"99.5","low":"97","close":"99"}]
+    },
+    "short_clamp": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[{"classification":"VALID_BAR","offset_hours":[1,2,3,4,5,6,7,8,9,10,11,12],"open":"101","high":"103","low":"100.5","close":"101"}]
+    },
+    "accepted_closure": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[
+        {"classification":"VALID_BAR","offset_hours":[1],"open":"100","high":"101.5","low":"99","close":"101"},
+        {"classification":"ACCEPTED_ROUTINE_WEEKEND_CLOSURE","offset_hours":[2]},
+        {"classification":"VALID_BAR","offset_hours":[3,4,5,6,7,8,9,10,11,12,13],"open":"100","high":"101.5","low":"99","close":"101"}
+      ]
+    },
+    "gap_partial": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[
+        {"classification":"VALID_BAR","offset_hours":[1],"open":"100","high":"101","low":"99","close":"101"},
+        {"classification":"UNVERIFIED_GAP","offset_hours":[2]},
+        {"classification":"VALID_BAR","offset_hours":[3],"open":"100","high":"102","low":"99","close":"102"}
+      ]
+    },
+    "right_censor": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[
+        {"classification":"VALID_BAR","offset_hours":[1],"open":"100","high":"101","low":"99","close":"101"},
+        {"classification":"VALID_BAR","offset_hours":[2],"open":"101","high":"102","low":"100","close":"102"}
+      ]
+    },
+    "invalid_partial": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[
+        {"classification":"VALID_BAR","offset_hours":[1],"open":"100","high":"101","low":"99","close":"101"},
+        {"classification":"VALID_BAR","offset_hours":[2],"open":"100","high":"101","low":"99","close":"NaN"}
+      ]
+    },
+    "tie_half_even": {
+      "confirmation_ohlc":{"open":"100","high":"100","low":"100","close":"100"},
+      "steps":[
+        {"classification":"VALID_BAR","offset_hours":[1,2],"open":"100","high":"100.000000005","low":"100","close":"100.000000005"},
+        {"classification":"VALID_BAR","offset_hours":[3,4,5,6,7,8,9,10,11,12],"open":"100","high":"100.000000015","low":"100","close":"100.000000015"}
+      ]
+    }
+  },
+  "rejection_cases": [
+    {
+      "case_id":"entry_reference_mismatch",
+      "expected_error":"ENTRY_REFERENCE_MISMATCH",
+      "events":[{"event_id":"reject_mismatch","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"101","synthetic_source_id":"right_censor"}]
+    },
+    {
+      "case_id":"unsupported_direction",
+      "expected_error":"UNSUPPORTED_DIRECTION",
+      "events":[{"event_id":"reject_direction","dataset_id":"SYNTHETIC_FIXTURES","direction":"FLAT","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"right_censor"}]
+    },
+    {
+      "case_id":"duplicate_event_id",
+      "expected_error":"DUPLICATE_EVENT_ID",
+      "events":[
+        {"event_id":"reject_duplicate","dataset_id":"SYNTHETIC_FIXTURES","direction":"LONG","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"right_censor"},
+        {"event_id":"reject_duplicate","dataset_id":"SYNTHETIC_FIXTURES","direction":"SHORT","year":"2030","confirmation_timestamp":"2030-01-01T00:00:00","confirmation_close":"100","entry_reference_price":"100","synthetic_source_id":"right_censor"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "adapter_binding": {
+    "file_sha256": "dec190aea719b7761f037e5ceec7b5402469255737d2375ae79bfb0cf8b46b5a",
+    "path": "tools/observational_outcome_adapter.py"
+  },
+  "canonical_summary_sha256": "de18e6a1560bab3bb24ca3fd5904ead17bc75bb3665a1bcca926955b82755ece",
+  "checkpoint": "FR_PREP_B6A",
+  "conclusions": {
+    "adapter_implementation": "PROVEN_ON_SYNTHETIC_FIXTURES_ONLY",
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "next_allowed_scope": "INDEPENDENT_SYNTHETIC_OUTCOME_ADAPTER_AUDIT_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "real_future_prices_inspected": false,
+    "real_outcome_execution": "NOT_STARTED"
+  },
+  "decision": "FR_PREP_B6A_PASS_SYNTHETIC_OUTCOME_ADAPTER_FIXTURES",
+  "determinism": {
+    "byte_identical": true,
+    "normal_repeat_identical": true,
+    "relocation_identical": true,
+    "run_sha256": {
+      "normal_1": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0",
+      "normal_2": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0",
+      "relocated": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0"
+    }
+  },
+  "execution_status": "PASS",
+  "fixture_counts": {
+    "event_records": 10,
+    "event_statuses": {
+      "FULLY_EVALUABLE": 6,
+      "NOT_EVALUABLE": 1,
+      "PARTIALLY_EVALUABLE": 3
+    },
+    "excursion_statuses": {
+      "EVALUABLE": 6,
+      "NOT_EVALUABLE_DATA_INCOMPLETE_GAP": 1,
+      "NOT_EVALUABLE_RIGHT_CENSORING": 1,
+      "NOT_EVALUABLE_SOURCE_INTEGRITY": 2
+    },
+    "horizon_statuses": {
+      "EVALUABLE": 27,
+      "NOT_EVALUABLE_DATA_INCOMPLETE_GAP": 3,
+      "NOT_EVALUABLE_RIGHT_CENSORING": 3,
+      "NOT_EVALUABLE_SOURCE_INTEGRITY": 7
+    },
+    "rejections": 3
+  },
+  "fixture_hashes": {
+    "actual_complete_sha256": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0",
+    "actual_records_sha256": "3677ad52d2574330b937718497127b6eb7b2205357859221ffa95a9ed9238000",
+    "expected_complete_sha256": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0",
+    "expected_file_sha256": "5ff190c26338e138bdc954bbea47fe004c808bd730ca339389ab7d8ed0aa6245",
+    "expected_records_sha256": "3677ad52d2574330b937718497127b6eb7b2205357859221ffa95a9ed9238000",
+    "input_file_sha256": "f598b7cc6c935f057e76664a75c4b3f1c34d025494059771c7054b0e5210051d"
+  },
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "mismatch_counters": {
+    "b6_identity_mismatch": 0,
+    "b6_projection_mismatch": 0,
+    "b6_schema_mismatch": 0,
+    "complete_hash_mismatch": 0,
+    "expected_output_mismatch": 0,
+    "fixture_count_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "record_hash_mismatch": 0,
+    "record_order_mismatch": 0,
+    "relocation_mismatch": 0,
+    "repeat_mismatch": 0
+  },
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "accepted_closure_not_counted_or_blocking": true,
+      "changed_horizon_set_blocked": true,
+      "detector_or_runner_import_blocked": true,
+      "duplicate_event_id_rejected": true,
+      "entry_reference_mismatch_rejected": true,
+      "expected_output_self_generation_blocked": true,
+      "external_process_and_absolute_path_leakage_blocked": true,
+      "invalid_ohlc_fail_closed": true,
+      "real_population_or_raw_csv_read_blocked": true,
+      "tp_sl_cash_pnl_or_threshold_request_blocked": true,
+      "unsupported_direction_rejected": true,
+      "unverified_gap_fail_closed": true,
+      "wrong_b6_identity_or_decision_blocked": true
+    },
+    "test_count": 13,
+    "tests_passed": 13
+  },
+  "prohibited_modules": [],
+  "runtime_audit": {
+    "authorized_adapter_execution_count": 3,
+    "blocked_import_requests": 2,
+    "counter_provenance": {
+      "executions": "only the bound adapter receives committed synthetic fixtures",
+      "external_process": "Popen, os.system, and os.startfile fail-closed interception",
+      "file_access": "resolved-path allowlist excludes real populations, candidate files, and raw CSV",
+      "module_imports": "sys.modules delta plus fail-closed prohibited import interception"
+    },
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "file_access": {
+      "blocked_expected_output_write_attempt_count": 1,
+      "blocked_real_data_read_attempt_count": 1,
+      "expected_output_write_count": 0,
+      "raw_read_operation_counts": {
+        "b6_contract": 2,
+        "b6_result": 2,
+        "b6_schema": 2,
+        "b6a_authorization": 1,
+        "b6a_authorization_schema": 1,
+        "b6a_evidence_schema": 0,
+        "manually_frozen_expected_outputs": 3,
+        "relocated_synthetic_artifacts": 5,
+        "synthetic_adapter": 3,
+        "synthetic_fixture_inputs": 3
+      },
+      "real_data_successful_read_count": 0,
+      "unauthorized_successful_read_count": 0,
+      "unique_logical_file_counts": {
+        "b6_contract": 1,
+        "b6_result": 1,
+        "b6_schema": 1,
+        "b6a_authorization": 1,
+        "b6a_authorization_schema": 1,
+        "b6a_evidence_schema": 0,
+        "manually_frozen_expected_outputs": 1,
+        "relocated_synthetic_artifacts": 3,
+        "synthetic_adapter": 1,
+        "synthetic_fixture_inputs": 1
+      }
+    },
+    "module_import_counts": {
+      "b2_runner_import_count": 0,
+      "b4_runner_import_count": 0,
+      "detector_import_count": 0,
+      "ea_import_count": 0,
+      "fj_or_fq_runner_import_count": 0,
+      "mt5_import_count": 0,
+      "real_outcome_engine_import_count": 0,
+      "wrapper_import_count": 0
+    },
+    "prohibited_execution_counts": {
+      "atr_event_generation_count": 0,
+      "b2_runner_execution_count": 0,
+      "b4_runner_execution_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "fj_replay_execution_count": 0,
+      "fq_replay_execution_count": 0,
+      "mt5_execution_count": 0,
+      "network_execution_count": 0,
+      "optimization_count": 0,
+      "raw_csv_read_count": 0,
+      "real_future_price_read_count": 0,
+      "real_outcome_engine_execution_count": 0,
+      "real_outcome_generation_count": 0,
+      "tp_sl_calculation_count": 0,
+      "wrapper_execution_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b6a_synthetic_outcome_adapter_fixtures.v1",
+  "synthetic_only": true,
+  "upstream_b6": {
+    "canonical_summary_sha256": "83d05757947ac3398efd2956760eae7bf0ab5bac1a5722f6f7f2e2a64a551926",
+    "contract_schema_validated": true,
+    "decision": "FR_PREP_B6_PASS_OBSERVATIONAL_OUTCOME_CONTRACT_FROZEN",
+    "identity_validated": true,
+    "result_projection_validated": true
+  }
+}

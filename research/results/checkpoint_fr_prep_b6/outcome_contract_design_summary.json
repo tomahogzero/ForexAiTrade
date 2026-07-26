@@ -1,0 +1,42 @@
+{
+  "accepted_closures_invalidate": false,
+  "b5_canonical_summary_sha256": "915ed724f35ee106f7a78e8618f2d69d2795b4b25cc8278bf4773efd74b27a03",
+  "canonical_summary_sha256": "83d05757947ac3398efd2956760eae7bf0ab5bac1a5722f6f7f2e2a64a551926",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "next_allowed_scope": "SYNTHETIC_OUTCOME_ADAPTER_FIXTURES_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "outcome_contract_design": "FROZEN",
+    "outcome_execution": "NOT_STARTED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED"
+  },
+  "decision": "FR_PREP_B6_PASS_OBSERVATIONAL_OUTCOME_CONTRACT_FROZEN",
+  "execution_status": "PASS",
+  "fail_closed_statuses": {
+    "insufficient_future_valid_h1_bars": "NOT_EVALUABLE_RIGHT_CENSORING",
+    "invalid_or_nonfinite_ohlc": "NOT_EVALUABLE_SOURCE_INTEGRITY",
+    "unverified_gap_crossed_before_target_horizon": "NOT_EVALUABLE_DATA_INCOMPLETE_GAP"
+  },
+  "future_prices_inspected": false,
+  "horizons_valid_h1_bars": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "mismatch_count": 0,
+  "negative_tests": {
+    "passed": 8,
+    "total": 8
+  },
+  "numeric_policy": {
+    "arithmetic": "DECIMAL_FROM_SOURCE_STRINGS",
+    "basis_point_quantum": "0.000001",
+    "canonical_json": "ASCII_SORTED_KEYS_COMPACT_SEPARATORS",
+    "rounding": "ROUND_HALF_EVEN"
+  },
+  "outcome_records_generated": false,
+  "prohibited_execution_count": 0,
+  "prohibited_import_count": 0
+}

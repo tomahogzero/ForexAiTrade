@@ -1,0 +1,71 @@
+{
+  "absolute_runtime_paths_excluded_from_identity": true,
+  "allowed_operations": [
+    "READ_COMMITTED_B5_JSON_EVIDENCE",
+    "VALIDATE_B5_SCHEMA_AND_IDENTITY",
+    "FREEZE_OBSERVATIONAL_OUTCOME_CONTRACT",
+    "VALIDATE_FROZEN_CONTRACT_SCHEMA",
+    "DETERMINISTIC_CONTRACT_REPEAT",
+    "FAIL_CLOSED_NEGATIVE_TESTS"
+  ],
+  "checkpoint": "FR_PREP_B6",
+  "committed_artifacts": [
+    {
+      "artifact_id": "b5_contract",
+      "category": "b5_contract",
+      "file_sha256": "b7815a8e760dec5a190f24d3184e0788fa07b89bee5ce8b5fc71b866c8c43859",
+      "path": "research/contracts/fr_prep_b5_event_population_research_decision.v1.json"
+    },
+    {
+      "artifact_id": "b5_schema",
+      "category": "b5_schema",
+      "file_sha256": "44a7828fcfd99fc6bfe2d3e3da1d220c034377dbc64eff2cc8150ce31cd68382",
+      "path": "research/schemas/fr_prep_b5_event_population_research_decision.v1.schema.json"
+    },
+    {
+      "artifact_id": "b5_result",
+      "category": "b5_result",
+      "file_sha256": "c087bf0c8b3ef8144511cc2436eade274a76884bc790649df28938e57f9adb0c",
+      "path": "research/results/checkpoint_fr_prep_b5/event_population_research_decision_summary.json"
+    }
+  ],
+  "detector_or_runner_import_allowed": false,
+  "ea_execution_allowed": false,
+  "external_process_allowed": false,
+  "future_price_access_allowed": false,
+  "mode": "OBSERVATIONAL_OUTCOME_CONTRACT_DESIGN_ONLY",
+  "mt5_execution_allowed": false,
+  "network_allowed": false,
+  "outcome_execution_allowed": false,
+  "performance_threshold_allowed": false,
+  "raw_csv_access_allowed": false,
+  "schema_version": "fr_prep_b6_outcome_contract_design_authorization.v1",
+  "expected": {
+    "b5": {
+      "canonical_summary_sha256": "915ed724f35ee106f7a78e8618f2d69d2795b4b25cc8278bf4773efd74b27a03",
+      "data_quality_comparability": "MATERIAL_LIMITATION",
+      "decision": "FR_PREP_B5_CONDITIONAL_PASS_TO_OUTCOME_CONTRACT_DESIGN_ONLY",
+      "fj_events": 1079,
+      "fq_events": 493,
+      "performance": "NOT_EVALUATED",
+      "profitability": "NOT_CLAIMED"
+    },
+    "decision": "FR_PREP_B6_PASS_OBSERVATIONAL_OUTCOME_CONTRACT_FROZEN",
+    "horizons": [1, 3, 6, 12],
+    "numeric_policy": {
+      "arithmetic": "DECIMAL_FROM_SOURCE_STRINGS",
+      "basis_point_quantum": "0.000001",
+      "canonical_json": "ASCII_SORTED_KEYS_COMPACT_SEPARATORS",
+      "rounding": "ROUND_HALF_EVEN"
+    },
+    "required_conclusions": {
+      "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+      "next_allowed_scope": "SYNTHETIC_OUTCOME_ADAPTER_FIXTURES_ONLY",
+      "order_logic": "NOT_APPROVED",
+      "outcome_contract_design": "FROZEN",
+      "outcome_execution": "NOT_STARTED",
+      "performance": "NOT_EVALUATED",
+      "profitability": "NOT_CLAIMED"
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "aggregation_contract": {
+    "dataset_pooling_allowed": false,
+    "descriptive_statistics": [
+      "mean_bps",
+      "median_bps",
+      "p25_bps",
+      "p75_bps",
+      "positive_share",
+      "zero_share",
+      "negative_share"
+    ],
+    "evaluation_coverage_formula": "evaluable_events / total_events",
+    "group_dimensions": [
+      "dataset_id",
+      "direction",
+      "year",
+      "horizon_valid_h1_bars"
+    ],
+    "hypothesis_selection_after_outcomes_allowed": false,
+    "performance_pass_fail_threshold": null,
+    "quantile_method": "R7_LINEAR_INTERPOLATION",
+    "report_counts": [
+      "total_events",
+      "evaluable_events"
+    ],
+    "share_classification": "QUANTIZED_BPS_GREATER_THAN_EQUAL_TO_LESS_THAN_ZERO",
+    "statistics_input": "EVALUABLE_QUANTIZED_BASIS_POINT_VALUES_ONLY",
+    "year_dimension": "YEAR_OF_CONFIRMATION_TIMESTAMP"
+  },
+  "atr_events_generated": false,
+  "b5_binding": {
+    "canonical_summary_sha256": "915ed724f35ee106f7a78e8618f2d69d2795b4b25cc8278bf4773efd74b27a03",
+    "contract_schema_validated": true,
+    "data_quality_comparability": "MATERIAL_LIMITATION",
+    "decision": "FR_PREP_B5_CONDITIONAL_PASS_TO_OUTCOME_CONTRACT_DESIGN_ONLY",
+    "fj_events": 1079,
+    "fq_events": 493,
+    "identity_validated": true,
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "result_projection_validated": true
+  },
+  "canonical_summary_sha256": "83d05757947ac3398efd2956760eae7bf0ab5bac1a5722f6f7f2e2a64a551926",
+  "checkpoint": "FR_PREP_B6",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "next_allowed_scope": "SYNTHETIC_OUTCOME_ADAPTER_FIXTURES_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "outcome_contract_design": "FROZEN",
+    "outcome_execution": "NOT_STARTED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED"
+  },
+  "decision": "FR_PREP_B6_PASS_OBSERVATIONAL_OUTCOME_CONTRACT_FROZEN",
+  "direction_normalized_return": {
+    "basis_point_multiplier": "10000",
+    "future_price_field": "future_close",
+    "long_formula_bps": "((future_close - entry_price) / entry_price) * 10000",
+    "short_formula_bps": "((entry_price - future_close) / entry_price) * 10000",
+    "unit": "BASIS_POINTS"
+  },
+  "ea_executed": false,
+  "evaluability_contract": {
+    "accepted_weekend_or_session_closure_effect": "DOES_NOT_INVALIDATE_AND_DOES_NOT_COUNT_AS_A_VALID_BAR",
+    "all_events_retained": true,
+    "event_status_values": [
+      "FULLY_EVALUABLE",
+      "PARTIALLY_EVALUABLE",
+      "NOT_EVALUABLE"
+    ],
+    "fail_closed_statuses": {
+      "insufficient_future_valid_h1_bars": "NOT_EVALUABLE_RIGHT_CENSORING",
+      "invalid_or_nonfinite_ohlc": "NOT_EVALUABLE_SOURCE_INTEGRITY",
+      "unverified_gap_crossed_before_target_horizon": "NOT_EVALUABLE_DATA_INCOMPLETE_GAP"
+    },
+    "horizon_evaluable_status": "EVALUABLE",
+    "horizon_status_resolution": "SCAN_CHRONOLOGICALLY_AFTER_CONFIRMATION; FIRST_UNVERIFIED_GAP_OR_INVALID_OHLC_BLOCKS; IF_NO_BLOCKER_AND_TOO_FEW_VALID_BARS_USE_RIGHT_CENSORING",
+    "invalid_entry_source_status": "NOT_EVALUABLE_SOURCE_INTEGRITY",
+    "unverified_gap_crossing_interval": "ENTRY_TIMESTAMP_EXCLUSIVE_TO_TARGET_BAR_TIMESTAMP_INCLUSIVE"
+  },
+  "event_entry_contract": {
+    "entry_price_field": "confirmation_close",
+    "entry_reference_equality": "entry_reference_price == confirmation_close",
+    "entry_timestamp_field": "confirmation_timestamp",
+    "evaluation_independence": "EACH_EVENT_EVALUATED_INDEPENDENTLY",
+    "immutable_join_key": "event_id",
+    "position_simulation": false
+  },
+  "excursion_contract": {
+    "basis_point_multiplier": "10000",
+    "future_window": "FIRST_12_VALID_H1_BARS_AFTER_CONFIRMATION",
+    "long_mae_formula_bps": "max(0, (entry_price - min_future_low) / entry_price) * 10000",
+    "long_mfe_formula_bps": "max(0, (max_future_high - entry_price) / entry_price) * 10000",
+    "non_negative": true,
+    "non_negative_policy": "MAX_WITH_ZERO_BEFORE_BPS_QUANTIZATION",
+    "short_mae_formula_bps": "max(0, (max_future_high - entry_price) / entry_price) * 10000",
+    "short_mfe_formula_bps": "max(0, (entry_price - min_future_low) / entry_price) * 10000",
+    "unit": "BASIS_POINTS",
+    "window_high_field": "future_high",
+    "window_low_field": "future_low"
+  },
+  "execution_status": "PASS",
+  "explicit_exclusions": [
+    "SPREAD",
+    "COMMISSION",
+    "SWAP",
+    "SLIPPAGE",
+    "CASH_PNL",
+    "LOT_SIZING",
+    "ACCOUNT_BALANCE",
+    "TP_SL",
+    "ORDER_SIMULATION",
+    "OVERLAPPING_POSITION_RULES",
+    "PROFITABILITY_CONCLUSION",
+    "TRADING_READINESS_CONCLUSION"
+  ],
+  "fn_interpretation_performed": false,
+  "future_prices_inspected": false,
+  "horizon_contract": {
+    "descriptive_observations_not_trade_exits": true,
+    "immutable_after_checkpoint": true,
+    "target_valid_h1_bars_after_confirmation": [
+      1,
+      3,
+      6,
+      12
+    ],
+    "timeframe": "H1",
+    "valid_bar_selection": "STRICTLY_AFTER_CONFIRMATION_IN_CHRONOLOGICAL_SOURCE_ORDER"
+  },
+  "mismatch_counters": {
+    "b5_conclusion_mismatch": 0,
+    "b5_count_mismatch": 0,
+    "b5_identity_mismatch": 0,
+    "b5_result_projection_mismatch": 0,
+    "b5_schema_mismatch": 0,
+    "contract_repeat_mismatch": 0,
+    "frozen_horizon_mismatch": 0,
+    "negative_test_mismatch": 0
+  },
+  "mt5_executed": false,
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "absolute_path_identity_leakage_blocked": true,
+      "changed_horizon_set_blocked": true,
+      "detector_or_runner_import_request_blocked": true,
+      "external_process_attempt_blocked": true,
+      "outcome_execution_attempt_blocked": true,
+      "performance_threshold_request_blocked": true,
+      "tp_sl_or_cash_pnl_request_blocked": true,
+      "wrong_b5_identity_or_decision_blocked": true
+    },
+    "test_count": 8,
+    "tests_passed": 8
+  },
+  "numeric_and_canonical_policy": {
+    "absolute_runtime_paths_excluded": true,
+    "arithmetic": "DECIMAL_FROM_SOURCE_STRINGS",
+    "basis_point_quantization_decimal_places": 6,
+    "basis_point_quantum": "0.000001",
+    "canonical_json": {
+      "ensure_ascii": true,
+      "separators": [
+        ",",
+        ":"
+      ],
+      "sort_keys": true
+    },
+    "rounding": "ROUND_HALF_EVEN"
+  },
+  "optimization_performed": false,
+  "outcome_execution_count": 0,
+  "outcome_records_generated": false,
+  "output_record_contract": {
+    "event_level_status_required": true,
+    "excursion_12_fields": [
+      "status",
+      "mfe_bps",
+      "mae_bps"
+    ],
+    "horizon_result_fields": [
+      "horizon_valid_h1_bars",
+      "target_timestamp",
+      "status",
+      "direction_normalized_return_bps"
+    ],
+    "horizon_result_keys": [
+      "1",
+      "3",
+      "6",
+      "12"
+    ],
+    "immutable_event_join_key": "event_id",
+    "one_record_per_input_event": true,
+    "status_fields_never_null": true
+  },
+  "performance_threshold": null,
+  "prohibited_modules": [],
+  "raw_csv_accessed": false,
+  "runtime_audit": {
+    "blocked_import_requests": 2,
+    "counter_provenance": {
+      "executions": "contract design contains no outcome, future-price, replay, detector, MT5, or EA dispatch",
+      "external_process": "Popen, os.system, and os.startfile fail-closed interception",
+      "file_access": "exact resolved-path allowlist for committed B5 JSON evidence only",
+      "module_imports": "sys.modules delta plus fail-closed import interception"
+    },
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "file_access": {
+      "raw_read_operation_counts": {
+        "b5_contract": 2,
+        "b5_result": 2,
+        "b5_schema": 2,
+        "b6_authorization": 1,
+        "b6_authorization_schema": 1,
+        "b6_contract_schema": 0
+      },
+      "unauthorized_successful_read_count": 0,
+      "unique_logical_file_counts": {
+        "b5_contract": 1,
+        "b5_result": 1,
+        "b5_schema": 1,
+        "b6_authorization": 1,
+        "b6_authorization_schema": 1,
+        "b6_contract_schema": 0
+      }
+    },
+    "module_import_counts": {
+      "b2_runner_import_count": 0,
+      "b4_runner_import_count": 0,
+      "detector_import_count": 0,
+      "ea_import_count": 0,
+      "fj_or_fq_runner_import_count": 0,
+      "mt5_import_count": 0,
+      "outcome_engine_import_count": 0,
+      "wrapper_import_count": 0
+    },
+    "prohibited_execution_counts": {
+      "atr_event_generation_count": 0,
+      "b2_runner_execution_count": 0,
+      "b4_runner_execution_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "fj_replay_execution_count": 0,
+      "fn_interpretation_count": 0,
+      "fq_replay_execution_count": 0,
+      "future_price_read_count": 0,
+      "mt5_execution_count": 0,
+      "network_execution_count": 0,
+      "optimization_count": 0,
+      "outcome_engine_execution_count": 0,
+      "outcome_generation_count": 0,
+      "tp_sl_calculation_count": 0,
+      "wrapper_execution_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b6_observational_outcome_contract.v1",
+  "strategy_or_indicator_changes": false,
+  "tp_sl_calculated": false
+}

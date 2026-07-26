@@ -1,0 +1,216 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "adapter_binding": {
+    "file_sha256": "dec190aea719b7761f037e5ceec7b5402469255737d2375ae79bfb0cf8b46b5a",
+    "path": "tools/observational_outcome_adapter.py"
+  },
+  "agreement_hashes": {
+    "adapter_complete_sha256": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0",
+    "adapter_records_sha256": "3677ad52d2574330b937718497127b6eb7b2205357859221ffa95a9ed9238000",
+    "expected_complete_sha256": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0",
+    "expected_records_sha256": "3677ad52d2574330b937718497127b6eb7b2205357859221ffa95a9ed9238000",
+    "reference_complete_sha256": "6ee0622647d5a1a38a6bb4853c2937e694ac82e95bc772cfd13a5705d0e577e0",
+    "reference_records_sha256": "3677ad52d2574330b937718497127b6eb7b2205357859221ffa95a9ed9238000"
+  },
+  "canonical_summary_sha256": "29fa4e56626e44281dd271710d16b90b60678ee37ccf85c95cf9f17edbb32fb0",
+  "checkpoint": "FR_PREP_B6B",
+  "conclusions": {
+    "adapter_synthetic_correctness": "INDEPENDENTLY_AUDITED",
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "independent_reference_agreement": "PROVEN",
+    "next_allowed_scope": "REAL_OUTCOME_EXECUTION_AUTHORIZATION_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "real_future_prices_inspected": false,
+    "real_outcome_execution": "NOT_STARTED"
+  },
+  "decision": "FR_PREP_B6B_PASS_INDEPENDENT_SYNTHETIC_OUTCOME_ADAPTER_AUDIT",
+  "determinism": {
+    "audit_repeat_identical": true,
+    "byte_identical": true,
+    "relocation_identical": true,
+    "run_sha256": {
+      "normal_1": "e331a63e83ee3feb1da9a2b692be96446cd06901541ecf038eca0ee7d771e63c",
+      "normal_2": "e331a63e83ee3feb1da9a2b692be96446cd06901541ecf038eca0ee7d771e63c",
+      "relocated": "e331a63e83ee3feb1da9a2b692be96446cd06901541ecf038eca0ee7d771e63c"
+    }
+  },
+  "execution_status": "PASS",
+  "fixture_bindings": {
+    "expected_fixture_sha256": "5ff190c26338e138bdc954bbea47fe004c808bd730ca339389ab7d8ed0aa6245",
+    "input_fixture_sha256": "f598b7cc6c935f057e76664a75c4b3f1c34d025494059771c7054b0e5210051d",
+    "synthetic_only": true
+  },
+  "fixture_counts": {
+    "event_records": 10,
+    "event_statuses": {
+      "FULLY_EVALUABLE": 6,
+      "NOT_EVALUABLE": 1,
+      "PARTIALLY_EVALUABLE": 3
+    },
+    "excursion_statuses": {
+      "EVALUABLE": 6,
+      "NOT_EVALUABLE_DATA_INCOMPLETE_GAP": 1,
+      "NOT_EVALUABLE_RIGHT_CENSORING": 1,
+      "NOT_EVALUABLE_SOURCE_INTEGRITY": 2
+    },
+    "horizon_statuses": {
+      "EVALUABLE": 27,
+      "NOT_EVALUABLE_DATA_INCOMPLETE_GAP": 3,
+      "NOT_EVALUABLE_RIGHT_CENSORING": 3,
+      "NOT_EVALUABLE_SOURCE_INTEGRITY": 7
+    },
+    "rejections": 3
+  },
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "independent_reference": {
+    "adapter_call_count": 0,
+    "adapter_imported_during_reference": false,
+    "implementation_location": "tools/run_fr_prep_b6b_independent_synthetic_outcome_adapter_audit.py",
+    "reference_frozen_before_adapter_load": true
+  },
+  "mismatch_counters": {
+    "adapter_expected_mismatch": 0,
+    "adapter_reference_mismatch": 0,
+    "audit_repeat_mismatch": 0,
+    "b6_identity_mismatch": 0,
+    "b6_schema_or_projection_mismatch": 0,
+    "b6a_identity_mismatch": 0,
+    "b6a_schema_or_projection_mismatch": 0,
+    "fixture_count_mismatch": 0,
+    "hash_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "record_order_mismatch": 0,
+    "reference_expected_mismatch": 0,
+    "reference_isolation_mismatch": 0,
+    "rejection_mismatch": 0,
+    "relocation_mismatch": 0,
+    "synthetic_scope_mismatch": 0
+  },
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "accepted_closure_not_counted_or_blocking": true,
+      "changed_adapter_hash_blocked": true,
+      "changed_horizon_set_blocked": true,
+      "changed_input_or_expected_fixture_blocked": true,
+      "duplicate_event_id_not_accepted": true,
+      "entry_reference_mismatch_not_accepted": true,
+      "expected_output_generation_or_rewrite_blocked": true,
+      "external_process_or_absolute_path_leakage_blocked": true,
+      "gap_invalid_and_censoring_fail_closed": true,
+      "real_fj_fq_or_raw_csv_read_blocked": true,
+      "reference_calling_adapter_blocked": true,
+      "rounding_mode_change_detected": true,
+      "unsupported_direction_not_accepted": true,
+      "wrong_b6a_identity_or_decision_blocked": true
+    },
+    "test_count": 14,
+    "tests_passed": 14
+  },
+  "prohibited_modules": [],
+  "runtime_audit": {
+    "authorized_adapter_suite_execution_count": 3,
+    "counter_provenance": {
+      "executions": "three independent references precede three exact-bound adapter suites",
+      "external_process": "Popen, os.system, and os.startfile fail-closed interception",
+      "file_access": "resolved-path allowlist excludes real events, candidates, future prices, and raw CSV",
+      "module_imports": "sys.modules delta confirms prohibited modules absent"
+    },
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "file_access": {
+      "blocked_expected_output_write_attempt_count": 1,
+      "blocked_real_data_read_attempt_count": 1,
+      "expected_output_write_count": 0,
+      "raw_read_operation_counts": {
+        "b6_contract": 4,
+        "b6_result": 4,
+        "b6_schema": 4,
+        "b6a_contract": 4,
+        "b6a_result": 4,
+        "b6a_schema": 4,
+        "b6b_authorization": 1,
+        "b6b_authorization_schema": 1,
+        "b6b_evidence_schema": 0,
+        "bound_adapter": 2,
+        "manually_frozen_expected": 4,
+        "relocated_bound_artifacts": 17,
+        "synthetic_inputs": 5
+      },
+      "real_data_successful_read_count": 0,
+      "unauthorized_successful_read_count": 0,
+      "unique_logical_file_counts": {
+        "b6_contract": 1,
+        "b6_result": 1,
+        "b6_schema": 1,
+        "b6a_contract": 1,
+        "b6a_result": 1,
+        "b6a_schema": 1,
+        "b6b_authorization": 1,
+        "b6b_authorization_schema": 1,
+        "b6b_evidence_schema": 0,
+        "bound_adapter": 1,
+        "manually_frozen_expected": 1,
+        "relocated_bound_artifacts": 9,
+        "synthetic_inputs": 1
+      }
+    },
+    "module_import_counts": {
+      "b2_runner_import_count": 0,
+      "b4_runner_import_count": 0,
+      "b6a_runner_import_count": 0,
+      "detector_import_count": 0,
+      "ea_import_count": 0,
+      "fj_or_fq_runner_import_count": 0,
+      "mt5_import_count": 0,
+      "real_outcome_engine_import_count": 0,
+      "wrapper_import_count": 0
+    },
+    "prohibited_execution_counts": {
+      "b2_runner_execution_count": 0,
+      "b4_runner_execution_count": 0,
+      "b6a_runner_execution_count": 0,
+      "cash_pnl_calculation_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "fj_replay_execution_count": 0,
+      "fq_replay_execution_count": 0,
+      "mt5_execution_count": 0,
+      "network_execution_count": 0,
+      "optimization_count": 0,
+      "raw_csv_read_count": 0,
+      "real_future_price_read_count": 0,
+      "real_outcome_engine_execution_count": 0,
+      "real_outcome_generation_count": 0,
+      "tp_sl_calculation_count": 0,
+      "wrapper_execution_count": 0
+    },
+    "reference_evaluation_count": 3
+  },
+  "schema_version": "fr_prep_b6b_independent_synthetic_outcome_adapter_audit.v1",
+  "upstream_validation": {
+    "b6": {
+      "canonical_summary_sha256": "83d05757947ac3398efd2956760eae7bf0ab5bac1a5722f6f7f2e2a64a551926",
+      "contract_schema_validated": true,
+      "decision": "FR_PREP_B6_PASS_OBSERVATIONAL_OUTCOME_CONTRACT_FROZEN",
+      "identity_validated": true,
+      "result_projection_validated": true
+    },
+    "b6a": {
+      "canonical_summary_sha256": "de18e6a1560bab3bb24ca3fd5904ead17bc75bb3665a1bcca926955b82755ece",
+      "contract_schema_validated": true,
+      "decision": "FR_PREP_B6A_PASS_SYNTHETIC_OUTCOME_ADAPTER_FIXTURES",
+      "identity_validated": true,
+      "result_projection_validated": true
+    }
+  }
+}

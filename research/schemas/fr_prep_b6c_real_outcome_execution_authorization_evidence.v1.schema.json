@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b6c_real_outcome_execution_authorization_evidence.v1.schema.json",
+  "type": "object",
+  "required": ["schema_version","checkpoint","decision","execution_status","canonical_summary_sha256","upstream_validation","adapter_binding","datasets","sealed_outcome_contract","authorized_next_checkpoint_operations","still_prohibited","authorization_states","negative_tests","mismatch_counters","runtime_audit","absolute_runtime_path_in_canonical_identity_count","prohibited_modules"],
+  "properties": {
+    "schema_version":{"const":"fr_prep_b6c_real_outcome_execution_authorization_evidence.v1"},
+    "checkpoint":{"const":"FR_PREP_B6C"},
+    "decision":{"const":"FR_PREP_B6C_PASS_REAL_OUTCOME_EXECUTION_AUTHORIZATION_SEALED"},
+    "execution_status":{"const":"PASS"},
+    "canonical_summary_sha256":{"pattern":"^[0-9a-f]{64}$"},
+    "authorization_states":{
+      "type":"object","required":["authorization_sealed","real_outcome_execution_authorized_for_next_checkpoint","real_outcome_execution_started","real_future_prices_inspected","real_outcome_records_generated","performance","profitability","order_logic","candidate","next_allowed_scope"],
+      "properties":{
+        "authorization_sealed":{"const":true},"real_outcome_execution_authorized_for_next_checkpoint":{"const":true},
+        "real_outcome_execution_started":{"const":false},"real_future_prices_inspected":{"const":false},
+        "real_outcome_records_generated":{"const":false},"performance":{"const":"NOT_EVALUATED"},
+        "profitability":{"const":"NOT_CLAIMED"},"order_logic":{"const":"NOT_APPROVED"},
+        "candidate":{"const":"NOT_READY_FOR_ORDER_LOGIC"},"next_allowed_scope":{"const":"SEALED_REAL_OBSERVATIONAL_OUTCOME_EXECUTION_ONLY"}
+      },"additionalProperties":false
+    },
+    "negative_tests":{
+      "type":"object","required":["all_passed","test_count","tests_passed","results"],
+      "properties":{"all_passed":{"const":true},"test_count":{"minimum":10},"tests_passed":{"minimum":10},"results":{"type":"object"}}
+    },
+    "mismatch_counters":{"type":"object","additionalProperties":{"const":0}},
+    "absolute_runtime_path_in_canonical_identity_count":{"const":0},
+    "prohibited_modules":{"type":"array","maxItems":0},
+    "upstream_validation":{"type":"object"},"adapter_binding":{"type":"object"},"datasets":{"type":"object"},
+    "sealed_outcome_contract":{"type":"object"},"authorized_next_checkpoint_operations":{"type":"array","minItems":8,"maxItems":8},
+    "still_prohibited":{"type":"array","minItems":9},"runtime_audit":{"type":"object"}
+  },
+  "additionalProperties":false
+}

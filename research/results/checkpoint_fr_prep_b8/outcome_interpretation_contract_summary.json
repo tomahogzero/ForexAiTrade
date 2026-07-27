@@ -1,0 +1,249 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "b7a_binding": {
+    "canonical_summary_sha256": "e65d1e67d9963bae6512f37d8831eeb0bd77083dc5c9dd5a44822a0842b25f5d",
+    "dataset_separation": "PROVEN",
+    "decision": "FR_PREP_B7A_PASS_INDEPENDENT_REAL_OUTCOME_AUDIT",
+    "identity_validated": true,
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "records_independently_audited": true,
+    "result_projection_validated": true,
+    "schema_validated": true,
+    "statistics_independently_audited": true
+  },
+  "canonical_summary_sha256": "1789e1cc763991b539f633375eca37f9610b5429da91a2125fb2afc82b9d932f",
+  "checkpoint": "FR_PREP_B8",
+  "contract_scope": {
+    "b7_jsonl_records_parsed": false,
+    "b7_statistics_csv_values_parsed": false,
+    "design_only": true,
+    "outcome_interpretation_performed": false,
+    "outcomes_recomputed": false,
+    "statistics_recomputed": false
+  },
+  "coverage_handling": [
+    "REPORT_EXACT_COVERAGE_WITHOUT_NEW_NUMERICAL_PASS_THRESHOLD",
+    "FQ_H12_RETAINS_EXISTING_MATERIAL_DATA_LIMITATION",
+    "COVERAGE_DOES_NOT_PROVE_OR_DISPROVE_STRATEGY_PERFORMANCE",
+    "MISSING_EVALUATION_NOT_COUNTED_AS_POSITIVE_ZERO_OR_NEGATIVE",
+    "NO_IMPUTATION_WEIGHTING_OR_POOLED_ADJUSTMENT"
+  ],
+  "decision": "FR_PREP_B8_PASS_OUTCOME_INTERPRETATION_CONTRACT_FROZEN",
+  "execution_status": "PASS",
+  "future_report_conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "descriptive_interpretation": "ALLOWED_UNDER_FROZEN_CONTRACT",
+    "descriptive_statistics_integrity": "PROVEN",
+    "next_allowed_scope": "SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "outcome_record_integrity": "PROVEN",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "robustness": "NOT_ESTABLISHED",
+    "strategy_edge": "NOT_ESTABLISHED"
+  },
+  "interpretation_rules": [
+    "FJ_AND_FQ_REMAIN_SEPARATE_IN_EVERY_STATEMENT",
+    "NEVER_POOL_FJ_AND_FQ_INTO_ONE_METRIC_OR_CONCLUSION",
+    "EVERY_STATISTIC_INCLUDES_DATASET_DIRECTION_YEAR_HORIZON_TOTAL_EVALUABLE_AND_COVERAGE",
+    "POSITIVE_SHARE_MUST_NOT_BE_DESCRIBED_AS_WIN_RATE",
+    "RETURNS_ARE_OBSERVATIONAL_CLOSE_TO_CLOSE_MOVEMENT_NOT_TRADE_PL",
+    "MFE_MAE_ARE_OBSERVATIONAL_EXCURSIONS_NOT_TP_SL_EVIDENCE",
+    "NO_EXTRAPOLATION_FROM_EVALUABLE_TO_NON_EVALUABLE_EVENTS",
+    "LOWER_COVERAGE_GROUPS_RETAIN_EXPLICIT_COVERAGE_LIMITATION",
+    "FQ_RETAINS_B5_DATA_QUALITY_STATUS_MATERIAL_LIMITATION",
+    "CROSS_PERIOD_COMPARISON_DESCRIBES_AGREEMENT_OR_DIVERGENCE_ONLY",
+    "NO_STATISTICAL_SIGNIFICANCE_CAUSALITY_OR_ROBUSTNESS_CLAIM",
+    "NO_PREFERRED_HORIZON_DIRECTION_OR_YEAR_SELECTION",
+    "NO_COMPOSITE_SCORE_RANKING_OR_PASS_FAIL_THRESHOLD",
+    "NO_OPTIMIZATION_OR_PARAMETER_RECOMMENDATION",
+    "NO_CASH_PL_SPREAD_COMMISSION_SWAP_SLIPPAGE_OR_LOT_ASSUMPTIONS",
+    "NO_ORDER_LOGIC_MT5_EA_OR_TRADING_RECOMMENDATION"
+  ],
+  "interpretation_vocabulary": {
+    "permitted_evidence_statements": [
+      "RECORD_INTEGRITY_PROVEN",
+      "DESCRIPTIVE_OUTCOMES_AVAILABLE",
+      "DATA_COVERAGE_LIMITATION",
+      "CROSS_PERIOD_DIRECTIONAL_CONSISTENCY_OBSERVED",
+      "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+      "HORIZON_PATTERN_OBSERVED",
+      "YEAR_VARIATION_OBSERVED",
+      "MFE_MAE_RELATIONSHIP_OBSERVED",
+      "NO_CLEAR_DESCRIPTIVE_PATTERN"
+    ],
+    "prohibited_evidence_statements": [
+      "PROFITABLE",
+      "UNPROFITABLE",
+      "HAS_EDGE",
+      "NO_EDGE",
+      "ROBUST",
+      "OVERFIT",
+      "WIN_RATE",
+      "EXPECTED_PROFIT",
+      "BEST_HORIZON",
+      "BEST_DIRECTION",
+      "BEST_YEAR",
+      "TRADE_READY",
+      "LIVE_READY"
+    ]
+  },
+  "mismatch_counters": {
+    "absolute_path_identity_mismatch": 0,
+    "b7a_audit_conclusion_mismatch": 0,
+    "b7a_identity_or_decision_mismatch": 0,
+    "b7a_schema_or_projection_mismatch": 0,
+    "committed_artifact_hash_mismatch": 0,
+    "contract_repeat_mismatch": 0,
+    "interpretation_rule_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "vocabulary_mismatch": 0
+  },
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "b7_file_read_guard_fail_closed": true,
+      "b7_records_or_statistics_parsing_attempt_blocked": true,
+      "best_horizon_direction_or_year_selection_blocked": true,
+      "composite_score_or_performance_threshold_blocked": true,
+      "conflicting_or_low_coverage_group_suppression_blocked": true,
+      "dataset_pooling_request_blocked": true,
+      "external_process_or_absolute_path_leakage_blocked": true,
+      "mt5_ea_network_or_external_process_request_blocked": true,
+      "optimization_or_parameter_recommendation_blocked": true,
+      "profitability_edge_or_robustness_claim_blocked": true,
+      "prohibited_import_guard_fail_closed": true,
+      "tp_sl_cost_lot_or_order_simulation_blocked": true,
+      "win_rate_or_trade_pl_wording_blocked": true,
+      "wrong_b7a_identity_or_decision_blocked": true
+    },
+    "test_count": 14,
+    "tests_passed": 14
+  },
+  "pattern_reporting_contract": {
+    "dataset_order": [
+      "FJ",
+      "FQ"
+    ],
+    "direction_order": [
+      "LONG",
+      "SHORT"
+    ],
+    "divergence_shown_beside_corresponding_agreement": true,
+    "horizon_order": [
+      1,
+      3,
+      6,
+      12
+    ],
+    "paired_reports": [
+      [
+        "mean_bps",
+        "median_bps"
+      ],
+      [
+        "p25_bps",
+        "p75_bps"
+      ],
+      [
+        "positive_share",
+        "zero_share",
+        "negative_share"
+      ]
+    ],
+    "ranking_language_prohibited": [
+      "BEST",
+      "WINNER",
+      "OPTIMAL",
+      "EQUIVALENT_RANKING_LANGUAGE"
+    ],
+    "report_every_available_year": true,
+    "suppress_unfavorable_conflicting_or_low_coverage_group": false
+  },
+  "permitted_future_interpretation_inputs": [
+    "DATASET_IDENTITY",
+    "DIRECTION",
+    "CONFIRMATION_YEAR",
+    "HORIZON_1_3_6_12",
+    "TOTAL_EVENT_COUNT",
+    "EVALUABLE_EVENT_COUNT",
+    "EVALUATION_COVERAGE",
+    "MEAN_RETURN_BPS",
+    "MEDIAN_RETURN_BPS",
+    "P25_RETURN_BPS",
+    "P75_RETURN_BPS",
+    "POSITIVE_SHARE",
+    "ZERO_SHARE",
+    "NEGATIVE_SHARE",
+    "MFE_BPS_AT_HORIZON_12",
+    "MAE_BPS_AT_HORIZON_12",
+    "NON_EVALUABLE_STATUS_COUNTS"
+  ],
+  "prohibited_modules": [],
+  "runtime_audit": {
+    "blocked_import_requests": 5,
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "file_access": {
+      "b7_jsonl_parse_count": 0,
+      "b7_statistics_csv_parse_count": 0,
+      "blocked_b7_data_read_attempt_count": 1,
+      "outcome_recomputation_count": 0,
+      "raw_read_operation_counts": {
+        "b7a_contract": 2,
+        "b7a_result": 2,
+        "b7a_schema": 2,
+        "b8_authorization": 1,
+        "b8_authorization_schema": 1,
+        "b8_contract_schema": 1
+      },
+      "statistics_recomputation_count": 0,
+      "unauthorized_successful_read_count": 0,
+      "unique_logical_file_counts": {
+        "b7a_contract": 1,
+        "b7a_result": 1,
+        "b7a_schema": 1,
+        "b8_authorization": 1,
+        "b8_authorization_schema": 1,
+        "b8_contract_schema": 1
+      }
+    },
+    "prohibited_execution_counts": {
+      "adapter_call_count": 0,
+      "b7_record_parse_count": 0,
+      "b7_runner_call_count": 0,
+      "b7_statistics_parse_count": 0,
+      "b7a_auditor_call_count": 0,
+      "cash_pl_calculation_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "edge_claim_count": 0,
+      "external_process_success_count": 0,
+      "lot_simulation_count": 0,
+      "mt5_execution_count": 0,
+      "network_execution_count": 0,
+      "optimization_count": 0,
+      "order_simulation_count": 0,
+      "outcome_interpretation_count": 0,
+      "outcome_recomputation_count": 0,
+      "profitability_claim_count": 0,
+      "robustness_claim_count": 0,
+      "statistics_recomputation_count": 0,
+      "strategy_change_count": 0,
+      "tp_sl_calculation_count": 0,
+      "trading_cost_calculation_count": 0,
+      "trading_readiness_claim_count": 0
+    },
+    "prohibited_import_counts": {
+      "adapter_import_count": 0,
+      "b7_runner_import_count": 0,
+      "b7a_auditor_import_count": 0,
+      "detector_import_count": 0,
+      "mt5_import_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b8_observational_outcome_interpretation_contract.v1"
+}

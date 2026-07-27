@@ -1,0 +1,134 @@
+{
+  "authorization_scope": "OUTCOME_INTERPRETATION_CONTRACT_DESIGN_ONLY",
+  "checkpoint": "FR_PREP_B8",
+  "committed_artifacts": [
+    {
+      "artifact_id": "b7a_contract",
+      "category": "b7a_contract",
+      "file_sha256": "886145418e3de1272a2ab516b86beee0fff30422c2967309c9845cffb5b1d45d",
+      "path": "research/contracts/fr_prep_b7a_independent_real_outcome_audit.v1.json"
+    },
+    {
+      "artifact_id": "b7a_schema",
+      "category": "b7a_schema",
+      "file_sha256": "69b26c00db3d55a84b6376e4aa0751db18deee62d16211b0e8644ec3d8d8cb12",
+      "path": "research/schemas/fr_prep_b7a_independent_real_outcome_audit.v1.schema.json"
+    },
+    {
+      "artifact_id": "b7a_result",
+      "category": "b7a_result",
+      "file_sha256": "886145418e3de1272a2ab516b86beee0fff30422c2967309c9845cffb5b1d45d",
+      "path": "research/results/checkpoint_fr_prep_b7a/independent_real_outcome_audit_summary.json"
+    }
+  ],
+  "expected": {
+    "b7a": {
+      "canonical_summary_sha256": "e65d1e67d9963bae6512f37d8831eeb0bd77083dc5c9dd5a44822a0842b25f5d",
+      "decision": "FR_PREP_B7A_PASS_INDEPENDENT_REAL_OUTCOME_AUDIT"
+    },
+    "coverage_handling": [
+      "REPORT_EXACT_COVERAGE_WITHOUT_NEW_NUMERICAL_PASS_THRESHOLD",
+      "FQ_H12_RETAINS_EXISTING_MATERIAL_DATA_LIMITATION",
+      "COVERAGE_DOES_NOT_PROVE_OR_DISPROVE_STRATEGY_PERFORMANCE",
+      "MISSING_EVALUATION_NOT_COUNTED_AS_POSITIVE_ZERO_OR_NEGATIVE",
+      "NO_IMPUTATION_WEIGHTING_OR_POOLED_ADJUSTMENT"
+    ],
+    "future_report_conclusions": {
+      "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+      "descriptive_interpretation": "ALLOWED_UNDER_FROZEN_CONTRACT",
+      "descriptive_statistics_integrity": "PROVEN",
+      "next_allowed_scope": "SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT_ONLY",
+      "order_logic": "NOT_APPROVED",
+      "outcome_record_integrity": "PROVEN",
+      "performance": "NOT_EVALUATED",
+      "profitability": "NOT_CLAIMED",
+      "robustness": "NOT_ESTABLISHED",
+      "strategy_edge": "NOT_ESTABLISHED"
+    },
+    "interpretation_rules": [
+      "FJ_AND_FQ_REMAIN_SEPARATE_IN_EVERY_STATEMENT",
+      "NEVER_POOL_FJ_AND_FQ_INTO_ONE_METRIC_OR_CONCLUSION",
+      "EVERY_STATISTIC_INCLUDES_DATASET_DIRECTION_YEAR_HORIZON_TOTAL_EVALUABLE_AND_COVERAGE",
+      "POSITIVE_SHARE_MUST_NOT_BE_DESCRIBED_AS_WIN_RATE",
+      "RETURNS_ARE_OBSERVATIONAL_CLOSE_TO_CLOSE_MOVEMENT_NOT_TRADE_PL",
+      "MFE_MAE_ARE_OBSERVATIONAL_EXCURSIONS_NOT_TP_SL_EVIDENCE",
+      "NO_EXTRAPOLATION_FROM_EVALUABLE_TO_NON_EVALUABLE_EVENTS",
+      "LOWER_COVERAGE_GROUPS_RETAIN_EXPLICIT_COVERAGE_LIMITATION",
+      "FQ_RETAINS_B5_DATA_QUALITY_STATUS_MATERIAL_LIMITATION",
+      "CROSS_PERIOD_COMPARISON_DESCRIBES_AGREEMENT_OR_DIVERGENCE_ONLY",
+      "NO_STATISTICAL_SIGNIFICANCE_CAUSALITY_OR_ROBUSTNESS_CLAIM",
+      "NO_PREFERRED_HORIZON_DIRECTION_OR_YEAR_SELECTION",
+      "NO_COMPOSITE_SCORE_RANKING_OR_PASS_FAIL_THRESHOLD",
+      "NO_OPTIMIZATION_OR_PARAMETER_RECOMMENDATION",
+      "NO_CASH_PL_SPREAD_COMMISSION_SWAP_SLIPPAGE_OR_LOT_ASSUMPTIONS",
+      "NO_ORDER_LOGIC_MT5_EA_OR_TRADING_RECOMMENDATION"
+    ],
+    "interpretation_vocabulary": {
+      "permitted_evidence_statements": [
+        "RECORD_INTEGRITY_PROVEN",
+        "DESCRIPTIVE_OUTCOMES_AVAILABLE",
+        "DATA_COVERAGE_LIMITATION",
+        "CROSS_PERIOD_DIRECTIONAL_CONSISTENCY_OBSERVED",
+        "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "HORIZON_PATTERN_OBSERVED",
+        "YEAR_VARIATION_OBSERVED",
+        "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "NO_CLEAR_DESCRIPTIVE_PATTERN"
+      ],
+      "prohibited_evidence_statements": [
+        "PROFITABLE",
+        "UNPROFITABLE",
+        "HAS_EDGE",
+        "NO_EDGE",
+        "ROBUST",
+        "OVERFIT",
+        "WIN_RATE",
+        "EXPECTED_PROFIT",
+        "BEST_HORIZON",
+        "BEST_DIRECTION",
+        "BEST_YEAR",
+        "TRADE_READY",
+        "LIVE_READY"
+      ]
+    },
+    "pattern_reporting_contract": {
+      "dataset_order": ["FJ", "FQ"],
+      "direction_order": ["LONG", "SHORT"],
+      "horizon_order": [1, 3, 6, 12],
+      "paired_reports": [
+        ["mean_bps", "median_bps"],
+        ["p25_bps", "p75_bps"],
+        ["positive_share", "zero_share", "negative_share"]
+      ],
+      "report_every_available_year": true,
+      "suppress_unfavorable_conflicting_or_low_coverage_group": false,
+      "divergence_shown_beside_corresponding_agreement": true,
+      "ranking_language_prohibited": ["BEST", "WINNER", "OPTIMAL", "EQUIVALENT_RANKING_LANGUAGE"]
+    },
+    "permitted_future_interpretation_inputs": [
+      "DATASET_IDENTITY",
+      "DIRECTION",
+      "CONFIRMATION_YEAR",
+      "HORIZON_1_3_6_12",
+      "TOTAL_EVENT_COUNT",
+      "EVALUABLE_EVENT_COUNT",
+      "EVALUATION_COVERAGE",
+      "MEAN_RETURN_BPS",
+      "MEDIAN_RETURN_BPS",
+      "P25_RETURN_BPS",
+      "P75_RETURN_BPS",
+      "POSITIVE_SHARE",
+      "ZERO_SHARE",
+      "NEGATIVE_SHARE",
+      "MFE_BPS_AT_HORIZON_12",
+      "MAE_BPS_AT_HORIZON_12",
+      "NON_EVALUABLE_STATUS_COUNTS"
+    ]
+  },
+  "prohibited_input_paths": [
+    "research/results/checkpoint_fr_prep_b7/fj_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/fq_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/observational_outcome_statistics.csv"
+  ],
+  "schema_version": "fr_prep_b8_outcome_interpretation_contract_authorization.v1"
+}

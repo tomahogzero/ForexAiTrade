@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b8_outcome_interpretation_contract_authorization.v1.schema.json",
+  "type": "object",
+  "required": ["schema_version","checkpoint","authorization_scope","committed_artifacts","prohibited_input_paths","expected"],
+  "properties": {
+    "schema_version":{"const":"fr_prep_b8_outcome_interpretation_contract_authorization.v1"},
+    "checkpoint":{"const":"FR_PREP_B8"},
+    "authorization_scope":{"const":"OUTCOME_INTERPRETATION_CONTRACT_DESIGN_ONLY"},
+    "committed_artifacts":{"type":"array","minItems":3,"maxItems":3,"items":{"type":"object","required":["artifact_id","category","path","file_sha256"],"properties":{"artifact_id":{"type":"string"},"category":{"type":"string"},"path":{"type":"string","pattern":"^research/"},"file_sha256":{"pattern":"^[0-9a-f]{64}$"}},"additionalProperties":false}},
+    "prohibited_input_paths":{"type":"array","minItems":3,"maxItems":3,"items":{"type":"string"}},
+    "expected":{"type":"object","required":["b7a","interpretation_vocabulary","permitted_future_interpretation_inputs","interpretation_rules","pattern_reporting_contract","coverage_handling","future_report_conclusions"]}
+  },
+  "additionalProperties":false
+}

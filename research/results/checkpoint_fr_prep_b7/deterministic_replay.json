@@ -1,0 +1,29 @@
+{
+  "absolute_runtime_paths_in_identity_count": 0,
+  "controlled_relocation_byte_identical": true,
+  "normal_repeat_byte_identical": true,
+  "records_ordering_statuses_counts_identical": true,
+  "run_hashes": {
+    "normal_1": {
+      "FJ": "07cb448e004d09706253c00de6823a5d93c81617eef709043cbdd478f4ac8f1e",
+      "FQ": "bdff2e961795a159e3c0b4d1730214a5a34bbc869b34544af175598e5685e0c6",
+      "complete": "1117ab0be8fae1a8a02ef345606f62cc287c53dab3d5316607b263f055e67780",
+      "statistics": "b0f94272b133ebebc72e33f84f717316a91406abd44b72f7601b3d4f4232587c"
+    },
+    "normal_2": {
+      "FJ": "07cb448e004d09706253c00de6823a5d93c81617eef709043cbdd478f4ac8f1e",
+      "FQ": "bdff2e961795a159e3c0b4d1730214a5a34bbc869b34544af175598e5685e0c6",
+      "complete": "1117ab0be8fae1a8a02ef345606f62cc287c53dab3d5316607b263f055e67780",
+      "statistics": "b0f94272b133ebebc72e33f84f717316a91406abd44b72f7601b3d4f4232587c"
+    },
+    "relocated": {
+      "FJ": "07cb448e004d09706253c00de6823a5d93c81617eef709043cbdd478f4ac8f1e",
+      "FQ": "bdff2e961795a159e3c0b4d1730214a5a34bbc869b34544af175598e5685e0c6",
+      "complete": "1117ab0be8fae1a8a02ef345606f62cc287c53dab3d5316607b263f055e67780",
+      "statistics": "b0f94272b133ebebc72e33f84f717316a91406abd44b72f7601b3d4f4232587c"
+    }
+  },
+  "schema_version": "fr_prep_b7_deterministic_replay.v1",
+  "statistics_identical": true,
+  "temporary_artifacts_deleted": true
+}

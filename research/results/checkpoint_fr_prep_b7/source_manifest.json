@@ -1,0 +1,89 @@
+{
+  "absolute_runtime_paths_excluded": true,
+  "datasets": {
+    "FJ": {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "event_artifact": {
+        "event_population_sha256": "db59643834e06acbfebb66026634f4f561fb9b07131fdca1513e3585cd51c74b",
+        "file_sha256": "b42640c02fa94abfb4f7bdd5026a250c1878b9f42008303b69d43de00eb9003c",
+        "path": "research/results/checkpoint_fj_historical_event_population/checkpoint_fj_event_population.csv",
+        "records": 1079
+      },
+      "gap_artifact": {
+        "accepted_closures": 745,
+        "file_sha256": "136bedb63c3b40242da7dd3aefc4587583f8084f145dd88302868d3386dfd944",
+        "frozen_inventory_identity_sha256": "d94812339fa30ec9cb4fdbe617b105fc72211bda79d19ce50a618ee819dd1ca4",
+        "gaps": 773,
+        "path": "research/results/checkpoint_eo_gap_policy_review/gap_policy_dry_run.csv",
+        "unverified": 28
+      },
+      "raw_broker_csv_committed": false,
+      "source_manifest": {
+        "file_sha256": "f64519a6341488578b95ca06103268ff3323f4593e177a3e4eba2f583e75469c",
+        "path": "research/results/checkpoint_fj_historical_event_population/checkpoint_fj_source_manifest.json"
+      },
+      "source_rows": 17716,
+      "sources": [
+        {
+          "filename": "GOLD#_H1_202301030100_202312292300.csv",
+          "rows": 5894,
+          "sha256": "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468"
+        },
+        {
+          "filename": "GOLD#_H1_202401020100_202412312000.csv",
+          "rows": 5928,
+          "sha256": "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a"
+        },
+        {
+          "filename": "GOLD#_H1_202501020800_202512311900.csv",
+          "rows": 5894,
+          "sha256": "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b"
+        }
+      ]
+    },
+    "FQ": {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "event_artifact": {
+        "event_population_sha256": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81",
+        "file_sha256": "262107a769fe7c4dfc823a3631718b54545b7ec14d4b0fa8eb2d0e7044c228fc",
+        "path": "research/results/checkpoint_fr_prep_b4/fq_event_population.csv",
+        "records": 493
+      },
+      "gap_artifact": {
+        "accepted_closures": 149,
+        "file_sha256": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+        "frozen_inventory_identity_sha256": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+        "gaps": 774,
+        "path": "research/results/checkpoint_fq_holdout_gap_boundary/checkpoint_fq_gap_inventory.json",
+        "unverified": 625
+      },
+      "raw_broker_csv_committed": false,
+      "source_manifest": {
+        "file_sha256": "8d2f2dc61926f879a5ef232d43d3a7e365296d94e0e1d2eef0ee066120b6aafd",
+        "path": "research/results/checkpoint_fr_prep_b4/fq_source_manifest.json"
+      },
+      "source_rows": 17731,
+      "sources": [
+        {
+          "filename": "GOLD#_H1_202001020900_202012311800.csv",
+          "rows": 5912,
+          "sha256": "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc"
+        },
+        {
+          "filename": "GOLD#_H1_202101040100_202112311800.csv",
+          "rows": 5902,
+          "sha256": "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5"
+        },
+        {
+          "filename": "GOLD#_H1_202201030100_202212302300.csv",
+          "rows": 5917,
+          "sha256": "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a"
+        }
+      ]
+    }
+  },
+  "missing_duplicate_ambiguous_or_substituted_source_count": 0,
+  "schema_version": "fr_prep_b7_source_manifest.v1",
+  "source_filenames_hashes_rows_validated_before_ohlc_parse": true,
+  "timestamp_projection": "RAW_H1_BAR_OPEN_PLUS_ONE_HOUR_TO_BAR_CLOSE_TIMESTAMP"
+}

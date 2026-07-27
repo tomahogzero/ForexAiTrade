@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_prep_b7_sealed_real_observational_outcomes.v1.schema.json",
+  "type": "object",
+  "required": ["schema_version","checkpoint","decision","execution_status","canonical_summary_sha256","upstream_validation","adapter_binding","datasets","output_hashes","determinism","descriptive_statistics","conclusions","negative_tests","mismatch_counters","runtime_audit","numeric_policy","horizons","absolute_runtime_path_in_canonical_identity_count","prohibited_modules"],
+  "properties": {
+    "schema_version":{"const":"fr_prep_b7_sealed_real_observational_outcomes.v1"},
+    "checkpoint":{"const":"FR_PREP_B7"},
+    "decision":{"const":"FR_PREP_B7_PASS_SEALED_REAL_OBSERVATIONAL_OUTCOME_EXECUTION"},
+    "execution_status":{"const":"PASS"},
+    "canonical_summary_sha256":{"pattern":"^[0-9a-f]{64}$"},
+    "datasets":{
+      "type":"object","required":["FJ","FQ"],"additionalProperties":false,
+      "properties":{
+        "FJ":{"type":"object","properties":{"input_event_records":{"const":1079},"output_records":{"const":1079}},"required":["dataset_id","input_event_records","output_records","event_status_counts","evaluable_by_horizon"]},
+        "FQ":{"type":"object","properties":{"input_event_records":{"const":493},"output_records":{"const":493}},"required":["dataset_id","input_event_records","output_records","event_status_counts","evaluable_by_horizon"]}
+      }
+    },
+    "conclusions":{
+      "type":"object","required":["outcome_execution_integrity","real_outcome_execution","real_outcome_records_generated","descriptive_statistics_generated","performance","profitability","order_logic","candidate","next_allowed_scope"],
+      "properties":{
+        "outcome_execution_integrity":{"const":"PROVEN"},"real_outcome_execution":{"const":"COMPLETED"},
+        "real_outcome_records_generated":{"const":true},"descriptive_statistics_generated":{"const":true},
+        "performance":{"const":"NOT_EVALUATED"},"profitability":{"const":"NOT_CLAIMED"},
+        "order_logic":{"const":"NOT_APPROVED"},"candidate":{"const":"NOT_READY_FOR_ORDER_LOGIC"},
+        "next_allowed_scope":{"const":"INDEPENDENT_REAL_OUTCOME_AUDIT_ONLY"}
+      },"additionalProperties":false
+    },
+    "negative_tests":{"type":"object","properties":{"all_passed":{"const":true}},"required":["test_count","tests_passed","all_passed","results"]},
+    "mismatch_counters":{"type":"object","additionalProperties":{"const":0}},
+    "absolute_runtime_path_in_canonical_identity_count":{"const":0},
+    "prohibited_modules":{"type":"array","maxItems":0},
+    "upstream_validation":{"type":"object"},"adapter_binding":{"type":"object"},"output_hashes":{"type":"object"},
+    "determinism":{"type":"object"},"descriptive_statistics":{"type":"object"},"runtime_audit":{"type":"object"},
+    "numeric_policy":{"type":"object"},"horizons":{"const":[1,3,6,12]}
+  },
+  "additionalProperties":false
+}

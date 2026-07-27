@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"fr_prep_b9_outcome_interpretation_report_authorization.v1.schema.json",
+  "type":"object",
+  "required":["schema_version","checkpoint","authorization_scope","committed_artifacts","expected"],
+  "properties":{
+    "schema_version":{"const":"fr_prep_b9_outcome_interpretation_report_authorization.v1"},
+    "checkpoint":{"const":"FR_PREP_B9"},
+    "authorization_scope":{"const":"SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT_ONLY"},
+    "committed_artifacts":{"type":"array","minItems":14,"maxItems":14,"items":{"type":"object","required":["artifact_id","path","file_sha256","read_mode"],"properties":{"artifact_id":{"type":"string"},"path":{"type":"string","pattern":"^research/"},"file_sha256":{"pattern":"^[0-9a-f]{64}$"},"read_mode":{"enum":["parse","hash_only"]}},"additionalProperties":false}},
+    "expected":{"type":"object","required":["upstream","b7_hashes"]}
+  },
+  "additionalProperties":false
+}

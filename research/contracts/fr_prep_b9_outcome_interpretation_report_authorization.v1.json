@@ -1,0 +1,34 @@
+{
+  "authorization_scope": "SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT_ONLY",
+  "checkpoint": "FR_PREP_B9",
+  "committed_artifacts": [
+    {"artifact_id":"b7_contract","path":"research/contracts/fr_prep_b7_sealed_real_observational_outcomes.v1.json","file_sha256":"0da8149033e588ce4ac46f626d9d804e02160aabe53263479bbfed7397514d00","read_mode":"parse"},
+    {"artifact_id":"b7_schema","path":"research/schemas/fr_prep_b7_sealed_real_observational_outcomes.v1.schema.json","file_sha256":"d07ef51de76e2fb7ecfd656bf032df461de501e3da0e8d80b0885c87d9d637d3","read_mode":"parse"},
+    {"artifact_id":"b7_summary","path":"research/results/checkpoint_fr_prep_b7/real_observational_outcome_summary.json","file_sha256":"0da8149033e588ce4ac46f626d9d804e02160aabe53263479bbfed7397514d00","read_mode":"parse"},
+    {"artifact_id":"b7_fj_records","path":"research/results/checkpoint_fr_prep_b7/fj_observational_outcomes.jsonl","file_sha256":"07cb448e004d09706253c00de6823a5d93c81617eef709043cbdd478f4ac8f1e","read_mode":"hash_only"},
+    {"artifact_id":"b7_fq_records","path":"research/results/checkpoint_fr_prep_b7/fq_observational_outcomes.jsonl","file_sha256":"bdff2e961795a159e3c0b4d1730214a5a34bbc869b34544af175598e5685e0c6","read_mode":"hash_only"},
+    {"artifact_id":"b7_statistics","path":"research/results/checkpoint_fr_prep_b7/observational_outcome_statistics.csv","file_sha256":"b0f94272b133ebebc72e33f84f717316a91406abd44b72f7601b3d4f4232587c","read_mode":"parse"},
+    {"artifact_id":"b7_replay","path":"research/results/checkpoint_fr_prep_b7/deterministic_replay.json","file_sha256":"e78c33681100e7f9f8c19b3c15af4655bb991b11ff49e6df27d16d24191cf10a","read_mode":"parse"},
+    {"artifact_id":"b7_source_manifest","path":"research/results/checkpoint_fr_prep_b7/source_manifest.json","file_sha256":"cca4a11aec37480377b62bffa1b76593e842dcf4566791b199d0b857ffde87da","read_mode":"parse"},
+    {"artifact_id":"b7a_contract","path":"research/contracts/fr_prep_b7a_independent_real_outcome_audit.v1.json","file_sha256":"886145418e3de1272a2ab516b86beee0fff30422c2967309c9845cffb5b1d45d","read_mode":"parse"},
+    {"artifact_id":"b7a_schema","path":"research/schemas/fr_prep_b7a_independent_real_outcome_audit.v1.schema.json","file_sha256":"69b26c00db3d55a84b6376e4aa0751db18deee62d16211b0e8644ec3d8d8cb12","read_mode":"parse"},
+    {"artifact_id":"b7a_summary","path":"research/results/checkpoint_fr_prep_b7a/independent_real_outcome_audit_summary.json","file_sha256":"886145418e3de1272a2ab516b86beee0fff30422c2967309c9845cffb5b1d45d","read_mode":"parse"},
+    {"artifact_id":"b8_contract","path":"research/contracts/fr_prep_b8_observational_outcome_interpretation_contract.v1.json","file_sha256":"4f88bc1774609e6e57562409c982a32ecf1e09e7407f6fc21d78fc8458593c74","read_mode":"parse"},
+    {"artifact_id":"b8_schema","path":"research/schemas/fr_prep_b8_observational_outcome_interpretation_contract.v1.schema.json","file_sha256":"07bbcfe7baa7d3f0dc1637a1c5131fe615d9c3a146c8d72ec226816f3b038e2c","read_mode":"parse"},
+    {"artifact_id":"b8_summary","path":"research/results/checkpoint_fr_prep_b8/outcome_interpretation_contract_summary.json","file_sha256":"4f88bc1774609e6e57562409c982a32ecf1e09e7407f6fc21d78fc8458593c74","read_mode":"parse"}
+  ],
+  "expected": {
+    "b7_hashes": {
+      "fj_records_sha256":"07cb448e004d09706253c00de6823a5d93c81617eef709043cbdd478f4ac8f1e",
+      "fq_records_sha256":"bdff2e961795a159e3c0b4d1730214a5a34bbc869b34544af175598e5685e0c6",
+      "statistics_sha256":"b0f94272b133ebebc72e33f84f717316a91406abd44b72f7601b3d4f4232587c",
+      "complete_sha256":"1117ab0be8fae1a8a02ef345606f62cc287c53dab3d5316607b263f055e67780"
+    },
+    "upstream": {
+      "b7":{"canonical_summary_sha256":"0e105e863e7abaa5b7dcf1cff24daed80efbf43c6c7723f5d28f63bc0bbde1a8","decision":"FR_PREP_B7_PASS_SEALED_REAL_OBSERVATIONAL_OUTCOME_EXECUTION"},
+      "b7a":{"canonical_summary_sha256":"e65d1e67d9963bae6512f37d8831eeb0bd77083dc5c9dd5a44822a0842b25f5d","decision":"FR_PREP_B7A_PASS_INDEPENDENT_REAL_OUTCOME_AUDIT"},
+      "b8":{"canonical_summary_sha256":"1789e1cc763991b539f633375eca37f9610b5429da91a2125fb2afc82b9d932f","decision":"FR_PREP_B8_PASS_OUTCOME_INTERPRETATION_CONTRACT_FROZEN"}
+    }
+  },
+  "schema_version": "fr_prep_b9_outcome_interpretation_report_authorization.v1"
+}

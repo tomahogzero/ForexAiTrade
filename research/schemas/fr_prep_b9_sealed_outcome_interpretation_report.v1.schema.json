@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"fr_prep_b9_sealed_outcome_interpretation_report.v1.schema.json",
+  "type":"object",
+  "required":["schema_version","checkpoint","decision","execution_status","canonical_summary_sha256","upstream_validation","b8_binding","report","output_hashes","determinism","conclusions","negative_tests","mismatch_counters","runtime_audit","absolute_runtime_path_in_canonical_identity_count","prohibited_modules"],
+  "properties":{
+    "schema_version":{"const":"fr_prep_b9_sealed_outcome_interpretation_report.v1"},
+    "checkpoint":{"const":"FR_PREP_B9"},
+    "decision":{"const":"FR_PREP_B9_PASS_SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT"},
+    "execution_status":{"const":"PASS"},
+    "canonical_summary_sha256":{"pattern":"^[0-9a-f]{64}$"},
+    "report":{"type":"object","properties":{"statistics_rows":{"const":72},"dataset_separation":{"const":"PROVEN"},"b7_jsonl_records_parsed":{"const":false},"statistics_recomputed":{"const":false}},"required":["statistics_rows","dataset_separation","dataset_order","direction_order","horizon_order","b7_jsonl_records_parsed","statistics_recomputed","classification_counts_by_dataset","cross_period_observation_counts"]},
+    "conclusions":{"type":"object","required":["outcome_record_integrity","descriptive_statistics_integrity","descriptive_interpretation","strategy_edge","robustness","performance","profitability","order_logic","candidate","next_allowed_scope"],"properties":{"outcome_record_integrity":{"const":"PROVEN"},"descriptive_statistics_integrity":{"const":"PROVEN"},"descriptive_interpretation":{"const":"COMPLETED_UNDER_FROZEN_CONTRACT"},"strategy_edge":{"const":"NOT_ESTABLISHED"},"robustness":{"const":"NOT_ESTABLISHED"},"performance":{"const":"NOT_EVALUATED"},"profitability":{"const":"NOT_CLAIMED"},"order_logic":{"const":"NOT_APPROVED"},"candidate":{"const":"NOT_READY_FOR_ORDER_LOGIC"},"next_allowed_scope":{"const":"RESEARCH_DISPOSITION_CONTRACT_DESIGN_ONLY"}},"additionalProperties":false},
+    "negative_tests":{"type":"object","properties":{"all_passed":{"const":true}},"required":["test_count","tests_passed","all_passed","results"]},
+    "mismatch_counters":{"type":"object","additionalProperties":{"const":0}},
+    "absolute_runtime_path_in_canonical_identity_count":{"const":0},
+    "prohibited_modules":{"type":"array","maxItems":0},
+    "upstream_validation":{"type":"object"},"b8_binding":{"type":"object"},"output_hashes":{"type":"object"},"determinism":{"type":"object"},"runtime_audit":{"type":"object"}
+  },
+  "additionalProperties":false
+}

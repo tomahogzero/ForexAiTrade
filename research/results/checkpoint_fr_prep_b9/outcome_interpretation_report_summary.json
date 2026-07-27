@@ -1,0 +1,207 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "b8_binding": {
+    "canonical_summary_sha256": "1789e1cc763991b539f633375eca37f9610b5429da91a2125fb2afc82b9d932f",
+    "decision": "FR_PREP_B8_PASS_OUTCOME_INTERPRETATION_CONTRACT_FROZEN"
+  },
+  "canonical_summary_sha256": "3c2cd0e4a2fcf6d970b592b942965d2f154873c3d7a225b38aa0eea6d5594bf5",
+  "checkpoint": "FR_PREP_B9",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "descriptive_interpretation": "COMPLETED_UNDER_FROZEN_CONTRACT",
+    "descriptive_statistics_integrity": "PROVEN",
+    "next_allowed_scope": "RESEARCH_DISPOSITION_CONTRACT_DESIGN_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "outcome_record_integrity": "PROVEN",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "robustness": "NOT_ESTABLISHED",
+    "strategy_edge": "NOT_ESTABLISHED"
+  },
+  "decision": "FR_PREP_B9_PASS_SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT",
+  "determinism": {
+    "absolute_runtime_paths_in_identity_count": 0,
+    "controlled_relocation_identical": true,
+    "json_markdown_ordering_and_hashes_identical": true,
+    "normal_repeat_identical": true,
+    "temporary_artifacts_deleted": true
+  },
+  "execution_status": "PASS",
+  "mismatch_counters": {
+    "absolute_path_identity_mismatch": 0,
+    "classification_rule_mismatch": 0,
+    "committed_artifact_hash_mismatch": 0,
+    "dataset_separation_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "normal_repeat_mismatch": 0,
+    "pattern_reporting_mismatch": 0,
+    "relocation_mismatch": 0,
+    "required_coverage_mismatch": 0,
+    "statistics_row_count_or_order_mismatch": 0,
+    "statistics_value_preservation_mismatch": 0,
+    "upstream_identity_decision_or_schema_mismatch": 0
+  },
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "changed_record_statistics_or_complete_hash_blocked": true,
+      "dataset_pooling_blocked": true,
+      "external_process_or_absolute_path_leakage_blocked": true,
+      "jsonl_outcome_record_parsing_attempt_blocked": true,
+      "jsonl_parse_guard_fail_closed": true,
+      "missing_reordered_or_suppressed_statistics_row_blocked": true,
+      "mt5_ea_network_or_external_process_blocked": true,
+      "optimization_or_parameter_recommendation_blocked": true,
+      "positive_share_mislabel_blocked": true,
+      "preferred_dimension_or_ranking_request_blocked": true,
+      "profitability_edge_robustness_or_readiness_claim_blocked": true,
+      "prohibited_import_guard_fail_closed": true,
+      "statistics_recomputation_attempt_blocked": true,
+      "tp_sl_cost_cash_pl_lot_or_order_simulation_blocked": true,
+      "wrong_b7_b7a_or_b8_identity_or_decision_blocked": true
+    },
+    "test_count": 15,
+    "tests_passed": 15
+  },
+  "output_hashes": {
+    "complete_sha256": "f93f0d22e0387a691bf55e63cc612283741cc5db6e14aaeeb2111ff36dff92b5",
+    "report_json_sha256": "d0c4c3e3f8e97a27e2d76e144304b2731c94044052e71b7d4a31818ef4d52c8c",
+    "report_markdown_sha256": "8a6251570d522512f1826b5f47b4fb2a2e59e473c9efff3e219a4ae5c42999d9"
+  },
+  "prohibited_modules": [],
+  "report": {
+    "b7_jsonl_records_parsed": false,
+    "classification_counts_by_dataset": {
+      "FJ_2023_2025_GOLD_H1": {
+        "BOTH_NEGATIVE": 7,
+        "BOTH_POSITIVE": 11,
+        "MIXED_OR_ZERO": 6
+      },
+      "FP_FQ_2020_2022_GOLD_H1": {
+        "BOTH_NEGATIVE": 12,
+        "BOTH_POSITIVE": 7,
+        "MIXED_OR_ZERO": 5
+      }
+    },
+    "cross_period_observation_counts": {
+      "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED": 8
+    },
+    "dataset_order": [
+      "FJ",
+      "FQ"
+    ],
+    "dataset_separation": "PROVEN",
+    "direction_order": [
+      "LONG",
+      "SHORT"
+    ],
+    "horizon_order": [
+      "1",
+      "3",
+      "6",
+      "12"
+    ],
+    "statistics_recomputed": false,
+    "statistics_rows": 72
+  },
+  "runtime_audit": {
+    "blocked_import_requests": 5,
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "file_access": {
+      "blocked_jsonl_parse_attempt_count": 1,
+      "future_ohlc_read_count": 0,
+      "hash_read_operation_counts": {
+        "b7_contract": 1,
+        "b7_fj_records": 1,
+        "b7_fq_records": 1,
+        "b7_replay": 1,
+        "b7_schema": 1,
+        "b7_source_manifest": 1,
+        "b7_statistics": 1,
+        "b7_summary": 1,
+        "b7a_contract": 1,
+        "b7a_schema": 1,
+        "b7a_summary": 1,
+        "b8_contract": 1,
+        "b8_schema": 1,
+        "b8_summary": 1
+      },
+      "jsonl_outcome_record_parse_count": 0,
+      "parse_read_operation_counts": {
+        "b7_contract": 1,
+        "b7_replay": 1,
+        "b7_schema": 1,
+        "b7_source_manifest": 1,
+        "b7_statistics": 1,
+        "b7_summary": 2,
+        "b7a_contract": 1,
+        "b7a_schema": 1,
+        "b7a_summary": 2,
+        "b8_contract": 2,
+        "b8_schema": 1,
+        "b8_summary": 1
+      },
+      "raw_broker_csv_read_count": 0,
+      "unauthorized_successful_read_count": 0
+    },
+    "prohibited_execution_counts": {
+      "adapter_call_count": 0,
+      "b7_runner_call_count": 0,
+      "b7a_auditor_call_count": 0,
+      "cash_pl_calculation_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "edge_claim_count": 0,
+      "external_process_success_count": 0,
+      "future_ohlc_read_count": 0,
+      "lot_simulation_count": 0,
+      "mt5_execution_count": 0,
+      "network_execution_count": 0,
+      "optimization_count": 0,
+      "order_simulation_count": 0,
+      "outcome_recomputation_count": 0,
+      "profitability_claim_count": 0,
+      "raw_broker_csv_read_count": 0,
+      "robustness_claim_count": 0,
+      "statistics_recomputation_count": 0,
+      "strategy_change_count": 0,
+      "tp_sl_calculation_count": 0,
+      "trading_cost_calculation_count": 0,
+      "trading_readiness_claim_count": 0
+    },
+    "prohibited_import_counts": {
+      "adapter_import_count": 0,
+      "b7_runner_import_count": 0,
+      "b7a_auditor_import_count": 0,
+      "detector_import_count": 0,
+      "mt5_import_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b9_sealed_outcome_interpretation_report.v1",
+  "upstream_validation": {
+    "b7": {
+      "canonical_summary_sha256": "0e105e863e7abaa5b7dcf1cff24daed80efbf43c6c7723f5d28f63bc0bbde1a8",
+      "decision": "FR_PREP_B7_PASS_SEALED_REAL_OBSERVATIONAL_OUTCOME_EXECUTION",
+      "identity_validated": true,
+      "schema_validated": true,
+      "summary_projection_validated": true
+    },
+    "b7a": {
+      "canonical_summary_sha256": "e65d1e67d9963bae6512f37d8831eeb0bd77083dc5c9dd5a44822a0842b25f5d",
+      "decision": "FR_PREP_B7A_PASS_INDEPENDENT_REAL_OUTCOME_AUDIT",
+      "identity_validated": true,
+      "schema_validated": true,
+      "summary_projection_validated": true
+    },
+    "b8": {
+      "canonical_summary_sha256": "1789e1cc763991b539f633375eca37f9610b5429da91a2125fb2afc82b9d932f",
+      "decision": "FR_PREP_B8_PASS_OUTCOME_INTERPRETATION_CONTRACT_FROZEN",
+      "identity_validated": true,
+      "schema_validated": true,
+      "summary_projection_validated": true
+    }
+  }
+}

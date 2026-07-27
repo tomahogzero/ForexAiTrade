@@ -1,0 +1,3088 @@
+{
+  "b8_vocabulary_enforced": true,
+  "canonical_report_sha256": "3718c757ef4e893508d005b8bf93ac2be083a4c424f24d162d19aee2fc423d48",
+  "checkpoint": "FR_PREP_B9",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "descriptive_interpretation": "COMPLETED_UNDER_FROZEN_CONTRACT",
+    "descriptive_statistics_integrity": "PROVEN",
+    "next_allowed_scope": "RESEARCH_DISPOSITION_CONTRACT_DESIGN_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "outcome_record_integrity": "PROVEN",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "robustness": "NOT_ESTABLISHED",
+    "strategy_edge": "NOT_ESTABLISHED"
+  },
+  "dataset_level_coverage": [
+    {
+      "dataset": "FJ",
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "event_status_counts": {
+        "FULLY_EVALUABLE": 1059,
+        "NOT_EVALUABLE": 2,
+        "PARTIALLY_EVALUABLE": 18
+      },
+      "events": 1079,
+      "evidence_statement": "DATA_COVERAGE_LIMITATION",
+      "h12_material_limitation_retained": false,
+      "horizon_coverage": [
+        {
+          "evaluable_events": 1077,
+          "evaluation_coverage": "0.998146",
+          "horizon": "1",
+          "total_events": 1079
+        },
+        {
+          "evaluable_events": 1076,
+          "evaluation_coverage": "0.997220",
+          "horizon": "3",
+          "total_events": 1079
+        },
+        {
+          "evaluable_events": 1071,
+          "evaluation_coverage": "0.992586",
+          "horizon": "6",
+          "total_events": 1079
+        },
+        {
+          "evaluable_events": 1059,
+          "evaluation_coverage": "0.981464",
+          "horizon": "12",
+          "total_events": 1079
+        }
+      ],
+      "material_limitation": false
+    },
+    {
+      "dataset": "FQ",
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "event_status_counts": {
+        "FULLY_EVALUABLE": 154,
+        "NOT_EVALUABLE": 26,
+        "PARTIALLY_EVALUABLE": 313
+      },
+      "events": 493,
+      "evidence_statement": "DATA_COVERAGE_LIMITATION",
+      "h12_material_limitation_retained": true,
+      "horizon_coverage": [
+        {
+          "evaluable_events": 467,
+          "evaluation_coverage": "0.947262",
+          "horizon": "1",
+          "total_events": 493
+        },
+        {
+          "evaluable_events": 406,
+          "evaluation_coverage": "0.823529",
+          "horizon": "3",
+          "total_events": 493
+        },
+        {
+          "evaluable_events": 264,
+          "evaluation_coverage": "0.535497",
+          "horizon": "6",
+          "total_events": 493
+        },
+        {
+          "evaluable_events": 154,
+          "evaluation_coverage": "0.312373",
+          "horizon": "12",
+          "total_events": 493
+        }
+      ],
+      "material_limitation": true
+    }
+  ],
+  "dataset_pooling_performed": false,
+  "deterministic_descriptive_observations": {
+    "cross_period_comparisons": [
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "176",
+                "evaluation_coverage": "1.000000",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "216",
+                "evaluation_coverage": "1.000000",
+                "total_events": "216",
+                "year": "2024"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "196",
+                "evaluation_coverage": "1.000000",
+                "total_events": "196",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "75",
+                "evaluation_coverage": "0.949367",
+                "total_events": "79",
+                "year": "2020"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "84",
+                "evaluation_coverage": "0.954545",
+                "total_events": "88",
+                "year": "2021"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "82",
+                "evaluation_coverage": "0.964706",
+                "total_events": "85",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "LONG",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "1"
+      },
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "176",
+                "evaluation_coverage": "1.000000",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "216",
+                "evaluation_coverage": "1.000000",
+                "total_events": "216",
+                "year": "2024"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "196",
+                "evaluation_coverage": "1.000000",
+                "total_events": "196",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "67",
+                "evaluation_coverage": "0.848101",
+                "total_events": "79",
+                "year": "2020"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "74",
+                "evaluation_coverage": "0.840909",
+                "total_events": "88",
+                "year": "2021"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "72",
+                "evaluation_coverage": "0.847059",
+                "total_events": "85",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "LONG",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "3"
+      },
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "175",
+                "evaluation_coverage": "0.994318",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "215",
+                "evaluation_coverage": "0.995370",
+                "total_events": "216",
+                "year": "2024"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "196",
+                "evaluation_coverage": "1.000000",
+                "total_events": "196",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "44",
+                "evaluation_coverage": "0.556962",
+                "total_events": "79",
+                "year": "2020"
+              },
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "44",
+                "evaluation_coverage": "0.500000",
+                "total_events": "88",
+                "year": "2021"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "47",
+                "evaluation_coverage": "0.552941",
+                "total_events": "85",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "LONG",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "6"
+      },
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "172",
+                "evaluation_coverage": "0.977273",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "211",
+                "evaluation_coverage": "0.976852",
+                "total_events": "216",
+                "year": "2024"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "196",
+                "evaluation_coverage": "1.000000",
+                "total_events": "196",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "28",
+                "evaluation_coverage": "0.354430",
+                "total_events": "79",
+                "year": "2020"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "31",
+                "evaluation_coverage": "0.352273",
+                "total_events": "88",
+                "year": "2021"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "26",
+                "evaluation_coverage": "0.305882",
+                "total_events": "85",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "LONG",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "12"
+      },
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "176",
+                "evaluation_coverage": "1.000000",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "158",
+                "evaluation_coverage": "0.987500",
+                "total_events": "160",
+                "year": "2024"
+              },
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "155",
+                "evaluation_coverage": "1.000000",
+                "total_events": "155",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "65",
+                "evaluation_coverage": "0.928571",
+                "total_events": "70",
+                "year": "2020"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "86",
+                "evaluation_coverage": "0.924731",
+                "total_events": "93",
+                "year": "2021"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "75",
+                "evaluation_coverage": "0.961538",
+                "total_events": "78",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "SHORT",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "1"
+      },
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "175",
+                "evaluation_coverage": "0.994318",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "158",
+                "evaluation_coverage": "0.987500",
+                "total_events": "160",
+                "year": "2024"
+              },
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "155",
+                "evaluation_coverage": "1.000000",
+                "total_events": "155",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "55",
+                "evaluation_coverage": "0.785714",
+                "total_events": "70",
+                "year": "2020"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "73",
+                "evaluation_coverage": "0.784946",
+                "total_events": "93",
+                "year": "2021"
+              },
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "65",
+                "evaluation_coverage": "0.833333",
+                "total_events": "78",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "SHORT",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "3"
+      },
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "174",
+                "evaluation_coverage": "0.988636",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "156",
+                "evaluation_coverage": "0.975000",
+                "total_events": "160",
+                "year": "2024"
+              },
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "155",
+                "evaluation_coverage": "1.000000",
+                "total_events": "155",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "41",
+                "evaluation_coverage": "0.585714",
+                "total_events": "70",
+                "year": "2020"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "42",
+                "evaluation_coverage": "0.451613",
+                "total_events": "93",
+                "year": "2021"
+              },
+              {
+                "classification": "BOTH_POSITIVE",
+                "evaluable_events": "46",
+                "evaluation_coverage": "0.589744",
+                "total_events": "78",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "SHORT",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "6"
+      },
+      {
+        "datasets": [
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FJ_2023_2025_GOLD_H1",
+            "years": [
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "172",
+                "evaluation_coverage": "0.977273",
+                "total_events": "176",
+                "year": "2023"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "156",
+                "evaluation_coverage": "0.975000",
+                "total_events": "160",
+                "year": "2024"
+              },
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "152",
+                "evaluation_coverage": "0.980645",
+                "total_events": "155",
+                "year": "2025"
+              }
+            ]
+          },
+          {
+            "coverage_statement": "DATA_COVERAGE_LIMITATION",
+            "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+            "years": [
+              {
+                "classification": "BOTH_NEGATIVE",
+                "evaluable_events": "24",
+                "evaluation_coverage": "0.342857",
+                "total_events": "70",
+                "year": "2020"
+              },
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "20",
+                "evaluation_coverage": "0.215054",
+                "total_events": "93",
+                "year": "2021"
+              },
+              {
+                "classification": "MIXED_OR_ZERO",
+                "evaluable_events": "25",
+                "evaluation_coverage": "0.320513",
+                "total_events": "78",
+                "year": "2022"
+              }
+            ]
+          }
+        ],
+        "direction": "SHORT",
+        "evidence_statement": "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED",
+        "horizon": "12"
+      }
+    ],
+    "cross_period_observation_counts": {
+      "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED": 8
+    },
+    "horizon_patterns": [
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "176",
+            "evaluation_coverage": "1.000000",
+            "horizon": "1",
+            "total_events": "176"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "176",
+            "evaluation_coverage": "1.000000",
+            "horizon": "3",
+            "total_events": "176"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "175",
+            "evaluation_coverage": "0.994318",
+            "horizon": "6",
+            "total_events": "176"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "172",
+            "evaluation_coverage": "0.977273",
+            "horizon": "12",
+            "total_events": "176"
+          }
+        ],
+        "year": "2023"
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "216",
+            "evaluation_coverage": "1.000000",
+            "horizon": "1",
+            "total_events": "216"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "216",
+            "evaluation_coverage": "1.000000",
+            "horizon": "3",
+            "total_events": "216"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "215",
+            "evaluation_coverage": "0.995370",
+            "horizon": "6",
+            "total_events": "216"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "211",
+            "evaluation_coverage": "0.976852",
+            "horizon": "12",
+            "total_events": "216"
+          }
+        ],
+        "year": "2024"
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "horizon": "1",
+            "total_events": "196"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "horizon": "3",
+            "total_events": "196"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "horizon": "6",
+            "total_events": "196"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "horizon": "12",
+            "total_events": "196"
+          }
+        ],
+        "year": "2025"
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "176",
+            "evaluation_coverage": "1.000000",
+            "horizon": "1",
+            "total_events": "176"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "175",
+            "evaluation_coverage": "0.994318",
+            "horizon": "3",
+            "total_events": "176"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "174",
+            "evaluation_coverage": "0.988636",
+            "horizon": "6",
+            "total_events": "176"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "172",
+            "evaluation_coverage": "0.977273",
+            "horizon": "12",
+            "total_events": "176"
+          }
+        ],
+        "year": "2023"
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "158",
+            "evaluation_coverage": "0.987500",
+            "horizon": "1",
+            "total_events": "160"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "158",
+            "evaluation_coverage": "0.987500",
+            "horizon": "3",
+            "total_events": "160"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "156",
+            "evaluation_coverage": "0.975000",
+            "horizon": "6",
+            "total_events": "160"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "156",
+            "evaluation_coverage": "0.975000",
+            "horizon": "12",
+            "total_events": "160"
+          }
+        ],
+        "year": "2024"
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "155",
+            "evaluation_coverage": "1.000000",
+            "horizon": "1",
+            "total_events": "155"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "155",
+            "evaluation_coverage": "1.000000",
+            "horizon": "3",
+            "total_events": "155"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "155",
+            "evaluation_coverage": "1.000000",
+            "horizon": "6",
+            "total_events": "155"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "152",
+            "evaluation_coverage": "0.980645",
+            "horizon": "12",
+            "total_events": "155"
+          }
+        ],
+        "year": "2025"
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "75",
+            "evaluation_coverage": "0.949367",
+            "horizon": "1",
+            "total_events": "79"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "67",
+            "evaluation_coverage": "0.848101",
+            "horizon": "3",
+            "total_events": "79"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "44",
+            "evaluation_coverage": "0.556962",
+            "horizon": "6",
+            "total_events": "79"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "28",
+            "evaluation_coverage": "0.354430",
+            "horizon": "12",
+            "total_events": "79"
+          }
+        ],
+        "year": "2020"
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "84",
+            "evaluation_coverage": "0.954545",
+            "horizon": "1",
+            "total_events": "88"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "74",
+            "evaluation_coverage": "0.840909",
+            "horizon": "3",
+            "total_events": "88"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "44",
+            "evaluation_coverage": "0.500000",
+            "horizon": "6",
+            "total_events": "88"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "31",
+            "evaluation_coverage": "0.352273",
+            "horizon": "12",
+            "total_events": "88"
+          }
+        ],
+        "year": "2021"
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "82",
+            "evaluation_coverage": "0.964706",
+            "horizon": "1",
+            "total_events": "85"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "72",
+            "evaluation_coverage": "0.847059",
+            "horizon": "3",
+            "total_events": "85"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "47",
+            "evaluation_coverage": "0.552941",
+            "horizon": "6",
+            "total_events": "85"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "26",
+            "evaluation_coverage": "0.305882",
+            "horizon": "12",
+            "total_events": "85"
+          }
+        ],
+        "year": "2022"
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "65",
+            "evaluation_coverage": "0.928571",
+            "horizon": "1",
+            "total_events": "70"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "55",
+            "evaluation_coverage": "0.785714",
+            "horizon": "3",
+            "total_events": "70"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "41",
+            "evaluation_coverage": "0.585714",
+            "horizon": "6",
+            "total_events": "70"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "24",
+            "evaluation_coverage": "0.342857",
+            "horizon": "12",
+            "total_events": "70"
+          }
+        ],
+        "year": "2020"
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "86",
+            "evaluation_coverage": "0.924731",
+            "horizon": "1",
+            "total_events": "93"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "73",
+            "evaluation_coverage": "0.784946",
+            "horizon": "3",
+            "total_events": "93"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "42",
+            "evaluation_coverage": "0.451613",
+            "horizon": "6",
+            "total_events": "93"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "20",
+            "evaluation_coverage": "0.215054",
+            "horizon": "12",
+            "total_events": "93"
+          }
+        ],
+        "year": "2021"
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "HORIZON_PATTERN_OBSERVED",
+        "horizons": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "75",
+            "evaluation_coverage": "0.961538",
+            "horizon": "1",
+            "total_events": "78"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "65",
+            "evaluation_coverage": "0.833333",
+            "horizon": "3",
+            "total_events": "78"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "46",
+            "evaluation_coverage": "0.589744",
+            "horizon": "6",
+            "total_events": "78"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "25",
+            "evaluation_coverage": "0.320513",
+            "horizon": "12",
+            "total_events": "78"
+          }
+        ],
+        "year": "2022"
+      }
+    ],
+    "mfe_mae_relationships": [
+      {
+        "coverage": {
+          "evaluable_events": "172",
+          "evaluation_coverage": "0.977273",
+          "total_events": "176"
+        },
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "43.992455",
+          "median_bps": "30.972660",
+          "p25_bps": "14.657966",
+          "p75_bps": "63.396010"
+        },
+        "mfe_bps": {
+          "mean_bps": "46.587577",
+          "median_bps": "33.762450",
+          "p25_bps": "15.059782",
+          "p75_bps": "52.884034"
+        },
+        "year": "2023"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "211",
+          "evaluation_coverage": "0.976852",
+          "total_events": "216"
+        },
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "42.960408",
+          "median_bps": "33.781621",
+          "p25_bps": "11.083740",
+          "p75_bps": "55.966676"
+        },
+        "mfe_bps": {
+          "mean_bps": "51.257237",
+          "median_bps": "42.901345",
+          "p25_bps": "19.118325",
+          "p75_bps": "70.589178"
+        },
+        "year": "2024"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "196",
+          "evaluation_coverage": "1.000000",
+          "total_events": "196"
+        },
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "56.046767",
+          "median_bps": "39.513310",
+          "p25_bps": "18.717935",
+          "p75_bps": "78.887231"
+        },
+        "mfe_bps": {
+          "mean_bps": "58.906043",
+          "median_bps": "47.826934",
+          "p25_bps": "21.866848",
+          "p75_bps": "81.255376"
+        },
+        "year": "2025"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "172",
+          "evaluation_coverage": "0.977273",
+          "total_events": "176"
+        },
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "40.946626",
+          "median_bps": "26.767508",
+          "p25_bps": "13.207613",
+          "p75_bps": "55.659171"
+        },
+        "mfe_bps": {
+          "mean_bps": "43.953083",
+          "median_bps": "34.453459",
+          "p25_bps": "15.142727",
+          "p75_bps": "62.258364"
+        },
+        "year": "2023"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "156",
+          "evaluation_coverage": "0.975000",
+          "total_events": "160"
+        },
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "48.828033",
+          "median_bps": "39.726947",
+          "p25_bps": "25.243984",
+          "p75_bps": "63.181172"
+        },
+        "mfe_bps": {
+          "mean_bps": "47.808234",
+          "median_bps": "35.109908",
+          "p25_bps": "12.326181",
+          "p75_bps": "70.587302"
+        },
+        "year": "2024"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "152",
+          "evaluation_coverage": "0.980645",
+          "total_events": "155"
+        },
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "64.592394",
+          "median_bps": "55.921540",
+          "p25_bps": "25.800098",
+          "p75_bps": "84.624944"
+        },
+        "mfe_bps": {
+          "mean_bps": "71.128914",
+          "median_bps": "40.086884",
+          "p25_bps": "18.779434",
+          "p75_bps": "86.831007"
+        },
+        "year": "2025"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "28",
+          "evaluation_coverage": "0.354430",
+          "total_events": "79"
+        },
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "84.211926",
+          "median_bps": "53.797930",
+          "p25_bps": "9.376102",
+          "p75_bps": "89.759622"
+        },
+        "mfe_bps": {
+          "mean_bps": "76.208681",
+          "median_bps": "46.725898",
+          "p25_bps": "18.690525",
+          "p75_bps": "97.324342"
+        },
+        "year": "2020"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "31",
+          "evaluation_coverage": "0.352273",
+          "total_events": "88"
+        },
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "38.866321",
+          "median_bps": "28.572374",
+          "p25_bps": "13.732480",
+          "p75_bps": "50.557884"
+        },
+        "mfe_bps": {
+          "mean_bps": "47.832291",
+          "median_bps": "40.462328",
+          "p25_bps": "21.003696",
+          "p75_bps": "63.166455"
+        },
+        "year": "2021"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "26",
+          "evaluation_coverage": "0.305882",
+          "total_events": "85"
+        },
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "55.254778",
+          "median_bps": "51.449886",
+          "p25_bps": "35.376353",
+          "p75_bps": "61.868328"
+        },
+        "mfe_bps": {
+          "mean_bps": "33.206203",
+          "median_bps": "30.691366",
+          "p25_bps": "10.566122",
+          "p75_bps": "48.876474"
+        },
+        "year": "2022"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "24",
+          "evaluation_coverage": "0.342857",
+          "total_events": "70"
+        },
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "79.772786",
+          "median_bps": "50.445636",
+          "p25_bps": "28.404863",
+          "p75_bps": "65.734500"
+        },
+        "mfe_bps": {
+          "mean_bps": "58.944751",
+          "median_bps": "36.046024",
+          "p25_bps": "13.497294",
+          "p75_bps": "58.867828"
+        },
+        "year": "2020"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "20",
+          "evaluation_coverage": "0.215054",
+          "total_events": "93"
+        },
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "44.449218",
+          "median_bps": "32.120208",
+          "p25_bps": "24.012396",
+          "p75_bps": "43.604086"
+        },
+        "mfe_bps": {
+          "mean_bps": "31.275241",
+          "median_bps": "24.240134",
+          "p25_bps": "15.431713",
+          "p75_bps": "40.179969"
+        },
+        "year": "2021"
+      },
+      {
+        "coverage": {
+          "evaluable_events": "25",
+          "evaluation_coverage": "0.320513",
+          "total_events": "78"
+        },
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "MFE_MAE_RELATIONSHIP_OBSERVED",
+        "horizon": "12",
+        "mae_bps": {
+          "mean_bps": "48.922908",
+          "median_bps": "36.011318",
+          "p25_bps": "16.590009",
+          "p75_bps": "69.090110"
+        },
+        "mfe_bps": {
+          "mean_bps": "43.176314",
+          "median_bps": "25.817241",
+          "p25_bps": "17.848562",
+          "p75_bps": "58.338915"
+        },
+        "year": "2022"
+      }
+    ],
+    "return_classification_counts": {
+      "FJ_2023_2025_GOLD_H1": {
+        "BOTH_NEGATIVE": 7,
+        "BOTH_POSITIVE": 11,
+        "MIXED_OR_ZERO": 6
+      },
+      "FP_FQ_2020_2022_GOLD_H1": {
+        "BOTH_NEGATIVE": 12,
+        "BOTH_POSITIVE": 7,
+        "MIXED_OR_ZERO": 5
+      }
+    },
+    "year_variation": [
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "1",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "176",
+            "evaluation_coverage": "1.000000",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "216",
+            "evaluation_coverage": "1.000000",
+            "total_events": "216",
+            "year": "2024"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "total_events": "196",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "3",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "176",
+            "evaluation_coverage": "1.000000",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "216",
+            "evaluation_coverage": "1.000000",
+            "total_events": "216",
+            "year": "2024"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "total_events": "196",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "6",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "175",
+            "evaluation_coverage": "0.994318",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "215",
+            "evaluation_coverage": "0.995370",
+            "total_events": "216",
+            "year": "2024"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "total_events": "196",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "12",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "172",
+            "evaluation_coverage": "0.977273",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "211",
+            "evaluation_coverage": "0.976852",
+            "total_events": "216",
+            "year": "2024"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "196",
+            "evaluation_coverage": "1.000000",
+            "total_events": "196",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "1",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "176",
+            "evaluation_coverage": "1.000000",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "158",
+            "evaluation_coverage": "0.987500",
+            "total_events": "160",
+            "year": "2024"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "155",
+            "evaluation_coverage": "1.000000",
+            "total_events": "155",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "3",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "175",
+            "evaluation_coverage": "0.994318",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "158",
+            "evaluation_coverage": "0.987500",
+            "total_events": "160",
+            "year": "2024"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "155",
+            "evaluation_coverage": "1.000000",
+            "total_events": "155",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "6",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "174",
+            "evaluation_coverage": "0.988636",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "156",
+            "evaluation_coverage": "0.975000",
+            "total_events": "160",
+            "year": "2024"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "155",
+            "evaluation_coverage": "1.000000",
+            "total_events": "155",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "12",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "172",
+            "evaluation_coverage": "0.977273",
+            "total_events": "176",
+            "year": "2023"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "156",
+            "evaluation_coverage": "0.975000",
+            "total_events": "160",
+            "year": "2024"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "152",
+            "evaluation_coverage": "0.980645",
+            "total_events": "155",
+            "year": "2025"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "1",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "75",
+            "evaluation_coverage": "0.949367",
+            "total_events": "79",
+            "year": "2020"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "84",
+            "evaluation_coverage": "0.954545",
+            "total_events": "88",
+            "year": "2021"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "82",
+            "evaluation_coverage": "0.964706",
+            "total_events": "85",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "3",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "67",
+            "evaluation_coverage": "0.848101",
+            "total_events": "79",
+            "year": "2020"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "74",
+            "evaluation_coverage": "0.840909",
+            "total_events": "88",
+            "year": "2021"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "72",
+            "evaluation_coverage": "0.847059",
+            "total_events": "85",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "6",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "44",
+            "evaluation_coverage": "0.556962",
+            "total_events": "79",
+            "year": "2020"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "44",
+            "evaluation_coverage": "0.500000",
+            "total_events": "88",
+            "year": "2021"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "47",
+            "evaluation_coverage": "0.552941",
+            "total_events": "85",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "LONG",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "12",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "28",
+            "evaluation_coverage": "0.354430",
+            "total_events": "79",
+            "year": "2020"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "31",
+            "evaluation_coverage": "0.352273",
+            "total_events": "88",
+            "year": "2021"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "26",
+            "evaluation_coverage": "0.305882",
+            "total_events": "85",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": null,
+        "horizon": "1",
+        "repeated_classification": "BOTH_NEGATIVE",
+        "years": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "65",
+            "evaluation_coverage": "0.928571",
+            "total_events": "70",
+            "year": "2020"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "86",
+            "evaluation_coverage": "0.924731",
+            "total_events": "93",
+            "year": "2021"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "75",
+            "evaluation_coverage": "0.961538",
+            "total_events": "78",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "3",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "55",
+            "evaluation_coverage": "0.785714",
+            "total_events": "70",
+            "year": "2020"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "73",
+            "evaluation_coverage": "0.784946",
+            "total_events": "93",
+            "year": "2021"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "65",
+            "evaluation_coverage": "0.833333",
+            "total_events": "78",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "6",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "41",
+            "evaluation_coverage": "0.585714",
+            "total_events": "70",
+            "year": "2020"
+          },
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "42",
+            "evaluation_coverage": "0.451613",
+            "total_events": "93",
+            "year": "2021"
+          },
+          {
+            "classification": "BOTH_POSITIVE",
+            "evaluable_events": "46",
+            "evaluation_coverage": "0.589744",
+            "total_events": "78",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "direction": "SHORT",
+        "evidence_statement": "YEAR_VARIATION_OBSERVED",
+        "horizon": "12",
+        "repeated_classification": null,
+        "years": [
+          {
+            "classification": "BOTH_NEGATIVE",
+            "evaluable_events": "24",
+            "evaluation_coverage": "0.342857",
+            "total_events": "70",
+            "year": "2020"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "20",
+            "evaluation_coverage": "0.215054",
+            "total_events": "93",
+            "year": "2021"
+          },
+          {
+            "classification": "MIXED_OR_ZERO",
+            "evaluable_events": "25",
+            "evaluation_coverage": "0.320513",
+            "total_events": "78",
+            "year": "2022"
+          }
+        ]
+      }
+    ]
+  },
+  "evidence_integrity": {
+    "b7_outcomes_independently_audited": true,
+    "b7_statistics_independently_audited": true,
+    "dataset_separation": "PROVEN",
+    "evidence_statements": [
+      "RECORD_INTEGRITY_PROVEN",
+      "DESCRIPTIVE_OUTCOMES_AVAILABLE"
+    ],
+    "record_and_statistics_hashes": {
+      "complete_sha256": "1117ab0be8fae1a8a02ef345606f62cc287c53dab3d5316607b263f055e67780",
+      "fj_records_sha256": "07cb448e004d09706253c00de6823a5d93c81617eef709043cbdd478f4ac8f1e",
+      "fq_records_sha256": "bdff2e961795a159e3c0b4d1730214a5a34bbc869b34544af175598e5685e0c6",
+      "statistics_sha256": "b0f94272b133ebebc72e33f84f717316a91406abd44b72f7601b3d4f4232587c"
+    },
+    "upstream_bindings": {
+      "b7": {
+        "canonical_summary_sha256": "0e105e863e7abaa5b7dcf1cff24daed80efbf43c6c7723f5d28f63bc0bbde1a8",
+        "decision": "FR_PREP_B7_PASS_SEALED_REAL_OBSERVATIONAL_OUTCOME_EXECUTION",
+        "identity_validated": true,
+        "schema_validated": true,
+        "summary_projection_validated": true
+      },
+      "b7a": {
+        "canonical_summary_sha256": "e65d1e67d9963bae6512f37d8831eeb0bd77083dc5c9dd5a44822a0842b25f5d",
+        "decision": "FR_PREP_B7A_PASS_INDEPENDENT_REAL_OUTCOME_AUDIT",
+        "identity_validated": true,
+        "schema_validated": true,
+        "summary_projection_validated": true
+      },
+      "b8": {
+        "canonical_summary_sha256": "1789e1cc763991b539f633375eca37f9610b5429da91a2125fb2afc82b9d932f",
+        "decision": "FR_PREP_B8_PASS_OUTCOME_INTERPRETATION_CONTRACT_FROZEN",
+        "identity_validated": true,
+        "schema_validated": true,
+        "summary_projection_validated": true
+      }
+    }
+  },
+  "full_descriptive_statistics": [
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "176",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "0.971745",
+      "median_bps": "0.249958",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.494318",
+      "p25_bps": "-10.085002",
+      "p75_bps": "7.836027",
+      "positive_share": "0.505682",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "176",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "0.453117",
+      "median_bps": "-1.268120",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.522727",
+      "p25_bps": "-14.931106",
+      "p75_bps": "15.133663",
+      "positive_share": "0.477273",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "175",
+      "evaluation_coverage": "0.994318",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "-1.477727",
+      "median_bps": "-2.720476",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.542857",
+      "p25_bps": "-20.361748",
+      "p75_bps": "18.834825",
+      "positive_share": "0.457143",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "172",
+      "evaluation_coverage": "0.977273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-0.763504",
+      "median_bps": "1.080259",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.494186",
+      "p25_bps": "-35.661876",
+      "p75_bps": "30.556278",
+      "positive_share": "0.505814",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "172",
+      "evaluation_coverage": "0.977273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "46.587577",
+      "median_bps": "33.762450",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "15.059782",
+      "p75_bps": "52.884034",
+      "positive_share": "0.994186",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.005814"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "172",
+      "evaluation_coverage": "0.977273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "43.992455",
+      "median_bps": "30.972660",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "14.657966",
+      "p75_bps": "63.396010",
+      "positive_share": "0.994186",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.005814"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "216",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "3.534104",
+      "median_bps": "3.190382",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.416667",
+      "p25_bps": "-4.283834",
+      "p75_bps": "11.268988",
+      "positive_share": "0.583333",
+      "total_events": "216",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "216",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "2.357234",
+      "median_bps": "2.235899",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.430556",
+      "p25_bps": "-11.168387",
+      "p75_bps": "15.416343",
+      "positive_share": "0.569444",
+      "total_events": "216",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "215",
+      "evaluation_coverage": "0.995370",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "3.857068",
+      "median_bps": "5.168025",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.437209",
+      "p25_bps": "-16.153209",
+      "p75_bps": "25.810399",
+      "positive_share": "0.562791",
+      "total_events": "216",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "211",
+      "evaluation_coverage": "0.976852",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "11.085417",
+      "median_bps": "10.564221",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.398104",
+      "p25_bps": "-21.641376",
+      "p75_bps": "48.400870",
+      "positive_share": "0.597156",
+      "total_events": "216",
+      "year": "2024",
+      "zero_share": "0.004739"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "211",
+      "evaluation_coverage": "0.976852",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "51.257237",
+      "median_bps": "42.901345",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "19.118325",
+      "p75_bps": "70.589178",
+      "positive_share": "1.000000",
+      "total_events": "216",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "211",
+      "evaluation_coverage": "0.976852",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "42.960408",
+      "median_bps": "33.781621",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "11.083740",
+      "p75_bps": "55.966676",
+      "positive_share": "0.995261",
+      "total_events": "216",
+      "year": "2024",
+      "zero_share": "0.004739"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "196",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "-2.418609",
+      "median_bps": "-1.993614",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.571429",
+      "p25_bps": "-10.831562",
+      "p75_bps": "8.970024",
+      "positive_share": "0.428571",
+      "total_events": "196",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "196",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "1.286762",
+      "median_bps": "2.299385",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.469388",
+      "p25_bps": "-21.233039",
+      "p75_bps": "21.697566",
+      "positive_share": "0.530612",
+      "total_events": "196",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "196",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "4.688772",
+      "median_bps": "5.949121",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.428571",
+      "p25_bps": "-22.157104",
+      "p75_bps": "31.951923",
+      "positive_share": "0.566327",
+      "total_events": "196",
+      "year": "2025",
+      "zero_share": "0.005102"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "196",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "9.088754",
+      "median_bps": "9.018650",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.459184",
+      "p25_bps": "-33.473487",
+      "p75_bps": "47.661346",
+      "positive_share": "0.540816",
+      "total_events": "196",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "196",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "58.906043",
+      "median_bps": "47.826934",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "21.866848",
+      "p75_bps": "81.255376",
+      "positive_share": "1.000000",
+      "total_events": "196",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "196",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "56.046767",
+      "median_bps": "39.513310",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "18.717935",
+      "p75_bps": "78.887231",
+      "positive_share": "1.000000",
+      "total_events": "196",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "176",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "0.388391",
+      "median_bps": "1.991822",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.448864",
+      "p25_bps": "-8.375110",
+      "p75_bps": "9.038098",
+      "positive_share": "0.551136",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "175",
+      "evaluation_coverage": "0.994318",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "1.684231",
+      "median_bps": "0.787691",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.462857",
+      "p25_bps": "-10.823747",
+      "p75_bps": "15.868782",
+      "positive_share": "0.537143",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "174",
+      "evaluation_coverage": "0.988636",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "2.495176",
+      "median_bps": "1.778888",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.471264",
+      "p25_bps": "-19.675642",
+      "p75_bps": "23.885860",
+      "positive_share": "0.528736",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "172",
+      "evaluation_coverage": "0.977273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-0.385416",
+      "median_bps": "0.533090",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.488372",
+      "p25_bps": "-32.049970",
+      "p75_bps": "33.968538",
+      "positive_share": "0.511628",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "172",
+      "evaluation_coverage": "0.977273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "43.953083",
+      "median_bps": "34.453459",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "15.142727",
+      "p75_bps": "62.258364",
+      "positive_share": "0.994186",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.005814"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "172",
+      "evaluation_coverage": "0.977273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "40.946626",
+      "median_bps": "26.767508",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "13.207613",
+      "p75_bps": "55.659171",
+      "positive_share": "0.994186",
+      "total_events": "176",
+      "year": "2023",
+      "zero_share": "0.005814"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "158",
+      "evaluation_coverage": "0.987500",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "-1.058755",
+      "median_bps": "-0.886070",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.531646",
+      "p25_bps": "-11.745170",
+      "p75_bps": "8.486993",
+      "positive_share": "0.468354",
+      "total_events": "160",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "158",
+      "evaluation_coverage": "0.987500",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "-2.333932",
+      "median_bps": "-5.883105",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.582278",
+      "p25_bps": "-22.712920",
+      "p75_bps": "13.597357",
+      "positive_share": "0.417722",
+      "total_events": "160",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "156",
+      "evaluation_coverage": "0.975000",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "-2.877492",
+      "median_bps": "-3.732608",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.576923",
+      "p25_bps": "-27.806276",
+      "p75_bps": "10.812914",
+      "positive_share": "0.423077",
+      "total_events": "160",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "156",
+      "evaluation_coverage": "0.975000",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-0.796269",
+      "median_bps": "-8.869449",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.538462",
+      "p25_bps": "-34.663366",
+      "p75_bps": "21.638604",
+      "positive_share": "0.461538",
+      "total_events": "160",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "156",
+      "evaluation_coverage": "0.975000",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "47.808234",
+      "median_bps": "35.109908",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "12.326181",
+      "p75_bps": "70.587302",
+      "positive_share": "0.987179",
+      "total_events": "160",
+      "year": "2024",
+      "zero_share": "0.012821"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "156",
+      "evaluation_coverage": "0.975000",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "48.828033",
+      "median_bps": "39.726947",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "25.243984",
+      "p75_bps": "63.181172",
+      "positive_share": "1.000000",
+      "total_events": "160",
+      "year": "2024",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "155",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "2.029795",
+      "median_bps": "-0.241152",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.503226",
+      "p25_bps": "-16.994702",
+      "p75_bps": "17.715406",
+      "positive_share": "0.496774",
+      "total_events": "155",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "155",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "3.066802",
+      "median_bps": "-8.009342",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.587097",
+      "p25_bps": "-29.610052",
+      "p75_bps": "25.522160",
+      "positive_share": "0.412903",
+      "total_events": "155",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "155",
+      "evaluation_coverage": "1.000000",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "0.581554",
+      "median_bps": "-4.209804",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.548387",
+      "p25_bps": "-40.925252",
+      "p75_bps": "25.451418",
+      "positive_share": "0.451613",
+      "total_events": "155",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "152",
+      "evaluation_coverage": "0.980645",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-1.647313",
+      "median_bps": "-12.954672",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.592105",
+      "p25_bps": "-53.143251",
+      "p75_bps": "33.663372",
+      "positive_share": "0.407895",
+      "total_events": "155",
+      "year": "2025",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "152",
+      "evaluation_coverage": "0.980645",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "71.128914",
+      "median_bps": "40.086884",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "18.779434",
+      "p75_bps": "86.831007",
+      "positive_share": "0.986842",
+      "total_events": "155",
+      "year": "2025",
+      "zero_share": "0.013158"
+    },
+    {
+      "dataset_id": "FJ_2023_2025_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "152",
+      "evaluation_coverage": "0.980645",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "64.592394",
+      "median_bps": "55.921540",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "25.800098",
+      "p75_bps": "84.624944",
+      "positive_share": "0.986842",
+      "total_events": "155",
+      "year": "2025",
+      "zero_share": "0.013158"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "75",
+      "evaluation_coverage": "0.949367",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "4.830612",
+      "median_bps": "1.150179",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.466667",
+      "p25_bps": "-10.439048",
+      "p75_bps": "12.864150",
+      "positive_share": "0.533333",
+      "total_events": "79",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "67",
+      "evaluation_coverage": "0.848101",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "7.620362",
+      "median_bps": "0.621002",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.492537",
+      "p25_bps": "-18.461778",
+      "p75_bps": "21.190126",
+      "positive_share": "0.507463",
+      "total_events": "79",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "44",
+      "evaluation_coverage": "0.556962",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "11.894275",
+      "median_bps": "3.109354",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.454545",
+      "p25_bps": "-17.462278",
+      "p75_bps": "42.552187",
+      "positive_share": "0.545455",
+      "total_events": "79",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "28",
+      "evaluation_coverage": "0.354430",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-11.316446",
+      "median_bps": "-3.612522",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.535714",
+      "p25_bps": "-29.042073",
+      "p75_bps": "50.947342",
+      "positive_share": "0.464286",
+      "total_events": "79",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "28",
+      "evaluation_coverage": "0.354430",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "76.208681",
+      "median_bps": "46.725898",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "18.690525",
+      "p75_bps": "97.324342",
+      "positive_share": "1.000000",
+      "total_events": "79",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "28",
+      "evaluation_coverage": "0.354430",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "84.211926",
+      "median_bps": "53.797930",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "9.376102",
+      "p75_bps": "89.759622",
+      "positive_share": "1.000000",
+      "total_events": "79",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "84",
+      "evaluation_coverage": "0.954545",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "3.309884",
+      "median_bps": "1.070280",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.440476",
+      "p25_bps": "-7.811675",
+      "p75_bps": "11.255550",
+      "positive_share": "0.559524",
+      "total_events": "88",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "74",
+      "evaluation_coverage": "0.840909",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "4.629333",
+      "median_bps": "6.320322",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.432432",
+      "p25_bps": "-8.957267",
+      "p75_bps": "16.086718",
+      "positive_share": "0.567568",
+      "total_events": "88",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "44",
+      "evaluation_coverage": "0.500000",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "6.730684",
+      "median_bps": "-2.565736",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.522727",
+      "p25_bps": "-11.538436",
+      "p75_bps": "22.060152",
+      "positive_share": "0.477273",
+      "total_events": "88",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "31",
+      "evaluation_coverage": "0.352273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "8.860934",
+      "median_bps": "9.496943",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.451613",
+      "p25_bps": "-19.923692",
+      "p75_bps": "34.865810",
+      "positive_share": "0.548387",
+      "total_events": "88",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "31",
+      "evaluation_coverage": "0.352273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "47.832291",
+      "median_bps": "40.462328",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "21.003696",
+      "p75_bps": "63.166455",
+      "positive_share": "1.000000",
+      "total_events": "88",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "31",
+      "evaluation_coverage": "0.352273",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "38.866321",
+      "median_bps": "28.572374",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "13.732480",
+      "p75_bps": "50.557884",
+      "positive_share": "0.967742",
+      "total_events": "88",
+      "year": "2021",
+      "zero_share": "0.032258"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "82",
+      "evaluation_coverage": "0.964706",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "-1.952985",
+      "median_bps": "-2.098550",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.560976",
+      "p25_bps": "-11.848891",
+      "p75_bps": "9.616800",
+      "positive_share": "0.439024",
+      "total_events": "85",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "72",
+      "evaluation_coverage": "0.847059",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "-9.216248",
+      "median_bps": "-5.683438",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.569444",
+      "p25_bps": "-25.649940",
+      "p75_bps": "16.106319",
+      "positive_share": "0.430556",
+      "total_events": "85",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "47",
+      "evaluation_coverage": "0.552941",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "-15.270046",
+      "median_bps": "-4.220727",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.574468",
+      "p25_bps": "-41.289952",
+      "p75_bps": "8.646198",
+      "positive_share": "0.425532",
+      "total_events": "85",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "26",
+      "evaluation_coverage": "0.305882",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-29.028498",
+      "median_bps": "-35.076726",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.653846",
+      "p25_bps": "-50.526879",
+      "p75_bps": "8.374226",
+      "positive_share": "0.346154",
+      "total_events": "85",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "26",
+      "evaluation_coverage": "0.305882",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "33.206203",
+      "median_bps": "30.691366",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "10.566122",
+      "p75_bps": "48.876474",
+      "positive_share": "0.961538",
+      "total_events": "85",
+      "year": "2022",
+      "zero_share": "0.038462"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "LONG",
+      "evaluable_events": "26",
+      "evaluation_coverage": "0.305882",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "55.254778",
+      "median_bps": "51.449886",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "35.376353",
+      "p75_bps": "61.868328",
+      "positive_share": "1.000000",
+      "total_events": "85",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "65",
+      "evaluation_coverage": "0.928571",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "-0.255798",
+      "median_bps": "-4.896575",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.615385",
+      "p25_bps": "-13.904904",
+      "p75_bps": "4.504162",
+      "positive_share": "0.384615",
+      "total_events": "70",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "55",
+      "evaluation_coverage": "0.785714",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "0.512882",
+      "median_bps": "-6.844086",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.618182",
+      "p25_bps": "-18.041554",
+      "p75_bps": "8.710948",
+      "positive_share": "0.381818",
+      "total_events": "70",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "41",
+      "evaluation_coverage": "0.585714",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "-11.998756",
+      "median_bps": "-14.228724",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.634146",
+      "p25_bps": "-43.834377",
+      "p75_bps": "9.511542",
+      "positive_share": "0.365854",
+      "total_events": "70",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "24",
+      "evaluation_coverage": "0.342857",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-31.158745",
+      "median_bps": "-10.185526",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.625000",
+      "p25_bps": "-59.313336",
+      "p75_bps": "18.356248",
+      "positive_share": "0.375000",
+      "total_events": "70",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "24",
+      "evaluation_coverage": "0.342857",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "58.944751",
+      "median_bps": "36.046024",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "13.497294",
+      "p75_bps": "58.867828",
+      "positive_share": "1.000000",
+      "total_events": "70",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "24",
+      "evaluation_coverage": "0.342857",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "79.772786",
+      "median_bps": "50.445636",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "28.404863",
+      "p75_bps": "65.734500",
+      "positive_share": "1.000000",
+      "total_events": "70",
+      "year": "2020",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "86",
+      "evaluation_coverage": "0.924731",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "-2.311503",
+      "median_bps": "-2.803724",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.604651",
+      "p25_bps": "-10.050281",
+      "p75_bps": "2.300034",
+      "positive_share": "0.395349",
+      "total_events": "93",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "73",
+      "evaluation_coverage": "0.784946",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "-11.331587",
+      "median_bps": "-8.348988",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.684932",
+      "p25_bps": "-27.266568",
+      "p75_bps": "2.136380",
+      "positive_share": "0.301370",
+      "total_events": "93",
+      "year": "2021",
+      "zero_share": "0.013699"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "42",
+      "evaluation_coverage": "0.451613",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "-7.328552",
+      "median_bps": "-7.314230",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.547619",
+      "p25_bps": "-32.123133",
+      "p75_bps": "6.405663",
+      "positive_share": "0.452381",
+      "total_events": "93",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "20",
+      "evaluation_coverage": "0.215054",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-10.241573",
+      "median_bps": "1.865306",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.500000",
+      "p25_bps": "-22.388302",
+      "p75_bps": "17.783170",
+      "positive_share": "0.500000",
+      "total_events": "93",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "20",
+      "evaluation_coverage": "0.215054",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "31.275241",
+      "median_bps": "24.240134",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "15.431713",
+      "p75_bps": "40.179969",
+      "positive_share": "1.000000",
+      "total_events": "93",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "20",
+      "evaluation_coverage": "0.215054",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "44.449218",
+      "median_bps": "32.120208",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "24.012396",
+      "p75_bps": "43.604086",
+      "positive_share": "1.000000",
+      "total_events": "93",
+      "year": "2021",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "75",
+      "evaluation_coverage": "0.961538",
+      "horizon_valid_h1_bars": "1",
+      "mean_bps": "-2.551178",
+      "median_bps": "-2.276362",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.586667",
+      "p25_bps": "-13.007314",
+      "p75_bps": "6.692480",
+      "positive_share": "0.413333",
+      "total_events": "78",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "65",
+      "evaluation_coverage": "0.833333",
+      "horizon_valid_h1_bars": "3",
+      "mean_bps": "0.468485",
+      "median_bps": "-1.465912",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.538462",
+      "p25_bps": "-16.549171",
+      "p75_bps": "12.432066",
+      "positive_share": "0.461538",
+      "total_events": "78",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "46",
+      "evaluation_coverage": "0.589744",
+      "horizon_valid_h1_bars": "6",
+      "mean_bps": "7.847091",
+      "median_bps": "1.861227",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.456522",
+      "p25_bps": "-15.848908",
+      "p75_bps": "28.002856",
+      "positive_share": "0.543478",
+      "total_events": "78",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "25",
+      "evaluation_coverage": "0.320513",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "-1.084996",
+      "median_bps": "2.719748",
+      "metric": "RETURN_BPS",
+      "negative_share": "0.480000",
+      "p25_bps": "-33.653422",
+      "p75_bps": "38.208642",
+      "positive_share": "0.520000",
+      "total_events": "78",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "25",
+      "evaluation_coverage": "0.320513",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "43.176314",
+      "median_bps": "25.817241",
+      "metric": "MFE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "17.848562",
+      "p75_bps": "58.338915",
+      "positive_share": "1.000000",
+      "total_events": "78",
+      "year": "2022",
+      "zero_share": "0.000000"
+    },
+    {
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "direction": "SHORT",
+      "evaluable_events": "25",
+      "evaluation_coverage": "0.320513",
+      "horizon_valid_h1_bars": "12",
+      "mean_bps": "48.922908",
+      "median_bps": "36.011318",
+      "metric": "MAE_BPS",
+      "negative_share": "0.000000",
+      "p25_bps": "16.590009",
+      "p75_bps": "69.090110",
+      "positive_share": "0.960000",
+      "total_events": "78",
+      "year": "2022",
+      "zero_share": "0.040000"
+    }
+  ],
+  "mandatory_limitations": [
+    "RETURNS_ARE_OBSERVATIONAL_CLOSE_TO_CLOSE_MOVEMENTS_NOT_TRADE_PL",
+    "MFE_MAE_ARE_OBSERVATIONAL_EXCURSIONS_NOT_TP_SL_EVIDENCE",
+    "NO_SPREAD_COMMISSION_SWAP_SLIPPAGE_OR_CASH_PL_INCLUDED",
+    "MISSING_EVALUATIONS_ARE_NOT_POSITIVE_ZERO_OR_NEGATIVE",
+    "NO_IMPUTATION_WEIGHTING_OR_POOLED_ADJUSTMENT",
+    "COVERAGE_DOES_NOT_PROVE_OR_DISPROVE_STRATEGY_PERFORMANCE",
+    "FQ_RETAINS_MATERIAL_LIMITATION_FROM_DATA_QUALITY_AND_COVERAGE"
+  ],
+  "outcome_records_parsed": false,
+  "report_scope": "SEALED_DESCRIPTIVE_OBSERVATIONS_ONLY",
+  "schema_version": "fr_prep_b9_observational_outcome_interpretation_report.v1",
+  "statistics_values_preserved_without_recomputation": true
+}

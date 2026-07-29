@@ -1,0 +1,500 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "canonical_summary_sha256": "a4c66d5b40705d21f12765c5e0dbe351e21cea42625a9ca54858a5f1a8c49c47",
+  "checkpoint": "FR_PREP_B10A",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "data_remediation_execution": "NOT_STARTED",
+    "disposition_execution": "COMPLETED",
+    "first_matching_rule": 2,
+    "next_allowed_scope": "DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "research_disposition_contract": "FROZEN",
+    "robustness": "NOT_ESTABLISHED",
+    "selected_disposition": "DATA_QUALITY_REMEDIATION_REQUIRED",
+    "strategy_edge": "NOT_ESTABLISHED"
+  },
+  "decision": "FR_PREP_B10A_PASS_SEALED_RESEARCH_DISPOSITION_DECISION",
+  "decision_record": {
+    "archive_or_holdout_action_executed": false,
+    "dataset_material_limitation_evidence": [
+      {
+        "dataset": "FJ",
+        "dataset_id": "FJ_2023_2025_GOLD_H1",
+        "event_status_counts": {
+          "FULLY_EVALUABLE": 1059,
+          "NOT_EVALUABLE": 2,
+          "PARTIALLY_EVALUABLE": 18
+        },
+        "events": 1079,
+        "h12_material_limitation_retained": false,
+        "horizon_coverage": [
+          {
+            "evaluable_events": 1077,
+            "evaluation_coverage": "0.998146",
+            "horizon": "1",
+            "total_events": 1079
+          },
+          {
+            "evaluable_events": 1076,
+            "evaluation_coverage": "0.997220",
+            "horizon": "3",
+            "total_events": 1079
+          },
+          {
+            "evaluable_events": 1071,
+            "evaluation_coverage": "0.992586",
+            "horizon": "6",
+            "total_events": 1079
+          },
+          {
+            "evaluable_events": 1059,
+            "evaluation_coverage": "0.981464",
+            "horizon": "12",
+            "total_events": 1079
+          }
+        ],
+        "material_limitation": false
+      },
+      {
+        "dataset": "FQ",
+        "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+        "event_status_counts": {
+          "FULLY_EVALUABLE": 154,
+          "NOT_EVALUABLE": 26,
+          "PARTIALLY_EVALUABLE": 313
+        },
+        "events": 493,
+        "h12_material_limitation_retained": true,
+        "horizon_coverage": [
+          {
+            "evaluable_events": 467,
+            "evaluation_coverage": "0.947262",
+            "horizon": "1",
+            "total_events": 493
+          },
+          {
+            "evaluable_events": 406,
+            "evaluation_coverage": "0.823529",
+            "horizon": "3",
+            "total_events": 493
+          },
+          {
+            "evaluable_events": 264,
+            "evaluation_coverage": "0.535497",
+            "horizon": "6",
+            "total_events": 493
+          },
+          {
+            "evaluable_events": 154,
+            "evaluation_coverage": "0.312373",
+            "horizon": "12",
+            "total_events": 493
+          }
+        ],
+        "material_limitation": true
+      }
+    ],
+    "dataset_separation_and_ordering": {
+      "dataset_order": [
+        "FJ",
+        "FQ"
+      ],
+      "dataset_pooling_performed": false,
+      "dataset_separation": "PROVEN",
+      "direction_order": [
+        "LONG",
+        "SHORT"
+      ],
+      "horizon_order": [
+        "1",
+        "3",
+        "6",
+        "12"
+      ]
+    },
+    "evidence_statement_counts": {
+      "CROSS_PERIOD_DIRECTIONAL_CONSISTENCY_OBSERVED": 0,
+      "CROSS_PERIOD_DIRECTIONAL_DIVERGENCE_OBSERVED": 8,
+      "NO_CLEAR_DESCRIPTIVE_PATTERN": 0
+    },
+    "first_matching_rule": 2,
+    "prohibited_claims_and_authorizations": {
+      "demo_or_live_trading_authorized": false,
+      "edge_claim": false,
+      "mt5_or_ea_authorized": false,
+      "order_logic_authorized": false,
+      "profitability_claim": false,
+      "robustness_claim": false,
+      "tp_sl_authorized": false,
+      "trading_readiness_claim": false
+    },
+    "raw_statistic_values_included": false,
+    "remediation_executed": false,
+    "resulting_next_scope": "DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY",
+    "rule_evaluation": {
+      "evaluation_count": 1,
+      "first_matching_rule_wins": true,
+      "hard_coded_disposition_used": false,
+      "manual_override_applied": false,
+      "multiple_dispositions_selected": false,
+      "score_or_weighting_applied": false,
+      "trace": [
+        {
+          "condition": "B9_IDENTITY_DECISION_HASH_SCHEMA_DATASET_SEPARATION_OR_REQUIRED_INTEGRITY_CONCLUSION_INVALID",
+          "evaluated": true,
+          "evidence": {
+            "all_committed_artifact_hashes_valid": true,
+            "b10_contract_state_valid": true,
+            "b10_frozen_rule_contract_valid": true,
+            "b10_identity_and_decision_valid": true,
+            "b10_schema_valid": true,
+            "b10_summary_projection_valid": true,
+            "b10_to_b9_binding_valid": true,
+            "b9_dataset_separation_and_integrity_conclusions_valid": true,
+            "b9_identity_and_decision_valid": true,
+            "b9_output_hashes_valid": true,
+            "b9_schema_valid": true,
+            "b9_summary_projection_valid": true
+          },
+          "rule": 1,
+          "status": "NOT_MATCHED"
+        },
+        {
+          "condition": "ANY_DATASET_MATERIAL_LIMITATION_TRUE_OR_H12_MATERIAL_LIMITATION_RETAINED_TRUE",
+          "evaluated": true,
+          "evidence": {
+            "dataset_flags": [
+              {
+                "dataset": "FJ",
+                "h12_material_limitation_retained": false,
+                "material_limitation": false
+              },
+              {
+                "dataset": "FQ",
+                "h12_material_limitation_retained": true,
+                "material_limitation": true
+              }
+            ],
+            "matching_datasets": [
+              "FQ"
+            ]
+          },
+          "rule": 2,
+          "status": "MATCHED"
+        },
+        {
+          "condition": "ANY_CROSS_PERIOD_DIVERGENCE_OR_ANY_NO_CLEAR_PATTERN_OR_CONSISTENCY_COUNT_ZERO",
+          "evaluated": false,
+          "rule": 3,
+          "status": "NOT_EVALUATED_AFTER_FIRST_MATCH"
+        },
+        {
+          "condition": "OTHERWISE",
+          "evaluated": false,
+          "rule": 4,
+          "status": "NOT_EVALUATED_AFTER_FIRST_MATCH"
+        }
+      ]
+    },
+    "selected_disposition": "DATA_QUALITY_REMEDIATION_REQUIRED",
+    "selected_subgroup_included": false,
+    "upstream_bindings": {
+      "b10": {
+        "canonical_summary_sha256": "6fc397b22b084f6b517d63893a4b2eb8fe2bbe37394e07189378b19dd5a9afd3",
+        "contract_state": "FROZEN",
+        "decision": "FR_PREP_B10_PASS_RESEARCH_DISPOSITION_CONTRACT_FROZEN"
+      },
+      "b9": {
+        "canonical_summary_sha256": "3c2cd0e4a2fcf6d970b592b942965d2f154873c3d7a225b38aa0eea6d5594bf5",
+        "complete_output_sha256": "f93f0d22e0387a691bf55e63cc612283741cc5db6e14aaeeb2111ff36dff92b5",
+        "decision": "FR_PREP_B9_PASS_SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT",
+        "report_json_sha256": "d0c4c3e3f8e97a27e2d76e144304b2731c94044052e71b7d4a31818ef4d52c8c",
+        "report_markdown_sha256": "8a6251570d522512f1826b5f47b4fb2a2e59e473c9efff3e219a4ae5c42999d9"
+      }
+    },
+    "validation_order": [
+      "B9_AND_B10_IDENTITIES_DECISIONS_AND_SCHEMAS_VALIDATED",
+      "ALL_HASH_BOUND_B9_AND_B10_ARTIFACTS_VALIDATED",
+      "B9_DATASET_SEPARATION_AND_REQUIRED_INTEGRITY_CONCLUSIONS_VALIDATED",
+      "PERMITTED_B9_DECISION_FIELDS_PROJECTED_AFTER_VALIDATION",
+      "B10_RULES_EVALUATED_ONCE_IN_ORDER_UNTIL_FIRST_MATCH"
+    ]
+  },
+  "determinism": {
+    "controlled_relocation_identical": true,
+    "decision_evaluation_count_per_generation": 1,
+    "decision_generation_count": 3,
+    "normal_repeat_identical": true,
+    "ordering_and_hashes_identical": true,
+    "temporary_artifacts_deleted": true
+  },
+  "execution_status": "PASS",
+  "mismatch_counters": {
+    "absolute_path_identity_mismatch": 0,
+    "b9_dataset_separation_or_integrity_conclusion_mismatch": 0,
+    "committed_artifact_hash_mismatch": 0,
+    "controlled_relocation_mismatch": 0,
+    "dataset_material_limitation_evidence_mismatch": 0,
+    "decision_evaluation_count_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "normal_repeat_mismatch": 0,
+    "permitted_b9_field_projection_mismatch": 0,
+    "rule_order_or_first_match_mismatch": 0,
+    "temporary_artifact_deletion_mismatch": 0,
+    "upstream_b9_or_b10_identity_decision_or_schema_mismatch": 0
+  },
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "b7_jsonl_or_statistics_parsing_attempt_blocked": true,
+      "b9_markdown_parsing_attempt_blocked": true,
+      "changed_b9_json_markdown_or_complete_hash_blocked": true,
+      "data_remediation_execution_attempt_blocked": true,
+      "dataset_pooling_blocked": true,
+      "hard_coded_disposition_without_evidence_evaluation_blocked": true,
+      "manual_override_weighting_or_multiple_disposition_blocked": true,
+      "mt5_ea_network_external_process_or_absolute_path_leakage_blocked": true,
+      "positive_observations_overriding_material_limitation_blocked": true,
+      "preferred_horizon_direction_or_year_selection_blocked": true,
+      "profitability_edge_robustness_or_readiness_claim_blocked": true,
+      "raw_statistic_value_read_attempt_blocked": true,
+      "rule_2_bypass_despite_material_limitation_blocked": true,
+      "rule_3_or_4_evaluation_after_rule_2_match_blocked": true,
+      "rule_order_or_first_match_precedence_change_blocked": true,
+      "tp_sl_cost_cash_pl_lot_or_order_simulation_blocked": true,
+      "wrong_b9_or_b10_identity_or_decision_blocked": true
+    },
+    "test_count": 17,
+    "tests_passed": 17
+  },
+  "output_hashes": {
+    "complete_sha256": "6e9bcf21f59b22ad986903cb30f2729379d5db2c9dfe577fa7211709b448de04",
+    "decision_record_sha256": "00d23300369426650c3e4a151d6f39276f32dccbeb5479a4522d9118d742d3aa",
+    "rule_trace_sha256": "2954c340ae3bff9f373e6a52b023025a92d5716398b47d92fa82cc7f9d4c1292"
+  },
+  "prohibited_modules": [],
+  "runtime_audit": {
+    "blocked_import_requests": 5,
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "negative_test_guard": {
+      "b7_jsonl_parse_count": 0,
+      "b7_statistics_csv_parse_count": 0,
+      "b9_markdown_parse_count": 0,
+      "b9_raw_statistic_value_read_count": 0,
+      "blocked_prohibited_parse_attempt_count": 4,
+      "blocked_raw_statistic_field_attempt_count": 1,
+      "future_ohlc_read_count": 0,
+      "hash_read_operation_counts": {
+        "b9_report_json": 0,
+        "b9_report_markdown": 0
+      },
+      "json_parse_operation_counts": {
+        "b9_report_json": 0,
+        "b9_report_markdown": 0
+      },
+      "raw_broker_csv_read_count": 0,
+      "selective_projection_operation_counts": {
+        "b9_report_json": 0,
+        "b9_report_markdown": 0
+      },
+      "unauthorized_successful_read_count": 0
+    },
+    "normal_run_1_file_access": {
+      "b7_jsonl_parse_count": 0,
+      "b7_statistics_csv_parse_count": 0,
+      "b9_markdown_parse_count": 0,
+      "b9_raw_statistic_value_read_count": 0,
+      "blocked_prohibited_parse_attempt_count": 0,
+      "blocked_raw_statistic_field_attempt_count": 0,
+      "future_ohlc_read_count": 0,
+      "hash_read_operation_counts": {
+        "b10_authorization": 1,
+        "b10_authorization_schema": 1,
+        "b10_contract": 1,
+        "b10_runner": 1,
+        "b10_schema": 1,
+        "b10_summary": 1,
+        "b9_contract": 1,
+        "b9_report_json": 1,
+        "b9_report_markdown": 1,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "json_parse_operation_counts": {
+        "b10_authorization": 1,
+        "b10_authorization_schema": 1,
+        "b10_contract": 1,
+        "b10_runner": 0,
+        "b10_schema": 1,
+        "b10_summary": 1,
+        "b9_contract": 1,
+        "b9_report_json": 0,
+        "b9_report_markdown": 0,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "raw_broker_csv_read_count": 0,
+      "selective_projection_operation_counts": {
+        "b10_authorization": 0,
+        "b10_authorization_schema": 0,
+        "b10_contract": 0,
+        "b10_runner": 0,
+        "b10_schema": 0,
+        "b10_summary": 0,
+        "b9_contract": 0,
+        "b9_report_json": 1,
+        "b9_report_markdown": 0,
+        "b9_schema": 0,
+        "b9_summary": 0
+      },
+      "unauthorized_successful_read_count": 0
+    },
+    "normal_run_2_file_access": {
+      "b7_jsonl_parse_count": 0,
+      "b7_statistics_csv_parse_count": 0,
+      "b9_markdown_parse_count": 0,
+      "b9_raw_statistic_value_read_count": 0,
+      "blocked_prohibited_parse_attempt_count": 0,
+      "blocked_raw_statistic_field_attempt_count": 0,
+      "future_ohlc_read_count": 0,
+      "hash_read_operation_counts": {
+        "b10_authorization": 1,
+        "b10_authorization_schema": 1,
+        "b10_contract": 1,
+        "b10_runner": 1,
+        "b10_schema": 1,
+        "b10_summary": 1,
+        "b9_contract": 1,
+        "b9_report_json": 1,
+        "b9_report_markdown": 1,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "json_parse_operation_counts": {
+        "b10_authorization": 1,
+        "b10_authorization_schema": 1,
+        "b10_contract": 1,
+        "b10_runner": 0,
+        "b10_schema": 1,
+        "b10_summary": 1,
+        "b9_contract": 1,
+        "b9_report_json": 0,
+        "b9_report_markdown": 0,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "raw_broker_csv_read_count": 0,
+      "selective_projection_operation_counts": {
+        "b10_authorization": 0,
+        "b10_authorization_schema": 0,
+        "b10_contract": 0,
+        "b10_runner": 0,
+        "b10_schema": 0,
+        "b10_summary": 0,
+        "b9_contract": 0,
+        "b9_report_json": 1,
+        "b9_report_markdown": 0,
+        "b9_schema": 0,
+        "b9_summary": 0
+      },
+      "unauthorized_successful_read_count": 0
+    },
+    "prohibited_execution_counts": {
+      "adapter_call_count": 0,
+      "additional_holdout_creation_count": 0,
+      "archive_execution_count": 0,
+      "b7_jsonl_parse_count": 0,
+      "b7_runner_call_count": 0,
+      "b7_statistics_parse_count": 0,
+      "b7a_auditor_call_count": 0,
+      "b9_markdown_parse_count": 0,
+      "b9_raw_statistic_value_read_count": 0,
+      "cash_pl_calculation_count": 0,
+      "classification_recomputation_count": 0,
+      "data_remediation_execution_count": 0,
+      "detector_execution_count": 0,
+      "ea_execution_count": 0,
+      "edge_claim_count": 0,
+      "external_process_success_count": 0,
+      "future_ohlc_read_count": 0,
+      "lot_simulation_count": 0,
+      "mt5_execution_count": 0,
+      "network_execution_count": 0,
+      "optimization_count": 0,
+      "order_simulation_count": 0,
+      "outcome_recomputation_count": 0,
+      "profitability_claim_count": 0,
+      "raw_broker_csv_read_count": 0,
+      "robustness_claim_count": 0,
+      "statistics_recomputation_count": 0,
+      "strategy_change_count": 0,
+      "tp_sl_calculation_count": 0,
+      "trading_cost_calculation_count": 0,
+      "trading_readiness_claim_count": 0
+    },
+    "prohibited_import_counts": {
+      "adapter_import_count": 0,
+      "b7_runner_import_count": 0,
+      "b7a_auditor_import_count": 0,
+      "detector_import_count": 0,
+      "mt5_import_count": 0
+    },
+    "relocation_run_file_access": {
+      "b7_jsonl_parse_count": 0,
+      "b7_statistics_csv_parse_count": 0,
+      "b9_markdown_parse_count": 0,
+      "b9_raw_statistic_value_read_count": 0,
+      "blocked_prohibited_parse_attempt_count": 0,
+      "blocked_raw_statistic_field_attempt_count": 0,
+      "future_ohlc_read_count": 0,
+      "hash_read_operation_counts": {
+        "b10_authorization": 1,
+        "b10_authorization_schema": 1,
+        "b10_contract": 1,
+        "b10_runner": 1,
+        "b10_schema": 1,
+        "b10_summary": 1,
+        "b9_contract": 1,
+        "b9_report_json": 1,
+        "b9_report_markdown": 1,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "json_parse_operation_counts": {
+        "b10_authorization": 1,
+        "b10_authorization_schema": 1,
+        "b10_contract": 1,
+        "b10_runner": 0,
+        "b10_schema": 1,
+        "b10_summary": 1,
+        "b9_contract": 1,
+        "b9_report_json": 0,
+        "b9_report_markdown": 0,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "raw_broker_csv_read_count": 0,
+      "selective_projection_operation_counts": {
+        "b10_authorization": 0,
+        "b10_authorization_schema": 0,
+        "b10_contract": 0,
+        "b10_runner": 0,
+        "b10_schema": 0,
+        "b10_summary": 0,
+        "b9_contract": 0,
+        "b9_report_json": 1,
+        "b9_report_markdown": 0,
+        "b9_schema": 0,
+        "b9_summary": 0
+      },
+      "unauthorized_successful_read_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b10a_sealed_research_disposition_decision.v1"
+}

@@ -1,0 +1,90 @@
+{
+  "$id": "fr_prep_b10a_research_disposition_decision_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "SEALED_RESEARCH_DISPOSITION_DECISION_ONLY"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B10A"
+    },
+    "committed_artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "access": {
+            "enum": [
+              "json",
+              "selective_json",
+              "hash_only"
+            ]
+          },
+          "artifact_id": {
+            "type": "string"
+          },
+          "file_sha256": {
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "artifact_id",
+          "path",
+          "file_sha256",
+          "access"
+        ],
+        "type": "object"
+      },
+      "maxItems": 11,
+      "minItems": 11,
+      "type": "array"
+    },
+    "expected": {
+      "required": [
+        "b9",
+        "b10",
+        "required_b9_conclusions"
+      ],
+      "type": "object"
+    },
+    "permitted_b9_report_top_level_fields": {
+      "const": [
+        "conclusions",
+        "dataset_level_coverage",
+        "dataset_pooling_performed"
+      ]
+    },
+    "prohibited_b9_field_names": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 13,
+      "type": "array"
+    },
+    "prohibited_input_paths": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "fr_prep_b10a_research_disposition_decision_authorization.v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "committed_artifacts",
+    "expected",
+    "permitted_b9_report_top_level_fields",
+    "prohibited_b9_field_names",
+    "prohibited_input_paths"
+  ],
+  "type": "object"
+}

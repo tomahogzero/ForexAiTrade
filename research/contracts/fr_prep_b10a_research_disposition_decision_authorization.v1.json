@@ -1,0 +1,128 @@
+{
+  "authorization_scope": "SEALED_RESEARCH_DISPOSITION_DECISION_ONLY",
+  "checkpoint": "FR_PREP_B10A",
+  "committed_artifacts": [
+    {
+      "access": "json",
+      "artifact_id": "b9_contract",
+      "file_sha256": "c25c71cf7d3f17a6ace779c0ddfabed04a54c92e1e7c2308546799a21ff0574b",
+      "path": "research/contracts/fr_prep_b9_sealed_outcome_interpretation_report.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b9_schema",
+      "file_sha256": "6f3075f70b0a1d6ece8608aaefdf90662c304253a26b46c02a27679b436b3fcf",
+      "path": "research/schemas/fr_prep_b9_sealed_outcome_interpretation_report.v1.schema.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b9_summary",
+      "file_sha256": "c25c71cf7d3f17a6ace779c0ddfabed04a54c92e1e7c2308546799a21ff0574b",
+      "path": "research/results/checkpoint_fr_prep_b9/outcome_interpretation_report_summary.json"
+    },
+    {
+      "access": "selective_json",
+      "artifact_id": "b9_report_json",
+      "file_sha256": "d0c4c3e3f8e97a27e2d76e144304b2731c94044052e71b7d4a31818ef4d52c8c",
+      "path": "research/results/checkpoint_fr_prep_b9/observational_outcome_interpretation_report.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "b9_report_markdown",
+      "file_sha256": "8a6251570d522512f1826b5f47b4fb2a2e59e473c9efff3e219a4ae5c42999d9",
+      "path": "research/results/checkpoint_fr_prep_b9/observational_outcome_interpretation_report.md"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10_authorization",
+      "file_sha256": "a7f99c9c55eb8356c3823a43e536e18fb8ec3663aa0f12c1e80fa0bc0a9ed845",
+      "path": "research/contracts/fr_prep_b10_research_disposition_contract_authorization.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10_authorization_schema",
+      "file_sha256": "67131e76468e3f76418da815a2633ddde917fcdf042c2ea1d39fb28b409f324d",
+      "path": "research/schemas/fr_prep_b10_research_disposition_contract_authorization.v1.schema.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "b10_runner",
+      "file_sha256": "22d9fd8280d31134046dd8d96adcdad523e713e4b26eab28f03c0fb9717f98cb",
+      "path": "tools/run_fr_prep_b10_research_disposition_contract_design.py"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10_contract",
+      "file_sha256": "49b83fdf4c6279cf20c00cf0aa9614ee55ab18239b03b03f5d893dd2cb389581",
+      "path": "research/contracts/fr_prep_b10_research_disposition_contract.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10_schema",
+      "file_sha256": "ec1bdfddfdd0b5db13004f5290cf8edafdd5ea21256e186cc8ce144d6a4ac1d7",
+      "path": "research/schemas/fr_prep_b10_research_disposition_contract.v1.schema.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10_summary",
+      "file_sha256": "49b83fdf4c6279cf20c00cf0aa9614ee55ab18239b03b03f5d893dd2cb389581",
+      "path": "research/results/checkpoint_fr_prep_b10/research_disposition_contract_summary.json"
+    }
+  ],
+  "expected": {
+    "b10": {
+      "canonical_summary_sha256": "6fc397b22b084f6b517d63893a4b2eb8fe2bbe37394e07189378b19dd5a9afd3",
+      "contract_state": "FROZEN",
+      "current_disposition": "NOT_SELECTED",
+      "decision": "FR_PREP_B10_PASS_RESEARCH_DISPOSITION_CONTRACT_FROZEN",
+      "disposition_execution": "NOT_STARTED",
+      "next_allowed_scope": "SEALED_RESEARCH_DISPOSITION_DECISION_ONLY"
+    },
+    "b9": {
+      "canonical_summary_sha256": "3c2cd0e4a2fcf6d970b592b942965d2f154873c3d7a225b38aa0eea6d5594bf5",
+      "complete_output_sha256": "f93f0d22e0387a691bf55e63cc612283741cc5db6e14aaeeb2111ff36dff92b5",
+      "decision": "FR_PREP_B9_PASS_SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT",
+      "report_json_sha256": "d0c4c3e3f8e97a27e2d76e144304b2731c94044052e71b7d4a31818ef4d52c8c",
+      "report_markdown_sha256": "8a6251570d522512f1826b5f47b4fb2a2e59e473c9efff3e219a4ae5c42999d9"
+    },
+    "required_b9_conclusions": {
+      "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+      "descriptive_interpretation": "COMPLETED_UNDER_FROZEN_CONTRACT",
+      "descriptive_statistics_integrity": "PROVEN",
+      "next_allowed_scope": "RESEARCH_DISPOSITION_CONTRACT_DESIGN_ONLY",
+      "order_logic": "NOT_APPROVED",
+      "outcome_record_integrity": "PROVEN",
+      "performance": "NOT_EVALUATED",
+      "profitability": "NOT_CLAIMED",
+      "robustness": "NOT_ESTABLISHED",
+      "strategy_edge": "NOT_ESTABLISHED"
+    }
+  },
+  "permitted_b9_report_top_level_fields": [
+    "conclusions",
+    "dataset_level_coverage",
+    "dataset_pooling_performed"
+  ],
+  "prohibited_b9_field_names": [
+    "full_descriptive_statistics",
+    "mean_bps",
+    "median_bps",
+    "p25_bps",
+    "p75_bps",
+    "positive_share",
+    "zero_share",
+    "negative_share",
+    "mfe_bps",
+    "mae_bps",
+    "preferred_direction",
+    "preferred_year",
+    "preferred_horizon"
+  ],
+  "prohibited_input_paths": [
+    "research/results/checkpoint_fr_prep_b7/fj_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/fq_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/observational_outcome_statistics.csv",
+    "research/results/checkpoint_fr_prep_b9/observational_outcome_interpretation_report.md"
+  ],
+  "schema_version": "fr_prep_b10a_research_disposition_decision_authorization.v1"
+}

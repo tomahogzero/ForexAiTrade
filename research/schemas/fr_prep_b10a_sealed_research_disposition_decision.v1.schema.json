@@ -1,0 +1,197 @@
+{
+  "$id": "fr_prep_b10a_sealed_research_disposition_decision.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
+    },
+    "canonical_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B10A"
+    },
+    "conclusions": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate": {
+          "const": "NOT_READY_FOR_ORDER_LOGIC"
+        },
+        "data_remediation_execution": {
+          "const": "NOT_STARTED"
+        },
+        "disposition_execution": {
+          "const": "COMPLETED"
+        },
+        "first_matching_rule": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "next_allowed_scope": {
+          "enum": [
+            "EVIDENCE_REPAIR_ONLY",
+            "DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY",
+            "PREDECLARED_HOLDOUT_CONTRACT_DESIGN_ONLY",
+            "RESEARCH_ARCHIVE_ONLY"
+          ]
+        },
+        "order_logic": {
+          "const": "NOT_APPROVED"
+        },
+        "performance": {
+          "const": "NOT_EVALUATED"
+        },
+        "profitability": {
+          "const": "NOT_CLAIMED"
+        },
+        "research_disposition_contract": {
+          "const": "FROZEN"
+        },
+        "robustness": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "selected_disposition": {
+          "enum": [
+            "BLOCKED_EVIDENCE_INTEGRITY",
+            "DATA_QUALITY_REMEDIATION_REQUIRED",
+            "PREDECLARED_ADDITIONAL_HOLDOUT_REQUIRED",
+            "ARCHIVE_AUDITED_DESCRIPTIVE_BASELINE"
+          ]
+        },
+        "strategy_edge": {
+          "const": "NOT_ESTABLISHED"
+        }
+      },
+      "required": [
+        "research_disposition_contract",
+        "disposition_execution",
+        "selected_disposition",
+        "first_matching_rule",
+        "performance",
+        "profitability",
+        "strategy_edge",
+        "robustness",
+        "order_logic",
+        "candidate",
+        "data_remediation_execution",
+        "next_allowed_scope"
+      ],
+      "type": "object"
+    },
+    "decision": {
+      "const": "FR_PREP_B10A_PASS_SEALED_RESEARCH_DISPOSITION_DECISION"
+    },
+    "decision_record": {
+      "required": [
+        "upstream_bindings",
+        "validation_order",
+        "dataset_material_limitation_evidence",
+        "evidence_statement_counts",
+        "dataset_separation_and_ordering",
+        "rule_evaluation",
+        "selected_disposition",
+        "first_matching_rule",
+        "resulting_next_scope",
+        "prohibited_claims_and_authorizations"
+      ],
+      "type": "object"
+    },
+    "determinism": {
+      "properties": {
+        "controlled_relocation_identical": {
+          "const": true
+        },
+        "normal_repeat_identical": {
+          "const": true
+        },
+        "ordering_and_hashes_identical": {
+          "const": true
+        },
+        "temporary_artifacts_deleted": {
+          "const": true
+        }
+      },
+      "required": [
+        "normal_repeat_identical",
+        "controlled_relocation_identical",
+        "ordering_and_hashes_identical",
+        "temporary_artifacts_deleted"
+      ],
+      "type": "object"
+    },
+    "execution_status": {
+      "const": "PASS"
+    },
+    "mismatch_counters": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "negative_tests": {
+      "properties": {
+        "all_passed": {
+          "const": true
+        }
+      },
+      "required": [
+        "test_count",
+        "tests_passed",
+        "all_passed",
+        "results"
+      ],
+      "type": "object"
+    },
+    "output_hashes": {
+      "properties": {
+        "complete_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "decision_record_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "rule_trace_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "decision_record_sha256",
+        "rule_trace_sha256",
+        "complete_sha256"
+      ],
+      "type": "object"
+    },
+    "prohibited_modules": {
+      "maxItems": 0,
+      "type": "array"
+    },
+    "runtime_audit": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_prep_b10a_sealed_research_disposition_decision.v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "decision",
+    "execution_status",
+    "canonical_summary_sha256",
+    "decision_record",
+    "conclusions",
+    "output_hashes",
+    "determinism",
+    "negative_tests",
+    "mismatch_counters",
+    "runtime_audit",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "prohibited_modules"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,302 @@
+{
+  "authorization_scope": "FQ_DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY",
+  "checkpoint": "FR_PREP_B11",
+  "committed_artifacts": [
+    {
+      "access": "json",
+      "artifact_id": "b10_contract",
+      "file_sha256": "49b83fdf4c6279cf20c00cf0aa9614ee55ab18239b03b03f5d893dd2cb389581",
+      "path": "research/contracts/fr_prep_b10_research_disposition_contract.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10_schema",
+      "file_sha256": "ec1bdfddfdd0b5db13004f5290cf8edafdd5ea21256e186cc8ce144d6a4ac1d7",
+      "path": "research/schemas/fr_prep_b10_research_disposition_contract.v1.schema.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10_summary",
+      "file_sha256": "49b83fdf4c6279cf20c00cf0aa9614ee55ab18239b03b03f5d893dd2cb389581",
+      "path": "research/results/checkpoint_fr_prep_b10/research_disposition_contract_summary.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10a_contract",
+      "file_sha256": "dcd9e08f2ecfa5f3bbecdc3fb4e26e2c1e58fcda950372e5cdff64f1a9d6b76d",
+      "path": "research/contracts/fr_prep_b10a_sealed_research_disposition_decision.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10a_schema",
+      "file_sha256": "3e9350ed78617d1e348ccfb9ef9877a20148f7939533636688dc19e4b838486a",
+      "path": "research/schemas/fr_prep_b10a_sealed_research_disposition_decision.v1.schema.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10a_summary",
+      "file_sha256": "dcd9e08f2ecfa5f3bbecdc3fb4e26e2c1e58fcda950372e5cdff64f1a9d6b76d",
+      "path": "research/results/checkpoint_fr_prep_b10a/research_disposition_decision_summary.json"
+    },
+    {
+      "access": "selective_gap_metadata",
+      "artifact_id": "fq_gap_inventory",
+      "file_sha256": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+      "path": "research/results/checkpoint_fq_holdout_gap_boundary/checkpoint_fq_gap_inventory.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "fq_source_manifest",
+      "file_sha256": "8d2f2dc61926f879a5ef232d43d3a7e365296d94e0e1d2eef0ee066120b6aafd",
+      "path": "research/results/checkpoint_fr_prep_b4/fq_source_manifest.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "fq_b4_replay",
+      "file_sha256": "a7c27e085a9c1ba05ba9e5e6c5eb58cdb6dfb39d35df70c867f9e3376b6f2769",
+      "path": "research/results/checkpoint_fr_prep_b4/fq_deterministic_replay.json"
+    }
+  ],
+  "design": {
+    "accepted_closure_semantics": [
+      "DOES_NOT_INVALIDATE_AN_EVENT",
+      "DOES_NOT_COUNT_AS_A_VALID_H1_BAR",
+      "DOES_NOT_CREATE_A_SYNTHETIC_TIMESTAMP_OR_PRICE",
+      "DOES_NOT_ALTER_CONFIRMATION_HORIZON_OR_NUMERIC_RULES"
+    ],
+    "admissible_primary_evidence_types": [
+      {
+        "evidence_type": "BROKER_SERVER_SESSION_SCHEDULE",
+        "requirements": [
+          "EXACT_BROKER_SERVER_SYMBOL_CLASS_EFFECTIVE_DATE_RANGE_AND_TIME_BASIS",
+          "TIMEZONE_IDENTIFIED_OR_EXPLICITLY_UNRESOLVED",
+          "HASH_BOUND_ARTIFACT"
+        ]
+      },
+      {
+        "evidence_type": "SAME_BROKER_SERVER_LOWER_TIMEFRAME_OR_TICK_EXPORT",
+        "requirements": [
+          "EXACT_SYMBOL_AND_AFFECTED_DATE_RANGE",
+          "SOURCE_METADATA_EXPORT_TIME_AND_FILE_HASH",
+          "MAY_ESTABLISH_TRADING_RECORDS_INSIDE_MISSING_H1_SLOT"
+        ]
+      },
+      {
+        "evidence_type": "INDEPENDENT_SAME_BROKER_SERVER_H1_EXPORT",
+        "requirements": [
+          "NOT_DERIVED_FROM_FROZEN_FQ_CSV_FILES",
+          "EXACT_SERVER_SYMBOL_DATE_COVERAGE_AND_CONTENT_HASH"
+        ]
+      },
+      {
+        "evidence_type": "OFFICIAL_MARKET_OR_BROKER_HOLIDAY_NOTICE",
+        "requirements": [
+          "EXACT_AFFECTED_DATE_SESSION_HOURS_AND_SOURCE_IDENTITY",
+          "BROKER_SPECIFIC_SESSION_EVIDENCE_PRECEDES_GENERIC_CALENDAR"
+        ]
+      }
+    ],
+    "corroborative_only_evidence": [
+      "TERMINAL_SCREENSHOTS",
+      "OPERATOR_NOTES",
+      "RECURRING_TIMESTAMP_PATTERNS_IN_EXISTING_FQ_INVENTORY",
+      "GENERIC_MARKET_HOUR_WEBSITES",
+      "OTHER_BROKER_DATA",
+      "NEARBY_DATES_OR_NEIGHBORING_SYMBOLS"
+    ],
+    "evidence_package_record_fields": [
+      "evidence_package_id",
+      "gap_id_or_explicit_gap_id_set",
+      "evidence_type",
+      "evidence_role",
+      "source_organization",
+      "broker",
+      "server",
+      "symbol",
+      "time_basis",
+      "timezone_or_unknown",
+      "effective_start",
+      "effective_end",
+      "captured_at",
+      "artifact_path",
+      "artifact_sha256",
+      "source_metadata",
+      "supports_status",
+      "conflicts_with_status",
+      "operator_notes",
+      "validation_status"
+    ],
+    "evidence_role_and_identity_policy": {
+      "corroborative_only_can_independently_change_status": false,
+      "cross_broker_server_or_symbol_evidence_can_establish_acceptance": false,
+      "cross_broker_server_or_symbol_evidence_requires_explicit_conflict_record": true,
+      "permitted_evidence_roles": [
+        "PRIMARY",
+        "CORROBORATIVE_ONLY"
+      ],
+      "canonical_identity_excludes": [
+        "CREDENTIALS",
+        "ACCOUNT_NUMBERS",
+        "TOKENS",
+        "ABSOLUTE_RUNTIME_PATHS"
+      ]
+    },
+    "evidence_sufficiency_rules": [
+      "ROUTINE_SESSION_CLOSURE_REQUIRES_EXACT_BROKER_SERVER_SESSION_EVIDENCE_OR_TWO_AGREEING_INDEPENDENT_SAME_BROKER_SERVER_HISTORY_ARTIFACTS",
+      "WEEKEND_CLOSURE_REQUIRES_DETERMINISTIC_WEEKEND_RULE_AGREEMENT_AND_NO_CONFLICTING_SAME_BROKER_SERVER_EVIDENCE",
+      "SPECIAL_SESSION_OR_HOLIDAY_CLOSURE_REQUIRES_DATED_OFFICIAL_BROKER_SESSION_NOTICE_OR_EQUIVALENT_EXACT_PRIMARY_EVIDENCE",
+      "SOURCE_DATA_OMISSION_REQUIRES_INDEPENDENT_SAME_BROKER_SERVER_EVIDENCE_OF_TRADING_RECORDS_IN_MISSING_SLOT",
+      "CONFLICTING_PRIMARY_EVIDENCE_PRODUCES_EVIDENCE_CONFLICT",
+      "MISSING_OR_INCOMPLETE_PRIMARY_EVIDENCE_PRODUCES_UNRESOLVED_INSUFFICIENT_EVIDENCE",
+      "PATTERN_RECURRENCE_ALONE_NEVER_SUFFICIENT",
+      "DESIRED_COVERAGE_IMPROVEMENT_NEVER_EVIDENCE",
+      "OUTCOME_SIGNS_RETURNS_MFE_MAE_AND_EVENT_CLASSIFICATIONS_FORBIDDEN"
+    ],
+    "future_gap_adjudication_record_fields": [
+      "gap_id",
+      "original_evidence_status",
+      "original_policy_classification",
+      "original_fail_closed_required",
+      "evidence_package_ids",
+      "primary_evidence_count",
+      "corroborative_evidence_count",
+      "conflict_count",
+      "proposed_remediation_status",
+      "accepted_for_bar_skip",
+      "fail_closed_required",
+      "adjudication_reason_code",
+      "reviewer_status",
+      "independent_audit_status",
+      "no_synthesized_bar",
+      "no_outcome_fields",
+      "canonical_record_sha256"
+    ],
+    "future_stages": [
+      "FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_ONLY",
+      "INDEPENDENT_FQ_GAP_EVIDENCE_AUDIT_ONLY",
+      "SEALED_FQ_GAP_ADJUDICATION_ONLY",
+      "INDEPENDENT_FQ_GAP_ADJUDICATION_AUDIT_ONLY",
+      "FQ_REMEDIATED_TIMELINE_REBUILD_AUTHORIZATION_ONLY",
+      "SEALED_FQ_REMEDIATED_TIMELINE_REBUILD_ONLY",
+      "INDEPENDENT_FQ_REMEDIATED_TIMELINE_AUDIT_ONLY"
+    ],
+    "immutability_rules": [
+      "ORIGINAL_GAP_RECORDS_NEVER_EDITED_OR_OVERWRITTEN",
+      "EXISTING_ACCEPTED_WEEKEND_CLOSURES_REMAIN_UNCHANGED",
+      "EVERY_FUTURE_DECISION_APPEND_ONLY_BESIDE_ORIGINAL_RECORD",
+      "ORIGINAL_AND_REMEDIATED_CLASSIFICATIONS_SEPARATELY_VISIBLE",
+      "NO_EVIDENCE_SELECTION_FROM_B7_OR_B9_OUTCOME_DIRECTION_OR_VALUES"
+    ],
+    "remediation_statuses": [
+      {
+        "accepted_for_bar_skip": true,
+        "fail_closed_required": false,
+        "status": "VERIFIED_ROUTINE_SESSION_CLOSURE"
+      },
+      {
+        "accepted_for_bar_skip": true,
+        "fail_closed_required": false,
+        "status": "VERIFIED_WEEKEND_MARKET_CLOSURE"
+      },
+      {
+        "accepted_for_bar_skip": true,
+        "fail_closed_required": false,
+        "status": "VERIFIED_SPECIAL_SESSION_OR_HOLIDAY_CLOSURE"
+      },
+      {
+        "accepted_for_bar_skip": false,
+        "fail_closed_required": true,
+        "status": "VERIFIED_SOURCE_DATA_OMISSION"
+      },
+      {
+        "accepted_for_bar_skip": false,
+        "fail_closed_required": true,
+        "status": "UNRESOLVED_INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "accepted_for_bar_skip": false,
+        "fail_closed_required": true,
+        "status": "EVIDENCE_CONFLICT"
+      }
+    ],
+    "structural_signature_fields": [
+      "calendar_year",
+      "day_of_week",
+      "elapsed_hours",
+      "missing_h1_slots",
+      "previous_bar_weekday",
+      "previous_bar_hour",
+      "next_bar_weekday",
+      "next_bar_hour",
+      "same_source_file",
+      "original_evidence_status",
+      "original_policy_classification",
+      "original_fail_closed_required"
+    ],
+    "target_gap_metadata_fields": [
+      "gap_id",
+      "calendar_year",
+      "day_of_week",
+      "previous_bar_timestamp",
+      "next_bar_timestamp",
+      "elapsed_hours",
+      "missing_h1_slots",
+      "previous_source_file",
+      "next_source_file",
+      "original_evidence_status",
+      "original_policy_classification",
+      "original_fail_closed_required"
+    ]
+  },
+  "expected": {
+    "b10": {
+      "canonical_summary_sha256": "6fc397b22b084f6b517d63893a4b2eb8fe2bbe37394e07189378b19dd5a9afd3",
+      "decision": "FR_PREP_B10_PASS_RESEARCH_DISPOSITION_CONTRACT_FROZEN"
+    },
+    "b10a": {
+      "canonical_summary_sha256": "a4c66d5b40705d21f12765c5e0dbe351e21cea42625a9ca54858a5f1a8c49c47",
+      "complete_sha256": "6e9bcf21f59b22ad986903cb30f2729379d5db2c9dfe577fa7211709b448de04",
+      "decision": "FR_PREP_B10A_PASS_SEALED_RESEARCH_DISPOSITION_DECISION",
+      "decision_record_sha256": "00d23300369426650c3e4a151d6f39276f32dccbeb5479a4522d9118d742d3aa",
+      "first_matching_rule": 2,
+      "next_allowed_scope": "DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY",
+      "rule_trace_sha256": "2954c340ae3bff9f373e6a52b023025a92d5716398b47d92fa82cc7f9d4c1292",
+      "selected_disposition": "DATA_QUALITY_REMEDIATION_REQUIRED"
+    },
+    "fq": {
+      "accepted_gap_count": 149,
+      "canonical_timeline_sha256": "4ff441fa895c3e7d8f256b11501d7dac6bf5e606ef1c90d2d409c39689a81c38",
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "event_population_sha256": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81",
+      "event_records": 493,
+      "gap_inventory_sha256": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+      "source_manifest_sha256": "8d2f2dc61926f879a5ef232d43d3a7e365296d94e0e1d2eef0ee066120b6aafd",
+      "source_rows": 17731,
+      "sources": [
+        {
+          "filename": "GOLD#_H1_202001020900_202012311800.csv",
+          "rows": 5912,
+          "sha256": "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc"
+        },
+        {
+          "filename": "GOLD#_H1_202101040100_202112311800.csv",
+          "rows": 5902,
+          "sha256": "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5"
+        },
+        {
+          "filename": "GOLD#_H1_202201030100_202212302300.csv",
+          "rows": 5917,
+          "sha256": "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a"
+        }
+      ],
+      "target_unverified_gap_count": 625,
+      "total_gap_count": 774
+    }
+  },
+  "prohibited_input_paths": [
+    "research/results/checkpoint_fr_prep_b7/fj_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/fq_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/observational_outcome_statistics.csv"
+  ],
+  "schema_version": "fr_prep_b11_fq_data_quality_remediation_contract_authorization.v1"
+}

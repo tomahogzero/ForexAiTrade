@@ -1,0 +1,70 @@
+{
+  "$id": "fr_prep_b11_fq_data_quality_remediation_contract_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "FQ_DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B11"
+    },
+    "committed_artifacts": {
+      "items": {
+        "required": [
+          "artifact_id",
+          "path",
+          "file_sha256",
+          "access"
+        ],
+        "type": "object"
+      },
+      "maxItems": 9,
+      "minItems": 9,
+      "type": "array"
+    },
+    "design": {
+      "required": [
+        "target_gap_metadata_fields",
+        "structural_signature_fields",
+        "immutability_rules",
+        "remediation_statuses",
+        "accepted_closure_semantics",
+        "admissible_primary_evidence_types",
+        "corroborative_only_evidence",
+        "evidence_sufficiency_rules",
+        "evidence_package_record_fields",
+        "evidence_role_and_identity_policy",
+        "future_gap_adjudication_record_fields",
+        "future_stages"
+      ],
+      "type": "object"
+    },
+    "expected": {
+      "required": [
+        "b10",
+        "b10a",
+        "fq"
+      ],
+      "type": "object"
+    },
+    "prohibited_input_paths": {
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "fr_prep_b11_fq_data_quality_remediation_contract_authorization.v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "committed_artifacts",
+    "expected",
+    "design",
+    "prohibited_input_paths"
+  ],
+  "type": "object"
+}

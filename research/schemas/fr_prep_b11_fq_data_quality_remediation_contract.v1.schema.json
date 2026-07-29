@@ -1,0 +1,210 @@
+{
+  "$id": "fr_prep_b11_fq_data_quality_remediation_contract.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
+    },
+    "canonical_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B11"
+    },
+    "conclusions": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate": {
+          "const": "NOT_READY_FOR_ORDER_LOGIC"
+        },
+        "data_quality_remediation_contract": {
+          "const": "FROZEN"
+        },
+        "evidence_intake": {
+          "const": "NOT_STARTED"
+        },
+        "gap_reclassification": {
+          "const": "NOT_STARTED"
+        },
+        "next_allowed_scope": {
+          "const": "FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_ONLY"
+        },
+        "order_logic": {
+          "const": "NOT_APPROVED"
+        },
+        "original_gap_inventory_immutable": {
+          "const": true
+        },
+        "outcome_rerun": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "performance": {
+          "const": "NOT_EVALUATED"
+        },
+        "profitability": {
+          "const": "NOT_CLAIMED"
+        },
+        "remediation_execution": {
+          "const": "NOT_STARTED"
+        },
+        "remediation_target_dataset": {
+          "const": "FP_FQ_2020_2022_GOLD_H1"
+        },
+        "robustness": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "strategy_edge": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "synthetic_bar_creation": {
+          "const": "PROHIBITED"
+        },
+        "target_unverified_gap_count": {
+          "const": 625
+        },
+        "timeline_rebuild": {
+          "const": "NOT_STARTED"
+        }
+      },
+      "required": [
+        "data_quality_remediation_contract",
+        "remediation_target_dataset",
+        "target_unverified_gap_count",
+        "original_gap_inventory_immutable",
+        "synthetic_bar_creation",
+        "remediation_execution",
+        "evidence_intake",
+        "gap_reclassification",
+        "timeline_rebuild",
+        "outcome_rerun",
+        "performance",
+        "profitability",
+        "strategy_edge",
+        "robustness",
+        "order_logic",
+        "candidate",
+        "next_allowed_scope"
+      ],
+      "type": "object"
+    },
+    "contract": {
+      "required": [
+        "target_gap_metadata_fields",
+        "structural_signature_fields",
+        "immutability_rules",
+        "remediation_statuses",
+        "accepted_closure_semantics",
+        "admissible_primary_evidence_types",
+        "corroborative_only_evidence",
+        "evidence_sufficiency_rules",
+        "evidence_package_record_fields",
+        "evidence_role_and_identity_policy",
+        "future_gap_adjudication_record_fields",
+        "future_stages",
+        "stage_separation_policy"
+      ],
+      "type": "object"
+    },
+    "decision": {
+      "const": "FR_PREP_B11_PASS_FQ_DATA_QUALITY_REMEDIATION_CONTRACT_FROZEN"
+    },
+    "execution_status": {
+      "const": "PASS"
+    },
+    "fq_binding": {
+      "type": "object"
+    },
+    "mismatch_counters": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "negative_tests": {
+      "properties": {
+        "all_passed": {
+          "const": true
+        }
+      },
+      "required": [
+        "test_count",
+        "tests_passed",
+        "all_passed",
+        "results"
+      ],
+      "type": "object"
+    },
+    "prohibited_modules": {
+      "maxItems": 0,
+      "type": "array"
+    },
+    "runtime_audit": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_prep_b11_fq_data_quality_remediation_contract.v1"
+    },
+    "target_inventory": {
+      "properties": {
+        "accepted_gap_count": {
+          "const": 149
+        },
+        "structural_signature_inventory_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "target_gap_id_set": {
+          "maxItems": 625,
+          "minItems": 625,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "target_gap_id_set_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "target_gap_metadata_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "target_unverified_gap_count": {
+          "const": 625
+        },
+        "total_gap_count": {
+          "const": 774
+        }
+      },
+      "required": [
+        "total_gap_count",
+        "accepted_gap_count",
+        "target_unverified_gap_count",
+        "target_gap_id_set",
+        "target_gap_id_set_sha256",
+        "target_gap_metadata_sha256",
+        "structural_signature_inventory_sha256",
+        "structural_signature_count",
+        "structural_signatures_descriptive_only"
+      ],
+      "type": "object"
+    },
+    "upstream_validation": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "decision",
+    "execution_status",
+    "canonical_summary_sha256",
+    "upstream_validation",
+    "fq_binding",
+    "target_inventory",
+    "contract",
+    "conclusions",
+    "negative_tests",
+    "mismatch_counters",
+    "runtime_audit",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "prohibited_modules"
+  ],
+  "type": "object"
+}

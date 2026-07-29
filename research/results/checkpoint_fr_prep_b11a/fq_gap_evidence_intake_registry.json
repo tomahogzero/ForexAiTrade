@@ -1,0 +1,23 @@
+{
+  "accepted_for_bar_skip_changed": false,
+  "checkpoint": "FR_PREP_B11A",
+  "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+  "gap_status_adjudicated": false,
+  "package_status_counts": {
+    "PACKAGE_REGISTERED_UNAUDITED": 0,
+    "PACKAGE_REJECTED_HASH_MISMATCH": 0,
+    "PACKAGE_REJECTED_METADATA": 0,
+    "PACKAGE_REJECTED_MISSING_ARTIFACT": 0,
+    "PACKAGE_REJECTED_OUT_OF_SCOPE": 0,
+    "PACKAGE_REJECTED_SECURITY_LEAKAGE": 0
+  },
+  "registered_corroborative_package_count": 0,
+  "registered_package_count": 0,
+  "registered_primary_package_count": 0,
+  "schema_version": "fr_prep_b11a_fq_gap_evidence_intake_registry.v1",
+  "staged_artifacts": [],
+  "staging_location": "research/evidence/fq_gap_remediation_intake/",
+  "staging_state": "ABSENT",
+  "submitted_packages": [],
+  "substantive_sufficiency_evaluated": false
+}

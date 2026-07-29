@@ -1,0 +1,158 @@
+{
+  "authorization_scope": "FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_ONLY",
+  "checkpoint": "FR_PREP_B11A",
+  "committed_artifacts": [
+    {
+      "access": "json",
+      "artifact_id": "b10a_contract",
+      "file_sha256": "dcd9e08f2ecfa5f3bbecdc3fb4e26e2c1e58fcda950372e5cdff64f1a9d6b76d",
+      "path": "research/contracts/fr_prep_b10a_sealed_research_disposition_decision.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10a_schema",
+      "file_sha256": "3e9350ed78617d1e348ccfb9ef9877a20148f7939533636688dc19e4b838486a",
+      "path": "research/schemas/fr_prep_b10a_sealed_research_disposition_decision.v1.schema.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b10a_summary",
+      "file_sha256": "dcd9e08f2ecfa5f3bbecdc3fb4e26e2c1e58fcda950372e5cdff64f1a9d6b76d",
+      "path": "research/results/checkpoint_fr_prep_b10a/research_disposition_decision_summary.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b11_contract",
+      "file_sha256": "09990fd76d0270ceca1564977c13d6bfdefdcd69cbe3dca3b31eb7fde6d8314d",
+      "path": "research/contracts/fr_prep_b11_fq_data_quality_remediation_contract.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b11_schema",
+      "file_sha256": "5b3012face8cced8def807e36045336f95903af698d6707f1bd4cb3ad3302b09",
+      "path": "research/schemas/fr_prep_b11_fq_data_quality_remediation_contract.v1.schema.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b11_summary",
+      "file_sha256": "09990fd76d0270ceca1564977c13d6bfdefdcd69cbe3dca3b31eb7fde6d8314d",
+      "path": "research/results/checkpoint_fr_prep_b11/fq_data_quality_remediation_contract_summary.json"
+    },
+    {
+      "access": "selective_gap_metadata",
+      "artifact_id": "fq_gap_inventory",
+      "file_sha256": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+      "path": "research/results/checkpoint_fq_holdout_gap_boundary/checkpoint_fq_gap_inventory.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "fq_source_manifest",
+      "file_sha256": "8d2f2dc61926f879a5ef232d43d3a7e365296d94e0e1d2eef0ee066120b6aafd",
+      "path": "research/results/checkpoint_fr_prep_b4/fq_source_manifest.json"
+    }
+  ],
+  "evidence_intake_protocol": {
+    "allowed_primary_evidence_types": [
+      "BROKER_SERVER_SESSION_SCHEDULE",
+      "SAME_BROKER_SERVER_LOWER_TIMEFRAME_OR_TICK_EXPORT",
+      "INDEPENDENT_SAME_BROKER_SERVER_H1_EXPORT",
+      "OFFICIAL_MARKET_OR_BROKER_HOLIDAY_NOTICE"
+    ],
+    "corroborative_only_evidence_types": [
+      "TERMINAL_SCREENSHOTS",
+      "OPERATOR_NOTES",
+      "RECURRING_TIMESTAMP_PATTERNS_IN_EXISTING_FQ_INVENTORY",
+      "GENERIC_MARKET_HOUR_WEBSITES",
+      "OTHER_BROKER_DATA",
+      "NEARBY_DATES_OR_NEIGHBORING_SYMBOLS"
+    ],
+    "descriptor_filename_suffix": ".evidence.json",
+    "descriptor_required_fields": [
+      "evidence_package_id",
+      "gap_ids",
+      "evidence_type",
+      "evidence_role",
+      "source_organization",
+      "broker",
+      "server",
+      "symbol",
+      "time_basis",
+      "timezone_or_unknown",
+      "effective_start",
+      "effective_end",
+      "captured_at",
+      "artifact_path",
+      "artifact_sha256",
+      "source_metadata"
+    ],
+    "frozen_intake_package_statuses": [
+      "PACKAGE_REGISTERED_UNAUDITED",
+      "PACKAGE_REJECTED_MISSING_ARTIFACT",
+      "PACKAGE_REJECTED_HASH_MISMATCH",
+      "PACKAGE_REJECTED_METADATA",
+      "PACKAGE_REJECTED_OUT_OF_SCOPE",
+      "PACKAGE_REJECTED_SECURITY_LEAKAGE"
+    ],
+    "frozen_per_gap_intake_statuses": [
+      "NO_EVIDENCE_SUBMITTED",
+      "PRIMARY_EVIDENCE_SUBMITTED_UNAUDITED",
+      "CORROBORATIVE_ONLY_SUBMITTED_UNAUDITED",
+      "PRIMARY_AND_CORROBORATIVE_SUBMITTED_UNAUDITED",
+      "SUBMITTED_PACKAGE_REJECTED_AT_INTAKE"
+    ],
+    "missing_primary_evidence_fields": [
+      "evidence_package_id",
+      "evidence_type",
+      "evidence_role_PRIMARY",
+      "source_organization",
+      "broker",
+      "server",
+      "symbol",
+      "time_basis",
+      "timezone_or_unknown",
+      "effective_start",
+      "effective_end",
+      "captured_at",
+      "artifact_path",
+      "artifact_sha256",
+      "source_metadata",
+      "validation_status"
+    ],
+    "permitted_evidence_roles": [
+      "PRIMARY",
+      "CORROBORATIVE_ONLY"
+    ],
+    "staging_location": "research/evidence/fq_gap_remediation_intake/"
+  },
+  "expected": {
+    "b10a": {
+      "canonical_summary_sha256": "a4c66d5b40705d21f12765c5e0dbe351e21cea42625a9ca54858a5f1a8c49c47",
+      "decision": "FR_PREP_B10A_PASS_SEALED_RESEARCH_DISPOSITION_DECISION",
+      "first_matching_rule": 2,
+      "selected_disposition": "DATA_QUALITY_REMEDIATION_REQUIRED"
+    },
+    "b11": {
+      "accepted_gap_count": 149,
+      "canonical_summary_sha256": "00a462f2b91aecc5d0cc48a48dc52dcf04813921fec19f1b23d18c00c16a2412",
+      "dataset_id": "FP_FQ_2020_2022_GOLD_H1",
+      "decision": "FR_PREP_B11_PASS_FQ_DATA_QUALITY_REMEDIATION_CONTRACT_FROZEN",
+      "structural_signature_inventory_sha256": "3fd4bc64defc96caaca8f925fd95be70665c3d602b3fb0b75c44e2e28bf41604",
+      "target_gap_count": 625,
+      "target_gap_id_set_sha256": "2c4c4d3a5d7e9db3dd56c9f82786c170131e1d27c8cf4eb269808710cfe05bb2",
+      "target_gap_metadata_sha256": "659b765d7d3c395a4f05a02988e7c374536c2b1f68b87814bcf2d7292717b831",
+      "total_gap_count": 774
+    },
+    "fq": {
+      "event_population_sha256": "78262072f3f81f45a00a9da002edb3fe9ca8171550bc741804cbb42152b66d81",
+      "gap_inventory_sha256": "9de5aa9d170cbc957ff460c10b40611f4e031416862c76081457748368604752",
+      "source_manifest_sha256": "8d2f2dc61926f879a5ef232d43d3a7e365296d94e0e1d2eef0ee066120b6aafd",
+      "source_rows": 17731
+    }
+  },
+  "prohibited_input_paths": [
+    "research/results/checkpoint_fr_prep_b7/fj_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/fq_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/observational_outcome_statistics.csv"
+  ],
+  "schema_version": "fr_prep_b11a_fq_gap_evidence_intake_authorization.v1"
+}

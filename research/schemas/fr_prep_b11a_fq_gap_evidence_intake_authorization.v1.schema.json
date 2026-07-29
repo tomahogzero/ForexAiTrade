@@ -1,0 +1,67 @@
+{
+  "$id": "fr_prep_b11a_fq_gap_evidence_intake_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_ONLY"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B11A"
+    },
+    "committed_artifacts": {
+      "items": {
+        "required": [
+          "artifact_id",
+          "path",
+          "file_sha256",
+          "access"
+        ],
+        "type": "object"
+      },
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    },
+    "evidence_intake_protocol": {
+      "required": [
+        "staging_location",
+        "descriptor_filename_suffix",
+        "descriptor_required_fields",
+        "allowed_primary_evidence_types",
+        "corroborative_only_evidence_types",
+        "permitted_evidence_roles",
+        "frozen_intake_package_statuses",
+        "frozen_per_gap_intake_statuses",
+        "missing_primary_evidence_fields"
+      ],
+      "type": "object"
+    },
+    "expected": {
+      "required": [
+        "b10a",
+        "b11",
+        "fq"
+      ],
+      "type": "object"
+    },
+    "prohibited_input_paths": {
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "fr_prep_b11a_fq_gap_evidence_intake_authorization.v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "committed_artifacts",
+    "expected",
+    "evidence_intake_protocol",
+    "prohibited_input_paths"
+  ],
+  "type": "object"
+}

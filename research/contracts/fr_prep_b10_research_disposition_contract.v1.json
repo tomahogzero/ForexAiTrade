@@ -1,0 +1,276 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "b9_binding": {
+    "canonical_summary_sha256": "3c2cd0e4a2fcf6d970b592b942965d2f154873c3d7a225b38aa0eea6d5594bf5",
+    "dataset_order": [
+      "FJ",
+      "FQ"
+    ],
+    "dataset_separation": "PROVEN",
+    "decision": "FR_PREP_B9_PASS_SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT",
+    "direction_order": [
+      "LONG",
+      "SHORT"
+    ],
+    "horizon_order": [
+      "1",
+      "3",
+      "6",
+      "12"
+    ],
+    "identity_validated": true,
+    "output_hashes_validated": true,
+    "required_conclusions_validated": true,
+    "schema_validated": true,
+    "summary_projection_validated": true
+  },
+  "canonical_summary_sha256": "6fc397b22b084f6b517d63893a4b2eb8fe2bbe37394e07189378b19dd5a9afd3",
+  "checkpoint": "FR_PREP_B10",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "current_disposition": "NOT_SELECTED",
+    "disposition_execution": "NOT_STARTED",
+    "next_allowed_scope": "SEALED_RESEARCH_DISPOSITION_DECISION_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "research_disposition_contract": "FROZEN",
+    "robustness": "NOT_ESTABLISHED",
+    "strategy_edge": "NOT_ESTABLISHED"
+  },
+  "contract_scope": {
+    "b7_jsonl_or_statistics_parsed": false,
+    "b9_markdown_parsed": false,
+    "design_only": true,
+    "disposition_executed": false,
+    "disposition_selected": false,
+    "outcomes_statistics_or_classifications_recomputed": false
+  },
+  "coverage_rules": [
+    "PRESERVE_EXACT_COVERAGE_VALUES_FOR_EVIDENCE_REPORTING_ONLY",
+    "NO_MINIMUM_ACCEPTABLE_COVERAGE_PERCENTAGE",
+    "NO_IMPUTATION_OR_EXTRAPOLATION_OF_NON_EVALUABLE_EVENTS",
+    "NO_FJ_FQ_POOLING",
+    "FROZEN_MATERIAL_LIMITATION_PRECEDES_PATTERN_EVIDENCE",
+    "POSITIVE_LOOKING_OBSERVATIONS_CANNOT_OVERRIDE_MATERIAL_LIMITATION"
+  ],
+  "decision": "FR_PREP_B10_PASS_RESEARCH_DISPOSITION_CONTRACT_FROZEN",
+  "disposition_interpretation": [
+    "BLOCKED_EVIDENCE_INTEGRITY_DOES_NOT_MEAN_STRATEGY_FAILED",
+    "DATA_QUALITY_REMEDIATION_REQUIRED_DOES_NOT_MEAN_NO_EDGE",
+    "PREDECLARED_ADDITIONAL_HOLDOUT_REQUIRED_DOES_NOT_MEAN_OVERFIT",
+    "ARCHIVE_AUDITED_DESCRIPTIVE_BASELINE_DOES_NOT_MEAN_PROFITABLE_ROBUST_OR_TRADE_READY",
+    "NO_DISPOSITION_AUTHORIZES_ORDER_LOGIC_TP_SL_MT5_DEMO_OR_LIVE_TRADING"
+  ],
+  "disposition_values": [
+    "BLOCKED_EVIDENCE_INTEGRITY",
+    "DATA_QUALITY_REMEDIATION_REQUIRED",
+    "PREDECLARED_ADDITIONAL_HOLDOUT_REQUIRED",
+    "ARCHIVE_AUDITED_DESCRIPTIVE_BASELINE"
+  ],
+  "execution_status": "PASS",
+  "forbidden_decision_inputs": [
+    "SIGN_OR_MAGNITUDE_OF_MEAN_OR_MEDIAN_RETURNS",
+    "POSITIVE_ZERO_OR_NEGATIVE_SHARES",
+    "MFE_OR_MAE_MAGNITUDE",
+    "PREFERRED_DIRECTION_YEAR_OR_HORIZON",
+    "CLASSIFICATION_COUNTS_AS_PERFORMANCE_SCORE",
+    "CASH_PL_SPREAD_COMMISSION_SWAP_SLIPPAGE_OR_LOT_ASSUMPTIONS",
+    "NEW_COVERAGE_THRESHOLD",
+    "STATISTICAL_SIGNIFICANCE_OR_CAUSALITY_CLAIM",
+    "PROFITABILITY_EDGE_ROBUSTNESS_OR_READINESS_JUDGMENT"
+  ],
+  "future_decision_record_fields": [
+    "UPSTREAM_B9_IDENTITY_AND_HASHES",
+    "SELECTED_DISPOSITION",
+    "FIRST_MATCHING_RULE",
+    "PRECEDING_RULE_EVALUATION_TRACE",
+    "DATASET_MATERIAL_LIMITATION_FLAGS",
+    "CONSISTENCY_DIVERGENCE_NO_CLEAR_PATTERN_COUNTS",
+    "RESULTING_NEXT_SCOPE",
+    "ALL_PROHIBITED_CLAIMS_FALSE",
+    "NO_RAW_STATISTIC_VALUES_OR_SELECTED_SUBGROUP"
+  ],
+  "future_decision_record_policy": {
+    "prohibited_claims_and_authorizations": {
+      "demo_or_live_trading_authorized": false,
+      "edge_claim": false,
+      "mt5_or_ea_authorized": false,
+      "order_logic_authorized": false,
+      "profitability_claim": false,
+      "robustness_claim": false,
+      "tp_sl_authorized": false,
+      "trading_readiness_claim": false
+    },
+    "raw_statistic_values_allowed": false,
+    "selected_subgroup_allowed": false
+  },
+  "mismatch_counters": {
+    "absolute_path_identity_mismatch": 0,
+    "b9_dataset_separation_or_order_mismatch": 0,
+    "b9_identity_or_decision_mismatch": 0,
+    "b9_output_hash_mismatch": 0,
+    "b9_required_conclusion_mismatch": 0,
+    "b9_schema_or_summary_projection_mismatch": 0,
+    "committed_artifact_hash_mismatch": 0,
+    "contract_repeat_mismatch": 0,
+    "disposition_value_mismatch": 0,
+    "manual_override_weighting_or_multiple_disposition_mismatch": 0,
+    "negative_test_mismatch": 0,
+    "rule_order_or_first_match_mismatch": 0
+  },
+  "negative_tests": {
+    "all_passed": true,
+    "results": {
+      "b7_jsonl_or_statistics_csv_parsing_attempt_blocked": true,
+      "b9_markdown_parsing_attempt_blocked": true,
+      "changed_rule_order_or_first_match_precedence_blocked": true,
+      "dataset_pooling_blocked": true,
+      "disposition_execution_during_design_blocked": true,
+      "invented_numerical_coverage_threshold_blocked": true,
+      "manual_override_or_multiple_dispositions_blocked": true,
+      "mt5_ea_network_external_process_or_absolute_path_leakage_blocked": true,
+      "positive_observations_overriding_material_limitation_blocked": true,
+      "preferred_horizon_direction_or_year_selection_blocked": true,
+      "profitability_edge_robustness_or_readiness_claim_blocked": true,
+      "prohibited_import_guard_fail_closed": true,
+      "return_sign_mfe_mae_or_shares_as_performance_gate_blocked": true,
+      "tp_sl_cost_cash_pl_lot_or_order_simulation_blocked": true,
+      "wrong_b9_identity_decision_or_output_hash_blocked": true
+    },
+    "test_count": 15,
+    "tests_passed": 15
+  },
+  "permitted_future_inputs": [
+    "B9_CONCLUSIONS",
+    "DATASET_IDENTITY",
+    "DATASET_ID",
+    "DATASET_EVENT_COUNT",
+    "DATASET_STATUS_COUNTS",
+    "EXACT_HORIZON_COVERAGE",
+    "DATASET_MATERIAL_LIMITATION",
+    "H12_MATERIAL_LIMITATION_RETAINED",
+    "DETERMINISTIC_EVIDENCE_STATEMENT_COUNTS",
+    "CROSS_PERIOD_CONSISTENCY_COUNT",
+    "CROSS_PERIOD_DIVERGENCE_COUNT",
+    "DATASET_SEPARATION_METADATA",
+    "DATASET_DIRECTION_HORIZON_ORDERING_METADATA"
+  ],
+  "prohibited_modules": [],
+  "rule_evaluation_policy": {
+    "evaluation_count": 1,
+    "first_matching_rule_wins": true,
+    "manual_override_allowed": false,
+    "multiple_dispositions_allowed": false,
+    "rule_order": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "score_or_weighting_allowed": false
+  },
+  "rules": [
+    {
+      "condition": "B9_IDENTITY_DECISION_HASH_SCHEMA_DATASET_SEPARATION_OR_REQUIRED_INTEGRITY_CONCLUSION_INVALID",
+      "disposition": "BLOCKED_EVIDENCE_INTEGRITY",
+      "next_scope": "EVIDENCE_REPAIR_ONLY",
+      "rule": 1
+    },
+    {
+      "condition": "ANY_DATASET_MATERIAL_LIMITATION_TRUE_OR_H12_MATERIAL_LIMITATION_RETAINED_TRUE",
+      "disposition": "DATA_QUALITY_REMEDIATION_REQUIRED",
+      "next_scope": "DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY",
+      "rule": 2
+    },
+    {
+      "condition": "ANY_CROSS_PERIOD_DIVERGENCE_OR_ANY_NO_CLEAR_PATTERN_OR_CONSISTENCY_COUNT_ZERO",
+      "disposition": "PREDECLARED_ADDITIONAL_HOLDOUT_REQUIRED",
+      "next_scope": "PREDECLARED_HOLDOUT_CONTRACT_DESIGN_ONLY",
+      "rule": 3
+    },
+    {
+      "condition": "OTHERWISE",
+      "disposition": "ARCHIVE_AUDITED_DESCRIPTIVE_BASELINE",
+      "next_scope": "RESEARCH_ARCHIVE_ONLY",
+      "rule": 4
+    }
+  ],
+  "runtime_audit": {
+    "blocked_import_requests": 5,
+    "external_process": {
+      "blocked_launch_count": 1,
+      "successful_launch_count": 0
+    },
+    "file_access": {
+      "b7_jsonl_parse_count": 0,
+      "b7_statistics_csv_parse_count": 0,
+      "b9_markdown_parse_count": 0,
+      "b9_report_raw_statistic_value_read_count": 0,
+      "blocked_prohibited_parse_attempt_count": 4,
+      "future_ohlc_read_count": 0,
+      "hash_read_operation_counts": {
+        "b10_authorization": 0,
+        "b10_authorization_schema": 0,
+        "b10_contract_schema": 0,
+        "b9_contract": 1,
+        "b9_report_json": 1,
+        "b9_report_markdown": 1,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "parse_read_operation_counts": {
+        "b10_authorization": 1,
+        "b10_authorization_schema": 1,
+        "b10_contract_schema": 1,
+        "b9_contract": 1,
+        "b9_report_json": 0,
+        "b9_report_markdown": 0,
+        "b9_schema": 1,
+        "b9_summary": 1
+      },
+      "raw_broker_csv_read_count": 0,
+      "unauthorized_successful_read_count": 0
+    },
+    "prohibited_execution_counts": {
+      "adapter_call_count": 0,
+      "b7_jsonl_parse_count": 0,
+      "b7_runner_call_count": 0,
+      "b7_statistics_parse_count": 0,
+      "b7a_auditor_call_count": 0,
+      "b9_markdown_parse_count": 0,
+      "b9_raw_statistic_value_read_count": 0,
+      "cash_pl_calculation_count": 0,
+      "classification_recomputation_count": 0,
+      "detector_execution_count": 0,
+      "disposition_execution_count": 0,
+      "disposition_selection_count": 0,
+      "ea_execution_count": 0,
+      "edge_claim_count": 0,
+      "external_process_success_count": 0,
+      "future_ohlc_read_count": 0,
+      "lot_simulation_count": 0,
+      "mt5_execution_count": 0,
+      "network_execution_count": 0,
+      "optimization_count": 0,
+      "order_simulation_count": 0,
+      "outcome_recomputation_count": 0,
+      "profitability_claim_count": 0,
+      "raw_broker_csv_read_count": 0,
+      "robustness_claim_count": 0,
+      "statistics_recomputation_count": 0,
+      "strategy_change_count": 0,
+      "tp_sl_calculation_count": 0,
+      "trading_cost_calculation_count": 0,
+      "trading_readiness_claim_count": 0
+    },
+    "prohibited_import_counts": {
+      "adapter_import_count": 0,
+      "b7_runner_import_count": 0,
+      "b7a_auditor_import_count": 0,
+      "detector_import_count": 0,
+      "mt5_import_count": 0
+    }
+  },
+  "schema_version": "fr_prep_b10_research_disposition_contract.v1"
+}

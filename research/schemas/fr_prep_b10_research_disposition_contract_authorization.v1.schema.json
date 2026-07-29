@@ -1,0 +1,81 @@
+{
+  "$id": "fr_prep_b10_research_disposition_contract_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "RESEARCH_DISPOSITION_CONTRACT_DESIGN_ONLY"
+    },
+    "checkpoint": {
+      "const": "FR_PREP_B10"
+    },
+    "committed_artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "artifact_id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "file_sha256": {
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "parse_authorized": {
+            "type": "boolean"
+          },
+          "path": {
+            "pattern": "^research/"
+          }
+        },
+        "required": [
+          "artifact_id",
+          "category",
+          "path",
+          "file_sha256",
+          "parse_authorized"
+        ],
+        "type": "object"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "expected": {
+      "required": [
+        "b9",
+        "disposition_values",
+        "disposition_interpretation",
+        "rules",
+        "permitted_future_inputs",
+        "forbidden_decision_inputs",
+        "coverage_rules",
+        "future_decision_record_fields",
+        "future_decision_record_policy",
+        "contract_conclusions"
+      ],
+      "type": "object"
+    },
+    "prohibited_input_paths": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "fr_prep_b10_research_disposition_contract_authorization.v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "committed_artifacts",
+    "prohibited_input_paths",
+    "expected"
+  ],
+  "type": "object"
+}

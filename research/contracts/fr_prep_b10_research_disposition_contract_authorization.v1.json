@@ -1,0 +1,167 @@
+{
+  "authorization_scope": "RESEARCH_DISPOSITION_CONTRACT_DESIGN_ONLY",
+  "checkpoint": "FR_PREP_B10",
+  "committed_artifacts": [
+    {
+      "artifact_id": "b9_contract",
+      "category": "b9_contract",
+      "file_sha256": "c25c71cf7d3f17a6ace779c0ddfabed04a54c92e1e7c2308546799a21ff0574b",
+      "parse_authorized": true,
+      "path": "research/contracts/fr_prep_b9_sealed_outcome_interpretation_report.v1.json"
+    },
+    {
+      "artifact_id": "b9_schema",
+      "category": "b9_schema",
+      "file_sha256": "6f3075f70b0a1d6ece8608aaefdf90662c304253a26b46c02a27679b436b3fcf",
+      "parse_authorized": true,
+      "path": "research/schemas/fr_prep_b9_sealed_outcome_interpretation_report.v1.schema.json"
+    },
+    {
+      "artifact_id": "b9_summary",
+      "category": "b9_summary",
+      "file_sha256": "c25c71cf7d3f17a6ace779c0ddfabed04a54c92e1e7c2308546799a21ff0574b",
+      "parse_authorized": true,
+      "path": "research/results/checkpoint_fr_prep_b9/outcome_interpretation_report_summary.json"
+    },
+    {
+      "artifact_id": "b9_report_json",
+      "category": "b9_report_json",
+      "file_sha256": "d0c4c3e3f8e97a27e2d76e144304b2731c94044052e71b7d4a31818ef4d52c8c",
+      "parse_authorized": false,
+      "path": "research/results/checkpoint_fr_prep_b9/observational_outcome_interpretation_report.json"
+    },
+    {
+      "artifact_id": "b9_report_markdown",
+      "category": "b9_report_markdown",
+      "file_sha256": "8a6251570d522512f1826b5f47b4fb2a2e59e473c9efff3e219a4ae5c42999d9",
+      "parse_authorized": false,
+      "path": "research/results/checkpoint_fr_prep_b9/observational_outcome_interpretation_report.md"
+    }
+  ],
+  "expected": {
+    "b9": {
+      "canonical_summary_sha256": "3c2cd0e4a2fcf6d970b592b942965d2f154873c3d7a225b38aa0eea6d5594bf5",
+      "complete_output_sha256": "f93f0d22e0387a691bf55e63cc612283741cc5db6e14aaeeb2111ff36dff92b5",
+      "decision": "FR_PREP_B9_PASS_SEALED_OBSERVATIONAL_OUTCOME_INTERPRETATION_REPORT",
+      "report_json_sha256": "d0c4c3e3f8e97a27e2d76e144304b2731c94044052e71b7d4a31818ef4d52c8c",
+      "report_markdown_sha256": "8a6251570d522512f1826b5f47b4fb2a2e59e473c9efff3e219a4ae5c42999d9"
+    },
+    "contract_conclusions": {
+      "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+      "current_disposition": "NOT_SELECTED",
+      "disposition_execution": "NOT_STARTED",
+      "next_allowed_scope": "SEALED_RESEARCH_DISPOSITION_DECISION_ONLY",
+      "order_logic": "NOT_APPROVED",
+      "performance": "NOT_EVALUATED",
+      "profitability": "NOT_CLAIMED",
+      "research_disposition_contract": "FROZEN",
+      "robustness": "NOT_ESTABLISHED",
+      "strategy_edge": "NOT_ESTABLISHED"
+    },
+    "coverage_rules": [
+      "PRESERVE_EXACT_COVERAGE_VALUES_FOR_EVIDENCE_REPORTING_ONLY",
+      "NO_MINIMUM_ACCEPTABLE_COVERAGE_PERCENTAGE",
+      "NO_IMPUTATION_OR_EXTRAPOLATION_OF_NON_EVALUABLE_EVENTS",
+      "NO_FJ_FQ_POOLING",
+      "FROZEN_MATERIAL_LIMITATION_PRECEDES_PATTERN_EVIDENCE",
+      "POSITIVE_LOOKING_OBSERVATIONS_CANNOT_OVERRIDE_MATERIAL_LIMITATION"
+    ],
+    "disposition_values": [
+      "BLOCKED_EVIDENCE_INTEGRITY",
+      "DATA_QUALITY_REMEDIATION_REQUIRED",
+      "PREDECLARED_ADDITIONAL_HOLDOUT_REQUIRED",
+      "ARCHIVE_AUDITED_DESCRIPTIVE_BASELINE"
+    ],
+    "disposition_interpretation": [
+      "BLOCKED_EVIDENCE_INTEGRITY_DOES_NOT_MEAN_STRATEGY_FAILED",
+      "DATA_QUALITY_REMEDIATION_REQUIRED_DOES_NOT_MEAN_NO_EDGE",
+      "PREDECLARED_ADDITIONAL_HOLDOUT_REQUIRED_DOES_NOT_MEAN_OVERFIT",
+      "ARCHIVE_AUDITED_DESCRIPTIVE_BASELINE_DOES_NOT_MEAN_PROFITABLE_ROBUST_OR_TRADE_READY",
+      "NO_DISPOSITION_AUTHORIZES_ORDER_LOGIC_TP_SL_MT5_DEMO_OR_LIVE_TRADING"
+    ],
+    "forbidden_decision_inputs": [
+      "SIGN_OR_MAGNITUDE_OF_MEAN_OR_MEDIAN_RETURNS",
+      "POSITIVE_ZERO_OR_NEGATIVE_SHARES",
+      "MFE_OR_MAE_MAGNITUDE",
+      "PREFERRED_DIRECTION_YEAR_OR_HORIZON",
+      "CLASSIFICATION_COUNTS_AS_PERFORMANCE_SCORE",
+      "CASH_PL_SPREAD_COMMISSION_SWAP_SLIPPAGE_OR_LOT_ASSUMPTIONS",
+      "NEW_COVERAGE_THRESHOLD",
+      "STATISTICAL_SIGNIFICANCE_OR_CAUSALITY_CLAIM",
+      "PROFITABILITY_EDGE_ROBUSTNESS_OR_READINESS_JUDGMENT"
+    ],
+    "future_decision_record_fields": [
+      "UPSTREAM_B9_IDENTITY_AND_HASHES",
+      "SELECTED_DISPOSITION",
+      "FIRST_MATCHING_RULE",
+      "PRECEDING_RULE_EVALUATION_TRACE",
+      "DATASET_MATERIAL_LIMITATION_FLAGS",
+      "CONSISTENCY_DIVERGENCE_NO_CLEAR_PATTERN_COUNTS",
+      "RESULTING_NEXT_SCOPE",
+      "ALL_PROHIBITED_CLAIMS_FALSE",
+      "NO_RAW_STATISTIC_VALUES_OR_SELECTED_SUBGROUP"
+    ],
+    "future_decision_record_policy": {
+      "prohibited_claims_and_authorizations": {
+        "demo_or_live_trading_authorized": false,
+        "edge_claim": false,
+        "mt5_or_ea_authorized": false,
+        "order_logic_authorized": false,
+        "profitability_claim": false,
+        "robustness_claim": false,
+        "tp_sl_authorized": false,
+        "trading_readiness_claim": false
+      },
+      "raw_statistic_values_allowed": false,
+      "selected_subgroup_allowed": false
+    },
+    "permitted_future_inputs": [
+      "B9_CONCLUSIONS",
+      "DATASET_IDENTITY",
+      "DATASET_ID",
+      "DATASET_EVENT_COUNT",
+      "DATASET_STATUS_COUNTS",
+      "EXACT_HORIZON_COVERAGE",
+      "DATASET_MATERIAL_LIMITATION",
+      "H12_MATERIAL_LIMITATION_RETAINED",
+      "DETERMINISTIC_EVIDENCE_STATEMENT_COUNTS",
+      "CROSS_PERIOD_CONSISTENCY_COUNT",
+      "CROSS_PERIOD_DIVERGENCE_COUNT",
+      "DATASET_SEPARATION_METADATA",
+      "DATASET_DIRECTION_HORIZON_ORDERING_METADATA"
+    ],
+    "rules": [
+      {
+        "condition": "B9_IDENTITY_DECISION_HASH_SCHEMA_DATASET_SEPARATION_OR_REQUIRED_INTEGRITY_CONCLUSION_INVALID",
+        "disposition": "BLOCKED_EVIDENCE_INTEGRITY",
+        "next_scope": "EVIDENCE_REPAIR_ONLY",
+        "rule": 1
+      },
+      {
+        "condition": "ANY_DATASET_MATERIAL_LIMITATION_TRUE_OR_H12_MATERIAL_LIMITATION_RETAINED_TRUE",
+        "disposition": "DATA_QUALITY_REMEDIATION_REQUIRED",
+        "next_scope": "DATA_QUALITY_REMEDIATION_CONTRACT_DESIGN_ONLY",
+        "rule": 2
+      },
+      {
+        "condition": "ANY_CROSS_PERIOD_DIVERGENCE_OR_ANY_NO_CLEAR_PATTERN_OR_CONSISTENCY_COUNT_ZERO",
+        "disposition": "PREDECLARED_ADDITIONAL_HOLDOUT_REQUIRED",
+        "next_scope": "PREDECLARED_HOLDOUT_CONTRACT_DESIGN_ONLY",
+        "rule": 3
+      },
+      {
+        "condition": "OTHERWISE",
+        "disposition": "ARCHIVE_AUDITED_DESCRIPTIVE_BASELINE",
+        "next_scope": "RESEARCH_ARCHIVE_ONLY",
+        "rule": 4
+      }
+    ]
+  },
+  "prohibited_input_paths": [
+    "research/results/checkpoint_fr_prep_b7/fj_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/fq_observational_outcomes.jsonl",
+    "research/results/checkpoint_fr_prep_b7/observational_outcome_statistics.csv",
+    "research/results/checkpoint_fr_prep_b9/observational_outcome_interpretation_report.md"
+  ],
+  "schema_version": "fr_prep_b10_research_disposition_contract_authorization.v1"
+}

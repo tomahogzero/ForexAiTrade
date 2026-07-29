@@ -1,0 +1,376 @@
+{
+  "$id": "fr_phase_c0_clean_data_acquisition_contract.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
+    },
+    "authorization_scope": {
+      "const": "CLEAN_XM_GOLD_H1_DATA_ACQUISITION_CONTRACT_DESIGN_ONLY"
+    },
+    "bound_artifact_hashes": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "maxProperties": 7,
+      "minProperties": 7,
+      "type": "object"
+    },
+    "canonical_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checkpoint": {
+      "const": "FR_PHASE_C0"
+    },
+    "chronology_policy": {
+      "type": "object"
+    },
+    "conclusions": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis_window": {
+          "const": "FROZEN"
+        },
+        "chronology_separation": {
+          "const": "PLANNED_NOT_YET_PROVEN"
+        },
+        "dataset_intake": {
+          "const": "NOT_STARTED"
+        },
+        "demo_or_live_trading": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "detector_execution": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "event_generation": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "gap_inventory": {
+          "const": "NOT_STARTED"
+        },
+        "holdout_status": {
+          "const": "NOT_CLAIMED"
+        },
+        "independent_audit": {
+          "const": "NOT_STARTED"
+        },
+        "lot_sizing": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "next_allowed_scope": {
+          "const": "FR_PHASE_C1_MANUAL_RAW_DATA_ACQUISITION_AND_IMMUTABLE_INTAKE_ONLY"
+        },
+        "order_logic": {
+          "const": "NOT_APPROVED"
+        },
+        "out_of_sample_status": {
+          "const": "NOT_CLAIMED"
+        },
+        "outcome_execution": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "performance": {
+          "const": "NOT_EVALUATED"
+        },
+        "phase_c_acquisition_contract": {
+          "const": "FROZEN"
+        },
+        "phase_c_dataset_acquired": {
+          "const": false
+        },
+        "phase_c_dataset_identity": {
+          "const": "NOT_YET_PROVEN"
+        },
+        "prior_fq_material_limitation": {
+          "const": "RETAINED"
+        },
+        "prior_fq_remediation": {
+          "const": "DEFERRED_AND_NOT_RESUMED"
+        },
+        "profitability": {
+          "const": "NOT_CLAIMED"
+        },
+        "raw_artifact_immutability": {
+          "const": "REQUIRED"
+        },
+        "requested_export_window": {
+          "const": "FROZEN"
+        },
+        "right_buffer_requirement": {
+          "const": "FROZEN_AT_12_VALID_H1_BARS"
+        },
+        "robustness": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "same_server_session_metadata": {
+          "const": "REQUIRED"
+        },
+        "same_server_source_identity_metadata": {
+          "const": "REQUIRED"
+        },
+        "source_data_acquisition": {
+          "const": "NOT_STARTED"
+        },
+        "strategy_edge": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "strategy_file": {
+          "const": "UNCHANGED"
+        },
+        "structural_validation": {
+          "const": "NOT_STARTED"
+        },
+        "tp_sl": {
+          "const": "NOT_AUTHORIZED"
+        }
+      },
+      "required": [
+        "phase_c_acquisition_contract",
+        "prior_fq_remediation",
+        "prior_fq_material_limitation",
+        "phase_c_dataset_acquired",
+        "phase_c_dataset_identity",
+        "chronology_separation",
+        "holdout_status",
+        "out_of_sample_status",
+        "analysis_window",
+        "requested_export_window",
+        "right_buffer_requirement",
+        "raw_artifact_immutability",
+        "same_server_source_identity_metadata",
+        "same_server_session_metadata",
+        "source_data_acquisition",
+        "dataset_intake",
+        "structural_validation",
+        "gap_inventory",
+        "independent_audit",
+        "detector_execution",
+        "event_generation",
+        "outcome_execution",
+        "performance",
+        "profitability",
+        "strategy_edge",
+        "robustness",
+        "order_logic",
+        "tp_sl",
+        "lot_sizing",
+        "demo_or_live_trading",
+        "strategy_file",
+        "next_allowed_scope"
+      ],
+      "type": "object"
+    },
+    "dataset_separation": {
+      "type": "object"
+    },
+    "decision": {
+      "const": "FR_PHASE_C0_PASS_CLEAN_DATA_ACQUISITION_CONTRACT_FROZEN"
+    },
+    "delimiter_contract": {
+      "type": "object"
+    },
+    "determinism": {
+      "additionalProperties": false,
+      "properties": {
+        "absolute_runtime_paths_excluded": {
+          "const": true
+        },
+        "controlled_relocation_canonical_records_identical": {
+          "const": true
+        },
+        "controlled_relocation_hashes_identical": {
+          "const": true
+        },
+        "controlled_relocation_ordering_identical": {
+          "const": true
+        },
+        "controlled_relocation_run": {
+          "const": "PASS"
+        },
+        "normal_run_1": {
+          "const": "PASS"
+        },
+        "normal_run_2": {
+          "const": "PASS"
+        },
+        "normal_runs_canonical_records_identical": {
+          "const": true
+        },
+        "normal_runs_hashes_identical": {
+          "const": true
+        },
+        "normal_runs_ordering_identical": {
+          "const": true
+        },
+        "temporary_artifacts_deleted": {
+          "const": true
+        }
+      },
+      "required": [
+        "normal_run_1",
+        "normal_run_2",
+        "normal_runs_canonical_records_identical",
+        "normal_runs_ordering_identical",
+        "normal_runs_hashes_identical",
+        "controlled_relocation_run",
+        "controlled_relocation_canonical_records_identical",
+        "controlled_relocation_ordering_identical",
+        "controlled_relocation_hashes_identical",
+        "absolute_runtime_paths_excluded",
+        "temporary_artifacts_deleted"
+      ],
+      "type": "object"
+    },
+    "execution_status": {
+      "const": "PASS"
+    },
+    "expected_logical_columns": {
+      "maxItems": 9,
+      "minItems": 9,
+      "type": "array"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "frozen_strategy_boundary": {
+      "type": "object"
+    },
+    "frozen_windows": {
+      "type": "object"
+    },
+    "future_acquisition_metadata": {
+      "type": "object"
+    },
+    "future_raw_artifact": {
+      "type": "object"
+    },
+    "future_source_identity_artifact": {
+      "type": "object"
+    },
+    "future_validation_contract": {
+      "type": "object"
+    },
+    "mismatch_counters": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "negative_tests": {
+      "additionalProperties": false,
+      "properties": {
+        "results": {
+          "additionalProperties": {
+            "const": "PASS"
+          },
+          "maxProperties": 22,
+          "minProperties": 22,
+          "type": "object"
+        },
+        "test_count": {
+          "const": 22
+        },
+        "tests_passed": {
+          "const": 22
+        }
+      },
+      "required": [
+        "test_count",
+        "tests_passed",
+        "results"
+      ],
+      "type": "object"
+    },
+    "output_hashes": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_record_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "contract_record_sha256"
+      ],
+      "type": "object"
+    },
+    "permitted_header_profiles": {
+      "type": "object"
+    },
+    "planned_dataset": {
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "prior_phase_binding": {
+      "type": "object"
+    },
+    "prohibited_counts": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "prohibited_metadata": {
+      "type": "array"
+    },
+    "raw_input_policy": {
+      "type": "object"
+    },
+    "right_buffer_contract": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c0_clean_data_acquisition_contract.v1"
+    },
+    "sensitive_value_in_canonical_identity_count": {
+      "const": 0
+    },
+    "session_evidence_policy": {
+      "type": "object"
+    },
+    "stage_separation": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "execution_status",
+    "decision",
+    "authorization_scope",
+    "preflight",
+    "prior_phase_binding",
+    "dataset_separation",
+    "bound_artifact_hashes",
+    "frozen_strategy_boundary",
+    "planned_dataset",
+    "chronology_policy",
+    "frozen_windows",
+    "right_buffer_contract",
+    "future_raw_artifact",
+    "future_acquisition_metadata",
+    "prohibited_metadata",
+    "expected_logical_columns",
+    "permitted_header_profiles",
+    "delimiter_contract",
+    "future_source_identity_artifact",
+    "session_evidence_policy",
+    "raw_input_policy",
+    "future_validation_contract",
+    "stage_separation",
+    "conclusions",
+    "file_creation_boundary",
+    "determinism",
+    "negative_tests",
+    "mismatch_counters",
+    "prohibited_counts",
+    "output_hashes",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "sensitive_value_in_canonical_identity_count",
+    "canonical_summary_sha256"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,138 @@
+{
+  "$id": "fr_phase_c0_clean_data_acquisition_contract_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "CLEAN_XM_GOLD_H1_DATA_ACQUISITION_CONTRACT_DESIGN_ONLY"
+    },
+    "bound_artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "access": {
+            "enum": [
+              "json",
+              "hash_only"
+            ]
+          },
+          "artifact_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "file_sha256": {
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "git_blob_sha1": {
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "access",
+          "artifact_id",
+          "file_sha256",
+          "path"
+        ],
+        "type": "object"
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array"
+    },
+    "checkpoint": {
+      "const": "FR_PHASE_C0"
+    },
+    "claims": {
+      "type": "object"
+    },
+    "dataset_separation": {
+      "type": "object"
+    },
+    "delimiter_contract": {
+      "type": "object"
+    },
+    "expected_logical_columns": {
+      "maxItems": 9,
+      "minItems": 9,
+      "type": "array"
+    },
+    "external_operator_input_boundary": {
+      "type": "object"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "frozen_strategy_boundary": {
+      "type": "object"
+    },
+    "frozen_windows": {
+      "type": "object"
+    },
+    "future_acquisition_metadata": {
+      "type": "object"
+    },
+    "future_raw_artifact": {
+      "type": "object"
+    },
+    "future_source_identity_artifact": {
+      "type": "object"
+    },
+    "operation_authorizations": {
+      "type": "object"
+    },
+    "permitted_header_profiles": {
+      "type": "object"
+    },
+    "planned_dataset": {
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "prior_phase_binding": {
+      "type": "object"
+    },
+    "raw_input_policy": {
+      "type": "object"
+    },
+    "right_buffer_contract": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c0_clean_data_acquisition_contract_authorization.v1"
+    },
+    "sensitive_data_policy": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "preflight",
+    "bound_artifacts",
+    "prior_phase_binding",
+    "dataset_separation",
+    "frozen_strategy_boundary",
+    "planned_dataset",
+    "frozen_windows",
+    "right_buffer_contract",
+    "future_raw_artifact",
+    "future_acquisition_metadata",
+    "expected_logical_columns",
+    "permitted_header_profiles",
+    "delimiter_contract",
+    "future_source_identity_artifact",
+    "external_operator_input_boundary",
+    "raw_input_policy",
+    "operation_authorizations",
+    "claims",
+    "sensitive_data_policy",
+    "file_creation_boundary"
+  ],
+  "type": "object"
+}

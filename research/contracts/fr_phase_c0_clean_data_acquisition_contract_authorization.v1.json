@@ -1,0 +1,334 @@
+{
+  "authorization_scope": "CLEAN_XM_GOLD_H1_DATA_ACQUISITION_CONTRACT_DESIGN_ONLY",
+  "bound_artifacts": [
+    {
+      "access": "json",
+      "artifact_id": "b11c_contract",
+      "file_sha256": "277cbb672d6f15c2738f794b2595424023f6d5f869aaf619f5e2c79275618097",
+      "path": "research/contracts/fr_prep_b11c_fq_remediation_deferral.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "b11c_schema",
+      "file_sha256": "3c3fa35b57325f492ddd4ba35705e3922ad4e332d43f215e524c67109ef29e74",
+      "path": "research/schemas/fr_prep_b11c_fq_remediation_deferral.v1.schema.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "fj_population_summary",
+      "file_sha256": "9fa5d138e07281bf422d09dac7604c9e9b0e2c078291b6f27ea4eb1a7f967766",
+      "path": "research/results/checkpoint_fj_historical_event_population/checkpoint_fj_population_summary.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "fj_source_manifest",
+      "file_sha256": "f64519a6341488578b95ca06103268ff3323f4593e177a3e4eba2f583e75469c",
+      "path": "research/results/checkpoint_fj_historical_event_population/checkpoint_fj_source_manifest.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "fq_decision",
+      "file_sha256": "6eee18bb34350f34ee2a4d8c0c34b703b3d3a17eacfa416c30a184e14f77dd0c",
+      "path": "research/results/checkpoint_fq_holdout_gap_boundary/checkpoint_fq_decision.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "fq_source_integrity",
+      "file_sha256": "ea4dba94f43b5f112625416dd3d723dd71c9b66520412ec2707330fa93b3797a",
+      "path": "research/results/checkpoint_fq_holdout_gap_boundary/checkpoint_fq_source_integrity.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "frozen_strategy",
+      "file_sha256": "0e72b1559f5416981c2db887f9c53a0bfbb66bada226250a064377b2b9fadaa2",
+      "git_blob_sha1": "da448295ac3bd443b376e1ce51a8e411de3c7245",
+      "path": "MQL5/Include/ForexAiTrade/Strategies/PriceActionFiboStrategy.mqh"
+    }
+  ],
+  "checkpoint": "FR_PHASE_C0",
+  "claims": {
+    "holdout": "NOT_CLAIMED",
+    "order_logic": "NOT_APPROVED",
+    "out_of_sample": "NOT_CLAIMED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "readiness": "NOT_CLAIMED",
+    "robustness": "NOT_ESTABLISHED",
+    "strategy_edge": "NOT_ESTABLISHED"
+  },
+  "dataset_separation": {
+    "clears_or_supersedes_prior_limitations": false,
+    "fj_2023_2025": "IMMUTABLE",
+    "fq_2020_2022": "IMMUTABLE_AND_DEFERRED",
+    "phase_c_namespace": "NEW_ADDITIVE",
+    "pooling_authorized": false,
+    "prior_artifact_access": "HASH_BINDING_FOR_SEPARATION_ONLY"
+  },
+  "delimiter_contract": {
+    "consistent_throughout_file_required": true,
+    "deterministic_detection_required": true,
+    "immutable_artifact_conversion_authorized": false,
+    "permitted": [
+      "COMMA",
+      "SEMICOLON",
+      "TAB"
+    ],
+    "record_exact_delimiter_required": true
+  },
+  "expected_logical_columns": [
+    "DATE",
+    "TIME",
+    "OPEN",
+    "HIGH",
+    "LOW",
+    "CLOSE",
+    "TICKVOL",
+    "VOL",
+    "SPREAD"
+  ],
+  "external_operator_input_boundary": {
+    "c0_access": "PROHIBITED",
+    "dukascopy_sample": {
+      "canonical_identity_effect": "NONE",
+      "folder_label": "Dukascopy_2020_sample",
+      "fq_limitation_clearance": false,
+      "fq_remediation_resumption": false,
+      "gold_data": false,
+      "phase_c_input": false,
+      "read_parse_hash_copy_register": "PROHIBITED",
+      "xm_data": false,
+      "xm_primary_evidence": false
+    },
+    "future_xm_folder": {
+      "c0_create_inspect_modify": "PROHIBITED",
+      "folder_label": "XM_Phase_C",
+      "stage": "C1_EXPLICIT_AUTHORIZATION_REQUIRED"
+    },
+    "root_listing_or_scan": "PROHIBITED",
+    "root_runtime_path_in_canonical_identity": false
+  },
+  "file_creation_boundary": {
+    "allowed_new_files": [
+      "research/contracts/fr_phase_c0_clean_data_acquisition_contract.v1.json",
+      "research/contracts/fr_phase_c0_clean_data_acquisition_contract_authorization.v1.json",
+      "research/results/checkpoint_fr_phase_c0/clean_data_acquisition_contract_summary.json",
+      "research/schemas/fr_phase_c0_clean_data_acquisition_contract.v1.schema.json",
+      "research/schemas/fr_phase_c0_clean_data_acquisition_contract_authorization.v1.schema.json",
+      "tools/run_fr_phase_c0_clean_data_acquisition_contract_design.py"
+    ],
+    "docs_fixtures_raw_staging_operator_input_creation_authorized": false,
+    "existing_file_modification_authorized": false,
+    "pr_creation_authorized": false
+  },
+  "frozen_strategy_boundary": {
+    "additional_indicators_authorized": false,
+    "atr_role": "METADATA_ONLY_UNDER_PRIOR_FROZEN_BOUNDARY",
+    "expected_content_sha256": "0e72b1559f5416981c2db887f9c53a0bfbb66bada226250a064377b2b9fadaa2",
+    "expected_git_blob_sha1": "da448295ac3bd443b376e1ce51a8e411de3c7245",
+    "file": "MQL5/Include/ForexAiTrade/Strategies/PriceActionFiboStrategy.mqh",
+    "file_status": "UNCHANGED",
+    "modification_authorized": false,
+    "performance_interpretation_authorized": false,
+    "strategy_and_parameters": "FROZEN"
+  },
+  "frozen_windows": {
+    "analysis_end": "2026-06-30T235959",
+    "analysis_start": "2026-01-01T000000",
+    "requested_raw_export_end": "2026-07-07T235959",
+    "requested_raw_export_start": "2026-01-01T000000"
+  },
+  "future_acquisition_metadata": {
+    "prohibited_sensitive_values": true,
+    "required_fields": [
+      "broker",
+      "exact_server",
+      "account_environment_or_type_without_account_number",
+      "exact_symbol",
+      "timeframe",
+      "terminal_build",
+      "export_method",
+      "acquisition_timestamp",
+      "requested_boundaries",
+      "observed_first_timestamp",
+      "observed_last_timestamp",
+      "original_filename",
+      "byte_size",
+      "sha256",
+      "encoding",
+      "delimiter",
+      "header_profile",
+      "decimal_separator",
+      "operator_timezone_for_logging_only",
+      "server_time_basis",
+      "utc_offset_or_unknown",
+      "dst_behavior_or_unknown"
+    ]
+  },
+  "future_raw_artifact": {
+    "artifact_id": "RAW_XM_GOLD_HASH_H1_EXPORT",
+    "exact_symbol": "GOLD",
+    "fresh_manual_export_required": true,
+    "hash_before_parse": true,
+    "multiple_files_require_contract_amendment": true,
+    "mutation_authorizations": {
+      "decimal_conversion": false,
+      "deduplication": false,
+      "delimiter_conversion": false,
+      "excel_resave": false,
+      "interpolation": false,
+      "reconstruction": false,
+      "row_deletion": false,
+      "sorting": false,
+      "timezone_conversion": false
+    },
+    "original_bytes_immutable": true,
+    "source_file_count": 1,
+    "source_server": "XMGlobal-MT5 2",
+    "timeframe": "H1"
+  },
+  "future_source_identity_artifact": {
+    "artifact_id": "SAME_SERVER_SOURCE_IDENTITY_AND_SESSION_METADATA",
+    "permitted_representations": [
+      "SANITIZED_TERMINAL_SYMBOL_SPECIFICATION_CAPTURE",
+      "SANITIZED_SESSION_SCHEDULE_EXPORT",
+      "SANITIZED_MACHINE_READABLE_OPERATOR_CAPTURE"
+    ],
+    "purpose": "BIND_EXACT_XM_SERVER_SYMBOL_TERMINAL_BUILD_AND_RETAIN_SESSION_METADATA",
+    "required_fields": [
+      "broker",
+      "exact_server",
+      "symbol",
+      "symbol_description_or_class",
+      "timeframe",
+      "terminal_build",
+      "capture_timestamp",
+      "displayed_or_exported_session_information",
+      "time_basis",
+      "timezone_or_unknown",
+      "effective_date_range_when_available",
+      "artifact_filename",
+      "artifact_sha256"
+    ]
+  },
+  "operation_authorizations": {
+    "c0_contract_design": true,
+    "c1_start": false,
+    "costs_or_cash_pl": false,
+    "demo_or_live_trading": false,
+    "detector_execution": false,
+    "event_generation": false,
+    "external_path_scan": false,
+    "fq_remediation": false,
+    "lot_sizing": false,
+    "mt5_launch": false,
+    "network_access": false,
+    "order_execution_design": false,
+    "order_simulation": false,
+    "outcome_execution": false,
+    "pr_creation": false,
+    "raw_acquisition": false,
+    "statistics_execution": false,
+    "tp_sl_design": false
+  },
+  "permitted_header_profiles": {
+    "MT5_ANGLE_BRACKET_HEADER": [
+      "<DATE>",
+      "<TIME>",
+      "<OPEN>",
+      "<HIGH>",
+      "<LOW>",
+      "<CLOSE>",
+      "<TICKVOL>",
+      "<VOL>",
+      "<SPREAD>"
+    ],
+    "MT5_PLAIN_UPPER_HEADER": [
+      "DATE",
+      "TIME",
+      "OPEN",
+      "HIGH",
+      "LOW",
+      "CLOSE",
+      "TICKVOL",
+      "VOL",
+      "SPREAD"
+    ]
+  },
+  "planned_dataset": {
+    "broker": "XM",
+    "dataset_id": "FC_2026H1_XMGLOBAL_MT5_2_GOLD_HASH_H1",
+    "dst_behavior": "UNKNOWN",
+    "expected_server": "XMGlobal-MT5 2",
+    "expected_symbol": "GOLD",
+    "holdout_status": "NOT_CLAIMED",
+    "out_of_sample_status": "NOT_CLAIMED",
+    "performance": "NOT_EVALUATED",
+    "phase": "FR_PHASE_C",
+    "profitability": "NOT_CLAIMED",
+    "purpose": "NEW_CLEAN_OBSERVATIONAL_DATASET",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  },
+  "preflight": {
+    "branch": "agent/fr-phase-c-clean-data-intake",
+    "head": "b05e10e6e8f48a46e9cab9a97e92e0ee6c6fadf8",
+    "phase_c_upstream_before_first_push": "NONE",
+    "protected_stash": "stash@{0}: On agent/fr-prep-b-runner-integration: fr-prep-b2a-partial-draft-before-b2e",
+    "remote_baseline_branch": "origin/agent/fr-prep-b-runner-integration",
+    "remote_baseline_head": "b05e10e6e8f48a46e9cab9a97e92e0ee6c6fadf8",
+    "worktree_clean": true
+  },
+  "prior_phase_binding": {
+    "accepted_gaps": 149,
+    "canonical_summary_sha256": "6888ef561e0cd9636353621a1c9137609da1b1bec6957e80356509c5dc8ac25e",
+    "decision": "FR_PREP_B11C_PASS_FQ_DATA_QUALITY_REMEDIATION_DEFERRED",
+    "decision_record_sha256": "c17357dcc1280709792409ab93904a7d932aff7e6f53bc47dec0cff3d37853e7",
+    "deferral_reason": "HISTORICAL_PRIMARY_EVIDENCE_NOT_CURRENTLY_AVAILABLE",
+    "fq_remediation": "DEFERRED",
+    "material_limitation": "RETAINED",
+    "order_logic": "NOT_APPROVED",
+    "outcome_rerun": "NOT_AUTHORIZED",
+    "phase_c_is_fq_remediation_resumption": false,
+    "primary_evidence_packages": 0,
+    "reclassified_gaps": 0,
+    "unresolved_target_gaps": 625
+  },
+  "raw_input_policy": {
+    "absolute_operator_path_in_canonical_identity": false,
+    "c0_input_directory_creation_authorized": false,
+    "c0_raw_artifact_read_authorized": false,
+    "c1_operational_absolute_path_may_be_supplied": true,
+    "canonical_identity_permitted_fields": [
+      "sanitized_filename",
+      "content_sha256",
+      "declared_metadata"
+    ],
+    "raw_artifacts_tracked_in_repository_before_c1": false
+  },
+  "right_buffer_contract": {
+    "buffer_rows_generate_phase_c_events": false,
+    "c0_sufficiency_status": "NOT_EVALUATED",
+    "future_permitted_support": [
+      "STRUCTURAL_VALIDATION",
+      "SEPARATELY_AUTHORIZED_OUTCOME_HORIZONS"
+    ],
+    "minimum_valid_h1_bars": 12,
+    "missing_calendar_hours_count_as_valid_h1_bars": false,
+    "synthetic_or_interpolated_bars_may_satisfy": false
+  },
+  "schema_version": "fr_phase_c0_clean_data_acquisition_contract_authorization.v1",
+  "sensitive_data_policy": {
+    "absolute_runtime_path_in_canonical_identity": "PROHIBITED",
+    "credentials_in_metadata": "PROHIBITED",
+    "prohibited_fields": [
+      "account_number",
+      "login_id",
+      "user_name",
+      "password",
+      "token",
+      "api_key",
+      "credentials"
+    ]
+  }
+}

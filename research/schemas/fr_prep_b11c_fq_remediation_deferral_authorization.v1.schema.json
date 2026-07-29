@@ -1,0 +1,16 @@
+{
+  "$id":"fr_prep_b11c_fq_remediation_deferral_authorization.v1.schema.json",
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties":false,
+  "properties":{
+    "authorization_scope":{"const":"FQ_REMEDIATION_DEFERRAL_DECISION_RECORD_ONLY"},
+    "checkpoint":{"const":"FR_PREP_B11C"},
+    "committed_artifacts":{"type":"array","minItems":12,"maxItems":12},
+    "expected":{"type":"object","required":["b11","b11a","b11b"]},
+    "operator_decision":{"type":"object","required":["further_manual_historical_evidence_capture","reason_code","manual_search_statement_is_evidence","resumption_requires_new_explicit_authorization"]},
+    "prohibited_input_parsing":{"type":"array","minItems":3,"maxItems":3},
+    "schema_version":{"const":"fr_prep_b11c_fq_remediation_deferral_authorization.v1"}
+  },
+  "required":["schema_version","checkpoint","authorization_scope","committed_artifacts","expected","operator_decision","prohibited_input_parsing"],
+  "type":"object"
+}

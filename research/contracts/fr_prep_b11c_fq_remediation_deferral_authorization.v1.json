@@ -1,0 +1,31 @@
+{
+  "authorization_scope": "FQ_REMEDIATION_DEFERRAL_DECISION_RECORD_ONLY",
+  "checkpoint": "FR_PREP_B11C",
+  "committed_artifacts": [
+    {"access":"json","artifact_id":"b11_contract","file_sha256":"09990fd76d0270ceca1564977c13d6bfdefdcd69cbe3dca3b31eb7fde6d8314d","path":"research/contracts/fr_prep_b11_fq_data_quality_remediation_contract.v1.json"},
+    {"access":"json","artifact_id":"b11_schema","file_sha256":"5b3012face8cced8def807e36045336f95903af698d6707f1bd4cb3ad3302b09","path":"research/schemas/fr_prep_b11_fq_data_quality_remediation_contract.v1.schema.json"},
+    {"access":"json","artifact_id":"b11_summary","file_sha256":"09990fd76d0270ceca1564977c13d6bfdefdcd69cbe3dca3b31eb7fde6d8314d","path":"research/results/checkpoint_fr_prep_b11/fq_data_quality_remediation_contract_summary.json"},
+    {"access":"json","artifact_id":"b11a_contract","file_sha256":"b3fef0d75071f18c6d4fc39ce4c740c2b5ad5e5bb5a06ab4a4d9e3ea5621f813","path":"research/contracts/fr_prep_b11a_fq_gap_evidence_intake.v1.json"},
+    {"access":"json","artifact_id":"b11a_schema","file_sha256":"e24fc5dbb3cce539aee961dd34791f7a31f051633fcae8e38159f21ed923d577","path":"research/schemas/fr_prep_b11a_fq_gap_evidence_intake.v1.schema.json"},
+    {"access":"json","artifact_id":"b11a_summary","file_sha256":"b3fef0d75071f18c6d4fc39ce4c740c2b5ad5e5bb5a06ab4a4d9e3ea5621f813","path":"research/results/checkpoint_fr_prep_b11a/fq_gap_evidence_intake_summary.json"},
+    {"access":"json","artifact_id":"b11b_contract","file_sha256":"9de43217a0a3a6e462f8a7e111156d17631ef990886a55c04d9c69adc43efc7f","path":"research/contracts/fr_prep_b11b_fq_gap_evidence_capture_kit.v1.json"},
+    {"access":"json","artifact_id":"b11b_schema","file_sha256":"23e4152e0a0a1733f327c969716c871e0bf92b615c0ae68c21af5a8ce5371b9d","path":"research/schemas/fr_prep_b11b_fq_gap_evidence_capture_kit.v1.schema.json"},
+    {"access":"json","artifact_id":"b11b_summary","file_sha256":"9de43217a0a3a6e462f8a7e111156d17631ef990886a55c04d9c69adc43efc7f","path":"research/results/checkpoint_fr_prep_b11b/fq_gap_evidence_capture_kit_summary.json"},
+    {"access":"hash_only","artifact_id":"b11b_batches","file_sha256":"d9943256c113ec292a712d53b3224eb86298c33737ad212f85dc404f5db14a8a","path":"research/results/checkpoint_fr_prep_b11b/fq_gap_evidence_capture_batches.json"},
+    {"access":"hash_only","artifact_id":"b11b_checklist","file_sha256":"2173404a15aac1d9e2d7e66c0f99d3e201f11112643ed16a7c2a3142df0de876","path":"research/results/checkpoint_fr_prep_b11b/fq_gap_evidence_capture_checklist.csv"},
+    {"access":"hash_only","artifact_id":"b11b_guide","file_sha256":"fa67f36c8f38624e975a9a9e465e2241e65b64640d79d21a0d589860916cdb93","path":"research/results/checkpoint_fr_prep_b11b/fq_gap_evidence_capture_guide.md"}
+  ],
+  "expected": {
+    "b11":{"canonical_summary_sha256":"00a462f2b91aecc5d0cc48a48dc52dcf04813921fec19f1b23d18c00c16a2412","decision":"FR_PREP_B11_PASS_FQ_DATA_QUALITY_REMEDIATION_CONTRACT_FROZEN","accepted_gap_count":149,"target_gap_count":625},
+    "b11a":{"canonical_summary_sha256":"7705e0e88ac0ce9bb538a23aedd6c99f71e0589ab9faa76c17bd144a2b83ed6e","decision":"FR_PREP_B11A_PASS_FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_BASELINE","evidence_packages_registered":0,"primary_packages_registered":0,"gaps_with_primary_evidence":0,"gaps_without_primary_evidence":625,"intake_batch_status":"NO_PRIMARY_EVIDENCE_SUBMITTED","evidence_intake_complete":false},
+    "b11b":{"canonical_summary_sha256":"051c5f600b4c8c4febf63ef522bb9c3e05365698c7a1934010f7f320a1e8adef","decision":"FR_PREP_B11B_PASS_FQ_GAP_PRIMARY_EVIDENCE_CAPTURE_KIT","capture_batches":43,"target_gaps_preserved":625,"evidence_packages_created":0,"evidence_staging_content_created":false,"complete_sha256":"32630c52bb062638845961c383a133c4de60599c7d49e9623a73bab4e380b398"}
+  },
+  "operator_decision": {
+    "further_manual_historical_evidence_capture":"DEFERRED",
+    "reason_code":"HISTORICAL_PRIMARY_EVIDENCE_NOT_CURRENTLY_AVAILABLE",
+    "manual_search_statement_is_evidence":false,
+    "resumption_requires_new_explicit_authorization":true
+  },
+  "prohibited_input_parsing":["b11b_batches","b11b_checklist","b11b_guide"],
+  "schema_version":"fr_prep_b11c_fq_remediation_deferral_authorization.v1"
+}

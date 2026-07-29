@@ -1,0 +1,132 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "canonical_summary_sha256": "6888ef561e0cd9636353621a1c9137609da1b1bec6957e80356509c5dc8ac25e",
+  "checkpoint": "FR_PREP_B11C",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "evidence_packages_registered": 0,
+    "fq_data_quality_remediation": "DEFERRED",
+    "gap_adjudication": "NOT_STARTED",
+    "gap_reclassification": "NOT_STARTED",
+    "material_limitation": "RETAINED",
+    "next_allowed_scope": "FQ_REMEDIATION_RESUMPTION_AUTHORIZATION_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "original_gap_inventory_immutable": true,
+    "outcome_rerun": "NOT_AUTHORIZED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "robustness": "NOT_ESTABLISHED",
+    "strategy_edge": "NOT_ESTABLISHED",
+    "synthetic_bar_creation": "PROHIBITED",
+    "timeline_rebuild": "NOT_STARTED",
+    "unresolved_target_gap_count": 625
+  },
+  "decision": "FR_PREP_B11C_PASS_FQ_DATA_QUALITY_REMEDIATION_DEFERRED",
+  "determinism": {
+    "controlled_relocation_identical": true,
+    "normal_repeat_identical": true,
+    "temporary_artifacts_deleted": true
+  },
+  "disposition": {
+    "all_target_gaps_remain": "UNVERIFIED_GAP",
+    "deferral_reason": "HISTORICAL_PRIMARY_EVIDENCE_NOT_CURRENTLY_AVAILABLE",
+    "evidence_intake_complete": false,
+    "existing_accepted_gap_count": 149,
+    "fq_remediation_track": "DEFERRED",
+    "material_limitation": "RETAINED",
+    "primary_evidence_package_count": 0,
+    "reclassified_gap_count": 0,
+    "remediation_execution": "NOT_COMPLETED",
+    "remediation_failure": "NOT_CLAIMED",
+    "unresolved_target_gap_count": 625
+  },
+  "execution_status": "PASS",
+  "interpretation": {
+    "b7_through_b9_research": "DESCRIPTIVE_ONLY",
+    "deferred_establishes_profitability_edge_or_robustness": false,
+    "deferred_means_gaps_are_valid_closures": false,
+    "deferred_means_source_omissions_are_proven": false,
+    "deferred_means_strategy_failed": false,
+    "fq_h12_material_limitation": "RETAINED",
+    "fq_outcome_rerun_authorized": false,
+    "order_logic_authorized": false
+  },
+  "mismatch_counters": {
+    "artifact_hash": 0,
+    "determinism": 0,
+    "frozen_counts": 0,
+    "frozen_state": 0,
+    "upstream_decision": 0,
+    "upstream_identity": 0
+  },
+  "negative_tests": {
+    "absolute_path_or_secret_leakage": "PASS",
+    "changed_capture_kit_hashes": "PASS",
+    "cross_broker_observation_accepts_xm_gap": "PASS",
+    "deferred_treated_as_remediation_success": "PASS",
+    "gap_reclassified_or_removed": "PASS",
+    "manual_statement_registered_as_primary_evidence": "PASS",
+    "material_limitation_cleared": "PASS",
+    "mt5_ea_network_or_external_process_execution": "PASS",
+    "original_inventory_modified": "PASS",
+    "profitability_edge_robustness_or_readiness_claim": "PASS",
+    "strategy_indicator_or_parameter_modification": "PASS",
+    "synthetic_timestamp_or_ohlc_creation": "PASS",
+    "timeline_rebuild_or_outcome_rerun": "PASS",
+    "trade_cost_or_order_simulation": "PASS",
+    "wrong_b11_b11a_or_b11b_identity_or_decision": "PASS"
+  },
+  "operator_decision": {
+    "admissible_hash_bound_primary_artifact_supplied": false,
+    "confirmed_market_closure_claim": false,
+    "cross_broker_observation_establishes_xm_gap_acceptance": false,
+    "deferral_reason": "HISTORICAL_PRIMARY_EVIDENCE_NOT_CURRENTLY_AVAILABLE",
+    "frozen_source_error_claim": false,
+    "further_manual_historical_evidence_capture": "DEFERRED",
+    "manual_search_performed": true,
+    "manual_search_statement_registered_as_evidence": false,
+    "resumption_requires_new_explicit_authorization": true
+  },
+  "output_hashes": {
+    "decision_record_sha256": "c17357dcc1280709792409ab93904a7d932aff7e6f53bc47dec0cff3d37853e7"
+  },
+  "prohibited_counts": {
+    "absolute_path_or_secret_leakage": 0,
+    "bar_skip_changes": 0,
+    "evidence_created_or_registered": 0,
+    "gap_adjudications": 0,
+    "gap_reclassifications": 0,
+    "inventory_modifications": 0,
+    "mt5_ea_network_external_processes": 0,
+    "order_authorizations": 0,
+    "outcome_reruns": 0,
+    "prohibited_imports": 0,
+    "staging_content_created": 0,
+    "strategy_modifications": 0,
+    "synthetic_timestamps_or_ohlc": 0,
+    "timeline_rebuilds": 0
+  },
+  "schema_version": "fr_prep_b11c_fq_remediation_deferral.v1",
+  "upstream_validation": {
+    "all_bound_artifact_hashes_valid": true,
+    "b11_canonical_summary_sha256": "00a462f2b91aecc5d0cc48a48dc52dcf04813921fec19f1b23d18c00c16a2412",
+    "b11a_canonical_summary_sha256": "7705e0e88ac0ce9bb538a23aedd6c99f71e0589ab9faa76c17bd144a2b83ed6e",
+    "b11b_canonical_summary_sha256": "051c5f600b4c8c4febf63ef522bb9c3e05365698c7a1934010f7f320a1e8adef",
+    "frozen_state_checks": {
+      "b11_accepted_count": true,
+      "b11_inventory_immutable": true,
+      "b11_target_count": true,
+      "b11a_incomplete": true,
+      "b11a_no_primary_status": true,
+      "b11a_primary_gap_zero": true,
+      "b11a_primary_zero": true,
+      "b11a_registered_zero": true,
+      "b11a_without_primary_625": true,
+      "b11b_batch_count": true,
+      "b11b_complete_hash": true,
+      "b11b_no_packages": true,
+      "b11b_no_staging": true,
+      "b11b_targets_preserved": true
+    }
+  }
+}

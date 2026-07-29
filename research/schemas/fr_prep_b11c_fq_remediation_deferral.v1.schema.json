@@ -1,0 +1,25 @@
+{
+  "$id":"fr_prep_b11c_fq_remediation_deferral.v1.schema.json",
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties":false,
+  "properties":{
+    "absolute_runtime_path_in_canonical_identity_count":{"const":0},
+    "canonical_summary_sha256":{"pattern":"^[0-9a-f]{64}$"},
+    "checkpoint":{"const":"FR_PREP_B11C"},
+    "conclusions":{"type":"object","required":["fq_data_quality_remediation","original_gap_inventory_immutable","unresolved_target_gap_count","evidence_packages_registered","gap_adjudication","gap_reclassification","timeline_rebuild","outcome_rerun","synthetic_bar_creation","material_limitation","performance","profitability","strategy_edge","robustness","order_logic","candidate","next_allowed_scope"]},
+    "decision":{"const":"FR_PREP_B11C_PASS_FQ_DATA_QUALITY_REMEDIATION_DEFERRED"},
+    "determinism":{"type":"object"},
+    "disposition":{"type":"object"},
+    "execution_status":{"const":"PASS"},
+    "interpretation":{"type":"object"},
+    "mismatch_counters":{"type":"object","additionalProperties":{"const":0}},
+    "negative_tests":{"type":"object","additionalProperties":{"const":"PASS"}},
+    "operator_decision":{"type":"object"},
+    "output_hashes":{"type":"object"},
+    "prohibited_counts":{"type":"object","additionalProperties":{"const":0}},
+    "schema_version":{"const":"fr_prep_b11c_fq_remediation_deferral.v1"},
+    "upstream_validation":{"type":"object"}
+  },
+  "required":["schema_version","checkpoint","execution_status","decision","upstream_validation","operator_decision","disposition","interpretation","conclusions","determinism","negative_tests","mismatch_counters","prohibited_counts","output_hashes","absolute_runtime_path_in_canonical_identity_count","canonical_summary_sha256"],
+  "type":"object"
+}

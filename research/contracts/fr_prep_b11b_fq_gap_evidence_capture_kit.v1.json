@@ -1,0 +1,116 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "canonical_summary_sha256": "051c5f600b4c8c4febf63ef522bb9c3e05365698c7a1934010f7f320a1e8adef",
+  "checkpoint": "FR_PREP_B11B",
+  "conclusions": {
+    "candidate": "NOT_READY_FOR_ORDER_LOGIC",
+    "capture_batches_created": 43,
+    "capture_kit": "CREATED",
+    "evidence_intake_complete": false,
+    "evidence_packages_created": 0,
+    "evidence_staging_content_created": false,
+    "gap_adjudication": "NOT_STARTED",
+    "gap_reclassification": "NOT_STARTED",
+    "next_allowed_scope": "FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "outcome_rerun": "NOT_AUTHORIZED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "structural_signature_groups_preserved": 36,
+    "synthetic_bar_creation": "PROHIBITED",
+    "target_dataset": "FP_FQ_2020_2022_GOLD_H1",
+    "target_gap_count": 625,
+    "target_gaps_preserved": true,
+    "timeline_rebuild": "NOT_STARTED"
+  },
+  "decision": "FR_PREP_B11B_PASS_FQ_GAP_PRIMARY_EVIDENCE_CAPTURE_KIT",
+  "determinism": {
+    "controlled_relocation_identical": true,
+    "normal_repeat_identical": true,
+    "temporary_artifacts_deleted": true
+  },
+  "execution_status": "PASS",
+  "helper_validation": {
+    "all_required_cli_flags": true,
+    "ast_parse": true,
+    "frozen_sources_rejected": true,
+    "helper_not_executed": true,
+    "no_adjudication_fields": true,
+    "no_network_external_imports": true,
+    "offline_hashing_present": true,
+    "security_guards_present": true,
+    "target_hash_binding_present": true
+  },
+  "mismatch_counters": {
+    "artifact_hash": 0,
+    "determinism": 0,
+    "ordering": 0,
+    "structural_signature": 0,
+    "target_metadata": 0,
+    "target_set": 0,
+    "upstream_identity": 0
+  },
+  "negative_tests": {
+    "capture_groups_ranked_by_outcomes_or_coverage": "PASS",
+    "changed_registry_request_matrix_or_complete_hash": "PASS",
+    "credential_metadata_accepted": "PASS",
+    "different_broker_server_symbol_accepted_without_conflict": "PASS",
+    "evidence_staging_content_created": "PASS",
+    "fake_or_placeholder_evidence_generated": "PASS",
+    "frozen_fq_csv_accepted_as_independent_evidence": "PASS",
+    "helper_adjudication_or_bar_skip_change": "PASS",
+    "invalid_evidence_type_or_role": "PASS",
+    "missing_duplicate_or_extra_target_gap": "PASS",
+    "mt5_ea_network_or_external_process_launched": "PASS",
+    "profitability_edge_robustness_or_readiness_claim": "PASS",
+    "structural_signature_used_as_closure_proof": "PASS",
+    "symlink_traversal_or_absolute_path_leakage": "PASS",
+    "timeline_rebuild_or_outcome_rerun": "PASS",
+    "trade_simulation_or_cost_request": "PASS",
+    "unknown_or_duplicate_gap_id_accepted": "PASS",
+    "wrong_b11_or_b11a_identity_or_decision": "PASS"
+  },
+  "output_hashes": {
+    "batches_sha256": "d9943256c113ec292a712d53b3224eb86298c33737ad212f85dc404f5db14a8a",
+    "checklist_sha256": "2173404a15aac1d9e2d7e66c0f99d3e201f11112643ed16a7c2a3142df0de876",
+    "complete_sha256": "32630c52bb062638845961c383a133c4de60599c7d49e9623a73bab4e380b398",
+    "guide_sha256": "fa67f36c8f38624e975a9a9e465e2241e65b64640d79d21a0d589860916cdb93"
+  },
+  "prohibited_counts": {
+    "absolute_runtime_path_identity_leakage": 0,
+    "adjudications": 0,
+    "bar_skip_changes": 0,
+    "evidence_packages_created": 0,
+    "evidence_staging_content_created": 0,
+    "helper_executions": 0,
+    "mt5_ea_network_external_processes": 0,
+    "outcome_reruns": 0,
+    "performance_profitability_readiness_claims": 0,
+    "reclassifications": 0,
+    "synthetic_bars": 0,
+    "timeline_rebuilds": 0
+  },
+  "schema_version": "fr_prep_b11b_fq_gap_evidence_capture_kit.v1",
+  "target_validation": {
+    "all_targets_preserved_in_each_batch_family": true,
+    "batch_family_counts": {
+      "BROAD_DATE_RANGE": 3,
+      "SOURCE_YEAR_FILE": 4,
+      "STRUCTURAL_SIGNATURE": 36
+    },
+    "capture_batch_count": 43,
+    "structural_signature_count": 36,
+    "structural_signature_inventory_sha256": "3fd4bc64defc96caaca8f925fd95be70665c3d602b3fb0b75c44e2e28bf41604",
+    "target_gap_count": 625,
+    "target_gap_id_set_sha256": "2c4c4d3a5d7e9db3dd56c9f82786c170131e1d27c8cf4eb269808710cfe05bb2",
+    "target_gap_metadata_sha256": "659b765d7d3c395a4f05a02988e7c374536c2b1f68b87814bcf2d7292717b831",
+    "unique_target_gap_count": 625
+  },
+  "upstream_validation": {
+    "b11_canonical_summary_sha256": "00a462f2b91aecc5d0cc48a48dc52dcf04813921fec19f1b23d18c00c16a2412",
+    "b11_decision": "FR_PREP_B11_PASS_FQ_DATA_QUALITY_REMEDIATION_CONTRACT_FROZEN",
+    "b11a_canonical_summary_sha256": "7705e0e88ac0ce9bb538a23aedd6c99f71e0589ab9faa76c17bd144a2b83ed6e",
+    "b11a_decision": "FR_PREP_B11A_PASS_FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_BASELINE",
+    "registry_request_matrix_and_complete_hashes_valid": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$id":"fr_prep_b11b_fq_gap_evidence_capture_kit.v1.schema.json",
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties":false,
+  "properties":{
+    "absolute_runtime_path_in_canonical_identity_count":{"const":0},
+    "canonical_summary_sha256":{"pattern":"^[0-9a-f]{64}$"},
+    "checkpoint":{"const":"FR_PREP_B11B"},
+    "conclusions":{"type":"object","required":["capture_kit","target_dataset","target_gap_count","target_gaps_preserved","capture_batches_created","structural_signature_groups_preserved","evidence_packages_created","evidence_staging_content_created","evidence_intake_complete","gap_adjudication","gap_reclassification","timeline_rebuild","outcome_rerun","synthetic_bar_creation","performance","profitability","order_logic","candidate","next_allowed_scope"]},
+    "decision":{"const":"FR_PREP_B11B_PASS_FQ_GAP_PRIMARY_EVIDENCE_CAPTURE_KIT"},
+    "determinism":{"type":"object","required":["normal_repeat_identical","controlled_relocation_identical","temporary_artifacts_deleted"]},
+    "execution_status":{"const":"PASS"},
+    "helper_validation":{"type":"object"},
+    "mismatch_counters":{"type":"object","additionalProperties":{"const":0}},
+    "negative_tests":{"type":"object","additionalProperties":{"const":"PASS"}},
+    "output_hashes":{"type":"object"},
+    "prohibited_counts":{"type":"object","additionalProperties":{"const":0}},
+    "schema_version":{"const":"fr_prep_b11b_fq_gap_evidence_capture_kit.v1"},
+    "target_validation":{"type":"object"},
+    "upstream_validation":{"type":"object"}
+  },
+  "required":["schema_version","checkpoint","execution_status","decision","upstream_validation","target_validation","helper_validation","determinism","negative_tests","mismatch_counters","prohibited_counts","conclusions","output_hashes","absolute_runtime_path_in_canonical_identity_count","canonical_summary_sha256"],
+  "type":"object"
+}

@@ -1,0 +1,22 @@
+{
+  "authorization_scope": "FQ_GAP_PRIMARY_EVIDENCE_CAPTURE_KIT_ONLY",
+  "checkpoint": "FR_PREP_B11B",
+  "committed_artifacts": [
+    {"access":"json","artifact_id":"b11_contract","file_sha256":"09990fd76d0270ceca1564977c13d6bfdefdcd69cbe3dca3b31eb7fde6d8314d","path":"research/contracts/fr_prep_b11_fq_data_quality_remediation_contract.v1.json"},
+    {"access":"json","artifact_id":"b11_schema","file_sha256":"5b3012face8cced8def807e36045336f95903af698d6707f1bd4cb3ad3302b09","path":"research/schemas/fr_prep_b11_fq_data_quality_remediation_contract.v1.schema.json"},
+    {"access":"json","artifact_id":"b11_summary","file_sha256":"09990fd76d0270ceca1564977c13d6bfdefdcd69cbe3dca3b31eb7fde6d8314d","path":"research/results/checkpoint_fr_prep_b11/fq_data_quality_remediation_contract_summary.json"},
+    {"access":"json","artifact_id":"b11a_contract","file_sha256":"b3fef0d75071f18c6d4fc39ce4c740c2b5ad5e5bb5a06ab4a4d9e3ea5621f813","path":"research/contracts/fr_prep_b11a_fq_gap_evidence_intake.v1.json"},
+    {"access":"json","artifact_id":"b11a_schema","file_sha256":"e24fc5dbb3cce539aee961dd34791f7a31f051633fcae8e38159f21ed923d577","path":"research/schemas/fr_prep_b11a_fq_gap_evidence_intake.v1.schema.json"},
+    {"access":"json","artifact_id":"b11a_summary","file_sha256":"b3fef0d75071f18c6d4fc39ce4c740c2b5ad5e5bb5a06ab4a4d9e3ea5621f813","path":"research/results/checkpoint_fr_prep_b11a/fq_gap_evidence_intake_summary.json"},
+    {"access":"json","artifact_id":"b11a_registry","file_sha256":"0f4a3cf02e7f0cbdb604254378847d86dcb031a2f750cc64d70cfdc6e3badd57","path":"research/results/checkpoint_fr_prep_b11a/fq_gap_evidence_intake_registry.json"},
+    {"access":"json","artifact_id":"b11a_request","file_sha256":"b3e2cd4b1b075884491a9134bea78e453459bde690d946973613082ce780a7ae","path":"research/results/checkpoint_fr_prep_b11a/fq_gap_evidence_request_manifest.json"},
+    {"access":"csv","artifact_id":"b11a_matrix","file_sha256":"e6ba9b3a70e3b15509037f4fbf55d9b2d587692dcfa17e99a03935c5ff675504","path":"research/results/checkpoint_fr_prep_b11a/fq_gap_evidence_target_matrix.csv"}
+  ],
+  "expected": {
+    "b11":{"canonical_summary_sha256":"00a462f2b91aecc5d0cc48a48dc52dcf04813921fec19f1b23d18c00c16a2412","decision":"FR_PREP_B11_PASS_FQ_DATA_QUALITY_REMEDIATION_CONTRACT_FROZEN","structural_signature_count":36,"structural_signature_inventory_sha256":"3fd4bc64defc96caaca8f925fd95be70665c3d602b3fb0b75c44e2e28bf41604","target_gap_count":625,"target_gap_id_set_sha256":"2c4c4d3a5d7e9db3dd56c9f82786c170131e1d27c8cf4eb269808710cfe05bb2","target_gap_metadata_sha256":"659b765d7d3c395a4f05a02988e7c374536c2b1f68b87814bcf2d7292717b831"},
+    "b11a":{"canonical_summary_sha256":"7705e0e88ac0ce9bb538a23aedd6c99f71e0589ab9faa76c17bd144a2b83ed6e","complete_sha256":"138520965abe5f570f4544d6fae2819ca8b4ae55f50442edeb7def2d8696ee1a","decision":"FR_PREP_B11A_PASS_FQ_GAP_REMEDIATION_EVIDENCE_INTAKE_BASELINE","intake_batch_status":"NO_PRIMARY_EVIDENCE_SUBMITTED","packages_registered":0,"gaps_with_primary_evidence":0}
+  },
+  "helper_execution_authorized": false,
+  "staging_creation_authorized": false,
+  "schema_version": "fr_prep_b11b_fq_gap_evidence_capture_kit_authorization.v1"
+}

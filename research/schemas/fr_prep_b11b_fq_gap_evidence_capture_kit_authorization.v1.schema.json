@@ -1,0 +1,16 @@
+{
+  "$id":"fr_prep_b11b_fq_gap_evidence_capture_kit_authorization.v1.schema.json",
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties":false,
+  "properties":{
+    "authorization_scope":{"const":"FQ_GAP_PRIMARY_EVIDENCE_CAPTURE_KIT_ONLY"},
+    "checkpoint":{"const":"FR_PREP_B11B"},
+    "committed_artifacts":{"type":"array","minItems":9,"maxItems":9},
+    "expected":{"type":"object","required":["b11","b11a"]},
+    "helper_execution_authorized":{"const":false},
+    "staging_creation_authorized":{"const":false},
+    "schema_version":{"const":"fr_prep_b11b_fq_gap_evidence_capture_kit_authorization.v1"}
+  },
+  "required":["schema_version","checkpoint","authorization_scope","committed_artifacts","expected","helper_execution_authorized","staging_creation_authorized"],
+  "type":"object"
+}

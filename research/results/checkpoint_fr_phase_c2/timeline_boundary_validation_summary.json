@@ -1,0 +1,139 @@
+{
+  "boundaries": {
+    "analysis_leading_boundary": {
+      "boundary": "ANALYSIS_LEADING_BOUNDARY",
+      "expected_hourly_timestamp": "2026-01-01T00:00:00",
+      "final_status": "UNVERIFIED_BOUNDARY_COVERAGE",
+      "first_missing_expected_hourly_timestamp": "2026-01-01T00:00:00",
+      "last_missing_expected_hourly_timestamp": "2026-01-02T07:00:00",
+      "nominal_missing_hour_count": 32,
+      "observed_timestamp": "2026-01-02T08:00:00",
+      "status": "INCOMPLETE_LEADING_COVERAGE"
+    },
+    "analysis_trailing_boundary": {
+      "boundary": "ANALYSIS_TRAILING_BOUNDARY",
+      "expected_hourly_timestamp": "2026-06-30T23:00:00",
+      "final_status": "COMPLETE",
+      "first_missing_expected_hourly_timestamp": null,
+      "last_missing_expected_hourly_timestamp": null,
+      "nominal_missing_hour_count": 0,
+      "observed_timestamp": "2026-06-30T23:00:00",
+      "status": "COMPLETE"
+    },
+    "observed_raw_trailing_boundary": {
+      "boundary": "OBSERVED_RAW_TRAILING_BOUNDARY",
+      "expected_hourly_timestamp": "2026-07-07T23:00:00",
+      "final_status": "OBSERVED_OVERSHOOT",
+      "first_missing_expected_hourly_timestamp": null,
+      "last_missing_expected_hourly_timestamp": null,
+      "nominal_missing_hour_count": 0,
+      "observed_timestamp": "2026-07-30T03:00:00",
+      "status": "OBSERVED_OVERSHOOT"
+    },
+    "requested_export_trailing_boundary": {
+      "boundary": "REQUESTED_EXPORT_TRAILING_BOUNDARY",
+      "expected_hourly_timestamp": "2026-07-07T23:00:00",
+      "final_status": "OBSERVED_OVERSHOOT",
+      "first_missing_expected_hourly_timestamp": null,
+      "last_missing_expected_hourly_timestamp": null,
+      "nominal_missing_hour_count": 0,
+      "observed_timestamp": "2026-07-07T23:00:00",
+      "status": "OBSERVED_OVERSHOOT"
+    },
+    "requested_leading_boundary": {
+      "boundary": "REQUESTED_LEADING_BOUNDARY",
+      "expected_hourly_timestamp": "2026-01-01T00:00:00",
+      "final_status": "UNVERIFIED_BOUNDARY_COVERAGE",
+      "first_missing_expected_hourly_timestamp": "2026-01-01T00:00:00",
+      "last_missing_expected_hourly_timestamp": "2026-01-02T07:00:00",
+      "nominal_missing_hour_count": 32,
+      "observed_timestamp": "2026-01-02T08:00:00",
+      "status": "INCOMPLETE_LEADING_COVERAGE"
+    }
+  },
+  "canonical_record_sha256": "8ccdd6cb1bf098f23ef662bd318794720a98bb359c9e94007fbe50d728e5590e",
+  "dst_behavior": "UNKNOWN",
+  "evidence": {
+    "duplicate_content_is_independent_corroboration": false,
+    "evidence_filename_count": 4,
+    "evidence_unique_content_count": 3,
+    "historical_effective_date_range_status": "ABSENT_OR_UNKNOWN",
+    "session_metadata_status": "CAPTURED_AND_HASH_BOUND_NOT_HISTORICALLY_ADJUDICATED"
+  },
+  "gap_inventory": {
+    "canonical_sha256": "5ee7f77c18ee6fac5a8793e2f667a7f0c44ddea20f3fa750d31122d528cc1688",
+    "file_sha256": "b16d35e730c4c760982198d250e403f46255a06bb5a89383da1b4aa55113184d",
+    "one_record_per_adjacent_timestamp_gap": true,
+    "ordering": [
+      "previous_timestamp",
+      "next_timestamp",
+      "gap_id"
+    ]
+  },
+  "gap_summary": {
+    "accepted_official_broker_gap_count": 0,
+    "accepted_same_server_session_gap_count": 0,
+    "analysis_internal_gap_interval_count": 126,
+    "analysis_internal_unverified_gap_interval_count": 126,
+    "gap_interval_count": 148,
+    "nominal_missing_hour_count": 1626,
+    "pattern_labels_are_descriptive_only": true,
+    "scope_interval_counts": {
+      "ANALYSIS_TO_BUFFER_BOUNDARY": 1,
+      "ANALYSIS_WINDOW_INTERNAL": 126,
+      "CONTRACTED_RIGHT_BUFFER": 4,
+      "SURPLUS_POST_CONTRACT_BUFFER": 17
+    },
+    "scope_nominal_missing_hour_counts": {
+      "ANALYSIS_TO_BUFFER_BOUNDARY": 1,
+      "ANALYSIS_WINDOW_INTERNAL": 1408,
+      "CONTRACTED_RIGHT_BUFFER": 56,
+      "SURPLUS_POST_CONTRACT_BUFFER": 161
+    },
+    "structural_pattern_counts": {
+      "DAILY_BREAK_PATTERN": 115,
+      "EARLY_CLOSE_OR_EXTENDED_BREAK_PATTERN": 3,
+      "EXTENDED_WEEKEND_OR_HOLIDAY_PATTERN": 1,
+      "WEEKEND_PATTERN": 29
+    }
+  },
+  "observed_boundaries": {
+    "first_timestamp": "2026-01-02T08:00:00",
+    "last_timestamp": "2026-07-30T03:00:00"
+  },
+  "partition_counts": {
+    "analysis_row_count": 2904,
+    "contracted_right_buffer_row_count": 111,
+    "pre_analysis_surplus_row_count": 0,
+    "surplus_post_contract_buffer_row_count": 371
+  },
+  "right_buffer": {
+    "broker_history_completeness_proven": false,
+    "buffer_event_generation_authorized": false,
+    "calendar_contiguity_required": false,
+    "contracted_buffer_valid_row_count": 111,
+    "first_subsequent_valid_h1_timestamp": "2026-07-01T01:00:00",
+    "last_valid_analysis_timestamp": "2026-06-30T23:00:00",
+    "outcome_execution_authorized": false,
+    "requirement_threshold_valid_h1_bars": 12,
+    "status": "PASS",
+    "total_observed_post_analysis_valid_row_count": 482,
+    "twelfth_subsequent_valid_h1_timestamp": "2026-07-01T12:00:00"
+  },
+  "schema_version": "fr_phase_c2_timeline_boundary_validation_summary.v1",
+  "surplus_post_contract_buffer": {
+    "expands_analysis_window": false,
+    "first_timestamp": "2026-07-08T01:00:00",
+    "last_timestamp": "2026-07-30T03:00:00",
+    "row_count": 371
+  },
+  "time_basis": "XM_MT5_SERVER_CHART_TIME",
+  "timestamps_timezone_naive": true,
+  "utc_offset": "UNKNOWN",
+  "windows": {
+    "analysis_end": "2026-06-30T23:59:59",
+    "analysis_start": "2026-01-01T00:00:00",
+    "requested_export_end": "2026-07-07T23:59:59",
+    "requested_export_start": "2026-01-01T00:00:00"
+  }
+}

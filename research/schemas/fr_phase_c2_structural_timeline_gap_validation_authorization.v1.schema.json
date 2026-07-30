@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_phase_c2_structural_timeline_gap_validation_authorization.v1.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "checkpoint": {
+      "const": "FR-Phase-C2"
+    },
+    "decision_policy": {
+      "type": "object"
+    },
+    "dataset_separation_policy": {
+      "type": "object"
+    },
+    "evidence_policy": {
+      "type": "object"
+    },
+    "expected_source_binding": {
+      "type": "object"
+    },
+    "external_access_policy": {
+      "type": "object"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "frozen_artifact_binding": {
+      "type": "object"
+    },
+    "frozen_windows": {
+      "type": "object"
+    },
+    "gap_policy": {
+      "type": "object"
+    },
+    "operation_authorizations": {
+      "type": "object"
+    },
+    "partition_policy": {
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "prior_contract_binding": {
+      "type": "object"
+    },
+    "right_buffer_policy": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c2_structural_timeline_gap_validation_authorization.v1"
+    },
+    "structural_rules": {
+      "type": "object"
+    },
+    "timeline_policy": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "preflight",
+    "prior_contract_binding",
+    "frozen_artifact_binding",
+    "expected_source_binding",
+    "frozen_windows",
+    "structural_rules",
+    "partition_policy",
+    "timeline_policy",
+    "right_buffer_policy",
+    "gap_policy",
+    "evidence_policy",
+    "dataset_separation_policy",
+    "decision_policy",
+    "operation_authorizations",
+    "external_access_policy",
+    "file_creation_boundary"
+  ],
+  "type": "object"
+}

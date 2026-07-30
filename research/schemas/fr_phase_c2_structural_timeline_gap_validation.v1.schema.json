@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_phase_c2_structural_timeline_gap_validation.v1.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
+    },
+    "artifact_bindings": {
+      "type": "object"
+    },
+    "canonical_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "checkpoint": {
+      "const": "FR-Phase-C2"
+    },
+    "conclusions": {
+      "type": "object"
+    },
+    "dataset_separation": {
+      "type": "object"
+    },
+    "dataset_validation_identity_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "FR_PHASE_C2_PASS_DATASET_CLEAN_FOR_FUTURE_RESEARCH",
+        "FR_PHASE_C2_PASS_DATASET_VALIDATED_WITH_LIMITATIONS",
+        "FR_PHASE_C2_FAIL_DATASET_INTAKE"
+      ]
+    },
+    "decision_class": {
+      "enum": [
+        "PASS_DATASET_CLEAN_FOR_FUTURE_RESEARCH",
+        "PASS_DATASET_VALIDATED_WITH_LIMITATIONS",
+        "FAIL_DATASET_INTAKE"
+      ]
+    },
+    "determinism": {
+      "type": "object"
+    },
+    "execution_status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "negative_tests": {
+      "type": "object"
+    },
+    "output_hashes": {
+      "type": "object"
+    },
+    "prohibited_counters": {
+      "type": "object"
+    },
+    "row_structural_validation": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c2_structural_timeline_gap_validation.v1"
+    },
+    "timeline_boundary_validation": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "execution_status",
+    "decision_class",
+    "decision",
+    "canonical_summary_sha256",
+    "dataset_validation_identity_sha256",
+    "artifact_bindings",
+    "row_structural_validation",
+    "timeline_boundary_validation",
+    "dataset_separation",
+    "limitations",
+    "conclusions",
+    "determinism",
+    "negative_tests",
+    "prohibited_counters",
+    "output_hashes",
+    "absolute_runtime_path_in_canonical_identity_count"
+  ],
+  "type": "object"
+}

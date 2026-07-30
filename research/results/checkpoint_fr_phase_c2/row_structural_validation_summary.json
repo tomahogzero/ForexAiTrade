@@ -1,0 +1,109 @@
+{
+  "canonical_record_sha256": "f30d81d0becee7fed7d589ce5d7b19aac4758b9ab19dc12f3a968c9af743a0e5",
+  "error_counts": {
+    "blank_embedded_data_row_count": 0,
+    "duplicate_conflicting_count": 0,
+    "duplicate_identical_count": 0,
+    "invalid_date_count": 0,
+    "invalid_h1_alignment_count": 0,
+    "invalid_time_count": 0,
+    "invalid_timestamp_count": 0,
+    "negative_spread_count": 0,
+    "negative_tick_volume_count": 0,
+    "negative_volume_count": 0,
+    "non_finite_price_count": 0,
+    "non_positive_price_count": 0,
+    "numeric_parse_error_count": 0,
+    "ohlc_consistency_error_count": 0,
+    "out_of_order_count": 0,
+    "wrong_field_count": 0
+  },
+  "exact_source_identity": "VERIFIED",
+  "mutation_or_repair": {
+    "deduplication": false,
+    "interpolation": false,
+    "reconstruction": false,
+    "source_repair": false,
+    "source_sorting": false,
+    "synthetic_bars": false,
+    "timezone_conversion": false
+  },
+  "numeric_ranges": {
+    "CLOSE": {
+      "maximum": "5562.45",
+      "minimum": "3962.80"
+    },
+    "HIGH": {
+      "maximum": "5597.99",
+      "minimum": "3971.17"
+    },
+    "LOW": {
+      "maximum": "5554.71",
+      "minimum": "3942.28"
+    },
+    "OPEN": {
+      "maximum": "5562.57",
+      "minimum": "3962.79"
+    },
+    "SPREAD": {
+      "maximum": "32",
+      "minimum": "16"
+    },
+    "TICKVOL": {
+      "maximum": "38551",
+      "minimum": "1414"
+    },
+    "VOL": {
+      "maximum": "0",
+      "minimum": "0"
+    }
+  },
+  "original_ordering": "PASS",
+  "parsed_row_identity_sha256": "bdf606eefdd4eb9cf3aad63be00ea84a8d7654c817db606e7ba1e6d2ece47422",
+  "raw_artifact": {
+    "byte_size": 216222,
+    "data_row_count": 3386,
+    "delimiter": "TAB",
+    "encoding": "UTF-8_NO_BOM",
+    "header_profile": "MT5_ANGLE_BRACKET_HEADER",
+    "physical_row_count": 3387,
+    "post_validation_byte_size": 216222,
+    "post_validation_sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92",
+    "pre_validation_byte_size": 216222,
+    "pre_validation_sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92",
+    "sanitized_filename": "GOLD#_H1_202601020800_202607300300.csv",
+    "sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92"
+  },
+  "raw_artifact_hash": "VERIFIED",
+  "raw_artifact_original_bytes": "UNCHANGED",
+  "schema": {
+    "exact_column_count": 9,
+    "exact_logical_columns": [
+      "DATE",
+      "TIME",
+      "OPEN",
+      "HIGH",
+      "LOW",
+      "CLOSE",
+      "TICKVOL",
+      "VOL",
+      "SPREAD"
+    ],
+    "header_valid": true
+  },
+  "schema_version": "fr_phase_c2_row_structural_validation_summary.v1",
+  "source_binding": {
+    "account_environment_type": "DEMO",
+    "broker": "XM",
+    "dst_behavior": "UNKNOWN",
+    "exact_server": "XMGlobal-MT5 2",
+    "exact_symbol": "GOLD#",
+    "symbol_utf8_hex": "474f4c4423",
+    "terminal_build": "6061",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  },
+  "structural_parse": "PASS",
+  "valid_structural_row_count": 3386
+}

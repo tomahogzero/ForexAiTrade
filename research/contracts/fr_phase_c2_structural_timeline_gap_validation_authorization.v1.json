@@ -1,0 +1,224 @@
+{
+  "checkpoint": "FR-Phase-C2",
+  "decision_policy": {
+    "clean_decision": "FR_PHASE_C2_PASS_DATASET_CLEAN_FOR_FUTURE_RESEARCH",
+    "failure_decision": "FR_PHASE_C2_FAIL_DATASET_INTAKE",
+    "limitations_decision": "FR_PHASE_C2_PASS_DATASET_VALIDATED_WITH_LIMITATIONS",
+    "must_derive_from_raw_artifact": true
+  },
+  "dataset_separation_policy": {
+    "comparison_basis": "IMMUTABLE_SHA256_ONLY",
+    "fj_manifest_file_sha256": "f64519a6341488578b95ca06103268ff3323f4593e177a3e4eba2f583e75469c",
+    "fj_source_sha256": [
+      "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+      "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+      "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b"
+    ],
+    "fq_manifest_file_sha256": "ea4dba94f43b5f112625416dd3d723dd71c9b66520412ec2707330fa93b3797a",
+    "fq_source_sha256": [
+      "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc",
+      "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5",
+      "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a"
+    ],
+    "permitted_conclusion": "DISTINCT_RAW_ARTIFACT_IDENTITY"
+  },
+  "evidence_policy": {
+    "accepted_adjudications_require_exact_effective_historical_coverage": true,
+    "duplicate_hashes_are_not_independent_corroboration": true,
+    "generic_market_hours_prove_closure": false,
+    "other_broker_data_proves_xm_closure": false,
+    "pattern_labels_are_descriptive_only": true,
+    "session_evidence_status": "CAPTURED_AND_HASH_BOUND_NOT_HISTORICALLY_ADJUDICATED",
+    "undated_current_screenshots_prove_historical_closure": false
+  },
+  "expected_source_binding": {
+    "account_environment_type": "DEMO",
+    "broker": "XM",
+    "dst_behavior": "UNKNOWN",
+    "exact_server": "XMGlobal-MT5 2",
+    "exact_symbol": "GOLD#",
+    "symbol_utf8_hex": "474f4c4423",
+    "terminal_build": "6061",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  },
+  "external_access_policy": {
+    "authorized_capture_label": "capture_20260730",
+    "authorized_parent_label": "XM_Phase_C",
+    "dukascopy_access": false,
+    "external_file_mutation": false,
+    "mt5_access_or_launch": false,
+    "network_access": false,
+    "parent_or_sibling_listing": false,
+    "recursive_access": false
+  },
+  "file_creation_boundary": {
+    "allowed_new_files": [
+      "research/contracts/fr_phase_c2_structural_timeline_gap_validation.v1.json",
+      "research/contracts/fr_phase_c2_structural_timeline_gap_validation_authorization.v1.json",
+      "research/results/checkpoint_fr_phase_c2/dataset_validation_decision.json",
+      "research/results/checkpoint_fr_phase_c2/gap_inventory.csv",
+      "research/results/checkpoint_fr_phase_c2/row_structural_validation_summary.json",
+      "research/results/checkpoint_fr_phase_c2/structural_timeline_gap_validation_summary.json",
+      "research/results/checkpoint_fr_phase_c2/timeline_boundary_validation_summary.json",
+      "research/schemas/fr_phase_c2_structural_timeline_gap_validation.v1.schema.json",
+      "research/schemas/fr_phase_c2_structural_timeline_gap_validation_authorization.v1.schema.json",
+      "tools/run_fr_phase_c2_structural_timeline_gap_validation.py"
+    ],
+    "docs_fixtures_raw_normalized_or_staging_creation": false,
+    "existing_file_modification": false,
+    "pr_creation": false,
+    "raw_notes_or_images_repository_storage": false
+  },
+  "frozen_artifact_binding": {
+    "c1_data_rows": 3386,
+    "c1_evidence_manifest_canonical_sha256": "25f0009644c5f90704b6f63f08142a26fd1895fed24dc4fed311ef222d4ad369",
+    "c1_evidence_manifest_file_sha256": "223a61735e3914cd038699b53661664b258b7186cdffd76cb088b988b91e79f3",
+    "c1_physical_rows": 3387,
+    "c1_raw_manifest_canonical_sha256": "479ea83c1293e1d809038f3e1dca9f8c0c6aeb24032dbfefc80d37a0aae1e7ea",
+    "c1_raw_manifest_file_sha256": "1cf768a4ccb6188f744227273884c5fb18d62b1c782949be4c6b5f3ab6cc5094",
+    "raw_byte_size": 216222,
+    "raw_encoding": "UTF-8_NO_BOM",
+    "raw_filename": "GOLD#_H1_202601020800_202607300300.csv",
+    "raw_header_profile": "MT5_ANGLE_BRACKET_HEADER",
+    "raw_sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92",
+    "raw_tab_delimited": true,
+    "strategy_content_sha256": "0e72b1559f5416981c2db887f9c53a0bfbb66bada226250a064377b2b9fadaa2",
+    "strategy_git_blob_sha1": "da448295ac3bd443b376e1ce51a8e411de3c7245"
+  },
+  "frozen_windows": {
+    "analysis_end": "2026-06-30T23:59:59",
+    "analysis_start": "2026-01-01T00:00:00",
+    "requested_export_end": "2026-07-07T23:59:59",
+    "requested_export_start": "2026-01-01T00:00:00",
+    "right_buffer_valid_h1_bars_required": 12
+  },
+  "gap_policy": {
+    "accepted_adjudications": [
+      "ACCEPTED_EXACT_SAME_SERVER_SESSION_CLOSURE",
+      "ACCEPTED_OFFICIAL_DATED_BROKER_CLOSURE"
+    ],
+    "adjacent_valid_unique_timestamps_only": true,
+    "final_unverified_adjudication": "UNVERIFIED_GAP",
+    "gap_id_prefix": "FCG",
+    "one_record_per_interval": true,
+    "sort_keys": [
+      "previous_timestamp",
+      "next_timestamp",
+      "gap_id"
+    ],
+    "structural_patterns": [
+      "DAILY_BREAK_PATTERN",
+      "WEEKEND_PATTERN",
+      "EXTENDED_WEEKEND_OR_HOLIDAY_PATTERN",
+      "EARLY_CLOSE_OR_EXTENDED_BREAK_PATTERN",
+      "IRREGULAR_PATTERN",
+      "UNCLASSIFIED_PATTERN"
+    ]
+  },
+  "operation_authorizations": {
+    "aggregation": false,
+    "cost_or_cash_pl_simulation": false,
+    "demo_or_live_trading": false,
+    "detector_execution": false,
+    "event_generation": false,
+    "fq_remediation_resumption": false,
+    "indicator_addition": false,
+    "interpolation_or_reconstruction": false,
+    "lot_sizing": false,
+    "order_simulation": false,
+    "outcome_execution": false,
+    "parameter_change": false,
+    "profitability_edge_robustness_or_readiness_claim": false,
+    "source_sort_repair_or_deduplication": false,
+    "statistics_execution": false,
+    "strategy_modification": false,
+    "synthetic_bars": false,
+    "timezone_conversion": false,
+    "tp_sl_design": false
+  },
+  "partition_policy": {
+    "analysis_window_may_generate_events": false,
+    "buffer_rows_may_generate_events": false,
+    "every_parsed_row_exactly_one_partition": true,
+    "overshoot_expands_analysis_window": false,
+    "partitions": [
+      "ANALYSIS_WINDOW",
+      "CONTRACTED_RIGHT_BUFFER",
+      "SURPLUS_POST_CONTRACT_BUFFER",
+      "PRE_ANALYSIS_SURPLUS"
+    ]
+  },
+  "preflight": {
+    "branch": "agent/fr-phase-c-clean-data-intake",
+    "head": "14dfb7b1ffed899919735ba19b8f1a18568affb9",
+    "origin_branch": "origin/agent/fr-phase-c-clean-data-intake",
+    "origin_head": "14dfb7b1ffed899919735ba19b8f1a18568affb9",
+    "protected_stash": "stash@{0}: On agent/fr-prep-b-runner-integration: fr-prep-b2a-partial-draft-before-b2e",
+    "upstream_aligned": true,
+    "worktree_clean": true
+  },
+  "prior_contract_binding": {
+    "c0_canonical_summary_sha256": "26f2e23a20e08223a001514558fa69f6298b6af0e761d379393bb99825db6689",
+    "c0_contract_record_sha256": "5e229bf31aa9724e9d67c3675c1e99cf7454172e19a263ca8a45401993034a04",
+    "c0_decision": "FR_PHASE_C0_PASS_CLEAN_DATA_ACQUISITION_CONTRACT_FROZEN",
+    "c0a_canonical_summary_sha256": "831046b52005bdc7403015363c976bff72a36778a0f6186b2a437da805aecb61",
+    "c0a_correction_record_sha256": "ebc929aa3f1fe06671bd2a46871c5abad70c01d7cc8a443026be7b51a8336a9c",
+    "c0a_decision": "FR_PHASE_C0A_PASS_EXACT_XM_GOLD_HASH_SYMBOL_BINDING_CORRECTED",
+    "c1_canonical_summary_sha256": "6030142b3077b169734c341c119e8203068b5852b03e55efec89049649c1dcd0",
+    "c1_commit": "14dfb7b1ffed899919735ba19b8f1a18568affb9",
+    "c1_decision": "FR_PHASE_C1_PASS_MANUAL_RAW_DATA_ACQUISITION_AND_IMMUTABLE_INTAKE",
+    "effective_acquisition_contract_identity_sha256": "c2690e8351b0d223d0ff073e0b14c3fea1b7792a83e81503ecda623cd740580d",
+    "provisional_dataset_binding_sha256": "d4cfb61def187ed5b9613b868356fe3a90f4f0c7ce88357863be4d0b7e930991"
+  },
+  "right_buffer_policy": {
+    "calendar_contiguity_required": false,
+    "duplicate_or_invalid_rows_count_as_valid_bars": false,
+    "minimum_valid_rows": 12,
+    "outcome_authorization_on_pass": false,
+    "synthetic_rows_allowed": false
+  },
+  "schema_version": "fr_phase_c2_structural_timeline_gap_validation_authorization.v1",
+  "structural_rules": {
+    "all_numeric_fields_parse": true,
+    "date_format": "YYYY.MM.DD",
+    "duplicate_conflicting_prevents_pass": true,
+    "duplicate_identical_prevents_clean": true,
+    "exact_column_count": 9,
+    "exact_columns": [
+      "DATE",
+      "TIME",
+      "OPEN",
+      "HIGH",
+      "LOW",
+      "CLOSE",
+      "TICKVOL",
+      "VOL",
+      "SPREAD"
+    ],
+    "h1_hour_alignment_required": true,
+    "no_blank_embedded_rows": true,
+    "nonnegative_integer_volume_and_spread": true,
+    "ohlc_consistency_required": true,
+    "original_order_strictly_increasing": true,
+    "positive_finite_ohlc_required": true,
+    "sorting_or_repair_allowed": false,
+    "time_format": "HH:MM:SS"
+  },
+  "timeline_policy": {
+    "accepted_boundary_statuses": [
+      "COMPLETE",
+      "INCOMPLETE_LEADING_COVERAGE",
+      "INCOMPLETE_TRAILING_COVERAGE",
+      "OBSERVED_OVERSHOOT",
+      "NOT_APPLICABLE"
+    ],
+    "boundary_shortfall_final_status": "UNVERIFIED_BOUNDARY_COVERAGE",
+    "dst_behavior": "UNKNOWN",
+    "missing_slots_are_not_market_closures": true,
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timezone_naive": true,
+    "utc_offset": "UNKNOWN"
+  }
+}

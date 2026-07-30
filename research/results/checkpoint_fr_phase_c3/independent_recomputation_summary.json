@@ -1,0 +1,247 @@
+{
+  "dataset_separation": {
+    "broker_history_completeness_established": false,
+    "comparison_basis": "IMMUTABLE_SHA256_ONLY",
+    "fj_source_sha256": [
+      "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+      "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+      "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b"
+    ],
+    "fq_source_sha256": [
+      "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc",
+      "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5",
+      "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a"
+    ],
+    "holdout_status_established": false,
+    "out_of_sample_status_established": false,
+    "performance_independence_established": false,
+    "phase_c_raw_sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92",
+    "status": "DISTINCT_RAW_ARTIFACT_IDENTITY",
+    "strategy_independence_established": false
+  },
+  "evidence": {
+    "accepted_closure_evidence_count": 0,
+    "duplicate_content_is_independent_corroboration": false,
+    "evidence_filename_count": 4,
+    "evidence_unique_content_count": 3,
+    "historical_effective_range": "ABSENT_OR_UNKNOWN",
+    "session_metadata_status": "CAPTURED_AND_HASH_BOUND_NOT_HISTORICALLY_ADJUDICATED"
+  },
+  "gap_inventory": {
+    "canonical_sha256": "5ee7f77c18ee6fac5a8793e2f667a7f0c44ddea20f3fa750d31122d528cc1688",
+    "file_sha256": "b16d35e730c4c760982198d250e403f46255a06bb5a89383da1b4aa55113184d",
+    "gap_interval_count": 148
+  },
+  "independent_dataset_status": "VALIDATED_WITH_LIMITATIONS",
+  "independent_recomputation_seal_sha256": "c3339902844908730f3a78569275ac9e86ac88f0c015ba18beffc8c1402b3c52",
+  "independent_recomputation_sealed_before_c2_results_loaded": true,
+  "limitations": [
+    "REQUESTED_LEADING_BOUNDARY_INCOMPLETE",
+    "ANALYSIS_LEADING_BOUNDARY_INCOMPLETE",
+    "ANALYSIS_INTERNAL_UNVERIFIED_GAPS",
+    "HISTORICAL_SESSION_EVIDENCE_EFFECTIVE_RANGE_MISSING",
+    "BROKER_HISTORY_COMPLETENESS_NOT_PROVEN",
+    "SURPLUS_POST_CONTRACT_BUFFER_PRESENT"
+  ],
+  "raw_artifact": {
+    "byte_size": 216222,
+    "data_row_count": 3386,
+    "delimiter": "TAB",
+    "encoding": "UTF-8_NO_BOM",
+    "header_profile": "MT5_ANGLE_BRACKET_HEADER",
+    "original_bytes": "UNCHANGED",
+    "physical_row_count": 3387,
+    "sanitized_filename": "GOLD#_H1_202601020800_202607300300.csv",
+    "sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92"
+  },
+  "schema_version": "fr_phase_c3_independent_recomputation_summary.v1",
+  "source_identity": {
+    "account_environment_type": "DEMO",
+    "broker": "XM",
+    "dst_behavior": "UNKNOWN",
+    "exact_server": "XMGlobal-MT5 2",
+    "exact_symbol": "GOLD#",
+    "status": "VERIFIED",
+    "symbol_utf8_hex": "474f4c4423",
+    "terminal_build": "6061",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  },
+  "structural": {
+    "error_counts": {
+      "blank_embedded_data_row_count": 0,
+      "duplicate_conflicting_count": 0,
+      "duplicate_identical_count": 0,
+      "invalid_date_count": 0,
+      "invalid_h1_alignment_count": 0,
+      "invalid_time_count": 0,
+      "invalid_timestamp_count": 0,
+      "negative_spread_count": 0,
+      "negative_tick_volume_count": 0,
+      "negative_volume_count": 0,
+      "non_finite_price_count": 0,
+      "non_positive_price_count": 0,
+      "numeric_parse_error_count": 0,
+      "ohlc_consistency_error_count": 0,
+      "out_of_order_count": 0,
+      "wrong_field_count": 0
+    },
+    "header_valid": true,
+    "independent_parser_identity_sha256": "bdf606eefdd4eb9cf3aad63be00ea84a8d7654c817db606e7ba1e6d2ece47422",
+    "logical_columns": [
+      "DATE",
+      "TIME",
+      "OPEN",
+      "HIGH",
+      "LOW",
+      "CLOSE",
+      "TICKVOL",
+      "VOL",
+      "SPREAD"
+    ],
+    "numeric_ranges": {
+      "CLOSE": {
+        "maximum": "5562.45",
+        "minimum": "3962.80"
+      },
+      "HIGH": {
+        "maximum": "5597.99",
+        "minimum": "3971.17"
+      },
+      "LOW": {
+        "maximum": "5554.71",
+        "minimum": "3942.28"
+      },
+      "OPEN": {
+        "maximum": "5562.57",
+        "minimum": "3962.79"
+      },
+      "SPREAD": {
+        "maximum": "32",
+        "minimum": "16"
+      },
+      "TICKVOL": {
+        "maximum": "38551",
+        "minimum": "1414"
+      },
+      "VOL": {
+        "maximum": "0",
+        "minimum": "0"
+      }
+    },
+    "original_ordering": "PASS",
+    "structural_parse": "PASS",
+    "valid_structural_row_count": 3386
+  },
+  "timeline": {
+    "boundaries": {
+      "analysis_leading_boundary": {
+        "boundary": "ANALYSIS_LEADING_BOUNDARY",
+        "expected_hourly_timestamp": "2026-01-01T00:00:00",
+        "final_status": "UNVERIFIED_BOUNDARY_COVERAGE",
+        "first_missing_expected_hourly_timestamp": "2026-01-01T00:00:00",
+        "last_missing_expected_hourly_timestamp": "2026-01-02T07:00:00",
+        "nominal_missing_hour_count": 32,
+        "observed_timestamp": "2026-01-02T08:00:00",
+        "status": "INCOMPLETE_LEADING_COVERAGE"
+      },
+      "analysis_trailing_boundary": {
+        "boundary": "ANALYSIS_TRAILING_BOUNDARY",
+        "expected_hourly_timestamp": "2026-06-30T23:00:00",
+        "final_status": "COMPLETE",
+        "first_missing_expected_hourly_timestamp": null,
+        "last_missing_expected_hourly_timestamp": null,
+        "nominal_missing_hour_count": 0,
+        "observed_timestamp": "2026-06-30T23:00:00",
+        "status": "COMPLETE"
+      },
+      "observed_raw_trailing_boundary": {
+        "boundary": "OBSERVED_RAW_TRAILING_BOUNDARY",
+        "expected_hourly_timestamp": "2026-07-07T23:00:00",
+        "final_status": "OBSERVED_OVERSHOOT",
+        "first_missing_expected_hourly_timestamp": null,
+        "last_missing_expected_hourly_timestamp": null,
+        "nominal_missing_hour_count": 0,
+        "observed_timestamp": "2026-07-30T03:00:00",
+        "status": "OBSERVED_OVERSHOOT"
+      },
+      "requested_export_trailing_boundary": {
+        "boundary": "REQUESTED_EXPORT_TRAILING_BOUNDARY",
+        "expected_hourly_timestamp": "2026-07-07T23:00:00",
+        "final_status": "OBSERVED_OVERSHOOT",
+        "first_missing_expected_hourly_timestamp": null,
+        "last_missing_expected_hourly_timestamp": null,
+        "nominal_missing_hour_count": 0,
+        "observed_timestamp": "2026-07-07T23:00:00",
+        "status": "OBSERVED_OVERSHOOT"
+      },
+      "requested_leading_boundary": {
+        "boundary": "REQUESTED_LEADING_BOUNDARY",
+        "expected_hourly_timestamp": "2026-01-01T00:00:00",
+        "final_status": "UNVERIFIED_BOUNDARY_COVERAGE",
+        "first_missing_expected_hourly_timestamp": "2026-01-01T00:00:00",
+        "last_missing_expected_hourly_timestamp": "2026-01-02T07:00:00",
+        "nominal_missing_hour_count": 32,
+        "observed_timestamp": "2026-01-02T08:00:00",
+        "status": "INCOMPLETE_LEADING_COVERAGE"
+      }
+    },
+    "gap_summary": {
+      "accepted_official_broker_gap_count": 0,
+      "accepted_same_server_session_gap_count": 0,
+      "analysis_internal_gap_interval_count": 126,
+      "analysis_internal_unverified_gap_interval_count": 126,
+      "gap_interval_count": 148,
+      "nominal_missing_hour_count": 1626,
+      "pattern_labels_are_descriptive_only": true,
+      "scope_interval_counts": {
+        "ANALYSIS_TO_BUFFER_BOUNDARY": 1,
+        "ANALYSIS_WINDOW_INTERNAL": 126,
+        "CONTRACTED_RIGHT_BUFFER": 4,
+        "SURPLUS_POST_CONTRACT_BUFFER": 17
+      },
+      "scope_nominal_missing_hour_counts": {
+        "ANALYSIS_TO_BUFFER_BOUNDARY": 1,
+        "ANALYSIS_WINDOW_INTERNAL": 1408,
+        "CONTRACTED_RIGHT_BUFFER": 56,
+        "SURPLUS_POST_CONTRACT_BUFFER": 161
+      },
+      "structural_pattern_counts": {
+        "DAILY_BREAK_PATTERN": 115,
+        "EARLY_CLOSE_OR_EXTENDED_BREAK_PATTERN": 3,
+        "EXTENDED_WEEKEND_OR_HOLIDAY_PATTERN": 1,
+        "WEEKEND_PATTERN": 29
+      }
+    },
+    "observed_boundaries": {
+      "first_timestamp": "2026-01-02T08:00:00",
+      "last_timestamp": "2026-07-30T03:00:00"
+    },
+    "partition_counts": {
+      "analysis_row_count": 2904,
+      "contracted_right_buffer_row_count": 111,
+      "pre_analysis_surplus_row_count": 0,
+      "surplus_post_contract_buffer_row_count": 371
+    },
+    "right_buffer": {
+      "broker_history_completeness_proven": false,
+      "buffer_event_generation_authorized": false,
+      "calendar_contiguity_required": false,
+      "contracted_buffer_valid_row_count": 111,
+      "first_subsequent_valid_h1_timestamp": "2026-07-01T01:00:00",
+      "last_valid_analysis_timestamp": "2026-06-30T23:00:00",
+      "outcome_execution_authorized": false,
+      "requirement_threshold_valid_h1_bars": 12,
+      "status": "PASS",
+      "total_observed_post_analysis_valid_row_count": 482,
+      "twelfth_subsequent_valid_h1_timestamp": "2026-07-01T12:00:00"
+    },
+    "surplus_post_contract_buffer": {
+      "expands_analysis_window": false,
+      "first_timestamp": "2026-07-08T01:00:00",
+      "last_timestamp": "2026-07-30T03:00:00",
+      "row_count": 371
+    }
+  }
+}

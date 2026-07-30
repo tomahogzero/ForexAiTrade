@@ -1,0 +1,435 @@
+{
+  "absolute_runtime_path_in_canonical_identity_count": 0,
+  "artifact_bindings": {
+    "c0_canonical_summary_sha256": "26f2e23a20e08223a001514558fa69f6298b6af0e761d379393bb99825db6689",
+    "c0a_canonical_summary_sha256": "831046b52005bdc7403015363c976bff72a36778a0f6186b2a437da805aecb61",
+    "c1_canonical_summary_sha256": "6030142b3077b169734c341c119e8203068b5852b03e55efec89049649c1dcd0",
+    "c2_canonical_summary_sha256": "a6dea767d6f04d6917d07bc22be44d26bb1a32a587662119cf9eb7e6aa4bd6b2",
+    "c2_dataset_validation_identity_sha256": "44445d40461a1590d1e990116ddf7fa7c624483eef85eec8caf4e0fc6f949271",
+    "effective_acquisition_contract_identity_sha256": "c2690e8351b0d223d0ff073e0b14c3fea1b7792a83e81503ecda623cd740580d",
+    "provisional_dataset_binding_sha256": "d4cfb61def187ed5b9613b868356fe3a90f4f0c7ce88357863be4d0b7e930991",
+    "raw_sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92",
+    "strategy_content_sha256": "0e72b1559f5416981c2db887f9c53a0bfbb66bada226250a064377b2b9fadaa2",
+    "strategy_git_blob_sha1": "da448295ac3bd443b376e1ce51a8e411de3c7245"
+  },
+  "audit_class": "AUDIT_CONFIRMED_VALIDATED_WITH_LIMITATIONS",
+  "audit_identity_sha256": "75cc7119bfd9c26d849e42f0562d2a97296b62e39143652d891840a76606a9ba",
+  "canonical_summary_sha256": "1a65d63a01a702f72a4dee0c0f269380abcc08ea2270b4ebda7ff9eb0a5a233c",
+  "checkpoint": "FR-Phase-C3",
+  "comparison": {
+    "all_rows_match": true,
+    "match_count": 2220,
+    "matrix_file_sha256": "fc452370d177012d8c94b6a0a4e077b52fb7298f2e44ed3ae8d640eca600019b",
+    "mismatch_count": 0,
+    "ordering": [
+      "section",
+      "field"
+    ],
+    "row_count": 2220
+  },
+  "decision": "FR_PHASE_C3_PASS_INDEPENDENT_AUDIT_CONFIRMED_VALIDATED_WITH_LIMITATIONS",
+  "determinism": {
+    "absolute_paths_excluded": true,
+    "boundaries_identical": true,
+    "canonical_summaries_and_hashes_identical": true,
+    "comparison_matrices_identical": true,
+    "freeze_records_identical": true,
+    "gap_inventory_canonical_hashes_identical": true,
+    "gap_rows_ids_ordering_identical": true,
+    "independent_controlled_relocation_audit_runs": 1,
+    "independent_decisions_identical": true,
+    "independent_normal_audit_runs": 2,
+    "independent_parser_identity_identical": true,
+    "mismatch_counters": {
+      "boundary_mismatches": 0,
+      "c2_comparison_mismatches": 0,
+      "canonical_hash_mismatches": 0,
+      "decision_mismatches": 0,
+      "evidence_count_mismatches": 0,
+      "gap_hash_mismatches": 0,
+      "gap_row_mismatches": 0,
+      "parser_identity_mismatches": 0,
+      "partition_count_mismatches": 0,
+      "raw_hash_or_size_mismatches": 0,
+      "right_buffer_mismatches": 0,
+      "structural_count_mismatches": 0
+    },
+    "partition_counts_identical": true,
+    "right_buffer_results_identical": true,
+    "structural_counts_identical": true,
+    "temporary_artifacts_deleted": true,
+    "temporary_copy_bytes_preserved": true
+  },
+  "execution_status": "PASS",
+  "freeze_record": {
+    "analysis_internal_unverified_gap_intervals": 126,
+    "audit_class": "AUDIT_CONFIRMED_VALIDATED_WITH_LIMITATIONS",
+    "audit_status": "INDEPENDENTLY_CONFIRMED",
+    "broker_history_completeness": "NOT_PROVEN",
+    "c4_work_started": false,
+    "clean_dataset_status": "NOT_ESTABLISHED",
+    "comparison_match_count": 2220,
+    "comparison_mismatch_count": 0,
+    "comparison_row_count": 2220,
+    "dataset_status": "VALIDATED_WITH_LIMITATIONS",
+    "decision": "FR_PHASE_C3_PASS_INDEPENDENT_AUDIT_CONFIRMED_VALIDATED_WITH_LIMITATIONS",
+    "demo_or_live_trading": "NOT_AUTHORIZED",
+    "detector_execution": "NOT_AUTHORIZED",
+    "event_generation": "NOT_AUTHORIZED",
+    "exact_source_identity": "VERIFIED",
+    "freeze_record_sha256": "ade168884cb8a11e89dda2a70690cf96cd8fc2b8208cd2aa446f6a57be1e3163",
+    "historical_session_effective_range": "ABSENT_OR_UNKNOWN",
+    "holdout_status": "NOT_CLAIMED",
+    "lot_sizing": "NOT_AUTHORIZED",
+    "next_allowed_scope": "FR_PHASE_C4_DATA_QUALITY_LIMITATION_DISPOSITION_DESIGN_ONLY",
+    "order_logic": "NOT_APPROVED",
+    "original_ordering": "PASS",
+    "out_of_sample_status": "NOT_CLAIMED",
+    "outcome_execution": "NOT_AUTHORIZED",
+    "performance": "NOT_EVALUATED",
+    "phase_c_dataset_validation": "FROZEN",
+    "profitability": "NOT_CLAIMED",
+    "raw_artifact_identity": "VERIFIED_AND_IMMUTABLE",
+    "requested_leading_coverage": "INCOMPLETE_AND_UNVERIFIED",
+    "retained_limitations": [
+      "REQUESTED_LEADING_BOUNDARY_INCOMPLETE",
+      "ANALYSIS_LEADING_BOUNDARY_INCOMPLETE",
+      "ANALYSIS_INTERNAL_UNVERIFIED_GAPS",
+      "HISTORICAL_SESSION_EVIDENCE_EFFECTIVE_RANGE_MISSING",
+      "BROKER_HISTORY_COMPLETENESS_NOT_PROVEN",
+      "SURPLUS_POST_CONTRACT_BUFFER_PRESENT"
+    ],
+    "right_buffer": "PASS",
+    "robustness": "NOT_ESTABLISHED",
+    "schema_version": "fr_phase_c3_dataset_validation_freeze_record.v1",
+    "strategy_edge": "NOT_ESTABLISHED",
+    "strategy_file": "UNCHANGED",
+    "structural_integrity": "PASS",
+    "surplus_post_contract_rows": "RETAINED_AND_EXCLUDED_FROM_ANALYSIS",
+    "tp_sl": "NOT_AUTHORIZED"
+  },
+  "independent_recomputation": {
+    "dataset_separation": {
+      "broker_history_completeness_established": false,
+      "comparison_basis": "IMMUTABLE_SHA256_ONLY",
+      "fj_source_sha256": [
+        "bbe0c3b83439dbd223ff64f4e6fa75af84981befff3482cb00161936b56bd468",
+        "883f5076cdc6ef6c30caf8e995dd7e33f63e7f50e9e2a9f91f77d206ffbd4f0a",
+        "368ce15fa4225c14bc1513d108ec75d1ab49274b82208b36de03b1cbdc92195b"
+      ],
+      "fq_source_sha256": [
+        "7864a86a927a44b87fdba0ac088a2e24576a64a73e99079fa5660fd7df5efccc",
+        "3aa00fbe2804a60ab88ab1e450027ee7b724de2463c576e0ed511658521fd2a5",
+        "dc6193712acf45e4830c63705262df3605713514f5a76dd989e14f9d4dc2213a"
+      ],
+      "holdout_status_established": false,
+      "out_of_sample_status_established": false,
+      "performance_independence_established": false,
+      "phase_c_raw_sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92",
+      "status": "DISTINCT_RAW_ARTIFACT_IDENTITY",
+      "strategy_independence_established": false
+    },
+    "evidence": {
+      "accepted_closure_evidence_count": 0,
+      "duplicate_content_is_independent_corroboration": false,
+      "evidence_filename_count": 4,
+      "evidence_unique_content_count": 3,
+      "historical_effective_range": "ABSENT_OR_UNKNOWN",
+      "session_metadata_status": "CAPTURED_AND_HASH_BOUND_NOT_HISTORICALLY_ADJUDICATED"
+    },
+    "gap_inventory": {
+      "canonical_sha256": "5ee7f77c18ee6fac5a8793e2f667a7f0c44ddea20f3fa750d31122d528cc1688",
+      "file_sha256": "b16d35e730c4c760982198d250e403f46255a06bb5a89383da1b4aa55113184d",
+      "gap_interval_count": 148
+    },
+    "independent_dataset_status": "VALIDATED_WITH_LIMITATIONS",
+    "independent_recomputation_seal_sha256": "c3339902844908730f3a78569275ac9e86ac88f0c015ba18beffc8c1402b3c52",
+    "independent_recomputation_sealed_before_c2_results_loaded": true,
+    "limitations": [
+      "REQUESTED_LEADING_BOUNDARY_INCOMPLETE",
+      "ANALYSIS_LEADING_BOUNDARY_INCOMPLETE",
+      "ANALYSIS_INTERNAL_UNVERIFIED_GAPS",
+      "HISTORICAL_SESSION_EVIDENCE_EFFECTIVE_RANGE_MISSING",
+      "BROKER_HISTORY_COMPLETENESS_NOT_PROVEN",
+      "SURPLUS_POST_CONTRACT_BUFFER_PRESENT"
+    ],
+    "raw_artifact": {
+      "byte_size": 216222,
+      "data_row_count": 3386,
+      "delimiter": "TAB",
+      "encoding": "UTF-8_NO_BOM",
+      "header_profile": "MT5_ANGLE_BRACKET_HEADER",
+      "original_bytes": "UNCHANGED",
+      "physical_row_count": 3387,
+      "sanitized_filename": "GOLD#_H1_202601020800_202607300300.csv",
+      "sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92"
+    },
+    "schema_version": "fr_phase_c3_independent_recomputation_summary.v1",
+    "source_identity": {
+      "account_environment_type": "DEMO",
+      "broker": "XM",
+      "dst_behavior": "UNKNOWN",
+      "exact_server": "XMGlobal-MT5 2",
+      "exact_symbol": "GOLD#",
+      "status": "VERIFIED",
+      "symbol_utf8_hex": "474f4c4423",
+      "terminal_build": "6061",
+      "time_basis": "XM_MT5_SERVER_CHART_TIME",
+      "timeframe": "H1",
+      "utc_offset": "UNKNOWN"
+    },
+    "structural": {
+      "error_counts": {
+        "blank_embedded_data_row_count": 0,
+        "duplicate_conflicting_count": 0,
+        "duplicate_identical_count": 0,
+        "invalid_date_count": 0,
+        "invalid_h1_alignment_count": 0,
+        "invalid_time_count": 0,
+        "invalid_timestamp_count": 0,
+        "negative_spread_count": 0,
+        "negative_tick_volume_count": 0,
+        "negative_volume_count": 0,
+        "non_finite_price_count": 0,
+        "non_positive_price_count": 0,
+        "numeric_parse_error_count": 0,
+        "ohlc_consistency_error_count": 0,
+        "out_of_order_count": 0,
+        "wrong_field_count": 0
+      },
+      "header_valid": true,
+      "independent_parser_identity_sha256": "bdf606eefdd4eb9cf3aad63be00ea84a8d7654c817db606e7ba1e6d2ece47422",
+      "logical_columns": [
+        "DATE",
+        "TIME",
+        "OPEN",
+        "HIGH",
+        "LOW",
+        "CLOSE",
+        "TICKVOL",
+        "VOL",
+        "SPREAD"
+      ],
+      "numeric_ranges": {
+        "CLOSE": {
+          "maximum": "5562.45",
+          "minimum": "3962.80"
+        },
+        "HIGH": {
+          "maximum": "5597.99",
+          "minimum": "3971.17"
+        },
+        "LOW": {
+          "maximum": "5554.71",
+          "minimum": "3942.28"
+        },
+        "OPEN": {
+          "maximum": "5562.57",
+          "minimum": "3962.79"
+        },
+        "SPREAD": {
+          "maximum": "32",
+          "minimum": "16"
+        },
+        "TICKVOL": {
+          "maximum": "38551",
+          "minimum": "1414"
+        },
+        "VOL": {
+          "maximum": "0",
+          "minimum": "0"
+        }
+      },
+      "original_ordering": "PASS",
+      "structural_parse": "PASS",
+      "valid_structural_row_count": 3386
+    },
+    "timeline": {
+      "boundaries": {
+        "analysis_leading_boundary": {
+          "boundary": "ANALYSIS_LEADING_BOUNDARY",
+          "expected_hourly_timestamp": "2026-01-01T00:00:00",
+          "final_status": "UNVERIFIED_BOUNDARY_COVERAGE",
+          "first_missing_expected_hourly_timestamp": "2026-01-01T00:00:00",
+          "last_missing_expected_hourly_timestamp": "2026-01-02T07:00:00",
+          "nominal_missing_hour_count": 32,
+          "observed_timestamp": "2026-01-02T08:00:00",
+          "status": "INCOMPLETE_LEADING_COVERAGE"
+        },
+        "analysis_trailing_boundary": {
+          "boundary": "ANALYSIS_TRAILING_BOUNDARY",
+          "expected_hourly_timestamp": "2026-06-30T23:00:00",
+          "final_status": "COMPLETE",
+          "first_missing_expected_hourly_timestamp": null,
+          "last_missing_expected_hourly_timestamp": null,
+          "nominal_missing_hour_count": 0,
+          "observed_timestamp": "2026-06-30T23:00:00",
+          "status": "COMPLETE"
+        },
+        "observed_raw_trailing_boundary": {
+          "boundary": "OBSERVED_RAW_TRAILING_BOUNDARY",
+          "expected_hourly_timestamp": "2026-07-07T23:00:00",
+          "final_status": "OBSERVED_OVERSHOOT",
+          "first_missing_expected_hourly_timestamp": null,
+          "last_missing_expected_hourly_timestamp": null,
+          "nominal_missing_hour_count": 0,
+          "observed_timestamp": "2026-07-30T03:00:00",
+          "status": "OBSERVED_OVERSHOOT"
+        },
+        "requested_export_trailing_boundary": {
+          "boundary": "REQUESTED_EXPORT_TRAILING_BOUNDARY",
+          "expected_hourly_timestamp": "2026-07-07T23:00:00",
+          "final_status": "OBSERVED_OVERSHOOT",
+          "first_missing_expected_hourly_timestamp": null,
+          "last_missing_expected_hourly_timestamp": null,
+          "nominal_missing_hour_count": 0,
+          "observed_timestamp": "2026-07-07T23:00:00",
+          "status": "OBSERVED_OVERSHOOT"
+        },
+        "requested_leading_boundary": {
+          "boundary": "REQUESTED_LEADING_BOUNDARY",
+          "expected_hourly_timestamp": "2026-01-01T00:00:00",
+          "final_status": "UNVERIFIED_BOUNDARY_COVERAGE",
+          "first_missing_expected_hourly_timestamp": "2026-01-01T00:00:00",
+          "last_missing_expected_hourly_timestamp": "2026-01-02T07:00:00",
+          "nominal_missing_hour_count": 32,
+          "observed_timestamp": "2026-01-02T08:00:00",
+          "status": "INCOMPLETE_LEADING_COVERAGE"
+        }
+      },
+      "gap_summary": {
+        "accepted_official_broker_gap_count": 0,
+        "accepted_same_server_session_gap_count": 0,
+        "analysis_internal_gap_interval_count": 126,
+        "analysis_internal_unverified_gap_interval_count": 126,
+        "gap_interval_count": 148,
+        "nominal_missing_hour_count": 1626,
+        "pattern_labels_are_descriptive_only": true,
+        "scope_interval_counts": {
+          "ANALYSIS_TO_BUFFER_BOUNDARY": 1,
+          "ANALYSIS_WINDOW_INTERNAL": 126,
+          "CONTRACTED_RIGHT_BUFFER": 4,
+          "SURPLUS_POST_CONTRACT_BUFFER": 17
+        },
+        "scope_nominal_missing_hour_counts": {
+          "ANALYSIS_TO_BUFFER_BOUNDARY": 1,
+          "ANALYSIS_WINDOW_INTERNAL": 1408,
+          "CONTRACTED_RIGHT_BUFFER": 56,
+          "SURPLUS_POST_CONTRACT_BUFFER": 161
+        },
+        "structural_pattern_counts": {
+          "DAILY_BREAK_PATTERN": 115,
+          "EARLY_CLOSE_OR_EXTENDED_BREAK_PATTERN": 3,
+          "EXTENDED_WEEKEND_OR_HOLIDAY_PATTERN": 1,
+          "WEEKEND_PATTERN": 29
+        }
+      },
+      "observed_boundaries": {
+        "first_timestamp": "2026-01-02T08:00:00",
+        "last_timestamp": "2026-07-30T03:00:00"
+      },
+      "partition_counts": {
+        "analysis_row_count": 2904,
+        "contracted_right_buffer_row_count": 111,
+        "pre_analysis_surplus_row_count": 0,
+        "surplus_post_contract_buffer_row_count": 371
+      },
+      "right_buffer": {
+        "broker_history_completeness_proven": false,
+        "buffer_event_generation_authorized": false,
+        "calendar_contiguity_required": false,
+        "contracted_buffer_valid_row_count": 111,
+        "first_subsequent_valid_h1_timestamp": "2026-07-01T01:00:00",
+        "last_valid_analysis_timestamp": "2026-06-30T23:00:00",
+        "outcome_execution_authorized": false,
+        "requirement_threshold_valid_h1_bars": 12,
+        "status": "PASS",
+        "total_observed_post_analysis_valid_row_count": 482,
+        "twelfth_subsequent_valid_h1_timestamp": "2026-07-01T12:00:00"
+      },
+      "surplus_post_contract_buffer": {
+        "expands_analysis_window": false,
+        "first_timestamp": "2026-07-08T01:00:00",
+        "last_timestamp": "2026-07-30T03:00:00",
+        "row_count": 371
+      }
+    }
+  },
+  "negative_tests": {
+    "passed": 39,
+    "required": 39,
+    "results": {
+      "absolute_path_or_sensitive_information_stored": "PASS",
+      "accepted_closure_created_without_exact_dated_evidence": "PASS",
+      "boundary_mismatch_ignored": "PASS",
+      "broker_history_completeness_claimed": "PASS",
+      "c2_parser_or_gap_functions_reused": "PASS",
+      "c2_results_used_before_independent_recomputation_sealed": "PASS",
+      "c2_runner_imported_or_executed": "PASS",
+      "c4_work_started": "PASS",
+      "changed_c0_c0a_c1_c2_identity": "PASS",
+      "changed_c2_decision_or_decision_record_hash": "PASS",
+      "changed_effective_provisional_or_c2_validation_identity": "PASS",
+      "changed_gap_inventory_hash": "PASS",
+      "changed_raw_sha256_size_or_row_count": "PASS",
+      "comparison_matrix_mismatch_marked_true": "PASS",
+      "current_screenshot_treated_as_dated_historical_evidence": "PASS",
+      "dataset_described_as_clean_while_limitations_remain": "PASS",
+      "detector_event_outcome_or_statistics_executed": "PASS",
+      "dukascopy_sibling_mt5_or_network_accessed": "PASS",
+      "duplicate_image_bytes_counted_as_independent_evidence": "PASS",
+      "existing_repository_file_modified": "PASS",
+      "gap_id_ordering_or_hash_mismatch_ignored": "PASS",
+      "gap_pattern_treated_as_historical_proof": "PASS",
+      "holdout_or_out_of_sample_claimed": "PASS",
+      "independent_mismatch_silently_tolerated": "PASS",
+      "internal_126_gap_limitation_cleared": "PASS",
+      "leading_32_hour_limitation_cleared": "PASS",
+      "partition_count_mismatch_ignored": "PASS",
+      "pr_created": "PASS",
+      "profitability_edge_robustness_or_readiness_claimed": "PASS",
+      "raw_evidence_committed": "PASS",
+      "raw_external_artifact_modified": "PASS",
+      "raw_sorted_repaired_deduplicated_or_reconstructed": "PASS",
+      "right_buffer_mismatch_ignored": "PASS",
+      "right_buffer_pass_used_to_authorize_detector_or_outcome": "PASS",
+      "strategy_indicator_or_parameter_modified": "PASS",
+      "structural_count_mismatch_ignored": "PASS",
+      "synthetic_or_interpolated_bar_created": "PASS",
+      "tp_sl_lot_cost_cash_pl_or_order_simulation": "PASS",
+      "wrong_branch_head_or_origin_alignment": "PASS"
+    }
+  },
+  "output_hashes": {
+    "c2_audit_comparison_matrix_file_sha256": "fc452370d177012d8c94b6a0a4e077b52fb7298f2e44ed3ae8d640eca600019b",
+    "dataset_validation_freeze_record_file_sha256": "4e6757203c2b60cae4544700d19de8511f29a8f4fd64c148a7e651e876cb8a63",
+    "dataset_validation_freeze_record_sha256": "ade168884cb8a11e89dda2a70690cf96cd8fc2b8208cd2aa446f6a57be1e3163",
+    "independent_recomputation_summary_file_sha256": "6eba58f60dcadf78d751e3f992b9cd94fe73a2693deb046c7c11f25aefa697fb"
+  },
+  "prohibited_counters": {
+    "absolute_operator_paths_stored": 0,
+    "aggregation_runs": 0,
+    "c2_function_reuses": 0,
+    "c2_results_loaded_before_seal": 0,
+    "c2_runner_imports_or_executions": 0,
+    "c4_work_runs": 0,
+    "cost_cash_pl_order_simulations": 0,
+    "credentials_stored": 0,
+    "detector_runs": 0,
+    "docs_fixtures_normalized_staging_raw_created": 0,
+    "dukascopy_sibling_mt5_network_accesses": 0,
+    "event_generation_runs": 0,
+    "external_artifact_mutations": 0,
+    "fq_remediation_resumptions": 0,
+    "outcome_runs": 0,
+    "pr_creations": 0,
+    "profitability_edge_robustness_readiness_claims": 0,
+    "raw_evidence_repository_copies": 0,
+    "source_sort_repair_deduplication_reconstructions": 0,
+    "statistics_runs": 0,
+    "strategy_indicator_parameter_modifications": 0,
+    "synthetic_or_interpolated_bars": 0,
+    "tp_sl_lot_sizing_designs": 0
+  },
+  "schema_version": "fr_phase_c3_independent_dataset_validation_audit.v1"
+}

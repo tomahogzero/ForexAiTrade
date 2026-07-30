@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_phase_c3_independent_dataset_validation_audit_authorization.v1.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "INDEPENDENT_DATASET_VALIDATION_AUDIT_AND_FREEZE_ONLY"
+    },
+    "c2_binding": {
+      "type": "object"
+    },
+    "checkpoint": {
+      "const": "FR-Phase-C3"
+    },
+    "dataset_separation_binding": {
+      "type": "object"
+    },
+    "decision_policy": {
+      "type": "object"
+    },
+    "evidence_binding": {
+      "type": "object"
+    },
+    "external_access_policy": {
+      "type": "object"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "frozen_raw_artifact": {
+      "type": "object"
+    },
+    "frozen_strategy_binding": {
+      "type": "object"
+    },
+    "frozen_windows": {
+      "type": "object"
+    },
+    "guardrails": {
+      "type": "object"
+    },
+    "implementation_firewall": {
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "prior_bindings": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c3_independent_dataset_validation_audit_authorization.v1"
+    },
+    "source_identity": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "preflight",
+    "prior_bindings",
+    "c2_binding",
+    "frozen_raw_artifact",
+    "source_identity",
+    "frozen_windows",
+    "evidence_binding",
+    "dataset_separation_binding",
+    "frozen_strategy_binding",
+    "implementation_firewall",
+    "decision_policy",
+    "guardrails",
+    "external_access_policy",
+    "file_creation_boundary"
+  ],
+  "type": "object"
+}

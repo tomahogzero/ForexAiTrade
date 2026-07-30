@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fr_phase_c3_independent_dataset_validation_audit.v1.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
+    },
+    "artifact_bindings": {
+      "type": "object"
+    },
+    "audit_class": {
+      "enum": [
+        "AUDIT_CONFIRMED_DATASET_CLEAN",
+        "AUDIT_CONFIRMED_VALIDATED_WITH_LIMITATIONS",
+        "AUDIT_MISMATCH"
+      ]
+    },
+    "audit_identity_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "canonical_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "checkpoint": {
+      "const": "FR-Phase-C3"
+    },
+    "comparison": {
+      "type": "object"
+    },
+    "decision": {
+      "enum": [
+        "FR_PHASE_C3_PASS_INDEPENDENT_AUDIT_CONFIRMED_DATASET_CLEAN",
+        "FR_PHASE_C3_PASS_INDEPENDENT_AUDIT_CONFIRMED_VALIDATED_WITH_LIMITATIONS",
+        "FR_PHASE_C3_FAIL_INDEPENDENT_AUDIT_MISMATCH"
+      ]
+    },
+    "determinism": {
+      "type": "object"
+    },
+    "execution_status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "freeze_record": {
+      "type": "object"
+    },
+    "independent_recomputation": {
+      "type": "object"
+    },
+    "negative_tests": {
+      "type": "object"
+    },
+    "output_hashes": {
+      "type": "object"
+    },
+    "prohibited_counters": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c3_independent_dataset_validation_audit.v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "execution_status",
+    "audit_class",
+    "decision",
+    "canonical_summary_sha256",
+    "audit_identity_sha256",
+    "artifact_bindings",
+    "independent_recomputation",
+    "comparison",
+    "freeze_record",
+    "determinism",
+    "negative_tests",
+    "prohibited_counters",
+    "output_hashes",
+    "absolute_runtime_path_in_canonical_identity_count"
+  ],
+  "type": "object"
+}

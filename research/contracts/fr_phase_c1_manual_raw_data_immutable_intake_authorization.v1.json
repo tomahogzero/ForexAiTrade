@@ -1,0 +1,256 @@
+{
+  "authorization_scope": "MANUAL_RAW_DATA_ACQUISITION_AND_IMMUTABLE_INTAKE_ONLY",
+  "bound_artifacts": [
+    {
+      "access": "json",
+      "artifact_id": "c0_contract",
+      "file_sha256": "843e507cfde3f945d3ef2bcbbd00c80e46feef7d7840c41beba9c929e28ed27c",
+      "path": "research/contracts/fr_phase_c0_clean_data_acquisition_contract.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "c0_summary",
+      "file_sha256": "843e507cfde3f945d3ef2bcbbd00c80e46feef7d7840c41beba9c929e28ed27c",
+      "path": "research/results/checkpoint_fr_phase_c0/clean_data_acquisition_contract_summary.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "c0_schema",
+      "file_sha256": "52dd69b259cbf98caa44f84a6039d6bdac67a61c7de12b2eec7f6cba41e37033",
+      "path": "research/schemas/fr_phase_c0_clean_data_acquisition_contract.v1.schema.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "c0a_contract",
+      "file_sha256": "1808a00ba89ca00f735d13644ea40105ed3bc28c06ab14902a371311a86ff506",
+      "path": "research/contracts/fr_phase_c0a_exact_xm_symbol_binding_correction.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "c0a_summary",
+      "file_sha256": "1808a00ba89ca00f735d13644ea40105ed3bc28c06ab14902a371311a86ff506",
+      "path": "research/results/checkpoint_fr_phase_c0a/exact_xm_symbol_binding_correction_summary.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "c0a_schema",
+      "file_sha256": "dd76b90c4ad4a5daac8d46e0a28a115e124d2da681d257b3b1ac82e63b90e293",
+      "path": "research/schemas/fr_phase_c0a_exact_xm_symbol_binding_correction.v1.schema.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "frozen_strategy",
+      "file_sha256": "0e72b1559f5416981c2db887f9c53a0bfbb66bada226250a064377b2b9fadaa2",
+      "git_blob_sha1": "da448295ac3bd443b376e1ce51a8e411de3c7245",
+      "path": "MQL5/Include/ForexAiTrade/Strategies/PriceActionFiboStrategy.mqh"
+    }
+  ],
+  "checkpoint": "FR_PHASE_C1",
+  "expected_operator_package": {
+    "images": [
+      {
+        "byte_size": 12540,
+        "sanitized_filename": "01_xm_server_identity.png",
+        "sha256": "2f44dbc04e9e449a97214e123616828d36f90bf745b4e1ae049a2da7cff55923"
+      },
+      {
+        "byte_size": 5694,
+        "sanitized_filename": "02_mt5_terminal_build.png",
+        "sha256": "87465c5b33e258939608cdce516e00a551fc716a4999717d2611708afbdaebb0"
+      },
+      {
+        "byte_size": 39181,
+        "sanitized_filename": "03_gold_hash_specification.png",
+        "sha256": "5a14e8e252d4054f564164fbc18b2c15f4c6b1313dc4a341203aaa005585e12c"
+      },
+      {
+        "byte_size": 39181,
+        "sanitized_filename": "04_gold_hash_trading_sessions.png",
+        "sha256": "5a14e8e252d4054f564164fbc18b2c15f4c6b1313dc4a341203aaa005585e12c"
+      }
+    ],
+    "notes": {
+      "byte_size": 975,
+      "sanitized_filename": "operator_capture_notes.txt",
+      "sha256": "393d3d74f230d10079049196caf8296461889d3bc7f4d1a3fbea0c6699fd86be"
+    },
+    "raw": {
+      "byte_size": 216222,
+      "data_row_count": 3386,
+      "delimiter": "TAB",
+      "encoding": "UTF-8_NO_BOM",
+      "header_profile": "MT5_ANGLE_BRACKET_HEADER",
+      "observed_first_timestamp": "2026-01-02T08:00:00",
+      "observed_last_timestamp": "2026-07-30T03:00:00",
+      "physical_row_count": 3387,
+      "sanitized_filename": "GOLD#_H1_202601020800_202607300300.csv",
+      "sha256": "69aa7e16d4d3e54bfe8e0aa3ce4c5d61bbd0fcaefb45050341304681b3766f92"
+    }
+  },
+  "expected_source_binding": {
+    "broker": "XM",
+    "dst_behavior": "UNKNOWN",
+    "exact_server": "XMGlobal-MT5 2",
+    "exact_symbol": "GOLD#",
+    "symbol_utf8_hex": "474f4c4423",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  },
+  "external_access_policy": {
+    "authorized_folder_immediate_listing_only": true,
+    "dukascopy_access": false,
+    "external_process_execution": false,
+    "mt5_data_directory_access": false,
+    "network_access": false,
+    "parent_or_sibling_access": false,
+    "recursive_access": false
+  },
+  "file_creation_boundary": {
+    "allowed_new_files": [
+      "research/contracts/fr_phase_c1_manual_raw_data_immutable_intake.v1.json",
+      "research/contracts/fr_phase_c1_manual_raw_data_immutable_intake_authorization.v1.json",
+      "research/results/checkpoint_fr_phase_c1/manual_raw_data_immutable_intake_summary.json",
+      "research/results/checkpoint_fr_phase_c1/raw_artifact_intake_manifest.json",
+      "research/results/checkpoint_fr_phase_c1/source_identity_evidence_manifest.json",
+      "research/schemas/fr_phase_c1_manual_raw_data_immutable_intake.v1.schema.json",
+      "research/schemas/fr_phase_c1_manual_raw_data_immutable_intake_authorization.v1.schema.json",
+      "tools/run_fr_phase_c1_manual_raw_data_immutable_intake.py"
+    ],
+    "docs_fixtures_raw_staging_creation_authorized": false,
+    "existing_file_modification_authorized": false,
+    "pr_creation_authorized": false,
+    "raw_notes_or_images_commit_authorized": false
+  },
+  "frozen_windows": {
+    "analysis_end": "2026-06-30T23:59:59",
+    "analysis_start": "2026-01-01T00:00:00",
+    "requested_export_end": "2026-07-07T23:59:59",
+    "requested_export_start": "2026-01-01T00:00:00",
+    "right_buffer_valid_h1_bars_required": 12,
+    "right_buffer_validation": "NOT_STARTED"
+  },
+  "immutability_policy": {
+    "external_file_mutation_authorized": false,
+    "hash_after_parse": true,
+    "hash_before_parse": true,
+    "pre_post_hash_and_size_must_match": true,
+    "raw_copy_to_repository_authorized": false
+  },
+  "minimal_intake_policy": {
+    "approved_delimiters": [
+      "TAB",
+      "COMMA",
+      "SEMICOLON"
+    ],
+    "approved_encodings": [
+      "UTF-8_NO_BOM",
+      "UTF-8_BOM",
+      "UTF-16LE_BOM",
+      "UTF-16BE_BOM"
+    ],
+    "approved_header_profiles": [
+      "MT5_ANGLE_BRACKET_HEADER",
+      "MT5_PLAIN_UPPER_HEADER"
+    ],
+    "full_ohlc_validation_authorized": false,
+    "parse_scope": "HEADER_ROW_COUNTS_AND_FIRST_LAST_TIMESTAMP_ONLY"
+  },
+  "operation_authorizations": {
+    "buffer_sufficiency_decision": false,
+    "c1_immutable_intake": true,
+    "costs_or_cash_pl": false,
+    "data_aggregation": false,
+    "demo_or_live_trading": false,
+    "detector_execution": false,
+    "duplicate_or_conflict_analysis": false,
+    "event_generation": false,
+    "gap_classification": false,
+    "gap_inventory": false,
+    "indicator_addition": false,
+    "interpolation": false,
+    "lot_sizing": false,
+    "order_simulation": false,
+    "outcome_execution": false,
+    "parameter_change": false,
+    "pr_creation": false,
+    "profitability_edge_robustness_readiness_claim": false,
+    "session_closure_adjudication": false,
+    "statistics_execution": false,
+    "strategy_modification": false,
+    "structural_validation": false,
+    "synthetic_bars": false,
+    "tp_sl_design": false
+  },
+  "preflight": {
+    "branch": "agent/fr-phase-c-clean-data-intake",
+    "head": "1e37ad9cf6e2f8c4cc0a8bd99466a360e14c706d",
+    "origin_branch": "origin/agent/fr-phase-c-clean-data-intake",
+    "origin_head": "1e37ad9cf6e2f8c4cc0a8bd99466a360e14c706d",
+    "protected_stash": "stash@{0}: On agent/fr-prep-b-runner-integration: fr-prep-b2a-partial-draft-before-b2e",
+    "upstream_aligned": true,
+    "worktree_clean": true
+  },
+  "prior_contract_binding": {
+    "c0_canonical_summary_sha256": "26f2e23a20e08223a001514558fa69f6298b6af0e761d379393bb99825db6689",
+    "c0_contract_record_sha256": "5e229bf31aa9724e9d67c3675c1e99cf7454172e19a263ca8a45401993034a04",
+    "c0_decision": "FR_PHASE_C0_PASS_CLEAN_DATA_ACQUISITION_CONTRACT_FROZEN",
+    "c0a_canonical_summary_sha256": "831046b52005bdc7403015363c976bff72a36778a0f6186b2a437da805aecb61",
+    "c0a_correction_record_sha256": "ebc929aa3f1fe06671bd2a46871c5abad70c01d7cc8a443026be7b51a8336a9c",
+    "c0a_decision": "FR_PHASE_C0A_PASS_EXACT_XM_GOLD_HASH_SYMBOL_BINDING_CORRECTED",
+    "effective_acquisition_contract_identity_sha256": "c2690e8351b0d223d0ff073e0b14c3fea1b7792a83e81503ecda623cd740580d"
+  },
+  "required_input_package": {
+    "authorized_capture_label": "capture_20260730",
+    "authorized_parent_label": "XM_Phase_C",
+    "capture_folder_required": true,
+    "maximum_image_count": 10,
+    "minimum_image_count": 1,
+    "notes_count": 1,
+    "notes_filename": "operator_capture_notes.txt",
+    "raw_csv_count": 1,
+    "unexpected_file_count": 0,
+    "zip_or_excel_count": 0
+  },
+  "required_note_declarations": {
+    "account_environment_type": "DEMO",
+    "analysis_end_server_time": "2026-06-30T23:59:59",
+    "analysis_start_server_time": "2026-01-01T00:00:00",
+    "acquisition_timestamp": "2026-07-30T07:12:00+07:00",
+    "broker": "XM",
+    "dst_behavior": "UNKNOWN",
+    "export_method": "MT5_MANUAL_BARS_CSV_EXPORT",
+    "generated_rows": "NOT_ADDED",
+    "operator_timezone": "Asia/Bangkok",
+    "raw_filename": "GOLD#_H1_202601020800_202607300300.csv",
+    "requested_end_server_time": "2026-07-07T23:59:59",
+    "requested_start_server_time": "2026-01-01T00:00:00",
+    "row_reordering_or_removal": "NOT_PERFORMED",
+    "server": "XMGlobal-MT5 2",
+    "source_mutation": "ORIGINAL_UNCHANGED",
+    "spreadsheet_resave": "NOT_PERFORMED",
+    "symbol": "GOLD#",
+    "terminal_build": "6061",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "time_conversion": "NOT_PERFORMED",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  },
+  "schema_version": "fr_phase_c1_manual_raw_data_immutable_intake_authorization.v1",
+  "sensitive_data_policy": {
+    "absolute_runtime_path_in_canonical_identity": "PROHIBITED",
+    "reject_sensitive_notes_or_filenames": true
+  },
+  "status_boundary": {
+    "broker_history_completeness": "NOT_PROVEN",
+    "chronology_separation": "NOT_YET_VALIDATED",
+    "clean_dataset_status": "NOT_EVALUATED",
+    "dataset_identity": "PROVISIONALLY_BOUND_NOT_VALIDATED",
+    "gap_classification": "NOT_STARTED",
+    "gap_inventory": "NOT_STARTED",
+    "holdout_status": "NOT_CLAIMED",
+    "out_of_sample_status": "NOT_CLAIMED",
+    "right_buffer_validation": "NOT_STARTED",
+    "structural_validation": "NOT_STARTED"
+  }
+}

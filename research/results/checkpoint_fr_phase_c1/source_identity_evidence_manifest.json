@@ -1,0 +1,57 @@
+{
+  "absolute_operator_path_in_manifest": false,
+  "artifact_id": "SAME_SERVER_SOURCE_IDENTITY_AND_SESSION_METADATA",
+  "canonical_manifest_sha256": "25f0009644c5f90704b6f63f08142a26fd1895fed24dc4fed311ef222d4ad369",
+  "evidence_image_count": 4,
+  "evidence_images": [
+    {
+      "byte_size": 12540,
+      "sanitized_filename": "01_xm_server_identity.png",
+      "sha256": "2f44dbc04e9e449a97214e123616828d36f90bf745b4e1ae049a2da7cff55923"
+    },
+    {
+      "byte_size": 5694,
+      "sanitized_filename": "02_mt5_terminal_build.png",
+      "sha256": "87465c5b33e258939608cdce516e00a551fc716a4999717d2611708afbdaebb0"
+    },
+    {
+      "byte_size": 39181,
+      "sanitized_filename": "03_gold_hash_specification.png",
+      "sha256": "5a14e8e252d4054f564164fbc18b2c15f4c6b1313dc4a341203aaa005585e12c"
+    },
+    {
+      "byte_size": 39181,
+      "sanitized_filename": "04_gold_hash_trading_sessions.png",
+      "sha256": "5a14e8e252d4054f564164fbc18b2c15f4c6b1313dc4a341203aaa005585e12c"
+    }
+  ],
+  "historical_gap_adjudication": "NOT_PERFORMED",
+  "images_copied_to_repository": false,
+  "notes_artifact": {
+    "byte_size": 975,
+    "sanitized_filename": "operator_capture_notes.txt",
+    "sha256": "393d3d74f230d10079049196caf8296461889d3bc7f4d1a3fbea0c6699fd86be"
+  },
+  "schema_version": "fr_phase_c1_source_identity_evidence_manifest.v1",
+  "screenshots_prove_historical_market_closures": false,
+  "session_metadata_status": "CAPTURED_AND_HASH_BOUND_NOT_HISTORICALLY_ADJUDICATED",
+  "source_identity": {
+    "account_environment_type": "DEMO",
+    "acquisition_timestamp": "2026-07-30T07:12:00+07:00",
+    "analysis_end": "2026-06-30T23:59:59",
+    "analysis_start": "2026-01-01T00:00:00",
+    "broker": "XM",
+    "dst_behavior": "UNKNOWN",
+    "exact_server": "XMGlobal-MT5 2",
+    "exact_symbol": "GOLD#",
+    "export_method": "MT5_MANUAL_BARS_CSV_EXPORT",
+    "operator_timezone_for_logging_only": "Asia/Bangkok",
+    "requested_export_end": "2026-07-07T23:59:59",
+    "requested_export_start": "2026-01-01T00:00:00",
+    "source_mutation": "ORIGINAL_UNCHANGED",
+    "terminal_build": "6061",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  }
+}

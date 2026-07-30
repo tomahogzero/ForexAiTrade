@@ -1,0 +1,114 @@
+{
+  "$id": "fr_phase_c1_manual_raw_data_immutable_intake_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "MANUAL_RAW_DATA_ACQUISITION_AND_IMMUTABLE_INTAKE_ONLY"
+    },
+    "bound_artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "access": {
+            "enum": [
+              "json",
+              "hash_only"
+            ]
+          },
+          "artifact_id": {
+            "type": "string"
+          },
+          "file_sha256": {
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "git_blob_sha1": {
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "access",
+          "artifact_id",
+          "file_sha256",
+          "path"
+        ],
+        "type": "object"
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array"
+    },
+    "checkpoint": {
+      "const": "FR_PHASE_C1"
+    },
+    "expected_operator_package": {
+      "type": "object"
+    },
+    "expected_source_binding": {
+      "type": "object"
+    },
+    "external_access_policy": {
+      "type": "object"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "frozen_windows": {
+      "type": "object"
+    },
+    "immutability_policy": {
+      "type": "object"
+    },
+    "minimal_intake_policy": {
+      "type": "object"
+    },
+    "operation_authorizations": {
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "prior_contract_binding": {
+      "type": "object"
+    },
+    "required_input_package": {
+      "type": "object"
+    },
+    "required_note_declarations": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c1_manual_raw_data_immutable_intake_authorization.v1"
+    },
+    "sensitive_data_policy": {
+      "type": "object"
+    },
+    "status_boundary": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "preflight",
+    "prior_contract_binding",
+    "bound_artifacts",
+    "required_input_package",
+    "expected_source_binding",
+    "frozen_windows",
+    "expected_operator_package",
+    "required_note_declarations",
+    "minimal_intake_policy",
+    "immutability_policy",
+    "status_boundary",
+    "operation_authorizations",
+    "external_access_policy",
+    "sensitive_data_policy",
+    "file_creation_boundary"
+  ],
+  "type": "object"
+}

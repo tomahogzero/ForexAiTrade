@@ -1,0 +1,246 @@
+{
+  "$id": "fr_phase_c1_manual_raw_data_immutable_intake.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
+    },
+    "authorization_scope": {
+      "const": "MANUAL_RAW_DATA_ACQUISITION_AND_IMMUTABLE_INTAKE_ONLY"
+    },
+    "bound_artifact_hashes": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "type": "object"
+    },
+    "canonical_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checkpoint": {
+      "const": "FR_PHASE_C1"
+    },
+    "conclusions": {
+      "additionalProperties": false,
+      "properties": {
+        "broker_history_completeness": {
+          "const": "NOT_PROVEN"
+        },
+        "chronology_separation": {
+          "const": "NOT_YET_VALIDATED"
+        },
+        "clean_dataset_status": {
+          "const": "NOT_EVALUATED"
+        },
+        "dataset_identity": {
+          "const": "PROVISIONALLY_BOUND_NOT_VALIDATED"
+        },
+        "detector_execution": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "event_generation": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "exact_symbol": {
+          "const": "GOLD#"
+        },
+        "gap_classification": {
+          "const": "NOT_STARTED"
+        },
+        "gap_inventory": {
+          "const": "NOT_STARTED"
+        },
+        "holdout_status": {
+          "const": "NOT_CLAIMED"
+        },
+        "manual_source_acquisition": {
+          "const": "OPERATOR_COMPLETED"
+        },
+        "next_allowed_scope": {
+          "const": "FR_PHASE_C2_STRUCTURAL_TIMELINE_AND_GAP_VALIDATION_ONLY"
+        },
+        "order_logic": {
+          "const": "NOT_APPROVED"
+        },
+        "out_of_sample_status": {
+          "const": "NOT_CLAIMED"
+        },
+        "outcome_execution": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "performance": {
+          "const": "NOT_EVALUATED"
+        },
+        "profitability": {
+          "const": "NOT_CLAIMED"
+        },
+        "raw_artifact_intake": {
+          "const": "PASS_HASH_BOUND"
+        },
+        "raw_artifact_original_bytes": {
+          "const": "UNCHANGED"
+        },
+        "raw_artifact_repository_storage": {
+          "const": "PROHIBITED_AND_NOT_PERFORMED"
+        },
+        "right_buffer_validation": {
+          "const": "NOT_STARTED"
+        },
+        "robustness": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "session_metadata": {
+          "const": "CAPTURED_AND_HASH_BOUND_NOT_HISTORICALLY_ADJUDICATED"
+        },
+        "source_identity": {
+          "const": "DECLARED_AND_EVIDENCE_HASH_BOUND"
+        },
+        "strategy_edge": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "structural_validation": {
+          "const": "NOT_STARTED"
+        }
+      },
+      "required": [
+        "manual_source_acquisition",
+        "raw_artifact_intake",
+        "source_identity",
+        "session_metadata",
+        "exact_symbol",
+        "raw_artifact_original_bytes",
+        "raw_artifact_repository_storage",
+        "dataset_identity",
+        "chronology_separation",
+        "structural_validation",
+        "gap_inventory",
+        "gap_classification",
+        "right_buffer_validation",
+        "clean_dataset_status",
+        "broker_history_completeness",
+        "holdout_status",
+        "out_of_sample_status",
+        "detector_execution",
+        "event_generation",
+        "outcome_execution",
+        "performance",
+        "profitability",
+        "strategy_edge",
+        "robustness",
+        "order_logic",
+        "next_allowed_scope"
+      ],
+      "type": "object"
+    },
+    "decision": {
+      "const": "FR_PHASE_C1_PASS_MANUAL_RAW_DATA_ACQUISITION_AND_IMMUTABLE_INTAKE"
+    },
+    "determinism": {
+      "type": "object"
+    },
+    "effective_source_binding": {
+      "type": "object"
+    },
+    "execution_status": {
+      "const": "PASS"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "frozen_windows": {
+      "type": "object"
+    },
+    "mismatch_counters": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "negative_tests": {
+      "additionalProperties": false,
+      "properties": {
+        "results": {
+          "additionalProperties": {
+            "const": "PASS"
+          },
+          "maxProperties": 29,
+          "minProperties": 29,
+          "type": "object"
+        },
+        "test_count": {
+          "const": 29
+        },
+        "tests_passed": {
+          "const": 29
+        }
+      },
+      "required": [
+        "test_count",
+        "tests_passed",
+        "results"
+      ],
+      "type": "object"
+    },
+    "observed_boundary_policy": {
+      "type": "object"
+    },
+    "output_hashes": {
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "prior_contract_binding": {
+      "type": "object"
+    },
+    "prohibited_counts": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "provisional_dataset_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "raw_artifact_reference": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c1_manual_raw_data_immutable_intake.v1"
+    },
+    "sensitive_value_in_canonical_identity_count": {
+      "const": 0
+    },
+    "source_identity_evidence_reference": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "execution_status",
+    "decision",
+    "authorization_scope",
+    "preflight",
+    "prior_contract_binding",
+    "bound_artifact_hashes",
+    "effective_source_binding",
+    "frozen_windows",
+    "raw_artifact_reference",
+    "source_identity_evidence_reference",
+    "provisional_dataset_binding_sha256",
+    "observed_boundary_policy",
+    "conclusions",
+    "file_creation_boundary",
+    "determinism",
+    "negative_tests",
+    "mismatch_counters",
+    "prohibited_counts",
+    "output_hashes",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "sensitive_value_in_canonical_identity_count",
+    "canonical_summary_sha256"
+  ],
+  "type": "object"
+}

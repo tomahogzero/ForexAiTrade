@@ -1,0 +1,104 @@
+{
+  "$id": "fr_phase_c0a_exact_xm_symbol_binding_correction_authorization.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "const": "ADDITIVE_EXACT_XM_GOLD_HASH_SYMBOL_BINDING_CORRECTION_ONLY"
+    },
+    "bound_artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "access": {
+            "enum": [
+              "json",
+              "hash_only"
+            ]
+          },
+          "artifact_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "file_sha256": {
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "git_blob_sha1": {
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "access",
+          "artifact_id",
+          "file_sha256",
+          "path"
+        ],
+        "type": "object"
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array"
+    },
+    "c0_binding": {
+      "type": "object"
+    },
+    "checkpoint": {
+      "const": "FR_PHASE_C0A"
+    },
+    "claims": {
+      "type": "object"
+    },
+    "correction": {
+      "type": "object"
+    },
+    "dataset_identity_policy": {
+      "type": "object"
+    },
+    "effective_acquisition_binding": {
+      "type": "object"
+    },
+    "external_operator_input_boundary": {
+      "type": "object"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "operation_authorizations": {
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c0a_exact_xm_symbol_binding_correction_authorization.v1"
+    },
+    "sensitive_data_policy": {
+      "type": "object"
+    },
+    "unchanged_invariants": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "authorization_scope",
+    "preflight",
+    "bound_artifacts",
+    "c0_binding",
+    "correction",
+    "dataset_identity_policy",
+    "effective_acquisition_binding",
+    "unchanged_invariants",
+    "operation_authorizations",
+    "claims",
+    "external_operator_input_boundary",
+    "sensitive_data_policy",
+    "file_creation_boundary"
+  ],
+  "type": "object"
+}

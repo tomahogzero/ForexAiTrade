@@ -1,0 +1,302 @@
+{
+  "$id": "fr_phase_c0a_exact_xm_symbol_binding_correction.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "absolute_runtime_path_in_canonical_identity_count": {
+      "const": 0
+    },
+    "authorization_scope": {
+      "const": "ADDITIVE_EXACT_XM_GOLD_HASH_SYMBOL_BINDING_CORRECTION_ONLY"
+    },
+    "bound_artifact_hashes": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "maxProperties": 7,
+      "minProperties": 7,
+      "type": "object"
+    },
+    "c0_binding": {
+      "type": "object"
+    },
+    "canonical_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checkpoint": {
+      "const": "FR_PHASE_C0A"
+    },
+    "conclusions": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis_window": {
+          "const": "UNCHANGED"
+        },
+        "corrected_exact_symbol": {
+          "const": "GOLD#"
+        },
+        "corrected_exact_symbol_character_length": {
+          "const": 5
+        },
+        "corrected_exact_symbol_utf8_hex": {
+          "const": "474f4c4423"
+        },
+        "correction_type": {
+          "const": "ADDITIVE_SUPPLEMENT"
+        },
+        "dataset_intake": {
+          "const": "NOT_STARTED"
+        },
+        "detector_execution": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "effective_phase_c_symbol_binding": {
+          "const": "FROZEN"
+        },
+        "event_generation": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "next_allowed_scope": {
+          "const": "FR_PHASE_C1_MANUAL_RAW_DATA_ACQUISITION_AND_IMMUTABLE_INTAKE_ONLY"
+        },
+        "order_logic": {
+          "const": "NOT_APPROVED"
+        },
+        "original_c0_contract": {
+          "const": "IMMUTABLE"
+        },
+        "original_c0_symbol_binding": {
+          "const": "GOLD"
+        },
+        "original_c0_symbol_binding_status": {
+          "const": "DEFECT_CONFIRMED"
+        },
+        "outcome_execution": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "performance": {
+          "const": "NOT_EVALUATED"
+        },
+        "phase_c_dataset_acquired": {
+          "const": false
+        },
+        "prior_fq_remediation": {
+          "const": "DEFERRED_AND_NOT_RESUMED"
+        },
+        "profitability": {
+          "const": "NOT_CLAIMED"
+        },
+        "requested_export_window": {
+          "const": "UNCHANGED"
+        },
+        "right_buffer_requirement": {
+          "const": "UNCHANGED_12_VALID_H1_BARS"
+        },
+        "server_binding": {
+          "const": "UNCHANGED_XMGLOBAL_MT5_2"
+        },
+        "strategy_file": {
+          "const": "UNCHANGED"
+        },
+        "symbol_aliasing": {
+          "const": "PROHIBITED"
+        },
+        "timeframe_binding": {
+          "const": "UNCHANGED_H1"
+        }
+      },
+      "required": [
+        "original_c0_contract",
+        "original_c0_symbol_binding",
+        "original_c0_symbol_binding_status",
+        "correction_type",
+        "corrected_exact_symbol",
+        "corrected_exact_symbol_utf8_hex",
+        "corrected_exact_symbol_character_length",
+        "symbol_aliasing",
+        "effective_phase_c_symbol_binding",
+        "server_binding",
+        "timeframe_binding",
+        "analysis_window",
+        "requested_export_window",
+        "right_buffer_requirement",
+        "strategy_file",
+        "prior_fq_remediation",
+        "phase_c_dataset_acquired",
+        "dataset_intake",
+        "detector_execution",
+        "event_generation",
+        "outcome_execution",
+        "performance",
+        "profitability",
+        "order_logic",
+        "next_allowed_scope"
+      ],
+      "type": "object"
+    },
+    "correction_record": {
+      "type": "object"
+    },
+    "dataset_identity_policy": {
+      "type": "object"
+    },
+    "decision": {
+      "const": "FR_PHASE_C0A_PASS_EXACT_XM_GOLD_HASH_SYMBOL_BINDING_CORRECTED"
+    },
+    "determinism": {
+      "additionalProperties": false,
+      "properties": {
+        "absolute_runtime_paths_excluded": {
+          "const": true
+        },
+        "controlled_relocation_run": {
+          "const": "PASS"
+        },
+        "normal_run_1": {
+          "const": "PASS"
+        },
+        "normal_run_2": {
+          "const": "PASS"
+        },
+        "normal_runs_canonical_correction_record_identical": {
+          "const": true
+        },
+        "normal_runs_effective_identity_identical": {
+          "const": true
+        },
+        "normal_runs_ordering_and_hashes_identical": {
+          "const": true
+        },
+        "relocation_canonical_correction_record_identical": {
+          "const": true
+        },
+        "relocation_effective_identity_identical": {
+          "const": true
+        },
+        "relocation_ordering_and_hashes_identical": {
+          "const": true
+        },
+        "temporary_artifacts_deleted": {
+          "const": true
+        }
+      },
+      "required": [
+        "normal_run_1",
+        "normal_run_2",
+        "normal_runs_canonical_correction_record_identical",
+        "normal_runs_effective_identity_identical",
+        "normal_runs_ordering_and_hashes_identical",
+        "controlled_relocation_run",
+        "relocation_canonical_correction_record_identical",
+        "relocation_effective_identity_identical",
+        "relocation_ordering_and_hashes_identical",
+        "temporary_artifacts_deleted",
+        "absolute_runtime_paths_excluded"
+      ],
+      "type": "object"
+    },
+    "effective_acquisition_binding": {
+      "type": "object"
+    },
+    "effective_identity_components": {
+      "type": "object"
+    },
+    "execution_status": {
+      "const": "PASS"
+    },
+    "file_creation_boundary": {
+      "type": "object"
+    },
+    "mismatch_counters": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "negative_tests": {
+      "additionalProperties": false,
+      "properties": {
+        "results": {
+          "additionalProperties": {
+            "const": "PASS"
+          },
+          "maxProperties": 25,
+          "minProperties": 25,
+          "type": "object"
+        },
+        "test_count": {
+          "const": 25
+        },
+        "tests_passed": {
+          "const": 25
+        }
+      },
+      "required": [
+        "test_count",
+        "tests_passed",
+        "results"
+      ],
+      "type": "object"
+    },
+    "output_hashes": {
+      "additionalProperties": false,
+      "properties": {
+        "correction_record_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "effective_acquisition_contract_identity_sha256": {
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "correction_record_sha256",
+        "effective_acquisition_contract_identity_sha256"
+      ],
+      "type": "object"
+    },
+    "preflight": {
+      "type": "object"
+    },
+    "prohibited_counts": {
+      "additionalProperties": {
+        "const": 0
+      },
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "fr_phase_c0a_exact_xm_symbol_binding_correction.v1"
+    },
+    "sensitive_value_in_canonical_identity_count": {
+      "const": 0
+    },
+    "unchanged_invariants": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "checkpoint",
+    "execution_status",
+    "decision",
+    "authorization_scope",
+    "preflight",
+    "c0_binding",
+    "bound_artifact_hashes",
+    "correction_record",
+    "dataset_identity_policy",
+    "effective_acquisition_binding",
+    "unchanged_invariants",
+    "effective_identity_components",
+    "conclusions",
+    "file_creation_boundary",
+    "determinism",
+    "negative_tests",
+    "mismatch_counters",
+    "prohibited_counts",
+    "output_hashes",
+    "absolute_runtime_path_in_canonical_identity_count",
+    "sensitive_value_in_canonical_identity_count",
+    "canonical_summary_sha256"
+  ],
+  "type": "object"
+}

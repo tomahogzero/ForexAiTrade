@@ -1,0 +1,197 @@
+{
+  "authorization_scope": "ADDITIVE_EXACT_XM_GOLD_HASH_SYMBOL_BINDING_CORRECTION_ONLY",
+  "bound_artifacts": [
+    {
+      "access": "json",
+      "artifact_id": "c0_contract",
+      "file_sha256": "843e507cfde3f945d3ef2bcbbd00c80e46feef7d7840c41beba9c929e28ed27c",
+      "path": "research/contracts/fr_phase_c0_clean_data_acquisition_contract.v1.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "c0_summary",
+      "file_sha256": "843e507cfde3f945d3ef2bcbbd00c80e46feef7d7840c41beba9c929e28ed27c",
+      "path": "research/results/checkpoint_fr_phase_c0/clean_data_acquisition_contract_summary.json"
+    },
+    {
+      "access": "json",
+      "artifact_id": "c0_schema",
+      "file_sha256": "52dd69b259cbf98caa44f84a6039d6bdac67a61c7de12b2eec7f6cba41e37033",
+      "path": "research/schemas/fr_phase_c0_clean_data_acquisition_contract.v1.schema.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "c0_authorization",
+      "file_sha256": "1e3a99d115a0a4e12d87532a2a2974ed4d94a817b875770e79da2fc8e88f0129",
+      "path": "research/contracts/fr_phase_c0_clean_data_acquisition_contract_authorization.v1.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "c0_authorization_schema",
+      "file_sha256": "ab3b616a09ad3fb14141c7e88fa245e79890118d0d8bbd435391da19de379dbf",
+      "path": "research/schemas/fr_phase_c0_clean_data_acquisition_contract_authorization.v1.schema.json"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "c0_generator",
+      "file_sha256": "5cc56044b4c2da0c7f38457721760ff2fc4ebe5a3671fed01ad6c74f94fbf4b1",
+      "path": "tools/run_fr_phase_c0_clean_data_acquisition_contract_design.py"
+    },
+    {
+      "access": "hash_only",
+      "artifact_id": "frozen_strategy",
+      "file_sha256": "0e72b1559f5416981c2db887f9c53a0bfbb66bada226250a064377b2b9fadaa2",
+      "git_blob_sha1": "da448295ac3bd443b376e1ce51a8e411de3c7245",
+      "path": "MQL5/Include/ForexAiTrade/Strategies/PriceActionFiboStrategy.mqh"
+    }
+  ],
+  "c0_binding": {
+    "analysis_end": "2026-06-30T235959",
+    "analysis_start": "2026-01-01T000000",
+    "canonical_summary_sha256": "26f2e23a20e08223a001514558fa69f6298b6af0e761d379393bb99825db6689",
+    "commit": "feb0bf29220538feed8738d2788696019cfd0800",
+    "contract_record_sha256": "5e229bf31aa9724e9d67c3675c1e99cf7454172e19a263ca8a45401993034a04",
+    "decision": "FR_PHASE_C0_PASS_CLEAN_DATA_ACQUISITION_CONTRACT_FROZEN",
+    "expected_server": "XMGlobal-MT5 2",
+    "original_exact_symbol": "GOLD",
+    "original_files": "IMMUTABLE",
+    "requested_export_end": "2026-07-07T235959",
+    "requested_export_start": "2026-01-01T000000",
+    "right_buffer_valid_h1_bars": 12,
+    "timeframe": "H1"
+  },
+  "checkpoint": "FR_PHASE_C0A",
+  "claims": {
+    "holdout": "NOT_CLAIMED",
+    "order_logic": "NOT_APPROVED",
+    "out_of_sample": "NOT_CLAIMED",
+    "performance": "NOT_EVALUATED",
+    "profitability": "NOT_CLAIMED",
+    "readiness": "NOT_CLAIMED",
+    "robustness": "NOT_ESTABLISHED",
+    "strategy_edge": "NOT_ESTABLISHED"
+  },
+  "correction": {
+    "corrected_symbol_identity": {
+      "ascii_code_points": [
+        71,
+        79,
+        76,
+        68,
+        35
+      ],
+      "character_length": 5,
+      "encoding": "UTF-8",
+      "exact_literal": "GOLD#",
+      "final_character": "#",
+      "json_escaped_representation": "GOLD\\u0023",
+      "utf8_hex": "474f4c4423"
+    },
+    "exact_comparison_policy": {
+      "alias": "PROHIBITED",
+      "case_sensitive": true,
+      "comparison": "BYTE_EXACT_AFTER_UTF8_DECODING",
+      "future_cli_quoted_literal": "\"GOLD#\"",
+      "hash_character_is_symbol_identity": true,
+      "map": "PROHIBITED",
+      "non_equivalent_literals": [
+        "GOLD",
+        "GOLDm#",
+        "GOLDm",
+        "XAUUSD",
+        "XAU/USD"
+      ],
+      "normalize": "PROHIBITED",
+      "prefix_suffix_or_whitespace": "IDENTITY_MISMATCH",
+      "shell_or_markdown_comment_interpretation_may_remove_hash": false,
+      "substitute": "PROHIBITED",
+      "trim": "PROHIBITED"
+    },
+    "only_this_field_is_superseded": true,
+    "original_exact_symbol": "GOLD",
+    "reason_code": "C0_EXACT_SYMBOL_LITERAL_BINDING_DEFECT",
+    "superseded_field": "C0.future_raw_artifact.exact_symbol",
+    "type": "ADDITIVE_SUPPLEMENT"
+  },
+  "dataset_identity_policy": {
+    "dataset_id": "FC_2026H1_XMGLOBAL_MT5_2_GOLD_HASH_H1",
+    "dataset_id_change_authorized": false,
+    "dataset_id_implies_plain_gold": false,
+    "gold_hash_token_meaning": "FILESYSTEM_SAFE_TOKEN_FOR_EXACT_LITERAL_GOLD_HASH"
+  },
+  "effective_acquisition_binding": {
+    "broker": "XM",
+    "dst_behavior": "UNKNOWN",
+    "exact_server": "XMGlobal-MT5 2",
+    "exact_symbol": "GOLD#",
+    "holdout": "NOT_CLAIMED",
+    "out_of_sample": "NOT_CLAIMED",
+    "time_basis": "XM_MT5_SERVER_CHART_TIME",
+    "timeframe": "H1",
+    "utc_offset": "UNKNOWN"
+  },
+  "external_operator_input_boundary": {
+    "c0a_access": "PROHIBITED",
+    "directory_create_list_scan_open_parse_hash_copy_modify": "PROHIBITED"
+  },
+  "file_creation_boundary": {
+    "allowed_new_files": [
+      "research/contracts/fr_phase_c0a_exact_xm_symbol_binding_correction.v1.json",
+      "research/contracts/fr_phase_c0a_exact_xm_symbol_binding_correction_authorization.v1.json",
+      "research/results/checkpoint_fr_phase_c0a/exact_xm_symbol_binding_correction_summary.json",
+      "research/schemas/fr_phase_c0a_exact_xm_symbol_binding_correction.v1.schema.json",
+      "research/schemas/fr_phase_c0a_exact_xm_symbol_binding_correction_authorization.v1.schema.json",
+      "tools/run_fr_phase_c0a_exact_xm_symbol_binding_correction.py"
+    ],
+    "docs_fixtures_raw_staging_or_input_creation_authorized": false,
+    "existing_file_modification_authorized": false,
+    "pr_creation_authorized": false
+  },
+  "operation_authorizations": {
+    "c0a_correction_design": true,
+    "costs_or_cash_pl": false,
+    "detector_execution": false,
+    "event_generation": false,
+    "external_directory_scan": false,
+    "fq_remediation": false,
+    "indicator_addition": false,
+    "lot_sizing": false,
+    "mt5_launch": false,
+    "network_access": false,
+    "order_execution_design": false,
+    "order_simulation": false,
+    "outcome_execution": false,
+    "parameter_change": false,
+    "pr_creation": false,
+    "raw_acquisition": false,
+    "statistics_execution": false,
+    "strategy_modification": false,
+    "tp_sl_design": false
+  },
+  "preflight": {
+    "branch": "agent/fr-phase-c-clean-data-intake",
+    "head": "feb0bf29220538feed8738d2788696019cfd0800",
+    "origin_branch": "origin/agent/fr-phase-c-clean-data-intake",
+    "origin_head": "feb0bf29220538feed8738d2788696019cfd0800",
+    "protected_stash": "stash@{0}: On agent/fr-prep-b-runner-integration: fr-prep-b2a-partial-draft-before-b2e",
+    "upstream_aligned": true,
+    "worktree_clean": true
+  },
+  "schema_version": "fr_phase_c0a_exact_xm_symbol_binding_correction_authorization.v1",
+  "sensitive_data_policy": {
+    "absolute_runtime_path_in_canonical_identity": "PROHIBITED",
+    "credentials_account_or_token": "PROHIBITED"
+  },
+  "unchanged_invariants": {
+    "additional_indicators_authorized": false,
+    "analysis_end": "2026-06-30T235959",
+    "analysis_start": "2026-01-01T000000",
+    "fq_remediation": "DEFERRED_AND_NOT_RESUMED",
+    "phase_c_dataset_acquisition": "NOT_STARTED",
+    "requested_export_end": "2026-07-07T235959",
+    "requested_export_start": "2026-01-01T000000",
+    "right_buffer_valid_h1_bars": 12,
+    "strategy_and_parameters": "FROZEN",
+    "strategy_file": "UNCHANGED"
+  }
+}
